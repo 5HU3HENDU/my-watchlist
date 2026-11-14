@@ -1,0 +1,2079 @@
+{
+  "rows": [
+    {
+      "row": 1,
+      "submitted": "Aditya Infotech Ltd",
+      "key": "CPPLUS"
+    },
+    {
+      "row": 2,
+      "submitted": "Anand Rathi Wealth Ltd",
+      "key": "ANANDRATHI"
+    },
+    {
+      "row": 3,
+      "submitted": "Ather Energy Ltd",
+      "key": "ATHERENERG"
+    },
+    {
+      "row": 4,
+      "submitted": "360 ONE WAM",
+      "key": "360ONE"
+    },
+    {
+      "row": 5,
+      "submitted": "AceVector",
+      "key": "ACEVECTOR"
+    },
+    {
+      "row": 6,
+      "submitted": "ACME Solar Holdings",
+      "key": "ACMESOLAR"
+    },
+    {
+      "row": 7,
+      "submitted": "Aequs",
+      "key": "AEQUS"
+    },
+    {
+      "row": 8,
+      "submitted": "Affle 3i",
+      "key": "AFFLE"
+    },
+    {
+      "row": 9,
+      "submitted": "Algoquant Fintech",
+      "key": "ALGOQUANT"
+    },
+    {
+      "row": 10,
+      "submitted": "Amara Raja Energy & Mobility",
+      "key": "ARE&M"
+    },
+    {
+      "row": 11,
+      "submitted": "Anand Rathi Wealth",
+      "key": "ANANDRATHI"
+    },
+    {
+      "row": 12,
+      "submitted": "Angel One",
+      "key": "ANGELONE"
+    },
+    {
+      "row": 13,
+      "submitted": "Aqylon Nexus",
+      "key": "AQYLON"
+    },
+    {
+      "row": 14,
+      "submitted": "Asset Reconstruction Company (India)",
+      "key": "ARCIL"
+    },
+    {
+      "row": 15,
+      "submitted": "Ather Energy",
+      "key": "ATHERENERG"
+    },
+    {
+      "row": 16,
+      "submitted": "Authum Investment & Infrastructure",
+      "key": "AIIL"
+    },
+    {
+      "row": 17,
+      "submitted": "Avance Technologies",
+      "key": "AVANCE"
+    },
+    {
+      "row": 18,
+      "submitted": "Avantel",
+      "key": "AVANTEL"
+    },
+    {
+      "row": 19,
+      "submitted": "AvenuesAI",
+      "key": "CCAVENUE"
+    },
+    {
+      "row": 20,
+      "submitted": "Bajaj Holdings & Investment",
+      "key": "BAJAJHLDNG"
+    },
+    {
+      "row": 21,
+      "submitted": "Belrise Industries",
+      "key": "BELRISE"
+    },
+    {
+      "row": 22,
+      "submitted": "BEML",
+      "key": "BEML"
+    },
+    {
+      "row": 23,
+      "submitted": "Bharat Dynamics",
+      "key": "BDL"
+    },
+    {
+      "row": 24,
+      "submitted": "Bharat Electronics",
+      "key": "BEL"
+    },
+    {
+      "row": 25,
+      "submitted": "Bharti Airtel",
+      "key": "BHARTIARTL"
+    },
+    {
+      "row": 26,
+      "submitted": "Bharti Hexacom",
+      "key": "BHARTIHEXA"
+    },
+    {
+      "row": 27,
+      "submitted": "Billionbrains Garage Ventures",
+      "key": "GROWW"
+    },
+    {
+      "row": 28,
+      "submitted": "Birlasoft",
+      "key": "BSOFT"
+    },
+    {
+      "row": 29,
+      "submitted": "Black Box",
+      "key": "BBOX"
+    },
+    {
+      "row": 30,
+      "submitted": "BLS International Services",
+      "key": "BLS"
+    },
+    {
+      "row": 31,
+      "submitted": "Blue Cloud Softech Solutions",
+      "key": "BLUECLOUDS"
+    },
+    {
+      "row": 32,
+      "submitted": "Brightcom Group",
+      "key": "BCG"
+    },
+    {
+      "row": 33,
+      "submitted": "BSE",
+      "key": "BSE"
+    },
+    {
+      "row": 34,
+      "submitted": "NSE",
+      "key": "BSE:544937"
+    },
+    {
+      "row": 35,
+      "submitted": "Central Depository Services (India)",
+      "key": "CDSL"
+    },
+    {
+      "row": 36,
+      "submitted": "Coforge",
+      "key": "COFORGE"
+    },
+    {
+      "row": 37,
+      "submitted": "Comfort Intech",
+      "key": "COMFINTE"
+    },
+    {
+      "row": 38,
+      "submitted": "Computer Age Management Services",
+      "key": "CAMS"
+    },
+    {
+      "row": 39,
+      "submitted": "CRISIL",
+      "key": "CRISIL"
+    },
+    {
+      "row": 40,
+      "submitted": "Cupid",
+      "key": "CUPID"
+    },
+    {
+      "row": 41,
+      "submitted": "Cyient",
+      "key": "CYIENT"
+    },
+    {
+      "row": 42,
+      "submitted": "Data Patterns (India)",
+      "key": "DATAPATTNS"
+    },
+    {
+      "row": 43,
+      "submitted": "Delhivery",
+      "key": "DELHIVERY"
+    },
+    {
+      "row": 44,
+      "submitted": "Delta Corp",
+      "key": "DELTACORP"
+    },
+    {
+      "row": 45,
+      "submitted": "Devyani International",
+      "key": "DEVYANI"
+    },
+    {
+      "row": 46,
+      "submitted": "Dixon Technologies (India)",
+      "key": "DIXON"
+    },
+    {
+      "row": 47,
+      "submitted": "Easy Trip Planners",
+      "key": "EASEMYTRIP"
+    },
+    {
+      "row": 48,
+      "submitted": "eClerx Services",
+      "key": "ECLERX"
+    },
+    {
+      "row": 49,
+      "submitted": "Empower India",
+      "key": "EMPOWER"
+    },
+    {
+      "row": 50,
+      "submitted": "ESDS Software Solution",
+      "key": "ESDS"
+    },
+    {
+      "row": 51,
+      "submitted": "Eternal",
+      "key": "ETERNAL"
+    },
+    {
+      "row": 52,
+      "submitted": "FCS Software Solutions",
+      "key": "FCSSOFT"
+    },
+    {
+      "row": 53,
+      "submitted": "Firstsource Solutions",
+      "key": "FSL"
+    },
+    {
+      "row": 54,
+      "submitted": "Fractal Analytics",
+      "key": "FRACTAL"
+    },
+    {
+      "row": 55,
+      "submitted": "GACM Technologies",
+      "key": "GATECH"
+    },
+    {
+      "row": 56,
+      "submitted": "Gaja Alternative Asset Management",
+      "key": "GAJA"
+    },
+    {
+      "row": 57,
+      "submitted": "Genesys International Corporation",
+      "key": "GENESYS"
+    },
+    {
+      "row": 58,
+      "submitted": "GMR Airports",
+      "key": "GMRAIRPORT"
+    },
+    {
+      "row": 59,
+      "submitted": "GTL Infrastructure",
+      "key": "GTLINFRA"
+    },
+    {
+      "row": 60,
+      "submitted": "Happiest Minds Technologies",
+      "key": "HAPPSTMNDS"
+    },
+    {
+      "row": 61,
+      "submitted": "HCL Technologies",
+      "key": "HCLTECH"
+    },
+    {
+      "row": 62,
+      "submitted": "HDFC Asset Management Company",
+      "key": "HDFCAMC"
+    },
+    {
+      "row": 63,
+      "submitted": "HEG Advanced Materials",
+      "key": "HEGAM"
+    },
+    {
+      "row": 64,
+      "submitted": "Hexaware Technologies",
+      "key": "HEXT"
+    },
+    {
+      "row": 65,
+      "submitted": "HFCL",
+      "key": "HFCL"
+    },
+    {
+      "row": 66,
+      "submitted": "Hindustan Aeronautics",
+      "key": "HAL"
+    },
+    {
+      "row": 67,
+      "submitted": "ICICI Prudential Asset Management Company",
+      "key": "ICICIAMC"
+    },
+    {
+      "row": 68,
+      "submitted": "IDFC First Bank",
+      "key": "IDFCFIRSTB"
+    },
+    {
+      "row": 69,
+      "submitted": "Indian Energy Exchange",
+      "key": "IEX"
+    },
+    {
+      "row": 70,
+      "submitted": "Indian Railway Catering And Tourism Corporation",
+      "key": "IRCTC"
+    },
+    {
+      "row": 71,
+      "submitted": "Indian Railway Finance Corporation",
+      "key": "IRFC"
+    },
+    {
+      "row": 72,
+      "submitted": "Indo Thai Securities",
+      "key": "INDOTHAI"
+    },
+    {
+      "row": 73,
+      "submitted": "Indus Towers",
+      "key": "INDUSTOWER"
+    },
+    {
+      "row": 74,
+      "submitted": "Info Edge (India)",
+      "key": "NAUKRI"
+    },
+    {
+      "row": 75,
+      "submitted": "Infosys",
+      "key": "INFY"
+    },
+    {
+      "row": 76,
+      "submitted": "Intellect Design Arena",
+      "key": "INTELLECT"
+    },
+    {
+      "row": 77,
+      "submitted": "International Gemological Institute",
+      "key": "IGIL"
+    },
+    {
+      "row": 78,
+      "submitted": "Inventurus Knowledge Solutions",
+      "key": "IKS"
+    },
+    {
+      "row": 79,
+      "submitted": "ITI",
+      "key": "ITI"
+    },
+    {
+      "row": 80,
+      "submitted": "Jio Financial Services",
+      "key": "JIOFIN"
+    },
+    {
+      "row": 81,
+      "submitted": "Jio Platforms",
+      "key": "JPL"
+    },
+    {
+      "row": 82,
+      "submitted": "Kaynes Technology India",
+      "key": "KAYNES"
+    },
+    {
+      "row": 83,
+      "submitted": "Kellton Tech Solutions",
+      "key": "KELLTONTEC"
+    },
+    {
+      "row": 84,
+      "submitted": "Kfin Technologies",
+      "key": "KFINTECH"
+    },
+    {
+      "row": 85,
+      "submitted": "KPIT Technologies",
+      "key": "KPITTECH"
+    },
+    {
+      "row": 86,
+      "submitted": "L&T Technology Services",
+      "key": "LTTS"
+    },
+    {
+      "row": 87,
+      "submitted": "Le Travenues Technology",
+      "key": "IXIGO"
+    },
+    {
+      "row": 88,
+      "submitted": "Lenskart Solutions",
+      "key": "LENSKART"
+    },
+    {
+      "row": 89,
+      "submitted": "LTM",
+      "key": "LTM"
+    },
+    {
+      "row": 90,
+      "submitted": "Magellanic Cloud",
+      "key": "MCLOUD"
+    },
+    {
+      "row": 91,
+      "submitted": "Meesho",
+      "key": "MEESHO"
+    },
+    {
+      "row": 92,
+      "submitted": "Milky Mist Dairy Food",
+      "key": "MILKYMIST"
+    },
+    {
+      "row": 93,
+      "submitted": "Moneyview",
+      "key": "MONEYVIEW"
+    },
+    {
+      "row": 94,
+      "submitted": "Moschip Technologies",
+      "key": "MOSCHIP"
+    },
+    {
+      "row": 95,
+      "submitted": "MphasiS",
+      "key": "MPHASIS"
+    },
+    {
+      "row": 96,
+      "submitted": "Multi Commodity Exchange of India",
+      "key": "MCX"
+    },
+    {
+      "row": 97,
+      "submitted": "Nazara Technologies",
+      "key": "NAZARA"
+    },
+    {
+      "row": 98,
+      "submitted": "Netweb Technologies India",
+      "key": "NETWEB"
+    },
+    {
+      "row": 99,
+      "submitted": "Nippon Life India Asset Management",
+      "key": "NAM-INDIA"
+    },
+    {
+      "row": 100,
+      "submitted": "Nuvama Wealth Management",
+      "key": "NUVAMA"
+    },
+    {
+      "row": 101,
+      "submitted": "One 97 Communications",
+      "key": "PAYTM"
+    },
+    {
+      "row": 102,
+      "submitted": "One Mobikwik Systems",
+      "key": "MOBIKWIK"
+    },
+    {
+      "row": 103,
+      "submitted": "OnEMI Technology Solutions",
+      "key": "KISSHT"
+    },
+    {
+      "row": 104,
+      "submitted": "Pace Digitek",
+      "key": "PACEDIGITK"
+    },
+    {
+      "row": 105,
+      "submitted": "PB Fintech",
+      "key": "POLICYBZR"
+    },
+    {
+      "row": 106,
+      "submitted": "Persistent Systems",
+      "key": "PERSISTENT"
+    },
+    {
+      "row": 107,
+      "submitted": "Pine Labs",
+      "key": "PINELABS"
+    },
+    {
+      "row": 108,
+      "submitted": "Premier Energies",
+      "key": "PREMIERENE"
+    },
+    {
+      "row": 109,
+      "submitted": "PVR INOX",
+      "key": "PVRINOX"
+    },
+    {
+      "row": 110,
+      "submitted": "R Systems International",
+      "key": "RSYSTEMS"
+    },
+    {
+      "row": 111,
+      "submitted": "Radico Khaitan",
+      "key": "RADICO"
+    },
+    {
+      "row": 112,
+      "submitted": "Rail Vikas Nigam",
+      "key": "RVNL"
+    },
+    {
+      "row": 113,
+      "submitted": "Railtel Corporation Of India",
+      "key": "RAILTEL"
+    },
+    {
+      "row": 114,
+      "submitted": "Redington",
+      "key": "REDINGTON"
+    },
+    {
+      "row": 115,
+      "submitted": "Reliance Communications",
+      "key": "RCOM"
+    },
+    {
+      "row": 116,
+      "submitted": "RITES",
+      "key": "RITES"
+    },
+    {
+      "row": 117,
+      "submitted": "Sagility",
+      "key": "SAGILITY"
+    },
+    {
+      "row": 118,
+      "submitted": "SBI Funds Management",
+      "key": "SBIFUNDS"
+    },
+    {
+      "row": 119,
+      "submitted": "Shadowfax Technologies",
+      "key": "SHADOWFAX"
+    },
+    {
+      "row": 120,
+      "submitted": "Share India Securities",
+      "key": "SHAREINDIA"
+    },
+    {
+      "row": 121,
+      "submitted": "Shiprocket",
+      "key": "SHIPROCKET"
+    },
+    {
+      "row": 122,
+      "submitted": "Skyways Air Services",
+      "key": "SKYWAYS"
+    },
+    {
+      "row": 123,
+      "submitted": "STL Networks",
+      "key": "STLNETWORK"
+    },
+    {
+      "row": 124,
+      "submitted": "Subex",
+      "key": "SUBEXLTD"
+    },
+    {
+      "row": 125,
+      "submitted": "Swiggy",
+      "key": "SWIGGY"
+    },
+    {
+      "row": 126,
+      "submitted": "Tata Communications",
+      "key": "TATACOMM"
+    },
+    {
+      "row": 127,
+      "submitted": "Tata Consultancy Services",
+      "key": "TCS"
+    },
+    {
+      "row": 128,
+      "submitted": "Tata Elxsi",
+      "key": "TATAELXSI"
+    },
+    {
+      "row": 129,
+      "submitted": "Tata Investment Corporation",
+      "key": "TATAINVEST"
+    },
+    {
+      "row": 130,
+      "submitted": "Tata Technologies",
+      "key": "TATATECH"
+    },
+    {
+      "row": 131,
+      "submitted": "Tech Mahindra",
+      "key": "TECHM"
+    },
+    {
+      "row": 132,
+      "submitted": "Tejas Networks",
+      "key": "TEJASNET"
+    },
+    {
+      "row": 133,
+      "submitted": "Turtlemint Fintech Solutions",
+      "key": "TURTLEMINT"
+    },
+    {
+      "row": 134,
+      "submitted": "United Breweries",
+      "key": "UBL"
+    },
+    {
+      "row": 135,
+      "submitted": "United Spirits",
+      "key": "UNITDSPR"
+    },
+    {
+      "row": 136,
+      "submitted": "Urban Company",
+      "key": "URBANCO"
+    },
+    {
+      "row": 137,
+      "submitted": "UTI Asset Management Company",
+      "key": "UTIAMC"
+    },
+    {
+      "row": 138,
+      "submitted": "Vakrangee",
+      "key": "VAKRANGEE"
+    },
+    {
+      "row": 139,
+      "submitted": "Vikram Solar",
+      "key": "VIKRAMSOLR"
+    },
+    {
+      "row": 140,
+      "submitted": "Vodafone Idea",
+      "key": "IDEA"
+    },
+    {
+      "row": 141,
+      "submitted": "Waaree Energies",
+      "key": "WAAREEENER"
+    },
+    {
+      "row": 142,
+      "submitted": "Waterways Leisure Tourism",
+      "key": "CORDELIA"
+    },
+    {
+      "row": 143,
+      "submitted": "Wipro",
+      "key": "WIPRO"
+    },
+    {
+      "row": 144,
+      "submitted": "Xtranet Technologies",
+      "key": "XTRANET"
+    },
+    {
+      "row": 145,
+      "submitted": "Yatra Online",
+      "key": "YATRA"
+    },
+    {
+      "row": 146,
+      "submitted": "Zaggle Prepaid Ocean Services",
+      "key": "ZAGGLE"
+    }
+  ],
+  "selected": [
+    "CPPLUS",
+    "ANANDRATHI",
+    "ATHERENERG",
+    "360ONE",
+    "ACEVECTOR",
+    "ACMESOLAR",
+    "AEQUS",
+    "AFFLE",
+    "ALGOQUANT",
+    "ARE&M",
+    "ANGELONE",
+    "AQYLON",
+    "ARCIL",
+    "AIIL",
+    "AVANCE",
+    "AVANTEL",
+    "CCAVENUE",
+    "BAJAJHLDNG",
+    "BELRISE",
+    "BEML",
+    "BDL",
+    "BEL",
+    "BHARTIARTL",
+    "BHARTIHEXA",
+    "GROWW",
+    "BSOFT",
+    "BBOX",
+    "BLS",
+    "BLUECLOUDS",
+    "BCG",
+    "BSE",
+    "BSE:544937",
+    "CDSL",
+    "COFORGE",
+    "COMFINTE",
+    "CAMS",
+    "CRISIL",
+    "CUPID",
+    "CYIENT",
+    "DATAPATTNS",
+    "DELHIVERY",
+    "DELTACORP",
+    "DEVYANI",
+    "DIXON",
+    "EASEMYTRIP",
+    "ECLERX",
+    "EMPOWER",
+    "ESDS",
+    "ETERNAL",
+    "FCSSOFT",
+    "FSL",
+    "FRACTAL",
+    "GATECH",
+    "GAJA",
+    "GENESYS",
+    "GMRAIRPORT",
+    "GTLINFRA",
+    "HAPPSTMNDS",
+    "HCLTECH",
+    "HDFCAMC",
+    "HEGAM",
+    "HEXT",
+    "HFCL",
+    "HAL",
+    "ICICIAMC",
+    "IDFCFIRSTB",
+    "IEX",
+    "IRCTC",
+    "IRFC",
+    "INDOTHAI",
+    "INDUSTOWER",
+    "NAUKRI",
+    "INFY",
+    "INTELLECT",
+    "IGIL",
+    "IKS",
+    "ITI",
+    "JIOFIN",
+    "JPL",
+    "KAYNES",
+    "KELLTONTEC",
+    "KFINTECH",
+    "KPITTECH",
+    "LTTS",
+    "IXIGO",
+    "LENSKART",
+    "LTM",
+    "MCLOUD",
+    "MEESHO",
+    "MILKYMIST",
+    "MONEYVIEW",
+    "MOSCHIP",
+    "MPHASIS",
+    "MCX",
+    "NAZARA",
+    "NETWEB",
+    "NAM-INDIA",
+    "NUVAMA",
+    "PAYTM",
+    "MOBIKWIK",
+    "KISSHT",
+    "PACEDIGITK",
+    "POLICYBZR",
+    "PERSISTENT",
+    "PINELABS",
+    "PREMIERENE",
+    "PVRINOX",
+    "RSYSTEMS",
+    "RADICO",
+    "RVNL",
+    "RAILTEL",
+    "REDINGTON",
+    "RCOM",
+    "RITES",
+    "SAGILITY",
+    "SBIFUNDS",
+    "SHADOWFAX",
+    "SHAREINDIA",
+    "SHIPROCKET",
+    "SKYWAYS",
+    "STLNETWORK",
+    "SUBEXLTD",
+    "SWIGGY",
+    "TATACOMM",
+    "TCS",
+    "TATAELXSI",
+    "TATAINVEST",
+    "TATATECH",
+    "TECHM",
+    "TEJASNET",
+    "TURTLEMINT",
+    "UBL",
+    "UNITDSPR",
+    "URBANCO",
+    "UTIAMC",
+    "VAKRANGEE",
+    "VIKRAMSOLR",
+    "IDEA",
+    "WAAREEENER",
+    "CORDELIA",
+    "WIPRO",
+    "XTRANET",
+    "YATRA",
+    "ZAGGLE"
+  ],
+  "extra": [
+    {
+      "n": 760,
+      "sym": "BSE:544937",
+      "name": "National Stock Exchange of India (NSE)",
+      "ind": [
+        "Financial Services",
+        "Capital Markets",
+        "Exchange and Data Platform"
+      ],
+      "desc": "Operates exchange and data-platform services. This company is BSE-listed equity (scrip 544937; ISIN INE721I01024), outside the original NSE-only directory. BSE profile and NSE governance filing checked 14 November 2026. No listing-date claim is made.",
+      "url": "https://www.bseindia.com/stock-share-price/national-stock-exchange-of-ind/nse/544937/",
+      "nifty": false,
+      "vol": false,
+      "adv": null
+    }
+  ],
+  "candidates": [
+    {
+      "sym": "ADANIGREEN",
+      "matched": [
+        "Utilities - Renewable"
+      ]
+    },
+    {
+      "sym": "ADANIPORTS",
+      "matched": [
+        "Marine Shipping"
+      ]
+    },
+    {
+      "sym": "ABSLAMC",
+      "matched": [
+        "Asset Management"
+      ]
+    },
+    {
+      "sym": "AFCONS",
+      "matched": [
+        "Construction"
+      ]
+    },
+    {
+      "sym": "ALLCARGO",
+      "matched": [
+        "Integrated Freight & Logistics"
+      ]
+    },
+    {
+      "sym": "ABDL",
+      "matched": [
+        "Beverages - Wineries & Distilleries"
+      ]
+    },
+    {
+      "sym": "APARINDS",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "APOLLO",
+      "matched": [
+        "Aerospace & Defense"
+      ]
+    },
+    {
+      "sym": "ASIANTILES",
+      "matched": [
+        "Building Products & Equipment"
+      ]
+    },
+    {
+      "sym": "ASTRAL",
+      "matched": [
+        "Building Products & Equipment"
+      ]
+    },
+    {
+      "sym": "AUBANK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "AVANTIFEED",
+      "matched": [
+        "Packaged Foods"
+      ]
+    },
+    {
+      "sym": "AWL",
+      "matched": [
+        "Packaged Foods"
+      ]
+    },
+    {
+      "sym": "AXISBANK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "AYE",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "BAJFINANCE",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "BANDHANBNK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "BANKBARODA",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "BANKINDIA",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "MAHABANK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "BLSPOLY",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "BLUESTARCO",
+      "matched": [
+        "Building Products & Equipment"
+      ]
+    },
+    {
+      "sym": "FIRSTCRY",
+      "matched": [
+        "Internet Retail"
+      ]
+    },
+    {
+      "sym": "BRITANNIA",
+      "matched": [
+        "Packaged Foods"
+      ]
+    },
+    {
+      "sym": "CANBK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "CGCL",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "CCL",
+      "matched": [
+        "Packaged Foods"
+      ]
+    },
+    {
+      "sym": "CEMPRO",
+      "matched": [
+        "Construction"
+      ]
+    },
+    {
+      "sym": "CENTRALBK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "CMPDI",
+      "matched": [
+        "Specialty Business Services"
+      ]
+    },
+    {
+      "sym": "CGPOWER",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "CHOICEIN",
+      "matched": [
+        "Capital Markets"
+      ]
+    },
+    {
+      "sym": "CHOLAHLDNG",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "CHOLAFIN",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "CUB",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "CLEANMAX",
+      "matched": [
+        "Utilities - Renewable"
+      ]
+    },
+    {
+      "sym": "COCHINSHIP",
+      "matched": [
+        "Aerospace & Defense"
+      ]
+    },
+    {
+      "sym": "COLPAL",
+      "matched": [
+        "Household & Personal Products"
+      ]
+    },
+    {
+      "sym": "CREDITACC",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "DABUR",
+      "matched": [
+        "Household & Personal Products"
+      ]
+    },
+    {
+      "sym": "DCBBANK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "DCXINDIA",
+      "matched": [
+        "Aerospace & Defense"
+      ]
+    },
+    {
+      "sym": "DHANBANK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "EMIL",
+      "matched": [
+        "Specialty Retail"
+      ]
+    },
+    {
+      "sym": "ELECTCAST",
+      "matched": [
+        "Building Products & Equipment"
+      ]
+    },
+    {
+      "sym": "ELEVATE",
+      "matched": [
+        "Travel Services"
+      ]
+    },
+    {
+      "sym": "EMAMILTD",
+      "matched": [
+        "Household & Personal Products"
+      ]
+    },
+    {
+      "sym": "EMMVEE",
+      "matched": [
+        "Solar"
+      ]
+    },
+    {
+      "sym": "ENGINERSIN",
+      "matched": [
+        "Construction"
+      ]
+    },
+    {
+      "sym": "EQUITASBNK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "FEDERALBNK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "FINCABLES",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "FIVESTAR",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "NYKAA",
+      "matched": [
+        "Internet Retail"
+      ]
+    },
+    {
+      "sym": "GRSE",
+      "matched": [
+        "Aerospace & Defense"
+      ]
+    },
+    {
+      "sym": "GENUSPOWER",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "GILLETTE",
+      "matched": [
+        "Household & Personal Products"
+      ]
+    },
+    {
+      "sym": "GODREJCP",
+      "matched": [
+        "Household & Personal Products"
+      ]
+    },
+    {
+      "sym": "GODREJIND",
+      "matched": [
+        "Conglomerates"
+      ]
+    },
+    {
+      "sym": "GRAPHITE",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "GESHIP",
+      "matched": [
+        "Marine Shipping"
+      ]
+    },
+    {
+      "sym": "GRMOVER",
+      "matched": [
+        "Packaged Foods"
+      ]
+    },
+    {
+      "sym": "GPPL",
+      "matched": [
+        "Marine Shipping"
+      ]
+    },
+    {
+      "sym": "HARDWYN",
+      "matched": [
+        "Building Products & Equipment"
+      ]
+    },
+    {
+      "sym": "HAVELLS",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "HBLENGINE",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "HDBFS",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "HDFCBANK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "HINDUNILVR",
+      "matched": [
+        "Household & Personal Products"
+      ]
+    },
+    {
+      "sym": "POWERINDIA",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "HMAAGRO",
+      "matched": [
+        "Packaged Foods"
+      ]
+    },
+    {
+      "sym": "HONASA",
+      "matched": [
+        "Household & Personal Products"
+      ]
+    },
+    {
+      "sym": "HONAUT",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "HUDCO",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "ICICIBANK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "IDBI",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "IFCI",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "IIFL",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "INDIAMART",
+      "matched": [
+        "Internet Retail"
+      ]
+    },
+    {
+      "sym": "INDIANB",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "IOB",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "IREDA",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "INDUSINDBK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "INOXGREEN",
+      "matched": [
+        "Utilities - Renewable"
+      ]
+    },
+    {
+      "sym": "IRB",
+      "matched": [
+        "Construction"
+      ]
+    },
+    {
+      "sym": "IRCON",
+      "matched": [
+        "Construction"
+      ]
+    },
+    {
+      "sym": "ITCHOTELS",
+      "matched": [
+        "Resorts & Casinos"
+      ]
+    },
+    {
+      "sym": "JISLJALEQS",
+      "matched": [
+        "Conglomerates"
+      ]
+    },
+    {
+      "sym": "J&KBANK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "JMFINANCIL",
+      "matched": [
+        "Capital Markets"
+      ]
+    },
+    {
+      "sym": "JSWINFRA",
+      "matched": [
+        "Marine Shipping"
+      ]
+    },
+    {
+      "sym": "JUBLFOOD",
+      "matched": [
+        "Restaurants"
+      ]
+    },
+    {
+      "sym": "KAJARIACER",
+      "matched": [
+        "Building Products & Equipment"
+      ]
+    },
+    {
+      "sym": "KPIL",
+      "matched": [
+        "Construction"
+      ]
+    },
+    {
+      "sym": "KANOHAR",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "KARAMTARA",
+      "matched": [
+        "Solar"
+      ]
+    },
+    {
+      "sym": "KARURVYSYA",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "KEC",
+      "matched": [
+        "Construction"
+      ]
+    },
+    {
+      "sym": "KEI",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "KOTAKBANK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "KPIGREEN",
+      "matched": [
+        "Utilities - Renewable"
+      ]
+    },
+    {
+      "sym": "KWIL",
+      "matched": [
+        "Packaged Foods"
+      ]
+    },
+    {
+      "sym": "LTF",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "LALITHAA",
+      "matched": [
+        "Specialty Retail"
+      ]
+    },
+    {
+      "sym": "LANDSMILL",
+      "matched": [
+        "Conglomerates"
+      ]
+    },
+    {
+      "sym": "LT",
+      "matched": [
+        "Construction"
+      ]
+    },
+    {
+      "sym": "LTFOODS",
+      "matched": [
+        "Packaged Foods"
+      ]
+    },
+    {
+      "sym": "LUMINO",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "MTNL",
+      "matched": [
+        "Telecom Services"
+      ]
+    },
+    {
+      "sym": "M&MFIN",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "MANAPPURAM",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "MARICO",
+      "matched": [
+        "Household & Personal Products"
+      ]
+    },
+    {
+      "sym": "MARINE",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "MAZDOCK",
+      "matched": [
+        "Aerospace & Defense"
+      ]
+    },
+    {
+      "sym": "MMTC",
+      "matched": [
+        "Conglomerates"
+      ]
+    },
+    {
+      "sym": "MOTILALOFS",
+      "matched": [
+        "Capital Markets"
+      ]
+    },
+    {
+      "sym": "MUTHOOTFIN",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "NAVA",
+      "matched": [
+        "Conglomerates"
+      ]
+    },
+    {
+      "sym": "NBCC",
+      "matched": [
+        "Construction"
+      ]
+    },
+    {
+      "sym": "NCC",
+      "matched": [
+        "Construction"
+      ]
+    },
+    {
+      "sym": "NESTLEIND",
+      "matched": [
+        "Packaged Foods"
+      ]
+    },
+    {
+      "sym": "NHPC",
+      "matched": [
+        "Utilities - Renewable"
+      ]
+    },
+    {
+      "sym": "NORTHARC",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "NTPCGREEN",
+      "matched": [
+        "Utilities - Renewable"
+      ]
+    },
+    {
+      "sym": "ONEPOINT",
+      "matched": [
+        "Specialty Business Services"
+      ]
+    },
+    {
+      "sym": "OFSS",
+      "matched": [
+        "Software - Infrastructure"
+      ]
+    },
+    {
+      "sym": "PAISALO",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "PARAGMILK",
+      "matched": [
+        "Packaged Foods"
+      ]
+    },
+    {
+      "sym": "PARACABLES",
+      "matched": [
+        "Communication Equipment"
+      ]
+    },
+    {
+      "sym": "PATANJALI",
+      "matched": [
+        "Packaged Foods"
+      ]
+    },
+    {
+      "sym": "PGEL",
+      "matched": [
+        "Electronic Components"
+      ]
+    },
+    {
+      "sym": "PIRAMALFIN",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "POLYMED",
+      "matched": [
+        "Medical Instruments & Supplies"
+      ]
+    },
+    {
+      "sym": "POLYCAB",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "POONAWALLA",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "PFC",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "PFOCUS",
+      "matched": [
+        "Media Entertainment & Publication"
+      ]
+    },
+    {
+      "sym": "PFS",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "PSB",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "PNB",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "PVP",
+      "matched": [
+        "Conglomerates"
+      ]
+    },
+    {
+      "sym": "RRKABEL",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "RTNINDIA",
+      "matched": [
+        "Internet Retail"
+      ]
+    },
+    {
+      "sym": "RBLBANK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "RECLTD",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "RBA",
+      "matched": [
+        "Restaurants"
+      ]
+    },
+    {
+      "sym": "SARVESHWAR",
+      "matched": [
+        "Packaged Foods"
+      ]
+    },
+    {
+      "sym": "SBFC",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "SBICARD",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "SCHNEIDER",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "SCI",
+      "matched": [
+        "Marine Shipping"
+      ]
+    },
+    {
+      "sym": "SHRIRAMFIN",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "ENRIN",
+      "matched": [
+        "Utilities - Renewable"
+      ]
+    },
+    {
+      "sym": "SINDHUTRAD",
+      "matched": [
+        "Conglomerates"
+      ]
+    },
+    {
+      "sym": "SJVN",
+      "matched": [
+        "Utilities - Renewable"
+      ]
+    },
+    {
+      "sym": "SMCGLOBAL",
+      "matched": [
+        "Capital Markets"
+      ]
+    },
+    {
+      "sym": "SDBL",
+      "matched": [
+        "Beverages - Brewers"
+      ]
+    },
+    {
+      "sym": "SRF",
+      "matched": [
+        "Conglomerates"
+      ]
+    },
+    {
+      "sym": "SSRETAIL",
+      "matched": [
+        "Specialty Retail"
+      ]
+    },
+    {
+      "sym": "SBIN",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "STLTECH",
+      "matched": [
+        "Communication Equipment"
+      ]
+    },
+    {
+      "sym": "SUNTV",
+      "matched": [
+        "Media Entertainment & Publication",
+        "Broadcasting"
+      ]
+    },
+    {
+      "sym": "SUNDARMFIN",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "SUPREMEIND",
+      "matched": [
+        "Building Products & Equipment"
+      ]
+    },
+    {
+      "sym": "SWANCORP",
+      "matched": [
+        "Conglomerates"
+      ]
+    },
+    {
+      "sym": "SYRMA",
+      "matched": [
+        "Electronic Components"
+      ]
+    },
+    {
+      "sym": "TATACAP",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "TATACONSUM",
+      "matched": [
+        "Packaged Foods"
+      ]
+    },
+    {
+      "sym": "TTML",
+      "matched": [
+        "Telecom Services"
+      ]
+    },
+    {
+      "sym": "TBOTEK",
+      "matched": [
+        "Travel Services"
+      ]
+    },
+    {
+      "sym": "TECHNOE",
+      "matched": [
+        "Construction"
+      ]
+    },
+    {
+      "sym": "KTKBANK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "SOUTHBANK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "THERMAX",
+      "matched": [
+        "Conglomerates"
+      ]
+    },
+    {
+      "sym": "THOMASCOOK",
+      "matched": [
+        "Travel Services"
+      ]
+    },
+    {
+      "sym": "TONBO",
+      "matched": [
+        "Aerospace & Defense"
+      ]
+    },
+    {
+      "sym": "TFCILTD",
+      "matched": [
+        "Credit Services"
+      ]
+    },
+    {
+      "sym": "TARIL",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "TIINDIA",
+      "matched": [
+        "Conglomerates"
+      ]
+    },
+    {
+      "sym": "TVSSCS",
+      "matched": [
+        "Integrated Freight & Logistics"
+      ]
+    },
+    {
+      "sym": "UCOBANK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "UJJIVANSFB",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "UNIONBANK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "UTKARSHBNK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "VIDYAWIRES",
+      "matched": [
+        "Electrical Equipment & Parts"
+      ]
+    },
+    {
+      "sym": "WEBELSOLAR",
+      "matched": [
+        "Solar"
+      ]
+    },
+    {
+      "sym": "YESBANK",
+      "matched": [
+        "Banks - Regional"
+      ]
+    },
+    {
+      "sym": "ZEEL",
+      "matched": [
+        "Media Entertainment & Publication",
+        "Broadcasting"
+      ]
+    },
+    {
+      "sym": "ZEEMEDIA",
+      "matched": [
+        "Broadcasting"
+      ]
+    },
+    {
+      "sym": "ZENTEC",
+      "matched": [
+        "Aerospace & Defense"
+      ]
+    },
+    {
+      "sym": "ZYDUSWELL",
+      "matched": [
+        "Packaged Foods"
+      ]
+    }
+  ],
+  "updated": "14 November 2026",
+  "broadTags": [
+    "Automobile and Auto Components",
+    "Capital Goods",
+    "Chemicals",
+    "Communication Services",
+    "Construction Materials",
+    "Consumer Discretionary",
+    "Consumer Durables",
+    "Consumer Services",
+    "Consumer Staples",
+    "Diversified",
+    "Energy",
+    "Fast Moving Consumer Goods",
+    "Financial Services",
+    "Financials",
+    "Healthcare",
+    "Industrials",
+    "Information Technology",
+    "Materials",
+    "Metals & Mining",
+    "Oil Gas & Consumable Fuels",
+    "Power",
+    "Real Estate",
+    "Realty",
+    "Services",
+    "Technology",
+    "Telecommunication",
+    "Textiles",
+    "Utilities"
+  ],
+  "nseGovernanceSource": "https://nsearchives.nseindia.com/web/mediaattachment/2026-10/Integrated_Governance_Q2_2026-27_20261030162630.pdf"
+}
