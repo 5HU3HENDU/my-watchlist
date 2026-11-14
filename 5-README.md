@@ -13,6 +13,7 @@ Serve this folder with any static HTTP server, for example `python3 -m http.serv
 - `2-app.js`: search, industry filters, navigation, coverage counts, pagination and copy controls.
 - `3-stocks.json`: all original directory entries, original stable numbers, NSE symbols, multi-industry labels, descriptions, company source URLs, Nifty 500/volume-universe badges and average daily volume fields.
 - `4-watchlist.json`: exact submitted company names and row order, identity mapping, duplicate handling, NSE exception, matched-industry reasons and comparison candidate symbols.
+- `6-prices.json`: price-check snapshot for the 144 watchlist companies (Yahoo Finance daily prices, 13 November 2026 close): latest close, oldest past daily low-high range containing that close, 52-week high and percentage below it, with coverage flags.
 
 ## Scope and freshness
 
@@ -25,6 +26,12 @@ Two verified duplicates merge only in display: Anand Rathi Wealth Ltd / Anand Ra
 NSE itself is retained outside the NSE directory as National Stock Exchange of India Ltd, BSE equity scrip544937, ISIN INE721I01024. The BSE profile shows Category Listed, Equity, Group A/T+1 and Exchange and Data Platform. The company's October30 governance filing confirms legal entity, matching scrip and ISIN, type Equity and no NSE/MSEI symbol. No effective listing date is asserted.
 - https://www.bseindia.com/stock-share-price/national-stock-exchange-of-ind/nse/544937/
 - https://nsearchives.nseindia.com/web/mediaattachment/2026-10/Integrated_Governance_Q2_2026-27_20261030162630.pdf
+
+## Price check
+
+Added 14 November 2026. For each of the 144 watchlist companies: latest available daily close with its date, the oldest past trading day whose low-high range included that price (searching back to the start of available history), the split/bonus-adjusted 52-week high, and (high - latest) / high x 100. Source: Yahoo Finance daily OHLC via its public chart endpoint, 13 November 2026 close, tickers `<symbol>.NS` and `NSE.BO` for the BSE-listed NSE exception.
+
+History is adjusted for stock splits and bonus issues using the provider's recorded split events, so old prices are comparable to today's share basis. Dividends, rights issues and demergers are not adjusted; a large demerger can make an old adjusted range misleading. Oldest-match values read as "earliest available day" when the match sits on the first available bar, because the price may have occurred earlier than the provider's history. The 52-week high covers available days only when a company listed within the last 52 weeks, and those rows are marked "since <date>". This table is display research, not investment advice or a trading signal.
 
 ## Suggested additions
 
