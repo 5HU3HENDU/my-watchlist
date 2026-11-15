@@ -39,7 +39,7 @@ const html = `<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>My watchlist \u2014 Investor lenses</title>
-<!-- my-watchlist-lenses-v1 -->
+<!-- my-watchlist-lenses-v2 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -89,8 +89,9 @@ const html = `<!DOCTYPE html>
   .bdot.up{background:#22c55e}.bdot.dn{background:#ef4444}.bdot.flat{background:#4b5563}
   .fcol{display:flex;flex-direction:column;align-items:center;gap:2px}
   .fclab{font-size:9px;color:#9ca3af;font-weight:700}
-  .moves{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
-  .mv{background:#1f2937;border:1px solid #374151;border-radius:6px;padding:3px 8px;font-size:12px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;text-align:center;line-height:1.35}
+  .moves{display:flex;gap:6px;flex-wrap:nowrap;margin-top:4px}
+  .mv{display:flex;flex-direction:column;align-items:center;flex:1 1 0;min-width:0;background:#1f2937;border:1px solid #374151;border-radius:6px;padding:3px 8px;font-size:12px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;text-align:center;line-height:1.35}
+  @media (max-width:420px){.mv{padding:3px 2px;font-size:11px}}
   .mv .md{display:block;font-size:10px;color:#9ca3af;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
   .lens{border-top:1px solid #374151;padding-top:10px;margin-top:10px}
   .lhead{font-size:13px;font-weight:700;margin-bottom:4px}
@@ -141,7 +142,7 @@ const html = `<!DOCTYPE html>
 <div id="stockOverlay"><button class="pclose" id="closeStock" aria-label="Close">✕</button><div id="stockPanel">
   <div class="srow"><div style="font-size:17px;font-weight:800" id="stName"></div><div class="dim" id="stSym"></div></div>
   <div class="srow"><span style="font-size:20px;font-weight:800" id="stPrice"></span> <span id="stChange" style="font-weight:700"></span></div>
-  <div class="srow"><div class="dim" style="font-size:12px">Last 5 days</div><div id="stMoves"></div></div>
+  <div class="srow"><div class="dim" style="font-size:12px">Last 5 days</div><div id="stMoves" class="moves"></div></div>
   <div id="stLens"></div>
   <div class="srow" id="stRank"></div>
   <div class="srow" id="stIndices"></div>
