@@ -1,8 +1,8 @@
 // Generate lenses.html — the standalone My watchlist page (151 stocks,
 // 6 investor-lens dots per cell, tap-a-stock popup with last-5-days %
 // moves and per-lens check detail) from watchlist.json and sectors.json.
-// Same controls as the heatmap's watchlist tab: Sector, A–Z, lens dot
-// filter, settings. Lens verdicts come from lens.json at runtime;
+// Same controls as the heatmap's watchlist tab: Sector, A–Z, Lenses sort
+// pill, lens dot filter, settings. Lens verdicts come from lens.json at runtime;
 // market-data.json carries the 5 daily % moves ("m") for the popup.
 // Popup CSS/JS matches the heatmap v12 mobile fix: panels fit the
 // viewport (min(560px, 100vw-24px)), scroll internally (88dvh), visible
@@ -39,7 +39,7 @@ const html = `<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>My watchlist \u2014 Investor lenses</title>
-<!-- my-watchlist-lenses-v2 -->
+<!-- my-watchlist-lenses-v3 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -130,11 +130,12 @@ const html = `<!DOCTYPE html>
   <div class="brand">MY WATCHLIST <span class="amber">LENSES</span></div>
   <button class="sectgl hdr" id="sectorToggleHdr">Sector</button>
   <button class="sectgl hdr" id="azToggleHdr">A–Z</button>
+  <button class="sectgl hdr" id="lensToggleHdr">Lenses</button>
   <button class="gear" id="gearBtn" aria-label="Settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg><span class="fdot"></span></button>
 </header>
 <main><div id="grid"></div></main>
 <div id="overlay"><button class="pclose" id="closeSettings" aria-label="Close">✕</button><div id="panel">
-  <div class="prow">Top-left = <b>biggest gainer</b> \u00b7 Bottom-right = <b>biggest loser</b><br>6 lens dots — Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks (<span style="color:#22c55e">\u25cf</span> lens likes it, <span style="color:#ef4444">\u25cf</span> lens avoids it, <span style="color:#6b7280">\u25cf</span> neutral)</div>
+  <div class="prow"><span id="orderLine">Top-left = <b>biggest gainer</b> \u00b7 Bottom-right = <b>biggest loser</b></span><br>6 lens dots — Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks (<span style="color:#22c55e">\u25cf</span> lens likes it, <span style="color:#ef4444">\u25cf</span> lens avoids it, <span style="color:#6b7280">\u25cf</span> neutral)</div>
   <div class="prow dim" id="gapLine"></div>
   <div class="prow"><span class="dim">Lens filter</span><div id="fcircles"></div></div>
   <div class="prow"><span class="dim">Last updated:</span> <span id="lastUpdated">\u2014</span><br><span class="dim">Next update:</span> <span id="nextUpdate">\u2014</span><br><span class="dim">Data:</span> <span id="dataStatus">SAMPLE DATA</span><br><span class="dim">Lens data:</span> <span id="lensUpdated">\u2014</span></div>
@@ -175,6 +176,7 @@ const LENS_SHORT={Berkshire:"BUF",Burry:"BRY",Axelrod:"AXL",Jhunjhunwala:"RJ",Ly
 let FILTER=[0,0,0,0,0,0];
 let SECTOR_MODE=false;
 let AZ_MODE=false;
+let LENS_MODE=false;
 let FULL_ROWS=[];
 function fmtINR(n){return n.toLocaleString("en-IN",{minimumFractionDigits:2,maximumFractionDigits:2});}
 function nextUpdateStr(){
@@ -249,10 +251,14 @@ function render(){
   let fallback=0;
   const full=SYMS.map(function(sym){
     const r=realRow(sym); if(!r.real) fallback++;
-    return {sym:sym,pct:r.pct,dots:r.dots};
+    let g=0,rd=0;
+    r.dots.forEach(function(d){ if(d===1)g++; else if(d===0)rd++; });
+    return {sym:sym,pct:r.pct,dots:r.dots,g:g,r:rd};
   }).sort(function(a,b){return b.pct-a.pct||(a.sym<b.sym?-1:1);});
   FULL_ROWS=full;
-  const disp=AZ_MODE?full.slice().sort(function(a,b){return a.sym<b.sym?-1:1;}):full;
+  // Lens sort: green count desc, then red count asc, then today's return desc.
+  const lensCmp=function(a,b){return b.g-a.g||a.r-b.r||b.pct-a.pct||(a.sym<b.sym?-1:1);};
+  const disp=LENS_MODE?full.slice().sort(lensCmp):AZ_MODE?full.slice().sort(function(a,b){return a.sym<b.sym?-1:1;}):full;
   const rows=disp.filter(function(r){
     return FILTER.every(function(f,i){
       if(f===0) return true;
@@ -260,6 +266,10 @@ function render(){
     });
   });
   LAST_FALLBACK=fallback; LAST_COUNT=SYMS.length;
+  // Settings legend describes the active sort.
+  document.getElementById("orderLine").innerHTML=LENS_MODE?
+    'Top-left = <b>most lens greens</b> \u00b7 Bottom-right = <b>most lens reds</b>':
+    'Top-left = <b>biggest gainer</b> \u00b7 Bottom-right = <b>biggest loser</b>';
   // Grey placeholder tiles: priced tiles first, grey tiles at the end
   // in A–Z order among themselves. Grey tiles are not part of
   // rows/FULL_ROWS, so the dot filter and the feed-gap count never
@@ -275,7 +285,15 @@ function render(){
     const groups={};
     rows.forEach(function(r){ const s=SECTORS[r.sym]||"Other"; (groups[s]=groups[s]||[]).push(r); });
     const avg=function(g){ return g.reduce(function(t,r){return t+r.pct;},0)/g.length; };
-    const order=Object.keys(groups).sort(function(a,b){ return AZ_MODE?(a<b?-1:1):avg(groups[b])-avg(groups[a]); });
+    const avgG=function(g){ return g.reduce(function(t,r){return t+r.g;},0)/g.length; };
+    const avgR=function(g){ return g.reduce(function(t,r){return t+r.r;},0)/g.length; };
+    // Sector-block order follows the active sort: lens mode ranks sectors
+    // by average greens (then fewest reds, then average return); A–Z is
+    // alphabetical; default is average return desc.
+    const order=Object.keys(groups).sort(function(a,b){
+      if(LENS_MODE) return avgG(groups[b])-avgG(groups[a])||avgR(groups[a])-avgR(groups[b])||avg(groups[b])-avg(groups[a]);
+      return AZ_MODE?(a<b?-1:1):avg(groups[b])-avg(groups[a]);
+    });
     grid.innerHTML=order.map(function(s){
       const g=groups[s]; const a=avg(g);
       const head='<div class="sechead"><span>'+s+'</span><span>'+g.length+' stocks &middot; <span class="avg" style="color:'+(a>=0?"#22c55e":"#ef4444")+'">'+(a>=0?"+":"")+a.toFixed(2)+'% avg</span></span></div>';
@@ -415,7 +433,16 @@ document.getElementById("sectorToggleHdr").onclick=function(){
 };
 document.getElementById("azToggleHdr").onclick=function(){
   AZ_MODE=!AZ_MODE;
+  if(AZ_MODE){ LENS_MODE=false; document.getElementById("lensToggleHdr").classList.remove("on"); }
   this.classList.toggle("on",AZ_MODE);
+  render();
+};
+// Lenses and A–Z are mutually exclusive sorts; tapping Lenses again
+// returns to the default return sort. No flip to worst-first.
+document.getElementById("lensToggleHdr").onclick=function(){
+  LENS_MODE=!LENS_MODE;
+  if(LENS_MODE){ AZ_MODE=false; document.getElementById("azToggleHdr").classList.remove("on"); }
+  this.classList.toggle("on",LENS_MODE);
   render();
 };
 overlay.addEventListener("click",function(e){ if(e.target===overlay) closeAll(); });
