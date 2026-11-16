@@ -1,11 +1,16 @@
 // Generate lenses.html — the standalone investor-lenses page: two tabs,
 // "Nifty 500" (500 stocks) and "My watchlist" (151 stocks). Each cell
-// carries the same 6 investor-lens dots; tap-a-stock popup shows last-5-days
-// % moves and per-lens check detail. Same controls per tab: Sector, A–Z,
-// Lenses sort pill, lens dot filter, settings. Lens verdicts come from
-// lens.json at runtime; market-data.json carries the 5 daily % moves ("m")
-// for the popup. Default tab is My watchlist — the page is still his
-// watchlist page first.
+// carries lens dots; tap-a-stock popup shows last-5-days % moves and
+// per-lens check detail. Same controls per tab: Sector, A–Z, Lenses
+// sort pill, lens dot filter, settings. Lens verdicts come from lens.json
+// at runtime; market-data.json carries the 5 daily % moves ("m") for the
+// popup. Default tab is My watchlist — the page is still his watchlist
+// page first.
+// LENS VERSIONS (v0.2, lenses v5): the watchlist tab runs rulebook v0.2
+// (7 lenses incl. Druckenmiller); the Nifty 500 tab stays on rulebook
+// v0.1 (6 lenses). lens.json carries two namespaces (watchlist / n500);
+// the page reads the namespace of the active tab, so the two tabs show
+// different dot counts (7 vs 6) and different filter circles.
 // BAGMANE (in Nifty 500, no Yahoo data): grey "No data" tile, no lens
 // dots, flagged in settings — never a made-up verdict.
 // Popup CSS/JS matches the heatmap v12 mobile fix: panels fit the
@@ -52,7 +57,7 @@ const html = `<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v4 -->
+<!-- my-watchlist-lenses-v5 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -150,9 +155,10 @@ const html = `<!DOCTYPE html>
 </header>
 <main><div id="grid"></div></main>
 <div id="overlay"><button class="pclose" id="closeSettings" aria-label="Close">✕</button><div id="panel">
-  <div class="prow"><span id="orderLine">Top-left = <b>biggest gainer</b> \u00b7 Bottom-right = <b>biggest loser</b></span><br>6 lens dots — Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks (<span style="color:#22c55e">\u25cf</span> lens likes it, <span style="color:#ef4444">\u25cf</span> lens avoids it, <span style="color:#6b7280">\u25cf</span> neutral)</div>
+  <div class="prow"><span id="orderLine">Top-left = <b>biggest gainer</b> \u00b7 Bottom-right = <b>biggest loser</b></span><br><span id="legendLine"></span></div>
   <div class="prow dim" id="gapLine"></div>
   <div class="prow dim" id="nodataLine"></div>
+  <div class="prow dim" id="pledgeLine"></div>
   <div class="prow"><span class="dim">Lens filter</span><div id="fcircles"></div></div>
   <div class="prow"><span class="dim">Last updated:</span> <span id="lastUpdated">\u2014</span><br><span class="dim">Next update:</span> <span id="nextUpdate">\u2014</span><br><span class="dim">Data:</span> <span id="dataStatus">SAMPLE DATA</span><br><span class="dim">Lens data:</span> <span id="lensUpdated">\u2014</span></div>
 </div></div>
@@ -189,10 +195,18 @@ function colorFor(pct){
   return "rgb("+c[0]+","+c[1]+","+c[2]+")";
 }
 let REAL=null, REAL_ASOF="", LAST_FALLBACK=0, LAST_COUNT=0;
-let LENS=null, LENS_META=null, LENS_ASOF="", LENS_SESSION="";
-const LENS_ORDER=["Berkshire","Burry","Axelrod","Jhunjhunwala","Lynch","Marks"];
-const LENS_SHORT={Berkshire:"BUF",Burry:"BRY",Axelrod:"AXL",Jhunjhunwala:"RJ",Lynch:"LYN",Marks:"MRK"};
-let FILTER=[0,0,0,0,0,0];
+// Lens data, per tab (lens.json v2 has two namespaces): the watchlist
+// tab runs rulebook v0.2 (7 lenses), the Nifty 500 tab runs v0.1 (6).
+let LENS_WL=null, LENS_WL_META=null, LENS_WL_ASOF="";
+let LENS_N500=null, LENS_N500_META=null, LENS_N500_ASOF="";
+let LENS_SESSION="";
+const WL_ORDER=["Berkshire","Burry","Axelrod","Jhunjhunwala","Lynch","Marks","Druckenmiller"];
+const N500_ORDER=["Berkshire","Burry","Axelrod","Jhunjhunwala","Lynch","Marks"];
+const LENS_SHORT={Berkshire:"BUF",Burry:"BRY",Axelrod:"AXL",Jhunjhunwala:"RJ",Lynch:"LYN",Marks:"MRK",Druckenmiller:"DRU"};
+function activeOrder(){ return TAB==="wl"?WL_ORDER:N500_ORDER; }
+function activeLens(){ return TAB==="wl"?LENS_WL:LENS_N500; }
+function activeLensMeta(){ return TAB==="wl"?LENS_WL_META:LENS_N500_META; }
+let FILTER=[0,0,0,0,0,0,0];
 let SECTOR_MODE=false;
 let AZ_MODE=false;
 let LENS_MODE=false;
@@ -214,10 +228,17 @@ function updateSettings(){
   gap.textContent=(!REAL||LAST_FALLBACK<=0)?"":LAST_FALLBACK+" of "+LAST_COUNT+" stocks showing sample values (feed gap)";
   const nd=document.getElementById("nodataLine");
   nd.textContent=(TAB==="n500"&&NODATA.length)?NODATA.map(function(x){return x.sym;}).join(", ")+": no market data yet (feed gap) \u2014 no price, no lens verdicts":"";
+  // Legend: dot count and lens names follow the active tab (7 on the
+  // watchlist, 6 on Nifty 500).
+  const names=TAB==="wl"?"Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks, Druckenmiller":"Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks";
+  document.getElementById("legendLine").innerHTML=activeOrder().length+" lens dots — "+names+" (<span style='color:#22c55e'>\u25cf</span> lens likes it, <span style='color:#ef4444'>\u25cf</span> lens avoids it, <span style='color:#6b7280'>\u25cf</span> neutral)";
+  // Pledging: the Jhunjhunwala pledging check has no data source yet
+  // (v0.2) — the lens scores out of 3. Noted here, watchlist tab only.
+  document.getElementById("pledgeLine").textContent=TAB==="wl"?"Jhunjhunwala lens: the promoter-pledging check is pending a data source, so the lens scores out of 3 for now.":"";
   document.getElementById("lastUpdated").textContent=REAL?REAL_ASOF:"\u2014";
   document.getElementById("nextUpdate").textContent=nextUpdateStr();
   document.getElementById("dataStatus").textContent=REAL?"REAL DATA":"SAMPLE DATA";
-  document.getElementById("lensUpdated").textContent=LENS?LENS_ASOF:"\u2014";
+  document.getElementById("lensUpdated").textContent=(TAB==="wl"?LENS_WL_ASOF:LENS_N500_ASOF)||"\u2014";
 }
 async function loadReal(){
   try{
@@ -238,15 +259,24 @@ async function loadLens(){
     clearTimeout(timer);
     if(!r.ok) return;
     const j=await r.json();
-    if(j&&j.stocks){ LENS=j.stocks; LENS_META=j; LENS_ASOF=j.fetchedAtIST||""; LENS_SESSION=j.sessionDate||""; }
+    if(j&&j.watchlist&&j.watchlist.stocks){ LENS_WL=j.watchlist.stocks; LENS_WL_META=j.watchlist; LENS_WL_ASOF=j.fetchedAtIST||""; }
+    if(j&&j.n500&&j.n500.stocks){ LENS_N500=j.n500.stocks; LENS_N500_META=j.n500; LENS_N500_ASOF=j.fetchedAtIST||""; }
+    // Back-compat: a stale cached flat lens.json (v1) has j.stocks at top
+    // level — use it for both tabs rather than showing no dots at all.
+    if(!LENS_WL&&j&&j.stocks){ LENS_WL=j.stocks; LENS_WL_META=j; LENS_WL_ASOF=j.fetchedAtIST||""; }
+    if(!LENS_N500&&j&&j.stocks){ LENS_N500=j.stocks; LENS_N500_META=j; LENS_N500_ASOF=j.fetchedAtIST||""; }
+    LENS_SESSION=j.sessionDate||"";
   }catch(e){}
 }
 function lensDots(sym){
-  // 6 lens verdicts as dots: green=1, red=0, neutral=null (grey).
-  // No lens data yet -> 6 grey dots.
-  if(!LENS||!LENS[sym]) return [null,null,null,null,null,null];
-  const v=LENS[sym].verdicts||{};
-  return LENS_ORDER.map(function(k){ return v[k]==="green"?1:v[k]==="red"?0:null; });
+  // Lens verdicts as dots: green=1, red=0, neutral/no-verdict=null (grey).
+  // 7 dots on the watchlist tab (v0.2), 6 on Nifty 500 (v0.1).
+  // No lens data yet -> all grey dots.
+  const L=activeLens();
+  const order=activeOrder();
+  if(!L||!L[sym]) return order.map(function(){return null;});
+  const v=L[sym].verdicts||{};
+  return order.map(function(k){ return v[k]==="green"?1:v[k]==="red"?0:null; });
 }
 function realRow(sym){
   if(REAL&&REAL[sym]){ const rec=REAL[sym]; return {pct:rec.c, dots:lensDots(sym), real:true}; }
@@ -288,7 +318,7 @@ function render(){
   const disp=LENS_MODE?full.slice().sort(lensCmp):AZ_MODE?full.slice().sort(function(a,b){return a.sym<b.sym?-1:1;}):full;
   const rows=disp.filter(function(r){
     return FILTER.every(function(f,i){
-      if(f===0) return true;
+      if(f===0||i>=r.dots.length) return true;
       return f===1?r.dots[i]===1:r.dots[i]===0;
     });
   });
@@ -370,26 +400,34 @@ function openStock(sym){
 function lensHtml(sym){
   // Per-lens breakdown: overall verdict + score, then per check (name,
   // threshold, stock value, pass/fail). Lenses are labelled "Buffett
-  // lens" etc., never "Buffett's view".
-  if(!LENS||!LENS[sym]){
+  // lens" etc., never "Buffett's view". A lens with no verdict (more than
+  // half its checks N/A) shows "No verdict — insufficient data"; an N/A
+  // check shows "N/A" with the reason noted under its lens.
+  const L=activeLens();
+  if(!L||!L[sym]){
     return '<div class="lens"><div class="dim">Investor lenses — data not available yet.</div></div>';
   }
-  const rec=LENS[sym];
-  const lenses=(LENS_META&&LENS_META.lenses)||[];
+  const rec=L[sym];
+  const lenses=(activeLensMeta()&&activeLensMeta().lenses)||[];
   let h='<div style="border-top:1px solid #374151;padding-top:10px;margin-top:10px"><div style="font-weight:800;margin-bottom:2px">Investor lenses <span class="dim" style="font-weight:400">— as of '+(LENS_SESSION||"\u2014")+'</span></div>'+
     '<div class="dim" style="font-size:11px;margin-bottom:4px">A mechanical reading of each investor\u2019s framework — \u201cBuffett lens\u201d, not \u201cBuffett\u2019s view\u201d.</div>';
   lenses.forEach(function(info){
     const k=info.key;
-    const v=(rec.verdicts&&rec.verdicts[k])||"neutral";
+    const v=(rec.verdicts&&rec.verdicts[k])||null;
     const sc=(rec.scores&&rec.scores[k])||[0,0];
     const vcol=v==="green"?"#22c55e":v==="red"?"#ef4444":"#9ca3af";
-    const vword=v==="green"?"Green":v==="red"?"Red":"Neutral";
-    h+='<div class="lens"><div class="lhead"><span class="bdot '+(v==="green"?"up":v==="red"?"dn":"flat")+'"></span>'+esc(info.label||k+" lens")+' — <span style="color:'+vcol+'">'+vword+' '+sc[0]+'/'+sc[1]+'</span></div>';
+    const vword=v==="green"?"Green":v==="red"?"Red":v===null?"No verdict":"Neutral";
+    const scoreTxt=v===null?"":' '+sc[0]+'/'+sc[1];
+    h+='<div class="lens"><div class="lhead"><span class="bdot '+(v==="green"?"up":v==="red"?"dn":"flat")+'"></span>'+esc(info.label||k+" lens")+' — <span style="color:'+vcol+'">'+vword+scoreTxt+'</span></div>';
+    if(v===null) h+='<div class="lnote">Insufficient data — most checks don\u2019t apply to this stock yet.</div>';
+    const naReasons=[];
     (rec.checks[k]||[]).forEach(function(c){
-      const mk=c.m?"na":(c.p?"ok":"no");
-      const mark=c.m?"\u2014":(c.p?"\u2713":"\u2717");
+      const mk=c.na?"na":c.m?"na":(c.p?"ok":"no");
+      const mark=c.na||c.m?"\u2014":(c.p?"\u2713":"\u2717");
+      if(c.na&&naReasons.indexOf(c.na)<0) naReasons.push(c.na);
       h+='<div class="lcheck"><span>'+esc(c.n)+'</span><span class="thr">'+esc(c.t)+'</span><span class="val">'+(c.v===null||c.v===undefined?"\u2014":esc(c.v))+'</span><span class="mk '+mk+'">'+mark+'</span></div>';
     });
+    if(naReasons.length) h+='<div class="lnote">Not applicable: '+esc(naReasons.join("; "))+'.</div>';
     if(info.note) h+='<div class="lnote">'+esc(info.note)+'.</div>';
     h+='</div>';
   });
@@ -426,15 +464,24 @@ document.getElementById("grid").addEventListener("click",function(e){
 });
 const fcWrap=document.getElementById("fcircles");
 let fcBtns=[];
+function resetFilter(){
+  FILTER=activeOrder().map(function(){return 0;});
+  paintCircles();
+}
 function buildFilterUI(){
-  // Dot-filter circles: 6 lenses, labelled. Tap cycles any -> green -> red -> any.
+  // Dot-filter circles: one per lens of the ACTIVE tab, labelled. Tap
+  // cycles any -> green -> red -> any. Rebuilt on tab switch — 7 circles
+  // on the watchlist tab (incl. DRU), 6 on Nifty 500. Rebuilding resets
+  // the filter (it means something different per tab).
   fcWrap.innerHTML="";
   fcBtns=[];
-  for(let i=0;i<6;i++){
+  const order=activeOrder();
+  FILTER=order.map(function(){return 0;});
+  for(let i=0;i<order.length;i++){
     const wrap=document.createElement("div"); wrap.className="fcol";
     const b=document.createElement("button");
     b.className="fc";
-    const lk=LENS_ORDER[i];
+    const lk=order[i];
     b.setAttribute("aria-label",lk+" lens");
     const lab=document.createElement("span"); lab.className="fclab"; lab.textContent=LENS_SHORT[lk];
     wrap.appendChild(b); wrap.appendChild(lab);
@@ -446,7 +493,7 @@ function buildFilterUI(){
   }
   const clearBtn=document.createElement("button");
   clearBtn.id="clearFilter"; clearBtn.textContent="Clear";
-  clearBtn.onclick=function(){ FILTER=[0,0,0,0,0,0]; paintCircles(); render(); };
+  clearBtn.onclick=function(){ resetFilter(); render(); };
   fcWrap.appendChild(clearBtn);
   paintCircles();
 }
@@ -490,14 +537,15 @@ document.getElementById("lensToggleHdr").onclick=function(){
   render();
 };
 // Tabs: Nifty 500 vs My watchlist (default). The lens dot filter resets
-// on a tab switch (it means something different per tab); Sector / A–Z /
-// Lenses-sort modes carry over and apply to the tab now showing.
+// on a tab switch (it means something different per tab — 7 circles on
+// the watchlist, 6 on Nifty 500); Sector / A–Z / Lenses-sort modes carry
+// over and apply to the tab now showing.
 function switchTab(tab){
   if(TAB===tab) return;
   TAB=tab;
   document.getElementById("tabN500").classList.toggle("on",tab==="n500");
   document.getElementById("tabWl").classList.toggle("on",tab==="wl");
-  FILTER=[0,0,0,0,0,0]; paintCircles();
+  buildFilterUI();
   render();
 }
 document.getElementById("tabN500").onclick=function(){ switchTab("n500"); };

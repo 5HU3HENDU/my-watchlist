@@ -1,0 +1,12179 @@
+{
+ "version": 2,
+ "fetchedAtIST": "16 Nov, 11:13 am",
+ "source": "screener.in (company pages, no login)",
+ "note": "Weekly fetch. mcap in ₹ Cr. Growth figures are compounded % (10y/5y/3y). v0.2: borrowNow/borrow3yAgo/debtEquity from the annual balance sheet (latest annual column — March for most, December for some), qProfit = quarterly Net Profit series, fiiNow/fiiYearAgo = quarterly FII %.",
+ "stocks": {
+  "CPPLUS": {
+   "sym": "CPPLUS",
+   "slug": "CPPLUS",
+   "name": "Aditya Infotech Ltd",
+   "pe": 83.9,
+   "pb": null,
+   "bookValue": 281,
+   "roce": 30.4,
+   "roe": 27.8,
+   "mcap": 49570,
+   "price": 4041,
+   "high52": 4620,
+   "low52": 1348,
+   "divYield": 0.04,
+   "sales10": null,
+   "sales5": 30,
+   "sales3": 22,
+   "profit10": null,
+   "profit5": 70,
+   "profit3": 47,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 71.8,
+   "basis": "consolidated",
+   "borrowNow": 222,
+   "borrow3yAgo": 410,
+   "debtEquity": 0.13528336380255943,
+   "qProfit": [
+    {
+     "q": "Jun 2024",
+     "v": 24
+    },
+    {
+     "q": "Sep 2024",
+     "v": 25
+    },
+    {
+     "q": "Dec 2024",
+     "v": 39
+    },
+    {
+     "q": "Mar 2025",
+     "v": 48
+    },
+    {
+     "q": "Jun 2025",
+     "v": 31
+    },
+    {
+     "q": "Sep 2025",
+     "v": 66
+    },
+    {
+     "q": "Dec 2025",
+     "v": 88
+    },
+    {
+     "q": "Mar 2026",
+     "v": 156
+    },
+    {
+     "q": "Jun 2026",
+     "v": 141
+    },
+    {
+     "q": "Sep 2026",
+     "v": 206
+    }
+   ],
+   "fiiNow": 6.78,
+   "fiiYearAgo": 4.44,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "ANANDRATHI": {
+   "sym": "ANANDRATHI",
+   "slug": "ANANDRATHI",
+   "name": "Anand Rathi Wealth Ltd",
+   "pe": 87.3,
+   "pb": null,
+   "bookValue": 78.9,
+   "roce": 57.5,
+   "roe": 45.3,
+   "mcap": 39602,
+   "price": 2385,
+   "high52": 2412,
+   "low52": 1354,
+   "divYield": 0.27,
+   "sales10": 110,
+   "sales5": 36,
+   "sales3": 31,
+   "profit10": 118,
+   "profit5": 55,
+   "profit3": 33,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": 64,
+   "promoter": 40.95,
+   "basis": "standalone",
+   "borrowNow": 83,
+   "borrow3yAgo": 36,
+   "debtEquity": 0.08089668615984405,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 57
+    },
+    {
+     "q": "Dec 2023",
+     "v": 57
+    },
+    {
+     "q": "Mar 2024",
+     "v": 56
+    },
+    {
+     "q": "Jun 2024",
+     "v": 72
+    },
+    {
+     "q": "Sep 2024",
+     "v": 75
+    },
+    {
+     "q": "Dec 2024",
+     "v": 76
+    },
+    {
+     "q": "Mar 2025",
+     "v": 72
+    },
+    {
+     "q": "Jun 2025",
+     "v": 92
+    },
+    {
+     "q": "Sep 2025",
+     "v": 97
+    },
+    {
+     "q": "Dec 2025",
+     "v": 100
+    },
+    {
+     "q": "Mar 2026",
+     "v": 102
+    },
+    {
+     "q": "Jun 2026",
+     "v": 163
+    },
+    {
+     "q": "Sep 2026",
+     "v": 88
+    }
+   ],
+   "fiiNow": 6.64,
+   "fiiYearAgo": 5.56,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "ATHERENERG": {
+   "sym": "ATHERENERG",
+   "slug": "ATHERENERG",
+   "name": "Ather Energy Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": 108,
+   "roce": -19.8,
+   "roe": -33.4,
+   "mcap": 78345,
+   "price": 1974,
+   "high52": 2020,
+   "low52": 589,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 115,
+   "sales3": 27,
+   "profit10": null,
+   "profit5": null,
+   "profit3": 12,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 42.33,
+   "basis": "standalone",
+   "borrowNow": 664,
+   "borrow3yAgo": 485,
+   "debtEquity": 0.2581648522550544,
+   "qProfit": [
+    {
+     "q": "Mar 2024",
+     "v": -283.3
+    },
+    {
+     "q": "Jun 2024",
+     "v": -182.9
+    },
+    {
+     "q": "Sep 2024",
+     "v": -197.2
+    },
+    {
+     "q": "Dec 2024",
+     "v": -197.8
+    },
+    {
+     "q": "Mar 2025",
+     "v": -234.36
+    },
+    {
+     "q": "Jun 2025",
+     "v": -178.23
+    },
+    {
+     "q": "Sep 2025",
+     "v": -154.07
+    },
+    {
+     "q": "Dec 2025",
+     "v": -84.64
+    },
+    {
+     "q": "Mar 2026",
+     "v": -100.23
+    },
+    {
+     "q": "Jun 2026",
+     "v": -50.87
+    },
+    {
+     "q": "Sep 2026",
+     "v": 1.5
+    }
+   ],
+   "fiiNow": 15.08,
+   "fiiYearAgo": 23.61,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "360ONE": {
+   "sym": "360ONE",
+   "slug": "360ONE",
+   "name": "360 ONE WAM Ltd",
+   "pe": 101,
+   "pb": null,
+   "bookValue": 186,
+   "roce": 6.89,
+   "roe": 6.09,
+   "mcap": 50328,
+   "price": 1175,
+   "high52": 1236,
+   "low52": 906,
+   "divYield": 1.15,
+   "sales10": 6,
+   "sales5": 0,
+   "sales3": 5,
+   "profit10": 14,
+   "profit5": -9,
+   "profit3": -7,
+   "priceCagr10": null,
+   "priceCagr5": 25,
+   "priceCagr3": 29,
+   "promoter": 5.88,
+   "basis": "consolidated",
+   "borrowNow": 1591,
+   "borrow3yAgo": 1231,
+   "debtEquity": 0.21401668011837505,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 219
+    },
+    {
+     "q": "Dec 2023",
+     "v": 143
+    },
+    {
+     "q": "Mar 2024",
+     "v": 201
+    },
+    {
+     "q": "Jun 2024",
+     "v": 27
+    },
+    {
+     "q": "Sep 2024",
+     "v": 159
+    },
+    {
+     "q": "Dec 2024",
+     "v": 79
+    },
+    {
+     "q": "Mar 2025",
+     "v": 70
+    },
+    {
+     "q": "Jun 2025",
+     "v": 112
+    },
+    {
+     "q": "Sep 2025",
+     "v": 34
+    },
+    {
+     "q": "Dec 2025",
+     "v": 0
+    },
+    {
+     "q": "Mar 2026",
+     "v": 248
+    },
+    {
+     "q": "Jun 2026",
+     "v": 83
+    },
+    {
+     "q": "Sep 2026",
+     "v": 167
+    }
+   ],
+   "fiiNow": 56,
+   "fiiYearAgo": 65.51,
+   "fiiLatestQ": "Oct 2026"
+  },
+  "ACEVECTOR": {
+   "sym": "ACEVECTOR",
+   "slug": "ACEVECTOR",
+   "name": "AceVector Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": null,
+   "roce": -32.2,
+   "roe": -36.2,
+   "mcap": 1160,
+   "price": 21.3,
+   "high52": 33.3,
+   "low52": 17.5,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": -7,
+   "sales3": null,
+   "profit10": null,
+   "profit5": 11,
+   "profit3": null,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 49.97,
+   "basis": "consolidated",
+   "borrowNow": 6,
+   "borrow3yAgo": null,
+   "debtEquity": 0.06451612903225806,
+   "qProfit": [
+    {
+     "q": "Jun 2025",
+     "v": -14
+    },
+    {
+     "q": "Sep 2025",
+     "v": 5
+    },
+    {
+     "q": "Mar 2026",
+     "v": -13
+    },
+    {
+     "q": "Jun 2026",
+     "v": -28
+    },
+    {
+     "q": "Sep 2026",
+     "v": -22
+    }
+   ],
+   "fiiNow": 18.96,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Oct 2026"
+  },
+  "ACMESOLAR": {
+   "sym": "ACMESOLAR",
+   "slug": "ACMESOLAR",
+   "name": "ACME Solar Holdings Ltd",
+   "pe": 43.3,
+   "pb": null,
+   "bookValue": 115,
+   "roce": 7.78,
+   "roe": 5.02,
+   "mcap": 28597,
+   "price": 405,
+   "high52": 477,
+   "low52": 196,
+   "divYield": 0.05,
+   "sales10": null,
+   "sales5": 84,
+   "sales3": 103,
+   "profit10": null,
+   "profit5": 40,
+   "profit3": 76,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 71.4,
+   "basis": "consolidated",
+   "borrowNow": 4260,
+   "borrow3yAgo": 1674,
+   "debtEquity": 0.8602584814216478,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 30
+    },
+    {
+     "q": "Dec 2023",
+     "v": 0
+    },
+    {
+     "q": "Mar 2024",
+     "v": 404
+    },
+    {
+     "q": "Jun 2024",
+     "v": 152
+    },
+    {
+     "q": "Sep 2024",
+     "v": 46
+    },
+    {
+     "q": "Dec 2024",
+     "v": 2
+    },
+    {
+     "q": "Mar 2025",
+     "v": -11
+    },
+    {
+     "q": "Jun 2025",
+     "v": 1
+    },
+    {
+     "q": "Sep 2025",
+     "v": 31
+    },
+    {
+     "q": "Dec 2025",
+     "v": 32
+    },
+    {
+     "q": "Mar 2026",
+     "v": 276
+    },
+    {
+     "q": "Jun 2026",
+     "v": 122
+    },
+    {
+     "q": "Sep 2026",
+     "v": 241
+    }
+   ],
+   "fiiNow": 6.44,
+   "fiiYearAgo": 5.57,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "AEQUS": {
+   "sym": "AEQUS",
+   "slug": "AEQUS",
+   "name": "Aequs Ltd",
+   "pe": 458,
+   "pb": null,
+   "bookValue": 28,
+   "roce": 3.24,
+   "roe": 2.39,
+   "mcap": 15922,
+   "price": 237,
+   "high52": 295,
+   "low52": 113,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": null,
+   "sales3": 21,
+   "profit10": null,
+   "profit5": null,
+   "profit3": 202,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 59.09,
+   "basis": "consolidated",
+   "borrowNow": 35,
+   "borrow3yAgo": 139,
+   "debtEquity": 0.01873661670235546,
+   "qProfit": [
+    {
+     "q": "Dec 2024",
+     "v": 1.96
+    },
+    {
+     "q": "Mar 2025",
+     "v": -80.59
+    },
+    {
+     "q": "Jun 2025",
+     "v": 3.85
+    },
+    {
+     "q": "Sep 2025",
+     "v": 0.17
+    },
+    {
+     "q": "Dec 2025",
+     "v": -6.38
+    },
+    {
+     "q": "Mar 2026",
+     "v": 52.16
+    },
+    {
+     "q": "Jun 2026",
+     "v": 4.07
+    },
+    {
+     "q": "Sep 2026",
+     "v": 1.79
+    }
+   ],
+   "fiiNow": 5.93,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "AFFLE": {
+   "sym": "AFFLE",
+   "slug": "AFFLE",
+   "name": "Affle 3i Ltd",
+   "pe": 137,
+   "pb": null,
+   "bookValue": 173,
+   "roce": 8.15,
+   "roe": 6.05,
+   "mcap": 22856,
+   "price": 1588,
+   "high52": 1829,
+   "low52": 1251,
+   "divYield": 0,
+   "sales10": 28,
+   "sales5": 27,
+   "sales3": 20,
+   "profit10": 37,
+   "profit5": 33,
+   "profit3": 21,
+   "priceCagr10": null,
+   "priceCagr5": 6,
+   "priceCagr3": 16,
+   "promoter": 55.82,
+   "basis": "consolidated",
+   "borrowNow": 3,
+   "borrow3yAgo": 1,
+   "debtEquity": 0.0014612761811982464,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 18
+    },
+    {
+     "q": "Dec 2023",
+     "v": 19
+    },
+    {
+     "q": "Mar 2024",
+     "v": 24
+    },
+    {
+     "q": "Jun 2024",
+     "v": 28
+    },
+    {
+     "q": "Sep 2024",
+     "v": 27
+    },
+    {
+     "q": "Dec 2024",
+     "v": 29
+    },
+    {
+     "q": "Mar 2025",
+     "v": 31
+    },
+    {
+     "q": "Jun 2025",
+     "v": 30
+    },
+    {
+     "q": "Sep 2025",
+     "v": 30
+    },
+    {
+     "q": "Dec 2025",
+     "v": 37
+    },
+    {
+     "q": "Mar 2026",
+     "v": 38
+    },
+    {
+     "q": "Jun 2026",
+     "v": 41
+    },
+    {
+     "q": "Sep 2026",
+     "v": 52
+    }
+   ],
+   "fiiNow": 14.23,
+   "fiiYearAgo": 17.79,
+   "fiiLatestQ": "Oct 2026"
+  },
+  "ALGOQUANT": {
+   "sym": "ALGOQUANT",
+   "slug": "ALGOQUANT",
+   "name": "Algoquant Fintech Ltd",
+   "pe": 53.7,
+   "pb": null,
+   "bookValue": 5.59,
+   "roce": 31.4,
+   "roe": 27.7,
+   "mcap": 2376,
+   "price": 84.5,
+   "high52": 86.8,
+   "low52": 47.8,
+   "divYield": 0,
+   "sales10": 24,
+   "sales5": 112,
+   "sales3": 160,
+   "profit10": 22,
+   "profit5": 67,
+   "profit3": 136,
+   "priceCagr10": 73,
+   "priceCagr5": 53,
+   "priceCagr3": 41,
+   "promoter": 73.68,
+   "basis": "standalone",
+   "borrowNow": 34,
+   "borrow3yAgo": 30,
+   "debtEquity": 0.2518518518518518,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 0.43
+    },
+    {
+     "q": "Dec 2023",
+     "v": 7.51
+    },
+    {
+     "q": "Mar 2024",
+     "v": 6.44
+    },
+    {
+     "q": "Jun 2024",
+     "v": 14.01
+    },
+    {
+     "q": "Sep 2024",
+     "v": 12.28
+    },
+    {
+     "q": "Dec 2024",
+     "v": 1.11
+    },
+    {
+     "q": "Mar 2025",
+     "v": 1.06
+    },
+    {
+     "q": "Jun 2025",
+     "v": 4.55
+    },
+    {
+     "q": "Sep 2025",
+     "v": 6.34
+    },
+    {
+     "q": "Dec 2025",
+     "v": 5.99
+    },
+    {
+     "q": "Mar 2026",
+     "v": 15.88
+    },
+    {
+     "q": "Jun 2026",
+     "v": 16.52
+    },
+    {
+     "q": "Sep 2026",
+     "v": 5.93
+    }
+   ],
+   "fiiNow": 0.76,
+   "fiiYearAgo": 0.61,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "ARE&M": {
+   "sym": "ARE&M",
+   "slug": "ARE&M",
+   "name": "Amara Raja Energy & Mobility Ltd",
+   "pe": 17.9,
+   "pb": null,
+   "bookValue": 462,
+   "roce": 13.4,
+   "roe": 9.99,
+   "mcap": 13598,
+   "price": 743,
+   "high52": 1017,
+   "low52": 670,
+   "divYield": 1.42,
+   "sales10": 11,
+   "sales5": 14,
+   "sales3": 9,
+   "profit10": 5,
+   "profit5": 4,
+   "profit3": 0,
+   "priceCagr10": -2,
+   "priceCagr5": 2,
+   "priceCagr3": 6,
+   "promoter": 32.86,
+   "basis": "standalone",
+   "borrowNow": 373,
+   "borrow3yAgo": 201,
+   "debtEquity": 0.04571078431372549,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 226
+    },
+    {
+     "q": "Dec 2023",
+     "v": 253
+    },
+    {
+     "q": "Mar 2024",
+     "v": 228
+    },
+    {
+     "q": "Jun 2024",
+     "v": 245
+    },
+    {
+     "q": "Sep 2024",
+     "v": 241
+    },
+    {
+     "q": "Dec 2024",
+     "v": 312
+    },
+    {
+     "q": "Mar 2025",
+     "v": 167
+    },
+    {
+     "q": "Jun 2025",
+     "v": 194
+    },
+    {
+     "q": "Sep 2025",
+     "v": 302
+    },
+    {
+     "q": "Dec 2025",
+     "v": 152
+    },
+    {
+     "q": "Mar 2026",
+     "v": 322
+    },
+    {
+     "q": "Jun 2026",
+     "v": 203
+    },
+    {
+     "q": "Sep 2026",
+     "v": 188
+    }
+   ],
+   "fiiNow": 17.24,
+   "fiiYearAgo": 17.97,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "ANGELONE": {
+   "sym": "ANGELONE",
+   "slug": "ANGELONE",
+   "name": "Angel One Ltd",
+   "pe": 24.6,
+   "pb": null,
+   "bookValue": 74.6,
+   "roce": 15.6,
+   "roe": 17.3,
+   "mcap": 31800,
+   "price": 348,
+   "high52": 360,
+   "low52": 209,
+   "divYield": 1.16,
+   "sales10": 30,
+   "sales5": 32,
+   "sales3": 19,
+   "profit10": 45,
+   "profit5": 29,
+   "profit3": 5,
+   "priceCagr10": null,
+   "priceCagr5": 23,
+   "priceCagr3": 6,
+   "promoter": 28.55,
+   "basis": "consolidated",
+   "borrowNow": 7938,
+   "borrow3yAgo": 788,
+   "debtEquity": 1.2799097065462754,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 305
+    },
+    {
+     "q": "Dec 2023",
+     "v": 263
+    },
+    {
+     "q": "Mar 2024",
+     "v": 346
+    },
+    {
+     "q": "Jun 2024",
+     "v": 297
+    },
+    {
+     "q": "Sep 2024",
+     "v": 437
+    },
+    {
+     "q": "Dec 2024",
+     "v": 301
+    },
+    {
+     "q": "Mar 2025",
+     "v": 180
+    },
+    {
+     "q": "Jun 2025",
+     "v": 134
+    },
+    {
+     "q": "Sep 2025",
+     "v": 236
+    },
+    {
+     "q": "Dec 2025",
+     "v": 301
+    },
+    {
+     "q": "Mar 2026",
+     "v": 351
+    },
+    {
+     "q": "Jun 2026",
+     "v": 271
+    },
+    {
+     "q": "Sep 2026",
+     "v": 367
+    }
+   ],
+   "fiiNow": 12.51,
+   "fiiYearAgo": 13.11,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "AQYLON": {
+   "sym": "AQYLON",
+   "slug": "AQYLON",
+   "name": "Aqylon Nexus Ltd",
+   "pe": 35.6,
+   "pb": null,
+   "bookValue": 0.09,
+   "roce": 1.88,
+   "roe": null,
+   "mcap": 269,
+   "price": 10.6,
+   "high52": 226,
+   "low52": 10.6,
+   "divYield": 0,
+   "sales10": -19,
+   "sales5": null,
+   "sales3": null,
+   "profit10": null,
+   "profit5": 13,
+   "profit3": 22,
+   "priceCagr10": -8,
+   "priceCagr5": 124,
+   "priceCagr3": 307,
+   "promoter": 37.25,
+   "basis": "standalone",
+   "borrowNow": 18.05,
+   "borrow3yAgo": 2.36,
+   "debtEquity": null,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -5.41
+    },
+    {
+     "q": "Dec 2023",
+     "v": -5.3
+    },
+    {
+     "q": "Mar 2024",
+     "v": -5.61
+    },
+    {
+     "q": "Jun 2024",
+     "v": 0.06
+    },
+    {
+     "q": "Sep 2024",
+     "v": 0.17
+    },
+    {
+     "q": "Dec 2024",
+     "v": -22.73
+    },
+    {
+     "q": "Mar 2025",
+     "v": 0.12
+    },
+    {
+     "q": "Jun 2025",
+     "v": -1.84
+    },
+    {
+     "q": "Sep 2025",
+     "v": 14.11
+    },
+    {
+     "q": "Dec 2025",
+     "v": 1.48
+    },
+    {
+     "q": "Mar 2026",
+     "v": -7.99
+    },
+    {
+     "q": "Jun 2026",
+     "v": 4.26
+    },
+    {
+     "q": "Sep 2026",
+     "v": 3.64
+    }
+   ],
+   "fiiNow": 10.01,
+   "fiiYearAgo": 0,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "ARCIL": {
+   "sym": "ARCIL",
+   "slug": "ARCIL",
+   "name": "Asset Reconstruction Company (India) Ltd",
+   "pe": 9.99,
+   "pb": null,
+   "bookValue": null,
+   "roce": 15.9,
+   "roe": 14,
+   "mcap": 4344,
+   "price": 134,
+   "high52": 165,
+   "low52": 115,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 35,
+   "sales3": 18,
+   "profit10": null,
+   "profit5": 46,
+   "profit3": 19,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 77.46,
+   "basis": "consolidated",
+   "borrowNow": 1206,
+   "borrow3yAgo": 118,
+   "debtEquity": 0.3916856122117571,
+   "qProfit": [
+    {
+     "q": "Jun 2025",
+     "v": 69
+    },
+    {
+     "q": "Sep 2025",
+     "v": 120
+    },
+    {
+     "q": "Mar 2026",
+     "v": 118
+    },
+    {
+     "q": "Jun 2026",
+     "v": 143
+    },
+    {
+     "q": "Sep 2026",
+     "v": 147
+    }
+   ],
+   "fiiNow": 6.73,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "AIIL": {
+   "sym": "AIIL",
+   "slug": "AIIL",
+   "name": "Authum Investment & Infrastructure Ltd",
+   "pe": 26.9,
+   "pb": null,
+   "bookValue": 219,
+   "roce": 13.6,
+   "roe": 13.2,
+   "mcap": 47650,
+   "price": 561,
+   "high52": 684,
+   "low52": 400,
+   "divYield": 0.02,
+   "sales10": 23,
+   "sales5": 58,
+   "sales3": 89,
+   "profit10": 109,
+   "profit5": 70,
+   "profit3": 100,
+   "priceCagr10": 109,
+   "priceCagr5": 77,
+   "priceCagr3": 59,
+   "promoter": 68.81,
+   "basis": "standalone",
+   "borrowNow": null,
+   "borrow3yAgo": null,
+   "debtEquity": null,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 788
+    },
+    {
+     "q": "Dec 2023",
+     "v": 603
+    },
+    {
+     "q": "Mar 2024",
+     "v": 1498
+    },
+    {
+     "q": "Jun 2024",
+     "v": 1093
+    },
+    {
+     "q": "Sep 2024",
+     "v": 844
+    },
+    {
+     "q": "Dec 2024",
+     "v": 545
+    },
+    {
+     "q": "Mar 2025",
+     "v": 1766
+    },
+    {
+     "q": "Jun 2025",
+     "v": 941
+    },
+    {
+     "q": "Sep 2025",
+     "v": 765
+    },
+    {
+     "q": "Dec 2025",
+     "v": 168
+    },
+    {
+     "q": "Mar 2026",
+     "v": 46
+    },
+    {
+     "q": "Jun 2026",
+     "v": 1115
+    },
+    {
+     "q": "Sep 2026",
+     "v": 445
+    }
+   ],
+   "fiiNow": 14.37,
+   "fiiYearAgo": 14.11,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "AVANCE": {
+   "sym": "AVANCE",
+   "slug": "AVANCE",
+   "name": "Avance Technologies Ltd",
+   "pe": 11.2,
+   "pb": null,
+   "bookValue": 1.96,
+   "roce": 3.46,
+   "roe": 3.3,
+   "mcap": 137,
+   "price": 0.69,
+   "high52": 2.17,
+   "low52": 0.54,
+   "divYield": 0,
+   "sales10": 0,
+   "sales5": 379,
+   "sales3": 49,
+   "profit10": 62,
+   "profit5": 263,
+   "profit3": 213,
+   "priceCagr10": 9,
+   "priceCagr5": null,
+   "priceCagr3": 10,
+   "promoter": 0.68,
+   "basis": "consolidated",
+   "borrowNow": 0,
+   "borrow3yAgo": 0,
+   "debtEquity": 0,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 0.69
+    },
+    {
+     "q": "Dec 2023",
+     "v": 0.14
+    },
+    {
+     "q": "Mar 2024",
+     "v": 1.07
+    },
+    {
+     "q": "Jun 2024",
+     "v": 0.4
+    },
+    {
+     "q": "Sep 2024",
+     "v": 1.94
+    },
+    {
+     "q": "Dec 2024",
+     "v": 0.11
+    },
+    {
+     "q": "Mar 2025",
+     "v": -0.38
+    },
+    {
+     "q": "Jun 2025",
+     "v": 0.54
+    },
+    {
+     "q": "Sep 2025",
+     "v": 0.88
+    },
+    {
+     "q": "Dec 2025",
+     "v": 0.9
+    },
+    {
+     "q": "Mar 2026",
+     "v": 10.27
+    },
+    {
+     "q": "Jun 2026",
+     "v": 0.28
+    },
+    {
+     "q": "Sep 2026",
+     "v": 0.82
+    }
+   ],
+   "fiiNow": null,
+   "fiiYearAgo": null,
+   "fiiLatestQ": null
+  },
+  "AVANTEL": {
+   "sym": "AVANTEL",
+   "slug": "AVANTEL",
+   "name": "Avantel Ltd",
+   "pe": 156,
+   "pb": null,
+   "bookValue": 13.9,
+   "roce": 11.5,
+   "roe": 7.53,
+   "mcap": 4316,
+   "price": 162,
+   "high52": 198,
+   "low52": 117,
+   "divYield": 0.12,
+   "sales10": 25,
+   "sales5": 23,
+   "sales3": 13,
+   "profit10": 44,
+   "profit5": 8,
+   "profit3": -9,
+   "priceCagr10": 59,
+   "priceCagr5": 67,
+   "priceCagr3": 15,
+   "promoter": 36.85,
+   "basis": "consolidated",
+   "borrowNow": 34,
+   "borrow3yAgo": 30,
+   "debtEquity": 0.09550561797752809,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 16.71
+    },
+    {
+     "q": "Dec 2023",
+     "v": 16.97
+    },
+    {
+     "q": "Mar 2024",
+     "v": 13.08
+    },
+    {
+     "q": "Jun 2024",
+     "v": 8.08
+    },
+    {
+     "q": "Sep 2024",
+     "v": 23.57
+    },
+    {
+     "q": "Dec 2024",
+     "v": 20.9
+    },
+    {
+     "q": "Mar 2025",
+     "v": 7.36
+    },
+    {
+     "q": "Jun 2025",
+     "v": 4.62
+    },
+    {
+     "q": "Sep 2025",
+     "v": 6.17
+    },
+    {
+     "q": "Dec 2025",
+     "v": 4.66
+    },
+    {
+     "q": "Mar 2026",
+     "v": 7.05
+    },
+    {
+     "q": "Jun 2026",
+     "v": 7.62
+    },
+    {
+     "q": "Sep 2026",
+     "v": 8.35
+    }
+   ],
+   "fiiNow": 0.38,
+   "fiiYearAgo": 0.66,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "CCAVENUE": {
+   "sym": "CCAVENUE",
+   "slug": "CCAVENUE",
+   "name": "AvenuesAI Ltd",
+   "pe": 41.9,
+   "pb": null,
+   "bookValue": 122,
+   "roce": 3.43,
+   "roe": 4.07,
+   "mcap": 4240,
+   "price": 122,
+   "high52": 205,
+   "low52": 114,
+   "divYield": 0,
+   "sales10": 68,
+   "sales5": 67,
+   "sales3": 62,
+   "profit10": 14,
+   "profit5": 26,
+   "profit3": 10,
+   "priceCagr10": -5,
+   "priceCagr5": -8,
+   "priceCagr3": -12,
+   "promoter": 27.34,
+   "basis": "consolidated",
+   "borrowNow": 18,
+   "borrow3yAgo": 8,
+   "debtEquity": 0.004282655246252677,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 37
+    },
+    {
+     "q": "Dec 2023",
+     "v": 46
+    },
+    {
+     "q": "Mar 2024",
+     "v": 40
+    },
+    {
+     "q": "Jun 2024",
+     "v": 36
+    },
+    {
+     "q": "Sep 2024",
+     "v": 36
+    },
+    {
+     "q": "Dec 2024",
+     "v": 45
+    },
+    {
+     "q": "Mar 2025",
+     "v": 42
+    },
+    {
+     "q": "Jun 2025",
+     "v": 44
+    },
+    {
+     "q": "Sep 2025",
+     "v": 59
+    },
+    {
+     "q": "Dec 2025",
+     "v": 25
+    },
+    {
+     "q": "Mar 2026",
+     "v": 27
+    },
+    {
+     "q": "Jun 2026",
+     "v": 25
+    },
+    {
+     "q": "Sep 2026",
+     "v": 25
+    }
+   ],
+   "fiiNow": 5.85,
+   "fiiYearAgo": 5.91,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "BAJAJHLDNG": {
+   "sym": "BAJAJHLDNG",
+   "slug": "BAJAJHLDNG",
+   "name": "Bajaj Holdings & Investment Ltd",
+   "pe": 55.8,
+   "pb": null,
+   "bookValue": 2238,
+   "roce": 12.8,
+   "roe": 11.1,
+   "mcap": 125045,
+   "price": 11236,
+   "high52": 12979,
+   "low52": 8588,
+   "divYield": 1.29,
+   "sales10": 9,
+   "sales5": 50,
+   "sales3": 18,
+   "profit10": 7,
+   "profit5": 67,
+   "profit3": 15,
+   "priceCagr10": 19,
+   "priceCagr5": 18,
+   "priceCagr3": 15,
+   "promoter": 51.46,
+   "basis": "consolidated",
+   "borrowNow": 10,
+   "borrow3yAgo": 93,
+   "debtEquity": 0.00036620646720621084,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 1571
+    },
+    {
+     "q": "Dec 2023",
+     "v": 66
+    },
+    {
+     "q": "Mar 2024",
+     "v": 1204
+    },
+    {
+     "q": "Jun 2024",
+     "v": 66
+    },
+    {
+     "q": "Sep 2024",
+     "v": 1051
+    },
+    {
+     "q": "Dec 2024",
+     "v": 84
+    },
+    {
+     "q": "Mar 2025",
+     "v": 91
+    },
+    {
+     "q": "Jun 2025",
+     "v": 2036
+    },
+    {
+     "q": "Sep 2025",
+     "v": 2181
+    },
+    {
+     "q": "Dec 2025",
+     "v": 181
+    },
+    {
+     "q": "Mar 2026",
+     "v": 310
+    },
+    {
+     "q": "Jun 2026",
+     "v": 344
+    },
+    {
+     "q": "Sep 2026",
+     "v": 1404
+    }
+   ],
+   "fiiNow": 9.57,
+   "fiiYearAgo": 10.33,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "BELRISE": {
+   "sym": "BELRISE",
+   "slug": "BELRISE",
+   "name": "Belrise Industries Ltd",
+   "pe": 44.1,
+   "pb": null,
+   "bookValue": 72,
+   "roce": 13.8,
+   "roe": 12.6,
+   "mcap": 23323,
+   "price": 241,
+   "high52": 268,
+   "low52": 154,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 13,
+   "sales3": 12,
+   "profit10": null,
+   "profit5": 23,
+   "profit3": 22,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 61.14,
+   "basis": "standalone",
+   "borrowNow": 1237,
+   "borrow3yAgo": 2353,
+   "debtEquity": 0.2433123524783635,
+   "qProfit": [
+    {
+     "q": "Mar 2024",
+     "v": 49
+    },
+    {
+     "q": "Jun 2024",
+     "v": 66
+    },
+    {
+     "q": "Sep 2024",
+     "v": 65
+    },
+    {
+     "q": "Dec 2024",
+     "v": 91
+    },
+    {
+     "q": "Mar 2025",
+     "v": 110
+    },
+    {
+     "q": "Jun 2025",
+     "v": 103
+    },
+    {
+     "q": "Sep 2025",
+     "v": 123
+    },
+    {
+     "q": "Dec 2025",
+     "v": 117
+    },
+    {
+     "q": "Mar 2026",
+     "v": 136
+    },
+    {
+     "q": "Jun 2026",
+     "v": 114
+    },
+    {
+     "q": "Sep 2026",
+     "v": 159
+    }
+   ],
+   "fiiNow": 12.13,
+   "fiiYearAgo": 7.67,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "BEML": {
+   "sym": "BEML",
+   "slug": "BEML",
+   "name": "BEML Ltd",
+   "pe": 106,
+   "pb": null,
+   "bookValue": 342,
+   "roce": 7.92,
+   "roe": 5.1,
+   "mcap": 17196,
+   "price": 2065,
+   "high52": 2236,
+   "low52": 1355,
+   "divYield": 0.83,
+   "sales10": 4,
+   "sales5": 4,
+   "sales3": 4,
+   "profit10": 9,
+   "profit5": 15,
+   "profit3": -1,
+   "priceCagr10": 20,
+   "priceCagr5": 26,
+   "priceCagr3": 22,
+   "promoter": 54.03,
+   "basis": "consolidated",
+   "borrowNow": 309,
+   "borrow3yAgo": 381,
+   "debtEquity": 0.10622206943966998,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 52
+    },
+    {
+     "q": "Dec 2023",
+     "v": 48
+    },
+    {
+     "q": "Mar 2024",
+     "v": 257
+    },
+    {
+     "q": "Jun 2024",
+     "v": -70
+    },
+    {
+     "q": "Sep 2024",
+     "v": 51
+    },
+    {
+     "q": "Dec 2024",
+     "v": 25
+    },
+    {
+     "q": "Mar 2025",
+     "v": 288
+    },
+    {
+     "q": "Jun 2025",
+     "v": -64
+    },
+    {
+     "q": "Sep 2025",
+     "v": 55
+    },
+    {
+     "q": "Dec 2025",
+     "v": -23
+    },
+    {
+     "q": "Mar 2026",
+     "v": 179
+    },
+    {
+     "q": "Jun 2026",
+     "v": -27
+    },
+    {
+     "q": "Sep 2026",
+     "v": 33
+    }
+   ],
+   "fiiNow": 5.27,
+   "fiiYearAgo": 5.82,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "BDL": {
+   "sym": "BDL",
+   "slug": "BDL",
+   "name": "Bharat Dynamics Ltd",
+   "pe": 77.4,
+   "pb": null,
+   "bookValue": 124,
+   "roce": 13.9,
+   "roe": 10.2,
+   "mcap": 37774,
+   "price": 1030,
+   "high52": 1630,
+   "low52": 974,
+   "divYield": 0.48,
+   "sales10": -5,
+   "sales5": 5,
+   "sales3": -1,
+   "profit10": -3,
+   "profit5": 10,
+   "profit3": 6,
+   "priceCagr10": null,
+   "priceCagr5": 37,
+   "priceCagr3": 22,
+   "promoter": 74.93,
+   "basis": "standalone",
+   "borrowNow": 5,
+   "borrow3yAgo": 9,
+   "debtEquity": 0.001178967224711153,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 147
+    },
+    {
+     "q": "Dec 2023",
+     "v": 135
+    },
+    {
+     "q": "Mar 2024",
+     "v": 289
+    },
+    {
+     "q": "Jun 2024",
+     "v": 7
+    },
+    {
+     "q": "Sep 2024",
+     "v": 123
+    },
+    {
+     "q": "Dec 2024",
+     "v": 147
+    },
+    {
+     "q": "Mar 2025",
+     "v": 273
+    },
+    {
+     "q": "Jun 2025",
+     "v": 18
+    },
+    {
+     "q": "Sep 2025",
+     "v": 216
+    },
+    {
+     "q": "Dec 2025",
+     "v": 73
+    },
+    {
+     "q": "Mar 2026",
+     "v": 113
+    },
+    {
+     "q": "Jun 2026",
+     "v": 119
+    },
+    {
+     "q": "Sep 2026",
+     "v": 183
+    }
+   ],
+   "fiiNow": 1.76,
+   "fiiYearAgo": 2.43,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "BEL": {
+   "sym": "BEL",
+   "slug": "BEL",
+   "name": "Bharat Electronics Ltd",
+   "pe": 45.9,
+   "pb": null,
+   "bookValue": 35.5,
+   "roce": 37,
+   "roe": 27.8,
+   "mcap": 292830,
+   "price": 401,
+   "high52": 473,
+   "low52": 355,
+   "divYield": 0.62,
+   "sales10": 14,
+   "sales5": 14,
+   "sales3": 16,
+   "profit10": 17,
+   "profit5": 24,
+   "profit3": 26,
+   "priceCagr10": 26,
+   "priceCagr5": 41,
+   "priceCagr3": 40,
+   "promoter": 51.14,
+   "basis": "consolidated",
+   "borrowNow": 65,
+   "borrow3yAgo": 61,
+   "debtEquity": 0.002742847497679129,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 812
+    },
+    {
+     "q": "Dec 2023",
+     "v": 893
+    },
+    {
+     "q": "Mar 2024",
+     "v": 1784
+    },
+    {
+     "q": "Jun 2024",
+     "v": 776
+    },
+    {
+     "q": "Sep 2024",
+     "v": 1091
+    },
+    {
+     "q": "Dec 2024",
+     "v": 1316
+    },
+    {
+     "q": "Mar 2025",
+     "v": 2105
+    },
+    {
+     "q": "Jun 2025",
+     "v": 969
+    },
+    {
+     "q": "Sep 2025",
+     "v": 1286
+    },
+    {
+     "q": "Dec 2025",
+     "v": 1590
+    },
+    {
+     "q": "Mar 2026",
+     "v": 2203
+    },
+    {
+     "q": "Jun 2026",
+     "v": 1048
+    },
+    {
+     "q": "Sep 2026",
+     "v": 1541
+    }
+   ],
+   "fiiNow": 16.99,
+   "fiiYearAgo": 18.14,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "BHARTIARTL": {
+   "sym": "BHARTIARTL",
+   "slug": "BHARTIARTL",
+   "name": "Bharti Airtel Ltd",
+   "pe": 65.3,
+   "pb": null,
+   "bookValue": 300,
+   "roce": 12.7,
+   "roe": 10.7,
+   "mcap": 1345817,
+   "price": 2156,
+   "high52": 2175,
+   "low52": 1726,
+   "divYield": 1.12,
+   "sales10": 7,
+   "sales5": 14,
+   "sales3": 13,
+   "profit10": 7,
+   "profit5": 25,
+   "profit3": 235,
+   "priceCagr10": 23,
+   "priceCagr5": 24,
+   "priceCagr3": 31,
+   "promoter": 50.07,
+   "basis": "consolidated",
+   "borrowNow": 144138,
+   "borrow3yAgo": 181696,
+   "debtEquity": 0.8978602796897873,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 293
+    },
+    {
+     "q": "Dec 2023",
+     "v": 1414
+    },
+    {
+     "q": "Mar 2024",
+     "v": 1824
+    },
+    {
+     "q": "Jun 2024",
+     "v": 2469
+    },
+    {
+     "q": "Sep 2024",
+     "v": 2518
+    },
+    {
+     "q": "Dec 2024",
+     "v": 9197
+    },
+    {
+     "q": "Mar 2025",
+     "v": 9318
+    },
+    {
+     "q": "Jun 2025",
+     "v": 3764
+    },
+    {
+     "q": "Sep 2025",
+     "v": 4545
+    },
+    {
+     "q": "Dec 2025",
+     "v": 4091
+    },
+    {
+     "q": "Mar 2026",
+     "v": 1344
+    },
+    {
+     "q": "Jun 2026",
+     "v": 5428
+    },
+    {
+     "q": "Sep 2026",
+     "v": 7933
+    }
+   ],
+   "fiiNow": 25.44,
+   "fiiYearAgo": 27.42,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "BHARTIHEXA": {
+   "sym": "BHARTIHEXA",
+   "slug": "BHARTIHEXA",
+   "name": "Bharti Hexacom Ltd",
+   "pe": 43.2,
+   "pb": null,
+   "bookValue": 146,
+   "roce": 21.4,
+   "roe": 26.2,
+   "mcap": 85928,
+   "price": 1719,
+   "high52": 1860,
+   "low52": 1359,
+   "divYield": 1.06,
+   "sales10": null,
+   "sales5": 15,
+   "sales3": 12,
+   "profit10": null,
+   "profit5": 35,
+   "profit3": 46,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 70,
+   "basis": "standalone",
+   "borrowNow": 6137,
+   "borrow3yAgo": 9204,
+   "debtEquity": 0.8565247732030705,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -184
+    },
+    {
+     "q": "Dec 2023",
+     "v": 213
+    },
+    {
+     "q": "Mar 2024",
+     "v": 223
+    },
+    {
+     "q": "Jun 2024",
+     "v": 511
+    },
+    {
+     "q": "Sep 2024",
+     "v": 253
+    },
+    {
+     "q": "Dec 2024",
+     "v": 261
+    },
+    {
+     "q": "Mar 2025",
+     "v": 468
+    },
+    {
+     "q": "Jun 2025",
+     "v": 392
+    },
+    {
+     "q": "Sep 2025",
+     "v": 421
+    },
+    {
+     "q": "Dec 2025",
+     "v": 474
+    },
+    {
+     "q": "Mar 2026",
+     "v": 447
+    },
+    {
+     "q": "Jun 2026",
+     "v": 482
+    },
+    {
+     "q": "Sep 2026",
+     "v": 566
+    }
+   ],
+   "fiiNow": 3.25,
+   "fiiYearAgo": 3.94,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "GROWW": {
+   "sym": "GROWW",
+   "slug": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd",
+   "pe": 66.5,
+   "pb": null,
+   "bookValue": 15.2,
+   "roce": 35.1,
+   "roe": 26.4,
+   "mcap": 140842,
+   "price": 224,
+   "high52": 229,
+   "low52": 142,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": null,
+   "sales3": 49,
+   "profit10": null,
+   "profit5": null,
+   "profit3": 59,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 27.14,
+   "basis": "consolidated",
+   "borrowNow": 46,
+   "borrow3yAgo": 73,
+   "debtEquity": 0.005503050604139251,
+   "qProfit": [
+    {
+     "q": "Sep 2024",
+     "v": 330
+    },
+    {
+     "q": "Dec 2024",
+     "v": 677
+    },
+    {
+     "q": "Mar 2025",
+     "v": 251
+    },
+    {
+     "q": "Jun 2025",
+     "v": 306
+    },
+    {
+     "q": "Sep 2025",
+     "v": 354
+    },
+    {
+     "q": "Dec 2025",
+     "v": 428
+    },
+    {
+     "q": "Mar 2026",
+     "v": 541
+    },
+    {
+     "q": "Jun 2026",
+     "v": 555
+    },
+    {
+     "q": "Sep 2026",
+     "v": 592
+    }
+   ],
+   "fiiNow": 10.9,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "BSOFT": {
+   "sym": "BSOFT",
+   "slug": "BSOFT",
+   "name": "Birlasoft Ltd",
+   "pe": 19.3,
+   "pb": null,
+   "bookValue": 70.3,
+   "roce": 23.8,
+   "roe": 18.6,
+   "mcap": 8913,
+   "price": 319,
+   "high52": 474,
+   "low52": 267,
+   "divYield": 2.06,
+   "sales10": 8,
+   "sales5": 11,
+   "sales3": 5,
+   "profit10": 5,
+   "profit5": 11,
+   "profit3": 18,
+   "priceCagr10": 15,
+   "priceCagr5": -7,
+   "priceCagr3": -20,
+   "promoter": 40.37,
+   "basis": "consolidated",
+   "borrowNow": 104,
+   "borrow3yAgo": 89,
+   "debtEquity": 0.05803571428571429,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 97
+    },
+    {
+     "q": "Dec 2023",
+     "v": 86
+    },
+    {
+     "q": "Mar 2024",
+     "v": 69
+    },
+    {
+     "q": "Jun 2024",
+     "v": 108
+    },
+    {
+     "q": "Sep 2024",
+     "v": 52
+    },
+    {
+     "q": "Dec 2024",
+     "v": 58
+    },
+    {
+     "q": "Mar 2025",
+     "v": 80
+    },
+    {
+     "q": "Jun 2025",
+     "v": 37
+    },
+    {
+     "q": "Sep 2025",
+     "v": 101
+    },
+    {
+     "q": "Dec 2025",
+     "v": 66
+    },
+    {
+     "q": "Mar 2026",
+     "v": 99
+    },
+    {
+     "q": "Jun 2026",
+     "v": 147
+    },
+    {
+     "q": "Sep 2026",
+     "v": 120
+    }
+   ],
+   "fiiNow": 12.33,
+   "fiiYearAgo": 11.25,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "BBOX": {
+   "sym": "BBOX",
+   "slug": "BBOX",
+   "name": "Black Box Ltd",
+   "pe": 939,
+   "pb": null,
+   "bookValue": 38.5,
+   "roce": 4.38,
+   "roe": 3.78,
+   "mcap": 15698,
+   "price": 884,
+   "high52": 1104,
+   "low52": 444,
+   "divYield": 0.11,
+   "sales10": 3,
+   "sales5": 10,
+   "sales3": 4,
+   "profit10": 10,
+   "profit5": 107,
+   "profit3": 74,
+   "priceCagr10": 50,
+   "priceCagr5": 37,
+   "priceCagr3": 54,
+   "promoter": 69.95,
+   "basis": "consolidated",
+   "borrowNow": 43,
+   "borrow3yAgo": 55,
+   "debtEquity": 0.06134094151212553,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -3.73
+    },
+    {
+     "q": "Dec 2023",
+     "v": 3.49
+    },
+    {
+     "q": "Mar 2024",
+     "v": -14.24
+    },
+    {
+     "q": "Jun 2024",
+     "v": -2.58
+    },
+    {
+     "q": "Sep 2024",
+     "v": -2.47
+    },
+    {
+     "q": "Dec 2024",
+     "v": 1.46
+    },
+    {
+     "q": "Mar 2025",
+     "v": 15.47
+    },
+    {
+     "q": "Jun 2025",
+     "v": 1.16
+    },
+    {
+     "q": "Sep 2025",
+     "v": 3.23
+    },
+    {
+     "q": "Dec 2025",
+     "v": -1.34
+    },
+    {
+     "q": "Mar 2026",
+     "v": 15.18
+    },
+    {
+     "q": "Jun 2026",
+     "v": -2.4
+    },
+    {
+     "q": "Sep 2026",
+     "v": 1.92
+    }
+   ],
+   "fiiNow": 3.78,
+   "fiiYearAgo": 4.22,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "BLS": {
+   "sym": "BLS",
+   "slug": "BLS",
+   "name": "BLS International Services Ltd",
+   "pe": 59.7,
+   "pb": null,
+   "bookValue": 3.22,
+   "roce": 58.9,
+   "roe": 102,
+   "mcap": 9303,
+   "price": 226,
+   "high52": 340,
+   "low52": 203,
+   "divYield": 1.09,
+   "sales10": 29,
+   "sales5": 60,
+   "sales3": 34,
+   "profit10": 56,
+   "profit5": 38,
+   "profit3": 43,
+   "priceCagr10": 18,
+   "priceCagr5": 34,
+   "priceCagr3": -5,
+   "promoter": 70.42,
+   "basis": "consolidated",
+   "borrowNow": 116,
+   "borrow3yAgo": 1,
+   "debtEquity": 1.2608695652173914,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 15
+    },
+    {
+     "q": "Dec 2023",
+     "v": 5
+    },
+    {
+     "q": "Mar 2024",
+     "v": 15
+    },
+    {
+     "q": "Jun 2024",
+     "v": 1
+    },
+    {
+     "q": "Sep 2024",
+     "v": 19
+    },
+    {
+     "q": "Dec 2024",
+     "v": 0
+    },
+    {
+     "q": "Mar 2025",
+     "v": 2
+    },
+    {
+     "q": "Jun 2025",
+     "v": 1
+    },
+    {
+     "q": "Sep 2025",
+     "v": 5
+    },
+    {
+     "q": "Dec 2025",
+     "v": 25
+    },
+    {
+     "q": "Mar 2026",
+     "v": 72
+    },
+    {
+     "q": "Jun 2026",
+     "v": 45
+    },
+    {
+     "q": "Sep 2026",
+     "v": 14
+    }
+   ],
+   "fiiNow": 3.88,
+   "fiiYearAgo": 6.82,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "BLUECLOUDS": {
+   "sym": "BLUECLOUDS",
+   "slug": "BLUECLOUDS",
+   "name": "Blue Cloud Softech Solutions Ltd",
+   "pe": 39.3,
+   "pb": null,
+   "bookValue": 13.8,
+   "roce": 13.4,
+   "roe": 8.91,
+   "mcap": 1527,
+   "price": 16.6,
+   "high52": 28.2,
+   "low52": 16,
+   "divYield": 0,
+   "sales10": 92,
+   "sales5": 466,
+   "sales3": 180,
+   "profit10": 101,
+   "profit5": 435,
+   "profit3": 305,
+   "priceCagr10": 18,
+   "priceCagr5": 26,
+   "priceCagr3": -26,
+   "promoter": 31.36,
+   "basis": "consolidated",
+   "borrowNow": 18,
+   "borrow3yAgo": 0,
+   "debtEquity": 0.02040816326530612,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 1
+    },
+    {
+     "q": "Dec 2023",
+     "v": 1
+    },
+    {
+     "q": "Mar 2024",
+     "v": 3
+    },
+    {
+     "q": "Jun 2024",
+     "v": 8
+    },
+    {
+     "q": "Sep 2024",
+     "v": 9
+    },
+    {
+     "q": "Dec 2024",
+     "v": 9
+    },
+    {
+     "q": "Mar 2025",
+     "v": 11
+    },
+    {
+     "q": "Jun 2025",
+     "v": 13
+    },
+    {
+     "q": "Sep 2025",
+     "v": 14
+    },
+    {
+     "q": "Dec 2025",
+     "v": 12
+    },
+    {
+     "q": "Mar 2026",
+     "v": 5
+    },
+    {
+     "q": "Jun 2026",
+     "v": 12
+    },
+    {
+     "q": "Sep 2026",
+     "v": 10
+    }
+   ],
+   "fiiNow": 10.89,
+   "fiiYearAgo": 22.94,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "BCG": {
+   "sym": "BCG",
+   "slug": "BCG",
+   "name": "Brightcom Group Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": 7.83,
+   "roce": 0.02,
+   "roe": 0,
+   "mcap": 1816,
+   "price": 9,
+   "high52": 15.1,
+   "low52": 7.7,
+   "divYield": 0,
+   "sales10": -1,
+   "sales5": 3,
+   "sales3": 0,
+   "profit10": 7,
+   "profit5": -63,
+   "profit3": -81,
+   "priceCagr10": 10,
+   "priceCagr5": -32,
+   "priceCagr3": -18,
+   "promoter": 18.35,
+   "basis": "consolidated",
+   "borrowNow": 125,
+   "borrow3yAgo": 108,
+   "debtEquity": 0.07911392405063292,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 0.63
+    },
+    {
+     "q": "Dec 2023",
+     "v": 0.01
+    },
+    {
+     "q": "Mar 2024",
+     "v": -9.42
+    },
+    {
+     "q": "Jun 2024",
+     "v": 0.05
+    },
+    {
+     "q": "Sep 2024",
+     "v": 0.07
+    },
+    {
+     "q": "Dec 2024",
+     "v": 0.06
+    },
+    {
+     "q": "Mar 2025",
+     "v": -0.13
+    },
+    {
+     "q": "Jun 2025",
+     "v": 0.06
+    },
+    {
+     "q": "Sep 2025",
+     "v": 0.23
+    },
+    {
+     "q": "Dec 2025",
+     "v": 0.05
+    },
+    {
+     "q": "Mar 2026",
+     "v": -0.28
+    },
+    {
+     "q": "Jun 2026",
+     "v": 0.06
+    },
+    {
+     "q": "Sep 2026",
+     "v": 0.08
+    }
+   ],
+   "fiiNow": 1.49,
+   "fiiYearAgo": 1.59,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "BSE": {
+   "sym": "BSE",
+   "slug": "BSE",
+   "name": "BSE Ltd",
+   "pe": 54.6,
+   "pb": null,
+   "bookValue": 170,
+   "roce": 66.2,
+   "roe": 50,
+   "mcap": 159931,
+   "price": 3921,
+   "high52": 4447,
+   "low52": 2377,
+   "divYield": 0.25,
+   "sales10": 26,
+   "sales5": 55,
+   "sales3": 89,
+   "profit10": 28,
+   "profit5": 85,
+   "profit3": 143,
+   "priceCagr10": null,
+   "priceCagr5": 87,
+   "priceCagr3": 70,
+   "promoter": null,
+   "basis": "consolidated",
+   "borrowNow": 0,
+   "borrow3yAgo": 0,
+   "debtEquity": 0,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 72
+    },
+    {
+     "q": "Dec 2023",
+     "v": 95
+    },
+    {
+     "q": "Mar 2024",
+     "v": 79
+    },
+    {
+     "q": "Jun 2024",
+     "v": 173
+    },
+    {
+     "q": "Sep 2024",
+     "v": 282
+    },
+    {
+     "q": "Dec 2024",
+     "v": 260
+    },
+    {
+     "q": "Mar 2025",
+     "v": 397
+    },
+    {
+     "q": "Jun 2025",
+     "v": 468
+    },
+    {
+     "q": "Sep 2025",
+     "v": 514
+    },
+    {
+     "q": "Dec 2025",
+     "v": 552
+    },
+    {
+     "q": "Mar 2026",
+     "v": 799
+    },
+    {
+     "q": "Jun 2026",
+     "v": 801
+    },
+    {
+     "q": "Sep 2026",
+     "v": 773
+    }
+   ],
+   "fiiNow": 17.1,
+   "fiiYearAgo": 16.25,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "NSE": {
+   "sym": "NSE",
+   "slug": "544937",
+   "name": "National Stock Exchange Of India Ltd",
+   "pe": 47.2,
+   "pb": null,
+   "bookValue": 169,
+   "roce": 40.6,
+   "roe": 30.5,
+   "mcap": 510469,
+   "price": 2062,
+   "high52": 2067,
+   "low52": 1640,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": null,
+   "sales3": 12,
+   "profit10": null,
+   "profit5": null,
+   "profit3": 9,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": null,
+   "basis": "consolidated",
+   "borrowNow": 412,
+   "borrow3yAgo": 136,
+   "debtEquity": 0.012829295634302797,
+   "qProfit": [
+    {
+     "q": "Jun 2025",
+     "v": 2924
+    },
+    {
+     "q": "Sep 2025",
+     "v": 2098
+    },
+    {
+     "q": "Mar 2026",
+     "v": 2871
+    },
+    {
+     "q": "Jun 2026",
+     "v": 3120
+    },
+    {
+     "q": "Sep 2026",
+     "v": 2578
+    }
+   ],
+   "fiiNow": 25.35,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "CDSL": {
+   "sym": "CDSL",
+   "slug": "CDSL",
+   "name": "Central Depository Services (India) Ltd",
+   "pe": 59.8,
+   "pb": null,
+   "bookValue": 78.4,
+   "roce": 40.4,
+   "roe": 31.3,
+   "mcap": 29699,
+   "price": 1421,
+   "high52": 1674,
+   "low52": 1116,
+   "divYield": 0.88,
+   "sales10": 25,
+   "sales5": 29,
+   "sales3": 29,
+   "profit10": 24,
+   "profit5": 24,
+   "profit3": 20,
+   "priceCagr10": null,
+   "priceCagr5": 13,
+   "priceCagr3": 18,
+   "promoter": 15,
+   "basis": "consolidated",
+   "borrowNow": 2,
+   "borrow3yAgo": 0,
+   "debtEquity": 0.0012515644555694619,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 88
+    },
+    {
+     "q": "Dec 2023",
+     "v": 86
+    },
+    {
+     "q": "Mar 2024",
+     "v": 97
+    },
+    {
+     "q": "Jun 2024",
+     "v": 105
+    },
+    {
+     "q": "Sep 2024",
+     "v": 171
+    },
+    {
+     "q": "Dec 2024",
+     "v": 105
+    },
+    {
+     "q": "Mar 2025",
+     "v": 81
+    },
+    {
+     "q": "Jun 2025",
+     "v": 152
+    },
+    {
+     "q": "Sep 2025",
+     "v": 128
+    },
+    {
+     "q": "Dec 2025",
+     "v": 120
+    },
+    {
+     "q": "Mar 2026",
+     "v": 69
+    },
+    {
+     "q": "Jun 2026",
+     "v": 144
+    },
+    {
+     "q": "Sep 2026",
+     "v": 163
+    }
+   ],
+   "fiiNow": 8.66,
+   "fiiYearAgo": 11.54,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "COFORGE": {
+   "sym": "COFORGE",
+   "slug": "COFORGE",
+   "name": "Coforge Ltd",
+   "pe": 72.3,
+   "pb": null,
+   "bookValue": 460,
+   "roce": 19.3,
+   "roe": 19,
+   "mcap": 89494,
+   "price": 2020,
+   "high52": 2128,
+   "low52": 1008,
+   "divYield": 0.59,
+   "sales10": 20,
+   "sales5": 32,
+   "sales3": 31,
+   "profit10": 23,
+   "profit5": 44,
+   "profit3": 25,
+   "priceCagr10": 38,
+   "priceCagr5": 12,
+   "priceCagr3": 21,
+   "promoter": 0,
+   "basis": "consolidated",
+   "borrowNow": 244,
+   "borrow3yAgo": 395,
+   "debtEquity": 0.028865491541464568,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 77
+    },
+    {
+     "q": "Dec 2023",
+     "v": 410
+    },
+    {
+     "q": "Mar 2024",
+     "v": 294
+    },
+    {
+     "q": "Jun 2024",
+     "v": 81
+    },
+    {
+     "q": "Sep 2024",
+     "v": 230
+    },
+    {
+     "q": "Dec 2024",
+     "v": 106
+    },
+    {
+     "q": "Mar 2025",
+     "v": 144
+    },
+    {
+     "q": "Jun 2025",
+     "v": 360
+    },
+    {
+     "q": "Sep 2025",
+     "v": 362
+    },
+    {
+     "q": "Dec 2025",
+     "v": 118
+    },
+    {
+     "q": "Mar 2026",
+     "v": 553
+    },
+    {
+     "q": "Jun 2026",
+     "v": 205
+    },
+    {
+     "q": "Sep 2026",
+     "v": 210
+    }
+   ],
+   "fiiNow": 24.75,
+   "fiiYearAgo": 34.09,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "COMFINTE": {
+   "sym": "COMFINTE",
+   "slug": "COMFINTE",
+   "name": "Comfort Intech Ltd",
+   "pe": 77.4,
+   "pb": null,
+   "bookValue": 4.41,
+   "roce": 2.75,
+   "roe": 1.26,
+   "mcap": 186,
+   "price": 5.81,
+   "high52": 11.2,
+   "low52": 5.16,
+   "divYield": 0.85,
+   "sales10": 29,
+   "sales5": 10,
+   "sales3": -1,
+   "profit10": -6,
+   "profit5": -18,
+   "profit3": -32,
+   "priceCagr10": 19,
+   "priceCagr5": 16,
+   "priceCagr3": -11,
+   "promoter": 56.12,
+   "basis": "consolidated",
+   "borrowNow": 13,
+   "borrow3yAgo": 9,
+   "debtEquity": 0.09219858156028368,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 2.55
+    },
+    {
+     "q": "Dec 2023",
+     "v": 2.07
+    },
+    {
+     "q": "Mar 2024",
+     "v": 1.29
+    },
+    {
+     "q": "Jun 2024",
+     "v": 3.07
+    },
+    {
+     "q": "Sep 2024",
+     "v": 1.16
+    },
+    {
+     "q": "Dec 2024",
+     "v": 2.59
+    },
+    {
+     "q": "Mar 2025",
+     "v": 1.08
+    },
+    {
+     "q": "Jun 2025",
+     "v": 2.05
+    },
+    {
+     "q": "Sep 2025",
+     "v": -0.68
+    },
+    {
+     "q": "Dec 2025",
+     "v": 0.56
+    },
+    {
+     "q": "Mar 2026",
+     "v": -0.14
+    },
+    {
+     "q": "Jun 2026",
+     "v": 1.81
+    },
+    {
+     "q": "Sep 2026",
+     "v": 0.17
+    }
+   ],
+   "fiiNow": null,
+   "fiiYearAgo": null,
+   "fiiLatestQ": null
+  },
+  "CAMS": {
+   "sym": "CAMS",
+   "slug": "CAMS",
+   "name": "Computer Age Management Services Ltd",
+   "pe": 38.6,
+   "pb": null,
+   "bookValue": 53,
+   "roce": 48.3,
+   "roe": 37.8,
+   "mcap": 17930,
+   "price": 722,
+   "high52": 845,
+   "low52": 611,
+   "divYield": 1.71,
+   "sales10": 12,
+   "sales5": 16,
+   "sales3": 15,
+   "profit10": 18,
+   "profit5": 15,
+   "profit3": 17,
+   "priceCagr10": null,
+   "priceCagr5": 3,
+   "priceCagr3": 9,
+   "promoter": 0,
+   "basis": "standalone",
+   "borrowNow": 54,
+   "borrow3yAgo": 76,
+   "debtEquity": 0.04466501240694789,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 81
+    },
+    {
+     "q": "Dec 2023",
+     "v": 86
+    },
+    {
+     "q": "Mar 2024",
+     "v": 97
+    },
+    {
+     "q": "Jun 2024",
+     "v": 102
+    },
+    {
+     "q": "Sep 2024",
+     "v": 115
+    },
+    {
+     "q": "Dec 2024",
+     "v": 118
+    },
+    {
+     "q": "Mar 2025",
+     "v": 106
+    },
+    {
+     "q": "Jun 2025",
+     "v": 105
+    },
+    {
+     "q": "Sep 2025",
+     "v": 111
+    },
+    {
+     "q": "Dec 2025",
+     "v": 122
+    },
+    {
+     "q": "Mar 2026",
+     "v": 99
+    },
+    {
+     "q": "Jun 2026",
+     "v": 122
+    },
+    {
+     "q": "Sep 2026",
+     "v": 122
+    }
+   ],
+   "fiiNow": 45.58,
+   "fiiYearAgo": 46.9,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "CRISIL": {
+   "sym": "CRISIL",
+   "slug": "CRISIL",
+   "name": "CRISIL Ltd",
+   "pe": 53.1,
+   "pb": null,
+   "bookValue": 280,
+   "roce": 31.9,
+   "roe": 30.2,
+   "mcap": 31043,
+   "price": 4245,
+   "high52": 4920,
+   "low52": 3686,
+   "divYield": 0.85,
+   "sales10": 7,
+   "sales5": 15,
+   "sales3": 8,
+   "profit10": 11,
+   "profit5": 29,
+   "profit3": 17,
+   "priceCagr10": 7,
+   "priceCagr5": 5,
+   "priceCagr3": 1,
+   "promoter": 66.64,
+   "basis": "consolidated",
+   "borrowNow": 235,
+   "borrow3yAgo": 72,
+   "debtEquity": 0.11599210266535044,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 135
+    },
+    {
+     "q": "Dec 2023",
+     "v": 231
+    },
+    {
+     "q": "Mar 2024",
+     "v": 80
+    },
+    {
+     "q": "Jun 2024",
+     "v": 128
+    },
+    {
+     "q": "Sep 2024",
+     "v": 201
+    },
+    {
+     "q": "Dec 2024",
+     "v": 206
+    },
+    {
+     "q": "Mar 2025",
+     "v": 130
+    },
+    {
+     "q": "Jun 2025",
+     "v": 194
+    },
+    {
+     "q": "Sep 2025",
+     "v": 137
+    },
+    {
+     "q": "Dec 2025",
+     "v": 153
+    },
+    {
+     "q": "Mar 2026",
+     "v": 113
+    },
+    {
+     "q": "Jun 2026",
+     "v": 166
+    },
+    {
+     "q": "Sep 2026",
+     "v": 152
+    }
+   ],
+   "fiiNow": 6.94,
+   "fiiYearAgo": 7.81,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "CUPID": {
+   "sym": "CUPID",
+   "slug": "CUPID",
+   "name": "Cupid Ltd",
+   "pe": 289,
+   "pb": null,
+   "bookValue": 4.19,
+   "roce": 33.9,
+   "roe": 27.6,
+   "mcap": 48979,
+   "price": 364,
+   "high52": 393,
+   "low52": 60.6,
+   "divYield": 0,
+   "sales10": 19,
+   "sales5": 20,
+   "sales3": 31,
+   "profit10": 21,
+   "profit5": 31,
+   "profit3": 52,
+   "priceCagr10": 65,
+   "priceCagr5": 180,
+   "priceCagr3": 250,
+   "promoter": 47.69,
+   "basis": "standalone",
+   "borrowNow": 56,
+   "borrow3yAgo": 6,
+   "debtEquity": 0.12444444444444444,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 5
+    },
+    {
+     "q": "Dec 2023",
+     "v": 9
+    },
+    {
+     "q": "Mar 2024",
+     "v": 24
+    },
+    {
+     "q": "Jun 2024",
+     "v": 8
+    },
+    {
+     "q": "Sep 2024",
+     "v": 10
+    },
+    {
+     "q": "Dec 2024",
+     "v": 11
+    },
+    {
+     "q": "Mar 2025",
+     "v": 12
+    },
+    {
+     "q": "Jun 2025",
+     "v": 15
+    },
+    {
+     "q": "Sep 2025",
+     "v": 24
+    },
+    {
+     "q": "Dec 2025",
+     "v": 33
+    },
+    {
+     "q": "Mar 2026",
+     "v": 36
+    },
+    {
+     "q": "Jun 2026",
+     "v": 44
+    },
+    {
+     "q": "Sep 2026",
+     "v": 56
+    }
+   ],
+   "fiiNow": 4.69,
+   "fiiYearAgo": 2.58,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "CYIENT": {
+   "sym": "CYIENT",
+   "slug": "CYIENT",
+   "name": "Cyient Ltd",
+   "pe": 29.2,
+   "pb": null,
+   "bookValue": 284,
+   "roce": 16.6,
+   "roe": 7.96,
+   "mcap": 12102,
+   "price": 1089,
+   "high52": 1277,
+   "low52": 750,
+   "divYield": 1.45,
+   "sales10": 7,
+   "sales5": 11,
+   "sales3": 2,
+   "profit10": 2,
+   "profit5": 1,
+   "profit3": -5,
+   "priceCagr10": 9,
+   "priceCagr5": 0,
+   "priceCagr3": -14,
+   "promoter": 24.75,
+   "basis": "consolidated",
+   "borrowNow": 45,
+   "borrow3yAgo": 136,
+   "debtEquity": 0.012534818941504178,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 118
+    },
+    {
+     "q": "Dec 2023",
+     "v": 137
+    },
+    {
+     "q": "Mar 2024",
+     "v": 115
+    },
+    {
+     "q": "Jun 2024",
+     "v": 80
+    },
+    {
+     "q": "Sep 2024",
+     "v": 854
+    },
+    {
+     "q": "Dec 2024",
+     "v": 71
+    },
+    {
+     "q": "Mar 2025",
+     "v": 119
+    },
+    {
+     "q": "Jun 2025",
+     "v": 119
+    },
+    {
+     "q": "Sep 2025",
+     "v": 143
+    },
+    {
+     "q": "Dec 2025",
+     "v": -146
+    },
+    {
+     "q": "Mar 2026",
+     "v": 38
+    },
+    {
+     "q": "Jun 2026",
+     "v": 144
+    },
+    {
+     "q": "Sep 2026",
+     "v": 103
+    }
+   ],
+   "fiiNow": 14.72,
+   "fiiYearAgo": 17.56,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "DATAPATTNS": {
+   "sym": "DATAPATTNS",
+   "slug": "DATAPATTNS",
+   "name": "Data Patterns (India) Ltd",
+   "pe": 96.6,
+   "pb": null,
+   "bookValue": 308,
+   "roce": 21.9,
+   "roe": 15.9,
+   "mcap": 23473,
+   "price": 4193,
+   "high52": 5000,
+   "low52": 2131,
+   "divYield": 0.23,
+   "sales10": 36,
+   "sales5": 33,
+   "sales3": 27,
+   "profit10": 78,
+   "profit5": 36,
+   "profit3": 28,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": 33,
+   "promoter": 42.41,
+   "basis": "standalone",
+   "borrowNow": 5,
+   "borrow3yAgo": 2,
+   "debtEquity": 0.002880184331797235,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 34
+    },
+    {
+     "q": "Dec 2023",
+     "v": 51
+    },
+    {
+     "q": "Mar 2024",
+     "v": 71
+    },
+    {
+     "q": "Jun 2024",
+     "v": 33
+    },
+    {
+     "q": "Sep 2024",
+     "v": 30
+    },
+    {
+     "q": "Dec 2024",
+     "v": 45
+    },
+    {
+     "q": "Mar 2025",
+     "v": 114
+    },
+    {
+     "q": "Jun 2025",
+     "v": 26
+    },
+    {
+     "q": "Sep 2025",
+     "v": 49
+    },
+    {
+     "q": "Dec 2025",
+     "v": 58
+    },
+    {
+     "q": "Mar 2026",
+     "v": 138
+    },
+    {
+     "q": "Jun 2026",
+     "v": 22
+    },
+    {
+     "q": "Sep 2026",
+     "v": 22
+    }
+   ],
+   "fiiNow": 11.34,
+   "fiiYearAgo": 11.4,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "DELHIVERY": {
+   "sym": "DELHIVERY",
+   "slug": "DELHIVERY",
+   "name": "Delhivery Ltd",
+   "pe": 101,
+   "pb": null,
+   "bookValue": 137,
+   "roce": 2.51,
+   "roe": 1.57,
+   "mcap": 32848,
+   "price": 438,
+   "high52": 524,
+   "low52": 365,
+   "divYield": 0,
+   "sales10": 35,
+   "sales5": 23,
+   "sales3": 14,
+   "profit10": 10,
+   "profit5": 20,
+   "profit3": 30,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": 3,
+   "promoter": null,
+   "basis": "consolidated",
+   "borrowNow": 1396,
+   "borrow3yAgo": 918,
+   "debtEquity": 0.13875360302156844,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -70
+    },
+    {
+     "q": "Dec 2023",
+     "v": 53
+    },
+    {
+     "q": "Mar 2024",
+     "v": -96
+    },
+    {
+     "q": "Jun 2024",
+     "v": 72
+    },
+    {
+     "q": "Sep 2024",
+     "v": 19
+    },
+    {
+     "q": "Dec 2024",
+     "v": 38
+    },
+    {
+     "q": "Mar 2025",
+     "v": -20
+    },
+    {
+     "q": "Jun 2025",
+     "v": 114
+    },
+    {
+     "q": "Sep 2025",
+     "v": 58
+    },
+    {
+     "q": "Dec 2025",
+     "v": 74
+    },
+    {
+     "q": "Mar 2026",
+     "v": 80
+    },
+    {
+     "q": "Jun 2026",
+     "v": 78
+    },
+    {
+     "q": "Sep 2026",
+     "v": 67
+    }
+   ],
+   "fiiNow": 39.54,
+   "fiiYearAgo": 51.65,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "DELTACORP": {
+   "sym": "DELTACORP",
+   "slug": "DELTACORP",
+   "name": "Delta Corp Ltd",
+   "pe": 11.8,
+   "pb": null,
+   "bookValue": 75.2,
+   "roce": 6.65,
+   "roe": 5.08,
+   "mcap": 2188,
+   "price": 81.7,
+   "high52": 88.6,
+   "low52": 48.3,
+   "divYield": 0.6,
+   "sales10": 8,
+   "sales5": 20,
+   "sales3": -6,
+   "profit10": 12,
+   "profit5": 46,
+   "profit3": -18,
+   "priceCagr10": -3,
+   "priceCagr5": -22,
+   "priceCagr3": -15,
+   "promoter": 34.46,
+   "basis": "consolidated",
+   "borrowNow": 18,
+   "borrow3yAgo": 18,
+   "debtEquity": 0.008133755083596927,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 64
+    },
+    {
+     "q": "Dec 2023",
+     "v": 41
+    },
+    {
+     "q": "Mar 2024",
+     "v": 87
+    },
+    {
+     "q": "Jun 2024",
+     "v": 40
+    },
+    {
+     "q": "Sep 2024",
+     "v": 44
+    },
+    {
+     "q": "Dec 2024",
+     "v": 42
+    },
+    {
+     "q": "Mar 2025",
+     "v": 59
+    },
+    {
+     "q": "Jun 2025",
+     "v": 26
+    },
+    {
+     "q": "Sep 2025",
+     "v": 22
+    },
+    {
+     "q": "Dec 2025",
+     "v": 19
+    },
+    {
+     "q": "Mar 2026",
+     "v": 51
+    },
+    {
+     "q": "Jun 2026",
+     "v": -109
+    },
+    {
+     "q": "Sep 2026",
+     "v": -80
+    }
+   ],
+   "fiiNow": 1.66,
+   "fiiYearAgo": 2.14,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "DEVYANI": {
+   "sym": "DEVYANI",
+   "slug": "DEVYANI",
+   "name": "Devyani International Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": 12.2,
+   "roce": 5.18,
+   "roe": -1.15,
+   "mcap": 15640,
+   "price": 127,
+   "high52": 160,
+   "low52": 91.6,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 29,
+   "sales3": 9,
+   "profit10": null,
+   "profit5": 13,
+   "profit3": null,
+   "priceCagr10": null,
+   "priceCagr5": -4,
+   "priceCagr3": -11,
+   "promoter": 61.37,
+   "basis": "consolidated",
+   "borrowNow": 2666,
+   "borrow3yAgo": 1410,
+   "debtEquity": 1.7714285714285714,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 41.1
+    },
+    {
+     "q": "Dec 2023",
+     "v": 18.01
+    },
+    {
+     "q": "Mar 2024",
+     "v": -105.04
+    },
+    {
+     "q": "Jun 2024",
+     "v": 31.65
+    },
+    {
+     "q": "Sep 2024",
+     "v": 1.02
+    },
+    {
+     "q": "Dec 2024",
+     "v": 4.31
+    },
+    {
+     "q": "Mar 2025",
+     "v": -13.26
+    },
+    {
+     "q": "Jun 2025",
+     "v": 6.21
+    },
+    {
+     "q": "Sep 2025",
+     "v": -14.33
+    },
+    {
+     "q": "Dec 2025",
+     "v": -12.3
+    },
+    {
+     "q": "Mar 2026",
+     "v": -12.74
+    },
+    {
+     "q": "Jun 2026",
+     "v": 8.5
+    },
+    {
+     "q": "Sep 2026",
+     "v": -8.55
+    }
+   ],
+   "fiiNow": 6.12,
+   "fiiYearAgo": 6.55,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "DIXON": {
+   "sym": "DIXON",
+   "slug": "DIXON",
+   "name": "Dixon Technologies (India) Ltd",
+   "pe": 88.1,
+   "pb": null,
+   "bookValue": 671,
+   "roce": 8.46,
+   "roe": 6.29,
+   "mcap": 78054,
+   "price": 12752,
+   "high52": 15775,
+   "low52": 9600,
+   "divYield": 0.08,
+   "sales10": 12,
+   "sales5": -7,
+   "sales3": -17,
+   "profit10": 20,
+   "profit5": 2,
+   "profit3": -7,
+   "priceCagr10": null,
+   "priceCagr5": 19,
+   "priceCagr3": 33,
+   "promoter": 28.5,
+   "basis": "consolidated",
+   "borrowNow": 257,
+   "borrow3yAgo": 243,
+   "debtEquity": 0.0793454769990738,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 57
+    },
+    {
+     "q": "Dec 2023",
+     "v": 37
+    },
+    {
+     "q": "Mar 2024",
+     "v": 43
+    },
+    {
+     "q": "Jun 2024",
+     "v": 28
+    },
+    {
+     "q": "Sep 2024",
+     "v": 257
+    },
+    {
+     "q": "Dec 2024",
+     "v": 2
+    },
+    {
+     "q": "Mar 2025",
+     "v": 279
+    },
+    {
+     "q": "Jun 2025",
+     "v": 16
+    },
+    {
+     "q": "Sep 2025",
+     "v": 479
+    },
+    {
+     "q": "Dec 2025",
+     "v": 187
+    },
+    {
+     "q": "Mar 2026",
+     "v": 78
+    },
+    {
+     "q": "Jun 2026",
+     "v": 498
+    },
+    {
+     "q": "Sep 2026",
+     "v": 123
+    }
+   ],
+   "fiiNow": 18.96,
+   "fiiYearAgo": 20.69,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "EASEMYTRIP": {
+   "sym": "EASEMYTRIP",
+   "slug": "EASEMYTRIP",
+   "name": "Easy Trip Planners Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": 2.68,
+   "roce": -0.25,
+   "roe": 0.82,
+   "mcap": 2387,
+   "price": 5.99,
+   "high52": 10.6,
+   "low52": 5.1,
+   "divYield": 0,
+   "sales10": -10,
+   "sales5": 16,
+   "sales3": -13,
+   "profit10": 6,
+   "profit5": -36,
+   "profit3": -65,
+   "priceCagr10": null,
+   "priceCagr5": -18,
+   "priceCagr3": -34,
+   "promoter": 43.56,
+   "basis": "consolidated",
+   "borrowNow": 0,
+   "borrow3yAgo": 65,
+   "debtEquity": 0,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 51.46
+    },
+    {
+     "q": "Dec 2023",
+     "v": 51.12
+    },
+    {
+     "q": "Mar 2024",
+     "v": -9.58
+    },
+    {
+     "q": "Jun 2024",
+     "v": 34.29
+    },
+    {
+     "q": "Sep 2024",
+     "v": 27.8
+    },
+    {
+     "q": "Dec 2024",
+     "v": 33.52
+    },
+    {
+     "q": "Mar 2025",
+     "v": 6.4
+    },
+    {
+     "q": "Jun 2025",
+     "v": 1.52
+    },
+    {
+     "q": "Sep 2025",
+     "v": -40.88
+    },
+    {
+     "q": "Dec 2025",
+     "v": 1.08
+    },
+    {
+     "q": "Mar 2026",
+     "v": -9.16
+    },
+    {
+     "q": "Jun 2026",
+     "v": -8.08
+    },
+    {
+     "q": "Sep 2026",
+     "v": 3.81
+    }
+   ],
+   "fiiNow": 5.39,
+   "fiiYearAgo": 0.5,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "ECLERX": {
+   "sym": "ECLERX",
+   "slug": "ECLERX",
+   "name": "eClerx Services Ltd",
+   "pe": 28,
+   "pb": null,
+   "bookValue": 155,
+   "roce": 40.9,
+   "roe": 34.9,
+   "mcap": 14635,
+   "price": 1556,
+   "high52": 2498,
+   "low52": 1319,
+   "divYield": 0.06,
+   "sales10": 10,
+   "sales5": 19,
+   "sales3": 15,
+   "profit10": 4,
+   "profit5": 15,
+   "profit3": 7,
+   "priceCagr10": 13,
+   "priceCagr5": 14,
+   "priceCagr3": 9,
+   "promoter": 54.53,
+   "basis": "consolidated",
+   "borrowNow": 254,
+   "borrow3yAgo": 125,
+   "debtEquity": 0.20957095709570958,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 87
+    },
+    {
+     "q": "Dec 2023",
+     "v": 96
+    },
+    {
+     "q": "Mar 2024",
+     "v": 95
+    },
+    {
+     "q": "Jun 2024",
+     "v": 70
+    },
+    {
+     "q": "Sep 2024",
+     "v": 98
+    },
+    {
+     "q": "Dec 2024",
+     "v": 83
+    },
+    {
+     "q": "Mar 2025",
+     "v": 108
+    },
+    {
+     "q": "Jun 2025",
+     "v": 93
+    },
+    {
+     "q": "Sep 2025",
+     "v": 110
+    },
+    {
+     "q": "Dec 2025",
+     "v": 126
+    },
+    {
+     "q": "Mar 2026",
+     "v": 129
+    },
+    {
+     "q": "Jun 2026",
+     "v": 133
+    },
+    {
+     "q": "Sep 2026",
+     "v": 135
+    }
+   ],
+   "fiiNow": 9.68,
+   "fiiYearAgo": 10.95,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "EMPOWER": {
+   "sym": "EMPOWER",
+   "slug": "EMPOWER",
+   "name": "Empower India Ltd",
+   "pe": 6.97,
+   "pb": null,
+   "bookValue": 2.75,
+   "roce": 5.2,
+   "roe": 5.17,
+   "mcap": 125,
+   "price": 1.07,
+   "high52": 2.83,
+   "low52": 1.03,
+   "divYield": 0,
+   "sales10": 1,
+   "sales5": null,
+   "sales3": 126,
+   "profit10": 56,
+   "profit5": 177,
+   "profit3": 346,
+   "priceCagr10": 8,
+   "priceCagr5": 49,
+   "priceCagr3": -2,
+   "promoter": 15.02,
+   "basis": "consolidated",
+   "borrowNow": 0,
+   "borrow3yAgo": 0,
+   "debtEquity": 0,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 0.65
+    },
+    {
+     "q": "Dec 2023",
+     "v": 0.1
+    },
+    {
+     "q": "Mar 2024",
+     "v": 1.68
+    },
+    {
+     "q": "Jun 2024",
+     "v": 0.89
+    },
+    {
+     "q": "Sep 2024",
+     "v": 1.18
+    },
+    {
+     "q": "Dec 2024",
+     "v": 0.75
+    },
+    {
+     "q": "Mar 2025",
+     "v": 2.2
+    },
+    {
+     "q": "Jun 2025",
+     "v": 1.45
+    },
+    {
+     "q": "Sep 2025",
+     "v": -0.09
+    },
+    {
+     "q": "Dec 2025",
+     "v": 0.48
+    },
+    {
+     "q": "Mar 2026",
+     "v": 14.14
+    },
+    {
+     "q": "Jun 2026",
+     "v": 1.46
+    },
+    {
+     "q": "Sep 2026",
+     "v": 1.76
+    }
+   ],
+   "fiiNow": 0.03,
+   "fiiYearAgo": 0.03,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "ESDS": {
+   "sym": "ESDS",
+   "slug": "ESDS",
+   "name": "ESDS Software Solution Ltd",
+   "pe": 184,
+   "pb": null,
+   "bookValue": 107,
+   "roce": 17.1,
+   "roe": 12.8,
+   "mcap": 14054,
+   "price": 1199,
+   "high52": 1864,
+   "low52": 746,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 17,
+   "sales3": 23,
+   "profit10": null,
+   "profit5": 48,
+   "profit3": 101,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 39.46,
+   "basis": "consolidated",
+   "borrowNow": 96,
+   "borrow3yAgo": 151,
+   "debtEquity": 0.18461538461538463,
+   "qProfit": [
+    {
+     "q": "Jun 2025",
+     "v": 13
+    },
+    {
+     "q": "Sep 2025",
+     "v": 9
+    },
+    {
+     "q": "Mar 2026",
+     "v": 30
+    },
+    {
+     "q": "Jun 2026",
+     "v": 18
+    },
+    {
+     "q": "Sep 2026",
+     "v": 23
+    }
+   ],
+   "fiiNow": 0.61,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "ETERNAL": {
+   "sym": "ETERNAL",
+   "slug": "ETERNAL",
+   "name": "Eternal Ltd",
+   "pe": 137,
+   "pb": null,
+   "bookValue": 39.8,
+   "roce": 8.12,
+   "roe": 7.25,
+   "mcap": 355374,
+   "price": 368,
+   "high52": 372,
+   "low52": 213,
+   "divYield": 0,
+   "sales10": 55,
+   "sales5": 45,
+   "sales3": 32,
+   "profit10": 27,
+   "profit5": 53,
+   "profit3": 312,
+   "priceCagr10": null,
+   "priceCagr5": 18,
+   "priceCagr3": 44,
+   "promoter": null,
+   "basis": "consolidated",
+   "borrowNow": 414,
+   "borrow3yAgo": 157,
+   "debtEquity": 0.011172279792746114,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 315
+    },
+    {
+     "q": "Dec 2023",
+     "v": 384
+    },
+    {
+     "q": "Mar 2024",
+     "v": 396
+    },
+    {
+     "q": "Jun 2024",
+     "v": 470
+    },
+    {
+     "q": "Sep 2024",
+     "v": 421
+    },
+    {
+     "q": "Dec 2024",
+     "v": 494
+    },
+    {
+     "q": "Mar 2025",
+     "v": 575
+    },
+    {
+     "q": "Jun 2025",
+     "v": 602
+    },
+    {
+     "q": "Sep 2025",
+     "v": 691
+    },
+    {
+     "q": "Dec 2025",
+     "v": 657
+    },
+    {
+     "q": "Mar 2026",
+     "v": 705
+    },
+    {
+     "q": "Jun 2026",
+     "v": 585
+    },
+    {
+     "q": "Sep 2026",
+     "v": 641
+    }
+   ],
+   "fiiNow": 33.01,
+   "fiiYearAgo": 39.04,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "FCSSOFT": {
+   "sym": "FCSSOFT",
+   "slug": "FCSSOFT",
+   "name": "FCS Software Solutions Ltd",
+   "pe": 92.2,
+   "pb": null,
+   "bookValue": 1.85,
+   "roce": -0.35,
+   "roe": -0.54,
+   "mcap": 246,
+   "price": 1.44,
+   "high52": 2.25,
+   "low52": 1.05,
+   "divYield": 0,
+   "sales10": 1,
+   "sales5": -3,
+   "sales3": -6,
+   "profit10": null,
+   "profit5": null,
+   "profit3": null,
+   "priceCagr10": 17,
+   "priceCagr5": -5,
+   "priceCagr3": -21,
+   "promoter": 19.65,
+   "basis": "consolidated",
+   "borrowNow": 0,
+   "borrow3yAgo": 18.61,
+   "debtEquity": 0,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -5.49
+    },
+    {
+     "q": "Dec 2023",
+     "v": -4.49
+    },
+    {
+     "q": "Mar 2024",
+     "v": -4.53
+    },
+    {
+     "q": "Jun 2024",
+     "v": 0.86
+    },
+    {
+     "q": "Sep 2024",
+     "v": 0.47
+    },
+    {
+     "q": "Dec 2024",
+     "v": 0.49
+    },
+    {
+     "q": "Mar 2025",
+     "v": 0.92
+    },
+    {
+     "q": "Jun 2025",
+     "v": 0.92
+    },
+    {
+     "q": "Sep 2025",
+     "v": -2.51
+    },
+    {
+     "q": "Dec 2025",
+     "v": -2.41
+    },
+    {
+     "q": "Mar 2026",
+     "v": 3.02
+    },
+    {
+     "q": "Jun 2026",
+     "v": 0.68
+    },
+    {
+     "q": "Sep 2026",
+     "v": 0.04
+    }
+   ],
+   "fiiNow": 0.01,
+   "fiiYearAgo": 0,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "FSL": {
+   "sym": "FSL",
+   "slug": "FSL",
+   "name": "Firstsource Solutions Ltd",
+   "pe": 29.7,
+   "pb": null,
+   "bookValue": 39,
+   "roce": 21.1,
+   "roe": 20.8,
+   "mcap": 20490,
+   "price": 290,
+   "high52": 372,
+   "low52": 201,
+   "divYield": 1.9,
+   "sales10": 13,
+   "sales5": 17,
+   "sales3": 28,
+   "profit10": 13,
+   "profit5": 7,
+   "profit3": 27,
+   "priceCagr10": 23,
+   "priceCagr5": 10,
+   "priceCagr3": 21,
+   "promoter": 53.66,
+   "basis": "consolidated",
+   "borrowNow": 953,
+   "borrow3yAgo": 158,
+   "debtEquity": 0.4152505446623094,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 72
+    },
+    {
+     "q": "Dec 2023",
+     "v": 90
+    },
+    {
+     "q": "Mar 2024",
+     "v": 93
+    },
+    {
+     "q": "Jun 2024",
+     "v": 95
+    },
+    {
+     "q": "Sep 2024",
+     "v": 92
+    },
+    {
+     "q": "Dec 2024",
+     "v": 148
+    },
+    {
+     "q": "Mar 2025",
+     "v": 92
+    },
+    {
+     "q": "Jun 2025",
+     "v": 135
+    },
+    {
+     "q": "Sep 2025",
+     "v": 98
+    },
+    {
+     "q": "Dec 2025",
+     "v": 59
+    },
+    {
+     "q": "Mar 2026",
+     "v": 140
+    },
+    {
+     "q": "Jun 2026",
+     "v": 207
+    },
+    {
+     "q": "Sep 2026",
+     "v": 199
+    }
+   ],
+   "fiiNow": 7.44,
+   "fiiYearAgo": 9.25,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "FRACTAL": {
+   "sym": "FRACTAL",
+   "slug": "FRACTAL",
+   "name": "Fractal Analytics Ltd",
+   "pe": 51.8,
+   "pb": null,
+   "bookValue": 202,
+   "roce": 11,
+   "roe": 8.11,
+   "mcap": 14162,
+   "price": 813,
+   "high52": 1120,
+   "low52": 696,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 37,
+   "sales3": 23,
+   "profit10": null,
+   "profit5": 35,
+   "profit3": 230,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 16.82,
+   "basis": "consolidated",
+   "borrowNow": 112,
+   "borrow3yAgo": 0,
+   "debtEquity": 0.034167175106772425,
+   "qProfit": [
+    {
+     "q": "Dec 2024",
+     "v": 33
+    },
+    {
+     "q": "Mar 2025",
+     "v": 44
+    },
+    {
+     "q": "Jun 2025",
+     "v": 41
+    },
+    {
+     "q": "Sep 2025",
+     "v": 23
+    },
+    {
+     "q": "Dec 2025",
+     "v": 49
+    },
+    {
+     "q": "Mar 2026",
+     "v": 73
+    },
+    {
+     "q": "Jun 2026",
+     "v": 75
+    },
+    {
+     "q": "Sep 2026",
+     "v": 73
+    }
+   ],
+   "fiiNow": 40.22,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "GATECH": {
+   "sym": "GATECH",
+   "slug": "GATECH",
+   "name": "GACM Technologies Ltd",
+   "pe": 15.4,
+   "pb": null,
+   "bookValue": 1,
+   "roce": 10.1,
+   "roe": 10.1,
+   "mcap": 91.1,
+   "price": 0.57,
+   "high52": 1.13,
+   "low52": 0.4,
+   "divYield": 0,
+   "sales10": -1,
+   "sales5": 31,
+   "sales3": 25,
+   "profit10": 35,
+   "profit5": 45,
+   "profit3": 103,
+   "priceCagr10": -28,
+   "priceCagr5": -5,
+   "priceCagr3": -13,
+   "promoter": 0.63,
+   "basis": "standalone",
+   "borrowNow": 0,
+   "borrow3yAgo": 17.2,
+   "debtEquity": 0,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 0.27
+    },
+    {
+     "q": "Dec 2023",
+     "v": 0.29
+    },
+    {
+     "q": "Mar 2024",
+     "v": 0.32
+    },
+    {
+     "q": "Jun 2024",
+     "v": 0.35
+    },
+    {
+     "q": "Sep 2024",
+     "v": 0.38
+    },
+    {
+     "q": "Dec 2024",
+     "v": 1.46
+    },
+    {
+     "q": "Mar 2025",
+     "v": 1.53
+    },
+    {
+     "q": "Jun 2025",
+     "v": 3.03
+    },
+    {
+     "q": "Sep 2025",
+     "v": 2.2
+    },
+    {
+     "q": "Dec 2025",
+     "v": 1.03
+    },
+    {
+     "q": "Mar 2026",
+     "v": 1.57
+    },
+    {
+     "q": "Jun 2026",
+     "v": 1.51
+    },
+    {
+     "q": "Sep 2026",
+     "v": 1.81
+    }
+   ],
+   "fiiNow": 0.24,
+   "fiiYearAgo": 0.2,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "GAJA": {
+   "sym": "GAJA",
+   "slug": "GAJA",
+   "name": "Gaja Alternative Asset Management Ltd",
+   "pe": 56.2,
+   "pb": null,
+   "bookValue": 57,
+   "roce": null,
+   "roe": 2.77,
+   "mcap": 1860,
+   "price": 132,
+   "high52": 192,
+   "low52": 113,
+   "divYield": 0.56,
+   "sales10": null,
+   "sales5": null,
+   "sales3": 12,
+   "profit10": null,
+   "profit5": null,
+   "profit3": -37,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 54.23,
+   "basis": "consolidated",
+   "borrowNow": 53,
+   "borrow3yAgo": 4,
+   "debtEquity": 0.14681440443213298,
+   "qProfit": [
+    {
+     "q": "Jun 2025",
+     "v": 6
+    },
+    {
+     "q": "Sep 2025",
+     "v": -2
+    },
+    {
+     "q": "Mar 2026",
+     "v": -1
+    },
+    {
+     "q": "Jun 2026",
+     "v": 14
+    },
+    {
+     "q": "Sep 2026",
+     "v": 21
+    }
+   ],
+   "fiiNow": 0.63,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "GENESYS": {
+   "sym": "GENESYS",
+   "slug": "GENESYS",
+   "name": "Genesys International Corporation Ltd",
+   "pe": 68.4,
+   "pb": null,
+   "bookValue": 133,
+   "roce": 6.28,
+   "roe": 3.43,
+   "mcap": 1193,
+   "price": 178,
+   "high52": 337,
+   "low52": 135,
+   "divYield": 0,
+   "sales10": 19,
+   "sales5": 28,
+   "sales3": 15,
+   "profit10": 18,
+   "profit5": 34,
+   "profit3": -14,
+   "priceCagr10": 11,
+   "priceCagr5": 0,
+   "priceCagr3": -4,
+   "promoter": 32.72,
+   "basis": "consolidated",
+   "borrowNow": 173,
+   "borrow3yAgo": 39,
+   "debtEquity": 0.23066666666666666,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 2.46
+    },
+    {
+     "q": "Dec 2023",
+     "v": 20.55
+    },
+    {
+     "q": "Mar 2024",
+     "v": 21.6
+    },
+    {
+     "q": "Jun 2024",
+     "v": 11.6
+    },
+    {
+     "q": "Sep 2024",
+     "v": 17.18
+    },
+    {
+     "q": "Dec 2024",
+     "v": 17.89
+    },
+    {
+     "q": "Mar 2025",
+     "v": 16.37
+    },
+    {
+     "q": "Jun 2025",
+     "v": 13.34
+    },
+    {
+     "q": "Sep 2025",
+     "v": 6.15
+    },
+    {
+     "q": "Dec 2025",
+     "v": 3.12
+    },
+    {
+     "q": "Mar 2026",
+     "v": -2.06
+    },
+    {
+     "q": "Jun 2026",
+     "v": 7.18
+    },
+    {
+     "q": "Sep 2026",
+     "v": 5.29
+    }
+   ],
+   "fiiNow": 1.68,
+   "fiiYearAgo": 4.69,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "GMRAIRPORT": {
+   "sym": "GMRAIRPORT",
+   "slug": "GMRAIRPORT",
+   "name": "GMR Airports Ltd",
+   "pe": 200,
+   "pb": null,
+   "bookValue": 55.9,
+   "roce": 2.04,
+   "roe": 0.27,
+   "mcap": 105544,
+   "price": 99,
+   "high52": 116,
+   "low52": 84.1,
+   "divYield": 0,
+   "sales10": 13,
+   "sales5": null,
+   "sales3": 90,
+   "profit10": -7,
+   "profit5": 16,
+   "profit3": 32,
+   "priceCagr10": 25,
+   "priceCagr5": 22,
+   "priceCagr3": 19,
+   "promoter": 67.48,
+   "basis": "consolidated",
+   "borrowNow": 11413,
+   "borrow3yAgo": 7995,
+   "debtEquity": 0.19245232113046556,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 19.36
+    },
+    {
+     "q": "Dec 2023",
+     "v": -196.53
+    },
+    {
+     "q": "Mar 2024",
+     "v": -150
+    },
+    {
+     "q": "Jun 2024",
+     "v": -145.66
+    },
+    {
+     "q": "Sep 2024",
+     "v": -63.48
+    },
+    {
+     "q": "Dec 2024",
+     "v": -49.43
+    },
+    {
+     "q": "Mar 2025",
+     "v": 67.83
+    },
+    {
+     "q": "Jun 2025",
+     "v": -178
+    },
+    {
+     "q": "Sep 2025",
+     "v": -133.38
+    },
+    {
+     "q": "Dec 2025",
+     "v": 50.46
+    },
+    {
+     "q": "Mar 2026",
+     "v": 402.97
+    },
+    {
+     "q": "Jun 2026",
+     "v": 57.68
+    },
+    {
+     "q": "Sep 2026",
+     "v": 2.13
+    }
+   ],
+   "fiiNow": 22.95,
+   "fiiYearAgo": 17.08,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "GTLINFRA": {
+   "sym": "GTLINFRA",
+   "slug": "GTLINFRA",
+   "name": "GTL Infrastructure Ltd",
+   "pe": 17.6,
+   "pb": null,
+   "bookValue": -3.81,
+   "roce": null,
+   "roe": null,
+   "mcap": 1345,
+   "price": 1.05,
+   "high52": 1.67,
+   "low52": 0.96,
+   "divYield": 0,
+   "sales10": 4,
+   "sales5": -1,
+   "sales3": -2,
+   "profit10": 2,
+   "profit5": 8,
+   "profit3": 15,
+   "priceCagr10": -11,
+   "priceCagr5": -7,
+   "priceCagr3": -1,
+   "promoter": 3.28,
+   "basis": "standalone",
+   "borrowNow": 5898,
+   "borrow3yAgo": 4281,
+   "debtEquity": null,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -170
+    },
+    {
+     "q": "Dec 2023",
+     "v": -195
+    },
+    {
+     "q": "Mar 2024",
+     "v": -215
+    },
+    {
+     "q": "Jun 2024",
+     "v": -202
+    },
+    {
+     "q": "Sep 2024",
+     "v": -214
+    },
+    {
+     "q": "Dec 2024",
+     "v": -210
+    },
+    {
+     "q": "Mar 2025",
+     "v": -249
+    },
+    {
+     "q": "Jun 2025",
+     "v": -232
+    },
+    {
+     "q": "Sep 2025",
+     "v": -193
+    },
+    {
+     "q": "Dec 2025",
+     "v": 20
+    },
+    {
+     "q": "Mar 2026",
+     "v": 1186
+    },
+    {
+     "q": "Jun 2026",
+     "v": 69
+    },
+    {
+     "q": "Sep 2026",
+     "v": 263
+    }
+   ],
+   "fiiNow": 0.43,
+   "fiiYearAgo": 0.01,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "HAPPSTMNDS": {
+   "sym": "HAPPSTMNDS",
+   "slug": "HAPPSTMNDS",
+   "name": "Happiest Minds Technologies Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": 112,
+   "roce": 13.3,
+   "roe": 15.2,
+   "mcap": 4721,
+   "price": 310,
+   "high52": 520,
+   "low52": 295,
+   "divYield": 2.03,
+   "sales10": 18,
+   "sales5": 18,
+   "sales3": 9,
+   "profit10": 104,
+   "profit5": 8,
+   "profit3": 4,
+   "priceCagr10": null,
+   "priceCagr5": -24,
+   "priceCagr3": -28,
+   "promoter": 44.21,
+   "basis": "consolidated",
+   "borrowNow": 1421,
+   "borrow3yAgo": 543,
+   "debtEquity": 0.8680513133781307,
+   "qProfit": [
+    {
+     "q": "Sep 2019",
+     "v": 47
+    },
+    {
+     "q": "Sep 2020",
+     "v": 83
+    },
+    {
+     "q": "Sep 2021",
+     "v": 79
+    },
+    {
+     "q": "Sep 2022",
+     "v": 108
+    },
+    {
+     "q": "Sep 2023",
+     "v": 112
+    },
+    {
+     "q": "Sep 2024",
+     "v": 91
+    },
+    {
+     "q": "Sep 2025",
+     "v": 119
+    },
+    {
+     "q": "Sep 2026",
+     "v": 115
+    }
+   ],
+   "fiiNow": 6.51,
+   "fiiYearAgo": 5.39,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "HCLTECH": {
+   "sym": "HCLTECH",
+   "slug": "HCLTECH",
+   "name": "HCL Technologies Ltd",
+   "pe": 18.9,
+   "pb": null,
+   "bookValue": 104,
+   "roce": 53.4,
+   "roe": 40.6,
+   "mcap": 375408,
+   "price": 1383,
+   "high52": 1780,
+   "low52": 1030,
+   "divYield": 3.93,
+   "sales10": 15,
+   "sales5": 9,
+   "sales3": 6,
+   "profit10": 10,
+   "profit5": 8,
+   "profit3": 3,
+   "priceCagr10": 14,
+   "priceCagr5": 4,
+   "priceCagr3": 2,
+   "promoter": 60.88,
+   "basis": "consolidated",
+   "borrowNow": 988,
+   "borrow3yAgo": 799,
+   "debtEquity": 0.0381496640667233,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 2966
+    },
+    {
+     "q": "Dec 2023",
+     "v": 3349
+    },
+    {
+     "q": "Mar 2024",
+     "v": 2763
+    },
+    {
+     "q": "Jun 2024",
+     "v": 2479
+    },
+    {
+     "q": "Sep 2024",
+     "v": 3216
+    },
+    {
+     "q": "Dec 2024",
+     "v": 3526
+    },
+    {
+     "q": "Mar 2025",
+     "v": 3045
+    },
+    {
+     "q": "Jun 2025",
+     "v": 2888
+    },
+    {
+     "q": "Sep 2025",
+     "v": 2657
+    },
+    {
+     "q": "Dec 2025",
+     "v": 2982
+    },
+    {
+     "q": "Mar 2026",
+     "v": -900
+    },
+    {
+     "q": "Jun 2026",
+     "v": 7025
+    },
+    {
+     "q": "Sep 2026",
+     "v": 4302
+    }
+   ],
+   "fiiNow": 15.32,
+   "fiiYearAgo": 16.64,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "HDFCAMC": {
+   "sym": "HDFCAMC",
+   "slug": "HDFCAMC",
+   "name": "HDFC Asset Management Company Ltd",
+   "pe": 37.9,
+   "pb": null,
+   "bookValue": 201,
+   "roce": 42.9,
+   "roe": 32.9,
+   "mcap": 113109,
+   "price": 2636,
+   "high52": 2902,
+   "low52": 2206,
+   "divYield": 2.04,
+   "sales10": 12,
+   "sales5": 16,
+   "sales3": 23,
+   "profit10": 20,
+   "profit5": 17,
+   "profit3": 26,
+   "priceCagr10": null,
+   "priceCagr5": 15,
+   "priceCagr3": 22,
+   "promoter": 52.29,
+   "basis": "standalone",
+   "borrowNow": 0,
+   "borrow3yAgo": 0,
+   "debtEquity": 0,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 438
+    },
+    {
+     "q": "Dec 2023",
+     "v": 490
+    },
+    {
+     "q": "Mar 2024",
+     "v": 541
+    },
+    {
+     "q": "Jun 2024",
+     "v": 604
+    },
+    {
+     "q": "Sep 2024",
+     "v": 577
+    },
+    {
+     "q": "Dec 2024",
+     "v": 641
+    },
+    {
+     "q": "Mar 2025",
+     "v": 639
+    },
+    {
+     "q": "Jun 2025",
+     "v": 748
+    },
+    {
+     "q": "Sep 2025",
+     "v": 718
+    },
+    {
+     "q": "Dec 2025",
+     "v": 770
+    },
+    {
+     "q": "Mar 2026",
+     "v": 623
+    },
+    {
+     "q": "Jun 2026",
+     "v": 838
+    },
+    {
+     "q": "Sep 2026",
+     "v": 750
+    }
+   ],
+   "fiiNow": 24.07,
+   "fiiYearAgo": 24.69,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "HEGAM": {
+   "sym": "HEGAM",
+   "slug": "HEGAM",
+   "name": "HEG Advanced Materials Ltd",
+   "pe": 295,
+   "pb": null,
+   "bookValue": 63.9,
+   "roce": 6.04,
+   "roe": 4.5,
+   "mcap": 9033,
+   "price": 274,
+   "high52": 318,
+   "low52": 172,
+   "divYield": 1.23,
+   "sales10": 11,
+   "sales5": 15,
+   "sales3": 1,
+   "profit10": 36,
+   "profit5": 64,
+   "profit3": -25,
+   "priceCagr10": 38,
+   "priceCagr5": 13,
+   "priceCagr3": 33,
+   "promoter": 60.72,
+   "basis": "consolidated",
+   "borrowNow": 794,
+   "borrow3yAgo": 743,
+   "debtEquity": 0.18447955390334572,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 62
+    },
+    {
+     "q": "Dec 2023",
+     "v": 37
+    },
+    {
+     "q": "Mar 2024",
+     "v": 35
+    },
+    {
+     "q": "Jun 2024",
+     "v": 3
+    },
+    {
+     "q": "Sep 2024",
+     "v": 62
+    },
+    {
+     "q": "Dec 2024",
+     "v": 98
+    },
+    {
+     "q": "Mar 2025",
+     "v": -62
+    },
+    {
+     "q": "Jun 2025",
+     "v": 72
+    },
+    {
+     "q": "Sep 2025",
+     "v": 188
+    },
+    {
+     "q": "Dec 2025",
+     "v": 141
+    },
+    {
+     "q": "Mar 2026",
+     "v": -163
+    },
+    {
+     "q": "Jun 2026",
+     "v": 112
+    },
+    {
+     "q": "Sep 2026",
+     "v": 133
+    }
+   ],
+   "fiiNow": 3.61,
+   "fiiYearAgo": 7.97,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "HEXT": {
+   "sym": "HEXT",
+   "slug": "HEXT",
+   "name": "Hexaware Technologies Ltd",
+   "pe": 39.3,
+   "pb": null,
+   "bookValue": 51.8,
+   "roce": 33.5,
+   "roe": 26.6,
+   "mcap": 29805,
+   "price": 488,
+   "high52": 808,
+   "low52": 400,
+   "divYield": 3.72,
+   "sales10": 19,
+   "sales5": 25,
+   "sales3": 22,
+   "profit10": 10,
+   "profit5": 10,
+   "profit3": 7,
+   "priceCagr10": 10,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 74.3,
+   "basis": "consolidated",
+   "borrowNow": 435,
+   "borrow3yAgo": 0,
+   "debtEquity": 0.13347652654188402,
+   "qProfit": [
+    {
+     "q": "Sep 2020",
+     "v": 113
+    },
+    {
+     "q": "Dec 2023",
+     "v": 113
+    },
+    {
+     "q": "Mar 2024",
+     "v": 203
+    },
+    {
+     "q": "Jun 2024",
+     "v": 188
+    },
+    {
+     "q": "Sep 2024",
+     "v": 196
+    },
+    {
+     "q": "Dec 2024",
+     "v": 197
+    },
+    {
+     "q": "Mar 2025",
+     "v": 239
+    },
+    {
+     "q": "Jun 2025",
+     "v": 169
+    },
+    {
+     "q": "Sep 2025",
+     "v": 271
+    },
+    {
+     "q": "Dec 2025",
+     "v": 100
+    },
+    {
+     "q": "Mar 2026",
+     "v": 214
+    },
+    {
+     "q": "Jun 2026",
+     "v": 200
+    },
+    {
+     "q": "Sep 2026",
+     "v": 202
+    }
+   ],
+   "fiiNow": 3.25,
+   "fiiYearAgo": 8.31,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "HFCL": {
+   "sym": "HFCL",
+   "slug": "HFCL",
+   "name": "HFCL Ltd",
+   "pe": 44.9,
+   "pb": null,
+   "bookValue": 34.9,
+   "roce": 9.18,
+   "roe": 5.86,
+   "mcap": 30551,
+   "price": 200,
+   "high52": 282,
+   "low52": 59.8,
+   "divYield": 0.1,
+   "sales10": 5,
+   "sales5": 2,
+   "sales3": 1,
+   "profit10": 1,
+   "profit5": 2,
+   "profit3": 0,
+   "priceCagr10": 33,
+   "priceCagr5": 22,
+   "priceCagr3": 44,
+   "promoter": 28.29,
+   "basis": "consolidated",
+   "borrowNow": 1668,
+   "borrow3yAgo": 791,
+   "debtEquity": 0.3528665115295113,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 68
+    },
+    {
+     "q": "Dec 2023",
+     "v": 78
+    },
+    {
+     "q": "Mar 2024",
+     "v": 115
+    },
+    {
+     "q": "Jun 2024",
+     "v": 114
+    },
+    {
+     "q": "Sep 2024",
+     "v": 75
+    },
+    {
+     "q": "Dec 2024",
+     "v": 78
+    },
+    {
+     "q": "Mar 2025",
+     "v": -73
+    },
+    {
+     "q": "Jun 2025",
+     "v": -42
+    },
+    {
+     "q": "Sep 2025",
+     "v": 61
+    },
+    {
+     "q": "Dec 2025",
+     "v": 56
+    },
+    {
+     "q": "Mar 2026",
+     "v": 178
+    },
+    {
+     "q": "Jun 2026",
+     "v": 179
+    },
+    {
+     "q": "Sep 2026",
+     "v": 268
+    }
+   ],
+   "fiiNow": 17.24,
+   "fiiYearAgo": 7.48,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "HAL": {
+   "sym": "HAL",
+   "slug": "HAL",
+   "name": "Hindustan Aeronautics Ltd",
+   "pe": 33.7,
+   "pb": null,
+   "bookValue": 654,
+   "roce": 32,
+   "roe": 24,
+   "mcap": 319226,
+   "price": 4773,
+   "high52": 5150,
+   "low52": 3479,
+   "divYield": 0.94,
+   "sales10": 7,
+   "sales5": 8,
+   "sales3": 7,
+   "profit10": 16,
+   "profit5": 23,
+   "profit3": 16,
+   "priceCagr10": null,
+   "priceCagr5": 47,
+   "priceCagr3": 31,
+   "promoter": 71.64,
+   "basis": "consolidated",
+   "borrowNow": 65,
+   "borrow3yAgo": 51,
+   "debtEquity": 0.0015907199843375264,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 1235
+    },
+    {
+     "q": "Dec 2023",
+     "v": 1254
+    },
+    {
+     "q": "Mar 2024",
+     "v": 4292
+    },
+    {
+     "q": "Jun 2024",
+     "v": 1436
+    },
+    {
+     "q": "Sep 2024",
+     "v": 1490
+    },
+    {
+     "q": "Dec 2024",
+     "v": 1433
+    },
+    {
+     "q": "Mar 2025",
+     "v": 3958
+    },
+    {
+     "q": "Jun 2025",
+     "v": 1377
+    },
+    {
+     "q": "Sep 2025",
+     "v": 1663
+    },
+    {
+     "q": "Dec 2025",
+     "v": 1852
+    },
+    {
+     "q": "Mar 2026",
+     "v": 4184
+    },
+    {
+     "q": "Jun 2026",
+     "v": 1581
+    },
+    {
+     "q": "Sep 2026",
+     "v": 1839
+    }
+   ],
+   "fiiNow": 9.42,
+   "fiiYearAgo": 12,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "ICICIAMC": {
+   "sym": "ICICIAMC",
+   "slug": "ICICIAMC",
+   "name": "ICICI Prudential Asset Management Co Ltd",
+   "pe": 42.2,
+   "pb": null,
+   "bookValue": 108,
+   "roce": 115,
+   "roe": 85.8,
+   "mcap": 149488,
+   "price": 3024,
+   "high52": 3611,
+   "low52": 2529,
+   "divYield": 0.99,
+   "sales10": null,
+   "sales5": 22,
+   "sales3": 28,
+   "profit10": null,
+   "profit5": 22,
+   "profit3": 30,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 85.6,
+   "basis": "standalone",
+   "borrowNow": 0,
+   "borrow3yAgo": 116,
+   "debtEquity": 0,
+   "qProfit": [
+    {
+     "q": "Dec 2024",
+     "v": 632
+    },
+    {
+     "q": "Mar 2025",
+     "v": 692
+    },
+    {
+     "q": "Jun 2025",
+     "v": 784
+    },
+    {
+     "q": "Sep 2025",
+     "v": 838
+    },
+    {
+     "q": "Dec 2025",
+     "v": 917
+    },
+    {
+     "q": "Mar 2026",
+     "v": 769
+    },
+    {
+     "q": "Jun 2026",
+     "v": 965
+    },
+    {
+     "q": "Sep 2026",
+     "v": 889
+    }
+   ],
+   "fiiNow": 3.26,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "IDFCFIRSTB": {
+   "sym": "IDFCFIRSTB",
+   "slug": "IDFCFIRSTB",
+   "name": "IDFC First Bank Ltd",
+   "pe": 23.6,
+   "pb": null,
+   "bookValue": 57,
+   "roce": 5.98,
+   "roe": 3.83,
+   "mcap": 69061,
+   "price": 80,
+   "high52": 89.6,
+   "low52": 58.1,
+   "divYield": 0.31,
+   "sales10": 27,
+   "sales5": 20,
+   "sales3": 21,
+   "profit10": 13,
+   "profit5": 30,
+   "profit3": -12,
+   "priceCagr10": 1,
+   "priceCagr5": 10,
+   "priceCagr3": -2,
+   "promoter": 0,
+   "basis": "standalone",
+   "borrowNow": null,
+   "borrow3yAgo": null,
+   "debtEquity": null,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 751
+    },
+    {
+     "q": "Dec 2023",
+     "v": 716
+    },
+    {
+     "q": "Mar 2024",
+     "v": 724
+    },
+    {
+     "q": "Jun 2024",
+     "v": 681
+    },
+    {
+     "q": "Sep 2024",
+     "v": 201
+    },
+    {
+     "q": "Dec 2024",
+     "v": 339
+    },
+    {
+     "q": "Mar 2025",
+     "v": 304
+    },
+    {
+     "q": "Jun 2025",
+     "v": 463
+    },
+    {
+     "q": "Sep 2025",
+     "v": 352
+    },
+    {
+     "q": "Dec 2025",
+     "v": 503
+    },
+    {
+     "q": "Mar 2026",
+     "v": 319
+    },
+    {
+     "q": "Jun 2026",
+     "v": 1075
+    },
+    {
+     "q": "Sep 2026",
+     "v": 1045
+    }
+   ],
+   "fiiNow": 36.67,
+   "fiiYearAgo": 24.64,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "IEX": {
+   "sym": "IEX",
+   "slug": "IEX",
+   "name": "Indian Energy Exchange Ltd",
+   "pe": 20.5,
+   "pb": null,
+   "bookValue": 15.6,
+   "roce": 51.8,
+   "roe": 39.4,
+   "mcap": 10263,
+   "price": 115,
+   "high52": 160,
+   "low52": 99.5,
+   "divYield": 3.04,
+   "sales10": 14,
+   "sales5": 14,
+   "sales3": 15,
+   "profit10": 17,
+   "profit5": 18,
+   "profit3": 20,
+   "priceCagr10": null,
+   "priceCagr5": -16,
+   "priceCagr3": -6,
+   "promoter": null,
+   "basis": "standalone",
+   "borrowNow": 11,
+   "borrow3yAgo": 14,
+   "debtEquity": 0.008416220351951033,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 83
+    },
+    {
+     "q": "Dec 2023",
+     "v": 89
+    },
+    {
+     "q": "Mar 2024",
+     "v": 95
+    },
+    {
+     "q": "Jun 2024",
+     "v": 93
+    },
+    {
+     "q": "Sep 2024",
+     "v": 106
+    },
+    {
+     "q": "Dec 2024",
+     "v": 103
+    },
+    {
+     "q": "Mar 2025",
+     "v": 112
+    },
+    {
+     "q": "Jun 2025",
+     "v": 113
+    },
+    {
+     "q": "Sep 2025",
+     "v": 122
+    },
+    {
+     "q": "Dec 2025",
+     "v": 115
+    },
+    {
+     "q": "Mar 2026",
+     "v": 124
+    },
+    {
+     "q": "Jun 2026",
+     "v": 127
+    },
+    {
+     "q": "Sep 2026",
+     "v": 133
+    }
+   ],
+   "fiiNow": 12.02,
+   "fiiYearAgo": 13.2,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "IRCTC": {
+   "sym": "IRCTC",
+   "slug": "IRCTC",
+   "name": "Indian Railway Catering & Tourism Corporation Ltd",
+   "pe": 26.1,
+   "pb": null,
+   "bookValue": 60.8,
+   "roce": 46.1,
+   "roe": 34.7,
+   "mcap": 36040,
+   "price": 450,
+   "high52": 716,
+   "low52": 435,
+   "divYield": 2,
+   "sales10": 14,
+   "sales5": 46,
+   "sales3": 14,
+   "profit10": 22,
+   "profit5": 54,
+   "profit3": 12,
+   "priceCagr10": null,
+   "priceCagr5": -13,
+   "priceCagr3": -14,
+   "promoter": 62.4,
+   "basis": "standalone",
+   "borrowNow": 81,
+   "borrow3yAgo": 84,
+   "debtEquity": 0.018802228412256268,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 295
+    },
+    {
+     "q": "Dec 2023",
+     "v": 300
+    },
+    {
+     "q": "Mar 2024",
+     "v": 284
+    },
+    {
+     "q": "Jun 2024",
+     "v": 308
+    },
+    {
+     "q": "Sep 2024",
+     "v": 308
+    },
+    {
+     "q": "Dec 2024",
+     "v": 341
+    },
+    {
+     "q": "Mar 2025",
+     "v": 358
+    },
+    {
+     "q": "Jun 2025",
+     "v": 330
+    },
+    {
+     "q": "Sep 2025",
+     "v": 342
+    },
+    {
+     "q": "Dec 2025",
+     "v": 394
+    },
+    {
+     "q": "Mar 2026",
+     "v": 327
+    },
+    {
+     "q": "Jun 2026",
+     "v": 330
+    },
+    {
+     "q": "Sep 2026",
+     "v": 263
+    }
+   ],
+   "fiiNow": 3.47,
+   "fiiYearAgo": 7.27,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "IRFC": {
+   "sym": "IRFC",
+   "slug": "IRFC",
+   "name": "Indian Railway Finance Corporation Ltd",
+   "pe": 14.5,
+   "pb": null,
+   "bookValue": 46.4,
+   "roce": 5.64,
+   "roe": 12.8,
+   "mcap": 106600,
+   "price": 81.6,
+   "high52": 137,
+   "low52": 73,
+   "divYield": 2.56,
+   "sales10": 14,
+   "sales5": 12,
+   "sales3": 5,
+   "profit10": 24,
+   "profit5": 10,
+   "profit3": 3,
+   "priceCagr10": null,
+   "priceCagr5": 28,
+   "priceCagr3": 3,
+   "promoter": 82.9,
+   "basis": "standalone",
+   "borrowNow": null,
+   "borrow3yAgo": null,
+   "debtEquity": null,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 1545
+    },
+    {
+     "q": "Dec 2023",
+     "v": 1599
+    },
+    {
+     "q": "Mar 2024",
+     "v": 1717
+    },
+    {
+     "q": "Jun 2024",
+     "v": 1577
+    },
+    {
+     "q": "Sep 2024",
+     "v": 1613
+    },
+    {
+     "q": "Dec 2024",
+     "v": 1631
+    },
+    {
+     "q": "Mar 2025",
+     "v": 1682
+    },
+    {
+     "q": "Jun 2025",
+     "v": 1746
+    },
+    {
+     "q": "Sep 2025",
+     "v": 1777
+    },
+    {
+     "q": "Dec 2025",
+     "v": 1802
+    },
+    {
+     "q": "Mar 2026",
+     "v": 1684
+    },
+    {
+     "q": "Jun 2026",
+     "v": 1927
+    },
+    {
+     "q": "Sep 2026",
+     "v": 1958
+    }
+   ],
+   "fiiNow": 1.15,
+   "fiiYearAgo": 0.97,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "INDOTHAI": {
+   "sym": "INDOTHAI",
+   "slug": "INDOTHAI",
+   "name": "Indo Thai Securities Ltd",
+   "pe": 20.9,
+   "pb": null,
+   "bookValue": 20.5,
+   "roce": 36,
+   "roe": 29,
+   "mcap": 408,
+   "price": 30.7,
+   "high52": 468,
+   "low52": 27.8,
+   "divYield": 0.64,
+   "sales10": 8,
+   "sales5": 36,
+   "sales3": 138,
+   "profit10": 26,
+   "profit5": 40,
+   "profit3": 138,
+   "priceCagr10": 32,
+   "priceCagr5": 18,
+   "priceCagr3": 13,
+   "promoter": 54.77,
+   "basis": "consolidated",
+   "borrowNow": 22,
+   "borrow3yAgo": 4,
+   "debtEquity": 0.07773851590106007,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 5
+    },
+    {
+     "q": "Dec 2023",
+     "v": 6
+    },
+    {
+     "q": "Mar 2024",
+     "v": 3
+    },
+    {
+     "q": "Jun 2024",
+     "v": 5
+    },
+    {
+     "q": "Sep 2024",
+     "v": 5
+    },
+    {
+     "q": "Dec 2024",
+     "v": 1
+    },
+    {
+     "q": "Mar 2025",
+     "v": -2
+    },
+    {
+     "q": "Jun 2025",
+     "v": 8
+    },
+    {
+     "q": "Sep 2025",
+     "v": 15
+    },
+    {
+     "q": "Dec 2025",
+     "v": 17
+    },
+    {
+     "q": "Mar 2026",
+     "v": 27
+    },
+    {
+     "q": "Jun 2026",
+     "v": 11
+    },
+    {
+     "q": "Sep 2026",
+     "v": -36
+    }
+   ],
+   "fiiNow": 0.16,
+   "fiiYearAgo": 1.17,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "INDUSTOWER": {
+   "sym": "INDUSTOWER",
+   "slug": "INDUSTOWER",
+   "name": "Indus Towers Ltd",
+   "pe": 14.7,
+   "pb": null,
+   "bookValue": 150,
+   "roce": 19.4,
+   "roe": 19,
+   "mcap": 104524,
+   "price": 396,
+   "high52": 482,
+   "low52": 356,
+   "divYield": 3.53,
+   "sales10": 19,
+   "sales5": 18,
+   "sales3": 5,
+   "profit10": 20,
+   "profit5": 17,
+   "profit3": 48,
+   "priceCagr10": 1,
+   "priceCagr5": 7,
+   "priceCagr3": 29,
+   "promoter": 51.26,
+   "basis": "consolidated",
+   "borrowNow": 21127,
+   "borrow3yAgo": 19185,
+   "debtEquity": 0.5324478943521762,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 1295
+    },
+    {
+     "q": "Dec 2023",
+     "v": 1541
+    },
+    {
+     "q": "Mar 2024",
+     "v": 1853
+    },
+    {
+     "q": "Jun 2024",
+     "v": 1926
+    },
+    {
+     "q": "Sep 2024",
+     "v": 2222
+    },
+    {
+     "q": "Dec 2024",
+     "v": 3997
+    },
+    {
+     "q": "Mar 2025",
+     "v": 1776
+    },
+    {
+     "q": "Jun 2025",
+     "v": 1734
+    },
+    {
+     "q": "Sep 2025",
+     "v": 1837
+    },
+    {
+     "q": "Dec 2025",
+     "v": 1774
+    },
+    {
+     "q": "Mar 2026",
+     "v": 1789
+    },
+    {
+     "q": "Jun 2026",
+     "v": 1745
+    },
+    {
+     "q": "Sep 2026",
+     "v": 1799
+    }
+   ],
+   "fiiNow": 21.71,
+   "fiiYearAgo": 26.21,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "NAUKRI": {
+   "sym": "NAUKRI",
+   "slug": "NAUKRI",
+   "name": "Info Edge (India) Ltd",
+   "pe": 62.8,
+   "pb": null,
+   "bookValue": 671,
+   "roce": 4.79,
+   "roe": 3.93,
+   "mcap": 75946,
+   "price": 1171,
+   "high52": 1403,
+   "low52": 908,
+   "divYield": 0.72,
+   "sales10": 16,
+   "sales5": 22,
+   "sales3": 12,
+   "profit10": 24,
+   "profit5": 34,
+   "profit3": 27,
+   "priceCagr10": 21,
+   "priceCagr5": -2,
+   "priceCagr3": 7,
+   "promoter": 37.19,
+   "basis": "consolidated",
+   "borrowNow": 242,
+   "borrow3yAgo": 88,
+   "debtEquity": 0.0069644296074594225,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 209
+    },
+    {
+     "q": "Dec 2023",
+     "v": 214
+    },
+    {
+     "q": "Mar 2024",
+     "v": 211
+    },
+    {
+     "q": "Jun 2024",
+     "v": 232
+    },
+    {
+     "q": "Sep 2024",
+     "v": 86
+    },
+    {
+     "q": "Dec 2024",
+     "v": 200
+    },
+    {
+     "q": "Mar 2025",
+     "v": 255
+    },
+    {
+     "q": "Jun 2025",
+     "v": 260
+    },
+    {
+     "q": "Sep 2025",
+     "v": 4720
+    },
+    {
+     "q": "Dec 2025",
+     "v": 246
+    },
+    {
+     "q": "Mar 2026",
+     "v": 309
+    },
+    {
+     "q": "Jun 2026",
+     "v": 246
+    },
+    {
+     "q": "Sep 2026",
+     "v": 334
+    }
+   ],
+   "fiiNow": 25.46,
+   "fiiYearAgo": 30.33,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "INFY": {
+   "sym": "INFY",
+   "slug": "INFY",
+   "name": "Infosys Ltd",
+   "pe": 14.8,
+   "pb": null,
+   "bookValue": 213,
+   "roce": 45.6,
+   "roe": 35.7,
+   "mcap": 464269,
+   "price": 1144,
+   "high52": 1728,
+   "low52": 980,
+   "divYield": 4.17,
+   "sales10": 11,
+   "sales5": 12,
+   "sales3": 6,
+   "profit10": 9,
+   "profit5": 11,
+   "profit3": 9,
+   "priceCagr10": 10,
+   "priceCagr5": -9,
+   "priceCagr3": -7,
+   "promoter": 13.9,
+   "basis": "consolidated",
+   "borrowNow": 3749,
+   "borrow3yAgo": 4266,
+   "debtEquity": 0.04635606004401909,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 6245
+    },
+    {
+     "q": "Dec 2023",
+     "v": 6552
+    },
+    {
+     "q": "Mar 2024",
+     "v": 8480
+    },
+    {
+     "q": "Jun 2024",
+     "v": 5768
+    },
+    {
+     "q": "Sep 2024",
+     "v": 6813
+    },
+    {
+     "q": "Dec 2024",
+     "v": 6358
+    },
+    {
+     "q": "Mar 2025",
+     "v": 6628
+    },
+    {
+     "q": "Jun 2025",
+     "v": 6114
+    },
+    {
+     "q": "Sep 2025",
+     "v": 7759
+    },
+    {
+     "q": "Dec 2025",
+     "v": 7363
+    },
+    {
+     "q": "Mar 2026",
+     "v": 7975
+    },
+    {
+     "q": "Jun 2026",
+     "v": 7249
+    },
+    {
+     "q": "Sep 2026",
+     "v": 7893
+    }
+   ],
+   "fiiNow": 27.44,
+   "fiiYearAgo": 30.08,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "INTELLECT": {
+   "sym": "INTELLECT",
+   "slug": "INTELLECT",
+   "name": "Intellect Design Arena Ltd",
+   "pe": 32.2,
+   "pb": null,
+   "bookValue": 151,
+   "roce": 14.7,
+   "roe": 10.9,
+   "mcap": 7520,
+   "price": 535,
+   "high52": 1172,
+   "low52": 478,
+   "divYield": 0.72,
+   "sales10": 12,
+   "sales5": 11,
+   "sales3": 4,
+   "profit10": 26,
+   "profit5": 1,
+   "profit3": 17,
+   "priceCagr10": 16,
+   "priceCagr5": -5,
+   "priceCagr3": -9,
+   "promoter": 29.55,
+   "basis": "consolidated",
+   "borrowNow": 20,
+   "borrow3yAgo": 12,
+   "debtEquity": 0.009857072449482503,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 36
+    },
+    {
+     "q": "Dec 2023",
+     "v": 49
+    },
+    {
+     "q": "Mar 2024",
+     "v": 28
+    },
+    {
+     "q": "Jun 2024",
+     "v": 46
+    },
+    {
+     "q": "Sep 2024",
+     "v": 24
+    },
+    {
+     "q": "Dec 2024",
+     "v": 34
+    },
+    {
+     "q": "Mar 2025",
+     "v": 90
+    },
+    {
+     "q": "Jun 2025",
+     "v": 55
+    },
+    {
+     "q": "Sep 2025",
+     "v": 69
+    },
+    {
+     "q": "Dec 2025",
+     "v": -7
+    },
+    {
+     "q": "Mar 2026",
+     "v": 77
+    },
+    {
+     "q": "Jun 2026",
+     "v": 58
+    },
+    {
+     "q": "Sep 2026",
+     "v": 80
+    }
+   ],
+   "fiiNow": 21.4,
+   "fiiYearAgo": 27.53,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "IGIL": {
+   "sym": "IGIL",
+   "slug": "IGIL",
+   "name": "International Gemological Institute Limited",
+   "pe": 29.5,
+   "pb": null,
+   "bookValue": 64.9,
+   "roce": 39.9,
+   "roe": 30.2,
+   "mcap": 18583,
+   "price": 430,
+   "high52": 454,
+   "low52": 287,
+   "divYield": 0.6,
+   "sales10": null,
+   "sales5": 57,
+   "sales3": 37,
+   "profit10": null,
+   "profit5": 77,
+   "profit3": 44,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 76.55,
+   "basis": "consolidated",
+   "borrowNow": 35,
+   "borrow3yAgo": null,
+   "debtEquity": 0.013513513513513514,
+   "qProfit": [
+    {
+     "q": "Dec 2023",
+     "v": 88
+    },
+    {
+     "q": "Mar 2024",
+     "v": 126
+    },
+    {
+     "q": "Jun 2024",
+     "v": 96
+    },
+    {
+     "q": "Sep 2024",
+     "v": 108
+    },
+    {
+     "q": "Dec 2024",
+     "v": 112
+    },
+    {
+     "q": "Mar 2025",
+     "v": 139
+    },
+    {
+     "q": "Jun 2025",
+     "v": 137
+    },
+    {
+     "q": "Sep 2025",
+     "v": 139
+    },
+    {
+     "q": "Dec 2025",
+     "v": 132
+    },
+    {
+     "q": "Mar 2026",
+     "v": 174
+    },
+    {
+     "q": "Jun 2026",
+     "v": 155
+    },
+    {
+     "q": "Sep 2026",
+     "v": 170
+    }
+   ],
+   "fiiNow": 8.79,
+   "fiiYearAgo": 10.55,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "IKS": {
+   "sym": "IKS",
+   "slug": "IKS",
+   "name": "Inventurus Knowledge Solutions Ltd",
+   "pe": 49,
+   "pb": null,
+   "bookValue": 124,
+   "roce": 44,
+   "roe": 37.6,
+   "mcap": 28130,
+   "price": 1639,
+   "high52": 1970,
+   "low52": 1262,
+   "divYield": 0,
+   "sales10": 22,
+   "sales5": 29,
+   "sales3": 25,
+   "profit10": 32,
+   "profit5": 32,
+   "profit3": 27,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 63.72,
+   "basis": "consolidated",
+   "borrowNow": 110,
+   "borrow3yAgo": 43,
+   "debtEquity": 0.06152125279642058,
+   "qProfit": [
+    {
+     "q": "Dec 2023",
+     "v": 113
+    },
+    {
+     "q": "Mar 2024",
+     "v": 43
+    },
+    {
+     "q": "Jun 2024",
+     "v": 57
+    },
+    {
+     "q": "Sep 2024",
+     "v": 92
+    },
+    {
+     "q": "Dec 2024",
+     "v": 83
+    },
+    {
+     "q": "Mar 2025",
+     "v": 100
+    },
+    {
+     "q": "Jun 2025",
+     "v": 113
+    },
+    {
+     "q": "Sep 2025",
+     "v": 138
+    },
+    {
+     "q": "Dec 2025",
+     "v": 146
+    },
+    {
+     "q": "Mar 2026",
+     "v": 169
+    },
+    {
+     "q": "Jun 2026",
+     "v": 163
+    },
+    {
+     "q": "Sep 2026",
+     "v": 96
+    }
+   ],
+   "fiiNow": 8.1,
+   "fiiYearAgo": 7.02,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "ITI": {
+   "sym": "ITI",
+   "slug": "ITI",
+   "name": "ITI Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": 18.6,
+   "roce": 2.14,
+   "roe": -9.13,
+   "mcap": 24435,
+   "price": 254,
+   "high52": 333,
+   "low52": 211,
+   "divYield": 0,
+   "sales10": 6,
+   "sales5": -2,
+   "sales3": 16,
+   "profit10": null,
+   "profit5": null,
+   "profit3": 16,
+   "priceCagr10": 25,
+   "priceCagr5": 17,
+   "priceCagr3": 1,
+   "promoter": 90.02,
+   "basis": "standalone",
+   "borrowNow": 765,
+   "borrow3yAgo": 1877,
+   "debtEquity": 0.4130669546436285,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -126
+    },
+    {
+     "q": "Dec 2023",
+     "v": -102
+    },
+    {
+     "q": "Mar 2024",
+     "v": -239
+    },
+    {
+     "q": "Jun 2024",
+     "v": -91
+    },
+    {
+     "q": "Sep 2024",
+     "v": -70
+    },
+    {
+     "q": "Dec 2024",
+     "v": -67
+    },
+    {
+     "q": "Mar 2025",
+     "v": -5
+    },
+    {
+     "q": "Jun 2025",
+     "v": -63
+    },
+    {
+     "q": "Sep 2025",
+     "v": -54
+    },
+    {
+     "q": "Dec 2025",
+     "v": -26
+    },
+    {
+     "q": "Mar 2026",
+     "v": 436
+    },
+    {
+     "q": "Jun 2026",
+     "v": -32
+    },
+    {
+     "q": "Sep 2026",
+     "v": -32
+    }
+   ],
+   "fiiNow": 0.02,
+   "fiiYearAgo": 0,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "JIOFIN": {
+   "sym": "JIOFIN",
+   "slug": "JIOFIN",
+   "name": "Jio Financial Services Ltd",
+   "pe": 186,
+   "pb": null,
+   "bookValue": 53.8,
+   "roce": 2.85,
+   "roe": 2.51,
+   "mcap": 155361,
+   "price": 227,
+   "high52": 317,
+   "low52": 203,
+   "divYield": 0.26,
+   "sales10": null,
+   "sales5": 26,
+   "sales3": 177,
+   "profit10": null,
+   "profit5": 41,
+   "profit3": 179,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": 1,
+   "promoter": 50.99,
+   "basis": "consolidated",
+   "borrowNow": 0,
+   "borrow3yAgo": 743,
+   "debtEquity": 0,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 89
+    },
+    {
+     "q": "Dec 2023",
+     "v": 70
+    },
+    {
+     "q": "Mar 2024",
+     "v": 78
+    },
+    {
+     "q": "Jun 2024",
+     "v": 72
+    },
+    {
+     "q": "Sep 2024",
+     "v": 305
+    },
+    {
+     "q": "Dec 2024",
+     "v": 75
+    },
+    {
+     "q": "Mar 2025",
+     "v": 97
+    },
+    {
+     "q": "Jun 2025",
+     "v": 71
+    },
+    {
+     "q": "Sep 2025",
+     "v": 456
+    },
+    {
+     "q": "Dec 2025",
+     "v": 73
+    },
+    {
+     "q": "Mar 2026",
+     "v": 80
+    },
+    {
+     "q": "Jun 2026",
+     "v": 105
+    },
+    {
+     "q": "Sep 2026",
+     "v": 575
+    }
+   ],
+   "fiiNow": 10,
+   "fiiYearAgo": 11.55,
+   "fiiLatestQ": "Oct 2026"
+  },
+  "JPL": {
+   "sym": "JPL",
+   "slug": "JPL",
+   "name": "Jio Platforms Ltd",
+   "pe": 924,
+   "pb": null,
+   "bookValue": null,
+   "roce": 0.81,
+   "roe": 0.61,
+   "mcap": 1292948,
+   "price": 1404,
+   "high52": 1490,
+   "low52": 1356,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": null,
+   "sales3": 43,
+   "profit10": null,
+   "profit5": null,
+   "profit3": 24,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 64.48,
+   "basis": "consolidated",
+   "borrowNow": 0,
+   "borrow3yAgo": 0,
+   "debtEquity": 0,
+   "qProfit": [
+    {
+     "q": "Sep 2025",
+     "v": 301
+    },
+    {
+     "q": "Jun 2026",
+     "v": 399
+    },
+    {
+     "q": "Sep 2026",
+     "v": 419
+    }
+   ],
+   "fiiNow": 32.54,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Oct 2026"
+  },
+  "KAYNES": {
+   "sym": "KAYNES",
+   "slug": "KAYNES",
+   "name": "Kaynes Technology India Ltd",
+   "pe": 71,
+   "pb": null,
+   "bookValue": 680,
+   "roce": 9.99,
+   "roe": 6.26,
+   "mcap": 19763,
+   "price": 2940,
+   "high52": 6347,
+   "low52": 2810,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 40,
+   "sales3": 25,
+   "profit10": null,
+   "profit5": 92,
+   "profit3": 33,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": 5,
+   "promoter": 53.31,
+   "basis": "consolidated",
+   "borrowNow": 330,
+   "borrow3yAgo": 145,
+   "debtEquity": 0.07333333333333333,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 25
+    },
+    {
+     "q": "Dec 2023",
+     "v": 26
+    },
+    {
+     "q": "Mar 2024",
+     "v": 50
+    },
+    {
+     "q": "Jun 2024",
+     "v": 49
+    },
+    {
+     "q": "Sep 2024",
+     "v": 63
+    },
+    {
+     "q": "Dec 2024",
+     "v": 38
+    },
+    {
+     "q": "Mar 2025",
+     "v": 60
+    },
+    {
+     "q": "Jun 2025",
+     "v": 54
+    },
+    {
+     "q": "Sep 2025",
+     "v": 25
+    },
+    {
+     "q": "Dec 2025",
+     "v": 66
+    },
+    {
+     "q": "Mar 2026",
+     "v": 71
+    },
+    {
+     "q": "Jun 2026",
+     "v": 72
+    },
+    {
+     "q": "Sep 2026",
+     "v": 97
+    }
+   ],
+   "fiiNow": 6.08,
+   "fiiYearAgo": 10.71,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "KELLTONTEC": {
+   "sym": "KELLTONTEC",
+   "slug": "KELLTONTEC",
+   "name": "Kellton Tech Solutions Ltd",
+   "pe": 49.9,
+   "pb": null,
+   "bookValue": 5.83,
+   "roce": 9.17,
+   "roe": 6.14,
+   "mcap": 615,
+   "price": 11.6,
+   "high52": 22,
+   "low52": 10.7,
+   "divYield": 0,
+   "sales10": 16,
+   "sales5": 12,
+   "sales3": 7,
+   "profit10": 8,
+   "profit5": 6,
+   "profit3": 16,
+   "priceCagr10": 1,
+   "priceCagr5": 4,
+   "priceCagr3": -11,
+   "promoter": 36.46,
+   "basis": "consolidated",
+   "borrowNow": 103,
+   "borrow3yAgo": 50,
+   "debtEquity": 0.3377049180327869,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 2.79
+    },
+    {
+     "q": "Dec 2023",
+     "v": 1.64
+    },
+    {
+     "q": "Mar 2024",
+     "v": 2.4
+    },
+    {
+     "q": "Jun 2024",
+     "v": 3.36
+    },
+    {
+     "q": "Sep 2024",
+     "v": 3.55
+    },
+    {
+     "q": "Dec 2024",
+     "v": 3.4
+    },
+    {
+     "q": "Mar 2025",
+     "v": 3.21
+    },
+    {
+     "q": "Jun 2025",
+     "v": 2.77
+    },
+    {
+     "q": "Sep 2025",
+     "v": 4.05
+    },
+    {
+     "q": "Dec 2025",
+     "v": 3.59
+    },
+    {
+     "q": "Mar 2026",
+     "v": 4.46
+    },
+    {
+     "q": "Jun 2026",
+     "v": 1.85
+    },
+    {
+     "q": "Sep 2026",
+     "v": 2.41
+    }
+   ],
+   "fiiNow": 0.66,
+   "fiiYearAgo": 0.96,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "KFINTECH": {
+   "sym": "KFINTECH",
+   "slug": "KFINTECH",
+   "name": "KFin Technologies Ltd",
+   "pe": 43.9,
+   "pb": null,
+   "bookValue": 95,
+   "roce": 30.6,
+   "roe": 23.3,
+   "mcap": 16374,
+   "price": 947,
+   "high52": 1116,
+   "low52": 784,
+   "divYield": 1.26,
+   "sales10": null,
+   "sales5": 20,
+   "sales3": 19,
+   "profit10": null,
+   "profit5": 49,
+   "profit3": 22,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": 21,
+   "promoter": 14.06,
+   "basis": "consolidated",
+   "borrowNow": 42,
+   "borrow3yAgo": 159,
+   "debtEquity": 0.02551640340218712,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 62
+    },
+    {
+     "q": "Dec 2023",
+     "v": 66
+    },
+    {
+     "q": "Mar 2024",
+     "v": 73
+    },
+    {
+     "q": "Jun 2024",
+     "v": 68
+    },
+    {
+     "q": "Sep 2024",
+     "v": 85
+    },
+    {
+     "q": "Dec 2024",
+     "v": 91
+    },
+    {
+     "q": "Mar 2025",
+     "v": 81
+    },
+    {
+     "q": "Jun 2025",
+     "v": 76
+    },
+    {
+     "q": "Sep 2025",
+     "v": 91
+    },
+    {
+     "q": "Dec 2025",
+     "v": 94
+    },
+    {
+     "q": "Mar 2026",
+     "v": 85
+    },
+    {
+     "q": "Jun 2026",
+     "v": 80
+    },
+    {
+     "q": "Sep 2026",
+     "v": 106
+    }
+   ],
+   "fiiNow": 20.07,
+   "fiiYearAgo": 25.53,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "KPITTECH": {
+   "sym": "KPITTECH",
+   "slug": "KPITTECH",
+   "name": "KPIT Technologies Ltd",
+   "pe": 31.9,
+   "pb": null,
+   "bookValue": 87.4,
+   "roce": 33.2,
+   "roe": 27.9,
+   "mcap": 14745,
+   "price": 538,
+   "high52": 1285,
+   "low52": 470,
+   "divYield": 1.37,
+   "sales10": null,
+   "sales5": 27,
+   "sales3": 20,
+   "profit10": null,
+   "profit5": 45,
+   "profit3": 28,
+   "priceCagr10": null,
+   "priceCagr5": 3,
+   "priceCagr3": -29,
+   "promoter": 38.59,
+   "basis": "consolidated",
+   "borrowNow": 158,
+   "borrow3yAgo": 57,
+   "debtEquity": 0.06963420008814455,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 84
+    },
+    {
+     "q": "Dec 2023",
+     "v": 84
+    },
+    {
+     "q": "Mar 2024",
+     "v": 82
+    },
+    {
+     "q": "Jun 2024",
+     "v": 75
+    },
+    {
+     "q": "Sep 2024",
+     "v": 162
+    },
+    {
+     "q": "Dec 2024",
+     "v": 112
+    },
+    {
+     "q": "Mar 2025",
+     "v": 132
+    },
+    {
+     "q": "Jun 2025",
+     "v": 229
+    },
+    {
+     "q": "Sep 2025",
+     "v": 119
+    },
+    {
+     "q": "Dec 2025",
+     "v": 50
+    },
+    {
+     "q": "Mar 2026",
+     "v": 147
+    },
+    {
+     "q": "Jun 2026",
+     "v": 97
+    },
+    {
+     "q": "Sep 2026",
+     "v": 130
+    }
+   ],
+   "fiiNow": 9.09,
+   "fiiYearAgo": 14.31,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "LTTS": {
+   "sym": "LTTS",
+   "slug": "LTTS",
+   "name": "L&T Technology Services Ltd",
+   "pe": 34.7,
+   "pb": null,
+   "bookValue": 610,
+   "roce": 26.8,
+   "roe": 21.6,
+   "mcap": 44984,
+   "price": 4240,
+   "high52": 4747,
+   "low52": 3010,
+   "divYield": 1.37,
+   "sales10": 12,
+   "sales5": 13,
+   "sales3": 5,
+   "profit10": 11,
+   "profit5": 14,
+   "profit3": 4,
+   "priceCagr10": 18,
+   "priceCagr5": -6,
+   "priceCagr3": -2,
+   "promoter": 73.51,
+   "basis": "consolidated",
+   "borrowNow": 541,
+   "borrow3yAgo": 424,
+   "debtEquity": 0.09127720600641134,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 308
+    },
+    {
+     "q": "Dec 2023",
+     "v": 321
+    },
+    {
+     "q": "Mar 2024",
+     "v": 329
+    },
+    {
+     "q": "Jun 2024",
+     "v": 313
+    },
+    {
+     "q": "Sep 2024",
+     "v": 293
+    },
+    {
+     "q": "Dec 2024",
+     "v": 301
+    },
+    {
+     "q": "Mar 2025",
+     "v": 314
+    },
+    {
+     "q": "Jun 2025",
+     "v": 308
+    },
+    {
+     "q": "Sep 2025",
+     "v": 307
+    },
+    {
+     "q": "Dec 2025",
+     "v": 289
+    },
+    {
+     "q": "Mar 2026",
+     "v": 302
+    },
+    {
+     "q": "Jun 2026",
+     "v": 333
+    },
+    {
+     "q": "Sep 2026",
+     "v": 515
+    }
+   ],
+   "fiiNow": 4.43,
+   "fiiYearAgo": 4.67,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "IXIGO": {
+   "sym": "IXIGO",
+   "slug": "IXIGO",
+   "name": "Le Travenues Technology Ltd",
+   "pe": 57.8,
+   "pb": null,
+   "bookValue": 49.4,
+   "roce": 8.25,
+   "roe": 6.81,
+   "mcap": 7287,
+   "price": 165,
+   "high52": 280,
+   "low52": 136,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 58,
+   "sales3": 54,
+   "profit10": null,
+   "profit5": 66,
+   "profit3": 85,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": null,
+   "basis": "consolidated",
+   "borrowNow": 44,
+   "borrow3yAgo": 7,
+   "debtEquity": 0.021400778210116732,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 0
+    },
+    {
+     "q": "Dec 2023",
+     "v": 34
+    },
+    {
+     "q": "Mar 2024",
+     "v": 10
+    },
+    {
+     "q": "Jun 2024",
+     "v": 11
+    },
+    {
+     "q": "Sep 2024",
+     "v": 15
+    },
+    {
+     "q": "Dec 2024",
+     "v": 17
+    },
+    {
+     "q": "Mar 2025",
+     "v": 20
+    },
+    {
+     "q": "Jun 2025",
+     "v": 22
+    },
+    {
+     "q": "Sep 2025",
+     "v": 9
+    },
+    {
+     "q": "Dec 2025",
+     "v": 27
+    },
+    {
+     "q": "Mar 2026",
+     "v": 37
+    },
+    {
+     "q": "Jun 2026",
+     "v": 34
+    },
+    {
+     "q": "Sep 2026",
+     "v": 58
+    }
+   ],
+   "fiiNow": 56.51,
+   "fiiYearAgo": 59.64,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "LENSKART": {
+   "sym": "LENSKART",
+   "slug": "LENSKART",
+   "name": "Lenskart Solutions Ltd",
+   "pe": 216,
+   "pb": null,
+   "bookValue": 54.4,
+   "roce": 7.69,
+   "roe": 5.97,
+   "mcap": 128395,
+   "price": 738,
+   "high52": 767,
+   "low52": 401,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 43,
+   "sales3": 30,
+   "profit10": null,
+   "profit5": 53,
+   "profit3": 50,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 17.52,
+   "basis": "consolidated",
+   "borrowNow": 1799,
+   "borrow3yAgo": 620,
+   "debtEquity": 0.19728040355302118,
+   "qProfit": [
+    {
+     "q": "Sep 2024",
+     "v": 107
+    },
+    {
+     "q": "Dec 2024",
+     "v": 37
+    },
+    {
+     "q": "Mar 2025",
+     "v": 20
+    },
+    {
+     "q": "Jun 2025",
+     "v": 104
+    },
+    {
+     "q": "Sep 2025",
+     "v": 99
+    },
+    {
+     "q": "Dec 2025",
+     "v": 109
+    },
+    {
+     "q": "Mar 2026",
+     "v": 164
+    },
+    {
+     "q": "Jun 2026",
+     "v": 151
+    },
+    {
+     "q": "Sep 2026",
+     "v": 168
+    }
+   ],
+   "fiiNow": 18.26,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "LTM": {
+   "sym": "LTM",
+   "slug": "LTM",
+   "name": "LTM Ltd",
+   "pe": 23.8,
+   "pb": null,
+   "bookValue": 824,
+   "roce": 30.4,
+   "roe": 23.8,
+   "mcap": 124425,
+   "price": 4194,
+   "high52": 6430,
+   "low52": 3528,
+   "divYield": 1.75,
+   "sales10": 22,
+   "sales5": 28,
+   "sales3": 8,
+   "profit10": 20,
+   "profit5": 26,
+   "profit3": 8,
+   "priceCagr10": 21,
+   "priceCagr5": -10,
+   "priceCagr3": -8,
+   "promoter": 69.01,
+   "basis": "consolidated",
+   "borrowNow": 2085,
+   "borrow3yAgo": 0,
+   "debtEquity": 0.09117145480781845,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 1134
+    },
+    {
+     "q": "Dec 2023",
+     "v": 1135
+    },
+    {
+     "q": "Mar 2024",
+     "v": 1094
+    },
+    {
+     "q": "Jun 2024",
+     "v": 1106
+    },
+    {
+     "q": "Sep 2024",
+     "v": 1220
+    },
+    {
+     "q": "Dec 2024",
+     "v": 1042
+    },
+    {
+     "q": "Mar 2025",
+     "v": 1079
+    },
+    {
+     "q": "Jun 2025",
+     "v": 1297
+    },
+    {
+     "q": "Sep 2025",
+     "v": 1386
+    },
+    {
+     "q": "Dec 2025",
+     "v": 929
+    },
+    {
+     "q": "Mar 2026",
+     "v": 1322
+    },
+    {
+     "q": "Jun 2026",
+     "v": 1241
+    },
+    {
+     "q": "Sep 2026",
+     "v": 1352
+    }
+   ],
+   "fiiNow": 6.15,
+   "fiiYearAgo": 6.4,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "MCLOUD": {
+   "sym": "MCLOUD",
+   "slug": "MCLOUD",
+   "name": "Magellanic Cloud Ltd",
+   "pe": 77.7,
+   "pb": null,
+   "bookValue": 4.55,
+   "roce": 11.5,
+   "roe": 8.83,
+   "mcap": 1390,
+   "price": 23.6,
+   "high52": 68.7,
+   "low52": 19.4,
+   "divYield": 0,
+   "sales10": 63,
+   "sales5": 30,
+   "sales3": 23,
+   "profit10": 54,
+   "profit5": 53,
+   "profit3": 25,
+   "priceCagr10": 31,
+   "priceCagr5": 64,
+   "priceCagr3": -36,
+   "promoter": 54.04,
+   "basis": "consolidated",
+   "borrowNow": 284,
+   "borrow3yAgo": 91,
+   "debtEquity": 1.0881226053639848,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 2.98
+    },
+    {
+     "q": "Dec 2023",
+     "v": 5.2
+    },
+    {
+     "q": "Mar 2024",
+     "v": 3.97
+    },
+    {
+     "q": "Jun 2024",
+     "v": 3.46
+    },
+    {
+     "q": "Sep 2024",
+     "v": 3.67
+    },
+    {
+     "q": "Dec 2024",
+     "v": 3.5
+    },
+    {
+     "q": "Mar 2025",
+     "v": 3.72
+    },
+    {
+     "q": "Jun 2025",
+     "v": 5.18
+    },
+    {
+     "q": "Sep 2025",
+     "v": 4.71
+    },
+    {
+     "q": "Dec 2025",
+     "v": 4.8
+    },
+    {
+     "q": "Mar 2026",
+     "v": 6.17
+    },
+    {
+     "q": "Jun 2026",
+     "v": 4.87
+    },
+    {
+     "q": "Sep 2026",
+     "v": 1.82
+    }
+   ],
+   "fiiNow": 0.2,
+   "fiiYearAgo": 0.43,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "MEESHO": {
+   "sym": "MEESHO",
+   "slug": "MEESHO",
+   "name": "Meesho Ltd",
+   "pe": 73.9,
+   "pb": null,
+   "bookValue": 73,
+   "roce": 5.82,
+   "roe": 4.5,
+   "mcap": 118276,
+   "price": 255,
+   "high52": 259,
+   "low52": 126,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 52,
+   "sales3": 4,
+   "profit10": null,
+   "profit5": 29,
+   "profit3": 35,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 16.34,
+   "basis": "consolidated",
+   "borrowNow": 63,
+   "borrow3yAgo": 0,
+   "debtEquity": 0.0019002232008204138,
+   "qProfit": [
+    {
+     "q": "Dec 2024",
+     "v": -30
+    },
+    {
+     "q": "Mar 2025",
+     "v": -1384
+    },
+    {
+     "q": "Jun 2025",
+     "v": -289
+    },
+    {
+     "q": "Sep 2025",
+     "v": 22
+    },
+    {
+     "q": "Dec 2025",
+     "v": 734
+    },
+    {
+     "q": "Mar 2026",
+     "v": 320
+    },
+    {
+     "q": "Jun 2026",
+     "v": 354
+    },
+    {
+     "q": "Sep 2026",
+     "v": 190
+    }
+   ],
+   "fiiNow": 9.84,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "MILKYMIST": {
+   "sym": "MILKYMIST",
+   "slug": "MILKYMIST",
+   "name": "Milky Mist Dairy Food Ltd",
+   "pe": 135,
+   "pb": null,
+   "bookValue": 30.8,
+   "roce": 13.6,
+   "roe": 31.6,
+   "mcap": 23496,
+   "price": 305,
+   "high52": 345,
+   "low52": 165,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 28,
+   "sales3": 30,
+   "profit10": null,
+   "profit5": 37,
+   "profit3": 64,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 79.51,
+   "basis": "standalone",
+   "borrowNow": 1671,
+   "borrow3yAgo": 804,
+   "debtEquity": 3.616883116883117,
+   "qProfit": [
+    {
+     "q": "Jun 2025",
+     "v": 6
+    },
+    {
+     "q": "Sep 2025",
+     "v": 28
+    },
+    {
+     "q": "Mar 2026",
+     "v": 94
+    },
+    {
+     "q": "Jun 2026",
+     "v": 64
+    },
+    {
+     "q": "Sep 2026",
+     "v": 78
+    }
+   ],
+   "fiiNow": 2.89,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "MONEYVIEW": {
+   "sym": "MONEYVIEW",
+   "slug": "MONEYVIEW",
+   "name": "Moneyview Ltd",
+   "pe": 29.6,
+   "pb": null,
+   "bookValue": null,
+   "roce": 16.4,
+   "roe": 12.1,
+   "mcap": 10306,
+   "price": 58.6,
+   "high52": 65.5,
+   "low52": 45.8,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 118,
+   "sales3": 48,
+   "profit10": null,
+   "profit5": 47,
+   "profit3": 11,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 19.31,
+   "basis": "consolidated",
+   "borrowNow": 278,
+   "borrow3yAgo": 9,
+   "debtEquity": 0.13796526054590572,
+   "qProfit": [
+    {
+     "q": "Sep 2025",
+     "v": 50
+    },
+    {
+     "q": "Jun 2026",
+     "v": 135
+    },
+    {
+     "q": "Sep 2026",
+     "v": 165
+    }
+   ],
+   "fiiNow": 59.9,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Oct 2026"
+  },
+  "MOSCHIP": {
+   "sym": "MOSCHIP",
+   "slug": "MOSCHIP",
+   "name": "Moschip Technologies Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": 19.4,
+   "roce": 8.66,
+   "roe": 8.2,
+   "mcap": 3278,
+   "price": 168,
+   "high52": 256,
+   "low52": 147,
+   "divYield": 0,
+   "sales10": 59,
+   "sales5": 44,
+   "sales3": 45,
+   "profit10": 17,
+   "profit5": 78,
+   "profit3": 77,
+   "priceCagr10": 16,
+   "priceCagr5": 32,
+   "priceCagr3": 27,
+   "promoter": 39.17,
+   "basis": "consolidated",
+   "borrowNow": 85,
+   "borrow3yAgo": 66,
+   "debtEquity": 0.2185089974293059,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 3
+    },
+    {
+     "q": "Dec 2023",
+     "v": 0
+    },
+    {
+     "q": "Mar 2024",
+     "v": 0
+    },
+    {
+     "q": "Jun 2024",
+     "v": 3
+    },
+    {
+     "q": "Sep 2024",
+     "v": 8
+    },
+    {
+     "q": "Dec 2024",
+     "v": 12
+    },
+    {
+     "q": "Mar 2025",
+     "v": 6
+    },
+    {
+     "q": "Jun 2025",
+     "v": 9
+    },
+    {
+     "q": "Sep 2025",
+     "v": 10
+    },
+    {
+     "q": "Dec 2025",
+     "v": 3
+    },
+    {
+     "q": "Mar 2026",
+     "v": 2
+    },
+    {
+     "q": "Jun 2026",
+     "v": 0
+    },
+    {
+     "q": "Sep 2026",
+     "v": -33
+    }
+   ],
+   "fiiNow": 0.36,
+   "fiiYearAgo": 0.81,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "MPHASIS": {
+   "sym": "MPHASIS",
+   "slug": "MPHASIS",
+   "name": "Mphasis Ltd",
+   "pe": 27,
+   "pb": null,
+   "bookValue": 336,
+   "roce": 28.2,
+   "roe": 22.3,
+   "mcap": 46151,
+   "price": 2415,
+   "high52": 2978,
+   "low52": 2013,
+   "divYield": 2.56,
+   "sales10": 12,
+   "sales5": 11,
+   "sales3": 0,
+   "profit10": 12,
+   "profit5": 5,
+   "profit3": 0,
+   "priceCagr10": 17,
+   "priceCagr5": -7,
+   "priceCagr3": 2,
+   "promoter": 30.53,
+   "basis": "consolidated",
+   "borrowNow": 584,
+   "borrow3yAgo": 214,
+   "debtEquity": 0.09020698177324683,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 372
+    },
+    {
+     "q": "Dec 2023",
+     "v": 402
+    },
+    {
+     "q": "Mar 2024",
+     "v": 298
+    },
+    {
+     "q": "Jun 2024",
+     "v": 415
+    },
+    {
+     "q": "Sep 2024",
+     "v": 372
+    },
+    {
+     "q": "Dec 2024",
+     "v": 376
+    },
+    {
+     "q": "Mar 2025",
+     "v": 369
+    },
+    {
+     "q": "Jun 2025",
+     "v": 298
+    },
+    {
+     "q": "Sep 2025",
+     "v": 393
+    },
+    {
+     "q": "Dec 2025",
+     "v": 339
+    },
+    {
+     "q": "Mar 2026",
+     "v": 372
+    },
+    {
+     "q": "Jun 2026",
+     "v": 459
+    },
+    {
+     "q": "Sep 2026",
+     "v": 514
+    }
+   ],
+   "fiiNow": 19.39,
+   "fiiYearAgo": 18.52,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "MCX": {
+   "sym": "MCX",
+   "slug": "MCX",
+   "name": "Multi Commodity Exchange of India Ltd",
+   "pe": 65.5,
+   "pb": null,
+   "bookValue": 131,
+   "roce": 57.9,
+   "roe": 43.4,
+   "mcap": 94755,
+   "price": 3716,
+   "high52": 3769,
+   "low52": 1921,
+   "divYield": 0.22,
+   "sales10": 25,
+   "sales5": 44,
+   "sales3": 69,
+   "profit10": 28,
+   "profit5": 48,
+   "profit3": 99,
+   "priceCagr10": 31,
+   "priceCagr5": 58,
+   "priceCagr3": 86,
+   "promoter": null,
+   "basis": "consolidated",
+   "borrowNow": 5,
+   "borrow3yAgo": 2,
+   "debtEquity": 0.0017755681818181818,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -7
+    },
+    {
+     "q": "Dec 2023",
+     "v": -27
+    },
+    {
+     "q": "Mar 2024",
+     "v": 62
+    },
+    {
+     "q": "Jun 2024",
+     "v": 80
+    },
+    {
+     "q": "Sep 2024",
+     "v": 111
+    },
+    {
+     "q": "Dec 2024",
+     "v": 122
+    },
+    {
+     "q": "Mar 2025",
+     "v": 102
+    },
+    {
+     "q": "Jun 2025",
+     "v": 157
+    },
+    {
+     "q": "Sep 2025",
+     "v": 156
+    },
+    {
+     "q": "Dec 2025",
+     "v": 307
+    },
+    {
+     "q": "Mar 2026",
+     "v": 409
+    },
+    {
+     "q": "Jun 2026",
+     "v": 327
+    },
+    {
+     "q": "Sep 2026",
+     "v": 405
+    }
+   ],
+   "fiiNow": 27.06,
+   "fiiYearAgo": 19,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "NAZARA": {
+   "sym": "NAZARA",
+   "slug": "NAZARA",
+   "name": "Nazara Technologies Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": 67,
+   "roce": 1.83,
+   "roe": 1.9,
+   "mcap": 17520,
+   "price": 429,
+   "high52": 434,
+   "low52": 216,
+   "divYield": 0,
+   "sales10": -5,
+   "sales5": 18,
+   "sales3": 48,
+   "profit10": 4,
+   "profit5": 117,
+   "profit3": 55,
+   "priceCagr10": null,
+   "priceCagr5": 8,
+   "priceCagr3": 28,
+   "promoter": 31.99,
+   "basis": "consolidated",
+   "borrowNow": 31,
+   "borrow3yAgo": 0,
+   "debtEquity": 0.013826940231935772,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 0.55
+    },
+    {
+     "q": "Dec 2023",
+     "v": 5.78
+    },
+    {
+     "q": "Mar 2024",
+     "v": -105.35
+    },
+    {
+     "q": "Jun 2024",
+     "v": 9.63
+    },
+    {
+     "q": "Sep 2024",
+     "v": 12.73
+    },
+    {
+     "q": "Dec 2024",
+     "v": 1.64
+    },
+    {
+     "q": "Mar 2025",
+     "v": 4.04
+    },
+    {
+     "q": "Jun 2025",
+     "v": 27.61
+    },
+    {
+     "q": "Sep 2025",
+     "v": -966.95
+    },
+    {
+     "q": "Dec 2025",
+     "v": 0.46
+    },
+    {
+     "q": "Mar 2026",
+     "v": 3.91
+    },
+    {
+     "q": "Jun 2026",
+     "v": -63.15
+    },
+    {
+     "q": "Sep 2026",
+     "v": 0.37
+    }
+   ],
+   "fiiNow": 15.42,
+   "fiiYearAgo": 11.98,
+   "fiiLatestQ": "Oct 2026"
+  },
+  "NETWEB": {
+   "sym": "NETWEB",
+   "slug": "NETWEB",
+   "name": "Netweb Technologies India Ltd",
+   "pe": 67.2,
+   "pb": null,
+   "bookValue": 354,
+   "roce": 37.5,
+   "roe": 32.8,
+   "mcap": 24597,
+   "price": 4138,
+   "high52": 5813,
+   "low52": 2920,
+   "divYield": 0.07,
+   "sales10": null,
+   "sales5": 73,
+   "sales3": 70,
+   "profit10": null,
+   "profit5": 90,
+   "profit3": 64,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": 73,
+   "promoter": 64.16,
+   "basis": "standalone",
+   "borrowNow": 282,
+   "borrow3yAgo": 36,
+   "debtEquity": 0.3900414937759336,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 15
+    },
+    {
+     "q": "Dec 2023",
+     "v": 26
+    },
+    {
+     "q": "Mar 2024",
+     "v": 30
+    },
+    {
+     "q": "Jun 2024",
+     "v": 15
+    },
+    {
+     "q": "Sep 2024",
+     "v": 26
+    },
+    {
+     "q": "Dec 2024",
+     "v": 30
+    },
+    {
+     "q": "Mar 2025",
+     "v": 43
+    },
+    {
+     "q": "Jun 2025",
+     "v": 30
+    },
+    {
+     "q": "Sep 2025",
+     "v": 31
+    },
+    {
+     "q": "Dec 2025",
+     "v": 73
+    },
+    {
+     "q": "Mar 2026",
+     "v": 71
+    },
+    {
+     "q": "Jun 2026",
+     "v": 85
+    },
+    {
+     "q": "Sep 2026",
+     "v": 137
+    }
+   ],
+   "fiiNow": 9.47,
+   "fiiYearAgo": 10.82,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "NAM-INDIA": {
+   "sym": "NAM-INDIA",
+   "slug": "NAM-INDIA",
+   "name": "Nippon Life India Asset Management Ltd",
+   "pe": 41.9,
+   "pb": null,
+   "bookValue": 70.4,
+   "roce": 45.2,
+   "roe": 35.5,
+   "mcap": 68974,
+   "price": 1078,
+   "high52": 1270,
+   "low52": 756,
+   "divYield": 1.99,
+   "sales10": 8,
+   "sales5": 16,
+   "sales3": 24,
+   "profit10": 14,
+   "profit5": 18,
+   "profit3": 28,
+   "priceCagr10": null,
+   "priceCagr5": 21,
+   "priceCagr3": 37,
+   "promoter": 71.72,
+   "basis": "consolidated",
+   "borrowNow": 66,
+   "borrow3yAgo": 0,
+   "debtEquity": 0.014921998643454669,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 235
+    },
+    {
+     "q": "Dec 2023",
+     "v": 265
+    },
+    {
+     "q": "Mar 2024",
+     "v": 325
+    },
+    {
+     "q": "Jun 2024",
+     "v": 317
+    },
+    {
+     "q": "Sep 2024",
+     "v": 344
+    },
+    {
+     "q": "Dec 2024",
+     "v": 296
+    },
+    {
+     "q": "Mar 2025",
+     "v": 296
+    },
+    {
+     "q": "Jun 2025",
+     "v": 385
+    },
+    {
+     "q": "Sep 2025",
+     "v": 338
+    },
+    {
+     "q": "Dec 2025",
+     "v": 391
+    },
+    {
+     "q": "Mar 2026",
+     "v": 383
+    },
+    {
+     "q": "Jun 2026",
+     "v": 486
+    },
+    {
+     "q": "Sep 2026",
+     "v": 317
+    }
+   ],
+   "fiiNow": 7.05,
+   "fiiYearAgo": 7.65,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "NUVAMA": {
+   "sym": "NUVAMA",
+   "slug": "NUVAMA",
+   "name": "Nuvama Wealth Management Ltd",
+   "pe": 60.5,
+   "pb": null,
+   "bookValue": 118,
+   "roce": 23.7,
+   "roe": 28.2,
+   "mcap": 34719,
+   "price": 1881,
+   "high52": 2067,
+   "low52": 1097,
+   "divYield": 1.48,
+   "sales10": 11,
+   "sales5": 16,
+   "sales3": 51,
+   "profit10": 44,
+   "profit5": 24,
+   "profit3": 347,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": 44,
+   "promoter": 53.4,
+   "basis": "consolidated",
+   "borrowNow": 1109,
+   "borrow3yAgo": 316,
+   "debtEquity": 0.5313847628174413,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 11
+    },
+    {
+     "q": "Dec 2023",
+     "v": 31
+    },
+    {
+     "q": "Mar 2024",
+     "v": 32
+    },
+    {
+     "q": "Jun 2024",
+     "v": 47
+    },
+    {
+     "q": "Sep 2024",
+     "v": 317
+    },
+    {
+     "q": "Dec 2024",
+     "v": 207
+    },
+    {
+     "q": "Mar 2025",
+     "v": 27
+    },
+    {
+     "q": "Jun 2025",
+     "v": 221
+    },
+    {
+     "q": "Sep 2025",
+     "v": 46
+    },
+    {
+     "q": "Dec 2025",
+     "v": 280
+    },
+    {
+     "q": "Mar 2026",
+     "v": 19
+    },
+    {
+     "q": "Jun 2026",
+     "v": 255
+    },
+    {
+     "q": "Sep 2026",
+     "v": 20
+    }
+   ],
+   "fiiNow": 19.97,
+   "fiiYearAgo": 16.3,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "PAYTM": {
+   "sym": "PAYTM",
+   "slug": "PAYTM",
+   "name": "One 97 Communications Ltd",
+   "pe": 204,
+   "pb": null,
+   "bookValue": 211,
+   "roce": 3.75,
+   "roe": 3.66,
+   "mcap": 122248,
+   "price": 1903,
+   "high52": 1960,
+   "low52": 931,
+   "divYield": 0,
+   "sales10": 29,
+   "sales5": 17,
+   "sales3": -1,
+   "profit10": 9,
+   "profit5": 18,
+   "profit3": 31,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": 30,
+   "promoter": null,
+   "basis": "consolidated",
+   "borrowNow": 162,
+   "borrow3yAgo": 207,
+   "debtEquity": 0.012354152367879203,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -324
+    },
+    {
+     "q": "Dec 2023",
+     "v": -254
+    },
+    {
+     "q": "Mar 2024",
+     "v": -566
+    },
+    {
+     "q": "Jun 2024",
+     "v": -825
+    },
+    {
+     "q": "Sep 2024",
+     "v": 821
+    },
+    {
+     "q": "Dec 2024",
+     "v": -205
+    },
+    {
+     "q": "Mar 2025",
+     "v": -581
+    },
+    {
+     "q": "Jun 2025",
+     "v": 63
+    },
+    {
+     "q": "Sep 2025",
+     "v": -264
+    },
+    {
+     "q": "Dec 2025",
+     "v": 145
+    },
+    {
+     "q": "Mar 2026",
+     "v": 119
+    },
+    {
+     "q": "Jun 2026",
+     "v": 185
+    },
+    {
+     "q": "Sep 2026",
+     "v": 169
+    }
+   ],
+   "fiiNow": 43.52,
+   "fiiYearAgo": 51.71,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "MOBIKWIK": {
+   "sym": "MOBIKWIK",
+   "slug": "MOBIKWIK",
+   "name": "One Mobikwik Systems Ltd",
+   "pe": 86.6,
+   "pb": null,
+   "bookValue": 75.3,
+   "roce": -0.87,
+   "roe": -6.67,
+   "mcap": 1756,
+   "price": 222,
+   "high52": 266,
+   "low52": 151,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 33,
+   "sales3": 28,
+   "profit10": null,
+   "profit5": 10,
+   "profit3": 15,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 25.22,
+   "basis": "consolidated",
+   "borrowNow": 281,
+   "borrow3yAgo": 224,
+   "debtEquity": 0.5,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 6
+    },
+    {
+     "q": "Dec 2023",
+     "v": 5
+    },
+    {
+     "q": "Mar 2024",
+     "v": -5
+    },
+    {
+     "q": "Jun 2024",
+     "v": -11
+    },
+    {
+     "q": "Sep 2024",
+     "v": -3
+    },
+    {
+     "q": "Dec 2024",
+     "v": -52
+    },
+    {
+     "q": "Mar 2025",
+     "v": -56
+    },
+    {
+     "q": "Jun 2025",
+     "v": -40
+    },
+    {
+     "q": "Sep 2025",
+     "v": -27
+    },
+    {
+     "q": "Dec 2025",
+     "v": 7
+    },
+    {
+     "q": "Mar 2026",
+     "v": 6
+    },
+    {
+     "q": "Jun 2026",
+     "v": 8
+    },
+    {
+     "q": "Sep 2026",
+     "v": 15
+    }
+   ],
+   "fiiNow": 3.5,
+   "fiiYearAgo": 3.74,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "KISSHT": {
+   "sym": "KISSHT",
+   "slug": "KISSHT",
+   "name": "Onemi Technology Solutions Ltd",
+   "pe": 31.8,
+   "pb": null,
+   "bookValue": 109,
+   "roce": 22.1,
+   "roe": 16.7,
+   "mcap": 7162,
+   "price": 350,
+   "high52": 388,
+   "low52": 190,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 87,
+   "sales3": 41,
+   "profit10": null,
+   "profit5": 35,
+   "profit3": 80,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 20.42,
+   "basis": "consolidated",
+   "borrowNow": 18,
+   "borrow3yAgo": 5,
+   "debtEquity": 0.01867219917012448,
+   "qProfit": [
+    {
+     "q": "Mar 2025",
+     "v": 27
+    },
+    {
+     "q": "Jun 2025",
+     "v": 28
+    },
+    {
+     "q": "Sep 2025",
+     "v": 15
+    },
+    {
+     "q": "Dec 2025",
+     "v": 54
+    },
+    {
+     "q": "Mar 2026",
+     "v": 47
+    },
+    {
+     "q": "Jun 2026",
+     "v": 52
+    },
+    {
+     "q": "Sep 2026",
+     "v": 72
+    }
+   ],
+   "fiiNow": 9.95,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Oct 2026"
+  },
+  "PACEDIGITK": {
+   "sym": "PACEDIGITK",
+   "slug": "PACEDIGITK",
+   "name": "Pace Digitek Ltd",
+   "pe": 14.4,
+   "pb": null,
+   "bookValue": 96.6,
+   "roce": 23.1,
+   "roe": 16.7,
+   "mcap": 3370,
+   "price": 156,
+   "high52": 230,
+   "low52": 134,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": null,
+   "sales3": 111,
+   "profit10": null,
+   "profit5": null,
+   "profit3": 234,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 69.52,
+   "basis": "consolidated",
+   "borrowNow": 192,
+   "borrow3yAgo": 180,
+   "debtEquity": 0.09746192893401015,
+   "qProfit": [
+    {
+     "q": "Jun 2024",
+     "v": 25
+    },
+    {
+     "q": "Sep 2024",
+     "v": 65
+    },
+    {
+     "q": "Dec 2024",
+     "v": 67
+    },
+    {
+     "q": "Mar 2025",
+     "v": 76
+    },
+    {
+     "q": "Jun 2025",
+     "v": 51
+    },
+    {
+     "q": "Sep 2025",
+     "v": 62
+    },
+    {
+     "q": "Dec 2025",
+     "v": 93
+    },
+    {
+     "q": "Mar 2026",
+     "v": 41
+    },
+    {
+     "q": "Jun 2026",
+     "v": 43
+    },
+    {
+     "q": "Sep 2026",
+     "v": 58
+    }
+   ],
+   "fiiNow": 0.18,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "POLICYBZR": {
+   "sym": "POLICYBZR",
+   "slug": "POLICYBZR",
+   "name": "PB Fintech Ltd",
+   "pe": 114,
+   "pb": null,
+   "bookValue": 188,
+   "roce": 0.42,
+   "roe": 0.34,
+   "mcap": 50872,
+   "price": 1094,
+   "high52": 1964,
+   "low52": 916,
+   "divYield": 0,
+   "sales10": 15,
+   "sales5": 11,
+   "sales3": 16,
+   "profit10": 9,
+   "profit5": 70,
+   "profit3": 33,
+   "priceCagr10": null,
+   "priceCagr5": -5,
+   "priceCagr3": 11,
+   "promoter": null,
+   "basis": "consolidated",
+   "borrowNow": 27,
+   "borrow3yAgo": 8,
+   "debtEquity": 0.0032938880078077345,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 2
+    },
+    {
+     "q": "Dec 2023",
+     "v": 27
+    },
+    {
+     "q": "Mar 2024",
+     "v": -15
+    },
+    {
+     "q": "Jun 2024",
+     "v": 10
+    },
+    {
+     "q": "Sep 2024",
+     "v": 5
+    },
+    {
+     "q": "Dec 2024",
+     "v": 14
+    },
+    {
+     "q": "Mar 2025",
+     "v": -17
+    },
+    {
+     "q": "Jun 2025",
+     "v": 7
+    },
+    {
+     "q": "Sep 2025",
+     "v": 1
+    },
+    {
+     "q": "Dec 2025",
+     "v": 16
+    },
+    {
+     "q": "Mar 2026",
+     "v": 18
+    },
+    {
+     "q": "Jun 2026",
+     "v": 408
+    },
+    {
+     "q": "Sep 2026",
+     "v": 13
+    }
+   ],
+   "fiiNow": 27.12,
+   "fiiYearAgo": 43.64,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "PERSISTENT": {
+   "sym": "PERSISTENT",
+   "slug": "PERSISTENT",
+   "name": "Persistent Systems Ltd",
+   "pe": 56.6,
+   "pb": null,
+   "bookValue": 474,
+   "roce": 35.6,
+   "roe": 26.8,
+   "mcap": 99396,
+   "price": 5994,
+   "high52": 6599,
+   "low52": 4243,
+   "divYield": 0.66,
+   "sales10": 26,
+   "sales5": 42,
+   "sales3": 41,
+   "profit10": 22,
+   "profit5": 28,
+   "profit3": 27,
+   "priceCagr10": 35,
+   "priceCagr5": 23,
+   "priceCagr3": 23,
+   "promoter": 28.82,
+   "basis": "consolidated",
+   "borrowNow": 394,
+   "borrow3yAgo": 156,
+   "debtEquity": 0.05871833084947839,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 298
+    },
+    {
+     "q": "Dec 2023",
+     "v": 260
+    },
+    {
+     "q": "Mar 2024",
+     "v": 184
+    },
+    {
+     "q": "Jun 2024",
+     "v": 248
+    },
+    {
+     "q": "Sep 2024",
+     "v": 286
+    },
+    {
+     "q": "Dec 2024",
+     "v": 326
+    },
+    {
+     "q": "Mar 2025",
+     "v": 281
+    },
+    {
+     "q": "Jun 2025",
+     "v": 367
+    },
+    {
+     "q": "Sep 2025",
+     "v": 459
+    },
+    {
+     "q": "Dec 2025",
+     "v": 388
+    },
+    {
+     "q": "Mar 2026",
+     "v": 420
+    },
+    {
+     "q": "Jun 2026",
+     "v": 402
+    },
+    {
+     "q": "Sep 2026",
+     "v": 483
+    }
+   ],
+   "fiiNow": 21.3,
+   "fiiYearAgo": 22.79,
+   "fiiLatestQ": "Oct 2026"
+  },
+  "PINELABS": {
+   "sym": "PINELABS",
+   "slug": "PINELABS",
+   "name": "Pine Labs Ltd",
+   "pe": 87.2,
+   "pb": null,
+   "bookValue": 56.5,
+   "roce": 4.36,
+   "roe": 2.96,
+   "mcap": 19717,
+   "price": 171,
+   "high52": 262,
+   "low52": 135,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 24,
+   "sales3": 15,
+   "profit10": null,
+   "profit5": 35,
+   "profit3": 66,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": null,
+   "basis": "consolidated",
+   "borrowNow": 371,
+   "borrow3yAgo": 390,
+   "debtEquity": 0.05835168291915697,
+   "qProfit": [
+    {
+     "q": "Sep 2024",
+     "v": -15
+    },
+    {
+     "q": "Mar 2025",
+     "v": 38
+    },
+    {
+     "q": "Jun 2025",
+     "v": 28
+    },
+    {
+     "q": "Sep 2025",
+     "v": -2
+    },
+    {
+     "q": "Dec 2025",
+     "v": 57
+    },
+    {
+     "q": "Mar 2026",
+     "v": 67
+    },
+    {
+     "q": "Jun 2026",
+     "v": 44
+    },
+    {
+     "q": "Sep 2026",
+     "v": 57
+    }
+   ],
+   "fiiNow": 13.18,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "PREMIERENE": {
+   "sym": "PREMIERENE",
+   "slug": "PREMIERENE",
+   "name": "Premier Energies Ltd",
+   "pe": 301,
+   "pb": null,
+   "bookValue": 43.5,
+   "roce": 10,
+   "roe": 7.57,
+   "mcap": 38847,
+   "price": 856,
+   "high52": 1134,
+   "low52": 660,
+   "divYield": 0.11,
+   "sales10": null,
+   "sales5": 3,
+   "sales3": 3,
+   "profit10": null,
+   "profit5": 29,
+   "profit3": 124,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 58.48,
+   "basis": "consolidated",
+   "borrowNow": 608,
+   "borrow3yAgo": 78,
+   "debtEquity": 0.31421188630490954,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 0
+    },
+    {
+     "q": "Dec 2023",
+     "v": 2
+    },
+    {
+     "q": "Mar 2024",
+     "v": 4
+    },
+    {
+     "q": "Jun 2024",
+     "v": -6
+    },
+    {
+     "q": "Sep 2024",
+     "v": 16
+    },
+    {
+     "q": "Dec 2024",
+     "v": 36
+    },
+    {
+     "q": "Mar 2025",
+     "v": 63
+    },
+    {
+     "q": "Jun 2025",
+     "v": 23
+    },
+    {
+     "q": "Sep 2025",
+     "v": 55
+    },
+    {
+     "q": "Dec 2025",
+     "v": 13
+    },
+    {
+     "q": "Mar 2026",
+     "v": 52
+    },
+    {
+     "q": "Jun 2026",
+     "v": 29
+    },
+    {
+     "q": "Sep 2026",
+     "v": 36
+    }
+   ],
+   "fiiNow": 7.12,
+   "fiiYearAgo": 4.23,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "PVRINOX": {
+   "sym": "PVRINOX",
+   "slug": "PVRINOX",
+   "name": "PVR Inox Ltd",
+   "pe": 35.8,
+   "pb": null,
+   "bookValue": 747,
+   "roce": 6.67,
+   "roe": 2.65,
+   "mcap": 16113,
+   "price": 1641,
+   "high52": 1675,
+   "low52": 900,
+   "divYield": 0,
+   "sales10": 14,
+   "sales5": 95,
+   "sales3": 22,
+   "profit10": 7,
+   "profit5": 18,
+   "profit3": 36,
+   "priceCagr10": 4,
+   "priceCagr5": -1,
+   "priceCagr3": 0,
+   "promoter": 27.6,
+   "basis": "consolidated",
+   "borrowNow": 6761,
+   "borrow3yAgo": 8026,
+   "debtEquity": 0.9214937985552678,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 166
+    },
+    {
+     "q": "Dec 2023",
+     "v": 13
+    },
+    {
+     "q": "Mar 2024",
+     "v": -134
+    },
+    {
+     "q": "Jun 2024",
+     "v": -176
+    },
+    {
+     "q": "Sep 2024",
+     "v": -12
+    },
+    {
+     "q": "Dec 2024",
+     "v": 34
+    },
+    {
+     "q": "Mar 2025",
+     "v": -123
+    },
+    {
+     "q": "Jun 2025",
+     "v": -51
+    },
+    {
+     "q": "Sep 2025",
+     "v": 104
+    },
+    {
+     "q": "Dec 2025",
+     "v": 95
+    },
+    {
+     "q": "Mar 2026",
+     "v": 121
+    },
+    {
+     "q": "Jun 2026",
+     "v": 52
+    },
+    {
+     "q": "Sep 2026",
+     "v": 253
+    }
+   ],
+   "fiiNow": 19.65,
+   "fiiYearAgo": 21.16,
+   "fiiLatestQ": "Oct 2026"
+  },
+  "RSYSTEMS": {
+   "sym": "RSYSTEMS",
+   "slug": "RSYSTEMS",
+   "name": "R Systems International Ltd",
+   "pe": 15.3,
+   "pb": null,
+   "bookValue": 78.9,
+   "roce": 32.5,
+   "roe": 34.5,
+   "mcap": 2928,
+   "price": 247,
+   "high52": 432,
+   "low52": 214,
+   "divYield": 5.65,
+   "sales10": 14,
+   "sales5": 20,
+   "sales3": 11,
+   "profit10": 18,
+   "profit5": 24,
+   "profit3": 23,
+   "priceCagr10": 16,
+   "priceCagr5": 0,
+   "priceCagr3": -19,
+   "promoter": 51.84,
+   "basis": "consolidated",
+   "borrowNow": 384,
+   "borrow3yAgo": 61,
+   "debtEquity": 0.5565217391304348,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 34
+    },
+    {
+     "q": "Dec 2023",
+     "v": 37
+    },
+    {
+     "q": "Mar 2024",
+     "v": 32
+    },
+    {
+     "q": "Jun 2024",
+     "v": 41
+    },
+    {
+     "q": "Sep 2024",
+     "v": 36
+    },
+    {
+     "q": "Dec 2024",
+     "v": 40
+    },
+    {
+     "q": "Mar 2025",
+     "v": 34
+    },
+    {
+     "q": "Jun 2025",
+     "v": 68
+    },
+    {
+     "q": "Sep 2025",
+     "v": 73
+    },
+    {
+     "q": "Dec 2025",
+     "v": 24
+    },
+    {
+     "q": "Mar 2026",
+     "v": 63
+    },
+    {
+     "q": "Jun 2026",
+     "v": 36
+    },
+    {
+     "q": "Sep 2026",
+     "v": 52
+    }
+   ],
+   "fiiNow": 3.92,
+   "fiiYearAgo": 3.6,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "RADICO": {
+   "sym": "RADICO",
+   "slug": "RADICO",
+   "name": "Radico Khaitan Ltd",
+   "pe": 78.3,
+   "pb": null,
+   "bookValue": 269,
+   "roce": 24.5,
+   "roe": 20.6,
+   "mcap": 62210,
+   "price": 4643,
+   "high52": 4748,
+   "low52": 2500,
+   "divYield": 0.2,
+   "sales10": 14,
+   "sales5": 21,
+   "sales3": 24,
+   "profit10": 23,
+   "profit5": 18,
+   "profit3": 44,
+   "priceCagr10": 44,
+   "priceCagr5": 33,
+   "priceCagr3": 47,
+   "promoter": 40.18,
+   "basis": "consolidated",
+   "borrowNow": 498,
+   "borrow3yAgo": 754,
+   "debtEquity": 0.15323076923076923,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 62
+    },
+    {
+     "q": "Dec 2023",
+     "v": 74
+    },
+    {
+     "q": "Mar 2024",
+     "v": 57
+    },
+    {
+     "q": "Jun 2024",
+     "v": 76
+    },
+    {
+     "q": "Sep 2024",
+     "v": 82
+    },
+    {
+     "q": "Dec 2024",
+     "v": 96
+    },
+    {
+     "q": "Mar 2025",
+     "v": 91
+    },
+    {
+     "q": "Jun 2025",
+     "v": 133
+    },
+    {
+     "q": "Sep 2025",
+     "v": 139
+    },
+    {
+     "q": "Dec 2025",
+     "v": 155
+    },
+    {
+     "q": "Mar 2026",
+     "v": 175
+    },
+    {
+     "q": "Jun 2026",
+     "v": 226
+    },
+    {
+     "q": "Sep 2026",
+     "v": 231
+    }
+   ],
+   "fiiNow": 19.43,
+   "fiiYearAgo": 18,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "RVNL": {
+   "sym": "RVNL",
+   "slug": "RVNL",
+   "name": "Rail Vikas Nigam Ltd",
+   "pe": 48,
+   "pb": null,
+   "bookValue": 43.6,
+   "roce": 11,
+   "roe": 9.16,
+   "mcap": 40595,
+   "price": 195,
+   "high52": 401,
+   "low52": 178,
+   "divYield": 0.87,
+   "sales10": 16,
+   "sales5": 5,
+   "sales3": 0,
+   "profit10": 10,
+   "profit5": -3,
+   "profit3": -14,
+   "priceCagr10": null,
+   "priceCagr5": 40,
+   "priceCagr3": 6,
+   "promoter": 72.84,
+   "basis": "consolidated",
+   "borrowNow": 4782,
+   "borrow3yAgo": 6441,
+   "debtEquity": 0.5395464289743879,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 370
+    },
+    {
+     "q": "Dec 2023",
+     "v": 326
+    },
+    {
+     "q": "Mar 2024",
+     "v": 433
+    },
+    {
+     "q": "Jun 2024",
+     "v": 218
+    },
+    {
+     "q": "Sep 2024",
+     "v": 303
+    },
+    {
+     "q": "Dec 2024",
+     "v": 295
+    },
+    {
+     "q": "Mar 2025",
+     "v": 373
+    },
+    {
+     "q": "Jun 2025",
+     "v": 128
+    },
+    {
+     "q": "Sep 2025",
+     "v": 196
+    },
+    {
+     "q": "Dec 2025",
+     "v": 264
+    },
+    {
+     "q": "Mar 2026",
+     "v": 212
+    },
+    {
+     "q": "Jun 2026",
+     "v": 156
+    },
+    {
+     "q": "Sep 2026",
+     "v": 215
+    }
+   ],
+   "fiiNow": 2.38,
+   "fiiYearAgo": 4.66,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "RAILTEL": {
+   "sym": "RAILTEL",
+   "slug": "RAILTEL",
+   "name": "Railtel Corporation of India Ltd",
+   "pe": 21.4,
+   "pb": null,
+   "bookValue": 73.5,
+   "roce": 22.8,
+   "roe": 17.1,
+   "mcap": 7914,
+   "price": 247,
+   "high52": 391,
+   "low52": 220,
+   "divYield": 1.3,
+   "sales10": 22,
+   "sales5": 26,
+   "sales3": 30,
+   "profit10": 14,
+   "profit5": 21,
+   "profit3": 24,
+   "priceCagr10": null,
+   "priceCagr5": 16,
+   "priceCagr3": -2,
+   "promoter": 72.84,
+   "basis": "standalone",
+   "borrowNow": 64,
+   "borrow3yAgo": 42,
+   "debtEquity": 0.028293545534924844,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 68
+    },
+    {
+     "q": "Dec 2023",
+     "v": 62
+    },
+    {
+     "q": "Mar 2024",
+     "v": 78
+    },
+    {
+     "q": "Jun 2024",
+     "v": 49
+    },
+    {
+     "q": "Sep 2024",
+     "v": 73
+    },
+    {
+     "q": "Dec 2024",
+     "v": 65
+    },
+    {
+     "q": "Mar 2025",
+     "v": 113
+    },
+    {
+     "q": "Jun 2025",
+     "v": 66
+    },
+    {
+     "q": "Sep 2025",
+     "v": 76
+    },
+    {
+     "q": "Dec 2025",
+     "v": 62
+    },
+    {
+     "q": "Mar 2026",
+     "v": 142
+    },
+    {
+     "q": "Jun 2026",
+     "v": 66
+    },
+    {
+     "q": "Sep 2026",
+     "v": 69
+    }
+   ],
+   "fiiNow": 3.97,
+   "fiiYearAgo": 3.54,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "REDINGTON": {
+   "sym": "REDINGTON",
+   "slug": "REDINGTON",
+   "name": "Redington Ltd",
+   "pe": 16.1,
+   "pb": null,
+   "bookValue": 76.7,
+   "roce": 26.4,
+   "roe": 25.1,
+   "mcap": 26858,
+   "price": 344,
+   "high52": 420,
+   "low52": 191,
+   "divYield": 1.73,
+   "sales10": 18,
+   "sales5": 23,
+   "sales3": 22,
+   "profit10": 21,
+   "profit5": 36,
+   "profit3": 5,
+   "priceCagr10": 22,
+   "priceCagr5": 18,
+   "priceCagr3": 30,
+   "promoter": 0,
+   "basis": "consolidated",
+   "borrowNow": 1493,
+   "borrow3yAgo": 1652,
+   "debtEquity": 0.2815387516500094,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 573
+    },
+    {
+     "q": "Dec 2023",
+     "v": 154
+    },
+    {
+     "q": "Mar 2024",
+     "v": 161
+    },
+    {
+     "q": "Jun 2024",
+     "v": 156
+    },
+    {
+     "q": "Sep 2024",
+     "v": 618
+    },
+    {
+     "q": "Dec 2024",
+     "v": 461
+    },
+    {
+     "q": "Mar 2025",
+     "v": 209
+    },
+    {
+     "q": "Jun 2025",
+     "v": 200
+    },
+    {
+     "q": "Sep 2025",
+     "v": 532
+    },
+    {
+     "q": "Dec 2025",
+     "v": 223
+    },
+    {
+     "q": "Mar 2026",
+     "v": 289
+    },
+    {
+     "q": "Jun 2026",
+     "v": 321
+    },
+    {
+     "q": "Sep 2026",
+     "v": 839
+    }
+   ],
+   "fiiNow": 63.42,
+   "fiiYearAgo": 61.81,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "RCOM": {
+   "sym": "RCOM",
+   "slug": "RCOM",
+   "name": "Reliance Communications Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": -297,
+   "roce": null,
+   "roe": null,
+   "mcap": 224,
+   "price": 0.81,
+   "high52": 1.36,
+   "low52": 0.75,
+   "divYield": 0,
+   "sales10": -32,
+   "sales5": -14,
+   "sales3": -13,
+   "profit10": 0,
+   "profit5": -10,
+   "profit3": -63,
+   "priceCagr10": -32,
+   "priceCagr5": -22,
+   "priceCagr3": -23,
+   "promoter": 0.78,
+   "basis": "consolidated",
+   "borrowNow": 39934,
+   "borrow3yAgo": 39934,
+   "debtEquity": null,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -1748
+    },
+    {
+     "q": "Dec 2023",
+     "v": -1778
+    },
+    {
+     "q": "Mar 2024",
+     "v": -1837
+    },
+    {
+     "q": "Jun 2024",
+     "v": -1919
+    },
+    {
+     "q": "Sep 2024",
+     "v": -2025
+    },
+    {
+     "q": "Dec 2024",
+     "v": -2068
+    },
+    {
+     "q": "Mar 2025",
+     "v": -2113
+    },
+    {
+     "q": "Jun 2025",
+     "v": -2217
+    },
+    {
+     "q": "Sep 2025",
+     "v": -2347
+    },
+    {
+     "q": "Dec 2025",
+     "v": -2401
+    },
+    {
+     "q": "Mar 2026",
+     "v": -2724
+    },
+    {
+     "q": "Jun 2026",
+     "v": -663
+    },
+    {
+     "q": "Sep 2026",
+     "v": -2623
+    }
+   ],
+   "fiiNow": 0.07,
+   "fiiYearAgo": 0.07,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "RITES": {
+   "sym": "RITES",
+   "slug": "RITES",
+   "name": "Rites Ltd",
+   "pe": 23.4,
+   "pb": null,
+   "bookValue": 52.8,
+   "roce": 20.6,
+   "roe": 15.7,
+   "mcap": 9312,
+   "price": 194,
+   "high52": 260,
+   "low52": 175,
+   "divYield": 4.1,
+   "sales10": 8,
+   "sales5": 4,
+   "sales3": -3,
+   "profit10": 4,
+   "profit5": -1,
+   "profit3": -9,
+   "priceCagr10": null,
+   "priceCagr5": 6,
+   "priceCagr3": -6,
+   "promoter": 72.2,
+   "basis": "consolidated",
+   "borrowNow": 7,
+   "borrow3yAgo": 5,
+   "debtEquity": 0.0027290448343079924,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 117
+    },
+    {
+     "q": "Dec 2023",
+     "v": 119
+    },
+    {
+     "q": "Mar 2024",
+     "v": 123
+    },
+    {
+     "q": "Jun 2024",
+     "v": 65
+    },
+    {
+     "q": "Sep 2024",
+     "v": 86
+    },
+    {
+     "q": "Dec 2024",
+     "v": 95
+    },
+    {
+     "q": "Mar 2025",
+     "v": 134
+    },
+    {
+     "q": "Jun 2025",
+     "v": 67
+    },
+    {
+     "q": "Sep 2025",
+     "v": 102
+    },
+    {
+     "q": "Dec 2025",
+     "v": 96
+    },
+    {
+     "q": "Mar 2026",
+     "v": 136
+    },
+    {
+     "q": "Jun 2026",
+     "v": 72
+    },
+    {
+     "q": "Sep 2026",
+     "v": 94
+    }
+   ],
+   "fiiNow": 3.38,
+   "fiiYearAgo": 3.51,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "SAGILITY": {
+   "sym": "SAGILITY",
+   "slug": "SAGILITY",
+   "name": "Sagility Ltd",
+   "pe": 57.3,
+   "pb": null,
+   "bookValue": 22.6,
+   "roce": 5.03,
+   "roe": 3.65,
+   "mcap": 20167,
+   "price": 43.1,
+   "high52": 54.3,
+   "low52": 35.8,
+   "divYield": 0.34,
+   "sales10": null,
+   "sales5": null,
+   "sales3": 13,
+   "profit10": null,
+   "profit5": null,
+   "profit3": 121,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 50.95,
+   "basis": "consolidated",
+   "borrowNow": 787,
+   "borrow3yAgo": 1531,
+   "debtEquity": 0.0754916067146283,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -8
+    },
+    {
+     "q": "Dec 2023",
+     "v": 94
+    },
+    {
+     "q": "Jun 2024",
+     "v": 6
+    },
+    {
+     "q": "Sep 2024",
+     "v": 73
+    },
+    {
+     "q": "Dec 2024",
+     "v": 110
+    },
+    {
+     "q": "Mar 2025",
+     "v": 82
+    },
+    {
+     "q": "Jun 2025",
+     "v": 97
+    },
+    {
+     "q": "Sep 2025",
+     "v": 111
+    },
+    {
+     "q": "Dec 2025",
+     "v": 69
+    },
+    {
+     "q": "Mar 2026",
+     "v": 74
+    },
+    {
+     "q": "Jun 2026",
+     "v": 76
+    },
+    {
+     "q": "Sep 2026",
+     "v": 98
+    }
+   ],
+   "fiiNow": 10.38,
+   "fiiYearAgo": 5.59,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "SBIFUNDS": {
+   "sym": "SBIFUNDS",
+   "slug": "SBIFUNDS",
+   "name": "SBI Funds Management Ltd",
+   "pe": 34.6,
+   "pb": null,
+   "bookValue": 36.7,
+   "roce": 56.6,
+   "roe": 43,
+   "mcap": 104021,
+   "price": 511,
+   "high52": 625,
+   "low52": 434,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 25,
+   "sales3": 27,
+   "profit10": null,
+   "profit5": 29,
+   "profit3": 32,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 88.19,
+   "basis": "consolidated",
+   "borrowNow": 0,
+   "borrow3yAgo": 0,
+   "debtEquity": 0,
+   "qProfit": [
+    {
+     "q": "Jun 2025",
+     "v": 845
+    },
+    {
+     "q": "Sep 2025",
+     "v": 741
+    },
+    {
+     "q": "Mar 2026",
+     "v": 639
+    },
+    {
+     "q": "Jun 2026",
+     "v": 873
+    },
+    {
+     "q": "Sep 2026",
+     "v": 694
+    }
+   ],
+   "fiiNow": 1.43,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "SHADOWFAX": {
+   "sym": "SHADOWFAX",
+   "slug": "SHADOWFAX",
+   "name": "Shadowfax Technologies Ltd",
+   "pe": 74.1,
+   "pb": null,
+   "bookValue": 32.2,
+   "roce": 10.3,
+   "roe": 10.7,
+   "mcap": 16706,
+   "price": 284,
+   "high52": 302,
+   "low52": 98.6,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 54,
+   "sales3": 42,
+   "profit10": null,
+   "profit5": 22,
+   "profit3": 41,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 16.46,
+   "basis": "standalone",
+   "borrowNow": 234,
+   "borrow3yAgo": 66,
+   "debtEquity": 0.13386727688787187,
+   "qProfit": [
+    {
+     "q": "Dec 2024",
+     "v": 6
+    },
+    {
+     "q": "Mar 2025",
+     "v": -10
+    },
+    {
+     "q": "Jun 2025",
+     "v": 9
+    },
+    {
+     "q": "Sep 2025",
+     "v": 14
+    },
+    {
+     "q": "Dec 2025",
+     "v": 37
+    },
+    {
+     "q": "Mar 2026",
+     "v": 55
+    },
+    {
+     "q": "Jun 2026",
+     "v": 66
+    },
+    {
+     "q": "Sep 2026",
+     "v": 67
+    }
+   ],
+   "fiiNow": 16.34,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "SHAREINDIA": {
+   "sym": "SHAREINDIA",
+   "slug": "SHAREINDIA",
+   "name": "Share India Securities Ltd",
+   "pe": 12.3,
+   "pb": null,
+   "bookValue": 112,
+   "roce": 19.3,
+   "roe": 14.2,
+   "mcap": 4048,
+   "price": 181,
+   "high52": 233,
+   "low52": 115,
+   "divYield": 0.87,
+   "sales10": 32,
+   "sales5": 26,
+   "sales3": 14,
+   "profit10": 47,
+   "profit5": 35,
+   "profit3": 9,
+   "priceCagr10": null,
+   "priceCagr5": 0,
+   "priceCagr3": -20,
+   "promoter": 47.76,
+   "basis": "consolidated",
+   "borrowNow": 591,
+   "borrow3yAgo": 144,
+   "debtEquity": 0.26454789615040286,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 80
+    },
+    {
+     "q": "Dec 2023",
+     "v": 83
+    },
+    {
+     "q": "Mar 2024",
+     "v": 89
+    },
+    {
+     "q": "Jun 2024",
+     "v": 73
+    },
+    {
+     "q": "Sep 2024",
+     "v": 98
+    },
+    {
+     "q": "Dec 2024",
+     "v": 60
+    },
+    {
+     "q": "Mar 2025",
+     "v": 16
+    },
+    {
+     "q": "Jun 2025",
+     "v": 69
+    },
+    {
+     "q": "Sep 2025",
+     "v": 73
+    },
+    {
+     "q": "Dec 2025",
+     "v": 81
+    },
+    {
+     "q": "Mar 2026",
+     "v": 75
+    },
+    {
+     "q": "Jun 2026",
+     "v": 99
+    },
+    {
+     "q": "Sep 2026",
+     "v": 75
+    }
+   ],
+   "fiiNow": 1.56,
+   "fiiYearAgo": 1.44,
+   "fiiLatestQ": "Nov 2026"
+  },
+  "SHIPROCKET": {
+   "sym": "SHIPROCKET",
+   "slug": "SHIPROCKET",
+   "name": "Shiprocket Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": 35.1,
+   "roce": -0.28,
+   "roe": -2.03,
+   "mcap": 9178,
+   "price": 126,
+   "high52": 157,
+   "low52": 116,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 41,
+   "sales3": 23,
+   "profit10": null,
+   "profit5": null,
+   "profit3": 23,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": null,
+   "basis": "consolidated",
+   "borrowNow": 343,
+   "borrow3yAgo": 246,
+   "debtEquity": 0.21212121212121213,
+   "qProfit": [
+    {
+     "q": "Jun 2025",
+     "v": -9
+    },
+    {
+     "q": "Sep 2025",
+     "v": -8
+    },
+    {
+     "q": "Mar 2026",
+     "v": -7
+    },
+    {
+     "q": "Jun 2026",
+     "v": 20
+    },
+    {
+     "q": "Sep 2026",
+     "v": 19
+    }
+   ],
+   "fiiNow": 4.62,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "SKYWAYS": {
+   "sym": "SKYWAYS",
+   "slug": "SKYWAYS",
+   "name": "Skyways Air Services Ltd",
+   "pe": 42.6,
+   "pb": null,
+   "bookValue": null,
+   "roce": 11.9,
+   "roe": 12.8,
+   "mcap": 1753,
+   "price": 121,
+   "high52": 137,
+   "low52": 91.8,
+   "divYield": 0.53,
+   "sales10": null,
+   "sales5": null,
+   "sales3": 8,
+   "profit10": null,
+   "profit5": null,
+   "profit3": 7,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 56.82,
+   "basis": "consolidated",
+   "borrowNow": 397,
+   "borrow3yAgo": 124,
+   "debtEquity": 1.314569536423841,
+   "qProfit": [
+    {
+     "q": "Jun 2025",
+     "v": 7
+    },
+    {
+     "q": "Mar 2026",
+     "v": 10
+    },
+    {
+     "q": "Jun 2026",
+     "v": 14
+    }
+   ],
+   "fiiNow": 3.42,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "STLNETWORK": {
+   "sym": "STLNETWORK",
+   "slug": "STLNETWORK",
+   "name": "STL Networks Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": 23.8,
+   "roce": 4.26,
+   "roe": -2.09,
+   "mcap": 2243,
+   "price": 45.9,
+   "high52": 56.6,
+   "low52": 15.8,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": null,
+   "sales3": null,
+   "profit10": null,
+   "profit5": null,
+   "profit3": null,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 44.12,
+   "basis": "consolidated",
+   "borrowNow": 855,
+   "borrow3yAgo": null,
+   "debtEquity": 0.7493426818580193,
+   "qProfit": [
+    {
+     "q": "Jun 2024",
+     "v": 9.71
+    },
+    {
+     "q": "Dec 2024",
+     "v": 7.58
+    },
+    {
+     "q": "Mar 2025",
+     "v": 0.15
+    },
+    {
+     "q": "Jun 2025",
+     "v": 2.06
+    },
+    {
+     "q": "Sep 2025",
+     "v": -12.24
+    },
+    {
+     "q": "Dec 2025",
+     "v": -2.24
+    },
+    {
+     "q": "Mar 2026",
+     "v": -13.22
+    },
+    {
+     "q": "Jun 2026",
+     "v": -12.32
+    },
+    {
+     "q": "Sep 2026",
+     "v": 5.1
+    }
+   ],
+   "fiiNow": 0.98,
+   "fiiYearAgo": 1.59,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "SUBEXLTD": {
+   "sym": "SUBEXLTD",
+   "slug": "SUBEXLTD",
+   "name": "Subex Ltd",
+   "pe": 17.5,
+   "pb": null,
+   "bookValue": 3.48,
+   "roce": 23.8,
+   "roe": 23.1,
+   "mcap": 918,
+   "price": 16.3,
+   "high52": 22.8,
+   "low52": 6.61,
+   "divYield": 0,
+   "sales10": -1,
+   "sales5": 36,
+   "sales3": -2,
+   "profit10": 10,
+   "profit5": 6,
+   "profit3": 37,
+   "priceCagr10": 6,
+   "priceCagr5": -20,
+   "priceCagr3": -20,
+   "promoter": 0,
+   "basis": "consolidated",
+   "borrowNow": 26,
+   "borrow3yAgo": 30,
+   "debtEquity": 0.1511627906976744,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -16
+    },
+    {
+     "q": "Dec 2023",
+     "v": -10
+    },
+    {
+     "q": "Mar 2024",
+     "v": -169
+    },
+    {
+     "q": "Jun 2024",
+     "v": -16
+    },
+    {
+     "q": "Sep 2024",
+     "v": -5
+    },
+    {
+     "q": "Dec 2024",
+     "v": -7
+    },
+    {
+     "q": "Mar 2025",
+     "v": -22
+    },
+    {
+     "q": "Jun 2025",
+     "v": 7
+    },
+    {
+     "q": "Sep 2025",
+     "v": -3
+    },
+    {
+     "q": "Dec 2025",
+     "v": -3
+    },
+    {
+     "q": "Mar 2026",
+     "v": 6
+    },
+    {
+     "q": "Jun 2026",
+     "v": 9
+    },
+    {
+     "q": "Sep 2026",
+     "v": 10
+    }
+   ],
+   "fiiNow": 1.08,
+   "fiiYearAgo": 0.77,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "SWIGGY": {
+   "sym": "SWIGGY",
+   "slug": "SWIGGY",
+   "name": "Swiggy Ltd",
+   "pe": 50.5,
+   "pb": null,
+   "bookValue": 79.1,
+   "roce": 2.74,
+   "roe": -20.7,
+   "mcap": 51949,
+   "price": 188,
+   "high52": 422,
+   "low52": 174,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 33,
+   "sales3": 21,
+   "profit10": null,
+   "profit5": null,
+   "profit3": 1,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": null,
+   "basis": "consolidated",
+   "borrowNow": 185,
+   "borrow3yAgo": 15780,
+   "debtEquity": 0.008877585296799271,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -591
+    },
+    {
+     "q": "Dec 2023",
+     "v": -309
+    },
+    {
+     "q": "Mar 2024",
+     "v": -515
+    },
+    {
+     "q": "Jun 2024",
+     "v": -497
+    },
+    {
+     "q": "Sep 2024",
+     "v": -491
+    },
+    {
+     "q": "Dec 2024",
+     "v": -626
+    },
+    {
+     "q": "Mar 2025",
+     "v": -927
+    },
+    {
+     "q": "Jun 2025",
+     "v": -991
+    },
+    {
+     "q": "Sep 2025",
+     "v": -881
+    },
+    {
+     "q": "Dec 2025",
+     "v": -895
+    },
+    {
+     "q": "Mar 2026",
+     "v": -652
+    },
+    {
+     "q": "Jun 2026",
+     "v": 350
+    },
+    {
+     "q": "Sep 2026",
+     "v": 287
+    }
+   ],
+   "fiiNow": 8.86,
+   "fiiYearAgo": 12.23,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "TATACOMM": {
+   "sym": "TATACOMM",
+   "slug": "TATACOMM",
+   "name": "Tata Communications Ltd",
+   "pe": 68.9,
+   "pb": null,
+   "bookValue": 362,
+   "roce": 8.64,
+   "roe": 7.3,
+   "mcap": 51454,
+   "price": 1804,
+   "high52": 2110,
+   "low52": 1322,
+   "divYield": 0.99,
+   "sales10": 4,
+   "sales5": 3,
+   "sales3": 1,
+   "profit10": 7,
+   "profit5": -4,
+   "profit3": -3,
+   "priceCagr10": 17,
+   "priceCagr5": 7,
+   "priceCagr3": 1,
+   "promoter": 58.85,
+   "basis": "consolidated",
+   "borrowNow": 5487,
+   "borrow3yAgo": 962,
+   "debtEquity": 0.5186690613479535,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 164
+    },
+    {
+     "q": "Dec 2023",
+     "v": -28
+    },
+    {
+     "q": "Mar 2024",
+     "v": 174
+    },
+    {
+     "q": "Jun 2024",
+     "v": 342
+    },
+    {
+     "q": "Sep 2024",
+     "v": -120
+    },
+    {
+     "q": "Dec 2024",
+     "v": 132
+    },
+    {
+     "q": "Mar 2025",
+     "v": 697
+    },
+    {
+     "q": "Jun 2025",
+     "v": 136
+    },
+    {
+     "q": "Sep 2025",
+     "v": 211
+    },
+    {
+     "q": "Dec 2025",
+     "v": 278
+    },
+    {
+     "q": "Mar 2026",
+     "v": 169
+    },
+    {
+     "q": "Jun 2026",
+     "v": 104
+    },
+    {
+     "q": "Sep 2026",
+     "v": 126
+    }
+   ],
+   "fiiNow": 13.55,
+   "fiiYearAgo": 13.61,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "TCS": {
+   "sym": "TCS",
+   "slug": "TCS",
+   "name": "Tata Consultancy Services Ltd",
+   "pe": 15.7,
+   "pb": null,
+   "bookValue": 267,
+   "roce": 76.7,
+   "roe": 65.2,
+   "mcap": 869426,
+   "price": 2403,
+   "high52": 3350,
+   "low52": 1976,
+   "divYield": 2.66,
+   "sales10": 10,
+   "sales5": 10,
+   "sales3": 5,
+   "profit10": 9,
+   "profit5": 10,
+   "profit3": 10,
+   "priceCagr10": 9,
+   "priceCagr5": -7,
+   "priceCagr3": -12,
+   "promoter": 71.77,
+   "basis": "consolidated",
+   "borrowNow": 9354,
+   "borrow3yAgo": 5659,
+   "debtEquity": 0.11046813737068355,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 10929
+    },
+    {
+     "q": "Dec 2023",
+     "v": 10753
+    },
+    {
+     "q": "Mar 2024",
+     "v": 11393
+    },
+    {
+     "q": "Jun 2024",
+     "v": 12115
+    },
+    {
+     "q": "Sep 2024",
+     "v": 12994
+    },
+    {
+     "q": "Dec 2024",
+     "v": 11832
+    },
+    {
+     "q": "Mar 2025",
+     "v": 11116
+    },
+    {
+     "q": "Jun 2025",
+     "v": 12552
+    },
+    {
+     "q": "Sep 2025",
+     "v": 11828
+    },
+    {
+     "q": "Dec 2025",
+     "v": 10190
+    },
+    {
+     "q": "Mar 2026",
+     "v": 14526
+    },
+    {
+     "q": "Jun 2026",
+     "v": 13642
+    },
+    {
+     "q": "Sep 2026",
+     "v": 14104
+    }
+   ],
+   "fiiNow": 9.01,
+   "fiiYearAgo": 10.33,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "TATAELXSI": {
+   "sym": "TATAELXSI",
+   "slug": "TATAELXSI",
+   "name": "Tata Elxsi Ltd",
+   "pe": 32.6,
+   "pb": null,
+   "bookValue": 468,
+   "roce": 30,
+   "roe": 23.6,
+   "mcap": 23508,
+   "price": 3773,
+   "high52": 5950,
+   "low52": 2996,
+   "divYield": 1.99,
+   "sales10": 13,
+   "sales5": 16,
+   "sales3": 6,
+   "profit10": 16,
+   "profit5": 14,
+   "profit3": -3,
+   "priceCagr10": 22,
+   "priceCagr5": -10,
+   "priceCagr3": -23,
+   "promoter": 43.89,
+   "basis": "standalone",
+   "borrowNow": 162,
+   "borrow3yAgo": 185,
+   "debtEquity": 0.05327195001644196,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 200
+    },
+    {
+     "q": "Dec 2023",
+     "v": 206
+    },
+    {
+     "q": "Mar 2024",
+     "v": 197
+    },
+    {
+     "q": "Jun 2024",
+     "v": 184
+    },
+    {
+     "q": "Sep 2024",
+     "v": 229
+    },
+    {
+     "q": "Dec 2024",
+     "v": 199
+    },
+    {
+     "q": "Mar 2025",
+     "v": 172
+    },
+    {
+     "q": "Jun 2025",
+     "v": 144
+    },
+    {
+     "q": "Sep 2025",
+     "v": 155
+    },
+    {
+     "q": "Dec 2025",
+     "v": 109
+    },
+    {
+     "q": "Mar 2026",
+     "v": 220
+    },
+    {
+     "q": "Jun 2026",
+     "v": 171
+    },
+    {
+     "q": "Sep 2026",
+     "v": 170
+    }
+   ],
+   "fiiNow": 8,
+   "fiiYearAgo": 12.53,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "TATAINVEST": {
+   "sym": "TATAINVEST",
+   "slug": "TATAINVEST",
+   "name": "Tata Investment Corporation Ltd",
+   "pe": 79.1,
+   "pb": null,
+   "bookValue": 609,
+   "roce": 1.29,
+   "roe": 1.17,
+   "mcap": 29345,
+   "price": 580,
+   "high52": 795,
+   "low52": 539,
+   "divYield": 0.58,
+   "sales10": 5,
+   "sales5": 25,
+   "sales3": 14,
+   "profit10": 6,
+   "profit5": 26,
+   "profit3": 13,
+   "priceCagr10": 27,
+   "priceCagr5": 31,
+   "priceCagr3": 14,
+   "promoter": 73.38,
+   "basis": "consolidated",
+   "borrowNow": 0,
+   "borrow3yAgo": 0,
+   "debtEquity": 0,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 113
+    },
+    {
+     "q": "Dec 2023",
+     "v": 24
+    },
+    {
+     "q": "Mar 2024",
+     "v": 35
+    },
+    {
+     "q": "Jun 2024",
+     "v": 113
+    },
+    {
+     "q": "Sep 2024",
+     "v": 100
+    },
+    {
+     "q": "Dec 2024",
+     "v": 34
+    },
+    {
+     "q": "Mar 2025",
+     "v": 35
+    },
+    {
+     "q": "Jun 2025",
+     "v": 139
+    },
+    {
+     "q": "Sep 2025",
+     "v": 122
+    },
+    {
+     "q": "Dec 2025",
+     "v": 37
+    },
+    {
+     "q": "Mar 2026",
+     "v": 52
+    },
+    {
+     "q": "Jun 2026",
+     "v": 164
+    },
+    {
+     "q": "Sep 2026",
+     "v": 118
+    }
+   ],
+   "fiiNow": 2.91,
+   "fiiYearAgo": 2.69,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "TATATECH": {
+   "sym": "TATATECH",
+   "slug": "TATATECH",
+   "name": "Tata Technologies Ltd",
+   "pe": 41.2,
+   "pb": null,
+   "bookValue": 41.8,
+   "roce": 44,
+   "roe": 36.3,
+   "mcap": 26763,
+   "price": 659,
+   "high52": 891,
+   "low52": 507,
+   "divYield": 1.26,
+   "sales10": null,
+   "sales5": 24,
+   "sales3": 14,
+   "profit10": null,
+   "profit5": 42,
+   "profit3": 37,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 55.17,
+   "basis": "consolidated",
+   "borrowNow": 73,
+   "borrow3yAgo": 86,
+   "debtEquity": 0.041312959818902095,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 434
+    },
+    {
+     "q": "Dec 2023",
+     "v": 94
+    },
+    {
+     "q": "Mar 2024",
+     "v": 80
+    },
+    {
+     "q": "Jun 2024",
+     "v": 480
+    },
+    {
+     "q": "Sep 2024",
+     "v": 122
+    },
+    {
+     "q": "Dec 2024",
+     "v": 103
+    },
+    {
+     "q": "Mar 2025",
+     "v": 144
+    },
+    {
+     "q": "Jun 2025",
+     "v": 280
+    },
+    {
+     "q": "Sep 2025",
+     "v": 133
+    },
+    {
+     "q": "Dec 2025",
+     "v": -2
+    },
+    {
+     "q": "Mar 2026",
+     "v": 159
+    },
+    {
+     "q": "Jun 2026",
+     "v": 249
+    },
+    {
+     "q": "Sep 2026",
+     "v": 146
+    }
+   ],
+   "fiiNow": 6.59,
+   "fiiYearAgo": 5.25,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "TECHM": {
+   "sym": "TECHM",
+   "slug": "TECHM",
+   "name": "Tech Mahindra Ltd",
+   "pe": 39.3,
+   "pb": null,
+   "bookValue": 217,
+   "roce": 24.3,
+   "roe": 18.2,
+   "mcap": 174236,
+   "price": 1778,
+   "high52": 1860,
+   "low52": 1304,
+   "divYield": 2.87,
+   "sales10": 9,
+   "sales5": 11,
+   "sales3": 5,
+   "profit10": 2,
+   "profit5": -1,
+   "profit3": 2,
+   "priceCagr10": 15,
+   "priceCagr5": 2,
+   "priceCagr3": 14,
+   "promoter": 34.96,
+   "basis": "consolidated",
+   "borrowNow": 1505,
+   "borrow3yAgo": 579,
+   "debtEquity": 0.06928459626185435,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 556
+    },
+    {
+     "q": "Dec 2023",
+     "v": 517
+    },
+    {
+     "q": "Mar 2024",
+     "v": 480
+    },
+    {
+     "q": "Jun 2024",
+     "v": 657
+    },
+    {
+     "q": "Sep 2024",
+     "v": 1280
+    },
+    {
+     "q": "Dec 2024",
+     "v": 858
+    },
+    {
+     "q": "Mar 2025",
+     "v": 710
+    },
+    {
+     "q": "Jun 2025",
+     "v": 1178
+    },
+    {
+     "q": "Sep 2025",
+     "v": 1176
+    },
+    {
+     "q": "Dec 2025",
+     "v": 964
+    },
+    {
+     "q": "Mar 2026",
+     "v": 541
+    },
+    {
+     "q": "Jun 2026",
+     "v": 1138
+    },
+    {
+     "q": "Sep 2026",
+     "v": 1614
+    }
+   ],
+   "fiiNow": 20.76,
+   "fiiYearAgo": 20.6,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "TEJASNET": {
+   "sym": "TEJASNET",
+   "slug": "TEJASNET",
+   "name": "Tejas Networks Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": 142,
+   "roce": -14.7,
+   "roe": -27,
+   "mcap": 7372,
+   "price": 414,
+   "high52": 645,
+   "low52": 294,
+   "divYield": 0,
+   "sales10": 6,
+   "sales5": 16,
+   "sales3": 8,
+   "profit10": null,
+   "profit5": null,
+   "profit3": null,
+   "priceCagr10": null,
+   "priceCagr5": -2,
+   "priceCagr3": -20,
+   "promoter": 53.28,
+   "basis": "consolidated",
+   "borrowNow": 4177,
+   "borrow3yAgo": 48,
+   "debtEquity": 1.42462482946794,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -9
+    },
+    {
+     "q": "Dec 2023",
+     "v": -41
+    },
+    {
+     "q": "Mar 2024",
+     "v": 150
+    },
+    {
+     "q": "Jun 2024",
+     "v": 81
+    },
+    {
+     "q": "Sep 2024",
+     "v": 266
+    },
+    {
+     "q": "Dec 2024",
+     "v": 165
+    },
+    {
+     "q": "Mar 2025",
+     "v": -62
+    },
+    {
+     "q": "Jun 2025",
+     "v": -194
+    },
+    {
+     "q": "Sep 2025",
+     "v": -307
+    },
+    {
+     "q": "Dec 2025",
+     "v": -197
+    },
+    {
+     "q": "Mar 2026",
+     "v": -218
+    },
+    {
+     "q": "Jun 2026",
+     "v": -202
+    },
+    {
+     "q": "Sep 2026",
+     "v": -208
+    }
+   ],
+   "fiiNow": 6.63,
+   "fiiYearAgo": 6.24,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "TURTLEMINT": {
+   "sym": "TURTLEMINT",
+   "slug": "TURTLEMINT",
+   "name": "Turtlemint Fintech Solutions Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": null,
+   "roce": -39.6,
+   "roe": -41.5,
+   "mcap": 1992,
+   "price": 67.7,
+   "high52": 160,
+   "low52": 51.8,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": null,
+   "sales3": -52,
+   "profit10": null,
+   "profit5": null,
+   "profit3": 14,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 13.21,
+   "basis": "consolidated",
+   "borrowNow": 12,
+   "borrow3yAgo": 28,
+   "debtEquity": 0.0392156862745098,
+   "qProfit": [
+    {
+     "q": "Mar 2025",
+     "v": -42
+    },
+    {
+     "q": "Jun 2025",
+     "v": -40
+    },
+    {
+     "q": "Sep 2025",
+     "v": -76
+    },
+    {
+     "q": "Dec 2025",
+     "v": -62
+    },
+    {
+     "q": "Mar 2026",
+     "v": -31
+    },
+    {
+     "q": "Jun 2026",
+     "v": -36
+    },
+    {
+     "q": "Sep 2026",
+     "v": -33
+    }
+   ],
+   "fiiNow": 4.05,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "UBL": {
+   "sym": "UBL",
+   "slug": "UBL",
+   "name": "United Breweries Ltd",
+   "pe": 73.4,
+   "pb": null,
+   "bookValue": 172,
+   "roce": 10.7,
+   "roe": 8.43,
+   "mcap": 31886,
+   "price": 1206,
+   "high52": 1817,
+   "low52": 1128,
+   "divYield": 0.83,
+   "sales10": 7,
+   "sales5": 17,
+   "sales3": 7,
+   "profit10": 2,
+   "profit5": 26,
+   "profit3": 5,
+   "priceCagr10": 4,
+   "priceCagr5": -6,
+   "priceCagr3": -8,
+   "promoter": 70.84,
+   "basis": "consolidated",
+   "borrowNow": 1317,
+   "borrow3yAgo": 16,
+   "debtEquity": 0.29156519814035864,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 108
+    },
+    {
+     "q": "Dec 2023",
+     "v": 85
+    },
+    {
+     "q": "Mar 2024",
+     "v": 81
+    },
+    {
+     "q": "Jun 2024",
+     "v": 173
+    },
+    {
+     "q": "Sep 2024",
+     "v": 132
+    },
+    {
+     "q": "Dec 2024",
+     "v": 38
+    },
+    {
+     "q": "Mar 2025",
+     "v": 97
+    },
+    {
+     "q": "Jun 2025",
+     "v": 184
+    },
+    {
+     "q": "Sep 2025",
+     "v": 47
+    },
+    {
+     "q": "Dec 2025",
+     "v": 81
+    },
+    {
+     "q": "Mar 2026",
+     "v": 102
+    },
+    {
+     "q": "Jun 2026",
+     "v": 166
+    },
+    {
+     "q": "Sep 2026",
+     "v": 136
+    }
+   ],
+   "fiiNow": 5.36,
+   "fiiYearAgo": 6.26,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "UNITDSPR": {
+   "sym": "UNITDSPR",
+   "slug": "UNITDSPR",
+   "name": "United Spirits Ltd",
+   "pe": 50.5,
+   "pb": null,
+   "bookValue": 121,
+   "roce": 28.5,
+   "roe": 22,
+   "mcap": 103233,
+   "price": 1419,
+   "high52": 1576,
+   "low52": 1210,
+   "divYield": 1.2,
+   "sales10": 4,
+   "sales5": 10,
+   "sales3": 6,
+   "profit10": 77,
+   "profit5": 36,
+   "profit3": 27,
+   "priceCagr10": 14,
+   "priceCagr5": 9,
+   "priceCagr3": 10,
+   "promoter": 56.68,
+   "basis": "consolidated",
+   "borrowNow": 405,
+   "borrow3yAgo": 183,
+   "debtEquity": 0.04643962848297214,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 341
+    },
+    {
+     "q": "Dec 2023",
+     "v": 347
+    },
+    {
+     "q": "Mar 2024",
+     "v": 384
+    },
+    {
+     "q": "Jun 2024",
+     "v": 299
+    },
+    {
+     "q": "Sep 2024",
+     "v": 335
+    },
+    {
+     "q": "Dec 2024",
+     "v": 473
+    },
+    {
+     "q": "Mar 2025",
+     "v": 451
+    },
+    {
+     "q": "Jun 2025",
+     "v": 258
+    },
+    {
+     "q": "Sep 2025",
+     "v": 472
+    },
+    {
+     "q": "Dec 2025",
+     "v": 529
+    },
+    {
+     "q": "Mar 2026",
+     "v": 571
+    },
+    {
+     "q": "Jun 2026",
+     "v": 391
+    },
+    {
+     "q": "Sep 2026",
+     "v": 462
+    }
+   ],
+   "fiiNow": 12.85,
+   "fiiYearAgo": 14.38,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "URBANCO": {
+   "sym": "URBANCO",
+   "slug": "URBANCO",
+   "name": "Urban Company Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": 16,
+   "roce": -4.87,
+   "roe": -8.07,
+   "mcap": 26094,
+   "price": 169,
+   "high52": 184,
+   "low52": 96.4,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 35,
+   "sales3": 37,
+   "profit10": null,
+   "profit5": 1,
+   "profit3": -7,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 19.02,
+   "basis": "consolidated",
+   "borrowNow": 131,
+   "borrow3yAgo": 0,
+   "debtEquity": 0.04969650986342944,
+   "qProfit": [
+    {
+     "q": "Sep 2024",
+     "v": 14
+    },
+    {
+     "q": "Dec 2024",
+     "v": 239
+    },
+    {
+     "q": "Mar 2025",
+     "v": 5
+    },
+    {
+     "q": "Jun 2025",
+     "v": 25
+    },
+    {
+     "q": "Sep 2025",
+     "v": -49
+    },
+    {
+     "q": "Dec 2025",
+     "v": -15
+    },
+    {
+     "q": "Mar 2026",
+     "v": -156
+    },
+    {
+     "q": "Jun 2026",
+     "v": -84
+    },
+    {
+     "q": "Sep 2026",
+     "v": -188
+    }
+   ],
+   "fiiNow": 52.51,
+   "fiiYearAgo": 67.36,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "UTIAMC": {
+   "sym": "UTIAMC",
+   "slug": "UTIAMC",
+   "name": "UTI Asset Management Company Ltd",
+   "pe": 17.8,
+   "pb": null,
+   "bookValue": 278,
+   "roce": 21.1,
+   "roe": 16.5,
+   "mcap": 10697,
+   "price": 832,
+   "high52": 1180,
+   "low52": 782,
+   "divYield": 4.82,
+   "sales10": 7,
+   "sales5": 10,
+   "sales3": 11,
+   "profit10": 10,
+   "profit5": 12,
+   "profit3": 14,
+   "priceCagr10": null,
+   "priceCagr5": -5,
+   "priceCagr3": 2,
+   "promoter": null,
+   "basis": "standalone",
+   "borrowNow": 129,
+   "borrow3yAgo": 0,
+   "debtEquity": 0.0345289079229122,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 134
+    },
+    {
+     "q": "Dec 2023",
+     "v": 150
+    },
+    {
+     "q": "Mar 2024",
+     "v": 151
+    },
+    {
+     "q": "Jun 2024",
+     "v": 186
+    },
+    {
+     "q": "Sep 2024",
+     "v": 201
+    },
+    {
+     "q": "Dec 2024",
+     "v": 142
+    },
+    {
+     "q": "Mar 2025",
+     "v": 124
+    },
+    {
+     "q": "Jun 2025",
+     "v": 216
+    },
+    {
+     "q": "Sep 2025",
+     "v": 166
+    },
+    {
+     "q": "Dec 2025",
+     "v": 124
+    },
+    {
+     "q": "Mar 2026",
+     "v": 34
+    },
+    {
+     "q": "Jun 2026",
+     "v": 218
+    },
+    {
+     "q": "Sep 2026",
+     "v": 143
+    }
+   ],
+   "fiiNow": 6.71,
+   "fiiYearAgo": 7.62,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "VAKRANGEE": {
+   "sym": "VAKRANGEE",
+   "slug": "VAKRANGEE",
+   "name": "Vakrangee Ltd",
+   "pe": 41.6,
+   "pb": null,
+   "bookValue": 1.71,
+   "roce": 10.2,
+   "roe": 7.15,
+   "mcap": 600,
+   "price": 5.54,
+   "high52": 8.67,
+   "low52": 4.61,
+   "divYield": 0,
+   "sales10": -25,
+   "sales5": -4,
+   "sales3": 4,
+   "profit10": -29,
+   "profit5": -25,
+   "profit3": 163,
+   "priceCagr10": -26,
+   "priceCagr5": -30,
+   "priceCagr3": -33,
+   "promoter": 40.04,
+   "basis": "consolidated",
+   "borrowNow": 0,
+   "borrow3yAgo": 58,
+   "debtEquity": 0,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 0.64
+    },
+    {
+     "q": "Dec 2023",
+     "v": 1.62
+    },
+    {
+     "q": "Mar 2024",
+     "v": 1.01
+    },
+    {
+     "q": "Jun 2024",
+     "v": 1.99
+    },
+    {
+     "q": "Sep 2024",
+     "v": 1.46
+    },
+    {
+     "q": "Dec 2024",
+     "v": 1.9
+    },
+    {
+     "q": "Mar 2025",
+     "v": 2.81
+    },
+    {
+     "q": "Jun 2025",
+     "v": 2.94
+    },
+    {
+     "q": "Sep 2025",
+     "v": 2.26
+    },
+    {
+     "q": "Dec 2025",
+     "v": 3.72
+    },
+    {
+     "q": "Mar 2026",
+     "v": 3.33
+    },
+    {
+     "q": "Jun 2026",
+     "v": 3.38
+    },
+    {
+     "q": "Sep 2026",
+     "v": 3.86
+    }
+   ],
+   "fiiNow": 0.33,
+   "fiiYearAgo": 0.83,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "VIKRAMSOLR": {
+   "sym": "VIKRAMSOLR",
+   "slug": "VIKRAMSOLR",
+   "name": "Vikram Solar Ltd",
+   "pe": 21.2,
+   "pb": null,
+   "bookValue": 88.3,
+   "roce": 30.6,
+   "roe": 21.4,
+   "mcap": 4939,
+   "price": 136,
+   "high52": 320,
+   "low52": 124,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 25,
+   "sales3": 34,
+   "profit10": null,
+   "profit5": 66,
+   "profit3": 227,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 63.01,
+   "basis": "consolidated",
+   "borrowNow": 617,
+   "borrow3yAgo": 788,
+   "debtEquity": 0.19445319886542703,
+   "qProfit": [
+    {
+     "q": "Jun 2024",
+     "v": 24.52
+    },
+    {
+     "q": "Sep 2024",
+     "v": 10.82
+    },
+    {
+     "q": "Dec 2024",
+     "v": 20.92
+    },
+    {
+     "q": "Mar 2025",
+     "v": 82.84
+    },
+    {
+     "q": "Jun 2025",
+     "v": 134.42
+    },
+    {
+     "q": "Sep 2025",
+     "v": 128.24
+    },
+    {
+     "q": "Dec 2025",
+     "v": 96.44
+    },
+    {
+     "q": "Mar 2026",
+     "v": 109.97
+    },
+    {
+     "q": "Jun 2026",
+     "v": 18.73
+    },
+    {
+     "q": "Sep 2026",
+     "v": 3.73
+    }
+   ],
+   "fiiNow": 3.1,
+   "fiiYearAgo": 2.08,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "IDEA": {
+   "sym": "IDEA",
+   "slug": "IDEA",
+   "name": "Vodafone Idea Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": -4.05,
+   "roce": -1.92,
+   "roe": null,
+   "mcap": 136079,
+   "price": 12.6,
+   "high52": 15.8,
+   "low52": 8.13,
+   "divYield": 0,
+   "sales10": 2,
+   "sales5": 1,
+   "sales3": 2,
+   "profit10": null,
+   "profit5": 0,
+   "profit3": 5,
+   "priceCagr10": -12,
+   "priceCagr5": 5,
+   "priceCagr3": -5,
+   "promoter": 25.64,
+   "basis": "consolidated",
+   "borrowNow": 189337,
+   "borrow3yAgo": 237983,
+   "debtEquity": null,
+   "qProfit": [
+    {
+     "q": "Sep 2019",
+     "v": -54765
+    },
+    {
+     "q": "Sep 2020",
+     "v": -32550
+    },
+    {
+     "q": "Sep 2021",
+     "v": -14587
+    },
+    {
+     "q": "Sep 2022",
+     "v": -14834
+    },
+    {
+     "q": "Sep 2023",
+     "v": -16567
+    },
+    {
+     "q": "Sep 2024",
+     "v": -13681
+    },
+    {
+     "q": "Sep 2025",
+     "v": -12216
+    },
+    {
+     "q": "Sep 2026",
+     "v": -9657
+    }
+   ],
+   "fiiNow": 5.83,
+   "fiiYearAgo": 5.99,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "WAAREEENER": {
+   "sym": "WAAREEENER",
+   "slug": "WAAREEENER",
+   "name": "Waaree Energies Ltd",
+   "pe": 19.8,
+   "pb": null,
+   "bookValue": 505,
+   "roce": 38.6,
+   "roe": 31.8,
+   "mcap": 70761,
+   "price": 2460,
+   "high52": 3557,
+   "low52": 2162,
+   "divYield": 0.16,
+   "sales10": null,
+   "sales5": 60,
+   "sales3": 48,
+   "profit10": null,
+   "profit5": 139,
+   "profit3": 97,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 64.12,
+   "basis": "consolidated",
+   "borrowNow": 2015,
+   "borrow3yAgo": 240,
+   "debtEquity": 0.15346534653465346,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 302
+    },
+    {
+     "q": "Dec 2023",
+     "v": 83
+    },
+    {
+     "q": "Mar 2024",
+     "v": 432
+    },
+    {
+     "q": "Jun 2024",
+     "v": 372
+    },
+    {
+     "q": "Sep 2024",
+     "v": 357
+    },
+    {
+     "q": "Dec 2024",
+     "v": 471
+    },
+    {
+     "q": "Mar 2025",
+     "v": 581
+    },
+    {
+     "q": "Jun 2025",
+     "v": 660
+    },
+    {
+     "q": "Sep 2025",
+     "v": 1160
+    },
+    {
+     "q": "Dec 2025",
+     "v": 1009
+    },
+    {
+     "q": "Mar 2026",
+     "v": 934
+    },
+    {
+     "q": "Jun 2026",
+     "v": 739
+    },
+    {
+     "q": "Sep 2026",
+     "v": 671
+    }
+   ],
+   "fiiNow": 8.57,
+   "fiiYearAgo": 6.35,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "CORDELIA": {
+   "sym": "CORDELIA",
+   "slug": "CORDELIA",
+   "name": "Waterways Leisure Tourism Limited",
+   "pe": 87.8,
+   "pb": null,
+   "bookValue": 10.1,
+   "roce": null,
+   "roe": 45.6,
+   "mcap": 6487,
+   "price": 89.6,
+   "high52": 119,
+   "low52": 62.3,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": null,
+   "sales3": null,
+   "profit10": null,
+   "profit5": null,
+   "profit3": null,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 89.35,
+   "basis": "consolidated",
+   "borrowNow": 112,
+   "borrow3yAgo": null,
+   "debtEquity": 0.8484848484848485,
+   "qProfit": [
+    {
+     "q": "Jun 2025",
+     "v": 37.31
+    },
+    {
+     "q": "Sep 2025",
+     "v": -7.24
+    },
+    {
+     "q": "Mar 2026",
+     "v": 17.3
+    },
+    {
+     "q": "Jun 2026",
+     "v": 27.35
+    },
+    {
+     "q": "Sep 2026",
+     "v": 6.44
+    }
+   ],
+   "fiiNow": 2.73,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "WIPRO": {
+   "sym": "WIPRO",
+   "slug": "WIPRO",
+   "name": "Wipro Ltd",
+   "pe": 16.6,
+   "pb": null,
+   "bookValue": 53.7,
+   "roce": 23.7,
+   "roe": 19,
+   "mcap": 191924,
+   "price": 194,
+   "high52": 273,
+   "low52": 157,
+   "divYield": 5.68,
+   "sales10": 5,
+   "sales5": 7,
+   "sales3": 2,
+   "profit10": 4,
+   "profit5": 4,
+   "profit3": 10,
+   "priceCagr10": 9,
+   "priceCagr5": -10,
+   "priceCagr3": -1,
+   "promoter": 72.57,
+   "basis": "consolidated",
+   "borrowNow": 8086,
+   "borrow3yAgo": 6359,
+   "debtEquity": 0.1269786432160804,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 2061
+    },
+    {
+     "q": "Dec 2023",
+     "v": 2023
+    },
+    {
+     "q": "Mar 2024",
+     "v": 2447
+    },
+    {
+     "q": "Jun 2024",
+     "v": 2405
+    },
+    {
+     "q": "Sep 2024",
+     "v": 2745
+    },
+    {
+     "q": "Dec 2024",
+     "v": 2841
+    },
+    {
+     "q": "Mar 2025",
+     "v": 2923
+    },
+    {
+     "q": "Jun 2025",
+     "v": 3696
+    },
+    {
+     "q": "Sep 2025",
+     "v": 2614
+    },
+    {
+     "q": "Dec 2025",
+     "v": 2782
+    },
+    {
+     "q": "Mar 2026",
+     "v": 3037
+    },
+    {
+     "q": "Jun 2026",
+     "v": 2866
+    },
+    {
+     "q": "Sep 2026",
+     "v": 2863
+    }
+   ],
+   "fiiNow": 9.46,
+   "fiiYearAgo": 8.45,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "XTRANET": {
+   "sym": "XTRANET",
+   "slug": "XTRANET",
+   "name": "Xtranet Technologies Ltd",
+   "pe": 30,
+   "pb": null,
+   "bookValue": 57.2,
+   "roce": 32.8,
+   "roe": 35,
+   "mcap": 1397,
+   "price": 267,
+   "high52": 359,
+   "low52": 120,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": null,
+   "sales3": 15,
+   "profit10": null,
+   "profit5": null,
+   "profit3": 93,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 62.62,
+   "basis": "consolidated",
+   "borrowNow": 82,
+   "borrow3yAgo": 18,
+   "debtEquity": 0.6307692307692307,
+   "qProfit": [
+    {
+     "q": "Jun 2025",
+     "v": 3
+    },
+    {
+     "q": "Sep 2025",
+     "v": 6
+    },
+    {
+     "q": "Mar 2026",
+     "v": 23
+    },
+    {
+     "q": "Jun 2026",
+     "v": 5
+    },
+    {
+     "q": "Sep 2026",
+     "v": 14
+    }
+   ],
+   "fiiNow": 2.54,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "YATRA": {
+   "sym": "YATRA",
+   "slug": "YATRA",
+   "name": "Yatra Online Ltd",
+   "pe": 35.8,
+   "pb": null,
+   "bookValue": 50.1,
+   "roce": 6.08,
+   "roe": 5.39,
+   "mcap": 1318,
+   "price": 84,
+   "high52": 202,
+   "low52": 68,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 48,
+   "sales3": 35,
+   "profit10": null,
+   "profit5": 18,
+   "profit3": 145,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": -16,
+   "promoter": 62.66,
+   "basis": "consolidated",
+   "borrowNow": 51,
+   "borrow3yAgo": 106,
+   "debtEquity": 0.06614785992217899,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -21.57
+    },
+    {
+     "q": "Dec 2023",
+     "v": -0.58
+    },
+    {
+     "q": "Mar 2024",
+     "v": 2.22
+    },
+    {
+     "q": "Jun 2024",
+     "v": 2.14
+    },
+    {
+     "q": "Sep 2024",
+     "v": 6.49
+    },
+    {
+     "q": "Dec 2024",
+     "v": 6.05
+    },
+    {
+     "q": "Mar 2025",
+     "v": 10.98
+    },
+    {
+     "q": "Jun 2025",
+     "v": 12.26
+    },
+    {
+     "q": "Sep 2025",
+     "v": 7.13
+    },
+    {
+     "q": "Dec 2025",
+     "v": 4.84
+    },
+    {
+     "q": "Mar 2026",
+     "v": 13.51
+    },
+    {
+     "q": "Jun 2026",
+     "v": 6.28
+    },
+    {
+     "q": "Sep 2026",
+     "v": 9.47
+    }
+   ],
+   "fiiNow": 4.69,
+   "fiiYearAgo": 4.2,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "ZAGGLE": {
+   "sym": "ZAGGLE",
+   "slug": "ZAGGLE",
+   "name": "Zaggle Prepaid Ocean Services Ltd",
+   "pe": 19,
+   "pb": null,
+   "bookValue": 107,
+   "roce": 13.5,
+   "roe": 10,
+   "mcap": 2205,
+   "price": 164,
+   "high52": 405,
+   "low52": 147,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": 51,
+   "sales3": 50,
+   "profit10": null,
+   "profit5": 47,
+   "profit3": 80,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": -12,
+   "promoter": 44.3,
+   "basis": "standalone",
+   "borrowNow": 53,
+   "borrow3yAgo": 141,
+   "debtEquity": 0.03785714285714286,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 8
+    },
+    {
+     "q": "Dec 2023",
+     "v": 15
+    },
+    {
+     "q": "Mar 2024",
+     "v": 19
+    },
+    {
+     "q": "Jun 2024",
+     "v": 17
+    },
+    {
+     "q": "Sep 2024",
+     "v": 19
+    },
+    {
+     "q": "Dec 2024",
+     "v": 20
+    },
+    {
+     "q": "Mar 2025",
+     "v": 32
+    },
+    {
+     "q": "Jun 2025",
+     "v": 26
+    },
+    {
+     "q": "Sep 2025",
+     "v": 33
+    },
+    {
+     "q": "Dec 2025",
+     "v": 36
+    },
+    {
+     "q": "Mar 2026",
+     "v": 38
+    },
+    {
+     "q": "Jun 2026",
+     "v": 17
+    },
+    {
+     "q": "Sep 2026",
+     "v": 25
+    }
+   ],
+   "fiiNow": 2.49,
+   "fiiYearAgo": 8.64,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "PFOCUS": {
+   "sym": "PFOCUS",
+   "slug": "PFOCUS",
+   "name": "Prime Focus Ltd",
+   "pe": null,
+   "pb": null,
+   "bookValue": 90,
+   "roce": -0.53,
+   "roe": -0.44,
+   "mcap": 21000,
+   "price": 270,
+   "high52": 367,
+   "low52": 165,
+   "divYield": 0,
+   "sales10": -13,
+   "sales5": -18,
+   "sales3": -12,
+   "profit10": null,
+   "profit5": 11,
+   "profit3": 8,
+   "priceCagr10": 14,
+   "priceCagr5": 30,
+   "priceCagr3": 36,
+   "promoter": 60.55,
+   "basis": "consolidated",
+   "borrowNow": 200,
+   "borrow3yAgo": 201,
+   "debtEquity": 0.02818489289740699,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 0
+    },
+    {
+     "q": "Dec 2023",
+     "v": 1
+    },
+    {
+     "q": "Mar 2024",
+     "v": -1
+    },
+    {
+     "q": "Jun 2024",
+     "v": 221
+    },
+    {
+     "q": "Sep 2024",
+     "v": -7
+    },
+    {
+     "q": "Dec 2024",
+     "v": -12
+    },
+    {
+     "q": "Mar 2025",
+     "v": -16
+    },
+    {
+     "q": "Jun 2025",
+     "v": -5
+    },
+    {
+     "q": "Sep 2025",
+     "v": -2
+    },
+    {
+     "q": "Dec 2025",
+     "v": 0
+    },
+    {
+     "q": "Mar 2026",
+     "v": 4
+    },
+    {
+     "q": "Jun 2026",
+     "v": -79
+    },
+    {
+     "q": "Sep 2026",
+     "v": -17
+    }
+   ],
+   "fiiNow": 2.97,
+   "fiiYearAgo": 4.01,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "STLTECH": {
+   "sym": "STLTECH",
+   "slug": "STLTECH",
+   "name": "Sterlite Technologies Ltd",
+   "pe": 76.2,
+   "pb": null,
+   "bookValue": 68.2,
+   "roce": 6.1,
+   "roe": 0.48,
+   "mcap": 34756,
+   "price": 676,
+   "high52": 1054,
+   "low52": 84.6,
+   "divYield": 0,
+   "sales10": 2,
+   "sales5": -10,
+   "sales3": -23,
+   "profit10": -28,
+   "profit5": -51,
+   "profit3": -72,
+   "priceCagr10": 26,
+   "priceCagr5": 27,
+   "priceCagr3": 84,
+   "promoter": 42.29,
+   "basis": "consolidated",
+   "borrowNow": 1219,
+   "borrow3yAgo": 3049,
+   "debtEquity": 0.7988204456094364,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 14
+    },
+    {
+     "q": "Dec 2023",
+     "v": -75
+    },
+    {
+     "q": "Mar 2024",
+     "v": -103
+    },
+    {
+     "q": "Jun 2024",
+     "v": -57
+    },
+    {
+     "q": "Sep 2024",
+     "v": -9
+    },
+    {
+     "q": "Dec 2024",
+     "v": -26
+    },
+    {
+     "q": "Mar 2025",
+     "v": -25
+    },
+    {
+     "q": "Jun 2025",
+     "v": 2
+    },
+    {
+     "q": "Sep 2025",
+     "v": -2
+    },
+    {
+     "q": "Dec 2025",
+     "v": -31
+    },
+    {
+     "q": "Mar 2026",
+     "v": 33
+    },
+    {
+     "q": "Jun 2026",
+     "v": 125
+    },
+    {
+     "q": "Sep 2026",
+     "v": 319
+    }
+   ],
+   "fiiNow": 17.76,
+   "fiiYearAgo": 11.28,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "SYRMA": {
+   "sym": "SYRMA",
+   "slug": "SYRMA",
+   "name": "Syrma SGS Technology Ltd",
+   "pe": 74,
+   "pb": null,
+   "bookValue": 163,
+   "roce": 15,
+   "roe": 12.6,
+   "mcap": 28060,
+   "price": 1455,
+   "high52": 1823,
+   "low52": 634,
+   "divYield": 0.1,
+   "sales10": null,
+   "sales5": 58,
+   "sales3": 57,
+   "profit10": null,
+   "profit5": 60,
+   "profit3": 75,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": 41,
+   "promoter": 41.72,
+   "basis": "consolidated",
+   "borrowNow": 272,
+   "borrow3yAgo": 256,
+   "debtEquity": 0.09182984469952735,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 8
+    },
+    {
+     "q": "Dec 2023",
+     "v": 1
+    },
+    {
+     "q": "Mar 2024",
+     "v": 1
+    },
+    {
+     "q": "Jun 2024",
+     "v": 3
+    },
+    {
+     "q": "Sep 2024",
+     "v": 35
+    },
+    {
+     "q": "Dec 2024",
+     "v": 50
+    },
+    {
+     "q": "Mar 2025",
+     "v": 61
+    },
+    {
+     "q": "Jun 2025",
+     "v": 54
+    },
+    {
+     "q": "Sep 2025",
+     "v": 65
+    },
+    {
+     "q": "Dec 2025",
+     "v": 93
+    },
+    {
+     "q": "Mar 2026",
+     "v": 81
+    },
+    {
+     "q": "Jun 2026",
+     "v": 94
+    },
+    {
+     "q": "Sep 2026",
+     "v": 108
+    }
+   ],
+   "fiiNow": 9.52,
+   "fiiYearAgo": 7.02,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "TONBO": {
+   "sym": "TONBO",
+   "slug": "TONBO",
+   "name": "Tonbo Imaging India Ltd",
+   "pe": 106,
+   "pb": null,
+   "bookValue": null,
+   "roce": 12.7,
+   "roe": 9.61,
+   "mcap": 8819,
+   "price": 1540,
+   "high52": 1644,
+   "low52": 1014,
+   "divYield": 0,
+   "sales10": null,
+   "sales5": null,
+   "sales3": 55,
+   "profit10": null,
+   "profit5": null,
+   "profit3": 170,
+   "priceCagr10": null,
+   "priceCagr5": null,
+   "priceCagr3": null,
+   "promoter": 14.57,
+   "basis": "standalone",
+   "borrowNow": 125,
+   "borrow3yAgo": 59,
+   "debtEquity": 0.22644927536231885,
+   "qProfit": [
+    {
+     "q": "Sep 2025",
+     "v": -10
+    },
+    {
+     "q": "Jun 2026",
+     "v": -18
+    },
+    {
+     "q": "Sep 2026",
+     "v": 23
+    }
+   ],
+   "fiiNow": 3.1,
+   "fiiYearAgo": null,
+   "fiiLatestQ": "Oct 2026"
+  },
+  "TFCILTD": {
+   "sym": "TFCILTD",
+   "slug": "TFCILTD",
+   "name": "Tourism Finance Corporation of India Ltd",
+   "pe": 46.5,
+   "pb": null,
+   "bookValue": 30.1,
+   "roce": 11.1,
+   "roe": 9.75,
+   "mcap": 7607,
+   "price": 164,
+   "high52": 172,
+   "low52": 51,
+   "divYield": 0.37,
+   "sales10": 4,
+   "sales5": 1,
+   "sales3": 6,
+   "profit10": 9,
+   "profit5": 9,
+   "profit3": 12,
+   "priceCagr10": 32,
+   "priceCagr5": 65,
+   "priceCagr3": 91,
+   "promoter": 3.85,
+   "basis": "standalone",
+   "borrowNow": null,
+   "borrow3yAgo": null,
+   "debtEquity": null,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 19
+    },
+    {
+     "q": "Dec 2023",
+     "v": 28
+    },
+    {
+     "q": "Mar 2024",
+     "v": 20
+    },
+    {
+     "q": "Jun 2024",
+     "v": 25
+    },
+    {
+     "q": "Sep 2024",
+     "v": 26
+    },
+    {
+     "q": "Dec 2024",
+     "v": 23
+    },
+    {
+     "q": "Mar 2025",
+     "v": 30
+    },
+    {
+     "q": "Jun 2025",
+     "v": 31
+    },
+    {
+     "q": "Sep 2025",
+     "v": 29
+    },
+    {
+     "q": "Dec 2025",
+     "v": 32
+    },
+    {
+     "q": "Mar 2026",
+     "v": 32
+    },
+    {
+     "q": "Jun 2026",
+     "v": 61
+    },
+    {
+     "q": "Sep 2026",
+     "v": 39
+    }
+   ],
+   "fiiNow": 9.46,
+   "fiiYearAgo": 4.61,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "WEBELSOLAR": {
+   "sym": "WEBELSOLAR",
+   "slug": "WEBELSOLAR",
+   "name": "Websol Energy System Ltd",
+   "pe": 8.46,
+   "pb": null,
+   "bookValue": 17.9,
+   "roce": 63.2,
+   "roe": 66.9,
+   "mcap": 2943,
+   "price": 67.8,
+   "high52": 130,
+   "low52": 50.4,
+   "divYield": 0.36,
+   "sales10": 13,
+   "sales5": 45,
+   "sales3": 284,
+   "profit10": 45,
+   "profit5": 99,
+   "profit3": 154,
+   "priceCagr10": 34,
+   "priceCagr5": 57,
+   "priceCagr3": 55,
+   "promoter": 29.72,
+   "basis": "standalone",
+   "borrowNow": 131,
+   "borrow3yAgo": 28,
+   "debtEquity": 0.20793650793650795,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": -4
+    },
+    {
+     "q": "Dec 2023",
+     "v": -55
+    },
+    {
+     "q": "Mar 2024",
+     "v": -59
+    },
+    {
+     "q": "Jun 2024",
+     "v": 23
+    },
+    {
+     "q": "Sep 2024",
+     "v": 42
+    },
+    {
+     "q": "Dec 2024",
+     "v": 42
+    },
+    {
+     "q": "Mar 2025",
+     "v": 48
+    },
+    {
+     "q": "Jun 2025",
+     "v": 67
+    },
+    {
+     "q": "Sep 2025",
+     "v": 46
+    },
+    {
+     "q": "Dec 2025",
+     "v": 65
+    },
+    {
+     "q": "Mar 2026",
+     "v": 124
+    },
+    {
+     "q": "Jun 2026",
+     "v": 78
+    },
+    {
+     "q": "Sep 2026",
+     "v": 80
+    }
+   ],
+   "fiiNow": 4.17,
+   "fiiYearAgo": 5.47,
+   "fiiLatestQ": "Sep 2026"
+  },
+  "ZENTEC": {
+   "sym": "ZENTEC",
+   "slug": "ZENTEC",
+   "name": "Zen Technologies Ltd",
+   "pe": 90.9,
+   "pb": null,
+   "bookValue": 211,
+   "roce": 11.2,
+   "roe": 8.31,
+   "mcap": 15540,
+   "price": 1721,
+   "high52": 2044,
+   "low52": 1223,
+   "divYield": 0.06,
+   "sales10": 23,
+   "sales5": 54,
+   "sales3": 38,
+   "profit10": 51,
+   "profit5": 104,
+   "profit3": 59,
+   "priceCagr10": 41,
+   "priceCagr5": 52,
+   "priceCagr3": 34,
+   "promoter": 48.51,
+   "basis": "consolidated",
+   "borrowNow": 2,
+   "borrow3yAgo": 6,
+   "debtEquity": 0.0010976948408342481,
+   "qProfit": [
+    {
+     "q": "Sep 2023",
+     "v": 17
+    },
+    {
+     "q": "Dec 2023",
+     "v": 32
+    },
+    {
+     "q": "Mar 2024",
+     "v": 33
+    },
+    {
+     "q": "Jun 2024",
+     "v": 74
+    },
+    {
+     "q": "Sep 2024",
+     "v": 65
+    },
+    {
+     "q": "Dec 2024",
+     "v": 39
+    },
+    {
+     "q": "Mar 2025",
+     "v": 85
+    },
+    {
+     "q": "Jun 2025",
+     "v": 37
+    },
+    {
+     "q": "Sep 2025",
+     "v": 46
+    },
+    {
+     "q": "Dec 2025",
+     "v": 48
+    },
+    {
+     "q": "Mar 2026",
+     "v": 15
+    },
+    {
+     "q": "Jun 2026",
+     "v": 29
+    },
+    {
+     "q": "Sep 2026",
+     "v": 79
+    }
+   ],
+   "fiiNow": 6.6,
+   "fiiYearAgo": 5.94,
+   "fiiLatestQ": "Sep 2026"
+  }
+ },
+ "missing": []
+}

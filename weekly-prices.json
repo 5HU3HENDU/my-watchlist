@@ -1,0 +1,1074 @@
+{
+ "version": 1,
+ "fetchedAtIST": "16 Nov, 11:04 am",
+ "sessionDate": "13 Nov 2026",
+ "source": "Yahoo Finance (NSE feed) via query1/query2 — weekly lens fetch, not the daily refresh",
+ "rupee": {
+  "from": 95.45,
+  "to": 94.03,
+  "pct": -1.48,
+  "strengthening": true,
+  "fromDate": "17 Aug 2026",
+  "toDate": "13 Nov 2026"
+ },
+ "stocks": {
+  "CPPLUS": {
+   "dma200": 2930.39,
+   "vol": 139265,
+   "volAvg15": 312498,
+   "volN": 15,
+   "closes": 246
+  },
+  "ANANDRATHI": {
+   "dma200": 1899.94,
+   "vol": 217458,
+   "volAvg15": 355959,
+   "volN": 15,
+   "closes": 246
+  },
+  "ATHERENERG": {
+   "dma200": 1135.74,
+   "vol": 2218727,
+   "volAvg15": 4099723,
+   "volN": 15,
+   "closes": 246
+  },
+  "360ONE": {
+   "dma200": 1093.37,
+   "vol": 289566,
+   "volAvg15": 1014961,
+   "volN": 15,
+   "closes": 245
+  },
+  "ACEVECTOR": {
+   "dma200": null,
+   "vol": 9057961,
+   "volAvg15": 7182257,
+   "volN": 15,
+   "closes": 28
+  },
+  "ACMESOLAR": {
+   "dma200": 333.87,
+   "vol": 731058,
+   "volAvg15": 992393,
+   "volN": 15,
+   "closes": 246
+  },
+  "AEQUS": {
+   "dma200": 201.41,
+   "vol": 3310505,
+   "volAvg15": 5742227,
+   "volN": 15,
+   "closes": 229
+  },
+  "AFFLE": {
+   "dma200": 1502.55,
+   "vol": 59502,
+   "volAvg15": 517561,
+   "volN": 15,
+   "closes": 246
+  },
+  "ALGOQUANT": {
+   "dma200": 62.41,
+   "vol": 1299061,
+   "volAvg15": 1462149,
+   "volN": 15,
+   "closes": 210
+  },
+  "ARE&M": {
+   "dma200": 827.53,
+   "vol": 230213,
+   "volAvg15": 679695,
+   "volN": 15,
+   "closes": 246
+  },
+  "ANGELONE": {
+   "dma200": 294.7,
+   "vol": 13253460,
+   "volAvg15": 5877837,
+   "volN": 15,
+   "closes": 246
+  },
+  "AQYLON": {
+   "dma200": 57.44,
+   "vol": 2900822,
+   "volAvg15": 444302,
+   "volN": 15,
+   "closes": 246
+  },
+  "ARCIL": {
+   "dma200": null,
+   "vol": 141678,
+   "volAvg15": 105289,
+   "volN": 15,
+   "closes": 39
+  },
+  "AIIL": {
+   "dma200": 512.75,
+   "vol": 76427,
+   "volAvg15": 232953,
+   "volN": 15,
+   "closes": 246
+  },
+  "AVANCE": {
+   "dma200": null,
+   "vol": 3347588,
+   "volAvg15": 11063457,
+   "volN": 15,
+   "closes": 60
+  },
+  "AVANTEL": {
+   "dma200": 154.57,
+   "vol": 3192989,
+   "volAvg15": 2978977,
+   "volN": 15,
+   "closes": 246
+  },
+  "CCAVENUE": {
+   "dma200": 152.18,
+   "vol": 1939768,
+   "volAvg15": 1295138,
+   "volN": 15,
+   "closes": 246
+  },
+  "BAJAJHLDNG": {
+   "dma200": 10652.81,
+   "vol": 15224,
+   "volAvg15": 44899,
+   "volN": 15,
+   "closes": 246
+  },
+  "BELRISE": {
+   "dma200": 216.15,
+   "vol": 1794122,
+   "volAvg15": 2955844,
+   "volN": 15,
+   "closes": 246
+  },
+  "BEML": {
+   "dma200": 1814.28,
+   "vol": 202639,
+   "volAvg15": 577335,
+   "volN": 15,
+   "closes": 246
+  },
+  "BDL": {
+   "dma200": 1262.43,
+   "vol": 2021232,
+   "volAvg15": 1476465,
+   "volN": 15,
+   "closes": 246
+  },
+  "BEL": {
+   "dma200": 414.61,
+   "vol": 7533948,
+   "volAvg15": 11936414,
+   "volN": 15,
+   "closes": 246
+  },
+  "BHARTIARTL": {
+   "dma200": 1891.44,
+   "vol": 6106256,
+   "volAvg15": 10227696,
+   "volN": 15,
+   "closes": 246
+  },
+  "BHARTIHEXA": {
+   "dma200": 1559.88,
+   "vol": 178783,
+   "volAvg15": 155132,
+   "volN": 15,
+   "closes": 246
+  },
+  "GROWW": {
+   "dma200": 189.17,
+   "vol": 38206011,
+   "volAvg15": 38072467,
+   "volN": 15,
+   "closes": 246
+  },
+  "BSOFT": {
+   "dma200": 332.33,
+   "vol": 1122025,
+   "volAvg15": 6235500,
+   "volN": 15,
+   "closes": 246
+  },
+  "BBOX": {
+   "dma200": 743.46,
+   "vol": 4850753,
+   "volAvg15": 771595,
+   "volN": 15,
+   "closes": 246
+  },
+  "BLS": {
+   "dma200": 253.25,
+   "vol": 678041,
+   "volAvg15": 1082320,
+   "volN": 15,
+   "closes": 246
+  },
+  "BLUECLOUDS": {
+   "dma200": null,
+   "vol": 3332803,
+   "volAvg15": 2485871,
+   "volN": 15,
+   "closes": 60
+  },
+  "BCG": {
+   "dma200": 9.7,
+   "vol": 4423511,
+   "volAvg15": 5662817,
+   "volN": 15,
+   "closes": 246
+  },
+  "BSE": {
+   "dma200": 3413.93,
+   "vol": 2931648,
+   "volAvg15": 3834836,
+   "volN": 15,
+   "closes": 246
+  },
+  "NSE": {
+   "dma200": null,
+   "vol": 3928008,
+   "volAvg15": 3181430,
+   "volN": 15,
+   "closes": 34
+  },
+  "CDSL": {
+   "dma200": 1301.66,
+   "vol": 2925722,
+   "volAvg15": 1709754,
+   "volN": 15,
+   "closes": 246
+  },
+  "COFORGE": {
+   "dma200": 1556.52,
+   "vol": 1658288,
+   "volAvg15": 2791915,
+   "volN": 15,
+   "closes": 246
+  },
+  "COMFINTE": {
+   "dma200": null,
+   "vol": 787550,
+   "volAvg15": 1853601,
+   "volN": 15,
+   "closes": 60
+  },
+  "CAMS": {
+   "dma200": 732.88,
+   "vol": 3335231,
+   "volAvg15": 2035364,
+   "volN": 15,
+   "closes": 246
+  },
+  "CRISIL": {
+   "dma200": 4333.41,
+   "vol": 19495,
+   "volAvg15": 56519,
+   "volN": 15,
+   "closes": 246
+  },
+  "CUPID": {
+   "dma200": 189.18,
+   "vol": 27973226,
+   "volAvg15": 13842935,
+   "volN": 15,
+   "closes": 246
+  },
+  "CYIENT": {
+   "dma200": 963.95,
+   "vol": 348282,
+   "volAvg15": 1893976,
+   "volN": 15,
+   "closes": 246
+  },
+  "DATAPATTNS": {
+   "dma200": 3930.34,
+   "vol": 797291,
+   "volAvg15": 865114,
+   "volN": 15,
+   "closes": 246
+  },
+  "DELHIVERY": {
+   "dma200": 444.33,
+   "vol": 1458157,
+   "volAvg15": 3792138,
+   "volN": 15,
+   "closes": 246
+  },
+  "DELTACORP": {
+   "dma200": 65.83,
+   "vol": 9932618,
+   "volAvg15": 3831336,
+   "volN": 15,
+   "closes": 246
+  },
+  "DEVYANI": {
+   "dma200": 121.14,
+   "vol": 373434,
+   "volAvg15": 2009805,
+   "volN": 15,
+   "closes": 246
+  },
+  "DIXON": {
+   "dma200": 12131.68,
+   "vol": 196350,
+   "volAvg15": 402334,
+   "volN": 15,
+   "closes": 246
+  },
+  "EASEMYTRIP": {
+   "dma200": 6.89,
+   "vol": 16491082,
+   "volAvg15": 21312186,
+   "volN": 15,
+   "closes": 246
+  },
+  "ECLERX": {
+   "dma200": 1710.77,
+   "vol": 116443,
+   "volAvg15": 335533,
+   "volN": 15,
+   "closes": 246
+  },
+  "EMPOWER": {
+   "dma200": null,
+   "vol": 20480269,
+   "volAvg15": 25094493,
+   "volN": 15,
+   "closes": 59
+  },
+  "ESDS": {
+   "dma200": null,
+   "vol": 873572,
+   "volAvg15": 979967,
+   "volN": 15,
+   "closes": 47
+  },
+  "ETERNAL": {
+   "dma200": 283.65,
+   "vol": 14093772,
+   "volAvg15": 31500266,
+   "volN": 15,
+   "closes": 246
+  },
+  "FCSSOFT": {
+   "dma200": 1.53,
+   "vol": 4104174,
+   "volAvg15": 3474360,
+   "volN": 15,
+   "closes": 246
+  },
+  "FSL": {
+   "dma200": 258.72,
+   "vol": 425590,
+   "volAvg15": 1506048,
+   "volN": 15,
+   "closes": 246
+  },
+  "FRACTAL": {
+   "dma200": null,
+   "vol": 720159,
+   "volAvg15": 1985013,
+   "volN": 15,
+   "closes": 183
+  },
+  "GATECH": {
+   "dma200": 0.57,
+   "vol": 36853044,
+   "volAvg15": 11195256,
+   "volN": 15,
+   "closes": 245
+  },
+  "GAJA": {
+   "dma200": null,
+   "vol": 233546,
+   "volAvg15": 466200,
+   "volN": 15,
+   "closes": 54
+  },
+  "GENESYS": {
+   "dma200": 264.76,
+   "vol": 232611,
+   "volAvg15": 505566,
+   "volN": 15,
+   "closes": 246
+  },
+  "GMRAIRPORT": {
+   "dma200": 98.5,
+   "vol": 8087257,
+   "volAvg15": 14042038,
+   "volN": 15,
+   "closes": 246
+  },
+  "GTLINFRA": {
+   "dma200": 1.2,
+   "vol": 17104063,
+   "volAvg15": 34123698,
+   "volN": 15,
+   "closes": 246
+  },
+  "HAPPSTMNDS": {
+   "dma200": 364.74,
+   "vol": 215292,
+   "volAvg15": 415638,
+   "volN": 15,
+   "closes": 246
+  },
+  "HCLTECH": {
+   "dma200": 1313.64,
+   "vol": 2089627,
+   "volAvg15": 3308395,
+   "volN": 15,
+   "closes": 246
+  },
+  "HDFCAMC": {
+   "dma200": 2561.41,
+   "vol": 1001936,
+   "volAvg15": 948509,
+   "volN": 15,
+   "closes": 246
+  },
+  "HEGAM": {
+   "dma200": 507.9,
+   "vol": 1171198,
+   "volAvg15": 4294078,
+   "volN": 15,
+   "closes": 246
+  },
+  "HEXT": {
+   "dma200": 524.35,
+   "vol": 107857,
+   "volAvg15": 589698,
+   "volN": 15,
+   "closes": 245
+  },
+  "HFCL": {
+   "dma200": 165.48,
+   "vol": 7560120,
+   "volAvg15": 7291677,
+   "volN": 15,
+   "closes": 246
+  },
+  "HAL": {
+   "dma200": 4473.25,
+   "vol": 900759,
+   "volAvg15": 945482,
+   "volN": 15,
+   "closes": 246
+  },
+  "ICICIAMC": {
+   "dma200": 3103.41,
+   "vol": 288031,
+   "volAvg15": 277106,
+   "volN": 15,
+   "closes": 222
+  },
+  "IDFCFIRSTB": {
+   "dma200": 76.68,
+   "vol": 10323708,
+   "volAvg15": 21591905,
+   "volN": 15,
+   "closes": 246
+  },
+  "IEX": {
+   "dma200": 121.11,
+   "vol": 5680118,
+   "volAvg15": 4374313,
+   "volN": 15,
+   "closes": 246
+  },
+  "IRCTC": {
+   "dma200": 518.8,
+   "vol": 1776631,
+   "volAvg15": 1211854,
+   "volN": 15,
+   "closes": 246
+  },
+  "IRFC": {
+   "dma200": 93.35,
+   "vol": 12792406,
+   "volAvg15": 15212836,
+   "volN": 15,
+   "closes": 246
+  },
+  "INDOTHAI": {
+   "dma200": 181.63,
+   "vol": 168858,
+   "volAvg15": 404497,
+   "volN": 15,
+   "closes": 246
+  },
+  "INDUSTOWER": {
+   "dma200": 407.98,
+   "vol": 4024553,
+   "volAvg15": 5498713,
+   "volN": 15,
+   "closes": 246
+  },
+  "NAUKRI": {
+   "dma200": 1129.69,
+   "vol": 752452,
+   "volAvg15": 1511791,
+   "volN": 15,
+   "closes": 246
+  },
+  "INFY": {
+   "dma200": 1193.73,
+   "vol": 5936229,
+   "volAvg15": 14925595,
+   "volN": 15,
+   "closes": 246
+  },
+  "INTELLECT": {
+   "dma200": 696.04,
+   "vol": 761998,
+   "volAvg15": 948190,
+   "volN": 15,
+   "closes": 246
+  },
+  "IGIL": {
+   "dma200": 343.52,
+   "vol": 1376845,
+   "volAvg15": 3652343,
+   "volN": 15,
+   "closes": 246
+  },
+  "IKS": {
+   "dma200": 1659.72,
+   "vol": 165280,
+   "volAvg15": 123259,
+   "volN": 15,
+   "closes": 245
+  },
+  "ITI": {
+   "dma200": 275.63,
+   "vol": 23401218,
+   "volAvg15": 3223731,
+   "volN": 15,
+   "closes": 246
+  },
+  "JIOFIN": {
+   "dma200": 238.88,
+   "vol": 7895721,
+   "volAvg15": 15548418,
+   "volN": 15,
+   "closes": 246
+  },
+  "JPL": {
+   "dma200": null,
+   "vol": 4258007,
+   "volAvg15": 28812953,
+   "volN": 11,
+   "closes": 12
+  },
+  "KAYNES": {
+   "dma200": 3568.26,
+   "vol": 553269,
+   "volAvg15": 725161,
+   "volN": 15,
+   "closes": 246
+  },
+  "KELLTONTEC": {
+   "dma200": 14.87,
+   "vol": 655814,
+   "volAvg15": 1138115,
+   "volN": 15,
+   "closes": 246
+  },
+  "KFINTECH": {
+   "dma200": 912.65,
+   "vol": 641476,
+   "volAvg15": 1326648,
+   "volN": 15,
+   "closes": 246
+  },
+  "KPITTECH": {
+   "dma200": 675.85,
+   "vol": 1200423,
+   "volAvg15": 2018445,
+   "volN": 15,
+   "closes": 246
+  },
+  "LTTS": {
+   "dma200": 3504.67,
+   "vol": 80413,
+   "volAvg15": 308986,
+   "volN": 15,
+   "closes": 246
+  },
+  "IXIGO": {
+   "dma200": 175.43,
+   "vol": 302250,
+   "volAvg15": 2335242,
+   "volN": 15,
+   "closes": 246
+  },
+  "LENSKART": {
+   "dma200": 561.91,
+   "vol": 2473367,
+   "volAvg15": 6093602,
+   "volN": 15,
+   "closes": 246
+  },
+  "LTM": {
+   "dma200": 4387.77,
+   "vol": 165975,
+   "volAvg15": 383724,
+   "volN": 15,
+   "closes": 246
+  },
+  "MCLOUD": {
+   "dma200": 25.88,
+   "vol": 821733,
+   "volAvg15": 1271600,
+   "volN": 15,
+   "closes": 246
+  },
+  "MEESHO": {
+   "dma200": 187.16,
+   "vol": 20870338,
+   "volAvg15": 11984550,
+   "volN": 15,
+   "closes": 229
+  },
+  "MILKYMIST": {
+   "dma200": null,
+   "vol": 354027,
+   "volAvg15": 770097,
+   "volN": 15,
+   "closes": 60
+  },
+  "MONEYVIEW": {
+   "dma200": null,
+   "vol": 96809885,
+   "volAvg15": 87719805,
+   "volN": 15,
+   "closes": 29
+  },
+  "MOSCHIP": {
+   "dma200": 198.59,
+   "vol": 677917,
+   "volAvg15": 1405351,
+   "volN": 15,
+   "closes": 246
+  },
+  "MPHASIS": {
+   "dma200": 2355.67,
+   "vol": 679553,
+   "volAvg15": 857430,
+   "volN": 15,
+   "closes": 246
+  },
+  "MCX": {
+   "dma200": 2897.8,
+   "vol": 3253739,
+   "volAvg15": 2407721,
+   "volN": 15,
+   "closes": 246
+  },
+  "NAZARA": {
+   "dma200": 312.15,
+   "vol": 2268784,
+   "volAvg15": 1440581,
+   "volN": 15,
+   "closes": 246
+  },
+  "NETWEB": {
+   "dma200": 4179.52,
+   "vol": 1589074,
+   "volAvg15": 1636391,
+   "volN": 15,
+   "closes": 246
+  },
+  "NAM-INDIA": {
+   "dma200": 1050.72,
+   "vol": 1050065,
+   "volAvg15": 1502717,
+   "volN": 15,
+   "closes": 246
+  },
+  "NUVAMA": {
+   "dma200": 1572.36,
+   "vol": 225802,
+   "volAvg15": 333327,
+   "volN": 15,
+   "closes": 246
+  },
+  "PAYTM": {
+   "dma200": 1331.6,
+   "vol": 4254928,
+   "volAvg15": 3215229,
+   "volN": 15,
+   "closes": 246
+  },
+  "MOBIKWIK": {
+   "dma200": 203.53,
+   "vol": 1095144,
+   "volAvg15": 2198851,
+   "volN": 15,
+   "closes": 246
+  },
+  "KISSHT": {
+   "dma200": null,
+   "vol": 455931,
+   "volAvg15": 1420793,
+   "volN": 15,
+   "closes": 130
+  },
+  "PACEDIGITK": {
+   "dma200": 175.94,
+   "vol": 407374,
+   "volAvg15": 1288915,
+   "volN": 15,
+   "closes": 246
+  },
+  "POLICYBZR": {
+   "dma200": 1519.71,
+   "vol": 8804041,
+   "volAvg15": 2987793,
+   "volN": 15,
+   "closes": 245
+  },
+  "PERSISTENT": {
+   "dma200": 5310.58,
+   "vol": 346539,
+   "volAvg15": 620770,
+   "volN": 15,
+   "closes": 246
+  },
+  "PINELABS": {
+   "dma200": 171.34,
+   "vol": 17785803,
+   "volAvg15": 16264694,
+   "volN": 15,
+   "closes": 246
+  },
+  "PREMIERENE": {
+   "dma200": 940.82,
+   "vol": 666096,
+   "volAvg15": 987363,
+   "volN": 15,
+   "closes": 246
+  },
+  "PVRINOX": {
+   "dma200": 1109.91,
+   "vol": 615239,
+   "volAvg15": 1036748,
+   "volN": 15,
+   "closes": 246
+  },
+  "RSYSTEMS": {
+   "dma200": 269.09,
+   "vol": 214221,
+   "volAvg15": 891629,
+   "volN": 15,
+   "closes": 246
+  },
+  "RADICO": {
+   "dma200": 3705.91,
+   "vol": 354147,
+   "volAvg15": 578545,
+   "volN": 15,
+   "closes": 245
+  },
+  "RVNL": {
+   "dma200": 248.9,
+   "vol": 10190319,
+   "volAvg15": 8570255,
+   "volN": 15,
+   "closes": 246
+  },
+  "RAILTEL": {
+   "dma200": 293.05,
+   "vol": 422322,
+   "volAvg15": 886310,
+   "volN": 15,
+   "closes": 246
+  },
+  "REDINGTON": {
+   "dma200": 289.49,
+   "vol": 2599171,
+   "volAvg15": 5703374,
+   "volN": 15,
+   "closes": 246
+  },
+  "RCOM": {
+   "dma200": 0.9,
+   "vol": 2107952,
+   "volAvg15": 2846633,
+   "volN": 15,
+   "closes": 246
+  },
+  "RITES": {
+   "dma200": 210.61,
+   "vol": 399853,
+   "volAvg15": 788501,
+   "volN": 15,
+   "closes": 246
+  },
+  "SAGILITY": {
+   "dma200": 43.05,
+   "vol": 12612568,
+   "volAvg15": 85587340,
+   "volN": 15,
+   "closes": 246
+  },
+  "SBIFUNDS": {
+   "dma200": null,
+   "vol": 701961,
+   "volAvg15": 1681534,
+   "volN": 15,
+   "closes": 80
+  },
+  "SHADOWFAX": {
+   "dma200": null,
+   "vol": 2416370,
+   "volAvg15": 4666898,
+   "volN": 15,
+   "closes": 196
+  },
+  "SHAREINDIA": {
+   "dma200": 159.15,
+   "vol": 675954,
+   "volAvg15": 2317405,
+   "volN": 15,
+   "closes": 246
+  },
+  "SHIPROCKET": {
+   "dma200": null,
+   "vol": 1013563,
+   "volAvg15": 2624336,
+   "volN": 15,
+   "closes": 59
+  },
+  "SKYWAYS": {
+   "dma200": null,
+   "vol": 3261364,
+   "volAvg15": 960305,
+   "volN": 15,
+   "closes": 50
+  },
+  "STLNETWORK": {
+   "dma200": 28.29,
+   "vol": 10307002,
+   "volAvg15": 9443269,
+   "volN": 15,
+   "closes": 246
+  },
+  "SUBEXLTD": {
+   "dma200": 12.86,
+   "vol": 1298580,
+   "volAvg15": 5608947,
+   "volN": 15,
+   "closes": 246
+  },
+  "SWIGGY": {
+   "dma200": 268.61,
+   "vol": 17656482,
+   "volAvg15": 31541689,
+   "volN": 15,
+   "closes": 246
+  },
+  "TATACOMM": {
+   "dma200": 1694.84,
+   "vol": 436685,
+   "volAvg15": 285803,
+   "volN": 15,
+   "closes": 246
+  },
+  "TCS": {
+   "dma200": 2399.04,
+   "vol": 3344738,
+   "volAvg15": 3924535,
+   "volN": 15,
+   "closes": 246
+  },
+  "TATAELXSI": {
+   "dma200": 4042.01,
+   "vol": 135388,
+   "volAvg15": 253656,
+   "volN": 15,
+   "closes": 246
+  },
+  "TATAINVEST": {
+   "dma200": 648.35,
+   "vol": 111011,
+   "volAvg15": 272588,
+   "volN": 15,
+   "closes": 246
+  },
+  "TATATECH": {
+   "dma200": 681.58,
+   "vol": 321634,
+   "volAvg15": 566568,
+   "volN": 15,
+   "closes": 246
+  },
+  "TECHM": {
+   "dma200": 1533.18,
+   "vol": 1332149,
+   "volAvg15": 2714389,
+   "volN": 15,
+   "closes": 246
+  },
+  "TEJASNET": {
+   "dma200": 472.76,
+   "vol": 653749,
+   "volAvg15": 1022835,
+   "volN": 15,
+   "closes": 246
+  },
+  "TURTLEMINT": {
+   "dma200": null,
+   "vol": 976067,
+   "volAvg15": 483203,
+   "volN": 15,
+   "closes": 96
+  },
+  "UBL": {
+   "dma200": 1387.26,
+   "vol": 48906,
+   "volAvg15": 527389,
+   "volN": 15,
+   "closes": 246
+  },
+  "UNITDSPR": {
+   "dma200": 1368.87,
+   "vol": 289532,
+   "volAvg15": 955701,
+   "volN": 15,
+   "closes": 246
+  },
+  "URBANCO": {
+   "dma200": 137.27,
+   "vol": 5517453,
+   "volAvg15": 4940132,
+   "volN": 15,
+   "closes": 246
+  },
+  "UTIAMC": {
+   "dma200": 939.19,
+   "vol": 63252,
+   "volAvg15": 114324,
+   "volN": 15,
+   "closes": 246
+  },
+  "VAKRANGEE": {
+   "dma200": 6.1,
+   "vol": 882070,
+   "volAvg15": 1564259,
+   "volN": 15,
+   "closes": 246
+  },
+  "VIKRAMSOLR": {
+   "dma200": 184.31,
+   "vol": 3859432,
+   "volAvg15": 2202903,
+   "volN": 15,
+   "closes": 246
+  },
+  "IDEA": {
+   "dma200": 12.38,
+   "vol": 425459035,
+   "volAvg15": 334013312,
+   "volN": 15,
+   "closes": 246
+  },
+  "WAAREEENER": {
+   "dma200": 2826.31,
+   "vol": 1091485,
+   "volAvg15": 918436,
+   "volN": 15,
+   "closes": 246
+  },
+  "CORDELIA": {
+   "dma200": null,
+   "vol": 255621,
+   "volAvg15": 1266172,
+   "volN": 15,
+   "closes": 94
+  },
+  "WIPRO": {
+   "dma200": 190.74,
+   "vol": 4918972,
+   "volAvg15": 17467988,
+   "volN": 15,
+   "closes": 246
+  },
+  "XTRANET": {
+   "dma200": null,
+   "vol": 113795,
+   "volAvg15": 561447,
+   "volN": 15,
+   "closes": 73
+  },
+  "YATRA": {
+   "dma200": 109.42,
+   "vol": 1746042,
+   "volAvg15": 1431680,
+   "volN": 15,
+   "closes": 246
+  },
+  "ZAGGLE": {
+   "dma200": 212.63,
+   "vol": 852043,
+   "volAvg15": 1580565,
+   "volN": 15,
+   "closes": 246
+  },
+  "PFOCUS": {
+   "dma200": 279.26,
+   "vol": 3322694,
+   "volAvg15": 4255287,
+   "volN": 15,
+   "closes": 245
+  },
+  "STLTECH": {
+   "dma200": 505.18,
+   "vol": 2517639,
+   "volAvg15": 2432840,
+   "volN": 15,
+   "closes": 246
+  },
+  "SYRMA": {
+   "dma200": 1219.34,
+   "vol": 632929,
+   "volAvg15": 1869747,
+   "volN": 15,
+   "closes": 246
+  },
+  "TONBO": {
+   "dma200": null,
+   "vol": 755089,
+   "volAvg15": 6338587,
+   "volN": 14,
+   "closes": 15
+  },
+  "TFCILTD": {
+   "dma200": 97.89,
+   "vol": 8469099,
+   "volAvg15": 13474129,
+   "volN": 15,
+   "closes": 246
+  },
+  "WEBELSOLAR": {
+   "dma200": 84.05,
+   "vol": 1015714,
+   "volAvg15": 1696248,
+   "volN": 15,
+   "closes": 246
+  },
+  "ZENTEC": {
+   "dma200": 1623.18,
+   "vol": 240053,
+   "volAvg15": 614140,
+   "volN": 15,
+   "closes": 246
+  }
+ },
+ "missing": []
+}

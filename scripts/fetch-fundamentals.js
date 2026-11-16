@@ -4,13 +4,23 @@
 // refresh. Output: fundamentals.json in the news-for-adults dir.
 // Slug resolution: direct /company/<SYM>/ first; on 404/mismatch, fall
 // back to the Screener search API and take the best name match.
-// Usage: node scripts/fetch-fundamentals.js [--test] [--limit N] [--stocks-file <path>]
+// Usage: node scripts/fetch-fundamentals.js [--test] [--limit N] [--stocks-file <path>] [--out <path>] [--partial <path>]
 //   --test  : 10 stocks only (parser validation)
 //   --limit N: first N stocks
 //   --stocks-file <path>: JSON {stocks:[{sym,name}]} instead of watchlist.json
 //     (used for the Nifty 500 expansion — the 402 unscored N500 symbols)
-// Resume: results are checkpointed to fundamentals.partial.json after
-// each chunk; a re-run skips already-fetched symbols.
+//   --out <path>: output JSON (default fundamentals.json). The v0.2 run
+//     writes fundamentals-v2.json (watchlist only, extended fields) so the
+//     v0.1 file — which the Nifty 500 tab still scores from — is untouched.
+//   --partial <path>: resume checkpoint (default fundamentals.partial.json)
+// Resume: results are checkpointed to the partial file after each chunk;
+// a re-run skips already-fetched symbols.
+// NOTE on basis: the bare /company/<SYM>/ URL serves STANDALONE numbers
+// (verified on TCS: ROCE 76.7, borrowings Mar 2026 9,354 — standalone;
+// the /consolidated/ URL serves different numbers). The canonical link
+// still says /consolidated/, so `basis` records that — same as v0.1.
+// The v0.2 rulebook's worked example was computed from the bare-URL
+// (standalone) numbers, so the fetch keeps using the bare URL.
 const fs = require('fs');
 const path = require('path');
 const DIR = path.join(__dirname, '..');
@@ -19,8 +29,11 @@ const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Geck
 const BASE = 'https://www.screener.in';
 // Screener slugs that differ from the NSE symbol (company renames).
 const SLUG_OVERRIDES = { ICICIPRULI: 'ICICILIFE' }; // ICICI Prudential Life -> ICICI Life Insurance Ltd
-const OUT = path.join(DIR, 'fundamentals.json');
-const PARTIAL = path.join(DIR, 'fundamentals.partial.json');
+const args0 = process.argv.slice(2);
+const outIdx = args0.indexOf('--out');
+const partIdx = args0.indexOf('--partial');
+const OUT = path.join(DIR, outIdx >= 0 ? args0[outIdx + 1] : 'fundamentals.json');
+const PARTIAL = path.join(DIR, partIdx >= 0 ? args0[partIdx + 1] : 'fundamentals.partial.json');
 const DELAY_MS = 1000;
 
 function istNow() {
@@ -79,6 +92,97 @@ function parsePromoter(html) {
     if (vals.length) return vals[vals.length - 1];
   }
   return null;
+}
+
+// --- v0.2 parsers (Screener tables are server-rendered; labels carry a
+// trailing "+" button, and "&nbsp;" entities — both are normalised) ---
+function stripTags(s) {
+  return s.replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+}
+function normLabel(s) {
+  return stripTags(s).replace(/\+/g, '').replace(/\s+/g, ' ').trim();
+}
+// First <table> after a marker; returns {headers, rows} with headers[0]
+// empty (label column) and rows keyed by normalised label.
+function parseTableAt(html, marker) {
+  const i = html.indexOf(marker);
+  if (i < 0) return null;
+  const t0 = html.indexOf('<table', i);
+  const t1 = html.indexOf('</table>', t0);
+  if (t0 < 0 || t1 < 0) return null;
+  const t = html.slice(t0, t1 + 8);
+  const head = t.match(/<thead>([\s\S]*?)<\/thead>/);
+  const headers = head ? [...head[1].matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map(m => stripTags(m[1])) : [];
+  const rows = {};
+  for (const tr of t.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)) {
+    const cells = [...tr[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(m => m[1]);
+    if (!cells.length) continue;
+    const lab = normLabel(cells[0]);
+    if (!lab) continue;
+    rows[lab] = cells.slice(1).map(stripTags);
+  }
+  return { headers, rows };
+}
+function colVal(vals, headers, col) {
+  // headers[0] is the empty label column, so values align to headers[1..].
+  const idx = headers.indexOf(col);
+  if (idx < 1 || !vals || idx - 1 >= vals.length) return null;
+  return num(vals[idx - 1]);
+}
+// Balance sheet: Borrowings, Equity Capital, Reserves at the latest
+// annual column and 3 years earlier. D/E = Borrowings /
+// (Equity Capital + Reserves) at the latest annual column.
+// Most companies report March year-ends, but some (e.g. HEXT,
+// RSYSTEMS) report December year-ends — so take the latest annual
+// column of either month, not just March. (A Dec-only bug shipped in
+// the first v0.2 fetch run and was caught by the coverage check.)
+function parseDebt(html) {
+  const tab = parseTableAt(html, 'id="balance-sheet"');
+  if (!tab) return { borrowNow: null, borrow3yAgo: null, debtEquity: null };
+  const { headers, rows } = tab;
+  const annualCols = headers.filter(h => /^(Mar|Dec) \d{4}$/.test(h)).sort();
+  if (!annualCols.length) return { borrowNow: null, borrow3yAgo: null, debtEquity: null };
+  const latest = annualCols[annualCols.length - 1];
+  const [mon, yr] = latest.split(' ');
+  const threeAgo = `${mon} ${parseInt(yr, 10) - 3}`;
+  const b = rows['Borrowings'], ec = rows['Equity Capital'], rv = rows['Reserves'];
+  const borrowNow = colVal(b, headers, latest);
+  const borrow3yAgo = annualCols.includes(threeAgo) ? colVal(b, headers, threeAgo) : null;
+  const eqCap = colVal(ec, headers, latest);
+  const res = colVal(rv, headers, latest);
+  const debtEquity = (borrowNow !== null && eqCap !== null && res !== null && (eqCap + res) > 0)
+    ? borrowNow / (eqCap + res) : null;
+  return { borrowNow, borrow3yAgo, debtEquity };
+}
+// Quarterly Net Profit series: [{q: 'Sep 2026', v: 13934}, ...].
+function parseQuarterlyProfit(html) {
+  const tab = parseTableAt(html, 'id="quarters"');
+  if (!tab) return [];
+  const { headers, rows } = tab;
+  const vals = rows['Net Profit'];
+  if (!vals) return [];
+  const out = [];
+  for (let k = 1; k < headers.length; k++) {
+    const v = num(vals[k - 1]);
+    if (v !== null) out.push({ q: headers[k], v });
+  }
+  return out;
+}
+// Quarterly FII % (first shareholding table = quarterly): latest value
+// and the same quarter a year ago (4 columns back).
+function parseFII(html) {
+  const i = html.indexOf('Shareholding Pattern');
+  if (i < 0) return { fiiNow: null, fiiYearAgo: null, fiiLatestQ: null };
+  const tab = parseTableAt(html.slice(i), 'Shareholding Pattern');
+  if (!tab) return { fiiNow: null, fiiYearAgo: null, fiiLatestQ: null };
+  const { headers, rows } = tab;
+  const vals = rows['FIIs'];
+  if (!vals || !vals.length) return { fiiNow: null, fiiYearAgo: null, fiiLatestQ: null };
+  const nums = vals.map(num);
+  const n = nums.length;
+  const fiiNow = nums[n - 1];
+  const fiiYearAgo = n >= 5 ? nums[n - 5] : null;
+  return { fiiNow, fiiYearAgo, fiiLatestQ: headers[headers.length - 1] || null };
 }
 
 function parseBasis(html) {
@@ -159,6 +263,9 @@ async function fetchOne(stock) {
   const sales = parseGrowth(html, 'Compounded Sales Growth');
   const profit = parseGrowth(html, 'Compounded Profit Growth');
   const priceCagr = parseGrowth(html, 'Stock Price CAGR');
+  const debt = parseDebt(html);
+  const qProfit = parseQuarterlyProfit(html);
+  const fii = parseFII(html);
   const rec = {
     sym,
     slug: usedSlug,
@@ -178,6 +285,16 @@ async function fetchOne(stock) {
     priceCagr10: priceCagr.y10, priceCagr5: priceCagr.y5, priceCagr3: priceCagr.y3,
     promoter: parsePromoter(html),
     basis: parseBasis(html),
+    // v0.2 (rulebook v0.2): debt from the annual balance sheet (latest
+    // annual column — March for most, December for some), quarterly Net
+    // Profit series, quarterly FII %.
+    borrowNow: debt.borrowNow,
+    borrow3yAgo: debt.borrow3yAgo,
+    debtEquity: debt.debtEquity,
+    qProfit,
+    fiiNow: fii.fiiNow,
+    fiiYearAgo: fii.fiiYearAgo,
+    fiiLatestQ: fii.fiiLatestQ,
   };
   return { sym, rec };
 }
@@ -216,10 +333,10 @@ async function main() {
     if (i < todo.length - 1) await sleep(DELAY_MS);
   }
   const out = {
-    version: 1,
+    version: 2,
     fetchedAtIST: istNow(),
     source: 'screener.in (company pages, no login)',
-    note: 'Weekly fetch. mcap in ₹ Cr. Growth figures are compounded % (10y/5y/3y).',
+    note: 'Weekly fetch. mcap in ₹ Cr. Growth figures are compounded % (10y/5y/3y). v0.2: borrowNow/borrow3yAgo/debtEquity from the annual balance sheet (latest annual column — March for most, December for some), qProfit = quarterly Net Profit series, fiiNow/fiiYearAgo = quarterly FII %.',
     stocks: done,
     missing: failed,
   };
