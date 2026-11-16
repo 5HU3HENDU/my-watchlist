@@ -1,9 +1,13 @@
-// Generate lenses.html — the standalone My watchlist page (151 stocks,
-// 6 investor-lens dots per cell, tap-a-stock popup with last-5-days %
-// moves and per-lens check detail) from watchlist.json and sectors.json.
-// Same controls as the heatmap's watchlist tab: Sector, A–Z, Lenses sort
-// pill, lens dot filter, settings. Lens verdicts come from lens.json at runtime;
-// market-data.json carries the 5 daily % moves ("m") for the popup.
+// Generate lenses.html — the standalone investor-lenses page: two tabs,
+// "Nifty 500" (500 stocks) and "My watchlist" (151 stocks). Each cell
+// carries the same 6 investor-lens dots; tap-a-stock popup shows last-5-days
+// % moves and per-lens check detail. Same controls per tab: Sector, A–Z,
+// Lenses sort pill, lens dot filter, settings. Lens verdicts come from
+// lens.json at runtime; market-data.json carries the 5 daily % moves ("m")
+// for the popup. Default tab is My watchlist — the page is still his
+// watchlist page first.
+// BAGMANE (in Nifty 500, no Yahoo data): grey "No data" tile, no lens
+// dots, flagged in settings — never a made-up verdict.
 // Popup CSS/JS matches the heatmap v12 mobile fix: panels fit the
 // viewport (min(560px, 100vw-24px)), scroll internally (88dvh), visible
 // ✕ close button, page scroll-locked while open and restored on close.
@@ -11,18 +15,27 @@
 const fs = require('fs');
 const fin = JSON.parse(fs.readFileSync(__dirname + '/final-lists.json', 'utf8'));
 const wl = JSON.parse(fs.readFileSync(__dirname + '/watchlist.json', 'utf8'));
+const md = JSON.parse(fs.readFileSync(__dirname + '/market-data.json', 'utf8'));
+const n500Syms = fin.indices.NIFTY500.slice();
+// Nifty 500 symbols with no market data at all (today: BAGMANE only) —
+// rendered as grey "No data" tiles on the N500 tab, never sampled.
+const nodataSyms = n500Syms.filter(s => !md.stocks[s]);
 const wlSyms = wl.stocks.map(s => s.sym);
 const wlNames = Object.fromEntries(wl.stocks.map(s => [s.sym, s.name]));
+const names = Object.assign({}, fin.names || {}, wlNames);
+const wlSet = new Set(wlSyms);
 // Confirmed-unlisted names (no NSE/BSE listing): grey placeholder tiles,
 // no price/data. Empty today — all 151 names are listed — but the design
 // is live so a future unlisted name renders as a grey tile.
 const wlUnlisted = (wl.unlisted || []).map(u => u.name).sort((a, b) => a < b ? -1 : 1);
 const unlistedJson = JSON.stringify(wlUnlisted);
-const symsJson = JSON.stringify(wlSyms);
-const namesJson = JSON.stringify(wlNames);
+const nodataJson = JSON.stringify(nodataSyms.map(s => ({ sym: s, name: names[s] || s })));
+const n500Json = JSON.stringify(n500Syms);
+const wlJson = JSON.stringify(wlSyms);
+const namesJson = JSON.stringify(names);
 const secRaw = JSON.parse(fs.readFileSync(__dirname + '/sectors.json', 'utf8'));
 const sectorsMap = {};
-for (const s of wlSyms) sectorsMap[s] = (secRaw.sectors && secRaw.sectors[s]) || 'Other';
+for (const s of new Set([...n500Syms, ...wlSyms])) sectorsMap[s] = (secRaw.sectors && secRaw.sectors[s]) || 'Other';
 const sectorsJson = JSON.stringify(sectorsMap);
 // Sub-index membership, for the popup's index pills only.
 const SUB = [
@@ -38,8 +51,8 @@ const html = `<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>My watchlist \u2014 Investor lenses</title>
-<!-- my-watchlist-lenses-v3 -->
+<title>Investor lenses — Nifty 500 &amp; My watchlist</title>
+<!-- my-watchlist-lenses-v4 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -128,6 +141,8 @@ const html = `<!DOCTYPE html>
 <body>
 <header>
   <div class="brand">MY WATCHLIST <span class="amber">LENSES</span></div>
+  <button class="sectgl hdr tabbtn" id="tabN500">Nifty 500</button>
+  <button class="sectgl hdr tabbtn on" id="tabWl">My watchlist (${wlSyms.length})</button>
   <button class="sectgl hdr" id="sectorToggleHdr">Sector</button>
   <button class="sectgl hdr" id="azToggleHdr">A–Z</button>
   <button class="sectgl hdr" id="lensToggleHdr">Lenses</button>
@@ -137,6 +152,7 @@ const html = `<!DOCTYPE html>
 <div id="overlay"><button class="pclose" id="closeSettings" aria-label="Close">✕</button><div id="panel">
   <div class="prow"><span id="orderLine">Top-left = <b>biggest gainer</b> \u00b7 Bottom-right = <b>biggest loser</b></span><br>6 lens dots — Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks (<span style="color:#22c55e">\u25cf</span> lens likes it, <span style="color:#ef4444">\u25cf</span> lens avoids it, <span style="color:#6b7280">\u25cf</span> neutral)</div>
   <div class="prow dim" id="gapLine"></div>
+  <div class="prow dim" id="nodataLine"></div>
   <div class="prow"><span class="dim">Lens filter</span><div id="fcircles"></div></div>
   <div class="prow"><span class="dim">Last updated:</span> <span id="lastUpdated">\u2014</span><br><span class="dim">Next update:</span> <span id="nextUpdate">\u2014</span><br><span class="dim">Data:</span> <span id="dataStatus">SAMPLE DATA</span><br><span class="dim">Lens data:</span> <span id="lensUpdated">\u2014</span></div>
 </div></div>
@@ -152,10 +168,13 @@ const html = `<!DOCTYPE html>
 </div></div>
 <div id="unlistedOverlay"><button class="pclose" id="closeUnlisted" aria-label="Close">✕</button><div id="unlistedPanel">
   <div style="font-size:17px;font-weight:800" id="unName"></div>
-  <div class="dim" style="margin-top:6px">Not listed yet \u2014 no market data</div>
+  <div class="dim" style="margin-top:6px" id="unSub">Not listed yet \u2014 no market data</div>
 </div></div>
 <script>
-const SYMS=${symsJson};
+const N500_SYMS=${n500Json};
+const WL_SYMS=${wlJson};
+const NODATA=${nodataJson};
+const NODATA_SYMS=new Set(NODATA.map(function(x){return x.sym;}));
 const NAMES=${namesJson};
 const SECTORS=${sectorsJson};
 const SUB=${subJson};
@@ -177,7 +196,8 @@ let FILTER=[0,0,0,0,0,0];
 let SECTOR_MODE=false;
 let AZ_MODE=false;
 let LENS_MODE=false;
-let FULL_ROWS=[];
+let TAB="wl"; // "wl" (default) or "n500"
+let FULL_ROWS=[]; // rows of the active tab, in default (return) order
 function fmtINR(n){return n.toLocaleString("en-IN",{minimumFractionDigits:2,maximumFractionDigits:2});}
 function nextUpdateStr(){
   const ist=new Date(new Date().toLocaleString("en-US",{timeZone:"Asia/Kolkata"}));
@@ -192,6 +212,8 @@ function nextUpdateStr(){
 function updateSettings(){
   const gap=document.getElementById("gapLine");
   gap.textContent=(!REAL||LAST_FALLBACK<=0)?"":LAST_FALLBACK+" of "+LAST_COUNT+" stocks showing sample values (feed gap)";
+  const nd=document.getElementById("nodataLine");
+  nd.textContent=(TAB==="n500"&&NODATA.length)?NODATA.map(function(x){return x.sym;}).join(", ")+": no market data yet (feed gap) \u2014 no price, no lens verdicts":"";
   document.getElementById("lastUpdated").textContent=REAL?REAL_ASOF:"\u2014";
   document.getElementById("nextUpdate").textContent=nextUpdateStr();
   document.getElementById("dataStatus").textContent=REAL?"REAL DATA":"SAMPLE DATA";
@@ -240,15 +262,20 @@ function cellHtml(r){
     '</span><span class="ret">'+pctTxt+'</span><span class="dots">'+dots+'</span></div>';
 }
 function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
-// Grey placeholder tile for a confirmed-unlisted name: name + "Unlisted",
-// no price, no return, no dots, no sample values.
-function greyCellHtml(name){
-  return '<div class="cell grey" data-unlisted="1" data-name="'+esc(name)+'"><span class="uname">'+esc(name)+'</span><span class="ulabel">Unlisted</span></div>';
+// Grey placeholder tile: name + label ("Unlisted" or "No data"),
+// no price, no return, no dots, no sample values. kind is "unlisted"
+// (watchlist tab) or "nodata" (Nifty 500 tab, e.g. BAGMANE — sym given).
+function greyCellHtml(name,label,kind,sym){
+  const attr=kind==="nodata"?'data-nodata="1" data-sym="'+esc(sym||"")+'"':'data-unlisted="1"';
+  return '<div class="cell grey" '+attr+' data-name="'+esc(name)+'"><span class="uname">'+esc(name)+'</span><span class="ulabel">'+esc(label)+'</span></div>';
 }
 function render(){
   const grid=document.getElementById("grid");
   grid.style.gridTemplateColumns="repeat(25,1fr)";
   let fallback=0;
+  // No-data symbols (BAGMANE) are NOT priced rows: they render only as
+  // grey "No data" tiles below, never as sample-valued cells.
+  const SYMS=(TAB==="n500"?N500_SYMS:WL_SYMS).filter(function(s){return !NODATA_SYMS.has(s);});
   const full=SYMS.map(function(sym){
     const r=realRow(sym); if(!r.real) fallback++;
     let g=0,rd=0;
@@ -270,12 +297,18 @@ function render(){
   document.getElementById("orderLine").innerHTML=LENS_MODE?
     'Top-left = <b>most lens greens</b> \u00b7 Bottom-right = <b>most lens reds</b>':
     'Top-left = <b>biggest gainer</b> \u00b7 Bottom-right = <b>biggest loser</b>';
-  // Grey placeholder tiles: priced tiles first, grey tiles at the end
-  // in A–Z order among themselves. Grey tiles are not part of
-  // rows/FULL_ROWS, so the dot filter and the feed-gap count never
-  // touch them.
-  const greyRows=UNLISTED.slice();
-  const greyHtml=greyRows.map(greyCellHtml).join("");
+  // Grey placeholder tiles: priced tiles first, grey tiles at the end.
+  // Watchlist tab: confirmed-unlisted names ("Unlisted"). Nifty 500 tab:
+  // symbols with no market data at all ("No data", e.g. BAGMANE).
+  // Grey tiles are not part of rows/FULL_ROWS, so the dot filter and
+  // the feed-gap count never touch them.
+  const greyKind=TAB==="n500"?"nodata":"unlisted";
+  const greyLabel=TAB==="n500"?"No data":"Unlisted";
+  const greyRows=TAB==="n500"?NODATA:UNLISTED.slice();
+  const greyHtml=greyRows.map(function(x){
+    return TAB==="n500"?greyCellHtml(x.name,greyLabel,greyKind,x.sym):greyCellHtml(x,greyLabel,greyKind,null);
+  }).join("");
+  const greyHead=greyRows.length?'<div class="sechead"><span>'+greyLabel+'</span><span>'+greyRows.length+' stocks &middot; no market data</span></div>'+greyHtml:"";
   const main=document.querySelector("main");
   if(rows.length===0&&greyRows.length===0){
     grid.style.height=""; grid.style.gridAutoRows=""; main.style.overflowY="";
@@ -298,7 +331,7 @@ function render(){
       const g=groups[s]; const a=avg(g);
       const head='<div class="sechead"><span>'+s+'</span><span>'+g.length+' stocks &middot; <span class="avg" style="color:'+(a>=0?"#22c55e":"#ef4444")+'">'+(a>=0?"+":"")+a.toFixed(2)+'% avg</span></span></div>';
       return head+g.map(cellHtml).join("");
-    }).join("")+(greyRows.length?'<div class="sechead"><span>Unlisted</span><span>'+greyRows.length+' stocks &middot; no market data</span></div>'+greyHtml:"");
+    }).join("")+greyHead;
   } else {
     grid.style.height=""; grid.style.gridAutoRows=""; main.style.overflowY="";
     grid.innerHTML=rows.map(cellHtml).join("")+greyHtml;
@@ -327,7 +360,7 @@ function openStock(sym){
   document.getElementById("stLens").innerHTML=lensHtml(sym);
   document.getElementById("stRank").textContent="Rank today: #"+(idx+1)+" of "+FULL_ROWS.length;
   const pills=SUB.filter(function(t){return t.list.indexOf(sym)>=0;}).map(function(t){return t.label;});
-  pills.push("My watchlist");
+  if(WL_SYMS.indexOf(sym)>=0) pills.push("My watchlist");
   document.getElementById("stIndices").innerHTML=pills.map(function(p){return '<span class="pill">'+p+'</span>';}).join("");
   document.getElementById("stAsof").textContent=REAL?REAL_ASOF:"\u2014";
   document.getElementById("stGf").href="https://www.google.com/finance/quote/"+encodeURIComponent(sym)+":NSE";
@@ -371,12 +404,23 @@ function lensHtml(sym){
 }
 function openUnlisted(name){
   document.getElementById("unName").textContent=name;
+  document.getElementById("unSub").textContent="Not listed yet \u2014 no market data";
+  document.getElementById("unlistedOverlay").classList.add("open");
+  lockScroll();
+}
+// No-data tile (Nifty 500 tab, e.g. BAGMANE): the symbol exists but the
+// feed carries no price for it — honest empty state, never a made-up
+// value or lens verdict.
+function openNodata(sym){
+  document.getElementById("unName").textContent=(NAMES[sym]||sym)+" ("+sym+")";
+  document.getElementById("unSub").textContent="No market data yet \u2014 Yahoo doesn\u2019t carry this symbol, so there\u2019s no price and no lens verdicts";
   document.getElementById("unlistedOverlay").classList.add("open");
   lockScroll();
 }
 document.getElementById("grid").addEventListener("click",function(e){
   const c=e.target.closest(".cell");
   if(!c) return;
+  if(c.dataset.nodata){ openNodata(c.dataset.sym); return; }
   if(c.dataset.unlisted){ openUnlisted(c.dataset.name); return; }
   if(c.dataset.sym) openStock(c.dataset.sym);
 });
@@ -445,6 +489,19 @@ document.getElementById("lensToggleHdr").onclick=function(){
   this.classList.toggle("on",LENS_MODE);
   render();
 };
+// Tabs: Nifty 500 vs My watchlist (default). The lens dot filter resets
+// on a tab switch (it means something different per tab); Sector / A–Z /
+// Lenses-sort modes carry over and apply to the tab now showing.
+function switchTab(tab){
+  if(TAB===tab) return;
+  TAB=tab;
+  document.getElementById("tabN500").classList.toggle("on",tab==="n500");
+  document.getElementById("tabWl").classList.toggle("on",tab==="wl");
+  FILTER=[0,0,0,0,0,0]; paintCircles();
+  render();
+}
+document.getElementById("tabN500").onclick=function(){ switchTab("n500"); };
+document.getElementById("tabWl").onclick=function(){ switchTab("wl"); };
 overlay.addEventListener("click",function(e){ if(e.target===overlay) closeAll(); });
 stockOverlay.addEventListener("click",function(e){ if(e.target===stockOverlay) closeAll(); });
 unlistedOverlay.addEventListener("click",function(e){ if(e.target===unlistedOverlay) closeAll(); });
@@ -455,4 +512,4 @@ Promise.all([loadReal(),loadLens()]).then(function(){ buildFilterUI(); render();
 </html>
 `;
 fs.writeFileSync(__dirname + '/lenses.html', html);
-console.log('wrote lenses.html,', html.length, 'bytes,', wlSyms.length, 'stocks');
+console.log('wrote lenses.html,', html.length, 'bytes,', 'N500', n500Syms.length, 'watchlist', wlSyms.length, 'no-data', nodataSyms.length);

@@ -4,9 +4,11 @@
 // refresh. Output: fundamentals.json in the news-for-adults dir.
 // Slug resolution: direct /company/<SYM>/ first; on 404/mismatch, fall
 // back to the Screener search API and take the best name match.
-// Usage: node scripts/fetch-fundamentals.js [--test] [--limit N]
+// Usage: node scripts/fetch-fundamentals.js [--test] [--limit N] [--stocks-file <path>]
 //   --test  : 10 stocks only (parser validation)
-//   --limit N: first N watchlist stocks
+//   --limit N: first N stocks
+//   --stocks-file <path>: JSON {stocks:[{sym,name}]} instead of watchlist.json
+//     (used for the Nifty 500 expansion — the 402 unscored N500 symbols)
 // Resume: results are checkpointed to fundamentals.partial.json after
 // each chunk; a re-run skips already-fetched symbols.
 const fs = require('fs');
@@ -15,6 +17,8 @@ const DIR = path.join(__dirname, '..');
 const wl = JSON.parse(fs.readFileSync(path.join(DIR, 'watchlist.json'), 'utf8'));
 const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36';
 const BASE = 'https://www.screener.in';
+// Screener slugs that differ from the NSE symbol (company renames).
+const SLUG_OVERRIDES = { ICICIPRULI: 'ICICILIFE' }; // ICICI Prudential Life -> ICICI Life Insurance Ltd
 const OUT = path.join(DIR, 'fundamentals.json');
 const PARTIAL = path.join(DIR, 'fundamentals.partial.json');
 const DELAY_MS = 1000;
@@ -125,11 +129,11 @@ async function searchSlug(query) {
 
 async function fetchOne(stock) {
   const { sym, name } = stock;
-  const slug = encodeURIComponent(sym);
+  const slug = encodeURIComponent(SLUG_OVERRIDES[sym] || sym);
   let url = `${BASE}/company/${slug}/`;
   let got = await fetchHtml(url);
   let html = got.html;
-  let usedSlug = sym;
+  let usedSlug = SLUG_OVERRIDES[sym] || sym;
   // Verify: right company? Title must contain "share price" and name-match.
   const okPage = (h) => h && h.includes('id="top-ratios"') && /share price/i.test(parseTitle(h)) && nameMatches(name, parseTitle(h));
   if (!okPage(html)) {
@@ -183,7 +187,12 @@ async function main() {
   const isTest = args.includes('--test');
   const limitIdx = args.indexOf('--limit');
   const limit = limitIdx >= 0 ? parseInt(args[limitIdx + 1], 10) : null;
+  const sfIdx = args.indexOf('--stocks-file');
   let stocks = wl.stocks.slice();
+  if (sfIdx >= 0) {
+    const sf = JSON.parse(fs.readFileSync(args[sfIdx + 1], 'utf8'));
+    stocks = sf.stocks.slice();
+  }
   if (isTest) {
     const testSyms = ['TCS', 'CPPLUS', 'SYRMA', 'TONBO', 'JPL', 'ACEVECTOR', 'PFOCUS', 'ARCIL', 'ZENTEC', 'STLTECH'];
     stocks = stocks.filter(s => testSyms.includes(s.sym));

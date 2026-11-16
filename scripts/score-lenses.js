@@ -1,7 +1,8 @@
-// Score the 6 investor lenses for the 151 My-watchlist stocks.
-// Rules: investor-lens-rulebook-v01.md (APPROVED v0.1, Shiva 2026-11-15).
+// Score the 6 investor lenses for ALL stocks with market data (553:
+// the Nifty 500 + the My-watchlist names outside it). Rules:
+// investor-lens-rulebook-v01.md (APPROVED v0.1, Shiva 2026-11-15).
 // Inputs: fundamentals.json (Screener, weekly) + market-data.json
-// (Yahoo, daily session). Output: lens.json (loaded by the heatmap page).
+// (Yahoo, daily session). Output: lens.json (loaded by the lenses page).
 // Verdicts: 5-check lens Green >=4, Red <=1; 4-check lens Green >=3,
 // Red <=1; else Neutral. A missing value FAILS its check and is flagged.
 // NO Berkshire P/E veto (pure scoring, per Shiva). Burry ships 4 checks;
@@ -12,7 +13,6 @@ const path = require('path');
 const DIR = path.join(__dirname, '..');
 const fund = JSON.parse(fs.readFileSync(path.join(DIR, 'fundamentals.json'), 'utf8'));
 const md = JSON.parse(fs.readFileSync(path.join(DIR, 'market-data.json'), 'utf8'));
-const wl = JSON.parse(fs.readFileSync(path.join(DIR, 'watchlist.json'), 'utf8'));
 
 const LENSES = [
   { key: 'Berkshire', label: 'Buffett lens', note: null },
@@ -124,10 +124,12 @@ function verdict(checks) {
 function main() {
   const stocks = {};
   const missing = [];
-  for (const w of wl.stocks) {
-    const f = fund.stocks[w.sym];
-    if (!f) { missing.push(w.sym); continue; }
-    const m = md.stocks[w.sym] || null;
+  // Every symbol with market data gets scored — the Nifty 500 tab needs
+  // verdicts for all 500, not just the 151 watchlist names.
+  for (const sym of Object.keys(md.stocks)) {
+    const f = fund.stocks[sym];
+    if (!f) { missing.push(sym); continue; }
+    const m = md.stocks[sym] || null;
     const checks = score(f, m);
     const verdicts = {};
     const scores = {};
@@ -138,7 +140,7 @@ function main() {
     const flags = [];
     if (f.sales5 === null || f.sales5 === undefined || f.profit5 === null || f.profit5 === undefined) flags.push('thin history');
     if (f.pe === null || f.pe === undefined) flags.push('loss-making');
-    stocks[w.sym] = { verdicts, scores, checks, flags };
+    stocks[sym] = { verdicts, scores, checks, flags };
   }
   const out = {
     version: 1,
