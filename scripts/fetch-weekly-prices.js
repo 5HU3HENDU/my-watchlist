@@ -9,13 +9,34 @@
 // Yahoo caveat (verified): for very recently listed symbols, range=1y
 // returns only the latest candle — so try 1y first, and if the series
 // is too short, retry 3mo and keep whichever returns more candles.
-// Output: weekly-prices.json. Usage: node scripts/fetch-weekly-prices.js
+// Output: weekly-prices.json. Usage: node scripts/fetch-weekly-prices.js [--stocks-file <path>]
+//   --stocks-file <path>: JSON {stocks:[{sym,exch}]} instead of the default
+//     union (Nifty 500 + My Watchlist, deduplicated by symbol; watchlist
+//     entries win on name/exch, N500-only symbols are NSE). Pass
+//     watchlist.json explicitly to fetch the 151 watchlist stocks only.
 const fs = require('fs');
 const path = require('path');
 const DIR = path.join(__dirname, '..');
-const wl = JSON.parse(fs.readFileSync(path.join(DIR, 'watchlist.json'), 'utf8'));
 const md = JSON.parse(fs.readFileSync(path.join(DIR, 'market-data.json'), 'utf8'));
-const FETCH = wl.stocks.map(w => ({ key: w.sym, ysym: w.sym + (w.exch === 'BO' ? '.BO' : '.NS') }));
+// Default universe: union of Nifty 500 + My Watchlist, deduplicated by
+// symbol (watchlist entry wins when a symbol is in both).
+function buildUnion() {
+  const wl = JSON.parse(fs.readFileSync(path.join(DIR, 'watchlist.json'), 'utf8'));
+  const fl = JSON.parse(fs.readFileSync(path.join(DIR, 'final-lists.json'), 'utf8'));
+  const map = new Map();
+  for (const s of wl.stocks) map.set(s.sym, { sym: s.sym, exch: s.exch });
+  for (const sym of fl.indices.NIFTY500) if (!map.has(sym)) map.set(sym, { sym, exch: 'NS' });
+  return [...map.values()].sort((a, b) => a.sym.localeCompare(b.sym));
+}
+const args0 = process.argv.slice(2);
+const sfIdx = args0.indexOf('--stocks-file');
+let stockList;
+if (sfIdx >= 0) {
+  stockList = JSON.parse(fs.readFileSync(args0[sfIdx + 1], 'utf8')).stocks;
+} else {
+  stockList = buildUnion();
+}
+const FETCH = stockList.map(w => ({ key: w.sym, ysym: w.sym + (w.exch === 'BO' ? '.BO' : '.NS') }));
 const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36';
 const HOSTS = ['query1.finance.yahoo.com', 'query2.finance.yahoo.com'];
 const SESSION = md.sessionDate; // e.g. "13 Nov 2026"
