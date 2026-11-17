@@ -55,7 +55,7 @@ const html = `<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v6 -->
+<!-- my-watchlist-lenses-v7 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}

@@ -97,8 +97,15 @@ var LensLogic = (function () {
     var dots = (m && Array.isArray(m.d)) ? m.d : [null, null, null, null, null];
     var greenDots = dots.filter(function (d) { return d === 1; }).length;
     var pb = (f.bookValue && price) ? price / f.bookValue : null;
-    var peg = (f.pe !== null && f.pe !== undefined && f.profit3 !== null && f.profit3 !== undefined && f.profit3 > 0)
-      ? f.pe / f.profit3 : null;
+    // Daily P/E: implied TTM EPS from Screener's same-moment price and P/E
+    // (eps = f.price / f.pe), then the daily close divided by it. P/E now
+    // tracks the daily price instead of lagging it by up to a week (the
+    // weekly Screener snapshot). Null exactly when the weekly P/E is
+    // missing — loss-makers stay null — or when either price is missing/0.
+    var peDaily = (f.pe !== null && f.pe !== undefined && f.price !== null && f.price !== undefined && f.price !== 0 && price !== null && price !== undefined && price !== 0)
+      ? price * f.pe / f.price : null;
+    var peg = (peDaily !== null && f.profit3 !== null && f.profit3 !== undefined && f.profit3 > 0)
+      ? peDaily / f.profit3 : null;
     var belowHigh = (f.high52 !== null && f.high52 !== undefined && price)
       ? ((f.high52 - price) / f.high52) * 100 : null;
     var sales5 = eff5(f, 'sales');
@@ -124,13 +131,13 @@ var LensLogic = (function () {
       chk('ROE', '\u2265 15%', fmtPct(f.roe), f.roe !== null && f.roe >= 15),
       chk('Sales growth ' + sales5.period, '\u2265 10%', fmtPct(sales5.v), sales5.v !== null && sales5.v >= 10),
       chk('Profit growth ' + profit5.period, '\u2265 10%', fmtPct(profit5.v), profit5.v !== null && profit5.v >= 10),
-      chk('P/E', '\u2264 30', fmtNum(f.pe), f.pe !== null && f.pe <= 30),
+      chk('P/E', '\u2264 30', fmtNum(peDaily), peDaily !== null && peDaily <= 30),
       isFinancial ? chkNA('Debt/Equity', '\u2264 0.5', 'not applicable \u2014 financial')
         : chk('Debt/Equity', '\u2264 0.5', de === null ? null : de.toFixed(2), de !== null && de <= 0.5),
     ];
     // 2. Burry — cheap, hated, real assets (6 checks)
     out.Burry = [
-      chk('P/E', '\u2264 15', fmtNum(f.pe), f.pe !== null && f.pe <= 15),
+      chk('P/E', '\u2264 15', fmtNum(peDaily), peDaily !== null && peDaily <= 15),
       chk('P/B', '\u2264 2', fmtNum(pb), pb !== null && pb <= 2),
       chk('ROCE', '\u2265 12%', fmtPct(f.roce), f.roce !== null && f.roce >= 12),
       chk('Price CAGR 3y', '< 0%', fmtPct(f.priceCagr3), f.priceCagr3 !== null && f.priceCagr3 < 0),
@@ -167,7 +174,7 @@ var LensLogic = (function () {
     // 6. Marks — risk (4 checks). Green = safe to lean in, red = be careful.
     out.Marks = [
       chk('Below 52w high', '\u2265 20%', fmtPct(belowHigh), belowHigh !== null && belowHigh >= 20),
-      chk('P/E', '\u2264 25', fmtNum(f.pe), f.pe !== null && f.pe <= 25),
+      chk('P/E', '\u2264 25', fmtNum(peDaily), peDaily !== null && peDaily <= 25),
       chk('ROCE', '\u2265 15%', fmtPct(f.roce), f.roce !== null && f.roce >= 15),
       isFinancial ? chkNA('Debt/Equity', '\u2264 0.5', 'not applicable \u2014 financial')
         : chk('Debt/Equity', '\u2264 0.5', de === null ? null : de.toFixed(2), de !== null && de <= 0.5),
