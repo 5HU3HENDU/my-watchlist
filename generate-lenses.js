@@ -4,8 +4,14 @@
 // per-lens check detail. Same controls per tab: Sector, A–Z, Lenses
 // sort pill, lens dot filter, settings. Default tab is My watchlist —
 // the page is still his watchlist page first.
-// DATA / LOGIC / VIEW (v6, 17 Nov 2026): the background jobs only update
+// DATA / LOGIC / VIEW (v8, 18 Nov 2026): the background jobs only update
 // DATA files (market-data.json, fundamentals-v2.json, weekly-prices.json).
+// PWA (v8): the page is installable — manifest.json + sw.js + SVG icons
+// (PIL-rendered PNG embedded as base64, since push-files can't push
+// binary). The worker is NETWORK-FIRST and only handles the lens page's
+// own URLs; Shiva's index.html and his numbered files pass through
+// untouched and are never cached. Bump the sw.js cache name when the
+// page version bumps.
 // The LOGIC lives in scripts/lenses-logic.js (rulebook v0.2, 7 lenses,
 // ported exactly from the old Node scorer) and runs in the browser at
 // load — the page computes every verdict from whatever data is there.
@@ -54,8 +60,16 @@ const html = `<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#05070a">
+<meta name="description" content="Your 151-stock watchlist and the Nifty 500, read through 7 investor lenses — green, red or neutral dots per stock, computed live in the browser.">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.svg">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Lenses">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v7 -->
+<!-- my-watchlist-lenses-v8 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -576,6 +590,13 @@ stockOverlay.addEventListener("click",function(e){ if(e.target===stockOverlay) c
 unlistedOverlay.addEventListener("click",function(e){ if(e.target===unlistedOverlay) closeAll(); });
 document.addEventListener("keydown",function(e){ if(e.key==="Escape"){ closeAll(); } });
 Promise.all([loadReal(),loadFundamentals(),loadWeeklyPrices()]).then(function(){ computeLenses(); buildFilterUI(); render(); });
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js').catch(function () {});
+  });
+}
 </script>
 </body>
 </html>
