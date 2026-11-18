@@ -6,9 +6,9 @@
 // Strategy is NETWORK-FIRST for everything handled: a cached shell or
 // cached data is never served when the network is available (an old cached
 // JS + new HTML breaks the page). The cache is only an offline fallback.
-// Cache name is versioned with the page version (v9) — bump it when the
+// Cache name is versioned with the page version (v10) — bump it when the
 // page version bumps, so a page update invalidates the old cache.
-var CACHE = 'lenses-v9';
+var CACHE = 'lenses-v10';
 var ALLOW = [
   'lenses.html',
   'manifest.json',
@@ -19,6 +19,7 @@ var ALLOW = [
   'market-data.json',
   'fundamentals-v2.json',
   'weekly-prices.json',
+  'pledging.json',
   'sectors.json',
   'watchlist.json',
   'final-lists.json'

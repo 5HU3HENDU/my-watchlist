@@ -17,8 +17,10 @@
 //     A missing value still FAILS its check.
 //   - Debt checks are N/A for Financial Services stocks (sector from
 //     sectors.json — D/E is meaningless for banks/NBFCs/exchanges/AMCs).
-//   - Jhunjhunwala's promoter-pledging check is SKIPPED (no data source)
-//     — the lens scores out of 3, flagged in the settings popup.
+//   - Jhunjhunwala's promoter-pledging check reads pledging.json
+//     (Stocks Sena, % of promoter holding). Missing data or zero
+//     promoter holding is N/A — the lens then scores out of 3, as it
+//     did before the source existed.
 //   - Volume (Axelrod spike check) uses the DAILY market-data ratio
 //     (m.v, latest-day volume / mean of prior 15 days) when it is a
 //     number, falling back to the weekly-prices entry (w.vol /
@@ -34,7 +36,7 @@ var LensLogic = (function () {
     { key: 'Berkshire', label: 'Buffett lens', note: null },
     { key: 'Burry', label: 'Burry lens', note: 'Debt checks now in; a cash-balance check is not possible from Screener' },
     { key: 'Axelrod', label: 'Axelrod lens', note: null },
-    { key: 'Jhunjhunwala', label: 'Jhunjhunwala lens', note: 'Promoter-pledging check pending a data source — scores out of 3 for now' },
+    { key: 'Jhunjhunwala', label: 'Jhunjhunwala lens', note: 'Pledging from Stocks Sena (shareholding filings)' },
     { key: 'Lynch', label: 'Lynch lens', note: null },
     { key: 'Marks', label: 'Marks lens', note: 'Green = safe to lean in, red = be careful here' },
     { key: 'Druckenmiller', label: 'Druckenmiller lens', note: null },
@@ -95,8 +97,9 @@ var LensLogic = (function () {
   // Score one stock. f = fundamentals-v2 record, m = market-data record
   // (or null), w = weekly-prices record (or null), rupee = the
   // weekly-prices file's top-level rupee object (or null), isFinancial =
-  // sector is Financial Services. Returns {LensKey: [checks]}.
-  function scoreStock(f, m, w, rupee, isFinancial) {
+  // sector is Financial Services, pl = pledging.json record (or null).
+  // Returns {LensKey: [checks]}.
+  function scoreStock(f, m, w, rupee, isFinancial, pl) {
     var price = (m && m.p !== undefined) ? m.p : f.price;
     var dots = (m && Array.isArray(m.d)) ? m.d : [null, null, null, null, null];
     var greenDots = dots.filter(function (d) { return d === 1; }).length;
@@ -180,13 +183,18 @@ var LensLogic = (function () {
       volNA ? chkNA('Volume vs 15d avg', '\u2265 1.5\u00d7', 'too few prior days')
         : chk('Volume vs 15d avg', '\u2265 1.5\u00d7', volRatio === null ? null : volRatio.toFixed(2) + '\u00d7', volRatio !== null && volRatio >= 1.5),
     ];
-    // 4. Jhunjhunwala — India long-term (4 checks; pledging SKIPPED — no
-    // source — so it scores out of 3 until one is found)
+    // 4. Jhunjhunwala — India long-term (4 checks). Pledging is % of
+    // promoter holding (Stocks Sena); missing data or zero promoter
+    // holding is N/A, so the lens scores out of 3 for those stocks.
+    var pledged = (pl && pl.pledgedPct !== null && pl.pledgedPct !== undefined) ? pl.pledgedPct : null;
+    var promoterHeld = (pl && pl.promoterPct !== null && pl.promoterPct !== undefined) ? pl.promoterPct : null;
     out.Jhunjhunwala = [
       chk('Promoter holding', '\u2265 50%', fmtPct(f.promoter), f.promoter !== null && f.promoter >= 50),
       chk('Sales growth ' + sales5.period, '\u2265 15%', fmtPct(sales5.v), sales5.v !== null && sales5.v >= 15),
       chk('ROCE', '\u2265 15%', fmtPct(f.roce), f.roce !== null && f.roce >= 15),
-      chkNA('Promoter pledging', '< 5%', 'not yet sourced'),
+      (pledged === null || promoterHeld === null || promoterHeld === 0)
+        ? chkNA('Promoter pledging', '< 5%', pledged === null ? 'no pledging data' : 'no promoter holding')
+        : chk('Promoter pledging', '< 5%', fmtPct(pledged, 2), pledged < 5),
     ];
     // 5. Lynch — growth at a reasonable price (4 checks)
     out.Lynch = [
@@ -237,12 +245,13 @@ var LensLogic = (function () {
 
   // Score a list of symbols. fundStocks = fundamentals-v2.json stocks map,
   // mdStocks = market-data.json stocks map, wp = the whole weekly-prices
-  // file ({rupee, stocks}), secMap = sectors.json sectors map.
+  // file ({rupee, stocks}), secMap = sectors.json sectors map,
+  // pledging = pledging.json stocks map (or null — pledging is N/A then).
   // Returns {sym: {verdicts, scores, checks, flags}} — the same shape
   // lens.json used to carry. Symbols with no fundamentals or no market
   // data are skipped (no lens record — the page renders them grey / with
   // "data not available yet", never a made-up verdict).
-  function compute(fundStocks, mdStocks, wp, secMap, symbols) {
+  function compute(fundStocks, mdStocks, wp, secMap, symbols, pledging) {
     var out = {};
     var rupee = (wp && wp.rupee) || null;
     var wpStocks = (wp && wp.stocks) || {};
@@ -254,7 +263,7 @@ var LensLogic = (function () {
       if (!m) continue;
       var w = wpStocks[sym] || null;
       var isFinancial = secMap && secMap[sym] === 'Financial Services';
-      var checks = scoreStock(f, m, w, rupee, isFinancial);
+      var checks = scoreStock(f, m, w, rupee, isFinancial, pledging ? pledging[sym] : null);
       var verdicts = {};
       var scores = {};
       for (var j = 0; j < LENSES.length; j++) {

@@ -4,9 +4,10 @@
 // per-lens check detail. Same controls per tab: Sector, A–Z, Lenses
 // sort pill, lens dot filter, settings. Default tab is My watchlist —
 // the page is still his watchlist page first.
-// DATA / LOGIC / VIEW (v9, 18 Nov 2026): the background jobs only update
-// DATA files (market-data.json, fundamentals-v2.json, weekly-prices.json).
-// PWA (v9): the page is installable — manifest.json + sw.js + SVG icons
+// DATA / LOGIC / VIEW (v10, 18 Nov 2026): the background jobs only update
+// DATA files (market-data.json, fundamentals-v2.json, weekly-prices.json,
+// pledging.json).
+// PWA (v10): the page is installable — manifest.json + sw.js + SVG icons
 // (PIL-rendered PNG embedded as base64, since push-files can't push
 // binary). The worker is NETWORK-FIRST and only handles the lens page's
 // own URLs; Shiva's index.html and his numbered files pass through
@@ -69,7 +70,7 @@ const html = `<!DOCTYPE html>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Lenses">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v9 -->
+<!-- my-watchlist-lenses-v10 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -213,7 +214,7 @@ let REAL=null, REAL_ASOF="", REAL_SESSION="", LAST_FALLBACK=0, LAST_COUNT=0;
 // LENS_ASOF = fundamentals fetchedAtIST (the slow data's as-of);
 // LENS_SESSION = market-data sessionDate (the daily checks' as-of).
 let LENS_WL=null, LENS_N500=null;
-let FUND=null, FUND_ASOF="", WP=null, RUPEE=null;
+let FUND=null, FUND_ASOF="", WP=null, RUPEE=null, PLEDGE=null;
 let LENS_ASOF="", LENS_SESSION="";
 const ORDER=["Berkshire","Burry","Axelrod","Jhunjhunwala","Lynch","Marks","Druckenmiller"];
 const LENS_SHORT={Berkshire:"BUF",Burry:"BRY",Axelrod:"AXL",Jhunjhunwala:"RJ",Lynch:"LYN",Marks:"MRK",Druckenmiller:"DRU"};
@@ -248,9 +249,9 @@ function updateSettings(){
   document.getElementById("nodataLine").textContent=nd.length?nd.map(function(x){return x.sym;}).join(", ")+": no market data yet (feed gap) \u2014 no price, no lens verdicts":"";
   // Legend: 7 lens dots on both tabs (rulebook v0.2).
   document.getElementById("legendLine").innerHTML="7 lens dots \u2014 Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks, Druckenmiller (<span style='color:#22c55e'>\u25cf</span> lens likes it, <span style='color:#ef4444'>\u25cf</span> lens avoids it, <span style='color:#6b7280'>\u25cf</span> neutral)";
-  // Pledging: the Jhunjhunwala pledging check has no data source yet
-  // (v0.2) — the lens scores out of 3. Noted here, both tabs.
-  document.getElementById("pledgeLine").textContent="Jhunjhunwala lens: the promoter-pledging check is pending a data source, so the lens scores out of 3 for now.";
+  // Pledging: the Jhunjhunwala pledging check is live for My watchlist
+  // (Stocks Sena, v10); Nifty 500 gets it after Saturday's refresh.
+  document.getElementById("pledgeLine").textContent="Jhunjhunwala lens: promoter pledging is live for My watchlist (Stocks Sena) — Nifty 500 gets it after Saturday's refresh, its stocks show N/A until then.";
   document.getElementById("lastUpdated").textContent=REAL?REAL_ASOF:"\u2014";
   document.getElementById("nextUpdate").textContent=nextUpdateStr();
   document.getElementById("dataStatus").textContent=REAL?"REAL DATA":"SAMPLE DATA";
@@ -289,14 +290,28 @@ async function loadWeeklyPrices(){
     if(j&&j.stocks){ WP=j; RUPEE=j.rupee||null; }
   }catch(e){}
 }
+async function loadPledging(){
+  try{
+    const ctrl=new AbortController();
+    const timer=setTimeout(function(){ctrl.abort();},8000);
+    const r=await fetch("pledging.json",{signal:ctrl.signal});
+    clearTimeout(timer);
+    if(!r.ok) return;
+    const j=await r.json();
+    if(j&&j.stocks){ PLEDGE=j.stocks; }
+  }catch(e){}
+}
 function computeLenses(){
   // Browser-side scoring (rulebook v0.2, 7 lenses, BOTH tabs) from the
   // loaded data files. No pre-computed lens.json any more. If the logic
   // file or a data file failed to load, leave the lenses empty (grey
   // dots, "data not available yet") rather than breaking the page.
   if(typeof LensLogic==="undefined"||!FUND||!REAL){ LENS_WL=null; LENS_N500=null; return; }
-  LENS_WL=LensLogic.compute(FUND,REAL,WP,SECTORS,WL_SYMS);
-  LENS_N500=LensLogic.compute(FUND,REAL,WP,SECTORS,N500_SYMS);
+  // Pledging is live for My watchlist only (v10): pledging.json covers
+  // the 151 watchlist symbols. Nifty 500 gets pledging after the
+  // Saturday refresh fetches the union — pass PLEDGE for N500 then.
+  LENS_WL=LensLogic.compute(FUND,REAL,WP,SECTORS,WL_SYMS,PLEDGE);
+  LENS_N500=LensLogic.compute(FUND,REAL,WP,SECTORS,N500_SYMS,null);
   LENS_ASOF=FUND_ASOF;
   LENS_SESSION=REAL_SESSION;
 }
@@ -589,7 +604,7 @@ overlay.addEventListener("click",function(e){ if(e.target===overlay) closeAll();
 stockOverlay.addEventListener("click",function(e){ if(e.target===stockOverlay) closeAll(); });
 unlistedOverlay.addEventListener("click",function(e){ if(e.target===unlistedOverlay) closeAll(); });
 document.addEventListener("keydown",function(e){ if(e.key==="Escape"){ closeAll(); } });
-Promise.all([loadReal(),loadFundamentals(),loadWeeklyPrices()]).then(function(){ computeLenses(); buildFilterUI(); render(); });
+Promise.all([loadReal(),loadFundamentals(),loadWeeklyPrices(),loadPledging()]).then(function(){ computeLenses(); buildFilterUI(); render(); });
 </script>
 <script>
 if ('serviceWorker' in navigator) {
