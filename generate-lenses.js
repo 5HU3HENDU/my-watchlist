@@ -4,9 +4,9 @@
 // per-lens check detail. Same controls per tab: Sector, A–Z, Lenses
 // sort pill, lens dot filter, settings. Default tab is My watchlist —
 // the page is still his watchlist page first.
-// DATA / LOGIC / VIEW (v8, 18 Nov 2026): the background jobs only update
+// DATA / LOGIC / VIEW (v9, 18 Nov 2026): the background jobs only update
 // DATA files (market-data.json, fundamentals-v2.json, weekly-prices.json).
-// PWA (v8): the page is installable — manifest.json + sw.js + SVG icons
+// PWA (v9): the page is installable — manifest.json + sw.js + SVG icons
 // (PIL-rendered PNG embedded as base64, since push-files can't push
 // binary). The worker is NETWORK-FIRST and only handles the lens page's
 // own URLs; Shiva's index.html and his numbered files pass through
@@ -69,7 +69,7 @@ const html = `<!DOCTYPE html>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Lenses">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v8 -->
+<!-- my-watchlist-lenses-v9 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}

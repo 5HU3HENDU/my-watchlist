@@ -19,10 +19,14 @@
 //     sectors.json — D/E is meaningless for banks/NBFCs/exchanges/AMCs).
 //   - Jhunjhunwala's promoter-pledging check is SKIPPED (no data source)
 //     — the lens scores out of 3, flagged in the settings popup.
-//   - Volume uses the weekly-prices entry (w.vol / w.volAvg15), exactly
-//     as scoreV02 did. The 5-day move, trend dots, price vs 200-day avg
-//     and below-52w-high use the daily market-data price/moves, so they
-//     refresh every day the market data refreshes.
+//   - Volume (Axelrod spike check) uses the DAILY market-data ratio
+//     (m.v, latest-day volume / mean of prior 15 days) when it is a
+//     number, falling back to the weekly-prices entry (w.vol /
+//     w.volAvg15) when the daily ratio is null. A ratio is evaluable
+//     only with >= 5 prior days; fewer is N/A. The 5-day move, trend
+//     dots, price vs 200-day avg and below-52w-high use the daily
+//     market-data price/moves, so they refresh every day the market
+//     data refreshes.
 // Works in the browser (global LensLogic) and under Node (module.exports)
 // so the same code can be verified against the Node reference scorer.
 var LensLogic = (function () {
@@ -114,9 +118,30 @@ var LensLogic = (function () {
     var borrowFalling = (f.borrowNow !== null && f.borrowNow !== undefined && f.borrow3yAgo !== null && f.borrow3yAgo !== undefined)
       ? f.borrowNow < f.borrow3yAgo : null;
     var move5 = fiveDayMove(m && m.m);
-    var volRatio = (w && w.vol !== null && w.vol !== undefined && w.volAvg15 !== null && w.volAvg15 !== undefined && w.volAvg15 > 0)
+    // Volume spike (Axelrod): latest-day volume vs the mean of the prior
+    // 15 trading days. PRIMARY source is the daily market-data ratio
+    // (m.v, fresher — recomputed at every 16:45 refresh); FALLBACK is
+    // the weekly file (w.vol / w.volAvg15) when the daily ratio is null.
+    // A ratio is evaluable only with >= 5 prior days behind it; with
+    // fewer, the check is N/A ("too few prior days"). When both sources
+    // are null, N/A only if either source shows < 5 prior days —
+    // otherwise the check fails as missing, exactly as before.
+    var dailyVol = (m && typeof m.v === 'number') ? m.v : null;
+    var dailyVolN = (m && typeof m.vn === 'number') ? m.vn : null;
+    var weeklyVol = (w && w.vol !== null && w.vol !== undefined && w.volAvg15 !== null && w.volAvg15 !== undefined && w.volAvg15 > 0)
       ? w.vol / w.volAvg15 : null;
-    var volNA = !w || w.volN === undefined || w.volN < 5;
+    var weeklyVolN = (w && typeof w.volN === 'number') ? w.volN : null;
+    var volRatio = null, volNA = false;
+    if (dailyVol !== null) {
+      if (dailyVolN !== null && dailyVolN >= 5) volRatio = dailyVol;
+      else volNA = true; // daily ratio exists but too few prior days
+    } else if (weeklyVol !== null) {
+      if (weeklyVolN !== null && weeklyVolN >= 5) volRatio = weeklyVol;
+      else volNA = true;
+    } else {
+      // Both null: N/A only if either source shows < 5 prior days.
+      volNA = (dailyVolN !== null && dailyVolN < 5) || (weeklyVolN !== null && weeklyVolN < 5);
+    }
     var aboveDma = (w && w.dma200 !== null && w.dma200 !== undefined && price) ? price > w.dma200 : null;
     var em = earningsMomentum(f.qProfit);
     var fiiRising = (f.fiiNow !== null && f.fiiNow !== undefined && f.fiiYearAgo !== null && f.fiiYearAgo !== undefined)
