@@ -8,7 +8,7 @@
 // JS + new HTML breaks the page). The cache is only an offline fallback.
 // Cache name is versioned with the page version (v10) — bump it when the
 // page version bumps, so a page update invalidates the old cache.
-var CACHE = 'lenses-v10';
+var CACHE = 'lenses-v11';
 var ALLOW = [
   'lenses.html',
   'manifest.json',

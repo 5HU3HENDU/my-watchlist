@@ -70,7 +70,7 @@ const html = `<!DOCTYPE html>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Lenses">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v10 -->
+<!-- my-watchlist-lenses-v11 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -203,7 +203,8 @@ function hash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i)
 function samplePct(sym){return ((hash(sym+"%")%9000)/1000)-4.5;}
 function dayUp(sym,k){return (hash(sym+":d"+k)%2)===0;}
 function colorFor(pct){
-  const t=Math.min(Math.abs(pct)/5,1);
+  // sqrt curve so small moves stay visible: +1% -> 45% tint, +2% -> 63%, +5% -> 100%; 0% stays neutral.
+  const t=Math.sqrt(Math.min(Math.abs(pct)/5,1));
   const neutral=[17,24,39], end=pct>=0?[22,101,52]:[153,27,27];
   const c=neutral.map(function(v,i){return Math.round(v+(end[i]-v)*t);});
   return "rgb("+c[0]+","+c[1]+","+c[2]+")";
