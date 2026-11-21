@@ -72,7 +72,7 @@ const html = `<!DOCTYPE html>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Lenses">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v18 -->
+<!-- my-watchlist-lenses-v19 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -127,6 +127,11 @@ const html = `<!DOCTYPE html>
   #overlay.open{display:flex}
   #panel{background:#111827;border:1px solid #374151;border-radius:12px;padding:16px;width:min(560px,calc(100vw - 24px));max-height:88vh;max-height:88dvh;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;color:#e5e7eb;font-size:13px;line-height:1.6}
   .pclose{position:absolute;top:10px;right:10px;width:44px;height:44px;border-radius:50%;background:#1f2937;color:#fff;border:1px solid #6b7280;font-size:20px;line-height:1;cursor:pointer;z-index:5;display:flex;align-items:center;justify-content:center;flex:none}
+  /* Popup Back button (v19): the proper way back — a large, always-visible
+     tap target at the top of the panel. Tapping it clears the popup and
+     returns to the grid (same as the phone's own back button, which the
+     history state below also routes to clearing the popup). */
+  .backbtn{display:inline-flex;align-items:center;background:#1f2937;color:#fff;border:1px solid #6b7280;border-radius:999px;padding:9px 18px;font-size:14px;font-weight:700;cursor:pointer;margin-bottom:12px}
   #panel .prow{margin-bottom:12px}
   #panel .prow:last-child{margin-bottom:0}
   #panel b{color:#fff}
@@ -177,7 +182,8 @@ const html = `<!DOCTYPE html>
     body{overflow:auto;height:auto}
     #grid{grid-template-columns:repeat(5,1fr)!important;grid-auto-rows:auto;height:auto}
     .cell{padding:9px 4px}
-    .sym{font-size:15cqw}
+    .sym{font-size:14cqw} /* v19: was 15cqw — the longest 10-char names
+      (IDFCFIRSTB etc.) overflowed by ~2px at 412px; 14cqw fits them all */
     .ret{font-size:13cqw}
     #overlay,#stockOverlay,#unlistedOverlay{padding:12px}
   }
@@ -211,6 +217,7 @@ const html = `<!DOCTYPE html>
   <div class="prow"><span class="dim">Last updated:</span> <span id="lastUpdated">\u2014</span><br><span class="dim">Next update:</span> <span id="nextUpdate">\u2014</span><br><span class="dim">Data:</span> <span id="dataStatus">SAMPLE DATA</span><br><span class="dim">Lens data:</span> <span id="lensUpdated">\u2014</span></div>
 </div></div>
 <div id="stockOverlay"><button class="pclose" id="closeStock" aria-label="Close">✕</button><div id="stockPanel">
+  <button class="backbtn" id="backStock">‹ Back</button>
   <div class="srow"><div style="font-size:17px;font-weight:800" id="stName"></div><div class="dim" id="stSym"></div></div>
   <div class="srow"><span style="font-size:20px;font-weight:800" id="stPrice"></span> <span id="stChange" style="font-weight:700"></span></div>
   <div class="srow"><div class="dim" style="font-size:12px">Last 5 days</div><div id="stMoves" class="moves"></div></div>
@@ -222,10 +229,11 @@ const html = `<!DOCTYPE html>
   <div class="srow"><a id="stGf" href="#" target="_blank" rel="noopener" style="color:#fbbf24;font-weight:700;text-decoration:none">Google Finance \u2197</a></div>
 </div></div>
 <div id="unlistedOverlay"><button class="pclose" id="closeUnlisted" aria-label="Close">✕</button><div id="unlistedPanel">
+  <button class="backbtn" id="backUnlisted">‹ Back</button>
   <div style="font-size:17px;font-weight:800" id="unName"></div>
   <div class="dim" style="margin-top:6px" id="unSub">Not listed yet \u2014 no market data</div>
 </div></div>
-<script src="scripts/lenses-logic.js?v=18"></script>
+<script src="scripts/lenses-logic.js?v=19"></script>
 <script>
 const N500_SYMS=${n500Json};
 const WL_SYMS=${wlJson};
@@ -288,13 +296,11 @@ function updateSettings(){
   gap.textContent=(!REAL||LAST_FALLBACK<=0)?"":LAST_FALLBACK+" of "+LAST_COUNT+" stocks showing sample values (feed gap)";
   const nd=TAB==="n500"?nodataList():[];
   document.getElementById("nodataLine").textContent=nd.length?nd.map(function(x){return x.sym;}).join(", ")+": no market data yet (feed gap) \u2014 no price, no lens verdicts":"";
-  // Legend: 7 lens dots on both tabs (rulebook v0.2), or the rank
-  // explanation while rank mode is on.
-  document.getElementById("legendLine").innerHTML=RANK_MODE?
-    "Rank mode \u2014 #N is the combined percentile rank (1 = best of the tab), 0\u2013100; Q/V/M are the Quality / Value / Momentum sub-ranks. Tiles sort by rank.":
-    ANALYST_MODE?
-    "Analysts View \u2014 five counts per stock (strong buy \u00b7 buy \u00b7 hold \u00b7 sell \u00b7 strong sell, each in its own colour, zeros shown); upside % is the average analyst target vs the current price. Grey upside = fewer than 3 analysts; \u201cNo analyst coverage\u201d = none. Tiles sort by upside % (highest first; no-upside stocks last).":
-    "7 lens dots \u2014 Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks, Druckenmiller (<span style='color:#22c55e'>\u25cf</span> lens likes it, <span style='color:#ef4444'>\u25cf</span> lens avoids it, <span style='color:#6b7280'>\u25cf</span> neutral)";
+  // Legend: the tile is all-in-one (v19) — 7 lens dots, rank # + score,
+  // Q/V/M sub-ranks, five analyst counts, upside %. The legend describes
+  // the tile once; the active sort is named in the order line below.
+  document.getElementById("legendLine").innerHTML=
+    "Every tile shows the 7 lens dots (<span style='color:#22c55e'>\u25cf</span> lens likes it, <span style='color:#ef4444'>\u25cf</span> lens avoids it, <span style='color:#6b7280'>\u25cf</span> neutral — Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks, Druckenmiller), rank # + combined score, Q/V/M sub-ranks, the five analyst counts (strong buy \u00b7 buy \u00b7 hold \u00b7 sell \u00b7 strong sell, each in its own colour, zeros shown) and upside % (average analyst target vs current price; grey upside = fewer than 3 analysts; \u201cNo analyst coverage\u201d = none).";
   // Pledging: the Jhunjhunwala pledging check is live for both tabs
   // (Stocks Sena; watchlist since v10, Nifty 500 since v17).
   document.getElementById("pledgeLine").textContent="Jhunjhunwala lens: promoter pledging is live for My watchlist and Nifty 500 (Stocks Sena).";
@@ -443,46 +449,43 @@ function cellHtml(r){
   // Very small amber dot on Nifty 500 tiles for stocks that are also in
   // My watchlist (watchlist tab needs none — every tile there is one).
   const badge=(TAB==="n500"&&WL_SET.has(r.sym))?'<span class="wlbadge" title="In My watchlist"></span>':"";
-  // Analysts View: five analyst counts in their colours + weighted avg
-  // upside % instead of the 7 lens dots. No coverage -> the counts line
+  // ALL-IN-ONE TILE (v19): every tile shows all three views' info, in
+  // every mode, both tabs — name, day %, 7 lens dots, rank # + combined
+  // score, Q/V/M sub-ranks, the five analyst counts, upside %. The
+  // Lenses / Rank / Analysts View pills no longer switch what the tile
+  // shows; they only switch the SORT. Rows reuse the v14/v15 flex-cell
+  // implementations (no separators, sized to fit by construction).
+  // Rank row (as Rank mode showed it): #N · combined score; "—" where
+  // a stock has no rank (no market data to rank on).
+  const rkTxt=r.rk===null?"—":"#"+r.rk;
+  const scTxt=r.score===null?"—":r.score.toFixed(0);
+  // Sub-ranks (v15): three equal-width flex cells (.subrank), label +
+  // value together per cell, no "·" separators.
+  const sub='<span class="subrank">'+
+    '<span>Q '+(r.q===null?"–":r.q.toFixed(0))+'</span>'+
+    '<span>V '+(r.v===null?"–":r.v.toFixed(0))+'</span>'+
+    '<span>M '+(r.m===null?"–":r.m.toFixed(0))+'</span></span>';
+  // Analyst rows (as Analysts View showed them): five counts in their
+  // colours + weighted avg upside %. No coverage -> the counts line
   // reads "No analyst coverage"; fewer than 3 analysts -> grey "upside
   // N/A" (counts still show — they are factual). The % weighted score
   // is NOT on the tile; it lives in the popup detail only.
-  if(ANALYST_MODE){
-    const av=r.an;
-    let countsLine, upsideLine;
-    if(!av||!av.coverage){
-      countsLine='<span class="acov">No analyst coverage</span>';
-      upsideLine="";
-    } else {
-      countsLine=countsHtml(av.counts);
-      upsideLine=av.upside===null?
-        '<span class="aupside" style="color:#6b7280">upside N/A</span>':
-        '<span class="aupside">upside '+(av.upside>=0?"+":"")+av.upside.toFixed(1)+'%</span>';
-    }
-    return '<div class="cell" data-sym="'+r.sym+'" style="background:'+colorFor(r.pct)+'">'+badge+'<span class="sym">'+r.sym+
-      '</span><span class="ret">'+pctTxt+'</span>'+countsLine+upsideLine+'</div>';
-  }
-  // Rank mode: rank number + combined score + Q/V/M sub-ranks instead
-  // of the 7 lens dots. "–" where a sub-rank has no data for the stock.
-  if(RANK_MODE){
-    const rkTxt=r.rk===null?"—":"#"+r.rk;
-    const scTxt=r.score===null?"—":r.score.toFixed(0);
-    // Sub-ranks (v15): three equal-width flex cells (.subrank), label +
-    // value together per cell, no "·" separators — the old single string
-    // overflowed the tile the same way the v13 analyst counts did.
-    const sub='<span class="subrank">'+
-      '<span>Q '+(r.q===null?"–":r.q.toFixed(0))+'</span>'+
-      '<span>V '+(r.v===null?"–":r.v.toFixed(0))+'</span>'+
-      '<span>M '+(r.m===null?"–":r.m.toFixed(0))+'</span></span>';
-    return '<div class="cell" data-sym="'+r.sym+'" style="background:'+colorFor(r.pct)+'">'+badge+'<span class="sym">'+r.sym+
-      '</span><span class="ret">'+pctTxt+'</span><span class="rankline">'+rkTxt+' · '+scTxt+'</span>'+sub+'</div>';
+  const av=r.an;
+  let countsLine, upsideLine;
+  if(!av||!av.coverage){
+    countsLine='<span class="acov">No analyst coverage</span>';
+    upsideLine="";
+  } else {
+    countsLine=countsHtml(av.counts);
+    upsideLine=av.upside===null?
+      '<span class="aupside" style="color:#6b7280">upside N/A</span>':
+      '<span class="aupside">upside '+(av.upside>=0?"+":"")+av.upside.toFixed(1)+'%</span>';
   }
   const dots=r.dots.map(function(v){
     return '<span class="dot '+(v===1?"up":v===0?"dn":"flat")+'"></span>';
   }).join("");
   return '<div class="cell" data-sym="'+r.sym+'" style="background:'+colorFor(r.pct)+'">'+badge+'<span class="sym">'+r.sym+
-    '</span><span class="ret">'+pctTxt+'</span><span class="dots">'+dots+'</span></div>';
+    '</span><span class="ret">'+pctTxt+'</span><span class="dots">'+dots+'</span><span class="rankline">'+rkTxt+' · '+scTxt+'</span>'+sub+countsLine+upsideLine+'</div>';
 }
 function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
 // Grey placeholder tile: name + label ("Unlisted" or "No data"),
@@ -493,10 +496,10 @@ function greyCellHtml(name,label,kind,sym){
   return '<div class="cell grey" '+attr+' data-name="'+esc(name)+'"><span class="uname">'+esc(name)+'</span><span class="ulabel">'+esc(label)+'</span></div>';
 }
 function render(){
-  // The dot filter does not apply in rank or Analysts mode (there are
-  // no dots to filter on); the circles are dimmed and inert until lens
-  // mode returns.
-  document.getElementById("fcircles").classList.toggle("disabled",RANK_MODE||ANALYST_MODE);
+  // The dot filter applies in every mode now (v19): the 7 lens dots are
+  // always on the tile, so there is always something to filter on. The
+  // Lenses / Rank / Analysts View pills only change the SORT, never what
+  // the tile shows.
   const grid=document.getElementById("grid");
   grid.style.gridTemplateColumns="repeat(25,1fr)";
   let fallback=0;
@@ -534,9 +537,8 @@ function render(){
     return bu-au||b.pct-a.pct||(a.sym<b.sym?-1:1);
   };
   const disp=ANALYST_MODE?full.slice().sort(analystCmp):RANK_MODE?full.slice().sort(rankCmp):LENS_MODE?full.slice().sort(lensCmp):AZ_MODE?full.slice().sort(function(a,b){return a.sym<b.sym?-1:1;}):full;
-  // The dot filter does not apply in rank or Analysts mode; the filter
-  // state is kept and applies again when lens mode returns.
-  const rows=(RANK_MODE||ANALYST_MODE)?disp:disp.filter(function(r){
+  // The dot filter applies in every mode (v19 — dots are always shown).
+  const rows=disp.filter(function(r){
     return FILTER.every(function(f,i){
       if(f===0||i>=r.dots.length) return true;
       return f===1?r.dots[i]===1:r.dots[i]===0;
@@ -629,6 +631,7 @@ function openStock(sym){
   document.getElementById("stAsof").textContent=REAL?REAL_ASOF:"\u2014";
   document.getElementById("stGf").href="https://www.google.com/finance/quote/"+encodeURIComponent(sym)+":NSE";
   document.getElementById("stockOverlay").classList.add("open");
+  notePopupOpened();
   lockScroll();
 }
 function lensHtml(sym){
@@ -678,9 +681,9 @@ function lensHtml(sym){
 // three sub-rank scores, and the per-parameter breakdown — which
 // parameters feed each sub-rank, their values, and the percentile each
 // one scores. Shown for EVERY stock in EVERY mode (Shiva: the popup
-// must be consistent irrespective of the filter/button clicked). The
-// TILE layout is untouched — rank/sub-ranks stay off the tile outside
-// Rank mode (that part of the 21 Nov spec is still on hold).
+// must be consistent irrespective of the filter/button clicked). Since
+// v19 the tile also always shows the rank row + sub-ranks (all-in-one
+// tile); this popup section is the in-depth version of the same numbers.
 function rankHtml(sym){
   // No rank logic loaded (e.g. a stale cached script) -> say so, never
   // a made-up rank.
@@ -771,6 +774,7 @@ function openUnlisted(name){
   document.getElementById("unName").textContent=name;
   document.getElementById("unSub").textContent="Not listed yet \u2014 no market data";
   document.getElementById("unlistedOverlay").classList.add("open");
+  notePopupOpened();
   lockScroll();
 }
 // No-data tile (Nifty 500 tab, e.g. BAGMANE): the symbol exists but the
@@ -780,6 +784,7 @@ function openNodata(sym){
   document.getElementById("unName").textContent=(NAMES[sym]||sym)+" ("+sym+")";
   document.getElementById("unSub").textContent="No market data yet \u2014 Yahoo doesn\u2019t carry this symbol, so there\u2019s no price and no lens verdicts";
   document.getElementById("unlistedOverlay").classList.add("open");
+  notePopupOpened();
   lockScroll();
 }
 document.getElementById("grid").addEventListener("click",function(e){
@@ -812,7 +817,6 @@ function buildFilterUI(){
     const lab=document.createElement("span"); lab.className="fclab"; lab.textContent=LENS_SHORT[lk];
     wrap.appendChild(b); wrap.appendChild(lab);
     b.onclick=function(){
-      if(RANK_MODE||ANALYST_MODE) return; // dot filter is inert while rank or Analysts mode is on
       FILTER[i]=FILTER[i]===0?1:FILTER[i]===1?-1:0;
       paintCircles(); render();
     };
@@ -835,15 +839,40 @@ const stockOverlay=document.getElementById("stockOverlay");
 const unlistedOverlay=document.getElementById("unlistedOverlay");
 // While any popup is open the page behind stays locked; closeAll restores
 // it, so the list is visible and scrollable again. (Mobile has no Esc and
-// a tall panel can cover the backdrop, so the visible ✕ button is the
-// primary way back.)
+// a tall panel can cover the backdrop, so the visible ‹ Back button at the
+// top of the panel is the primary way back.)
 function lockScroll(){ document.body.style.overflow="hidden"; document.documentElement.style.overflow="hidden"; }
 function unlockScroll(){ document.body.style.overflow=""; document.documentElement.style.overflow=""; }
-function closeAll(){ overlay.classList.remove("open"); stockOverlay.classList.remove("open"); unlistedOverlay.classList.remove("open"); unlockScroll(); }
+// Popup back navigation (v19): opening a tile popup pushes a history
+// state, so the phone's own back button / back gesture clears the popup
+// instead of leaving the page. The visible ‹ Back button does the same:
+// closeAll() consumes the pushed state with history.back(). The grid
+// scroll position is saved on open and restored on close, so "back"
+// lands exactly where the tap happened.
+let POPUP_OPEN=false, POPUP_STATE=false, SAVED_SCROLL=[0,0];
+function notePopupOpened(){
+  try{ SAVED_SCROLL=[window.scrollY||0, (document.querySelector("main")||{scrollTop:0}).scrollTop]; }catch(e){ SAVED_SCROLL=[0,0]; }
+  if(POPUP_OPEN) return;
+  POPUP_OPEN=true;
+  try{ history.pushState({lensPopup:true},""); POPUP_STATE=true; }catch(e){ POPUP_STATE=false; }
+}
+function restoreScroll(){
+  try{ window.scrollTo(0,SAVED_SCROLL[0]); const m=document.querySelector("main"); if(m) m.scrollTop=SAVED_SCROLL[1]; }catch(e){}
+}
+function closePopupDom(){ overlay.classList.remove("open"); stockOverlay.classList.remove("open"); unlistedOverlay.classList.remove("open"); unlockScroll(); restoreScroll(); }
+function closeAll(){
+  if(POPUP_OPEN){ POPUP_OPEN=false; if(POPUP_STATE){ POPUP_STATE=false; try{ history.back(); }catch(e){} } }
+  closePopupDom();
+}
+window.addEventListener("popstate",function(){
+  if(POPUP_OPEN){ POPUP_OPEN=false; POPUP_STATE=false; closePopupDom(); }
+});
 document.getElementById("gearBtn").onclick=function(){ overlay.classList.add("open"); lockScroll(); };
 document.getElementById("closeSettings").onclick=closeAll;
 document.getElementById("closeStock").onclick=closeAll;
 document.getElementById("closeUnlisted").onclick=closeAll;
+document.getElementById("backStock").onclick=closeAll;
+document.getElementById("backUnlisted").onclick=closeAll;
 document.getElementById("sectorToggleHdr").onclick=function(){
   SECTOR_MODE=!SECTOR_MODE;
   this.classList.toggle("on",SECTOR_MODE);
@@ -855,24 +884,27 @@ document.getElementById("azToggleHdr").onclick=function(){
   this.classList.toggle("on",AZ_MODE);
   render();
 };
-// Lenses, Rank, Analysts View and A–Z are mutually exclusive sorts; tapping one again
-// returns to the default return sort. No flip to worst-first.
+// Lenses, Rank, Analysts View and A–Z are mutually exclusive SORTS (v19:
+// the pills no longer switch what the tile shows — every tile always
+// shows everything; a pill only changes the order). Tapping the active
+// pill again returns to the default return sort. No flip to worst-first.
 document.getElementById("lensToggleHdr").onclick=function(){
   LENS_MODE=!LENS_MODE;
   if(LENS_MODE){ AZ_MODE=false; RANK_MODE=false; ANALYST_MODE=false; document.getElementById("azToggleHdr").classList.remove("on"); document.getElementById("rankToggleHdr").classList.remove("on"); document.getElementById("analystToggleHdr").classList.remove("on"); }
   this.classList.toggle("on",LENS_MODE);
   render();
 };
-// Rank mode shows the combined percentile rank + Q/V/M sub-ranks
-// instead of the 7 lens dots; the dot filter does not apply while on.
+// Rank pill (v19): sorts by combined rank (#1 first). The tile always
+// shows the rank row — the pill only changes the order.
 document.getElementById("rankToggleHdr").onclick=function(){
   RANK_MODE=!RANK_MODE;
   if(RANK_MODE){ LENS_MODE=false; AZ_MODE=false; ANALYST_MODE=false; document.getElementById("lensToggleHdr").classList.remove("on"); document.getElementById("azToggleHdr").classList.remove("on"); document.getElementById("analystToggleHdr").classList.remove("on"); }
   this.classList.toggle("on",RANK_MODE);
   render();
 };
-// Analysts View mode shows the five analyst counts + weighted avg upside
-// % instead of the 7 lens dots; the dot filter does not apply while on.
+// Analysts View pill (v19): sorts by upside % (highest first; no-upside
+// stocks last). The tile always shows the counts + upside — the pill
+// only changes the order.
 document.getElementById("analystToggleHdr").onclick=function(){
   ANALYST_MODE=!ANALYST_MODE;
   if(ANALYST_MODE){ LENS_MODE=false; AZ_MODE=false; RANK_MODE=false; document.getElementById("lensToggleHdr").classList.remove("on"); document.getElementById("azToggleHdr").classList.remove("on"); document.getElementById("rankToggleHdr").classList.remove("on"); }
