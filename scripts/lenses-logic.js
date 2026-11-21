@@ -93,6 +93,29 @@ var LensLogic = (function () {
     for (var i = 0; i < moves.length; i++) acc *= (1 + moves[i][1] / 100);
     return (acc - 1) * 100;
   }
+  // Volume ratio: the DAILY market-data ratio (m.v, latest-day volume /
+  // mean of the prior 15 days) is primary, the weekly file (w.vol /
+  // w.volAvg15) is the fallback. A ratio is evaluable only with >= 5
+  // prior days behind it. Returns {ratio: number|null, na: boolean} —
+  // na is true when a ratio exists but has too few prior days, or when
+  // both sources are null and either shows < 5 prior days.
+  function volRatioOf(m, w) {
+    var dailyVol = (m && typeof m.v === 'number') ? m.v : null;
+    var dailyVolN = (m && typeof m.vn === 'number') ? m.vn : null;
+    var weeklyVol = (w && w.vol !== null && w.vol !== undefined && w.volAvg15 !== null && w.volAvg15 !== undefined && w.volAvg15 > 0)
+      ? w.vol / w.volAvg15 : null;
+    var weeklyVolN = (w && typeof w.volN === 'number') ? w.volN : null;
+    if (dailyVol !== null) {
+      if (dailyVolN !== null && dailyVolN >= 5) return { ratio: dailyVol, na: false };
+      return { ratio: null, na: true }; // daily ratio exists but too few prior days
+    }
+    if (weeklyVol !== null) {
+      if (weeklyVolN !== null && weeklyVolN >= 5) return { ratio: weeklyVol, na: false };
+      return { ratio: null, na: true };
+    }
+    // Both null: N/A only if either source shows < 5 prior days.
+    return { ratio: null, na: (dailyVolN !== null && dailyVolN < 5) || (weeklyVolN !== null && weeklyVolN < 5) };
+  }
 
   // Score one stock. f = fundamentals-v2 record, m = market-data record
   // (or null), w = weekly-prices record (or null), rupee = the
@@ -129,22 +152,8 @@ var LensLogic = (function () {
     // fewer, the check is N/A ("too few prior days"). When both sources
     // are null, N/A only if either source shows < 5 prior days —
     // otherwise the check fails as missing, exactly as before.
-    var dailyVol = (m && typeof m.v === 'number') ? m.v : null;
-    var dailyVolN = (m && typeof m.vn === 'number') ? m.vn : null;
-    var weeklyVol = (w && w.vol !== null && w.vol !== undefined && w.volAvg15 !== null && w.volAvg15 !== undefined && w.volAvg15 > 0)
-      ? w.vol / w.volAvg15 : null;
-    var weeklyVolN = (w && typeof w.volN === 'number') ? w.volN : null;
-    var volRatio = null, volNA = false;
-    if (dailyVol !== null) {
-      if (dailyVolN !== null && dailyVolN >= 5) volRatio = dailyVol;
-      else volNA = true; // daily ratio exists but too few prior days
-    } else if (weeklyVol !== null) {
-      if (weeklyVolN !== null && weeklyVolN >= 5) volRatio = weeklyVol;
-      else volNA = true;
-    } else {
-      // Both null: N/A only if either source shows < 5 prior days.
-      volNA = (dailyVolN !== null && dailyVolN < 5) || (weeklyVolN !== null && weeklyVolN < 5);
-    }
+    var vol = volRatioOf(m, w);
+    var volRatio = vol.ratio, volNA = vol.na;
     var aboveDma = (w && w.dma200 !== null && w.dma200 !== undefined && price) ? price > w.dma200 : null;
     var em = earningsMomentum(f.qProfit);
     var fiiRising = (f.fiiNow !== null && f.fiiNow !== undefined && f.fiiYearAgo !== null && f.fiiYearAgo !== undefined)
@@ -280,6 +289,189 @@ var LensLogic = (function () {
     return out;
   }
 
-  return { LENSES: LENSES, scoreStock: scoreStock, verdict: verdict, compute: compute };
+  // Rank parameters (v12): the raw numeric values behind the combined
+  // percentile rank, one per distinct parameter used across the 7 lenses
+  // — each counted ONCE, so P/E, D/E and ROCE no longer get 3–5 votes
+  // through different lenses. Same fields, formulas and fallbacks as
+  // scoreStock (5y growth with 3y fallback; banks skip debt checks);
+  // null = N/A for that parameter. Dropped: the rupee check (identical
+  // for every stock — zero ranking power), trend dots (duplicate of the
+  // 5-day return), "borrowings lower than 3y ago" (duplicate of D/E).
+  // 3y price CAGR is scored higher-better as momentum even though
+  // Burry's lens reads a negative 3y CAGR as cheap — value captures
+  // cheapness separately via P/E, P/B, PEG and 52w distance.
+  function rankParams(f, m, w, isFinancial, pl) {
+    var price = (m && m.p !== undefined) ? m.p : f.price;
+    var peDaily = (f.pe !== null && f.pe !== undefined && f.price !== null && f.price !== undefined && f.price !== 0 && price !== null && price !== undefined && price !== 0)
+      ? price * f.pe / f.price : null;
+    if (peDaily !== null && peDaily <= 0) peDaily = null; // loss-makers / bad data are N/A, not "cheapest"
+    var pb = (f.bookValue && price) ? price / f.bookValue : null;
+    if (pb !== null && pb <= 0) pb = null;
+    var peg = (peDaily !== null && f.profit3 !== null && f.profit3 !== undefined && f.profit3 > 0)
+      ? peDaily / f.profit3 : null;
+    if (peg !== null && peg <= 0) peg = null;
+    var belowHigh = (f.high52 !== null && f.high52 !== undefined && price)
+      ? ((f.high52 - price) / f.high52) * 100 : null;
+    var sales5 = eff5(f, 'sales');
+    var profit5 = eff5(f, 'profit');
+    var em = earningsMomentum(f.qProfit);
+    var de = isFinancial ? null : ((f.debtEquity !== null && f.debtEquity !== undefined) ? f.debtEquity : null);
+    // Promoter holding: 0 or missing is N/A (same rule as the pledging
+    // check — widely-held banks etc. carry 0 by structure, not by choice).
+    var promoter = (f.promoter !== null && f.promoter !== undefined && f.promoter !== 0) ? f.promoter : null;
+    var pledged = (pl && pl.pledgedPct !== null && pl.pledgedPct !== undefined) ? pl.pledgedPct : null;
+    var promoterHeld = (pl && pl.promoterPct !== null && pl.promoterPct !== undefined) ? pl.promoterPct : null;
+    if (pledged === null || promoterHeld === null || promoterHeld === 0) pledged = null;
+    var vol = volRatioOf(m, w);
+    var vsDma = (w && w.dma200 !== null && w.dma200 !== undefined && price)
+      ? ((price - w.dma200) / w.dma200) * 100 : null;
+    var fiiChg = (f.fiiNow !== null && f.fiiNow !== undefined && f.fiiYearAgo !== null && f.fiiYearAgo !== undefined)
+      ? f.fiiNow - f.fiiYearAgo : null;
+    return {
+      quality: {
+        roce: (f.roce !== null && f.roce !== undefined) ? f.roce : null,
+        roe: (f.roe !== null && f.roe !== undefined) ? f.roe : null,
+        salesGrowth: sales5.v,
+        profitGrowth: profit5.v,
+        earnMom: em.na ? null : (em.gLatest - em.gPrev),
+        de: de,
+        promoter: promoter,
+        pledging: pledged,
+      },
+      value: { pe: peDaily, pb: pb, peg: peg, belowHigh: belowHigh },
+      momentum: {
+        move5: fiveDayMove(m && m.m),
+        volRatio: vol.ratio,
+        vsDma: vsDma,
+        cagr3: (f.priceCagr3 !== null && f.priceCagr3 !== undefined) ? f.priceCagr3 : null,
+        fiiChg: fiiChg,
+      },
+    };
+  }
+
+  // Parameter → sub-rank map. "lower" means lower is better (percentile
+  // is inverted for those). Equal weights everywhere: a sub-rank score
+  // is the mean of its available parameter percentiles; the combined
+  // score is the mean of the available sub-rank scores.
+  var RANK_PARAMS = {
+    quality: [
+      { key: 'roce', lower: false },
+      { key: 'roe', lower: false },
+      { key: 'salesGrowth', lower: false },
+      { key: 'profitGrowth', lower: false },
+      { key: 'earnMom', lower: false },
+      { key: 'de', lower: true },
+      { key: 'promoter', lower: false },
+      { key: 'pledging', lower: true },
+    ],
+    value: [
+      { key: 'pe', lower: true },
+      { key: 'pb', lower: true },
+      { key: 'peg', lower: true },
+      { key: 'belowHigh', lower: false },
+    ],
+    momentum: [
+      { key: 'move5', lower: false },
+      { key: 'volRatio', lower: false },
+      { key: 'vsDma', lower: false },
+      { key: 'cagr3', lower: false },
+      { key: 'fiiChg', lower: false },
+    ],
+  };
+
+  // Percentile ranks (0–100) for a list of {sym, v} with non-null v,
+  // higher v = higher percentile, ties share the average rank. A single
+  // value scores 50 (no information). Linear: (avgRank)/(n-1)*100.
+  function percentileMap(entries) {
+    var sorted = entries.slice().sort(function (a, b) { return a.v - b.v; });
+    var n = sorted.length;
+    var out = {};
+    if (n === 0) return out;
+    if (n === 1) { out[sorted[0].sym] = 50; return out; }
+    var i = 0;
+    while (i < n) {
+      var j = i;
+      while (j + 1 < n && sorted[j + 1].v === sorted[i].v) j++;
+      var pct = ((i + j) / 2) / (n - 1) * 100;
+      for (var k = i; k <= j; k++) out[sorted[k].sym] = pct;
+      i = j + 1;
+    }
+    return out;
+  }
+
+  // Combined percentile rank for a symbol list, within that tab's
+  // universe (watchlist 151, Nifty 500 500). Same inputs as compute();
+  // symbols with no fundamentals or no market data are skipped (no
+  // rank — the page renders them grey, never a made-up rank).
+  // Returns {sym: {rank, score, q, v, m}} — score is the combined
+  // 0–100, q/v/m the Quality/Value/Momentum sub-rank scores (null when
+  // a sub-rank has no available parameters for that stock). Rank 1..N
+  // by combined score desc; ties broken by Quality, then Value, then
+  // symbol (deterministic). Stocks with no sub-rank at all score null
+  // and rank last, by symbol.
+  function computeRank(fundStocks, mdStocks, wp, secMap, symbols, pledging) {
+    var wpStocks = (wp && wp.stocks) || {};
+    var params = {};
+    var list = [];
+    for (var i = 0; i < symbols.length; i++) {
+      var sym = symbols[i];
+      var f = fundStocks ? fundStocks[sym] : null;
+      if (!f) continue;
+      var m = (mdStocks && mdStocks[sym]) || null;
+      if (!m) continue;
+      var w = wpStocks[sym] || null;
+      var isFinancial = secMap && secMap[sym] === 'Financial Services';
+      params[sym] = rankParams(f, m, w, isFinancial, pledging ? pledging[sym] : null);
+      list.push(sym);
+    }
+    var pct = {}; // sym -> {quality: {param: pct}, value: {...}, momentum: {...}}
+    Object.keys(RANK_PARAMS).forEach(function (sub) {
+      RANK_PARAMS[sub].forEach(function (spec) {
+        var entries = [];
+        list.forEach(function (sym) {
+          var v = params[sym][sub][spec.key];
+          if (v !== null && v !== undefined) entries.push({ sym: sym, v: v });
+        });
+        var map = percentileMap(entries);
+        list.forEach(function (sym) {
+          var p = map[sym];
+          if (p === undefined) return;
+          if (spec.lower) p = 100 - p;
+          if (!pct[sym]) pct[sym] = {};
+          if (!pct[sym][sub]) pct[sym][sub] = {};
+          pct[sym][sub][spec.key] = p;
+        });
+      });
+    });
+    var rows = list.map(function (sym) {
+      var sub = {};
+      Object.keys(RANK_PARAMS).forEach(function (s) {
+        var vals = pct[sym] && pct[sym][s] ? Object.keys(pct[sym][s]).map(function (k) { return pct[sym][s][k]; }) : [];
+        sub[s] = vals.length ? vals.reduce(function (a, b) { return a + b; }, 0) / vals.length : null;
+      });
+      var avail = Object.keys(sub).map(function (k) { return sub[k]; }).filter(function (x) { return x !== null; });
+      var score = avail.length ? avail.reduce(function (a, b) { return a + b; }, 0) / avail.length : null;
+      return { sym: sym, score: score, q: sub.quality, v: sub.value, m: sub.momentum };
+    });
+    rows.sort(function (a, b) {
+      if (a.score === null && b.score === null) return a.sym < b.sym ? -1 : 1;
+      if (a.score === null) return 1;
+      if (b.score === null) return -1;
+      return b.score - a.score || (b.q || 0) - (a.q || 0) || (b.v || 0) - (a.v || 0) || (a.sym < b.sym ? -1 : 1);
+    });
+    var out = {};
+    rows.forEach(function (r, idx) {
+      out[r.sym] = {
+        rank: idx + 1,
+        score: r.score === null ? null : Math.round(r.score * 10) / 10,
+        q: r.q === null ? null : Math.round(r.q * 10) / 10,
+        v: r.v === null ? null : Math.round(r.v * 10) / 10,
+        m: r.m === null ? null : Math.round(r.m * 10) / 10,
+      };
+    });
+    return out;
+  }
+
+  return { LENSES: LENSES, scoreStock: scoreStock, verdict: verdict, compute: compute, computeRank: computeRank };
 })();
 if (typeof module !== 'undefined' && module.exports) module.exports = LensLogic;

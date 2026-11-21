@@ -12,7 +12,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Lenses">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v11 -->
+<!-- my-watchlist-lenses-v12 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -33,6 +33,9 @@
   .dots{display:flex;gap:2px;gap:max(2px,1cqw);justify-content:center}
   .dot{width:5px;height:5px;width:max(5px,3cqw);height:max(5px,3cqw);border-radius:50%}
   .dot.up{background:#22c55e}.dot.dn{background:#ef4444}.dot.flat{background:#4b5563}
+  .rankline{font-size:11px;font-size:13cqw;font-weight:800;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:nowrap}
+  .subrank{font-size:9.5px;font-size:11cqw;color:#d1d5db;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:nowrap}
+  #fcircles.disabled{opacity:.35;pointer-events:none}
   .nomatch{grid-column:1/-1;color:#9ca3af;text-align:center;padding-top:40px;font-size:14px}
   .sechead{grid-column:1/-1;background:#111827;border-radius:4px;display:flex;justify-content:space-between;align-items:center;padding:7px 10px;font-size:13px;font-weight:700}
   .sechead .avg{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-weight:700}
@@ -107,6 +110,7 @@
   <button class="sectgl hdr" id="sectorToggleHdr">Sector</button>
   <button class="sectgl hdr" id="azToggleHdr">A–Z</button>
   <button class="sectgl hdr" id="lensToggleHdr">Lenses</button>
+  <button class="sectgl hdr" id="rankToggleHdr">Rank</button>
   <button class="gear" id="gearBtn" aria-label="Settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg><span class="fdot"></span></button>
 </header>
 <main><div id="grid"></div></main>
@@ -157,16 +161,19 @@ let REAL=null, REAL_ASOF="", REAL_SESSION="", LAST_FALLBACK=0, LAST_COUNT=0;
 // LENS_ASOF = fundamentals fetchedAtIST (the slow data's as-of);
 // LENS_SESSION = market-data sessionDate (the daily checks' as-of).
 let LENS_WL=null, LENS_N500=null;
+let RANK_WL=null, RANK_N500=null;
 let FUND=null, FUND_ASOF="", WP=null, RUPEE=null, PLEDGE=null;
 let LENS_ASOF="", LENS_SESSION="";
 const ORDER=["Berkshire","Burry","Axelrod","Jhunjhunwala","Lynch","Marks","Druckenmiller"];
 const LENS_SHORT={Berkshire:"BUF",Burry:"BRY",Axelrod:"AXL",Jhunjhunwala:"RJ",Lynch:"LYN",Marks:"MRK",Druckenmiller:"DRU"};
 function activeOrder(){ return ORDER; }
 function activeLens(){ return TAB==="wl"?LENS_WL:LENS_N500; }
+function activeRank(){ return TAB==="wl"?RANK_WL:RANK_N500; }
 let FILTER=[0,0,0,0,0,0,0];
 let SECTOR_MODE=false;
 let AZ_MODE=false;
 let LENS_MODE=false;
+let RANK_MODE=false;
 let TAB="wl"; // "wl" (default) or "n500"
 let FULL_ROWS=[]; // rows of the active tab, in default (return) order
 function fmtINR(n){return n.toLocaleString("en-IN",{minimumFractionDigits:2,maximumFractionDigits:2});}
@@ -190,8 +197,11 @@ function updateSettings(){
   gap.textContent=(!REAL||LAST_FALLBACK<=0)?"":LAST_FALLBACK+" of "+LAST_COUNT+" stocks showing sample values (feed gap)";
   const nd=TAB==="n500"?nodataList():[];
   document.getElementById("nodataLine").textContent=nd.length?nd.map(function(x){return x.sym;}).join(", ")+": no market data yet (feed gap) — no price, no lens verdicts":"";
-  // Legend: 7 lens dots on both tabs (rulebook v0.2).
-  document.getElementById("legendLine").innerHTML="7 lens dots — Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks, Druckenmiller (<span style='color:#22c55e'>●</span> lens likes it, <span style='color:#ef4444'>●</span> lens avoids it, <span style='color:#6b7280'>●</span> neutral)";
+  // Legend: 7 lens dots on both tabs (rulebook v0.2), or the rank
+  // explanation while rank mode is on.
+  document.getElementById("legendLine").innerHTML=RANK_MODE?
+    "Rank mode — #N is the combined percentile rank (1 = best of the tab), 0–100; Q/V/M are the Quality / Value / Momentum sub-ranks. Tiles sort by rank.":
+    "7 lens dots — Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks, Druckenmiller (<span style='color:#22c55e'>●</span> lens likes it, <span style='color:#ef4444'>●</span> lens avoids it, <span style='color:#6b7280'>●</span> neutral)";
   // Pledging: the Jhunjhunwala pledging check is live for My watchlist
   // (Stocks Sena, v10); Nifty 500 gets it after Saturday's refresh.
   document.getElementById("pledgeLine").textContent="Jhunjhunwala lens: promoter pledging is live for My watchlist (Stocks Sena) — Nifty 500 gets it after Saturday's refresh, its stocks show N/A until then.";
@@ -249,7 +259,7 @@ function computeLenses(){
   // loaded data files. No pre-computed lens.json any more. If the logic
   // file or a data file failed to load, leave the lenses empty (grey
   // dots, "data not available yet") rather than breaking the page.
-  if(typeof LensLogic==="undefined"||!FUND||!REAL){ LENS_WL=null; LENS_N500=null; return; }
+  if(typeof LensLogic==="undefined"||!FUND||!REAL){ LENS_WL=null; LENS_N500=null; RANK_WL=null; RANK_N500=null; return; }
   // Pledging is live for My watchlist only (v10): pledging.json covers
   // the 151 watchlist symbols. Nifty 500 gets pledging after the
   // Saturday refresh fetches the union — pass PLEDGE for N500 then.
@@ -257,6 +267,12 @@ function computeLenses(){
   LENS_N500=LensLogic.compute(FUND,REAL,WP,SECTORS,N500_SYMS,null);
   LENS_ASOF=FUND_ASOF;
   LENS_SESSION=REAL_SESSION;
+  // Combined rank (v12): same data files, same pledging rule as the
+  // lenses — N500 pledging is N/A until the flip happens.
+  if(typeof LensLogic.computeRank==="function"){
+    RANK_WL=LensLogic.computeRank(FUND,REAL,WP,SECTORS,WL_SYMS,PLEDGE);
+    RANK_N500=LensLogic.computeRank(FUND,REAL,WP,SECTORS,N500_SYMS,null);
+  } else { RANK_WL=null; RANK_N500=null; }
 }
 function lensDots(sym){
   // Lens verdicts as dots: green=1, red=0, neutral/no-verdict=null (grey).
@@ -275,12 +291,21 @@ function realRow(sym){
 }
 function cellHtml(r){
   const pctTxt=(r.pct>=0?"+":"")+r.pct.toFixed(2)+"%";
-  const dots=r.dots.map(function(v){
-    return '<span class="dot '+(v===1?"up":v===0?"dn":"flat")+'"></span>';
-  }).join("");
   // Very small amber dot on Nifty 500 tiles for stocks that are also in
   // My watchlist (watchlist tab needs none — every tile there is one).
   const badge=(TAB==="n500"&&WL_SET.has(r.sym))?'<span class="wlbadge" title="In My watchlist"></span>':"";
+  // Rank mode: rank number + combined score + Q/V/M sub-ranks instead
+  // of the 7 lens dots. "–" where a sub-rank has no data for the stock.
+  if(RANK_MODE){
+    const rkTxt=r.rk===null?"—":"#"+r.rk;
+    const scTxt=r.score===null?"—":r.score.toFixed(0);
+    const sub="Q "+(r.q===null?"–":r.q.toFixed(0))+" · V "+(r.v===null?"–":r.v.toFixed(0))+" · M "+(r.m===null?"–":r.m.toFixed(0));
+    return '<div class="cell" data-sym="'+r.sym+'" style="background:'+colorFor(r.pct)+'">'+badge+'<span class="sym">'+r.sym+
+      '</span><span class="ret">'+pctTxt+'</span><span class="rankline">'+rkTxt+' · '+scTxt+'</span><span class="subrank">'+sub+'</span></div>';
+  }
+  const dots=r.dots.map(function(v){
+    return '<span class="dot '+(v===1?"up":v===0?"dn":"flat")+'"></span>';
+  }).join("");
   return '<div class="cell" data-sym="'+r.sym+'" style="background:'+colorFor(r.pct)+'">'+badge+'<span class="sym">'+r.sym+
     '</span><span class="ret">'+pctTxt+'</span><span class="dots">'+dots+'</span></div>';
 }
@@ -293,6 +318,9 @@ function greyCellHtml(name,label,kind,sym){
   return '<div class="cell grey" '+attr+' data-name="'+esc(name)+'"><span class="uname">'+esc(name)+'</span><span class="ulabel">'+esc(label)+'</span></div>';
 }
 function render(){
+  // The dot filter does not apply in rank mode (there are no dots to
+  // filter on); the circles are dimmed and inert until lens mode returns.
+  document.getElementById("fcircles").classList.toggle("disabled",RANK_MODE);
   const grid=document.getElementById("grid");
   grid.style.gridTemplateColumns="repeat(25,1fr)";
   let fallback=0;
@@ -305,13 +333,19 @@ function render(){
     const r=realRow(sym); if(!r.real) fallback++;
     let g=0,rd=0;
     r.dots.forEach(function(d){ if(d===1)g++; else if(d===0)rd++; });
-    return {sym:sym,pct:r.pct,dots:r.dots,g:g,r:rd};
+    const rk=activeRank();
+    const rec=rk?rk[sym]:null;
+    return {sym:sym,pct:r.pct,dots:r.dots,g:g,r:rd,rk:rec?rec.rank:null,score:rec?rec.score:null,q:rec?rec.q:null,v:rec?rec.v:null,m:rec?rec.m:null};
   }).sort(function(a,b){return b.pct-a.pct||(a.sym<b.sym?-1:1);});
   FULL_ROWS=full;
   // Lens sort: green count desc, then red count asc, then today's return desc.
   const lensCmp=function(a,b){return b.g-a.g||a.r-b.r||b.pct-a.pct||(a.sym<b.sym?-1:1);};
-  const disp=LENS_MODE?full.slice().sort(lensCmp):AZ_MODE?full.slice().sort(function(a,b){return a.sym<b.sym?-1:1;}):full;
-  const rows=disp.filter(function(r){
+  // Rank sort: combined rank asc (#1 first); unranked (no data) last.
+  const rankCmp=function(a,b){return (a.rk===null?1e9:a.rk)-(b.rk===null?1e9:b.rk)||(a.sym<b.sym?-1:1);};
+  const disp=RANK_MODE?full.slice().sort(rankCmp):LENS_MODE?full.slice().sort(lensCmp):AZ_MODE?full.slice().sort(function(a,b){return a.sym<b.sym?-1:1;}):full;
+  // The dot filter does not apply in rank mode; the filter state is
+  // kept and applies again when lens mode returns.
+  const rows=RANK_MODE?disp:disp.filter(function(r){
     return FILTER.every(function(f,i){
       if(f===0||i>=r.dots.length) return true;
       return f===1?r.dots[i]===1:r.dots[i]===0;
@@ -319,7 +353,9 @@ function render(){
   });
   LAST_FALLBACK=fallback; LAST_COUNT=SYMS.length;
   // Settings legend describes the active sort.
-  document.getElementById("orderLine").innerHTML=LENS_MODE?
+  document.getElementById("orderLine").innerHTML=RANK_MODE?
+    'Top-left = <b>#1 rank</b> · Bottom-right = <b>lowest rank</b>':
+    LENS_MODE?
     'Top-left = <b>most lens greens</b> · Bottom-right = <b>most lens reds</b>':
     'Top-left = <b>biggest gainer</b> · Bottom-right = <b>biggest loser</b>';
   // Grey placeholder tiles: priced tiles first, grey tiles at the end.
@@ -345,10 +381,13 @@ function render(){
     const avg=function(g){ return g.reduce(function(t,r){return t+r.pct;},0)/g.length; };
     const avgG=function(g){ return g.reduce(function(t,r){return t+r.g;},0)/g.length; };
     const avgR=function(g){ return g.reduce(function(t,r){return t+r.r;},0)/g.length; };
-    // Sector-block order follows the active sort: lens mode ranks sectors
-    // by average greens (then fewest reds, then average return); A–Z is
-    // alphabetical; default is average return desc.
+    // Sector-block order follows the active sort: rank mode ranks
+    // sectors by average combined score; lens mode by average greens
+    // (then fewest reds, then average return); A–Z is alphabetical;
+    // default is average return desc.
+    const avgScore=function(g){ const s=g.map(function(r){return r.score;}).filter(function(x){return x!==null;}); return s.length?s.reduce(function(t,x){return t+x;},0)/s.length:0; };
     const order=Object.keys(groups).sort(function(a,b){
+      if(RANK_MODE) return avgScore(groups[b])-avgScore(groups[a])||avg(groups[b])-avg(groups[a]);
       if(LENS_MODE) return avgG(groups[b])-avgG(groups[a])||avgR(groups[a])-avgR(groups[b])||avg(groups[b])-avg(groups[a]);
       return AZ_MODE?(a<b?-1:1):avg(groups[b])-avg(groups[a]);
     });
@@ -480,6 +519,7 @@ function buildFilterUI(){
     const lab=document.createElement("span"); lab.className="fclab"; lab.textContent=LENS_SHORT[lk];
     wrap.appendChild(b); wrap.appendChild(lab);
     b.onclick=function(){
+      if(RANK_MODE) return; // dot filter is inert while rank mode is on
       FILTER[i]=FILTER[i]===0?1:FILTER[i]===1?-1:0;
       paintCircles(); render();
     };
@@ -518,16 +558,24 @@ document.getElementById("sectorToggleHdr").onclick=function(){
 };
 document.getElementById("azToggleHdr").onclick=function(){
   AZ_MODE=!AZ_MODE;
-  if(AZ_MODE){ LENS_MODE=false; document.getElementById("lensToggleHdr").classList.remove("on"); }
+  if(AZ_MODE){ LENS_MODE=false; RANK_MODE=false; document.getElementById("lensToggleHdr").classList.remove("on"); document.getElementById("rankToggleHdr").classList.remove("on"); }
   this.classList.toggle("on",AZ_MODE);
   render();
 };
-// Lenses and A–Z are mutually exclusive sorts; tapping Lenses again
+// Lenses, Rank and A–Z are mutually exclusive sorts; tapping one again
 // returns to the default return sort. No flip to worst-first.
 document.getElementById("lensToggleHdr").onclick=function(){
   LENS_MODE=!LENS_MODE;
-  if(LENS_MODE){ AZ_MODE=false; document.getElementById("azToggleHdr").classList.remove("on"); }
+  if(LENS_MODE){ AZ_MODE=false; RANK_MODE=false; document.getElementById("azToggleHdr").classList.remove("on"); document.getElementById("rankToggleHdr").classList.remove("on"); }
   this.classList.toggle("on",LENS_MODE);
+  render();
+};
+// Rank mode shows the combined percentile rank + Q/V/M sub-ranks
+// instead of the 7 lens dots; the dot filter does not apply while on.
+document.getElementById("rankToggleHdr").onclick=function(){
+  RANK_MODE=!RANK_MODE;
+  if(RANK_MODE){ LENS_MODE=false; AZ_MODE=false; document.getElementById("lensToggleHdr").classList.remove("on"); document.getElementById("azToggleHdr").classList.remove("on"); }
+  this.classList.toggle("on",RANK_MODE);
   render();
 };
 // Tabs: Nifty 500 vs My watchlist (default). The lens dot filter resets
