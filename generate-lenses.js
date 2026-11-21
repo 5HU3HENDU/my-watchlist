@@ -4,10 +4,10 @@
 // per-lens check detail. Same controls per tab: Sector, A–Z, Lenses
 // sort pill, lens dot filter, settings. Default tab is My watchlist —
 // the page is still his watchlist page first.
-// DATA / LOGIC / VIEW (v14, 21 Nov 2026): the background jobs only update
+// DATA / LOGIC / VIEW (v15, 21 Nov 2026): the background jobs only update
 // DATA files (market-data.json, fundamentals-v2.json, weekly-prices.json,
 // pledging.json, analysts.json).
-// PWA (v14): the page is installable — manifest.json + sw.js + SVG icons
+// PWA (v15): the page is installable — manifest.json + sw.js + SVG icons
 // (PIL-rendered PNG embedded as base64, since push-files can't push
 // binary). The worker is NETWORK-FIRST and only handles the lens page's
 // own URLs; Shiva's index.html and his numbered files pass through
@@ -72,7 +72,7 @@ const html = `<!DOCTYPE html>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Lenses">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v14 -->
+<!-- my-watchlist-lenses-v15 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -94,7 +94,15 @@ const html = `<!DOCTYPE html>
   .dot{width:5px;height:5px;width:max(5px,3cqw);height:max(5px,3cqw);border-radius:50%}
   .dot.up{background:#22c55e}.dot.dn{background:#ef4444}.dot.flat{background:#4b5563}
   .rankline{font-size:11px;font-size:13cqw;font-weight:800;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:nowrap}
-  .subrank{font-size:9.5px;font-size:11cqw;color:#d1d5db;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:nowrap}
+  /* Rank sub-ranks (v15): same flex-cell treatment as the Analysts counts
+     (v14). The old single string "Q 76 · V 43 · M 88" at 11cqw was ~163px
+     in a 131px tile and only survived via .cell overflow:hidden, clipping
+     inside the tile. Now three equal-width cells, no separators, pure
+     9cqw (NO px floor — a 9px floor breaks the worst case "Q 100" at
+     360px viewports). Each cell is 1/3 of the tile's inner width, so
+     even three three-digit values fit by construction. */
+  .subrank{display:flex;width:100%;min-width:0;color:#d1d5db;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:9cqw;line-height:1.25}
+  .subrank>span{flex:1 1 0;min-width:0;text-align:center}
   /* Analysts View tile lines (v14): the counts row is five EQUAL flex
      cells (no "·" separators — the colours already distinguish the
      ratings), so it always fits the tile even with five two-digit
@@ -210,7 +218,7 @@ const html = `<!DOCTYPE html>
   <div style="font-size:17px;font-weight:800" id="unName"></div>
   <div class="dim" style="margin-top:6px" id="unSub">Not listed yet \u2014 no market data</div>
 </div></div>
-<script src="scripts/lenses-logic.js?v=14"></script>
+<script src="scripts/lenses-logic.js?v=15"></script>
 <script>
 const N500_SYMS=${n500Json};
 const WL_SYMS=${wlJson};
@@ -440,9 +448,15 @@ function cellHtml(r){
   if(RANK_MODE){
     const rkTxt=r.rk===null?"—":"#"+r.rk;
     const scTxt=r.score===null?"—":r.score.toFixed(0);
-    const sub="Q "+(r.q===null?"–":r.q.toFixed(0))+" · V "+(r.v===null?"–":r.v.toFixed(0))+" · M "+(r.m===null?"–":r.m.toFixed(0));
+    // Sub-ranks (v15): three equal-width flex cells (.subrank), label +
+    // value together per cell, no "·" separators — the old single string
+    // overflowed the tile the same way the v13 analyst counts did.
+    const sub='<span class="subrank">'+
+      '<span>Q '+(r.q===null?"–":r.q.toFixed(0))+'</span>'+
+      '<span>V '+(r.v===null?"–":r.v.toFixed(0))+'</span>'+
+      '<span>M '+(r.m===null?"–":r.m.toFixed(0))+'</span></span>';
     return '<div class="cell" data-sym="'+r.sym+'" style="background:'+colorFor(r.pct)+'">'+badge+'<span class="sym">'+r.sym+
-      '</span><span class="ret">'+pctTxt+'</span><span class="rankline">'+rkTxt+' · '+scTxt+'</span><span class="subrank">'+sub+'</span></div>';
+      '</span><span class="ret">'+pctTxt+'</span><span class="rankline">'+rkTxt+' · '+scTxt+'</span>'+sub+'</div>';
   }
   const dots=r.dots.map(function(v){
     return '<span class="dot '+(v===1?"up":v===0?"dn":"flat")+'"></span>';
