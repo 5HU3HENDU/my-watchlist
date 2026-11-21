@@ -4,10 +4,10 @@
 // per-lens check detail. Same controls per tab: Sector, A–Z, Lenses
 // sort pill, lens dot filter, settings. Default tab is My watchlist —
 // the page is still his watchlist page first.
-// DATA / LOGIC / VIEW (v17, 21 Nov 2026): the background jobs only update
+// DATA / LOGIC / VIEW (v18, 21 Nov 2026): the background jobs only update
 // DATA files (market-data.json, fundamentals-v2.json, weekly-prices.json,
-// pledging.json, analysts.json).
-// PWA (v17): the page is installable — manifest.json + sw.js + SVG icons
+// pledging.json, analysts.json, broker-calls.json, delivery.json).
+// PWA (v18): the page is installable — manifest.json + sw.js + SVG icons
 // (PIL-rendered PNG embedded as base64, since push-files can't push
 // binary). The worker is NETWORK-FIRST and only handles the lens page's
 // own URLs; Shiva's index.html and his numbered files pass through
@@ -72,7 +72,7 @@ const html = `<!DOCTYPE html>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Lenses">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v17 -->
+<!-- my-watchlist-lenses-v18 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -225,7 +225,7 @@ const html = `<!DOCTYPE html>
   <div style="font-size:17px;font-weight:800" id="unName"></div>
   <div class="dim" style="margin-top:6px" id="unSub">Not listed yet \u2014 no market data</div>
 </div></div>
-<script src="scripts/lenses-logic.js?v=16"></script>
+<script src="scripts/lenses-logic.js?v=18"></script>
 <script>
 const N500_SYMS=${n500Json};
 const WL_SYMS=${wlJson};
@@ -252,7 +252,7 @@ let REAL=null, REAL_ASOF="", REAL_SESSION="", LAST_FALLBACK=0, LAST_COUNT=0;
 let LENS_WL=null, LENS_N500=null;
 let RANK_WL=null, RANK_N500=null;
 let FUND=null, FUND_ASOF="", WP=null, RUPEE=null, PLEDGE=null;
-let ANALYSTS=null, BROKER=null;
+let ANALYSTS=null, BROKER=null, DELIVERY=null;
 let LENS_ASOF="", LENS_SESSION="";
 const ORDER=["Berkshire","Burry","Axelrod","Jhunjhunwala","Lynch","Marks","Druckenmiller"];
 const LENS_SHORT={Berkshire:"BUF",Burry:"BRY",Axelrod:"AXL",Jhunjhunwala:"RJ",Lynch:"LYN",Marks:"MRK",Druckenmiller:"DRU"};
@@ -362,10 +362,10 @@ async function loadAnalysts(){
   }catch(e){}
 }
 async function loadBrokerCalls(){
-  // Per-firm broker calls (broker-calls.json) — optional. The file does
-  // not exist in v14: Moneycontrol has no reliable bulk fetch (no URL
-  // discovery for the union, search API Akamai-blocked), so the popup
-  // renders without the per-firm section until a source exists.
+  // Per-firm broker calls (broker-calls.json) — optional. The file
+  // exists from v18 (Moneycontrol archive, weekly Saturday fetch).
+  // Missing file -> BROKER stays null and the popup renders without
+  // the per-firm section rather than breaking the page.
   try{
     const ctrl=new AbortController();
     const timer=setTimeout(function(){ctrl.abort();},8000);
@@ -374,6 +374,20 @@ async function loadBrokerCalls(){
     if(!r.ok) return;
     const j=await r.json();
     if(j&&j.stocks){ BROKER=j.stocks; }
+  }catch(e){}
+}
+async function loadDelivery(){
+  // Day delivery % (delivery.json, weekly Saturday fetch from
+  // Trendlyne). Missing file -> DELIVERY stays null and every stock
+  // scores Momentum out of the other 5 params rather than breaking.
+  try{
+    const ctrl=new AbortController();
+    const timer=setTimeout(function(){ctrl.abort();},8000);
+    const r=await fetch("delivery.json",{signal:ctrl.signal});
+    clearTimeout(timer);
+    if(!r.ok) return;
+    const j=await r.json();
+    if(j&&j.stocks){ DELIVERY=j.stocks; }
   }catch(e){}
 }
 function computeLenses(){
@@ -391,8 +405,8 @@ function computeLenses(){
   // Combined rank (v12): same data files, same pledging rule as the
   // lenses — PLEDGE on both tabs since v17.
   if(typeof LensLogic.computeRank==="function"){
-    RANK_WL=LensLogic.computeRank(FUND,REAL,WP,SECTORS,WL_SYMS,PLEDGE);
-    RANK_N500=LensLogic.computeRank(FUND,REAL,WP,SECTORS,N500_SYMS,PLEDGE);
+    RANK_WL=LensLogic.computeRank(FUND,REAL,WP,SECTORS,WL_SYMS,PLEDGE,DELIVERY);
+    RANK_N500=LensLogic.computeRank(FUND,REAL,WP,SECTORS,N500_SYMS,PLEDGE,DELIVERY);
   } else { RANK_WL=null; RANK_N500=null; }
 }
 function lensDots(sym){
@@ -703,10 +717,10 @@ function rankHtml(sym){
 // the five counts in their colours, mean rating + Yahoo verdict key,
 // average target + upside %, target range, the 3-month trend, and the
 // % weighted score (popup only, never on the tile). Per-firm calls
-// render only when broker-calls.json exists (it does not in v14 —
-// Moneycontrol has no reliable bulk fetch: no URL discovery for the
-// union, search API Akamai-blocked). v16: the upside uses the thin-rule
-// value (grey N/A under 3 analysts) so tile and popup agree.
+// render when broker-calls.json exists (v18: Moneycontrol archive,
+// weekly Saturday fetch, last 3 months only). v16: the upside uses
+// the thin-rule value (grey N/A under 3 analysts) so tile and popup
+// agree.
 function analystHtml(sym){
   // analystView needs analysts.json AND the v14 lenses-logic.js — if
   // either is missing (e.g. a stale cached script), the section stays
@@ -882,7 +896,7 @@ overlay.addEventListener("click",function(e){ if(e.target===overlay) closeAll();
 stockOverlay.addEventListener("click",function(e){ if(e.target===stockOverlay) closeAll(); });
 unlistedOverlay.addEventListener("click",function(e){ if(e.target===unlistedOverlay) closeAll(); });
 document.addEventListener("keydown",function(e){ if(e.key==="Escape"){ closeAll(); } });
-Promise.all([loadReal(),loadFundamentals(),loadWeeklyPrices(),loadPledging(),loadAnalysts(),loadBrokerCalls()]).then(function(){ computeLenses(); buildFilterUI(); render(); });
+Promise.all([loadReal(),loadFundamentals(),loadWeeklyPrices(),loadPledging(),loadAnalysts(),loadBrokerCalls(),loadDelivery()]).then(function(){ computeLenses(); buildFilterUI(); render(); });
 </script>
 <script>
 if ('serviceWorker' in navigator) {

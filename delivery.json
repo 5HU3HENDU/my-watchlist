@@ -1,0 +1,2222 @@
+{
+ "fetchedAtIST": "21 Nov, 07:53 pm",
+ "source": "trendlyne",
+ "stocks": {
+  "360ONE": {
+   "deliveryPct": 48,
+   "asOf": "21 Nov, 2026"
+  },
+  "AADHARHFC": {
+   "deliveryPct": 74.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "AARTIIND": {
+   "deliveryPct": 57.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "AAVAS": {
+   "deliveryPct": 69.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "ABB": {
+   "deliveryPct": 35.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "ABBOTINDIA": {
+   "deliveryPct": 52.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "ABCAPITAL": {
+   "deliveryPct": 47.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "ABDL": {
+   "deliveryPct": 50.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "ABREL": {
+   "deliveryPct": 51,
+   "asOf": "21 Nov, 2026"
+  },
+  "ABSLAMC": {
+   "deliveryPct": 65.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "ACC": {
+   "deliveryPct": 56.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "ACE": {
+   "deliveryPct": 48.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "ACEVECTOR": {
+   "deliveryPct": 45.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "ACMESOLAR": {
+   "deliveryPct": 42.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "ACUTAAS": {
+   "deliveryPct": 50.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "ADANIENSOL": {
+   "deliveryPct": 48.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "ADANIENT": {
+   "deliveryPct": 34.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "ADANIGREEN": {
+   "deliveryPct": 48,
+   "asOf": "21 Nov, 2026"
+  },
+  "ADANIPORTS": {
+   "deliveryPct": 58.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "ADANIPOWER": {
+   "deliveryPct": 36.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "AEGISLOG": {
+   "deliveryPct": 50.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "AEGISVOPAK": {
+   "deliveryPct": 43.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "AEQUS": {
+   "deliveryPct": 41.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "AETHER": {
+   "deliveryPct": 46.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "AFCONS": {
+   "deliveryPct": 38,
+   "asOf": "21 Nov, 2026"
+  },
+  "AFFLE": {
+   "deliveryPct": 62.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "AIAENG": {
+   "deliveryPct": 56.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "AIIL": {
+   "deliveryPct": 43.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "AJANTPHARM": {
+   "deliveryPct": 57.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "ALGOQUANT": {
+   "deliveryPct": 21.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "ALKEM": {
+   "deliveryPct": 41.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "AMBER": {
+   "deliveryPct": 20.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "AMBUJACEM": {
+   "deliveryPct": 40.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "ANANDRATHI": {
+   "deliveryPct": 57.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "ANANTRAJ": {
+   "deliveryPct": 46,
+   "asOf": "21 Nov, 2026"
+  },
+  "ANGELONE": {
+   "deliveryPct": 27.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "ANTHEM": {
+   "deliveryPct": 53.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "ANURAS": {
+   "deliveryPct": 52.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "APARINDS": {
+   "deliveryPct": 38.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "APLAPOLLO": {
+   "deliveryPct": 49.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "APOLLOHOSP": {
+   "deliveryPct": 27.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "APOLLOTYRE": {
+   "deliveryPct": 86.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "APTUS": {
+   "deliveryPct": 55.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "AQYLON": {
+   "deliveryPct": 80,
+   "asOf": "21 Nov, 2026"
+  },
+  "ARCIL": {
+   "deliveryPct": 49.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "ARE&M": {
+   "deliveryPct": null,
+   "asOf": null
+  },
+  "ASAHIINDIA": {
+   "deliveryPct": 36.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "ASHOKLEY": {
+   "deliveryPct": 37.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "ASIANPAINT": {
+   "deliveryPct": 58.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "ASTERDM": {
+   "deliveryPct": 51.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "ASTRAL": {
+   "deliveryPct": 52.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "ATGL": {
+   "deliveryPct": 28.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "ATHERENERG": {
+   "deliveryPct": 31.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "ATUL": {
+   "deliveryPct": 32.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "AUBANK": {
+   "deliveryPct": 38.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "AUROPHARMA": {
+   "deliveryPct": 61.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "AVANCE": {
+   "deliveryPct": 53,
+   "asOf": "21 Nov, 2026"
+  },
+  "AVANTEL": {
+   "deliveryPct": 51.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "AVANTIFEED": {
+   "deliveryPct": 42,
+   "asOf": "21 Nov, 2026"
+  },
+  "AWL": {
+   "deliveryPct": 61.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "AXISBANK": {
+   "deliveryPct": 69.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "AZAD": {
+   "deliveryPct": 43.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "BAGMANE": {
+   "deliveryPct": 82.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "BAJAJ-AUTO": {
+   "deliveryPct": null,
+   "asOf": null
+  },
+  "BAJAJFINSV": {
+   "deliveryPct": 60.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "BAJAJHFL": {
+   "deliveryPct": 50.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "BAJAJHLDNG": {
+   "deliveryPct": 43.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "BAJFINANCE": {
+   "deliveryPct": 64.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "BALKRISIND": {
+   "deliveryPct": 53.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "BALRAMCHIN": {
+   "deliveryPct": 43.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "BANDHANBNK": {
+   "deliveryPct": 46.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "BANKBARODA": {
+   "deliveryPct": 55.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "BANKINDIA": {
+   "deliveryPct": 42,
+   "asOf": "21 Nov, 2026"
+  },
+  "BATAINDIA": {
+   "deliveryPct": 44.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "BBOX": {
+   "deliveryPct": 38.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "BCG": {
+   "deliveryPct": 64.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "BDL": {
+   "deliveryPct": 31.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "BEL": {
+   "deliveryPct": 46.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "BELRISE": {
+   "deliveryPct": 39.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "BEML": {
+   "deliveryPct": 42.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "BERGEPAINT": {
+   "deliveryPct": 73.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "BHARATCOAL": {
+   "deliveryPct": 49.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "BHARATFORG": {
+   "deliveryPct": 57,
+   "asOf": "21 Nov, 2026"
+  },
+  "BHARTIARTL": {
+   "deliveryPct": 69.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "BHARTIHEXA": {
+   "deliveryPct": 49.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "BHEL": {
+   "deliveryPct": 38.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "BIOCON": {
+   "deliveryPct": 53.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "BIRET": {
+   "deliveryPct": 85.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "BLS": {
+   "deliveryPct": 52.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "BLUECLOUDS": {
+   "deliveryPct": 25.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "BLUESTARCO": {
+   "deliveryPct": 21.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "BOSCHLTD": {
+   "deliveryPct": 42.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "BPCL": {
+   "deliveryPct": 48.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "BRIGADE": {
+   "deliveryPct": 39.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "BRITANNIA": {
+   "deliveryPct": 55.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "BSE": {
+   "deliveryPct": 31.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "BSOFT": {
+   "deliveryPct": 20.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "CAMS": {
+   "deliveryPct": 40.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "CANBK": {
+   "deliveryPct": 46.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "CANFINHOME": {
+   "deliveryPct": 52.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "CANHLIFE": {
+   "deliveryPct": 87.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "CAPLIPOINT": {
+   "deliveryPct": 44.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "CARBORUNIV": {
+   "deliveryPct": 62.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "CARTRADE": {
+   "deliveryPct": 45.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "CASTROLIND": {
+   "deliveryPct": 66.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "CCAVENUE": {
+   "deliveryPct": 66.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "CCL": {
+   "deliveryPct": 63.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "CDSL": {
+   "deliveryPct": null,
+   "asOf": null
+  },
+  "CEATLTD": {
+   "deliveryPct": 41.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "CEMPRO": {
+   "deliveryPct": 56.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "CENTRALBK": {
+   "deliveryPct": 39.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "CESC": {
+   "deliveryPct": 37.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "CGCL": {
+   "deliveryPct": 24.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "CGPOWER": {
+   "deliveryPct": 56.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "CHAMBLFERT": {
+   "deliveryPct": 49.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "CHENNPETRO": {
+   "deliveryPct": 40.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "CHOICEIN": {
+   "deliveryPct": 11.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "CHOLAFIN": {
+   "deliveryPct": 67.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "CHOLAHLDNG": {
+   "deliveryPct": 70.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "CIEINDIA": {
+   "deliveryPct": 52.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "CIPLA": {
+   "deliveryPct": 63.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "CLEAN": {
+   "deliveryPct": 53.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "CLEANMAX": {
+   "deliveryPct": 56.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "CMPDI": {
+   "deliveryPct": 41.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "COALINDIA": {
+   "deliveryPct": 58.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "COCHINSHIP": {
+   "deliveryPct": 46.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "COFORGE": {
+   "deliveryPct": 45.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "COHANCE": {
+   "deliveryPct": 58.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "COLPAL": {
+   "deliveryPct": 48.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "COMFINTE": {
+   "deliveryPct": 100,
+   "asOf": "21 Nov, 2026"
+  },
+  "CONCOR": {
+   "deliveryPct": 45.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "CONCORDBIO": {
+   "deliveryPct": 57.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "CORDELIA": {
+   "deliveryPct": 47.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "COROMANDEL": {
+   "deliveryPct": 47.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "CPPLUS": {
+   "deliveryPct": 52.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "CRAFTSMAN": {
+   "deliveryPct": 38.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "CREDITACC": {
+   "deliveryPct": 45.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "CRISIL": {
+   "deliveryPct": 77.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "CROMPTON": {
+   "deliveryPct": 38.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "CUB": {
+   "deliveryPct": 25.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "CUMMINSIND": {
+   "deliveryPct": 63.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "CUPID": {
+   "deliveryPct": 45.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "CYIENT": {
+   "deliveryPct": 26.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "DABUR": {
+   "deliveryPct": 55.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "DALBHARAT": {
+   "deliveryPct": 46.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "DATAPATTNS": {
+   "deliveryPct": 22.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "DEEPAKFERT": {
+   "deliveryPct": 35.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "DEEPAKNTR": {
+   "deliveryPct": 59.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "DELHIVERY": {
+   "deliveryPct": 55.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "DELTACORP": {
+   "deliveryPct": 37.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "DEVYANI": {
+   "deliveryPct": 60.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "DIVISLAB": {
+   "deliveryPct": 62.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "DIXON": {
+   "deliveryPct": 27.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "DLF": {
+   "deliveryPct": 47.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "DMART": {
+   "deliveryPct": 45.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "DOMS": {
+   "deliveryPct": 66.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "DRREDDY": {
+   "deliveryPct": 49.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "EASEMYTRIP": {
+   "deliveryPct": 25.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "ECLERX": {
+   "deliveryPct": 71.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "EICHERMOT": {
+   "deliveryPct": 46.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "EIDPARRY": {
+   "deliveryPct": 58.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "EIHOTEL": {
+   "deliveryPct": 17.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "ELECON": {
+   "deliveryPct": 46.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "ELGIEQUIP": {
+   "deliveryPct": 48.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "EMAMILTD": {
+   "deliveryPct": 57.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "EMBASSY": {
+   "deliveryPct": 84.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "EMCURE": {
+   "deliveryPct": 53.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "EMMVEE": {
+   "deliveryPct": 43.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "EMPOWER": {
+   "deliveryPct": 86.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "ENDURANCE": {
+   "deliveryPct": 68.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "ENGINERSIN": {
+   "deliveryPct": 40.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "ENRIN": {
+   "deliveryPct": 44.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "ESCORTS": {
+   "deliveryPct": 57.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "ESDS": {
+   "deliveryPct": 37.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "ETERNAL": {
+   "deliveryPct": 56.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "EXIDEIND": {
+   "deliveryPct": 43.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "FACT": {
+   "deliveryPct": 35.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "FCSSOFT": {
+   "deliveryPct": 67,
+   "asOf": "21 Nov, 2026"
+  },
+  "FEDERALBNK": {
+   "deliveryPct": 49.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "FINCABLES": {
+   "deliveryPct": 50.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "FIRSTCRY": {
+   "deliveryPct": 27.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "FIVESTAR": {
+   "deliveryPct": 64.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "FLUOROCHEM": {
+   "deliveryPct": 59.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "FORCEMOT": {
+   "deliveryPct": 27.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "FORTIS": {
+   "deliveryPct": 35.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "FRACTAL": {
+   "deliveryPct": 42.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "FSL": {
+   "deliveryPct": 7.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "GABRIEL": {
+   "deliveryPct": 40.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "GAIL": {
+   "deliveryPct": 59.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "GAJA": {
+   "deliveryPct": 38.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "GALLANTT": {
+   "deliveryPct": 33.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "GATECH": {
+   "deliveryPct": 54.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "GENESYS": {
+   "deliveryPct": 43.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "GESHIP": {
+   "deliveryPct": 53.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "GICRE": {
+   "deliveryPct": 81.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "GILLETTE": {
+   "deliveryPct": 58.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "GLAND": {
+   "deliveryPct": 69.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "GLAXO": {
+   "deliveryPct": 57.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "GLENMARK": {
+   "deliveryPct": 48.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "GMDCLTD": {
+   "deliveryPct": 37.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "GMRAIRPORT": {
+   "deliveryPct": 53.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "GODFRYPHLP": {
+   "deliveryPct": 31.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "GODREJCP": {
+   "deliveryPct": 57.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "GODREJIND": {
+   "deliveryPct": 62.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "GODREJPROP": {
+   "deliveryPct": 38.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "GPIL": {
+   "deliveryPct": 52.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "GRANULES": {
+   "deliveryPct": 42.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "GRAPHITE": {
+   "deliveryPct": 47.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "GRASIM": {
+   "deliveryPct": 64.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "GRAVITA": {
+   "deliveryPct": 36.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "GROWW": {
+   "deliveryPct": 61,
+   "asOf": "21 Nov, 2026"
+  },
+  "GRSE": {
+   "deliveryPct": 35.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "GTLINFRA": {
+   "deliveryPct": 45.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "GVT&D": {
+   "deliveryPct": null,
+   "asOf": null
+  },
+  "HAL": {
+   "deliveryPct": 30.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "HAPPSTMNDS": {
+   "deliveryPct": 50.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "HAVELLS": {
+   "deliveryPct": 44.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "HBLENGINE": {
+   "deliveryPct": 46.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "HCLTECH": {
+   "deliveryPct": 46.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "HDBFS": {
+   "deliveryPct": 44.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "HDFCAMC": {
+   "deliveryPct": 59.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "HDFCBANK": {
+   "deliveryPct": 63.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "HDFCLIFE": {
+   "deliveryPct": 58.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "HEGAM": {
+   "deliveryPct": 47.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "HEROMOTOCO": {
+   "deliveryPct": 48.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "HEXT": {
+   "deliveryPct": 46.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "HFCL": {
+   "deliveryPct": 100,
+   "asOf": "21 Nov, 2026"
+  },
+  "HINDALCO": {
+   "deliveryPct": 38.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "HINDCOPPER": {
+   "deliveryPct": 38,
+   "asOf": "21 Nov, 2026"
+  },
+  "HINDPETRO": {
+   "deliveryPct": 54.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "HINDUNILVR": {
+   "deliveryPct": 64,
+   "asOf": "21 Nov, 2026"
+  },
+  "HINDZINC": {
+   "deliveryPct": 41.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "HOMEFIRST": {
+   "deliveryPct": 66.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "HONASA": {
+   "deliveryPct": 59.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "HONAUT": {
+   "deliveryPct": 52.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "HSCL": {
+   "deliveryPct": 31.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "HUDCO": {
+   "deliveryPct": 43.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "HYUNDAI": {
+   "deliveryPct": 50.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "ICICIAMC": {
+   "deliveryPct": 80,
+   "asOf": "21 Nov, 2026"
+  },
+  "ICICIBANK": {
+   "deliveryPct": 65.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "ICICIGI": {
+   "deliveryPct": 55.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "ICICIPRULI": {
+   "deliveryPct": null,
+   "asOf": null
+  },
+  "IDBI": {
+   "deliveryPct": 47.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "IDEA": {
+   "deliveryPct": 26.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "IDFCFIRSTB": {
+   "deliveryPct": 50.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "IEX": {
+   "deliveryPct": 48.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "IFCI": {
+   "deliveryPct": 32.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "IGIL": {
+   "deliveryPct": 60.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "IGL": {
+   "deliveryPct": 55.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "IIFL": {
+   "deliveryPct": 45.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "IKS": {
+   "deliveryPct": 62,
+   "asOf": "21 Nov, 2026"
+  },
+  "INDHOTEL": {
+   "deliveryPct": 62.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "INDIACEM": {
+   "deliveryPct": 33.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "INDIAMART": {
+   "deliveryPct": 61.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "INDIANB": {
+   "deliveryPct": 53.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "INDIGO": {
+   "deliveryPct": 42.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "INDOTHAI": {
+   "deliveryPct": 64.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "INDUSINDBK": {
+   "deliveryPct": 38.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "INDUSTOWER": {
+   "deliveryPct": 57.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "INFY": {
+   "deliveryPct": 50.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "INOXINDIA": {
+   "deliveryPct": 28.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "INOXWIND": {
+   "deliveryPct": 37.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "INTELLECT": {
+   "deliveryPct": 40.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "IOB": {
+   "deliveryPct": 29.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "IOC": {
+   "deliveryPct": 53.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "IPCALAB": {
+   "deliveryPct": 68.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "IRB": {
+   "deliveryPct": 40.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "IRCON": {
+   "deliveryPct": 30,
+   "asOf": "21 Nov, 2026"
+  },
+  "IRCTC": {
+   "deliveryPct": 48.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "IREDA": {
+   "deliveryPct": 18.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "IRFC": {
+   "deliveryPct": 27.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "ITC": {
+   "deliveryPct": 45.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "ITCHOTELS": {
+   "deliveryPct": 52.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "ITI": {
+   "deliveryPct": 39,
+   "asOf": "21 Nov, 2026"
+  },
+  "IXIGO": {
+   "deliveryPct": 53.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "J&KBANK": {
+   "deliveryPct": null,
+   "asOf": null
+  },
+  "JAINREC": {
+   "deliveryPct": 40.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "JBCHEPHARM": {
+   "deliveryPct": null,
+   "asOf": null
+  },
+  "JBMA": {
+   "deliveryPct": 33.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "JINDALSAW": {
+   "deliveryPct": 43.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "JINDALSTEL": {
+   "deliveryPct": 44.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "JIOFIN": {
+   "deliveryPct": 47.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "JKCEMENT": {
+   "deliveryPct": 32.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "JKTYRE": {
+   "deliveryPct": 44.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "JMFINANCIL": {
+   "deliveryPct": 41.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "JPL": {
+   "deliveryPct": 64.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "JPPOWER": {
+   "deliveryPct": 36.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "JSL": {
+   "deliveryPct": 55.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "JSWCEMENT": {
+   "deliveryPct": 45.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "JSWENERGY": {
+   "deliveryPct": 40.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "JSWINFRA": {
+   "deliveryPct": 52.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "JSWSTEEL": {
+   "deliveryPct": 46.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "JUBLFOOD": {
+   "deliveryPct": 34.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "JUBLINGREA": {
+   "deliveryPct": 61.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "JWL": {
+   "deliveryPct": 32.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "JYOTICNC": {
+   "deliveryPct": 50.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "KAJARIACER": {
+   "deliveryPct": 48.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "KALYANKJIL": {
+   "deliveryPct": 16.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "KARURVYSYA": {
+   "deliveryPct": 54,
+   "asOf": "21 Nov, 2026"
+  },
+  "KAYNES": {
+   "deliveryPct": 34.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "KEC": {
+   "deliveryPct": 57.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "KEI": {
+   "deliveryPct": 40.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "KELLTONTEC": {
+   "deliveryPct": 35.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "KFINTECH": {
+   "deliveryPct": 42.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "KIMS": {
+   "deliveryPct": 55.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "KIRLOSBROS": {
+   "deliveryPct": 16.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "KIRLOSENG": {
+   "deliveryPct": 42.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "KISSHT": {
+   "deliveryPct": 32.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "KOTAKBANK": {
+   "deliveryPct": 64.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "KPIL": {
+   "deliveryPct": 67.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "KPITTECH": {
+   "deliveryPct": 30,
+   "asOf": "21 Nov, 2026"
+  },
+  "KPRMILL": {
+   "deliveryPct": 66.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "KSB": {
+   "deliveryPct": 48.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "LALPATHLAB": {
+   "deliveryPct": 51.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "LAURUSLABS": {
+   "deliveryPct": 52,
+   "asOf": "21 Nov, 2026"
+  },
+  "LEMONTREE": {
+   "deliveryPct": 52.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "LENSKART": {
+   "deliveryPct": 75.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "LGEINDIA": {
+   "deliveryPct": 66.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "LICHSGFIN": {
+   "deliveryPct": 56.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "LICI": {
+   "deliveryPct": 63.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "LINDEINDIA": {
+   "deliveryPct": 46.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "LLOYDSME": {
+   "deliveryPct": 61.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "LODHA": {
+   "deliveryPct": 37.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "LT": {
+   "deliveryPct": 59.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "LTF": {
+   "deliveryPct": 58,
+   "asOf": "21 Nov, 2026"
+  },
+  "LTFOODS": {
+   "deliveryPct": 25.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "LTM": {
+   "deliveryPct": 16.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "LTTS": {
+   "deliveryPct": 26.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "LUPIN": {
+   "deliveryPct": 59.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "M&M": {
+   "deliveryPct": null,
+   "asOf": null
+  },
+  "M&MFIN": {
+   "deliveryPct": null,
+   "asOf": null
+  },
+  "MAHABANK": {
+   "deliveryPct": 39.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "MANAPPURAM": {
+   "deliveryPct": 32.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "MANKIND": {
+   "deliveryPct": 54.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "MARICO": {
+   "deliveryPct": 59.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "MARUTI": {
+   "deliveryPct": 51.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "MAXHEALTH": {
+   "deliveryPct": 30.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "MAZDOCK": {
+   "deliveryPct": 30.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "MCLOUD": {
+   "deliveryPct": 52.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "MCX": {
+   "deliveryPct": 47.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "MEDANTA": {
+   "deliveryPct": 46.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "MEESHO": {
+   "deliveryPct": 62.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "MFSL": {
+   "deliveryPct": 80.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "MGL": {
+   "deliveryPct": 42,
+   "asOf": "21 Nov, 2026"
+  },
+  "MILKYMIST": {
+   "deliveryPct": 100,
+   "asOf": "21 Nov, 2026"
+  },
+  "MINDACORP": {
+   "deliveryPct": 60.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "MMTC": {
+   "deliveryPct": 44.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "MOBIKWIK": {
+   "deliveryPct": 16.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "MONEYVIEW": {
+   "deliveryPct": 14.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "MOSCHIP": {
+   "deliveryPct": 53.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "MOTHERSON": {
+   "deliveryPct": 51.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "MOTILALOFS": {
+   "deliveryPct": 39.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "MPHASIS": {
+   "deliveryPct": 38,
+   "asOf": "21 Nov, 2026"
+  },
+  "MRF": {
+   "deliveryPct": 59.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "MRPL": {
+   "deliveryPct": 33.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "MSUMI": {
+   "deliveryPct": 41.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "MTARTECH": {
+   "deliveryPct": 57.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "MUTHOOTFIN": {
+   "deliveryPct": 39,
+   "asOf": "21 Nov, 2026"
+  },
+  "NAM-INDIA": {
+   "deliveryPct": null,
+   "asOf": null
+  },
+  "NATCOPHARM": {
+   "deliveryPct": 48.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "NATIONALUM": {
+   "deliveryPct": 50.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "NAUKRI": {
+   "deliveryPct": 45.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "NAVA": {
+   "deliveryPct": 16.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "NAVINFLUOR": {
+   "deliveryPct": 54.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "NAZARA": {
+   "deliveryPct": 46,
+   "asOf": "21 Nov, 2026"
+  },
+  "NBCC": {
+   "deliveryPct": 37,
+   "asOf": "21 Nov, 2026"
+  },
+  "NCC": {
+   "deliveryPct": 50.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "NESTLEIND": {
+   "deliveryPct": 62.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "NETWEB": {
+   "deliveryPct": 32.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "NEULANDLAB": {
+   "deliveryPct": 51.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "NH": {
+   "deliveryPct": 30.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "NHPC": {
+   "deliveryPct": 42.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "NIACL": {
+   "deliveryPct": 35.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "NLCINDIA": {
+   "deliveryPct": 44.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "NMDC": {
+   "deliveryPct": 48,
+   "asOf": "21 Nov, 2026"
+  },
+  "NSE": {
+   "deliveryPct": null,
+   "asOf": null
+  },
+  "NSLNISP": {
+   "deliveryPct": 41.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "NTPC": {
+   "deliveryPct": 62.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "NTPCGREEN": {
+   "deliveryPct": 52.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "NUVAMA": {
+   "deliveryPct": 50.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "NUVOCO": {
+   "deliveryPct": 9.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "NYKAA": {
+   "deliveryPct": 35.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "OBEROIRLTY": {
+   "deliveryPct": 53.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "OFSS": {
+   "deliveryPct": 41.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "OIL": {
+   "deliveryPct": 49.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "OLAELEC": {
+   "deliveryPct": 21.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "OLECTRA": {
+   "deliveryPct": 28.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "ONESOURCE": {
+   "deliveryPct": 65,
+   "asOf": "21 Nov, 2026"
+  },
+  "ONGC": {
+   "deliveryPct": 62.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "PACEDIGITK": {
+   "deliveryPct": 41.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "PAGEIND": {
+   "deliveryPct": 70.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "PARADEEP": {
+   "deliveryPct": 44.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "PATANJALI": {
+   "deliveryPct": 28.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "PAYTM": {
+   "deliveryPct": 31.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "PCBL": {
+   "deliveryPct": 51.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "PERSISTENT": {
+   "deliveryPct": 41.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "PETRONET": {
+   "deliveryPct": 73.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "PFC": {
+   "deliveryPct": 54.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "PFOCUS": {
+   "deliveryPct": 23.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "PGEL": {
+   "deliveryPct": 32.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "PHOENIXLTD": {
+   "deliveryPct": 65.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "PIDILITIND": {
+   "deliveryPct": 61.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "PIIND": {
+   "deliveryPct": 41.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "PINELABS": {
+   "deliveryPct": 27.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "PIRAMALFIN": {
+   "deliveryPct": 83.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "PNB": {
+   "deliveryPct": 33.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "PNBHOUSING": {
+   "deliveryPct": 37.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "POLICYBZR": {
+   "deliveryPct": 44.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "POLYCAB": {
+   "deliveryPct": 55.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "POLYMED": {
+   "deliveryPct": 46.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "POONAWALLA": {
+   "deliveryPct": 52.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "POWERGRID": {
+   "deliveryPct": 58.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "POWERINDIA": {
+   "deliveryPct": 34.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "PPLPHARMA": {
+   "deliveryPct": 44.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "PREMIERENE": {
+   "deliveryPct": 22.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "PRESTIGE": {
+   "deliveryPct": 71.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "PRIVISCL": {
+   "deliveryPct": 60.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "PTCIL": {
+   "deliveryPct": 45.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "PVRINOX": {
+   "deliveryPct": 45.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "PWL": {
+   "deliveryPct": 24.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "RADICO": {
+   "deliveryPct": 63.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "RAILTEL": {
+   "deliveryPct": 34.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "RAINBOW": {
+   "deliveryPct": 47.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "RAMCOCEM": {
+   "deliveryPct": 65.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "RBLBANK": {
+   "deliveryPct": 45.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "RCOM": {
+   "deliveryPct": 100,
+   "asOf": "21 Nov, 2026"
+  },
+  "RECLTD": {
+   "deliveryPct": 43.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "REDINGTON": {
+   "deliveryPct": 48.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "RELIANCE": {
+   "deliveryPct": 49,
+   "asOf": "21 Nov, 2026"
+  },
+  "RHIM": {
+   "deliveryPct": 51.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "RITES": {
+   "deliveryPct": 50.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "RKFORGE": {
+   "deliveryPct": 52.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "RPOWER": {
+   "deliveryPct": 54.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "RRKABEL": {
+   "deliveryPct": 33.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "RSYSTEMS": {
+   "deliveryPct": 43.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "RUBICON": {
+   "deliveryPct": 64.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "RVNL": {
+   "deliveryPct": 35.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "SAGILITY": {
+   "deliveryPct": 50.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "SAIL": {
+   "deliveryPct": 33.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "SAILIFE": {
+   "deliveryPct": 36.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "SAMMAANCAP": {
+   "deliveryPct": 51.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "SANSERA": {
+   "deliveryPct": 55.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "SARDAEN": {
+   "deliveryPct": 46.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "SBICARD": {
+   "deliveryPct": 42.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "SBIFUNDS": {
+   "deliveryPct": 61.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "SBILIFE": {
+   "deliveryPct": 65.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "SBIN": {
+   "deliveryPct": 50.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "SCHAEFFLER": {
+   "deliveryPct": 71.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "SCHNEIDER": {
+   "deliveryPct": 51.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "SCI": {
+   "deliveryPct": 37.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "SHADOWFAX": {
+   "deliveryPct": 64.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "SHAREINDIA": {
+   "deliveryPct": 37,
+   "asOf": "21 Nov, 2026"
+  },
+  "SHIPROCKET": {
+   "deliveryPct": 44.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "SHREECEM": {
+   "deliveryPct": 74.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "SHRIPISTON": {
+   "deliveryPct": 55.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "SHRIRAMFIN": {
+   "deliveryPct": 52.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "SHYAMMETL": {
+   "deliveryPct": 46.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "SIEMENS": {
+   "deliveryPct": 26.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "SIGNATURE": {
+   "deliveryPct": 18.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "SJVN": {
+   "deliveryPct": 42,
+   "asOf": "21 Nov, 2026"
+  },
+  "SKYWAYS": {
+   "deliveryPct": 37.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "SOBHA": {
+   "deliveryPct": 56.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "SOLARINDS": {
+   "deliveryPct": 29.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "SONACOMS": {
+   "deliveryPct": 56,
+   "asOf": "21 Nov, 2026"
+  },
+  "SRF": {
+   "deliveryPct": 43.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "STARHEALTH": {
+   "deliveryPct": 88.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "STLNETWORK": {
+   "deliveryPct": 24.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "STLTECH": {
+   "deliveryPct": 100,
+   "asOf": "21 Nov, 2026"
+  },
+  "SUBEXLTD": {
+   "deliveryPct": 29.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "SUMICHEM": {
+   "deliveryPct": 53.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "SUNDARMFIN": {
+   "deliveryPct": 61.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "SUNPHARMA": {
+   "deliveryPct": 57.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "SUNTV": {
+   "deliveryPct": 21.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "SUPREMEIND": {
+   "deliveryPct": 59.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "SUZLON": {
+   "deliveryPct": 36.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "SWANCORP": {
+   "deliveryPct": 55.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "SWIGGY": {
+   "deliveryPct": 38.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "SYNGENE": {
+   "deliveryPct": 45.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "SYRMA": {
+   "deliveryPct": 36.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "TARIL": {
+   "deliveryPct": 59.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "TATACAP": {
+   "deliveryPct": 77.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "TATACHEM": {
+   "deliveryPct": 17.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "TATACOMM": {
+   "deliveryPct": 52.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "TATACONSUM": {
+   "deliveryPct": 60,
+   "asOf": "21 Nov, 2026"
+  },
+  "TATAELXSI": {
+   "deliveryPct": 15.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "TATAINVEST": {
+   "deliveryPct": 31.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "TATAPOWER": {
+   "deliveryPct": 57.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "TATASTEEL": {
+   "deliveryPct": 44.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "TATATECH": {
+   "deliveryPct": 21.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "TBOTEK": {
+   "deliveryPct": 85,
+   "asOf": "21 Nov, 2026"
+  },
+  "TCS": {
+   "deliveryPct": 26.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "TDPOWERSYS": {
+   "deliveryPct": 38.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "TECHM": {
+   "deliveryPct": 41.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "TECHNOE": {
+   "deliveryPct": 55.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "TEGA": {
+   "deliveryPct": 53.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "TEJASNET": {
+   "deliveryPct": 43.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "TENNIND": {
+   "deliveryPct": 51.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "TFCILTD": {
+   "deliveryPct": 31.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "THANGAMAYL": {
+   "deliveryPct": 69.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "THERMAX": {
+   "deliveryPct": 73.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "TIINDIA": {
+   "deliveryPct": 81,
+   "asOf": "21 Nov, 2026"
+  },
+  "TIMKEN": {
+   "deliveryPct": 81.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "TITAGARH": {
+   "deliveryPct": 40.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "TITAN": {
+   "deliveryPct": 36.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "TMCV": {
+   "deliveryPct": 42.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "TMPV": {
+   "deliveryPct": 36.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "TONBO": {
+   "deliveryPct": 27.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "TORNTPHARM": {
+   "deliveryPct": 60.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "TORNTPOWER": {
+   "deliveryPct": 85,
+   "asOf": "21 Nov, 2026"
+  },
+  "TRENT": {
+   "deliveryPct": 58.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "TRIDENT": {
+   "deliveryPct": 39.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "TRITURBINE": {
+   "deliveryPct": 42,
+   "asOf": "21 Nov, 2026"
+  },
+  "TTML": {
+   "deliveryPct": 38,
+   "asOf": "21 Nov, 2026"
+  },
+  "TURTLEMINT": {
+   "deliveryPct": 63.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "TVSMOTOR": {
+   "deliveryPct": 62.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "UBL": {
+   "deliveryPct": 50.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "UCOBANK": {
+   "deliveryPct": 30,
+   "asOf": "21 Nov, 2026"
+  },
+  "ULTRACEMCO": {
+   "deliveryPct": 51,
+   "asOf": "21 Nov, 2026"
+  },
+  "UNIONBANK": {
+   "deliveryPct": 34.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "UNITDSPR": {
+   "deliveryPct": 50.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "UNOMINDA": {
+   "deliveryPct": 59.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "UPL": {
+   "deliveryPct": 45.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "URBANCO": {
+   "deliveryPct": 36.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "USHAMART": {
+   "deliveryPct": 53.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "UTIAMC": {
+   "deliveryPct": 56.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "VAKRANGEE": {
+   "deliveryPct": 67,
+   "asOf": "21 Nov, 2026"
+  },
+  "VAML": {
+   "deliveryPct": 58.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "VBL": {
+   "deliveryPct": 69.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "VEDL": {
+   "deliveryPct": 32.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "VEDPOWER": {
+   "deliveryPct": 47.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "VIJAYA": {
+   "deliveryPct": 18,
+   "asOf": "21 Nov, 2026"
+  },
+  "VIKRAMSOLR": {
+   "deliveryPct": 47.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "VISL": {
+   "deliveryPct": 44.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "VMM": {
+   "deliveryPct": 39.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "VOGL": {
+   "deliveryPct": 52.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "VOLTAS": {
+   "deliveryPct": 29.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "VTL": {
+   "deliveryPct": 56,
+   "asOf": "21 Nov, 2026"
+  },
+  "WAAREEENER": {
+   "deliveryPct": 35.8,
+   "asOf": "21 Nov, 2026"
+  },
+  "WEBELSOLAR": {
+   "deliveryPct": 56,
+   "asOf": "21 Nov, 2026"
+  },
+  "WELCORP": {
+   "deliveryPct": 47.2,
+   "asOf": "21 Nov, 2026"
+  },
+  "WELSPUNLIV": {
+   "deliveryPct": 11.6,
+   "asOf": "21 Nov, 2026"
+  },
+  "WHIRLPOOL": {
+   "deliveryPct": 29.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "WIPRO": {
+   "deliveryPct": 43.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "WOCKPHARMA": {
+   "deliveryPct": 33.3,
+   "asOf": "21 Nov, 2026"
+  },
+  "XTRANET": {
+   "deliveryPct": 43.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "YATRA": {
+   "deliveryPct": 14.4,
+   "asOf": "21 Nov, 2026"
+  },
+  "YESBANK": {
+   "deliveryPct": 48.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "ZAGGLE": {
+   "deliveryPct": 48.1,
+   "asOf": "21 Nov, 2026"
+  },
+  "ZEEL": {
+   "deliveryPct": 49.5,
+   "asOf": "21 Nov, 2026"
+  },
+  "ZENSARTECH": {
+   "deliveryPct": 43.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "ZENTEC": {
+   "deliveryPct": 44.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "ZFCVINDIA": {
+   "deliveryPct": 46.9,
+   "asOf": "21 Nov, 2026"
+  },
+  "ZYDUSLIFE": {
+   "deliveryPct": 62.7,
+   "asOf": "21 Nov, 2026"
+  },
+  "ZYDUSWELL": {
+   "deliveryPct": 43.7,
+   "asOf": "21 Nov, 2026"
+  }
+ }
+}

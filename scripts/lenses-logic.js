@@ -300,7 +300,7 @@ var LensLogic = (function () {
   // 3y price CAGR is scored higher-better as momentum even though
   // Burry's lens reads a negative 3y CAGR as cheap — value captures
   // cheapness separately via P/E, P/B, PEG and 52w distance.
-  function rankParams(f, m, w, isFinancial, pl) {
+  function rankParams(f, m, w, isFinancial, pl, del) {
     var price = (m && m.p !== undefined) ? m.p : f.price;
     var peDaily = (f.pe !== null && f.pe !== undefined && f.price !== null && f.price !== undefined && f.price !== 0 && price !== null && price !== undefined && price !== 0)
       ? price * f.pe / f.price : null;
@@ -327,6 +327,11 @@ var LensLogic = (function () {
       ? ((price - w.dma200) / w.dma200) * 100 : null;
     var fiiChg = (f.fiiNow !== null && f.fiiNow !== undefined && f.fiiYearAgo !== null && f.fiiYearAgo !== undefined)
       ? f.fiiNow - f.fiiYearAgo : null;
+    // Day delivery % (Trendlyne, weekly Saturday snapshot): higher is
+    // better — delivery means buyers took the shares home. Guard the
+    // range: a value outside 0–100 is bad data, not a rank signal.
+    var delivery = (del && del.deliveryPct !== null && del.deliveryPct !== undefined && del.deliveryPct >= 0 && del.deliveryPct <= 100)
+      ? del.deliveryPct : null;
     return {
       quality: {
         roce: (f.roce !== null && f.roce !== undefined) ? f.roce : null,
@@ -347,6 +352,7 @@ var LensLogic = (function () {
         vsDma: vsDma,
         cagr3: (f.priceCagr3 !== null && f.priceCagr3 !== undefined) ? f.priceCagr3 : null,
         fiiChg: fiiChg,
+        delivery: delivery,
       },
     };
   }
@@ -378,6 +384,7 @@ var LensLogic = (function () {
       { key: 'vsDma', lower: false },
       { key: 'cagr3', lower: false },
       { key: 'fiiChg', lower: false },
+      { key: 'delivery', lower: false },
     ],
   };
 
@@ -412,6 +419,7 @@ var LensLogic = (function () {
       { key: 'vsDma', label: 'Price vs 200-day avg', fmt: 'signedPct' },
       { key: 'cagr3', label: 'Price CAGR 3y', fmt: 'pct' },
       { key: 'fiiChg', label: 'FII holding change', fmt: 'pp' },
+      { key: 'delivery', label: 'Delivery %', fmt: 'pct' },
     ],
   };
   function fmtRankParam(fmt, v) {
@@ -452,6 +460,9 @@ var LensLogic = (function () {
   // universe (watchlist 151, Nifty 500 500). Same inputs as compute();
   // symbols with no fundamentals or no market data are skipped (no
   // rank — the page renders them grey, never a made-up rank).
+  // delivery (v18) is the optional delivery.json map
+  // {SYM:{deliveryPct}} — null when the file failed to load, in which
+  // case every stock scores Momentum out of the other 5 params.
   // Returns {sym: {rank, score, q, v, m, detail}} — score is the combined
   // 0–100, q/v/m the Quality/Value/Momentum sub-rank scores (null when
   // a sub-rank has no available parameters for that stock), and detail
@@ -462,7 +473,7 @@ var LensLogic = (function () {
   // Rank 1..N by combined score desc; ties broken by Quality, then
   // Value, then symbol (deterministic). Stocks with no sub-rank at all
   // score null and rank last, by symbol.
-  function computeRank(fundStocks, mdStocks, wp, secMap, symbols, pledging) {
+  function computeRank(fundStocks, mdStocks, wp, secMap, symbols, pledging, delivery) {
     var wpStocks = (wp && wp.stocks) || {};
     var params = {};
     var finMap = {}; // sym -> isFinancial (for the D/E N/A reason in the detail)
@@ -475,7 +486,7 @@ var LensLogic = (function () {
       if (!m) continue;
       var w = wpStocks[sym] || null;
       var isFinancial = secMap && secMap[sym] === 'Financial Services';
-      params[sym] = rankParams(f, m, w, isFinancial, pledging ? pledging[sym] : null);
+      params[sym] = rankParams(f, m, w, isFinancial, pledging ? pledging[sym] : null, delivery ? delivery[sym] : null);
       finMap[sym] = isFinancial;
       list.push(sym);
     }
