@@ -4,10 +4,10 @@
 // per-lens check detail. Same controls per tab: Sector, A–Z, Lenses
 // sort pill, lens dot filter, settings. Default tab is My watchlist —
 // the page is still his watchlist page first.
-// DATA / LOGIC / VIEW (v16, 21 Nov 2026): the background jobs only update
+// DATA / LOGIC / VIEW (v17, 21 Nov 2026): the background jobs only update
 // DATA files (market-data.json, fundamentals-v2.json, weekly-prices.json,
 // pledging.json, analysts.json).
-// PWA (v16): the page is installable — manifest.json + sw.js + SVG icons
+// PWA (v17): the page is installable — manifest.json + sw.js + SVG icons
 // (PIL-rendered PNG embedded as base64, since push-files can't push
 // binary). The worker is NETWORK-FIRST and only handles the lens page's
 // own URLs; Shiva's index.html and his numbered files pass through
@@ -72,7 +72,7 @@ const html = `<!DOCTYPE html>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Lenses">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v16 -->
+<!-- my-watchlist-lenses-v17 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -295,9 +295,9 @@ function updateSettings(){
     ANALYST_MODE?
     "Analysts View \u2014 five counts per stock (strong buy \u00b7 buy \u00b7 hold \u00b7 sell \u00b7 strong sell, each in its own colour, zeros shown); upside % is the average analyst target vs the current price. Grey upside = fewer than 3 analysts; \u201cNo analyst coverage\u201d = none. Tiles sort by upside % (highest first; no-upside stocks last).":
     "7 lens dots \u2014 Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks, Druckenmiller (<span style='color:#22c55e'>\u25cf</span> lens likes it, <span style='color:#ef4444'>\u25cf</span> lens avoids it, <span style='color:#6b7280'>\u25cf</span> neutral)";
-  // Pledging: the Jhunjhunwala pledging check is live for My watchlist
-  // (Stocks Sena, v10); Nifty 500 gets it after Saturday's refresh.
-  document.getElementById("pledgeLine").textContent="Jhunjhunwala lens: promoter pledging is live for My watchlist (Stocks Sena) — Nifty 500 gets it after Saturday's refresh, its stocks show N/A until then.";
+  // Pledging: the Jhunjhunwala pledging check is live for both tabs
+  // (Stocks Sena; watchlist since v10, Nifty 500 since v17).
+  document.getElementById("pledgeLine").textContent="Jhunjhunwala lens: promoter pledging is live for My watchlist and Nifty 500 (Stocks Sena).";
   document.getElementById("lastUpdated").textContent=REAL?REAL_ASOF:"\u2014";
   document.getElementById("nextUpdate").textContent=nextUpdateStr();
   document.getElementById("dataStatus").textContent=REAL?"REAL DATA":"SAMPLE DATA";
@@ -382,18 +382,17 @@ function computeLenses(){
   // file or a data file failed to load, leave the lenses empty (grey
   // dots, "data not available yet") rather than breaking the page.
   if(typeof LensLogic==="undefined"||!FUND||!REAL){ LENS_WL=null; LENS_N500=null; RANK_WL=null; RANK_N500=null; return; }
-  // Pledging is live for My watchlist only (v10): pledging.json covers
-  // the 151 watchlist symbols. Nifty 500 gets pledging after the
-  // Saturday refresh fetches the union — pass PLEDGE for N500 then.
+  // Pledging is live for both tabs (v17): pledging.json covers the
+  // 554-symbol union (Stocks Sena), so both tabs pass PLEDGE.
   LENS_WL=LensLogic.compute(FUND,REAL,WP,SECTORS,WL_SYMS,PLEDGE);
-  LENS_N500=LensLogic.compute(FUND,REAL,WP,SECTORS,N500_SYMS,null);
+  LENS_N500=LensLogic.compute(FUND,REAL,WP,SECTORS,N500_SYMS,PLEDGE);
   LENS_ASOF=FUND_ASOF;
   LENS_SESSION=REAL_SESSION;
   // Combined rank (v12): same data files, same pledging rule as the
-  // lenses — N500 pledging is N/A until the flip happens.
+  // lenses — PLEDGE on both tabs since v17.
   if(typeof LensLogic.computeRank==="function"){
     RANK_WL=LensLogic.computeRank(FUND,REAL,WP,SECTORS,WL_SYMS,PLEDGE);
-    RANK_N500=LensLogic.computeRank(FUND,REAL,WP,SECTORS,N500_SYMS,null);
+    RANK_N500=LensLogic.computeRank(FUND,REAL,WP,SECTORS,N500_SYMS,PLEDGE);
   } else { RANK_WL=null; RANK_N500=null; }
 }
 function lensDots(sym){
