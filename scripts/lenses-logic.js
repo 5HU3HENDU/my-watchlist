@@ -472,7 +472,7 @@ var LensLogic = (function () {
     return out;
   }
 
-  // Analysts View (v13): pure helpers over one analysts.json record
+  // Analysts View (v14): pure helpers over one analysts.json record
   // (Yahoo recommendationTrend + financialData). Each rating has its
   // own colour — strong buy dark green, buy light green, hold grey,
   // sell light red, strong sell dark red. Hold stays grey so it never

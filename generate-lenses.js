@@ -4,10 +4,10 @@
 // per-lens check detail. Same controls per tab: Sector, A–Z, Lenses
 // sort pill, lens dot filter, settings. Default tab is My watchlist —
 // the page is still his watchlist page first.
-// DATA / LOGIC / VIEW (v13, 21 Nov 2026): the background jobs only update
+// DATA / LOGIC / VIEW (v14, 21 Nov 2026): the background jobs only update
 // DATA files (market-data.json, fundamentals-v2.json, weekly-prices.json,
 // pledging.json, analysts.json).
-// PWA (v13): the page is installable — manifest.json + sw.js + SVG icons
+// PWA (v14): the page is installable — manifest.json + sw.js + SVG icons
 // (PIL-rendered PNG embedded as base64, since push-files can't push
 // binary). The worker is NETWORK-FIRST and only handles the lens page's
 // own URLs; Shiva's index.html and his numbered files pass through
@@ -72,7 +72,7 @@ const html = `<!DOCTYPE html>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Lenses">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v13 -->
+<!-- my-watchlist-lenses-v14 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -86,7 +86,7 @@ const html = `<!DOCTYPE html>
   .gear.on-filter .fdot{display:block}
   main{flex:1;min-height:0;padding:6px}
   #grid{display:grid;grid-auto-rows:1fr;gap:3px;height:100%}
-  .cell{container-type:inline-size;position:relative;border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-width:0;padding:2px 3px;line-height:1.25;cursor:pointer}
+  .cell{container-type:inline-size;position:relative;border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-width:0;padding:2px 3px;line-height:1.25;cursor:pointer;overflow:hidden}
   .wlbadge{position:absolute;top:2px;right:2px;width:6px;height:6px;border-radius:50%;background:#fbbf24}
   .sym{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;font-size:14cqw;font-weight:700;white-space:nowrap;overflow:hidden;max-width:100%}
   .ret{font-size:10.5px;font-size:12cqw;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:nowrap;opacity:.95}
@@ -95,6 +95,18 @@ const html = `<!DOCTYPE html>
   .dot.up{background:#22c55e}.dot.dn{background:#ef4444}.dot.flat{background:#4b5563}
   .rankline{font-size:11px;font-size:13cqw;font-weight:800;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:nowrap}
   .subrank{font-size:9.5px;font-size:11cqw;color:#d1d5db;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:nowrap}
+  /* Analysts View tile lines (v14): the counts row is five EQUAL flex
+     cells (no "·" separators — the colours already distinguish the
+     ratings), so it always fits the tile even with five two-digit
+     counts; the font floor keeps it readable on narrow phones. The
+     upside line is small enough for the worst case ("upside +174.7%",
+     14 chars). "No analyst coverage" wraps to two lines instead of
+     running past the tile edge. .cell has overflow:hidden as a safety
+     net only — the sizing itself must make clipping unnecessary. */
+  .acounts{display:flex;width:100%;min-width:0;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:10px;font-size:max(9px,8.5cqw);font-weight:700;line-height:1.25}
+  .acounts>span{flex:1 1 0;min-width:0;text-align:center}
+  .aupside{font-size:8px;font-size:8.5cqw;color:#d1d5db;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:nowrap}
+  .acov{display:block;width:100%;font-size:9px;font-size:8cqw;color:#9ca3af;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;text-align:center;line-height:1.25}
   #fcircles.disabled{opacity:.35;pointer-events:none}
   .nomatch{grid-column:1/-1;color:#9ca3af;text-align:center;padding-top:40px;font-size:14px}
   .sechead{grid-column:1/-1;background:#111827;border-radius:4px;display:flex;justify-content:space-between;align-items:center;padding:7px 10px;font-size:13px;font-weight:700}
@@ -198,7 +210,7 @@ const html = `<!DOCTYPE html>
   <div style="font-size:17px;font-weight:800" id="unName"></div>
   <div class="dim" style="margin-top:6px" id="unSub">Not listed yet \u2014 no market data</div>
 </div></div>
-<script src="scripts/lenses-logic.js?v=13"></script>
+<script src="scripts/lenses-logic.js?v=14"></script>
 <script>
 const N500_SYMS=${n500Json};
 const WL_SYMS=${wlJson};
@@ -266,7 +278,7 @@ function updateSettings(){
   document.getElementById("legendLine").innerHTML=RANK_MODE?
     "Rank mode \u2014 #N is the combined percentile rank (1 = best of the tab), 0\u2013100; Q/V/M are the Quality / Value / Momentum sub-ranks. Tiles sort by rank.":
     ANALYST_MODE?
-    "Analysts View \u2014 five counts per stock (strong buy \u00b7 buy \u00b7 hold \u00b7 sell \u00b7 strong sell, each in its own colour, zeros shown); upside % is the average analyst target vs the current price. Grey upside = fewer than 3 analysts; \u201cNo analyst coverage\u201d = none.":
+    "Analysts View \u2014 five counts per stock (strong buy \u00b7 buy \u00b7 hold \u00b7 sell \u00b7 strong sell, each in its own colour, zeros shown); upside % is the average analyst target vs the current price. Grey upside = fewer than 3 analysts; \u201cNo analyst coverage\u201d = none. Tiles sort by upside % (highest first; no-upside stocks last).":
     "7 lens dots \u2014 Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks, Druckenmiller (<span style='color:#22c55e'>\u25cf</span> lens likes it, <span style='color:#ef4444'>\u25cf</span> lens avoids it, <span style='color:#6b7280'>\u25cf</span> neutral)";
   // Pledging: the Jhunjhunwala pledging check is live for My watchlist
   // (Stocks Sena, v10); Nifty 500 gets it after Saturday's refresh.
@@ -336,7 +348,7 @@ async function loadAnalysts(){
 }
 async function loadBrokerCalls(){
   // Per-firm broker calls (broker-calls.json) — optional. The file does
-  // not exist in v13: Moneycontrol has no reliable bulk fetch (no URL
+  // not exist in v14: Moneycontrol has no reliable bulk fetch (no URL
   // discovery for the union, search API Akamai-blocked), so the popup
   // renders without the per-firm section until a source exists.
   try{
@@ -388,11 +400,15 @@ function countsHtml(counts){
   // Five rating counts, each in its own colour, ALWAYS shown including
   // 0 — never collapsed or hidden. Order: strong buy, buy, hold, sell,
   // strong sell. Colours come from LensLogic.ANALYST_COLORS.
+  // Layout (v14): five equal-width flex cells (.acounts) with NO "·"
+  // separators — the old "0 · 9 · 8 · 6 · 2" string was wider than the
+  // tile and clipped the outer numbers on phones. Each cell is 1/5 of
+  // the tile's inner width, so even five two-digit counts fit.
   const cols=(typeof LensLogic!=="undefined"&&LensLogic.ANALYST_COLORS)||{strongBuy:"#15803d",buy:"#4ade80",hold:"#6b7280",sell:"#f87171",strongSell:"#b91c1c"};
   const keys=["strongBuy","buy","hold","sell","strongSell"];
-  return keys.map(function(k){
-    return '<span style="color:'+cols[k]+';font-weight:700">'+counts[k]+'</span>';
-  }).join(" \u00b7 ");
+  return '<span class="acounts">'+keys.map(function(k){
+    return '<span style="color:'+cols[k]+'">'+counts[k]+'</span>';
+  }).join("")+'</span>';
 }
 function cellHtml(r){
   const pctTxt=(r.pct>=0?"+":"")+r.pct.toFixed(2)+"%";
@@ -408,13 +424,13 @@ function cellHtml(r){
     const av=r.an;
     let countsLine, upsideLine;
     if(!av||!av.coverage){
-      countsLine='<span class="subrank" style="color:#9ca3af">No analyst coverage</span>';
+      countsLine='<span class="acov">No analyst coverage</span>';
       upsideLine="";
     } else {
-      countsLine='<span class="subrank">'+countsHtml(av.counts)+'</span>';
+      countsLine=countsHtml(av.counts);
       upsideLine=av.upside===null?
-        '<span class="subrank" style="color:#6b7280">upside N/A</span>':
-        '<span class="subrank">upside '+(av.upside>=0?"+":"")+av.upside.toFixed(1)+'%</span>';
+        '<span class="aupside" style="color:#6b7280">upside N/A</span>':
+        '<span class="aupside">upside '+(av.upside>=0?"+":"")+av.upside.toFixed(1)+'%</span>';
     }
     return '<div class="cell" data-sym="'+r.sym+'" style="background:'+colorFor(r.pct)+'">'+badge+'<span class="sym">'+r.sym+
       '</span><span class="ret">'+pctTxt+'</span>'+countsLine+upsideLine+'</div>';
@@ -472,7 +488,18 @@ function render(){
   const lensCmp=function(a,b){return b.g-a.g||a.r-b.r||b.pct-a.pct||(a.sym<b.sym?-1:1);};
   // Rank sort: combined rank asc (#1 first); unranked (no data) last.
   const rankCmp=function(a,b){return (a.rk===null?1e9:a.rk)-(b.rk===null?1e9:b.rk)||(a.sym<b.sym?-1:1);};
-  const disp=RANK_MODE?full.slice().sort(rankCmp):LENS_MODE?full.slice().sort(lensCmp):AZ_MODE?full.slice().sort(function(a,b){return a.sym<b.sym?-1:1;}):full;
+  // Analysts sort (v14): upside % desc. Stocks with no upside number
+  // (thin coverage <3 analysts -> upside null, or no coverage at all)
+  // sort last, keeping day-% order among themselves. Ties on upside
+  // keep day-% order. Applies in Analysts View only, both tabs.
+  const analystCmp=function(a,b){
+    const au=a.an?a.an.upside:null, bu=b.an?b.an.upside:null;
+    if(au===null&&bu===null) return b.pct-a.pct||(a.sym<b.sym?-1:1);
+    if(au===null) return 1;
+    if(bu===null) return -1;
+    return bu-au||b.pct-a.pct||(a.sym<b.sym?-1:1);
+  };
+  const disp=ANALYST_MODE?full.slice().sort(analystCmp):RANK_MODE?full.slice().sort(rankCmp):LENS_MODE?full.slice().sort(lensCmp):AZ_MODE?full.slice().sort(function(a,b){return a.sym<b.sym?-1:1;}):full;
   // The dot filter does not apply in rank or Analysts mode; the filter
   // state is kept and applies again when lens mode returns.
   const rows=(RANK_MODE||ANALYST_MODE)?disp:disp.filter(function(r){
@@ -485,6 +512,8 @@ function render(){
   // Settings legend describes the active sort.
   document.getElementById("orderLine").innerHTML=RANK_MODE?
     'Top-left = <b>#1 rank</b> \u00b7 Bottom-right = <b>lowest rank</b>':
+    ANALYST_MODE?
+    'Top-left = <b>highest upside</b> \u00b7 Bottom-right = <b>lowest upside</b> (stocks with no upside last)':
     LENS_MODE?
     'Top-left = <b>most lens greens</b> \u00b7 Bottom-right = <b>most lens reds</b>':
     'Top-left = <b>biggest gainer</b> \u00b7 Bottom-right = <b>biggest loser</b>';
@@ -605,15 +634,15 @@ function lensHtml(sym){
   h+='</div>';
   return h;
 }
-// Analysts section of the popup (v13): the full analyst breakdown —
+// Analysts section of the popup (v14): the full analyst breakdown —
 // the five counts in their colours, mean rating + Yahoo verdict key,
 // average target + upside %, target range, the 3-month trend, and the
 // % weighted score (popup only, never on the tile). Per-firm calls
-// render only when broker-calls.json exists (it does not in v13 —
+// render only when broker-calls.json exists (it does not in v14 —
 // Moneycontrol has no reliable bulk fetch: no URL discovery for the
 // union, search API Akamai-blocked).
 function analystHtml(sym){
-  // analystView needs analysts.json AND the v13 lenses-logic.js — if
+  // analystView needs analysts.json AND the v14 lenses-logic.js — if
   // either is missing (e.g. a stale cached script), the section stays
   // empty rather than breaking the popup.
   if(!ANALYSTS||typeof LensLogic==="undefined"||!LensLogic.analystView) return "";
