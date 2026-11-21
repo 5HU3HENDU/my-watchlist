@@ -4,10 +4,10 @@
 // per-lens check detail. Same controls per tab: Sector, A–Z, Lenses
 // sort pill, lens dot filter, settings. Default tab is My watchlist —
 // the page is still his watchlist page first.
-// DATA / LOGIC / VIEW (v15, 21 Nov 2026): the background jobs only update
+// DATA / LOGIC / VIEW (v16, 21 Nov 2026): the background jobs only update
 // DATA files (market-data.json, fundamentals-v2.json, weekly-prices.json,
 // pledging.json, analysts.json).
-// PWA (v15): the page is installable — manifest.json + sw.js + SVG icons
+// PWA (v16): the page is installable — manifest.json + sw.js + SVG icons
 // (PIL-rendered PNG embedded as base64, since push-files can't push
 // binary). The worker is NETWORK-FIRST and only handles the lens page's
 // own URLs; Shiva's index.html and his numbered files pass through
@@ -72,7 +72,7 @@ const html = `<!DOCTYPE html>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Lenses">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v15 -->
+<!-- my-watchlist-lenses-v16 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -156,6 +156,13 @@ const html = `<!DOCTYPE html>
   .lcheck .thr,.lcheck .val{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#9ca3af;text-align:right;white-space:nowrap}
   .lcheck .mk{text-align:center;font-weight:800}
   .lcheck .mk.ok{color:#22c55e}.lcheck .mk.no{color:#ef4444}.lcheck .mk.na{color:#6b7280}
+  /* Rank breakdown rows (v16): same 3-column grid as the lens checks
+     (parameter | value | percentile score), no mark column — the
+     percentile IS the mark. Values are short (e.g. "24.5%", "+12.3 pp",
+     "scores 91.2"), so the grid fits the phone panel with no media
+     override. */
+  .rcheck{display:grid;grid-template-columns:1fr auto auto;gap:8px;font-size:12px;line-height:1.7;color:#d1d5db}
+  .rcheck .val,.rcheck .pct{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#9ca3af;text-align:right;white-space:nowrap}
   .lnote{font-size:11px;color:#9ca3af;margin-top:2px}
   .lflag{font-size:12px;color:#fbbf24;margin-top:6px}
   .pill{display:inline-block;background:#1f2937;border:1px solid #4b5563;border-radius:999px;padding:1px 10px;font-size:12px;margin:2px 4px 2px 0}
@@ -208,8 +215,8 @@ const html = `<!DOCTYPE html>
   <div class="srow"><span style="font-size:20px;font-weight:800" id="stPrice"></span> <span id="stChange" style="font-weight:700"></span></div>
   <div class="srow"><div class="dim" style="font-size:12px">Last 5 days</div><div id="stMoves" class="moves"></div></div>
   <div id="stLens"></div>
-  <div class="srow" id="stAnalysts"></div>
   <div class="srow" id="stRank"></div>
+  <div class="srow" id="stAnalysts"></div>
   <div class="srow" id="stIndices"></div>
   <div class="srow dim" style="font-size:12px">Data as of <span id="stAsof">\u2014</span></div>
   <div class="srow"><a id="stGf" href="#" target="_blank" rel="noopener" style="color:#fbbf24;font-weight:700;text-decoration:none">Google Finance \u2197</a></div>
@@ -218,7 +225,7 @@ const html = `<!DOCTYPE html>
   <div style="font-size:17px;font-weight:800" id="unName"></div>
   <div class="dim" style="margin-top:6px" id="unSub">Not listed yet \u2014 no market data</div>
 </div></div>
-<script src="scripts/lenses-logic.js?v=15"></script>
+<script src="scripts/lenses-logic.js?v=16"></script>
 <script>
 const N500_SYMS=${n500Json};
 const WL_SYMS=${wlJson};
@@ -593,10 +600,16 @@ function openStock(sym){
     const pct=p[1];
     return '<span class="mv"><span class="md">'+esc(p[0])+'</span><span style="color:'+(pct>=0?"#22c55e":"#ef4444")+'">'+(pct>=0?"+":"")+pct.toFixed(2)+'%</span></span>';
   }).join(""):'<span class="dim">No recent moves</span>';
-  // Lens breakdown.
+  // Popup sections (v16): Lenses, Rank, Analysts — ALWAYS all three,
+  // identical in every mode (Lenses / Rank / Analysts View / A–Z,
+  // Sector, both tabs). None of the three section builders reads a
+  // mode flag, so the popup is consistent by construction. (The old
+  // "Rank today: #N" one-liner was the row's position in the
+  // return-sorted list, not the combined rank — replaced by the full
+  // rank section below.)
   document.getElementById("stLens").innerHTML=lensHtml(sym);
+  document.getElementById("stRank").innerHTML=rankHtml(sym);
   document.getElementById("stAnalysts").innerHTML=analystHtml(sym);
-  document.getElementById("stRank").textContent="Rank today: #"+(idx+1)+" of "+FULL_ROWS.length;
   const pills=SUB.filter(function(t){return t.list.indexOf(sym)>=0;}).map(function(t){return t.label;});
   if(WL_SYMS.indexOf(sym)>=0) pills.push("My watchlist");
   document.getElementById("stIndices").innerHTML=pills.map(function(p){return '<span class="pill">'+p+'</span>';}).join("");
@@ -648,13 +661,53 @@ function lensHtml(sym){
   h+='</div>';
   return h;
 }
+// Rank section of the popup (v16): the combined percentile rank, the
+// three sub-rank scores, and the per-parameter breakdown — which
+// parameters feed each sub-rank, their values, and the percentile each
+// one scores. Shown for EVERY stock in EVERY mode (Shiva: the popup
+// must be consistent irrespective of the filter/button clicked). The
+// TILE layout is untouched — rank/sub-ranks stay off the tile outside
+// Rank mode (that part of the 21 Nov spec is still on hold).
+function rankHtml(sym){
+  // No rank logic loaded (e.g. a stale cached script) -> say so, never
+  // a made-up rank.
+  if(typeof LensLogic==="undefined"||typeof LensLogic.computeRank!=="function"){
+    return '<div style="border-top:1px solid #374151;padding-top:10px;margin-top:10px"><div style="font-weight:800;margin-bottom:2px">Rank</div><div class="dim">Rank data not available — the page could not load the rank logic.</div></div>';
+  }
+  const rk=activeRank();
+  const rec=rk?rk[sym]:null;
+  if(!rec){
+    return '<div style="border-top:1px solid #374151;padding-top:10px;margin-top:10px"><div style="font-weight:800;margin-bottom:2px">Rank</div><div class="dim">Not ranked — no market data for this stock, so there is no combined rank.</div></div>';
+  }
+  const N=FULL_ROWS.length;
+  const subs=[["Quality","quality",rec.q],["Value","value",rec.v],["Momentum","momentum",rec.m]];
+  const avail=subs.filter(function(s){return s[2]!==null;});
+  let h='<div style="border-top:1px solid #374151;padding-top:10px;margin-top:10px"><div style="font-weight:800;margin-bottom:2px">Rank — #'+rec.rank+' of '+N+' <span class="dim" style="font-weight:400">· combined '+(rec.score===null?"—":rec.score.toFixed(1))+'</span></div>';
+  h+='<div class="dim" style="font-size:12px;margin-bottom:4px">Combined = mean of the available sub-ranks: '+avail.map(function(s){return s[0]+' '+(s[2]===null?"—":s[2].toFixed(1));}).join(', ')+'. Each parameter is ranked 0–100 against every stock in this tab (100 = best); a sub-rank is the mean of its available parameters. N/A parameters are skipped, never scored zero.</div>';
+  subs.forEach(function(s){
+    const name=s[0], key=s[1], score=s[2];
+    const rows=(rec.detail&&rec.detail[key])||[];
+    const nAvail=rows.filter(function(r){return r.pct!==null;}).length;
+    h+='<div class="lens"><div class="lhead">'+name+' — '+(score===null?"—":score.toFixed(1))+' <span class="dim" style="font-weight:400">('+nAvail+' of '+rows.length+' params)</span></div>';
+    rows.forEach(function(r){
+      const val=r.disp===null?"N/A":esc(r.disp);
+      const pct=r.pct===null?"—":"scores "+r.pct.toFixed(1);
+      h+='<div class="rcheck"><span>'+esc(r.label)+'</span><span class="val" style="color:'+(r.disp===null?"#6b7280":"#d1d5db")+'">'+val+'</span><span class="pct" style="color:'+(r.pct===null?"#6b7280":"#d1d5db")+'">'+pct+'</span></div>';
+    });
+    h+='</div>';
+  });
+  h+='<div class="lnote">P/E, P/B, PEG, Debt/Equity and pledging are lower-is-better — a low value scores high. Percentiles are within this tab ('+(TAB==="wl"?"My watchlist":"Nifty 500")+').</div>';
+  h+='</div>';
+  return h;
+}
 // Analysts section of the popup (v14): the full analyst breakdown —
 // the five counts in their colours, mean rating + Yahoo verdict key,
 // average target + upside %, target range, the 3-month trend, and the
 // % weighted score (popup only, never on the tile). Per-firm calls
 // render only when broker-calls.json exists (it does not in v14 —
 // Moneycontrol has no reliable bulk fetch: no URL discovery for the
-// union, search API Akamai-blocked).
+// union, search API Akamai-blocked). v16: the upside uses the thin-rule
+// value (grey N/A under 3 analysts) so tile and popup agree.
 function analystHtml(sym){
   // analystView needs analysts.json AND the v14 lenses-logic.js — if
   // either is missing (e.g. a stale cached script), the section stays
@@ -674,8 +727,13 @@ function analystHtml(sym){
   if(av.score!==null) h+=' · score '+Math.round(av.score)+'% <span class="dim">(strong buy 4, buy 3, hold 2, sell 1, strong sell 0)</span>';
   h+='</div>';
   if(rec.targetMeanPrice!==null&&rec.targetMeanPrice!==undefined&&rec.currentPrice){
-    const up=LensLogic.analystUpside(rec);
-    h+='<div>Average target ₹'+fmtINR(rec.targetMeanPrice)+(up===null?"":" ("+(up>=0?"+":"")+up.toFixed(1)+"% upside)");
+    // Upside here uses the THIN-RULE value (av.upside — null under 3
+    // analysts), not the raw helper: the v13 tile hid TURTLEMINT's
+    // +50.3% but the popup showed it. Now tile and popup agree: grey N/A.
+    const up=av.upside;
+    h+='<div>Average target ₹'+fmtINR(rec.targetMeanPrice);
+    if(up===null) h+=' <span style="color:#6b7280">(upside N/A — '+(n!==null&&n!==undefined?('only '+n+' analyst'+(n===1?'':'s')):'too few analysts')+')</span>';
+    else h+=' ('+(up>=0?"+":"")+up.toFixed(1)+"% upside)";
     if(rec.targetLowPrice!==null&&rec.targetLowPrice!==undefined&&rec.targetHighPrice!==null&&rec.targetHighPrice!==undefined){
       h+=' · range ₹'+fmtINR(rec.targetLowPrice)+'–₹'+fmtINR(rec.targetHighPrice);
     }

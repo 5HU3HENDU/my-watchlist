@@ -332,7 +332,9 @@ var LensLogic = (function () {
         roce: (f.roce !== null && f.roce !== undefined) ? f.roce : null,
         roe: (f.roe !== null && f.roe !== undefined) ? f.roe : null,
         salesGrowth: sales5.v,
+        salesPeriod: sales5.period,
         profitGrowth: profit5.v,
+        profitPeriod: profit5.period,
         earnMom: em.na ? null : (em.gLatest - em.gPrev),
         de: de,
         promoter: promoter,
@@ -379,6 +381,53 @@ var LensLogic = (function () {
     ],
   };
 
+  // Rank detail (v16): per-parameter display spec for the popup's rank
+  // breakdown — label, how the raw value is formatted, and whether
+  // lower is better. The percentile already accounts for direction
+  // (lower-better parameters are inverted before the mean), so the flag
+  // is only a display hint. 'period' params (sales/profit growth) use
+  // the 5y value with a 3y fallback — the label carries the period
+  // actually used. 'pp' is a difference of two percentages (percentage
+  // points), 'x' is a ratio.
+  var RANK_DETAIL_META = {
+    quality: [
+      { key: 'roce', label: 'ROCE', fmt: 'pct' },
+      { key: 'roe', label: 'ROE', fmt: 'pct' },
+      { key: 'salesGrowth', label: 'Sales growth', fmt: 'pct', period: 'salesPeriod' },
+      { key: 'profitGrowth', label: 'Profit growth', fmt: 'pct', period: 'profitPeriod' },
+      { key: 'earnMom', label: 'Earnings momentum', fmt: 'pp' },
+      { key: 'de', label: 'Debt/Equity', fmt: 'num2', lower: true },
+      { key: 'promoter', label: 'Promoter holding', fmt: 'pct' },
+      { key: 'pledging', label: 'Promoter pledging', fmt: 'pct2', lower: true },
+    ],
+    value: [
+      { key: 'pe', label: 'P/E', fmt: 'num', lower: true },
+      { key: 'pb', label: 'P/B', fmt: 'num', lower: true },
+      { key: 'peg', label: 'PEG', fmt: 'num2', lower: true },
+      { key: 'belowHigh', label: 'Below 52w high', fmt: 'pct' },
+    ],
+    momentum: [
+      { key: 'move5', label: '5-day move', fmt: 'signedPct' },
+      { key: 'volRatio', label: 'Volume vs 15d avg', fmt: 'x' },
+      { key: 'vsDma', label: 'Price vs 200-day avg', fmt: 'signedPct' },
+      { key: 'cagr3', label: 'Price CAGR 3y', fmt: 'pct' },
+      { key: 'fiiChg', label: 'FII holding change', fmt: 'pp' },
+    ],
+  };
+  function fmtRankParam(fmt, v) {
+    if (v === null || v === undefined) return null;
+    switch (fmt) {
+      case 'pct': return fmtPct(v);
+      case 'pct2': return fmtPct(v, 2);
+      case 'num': return fmtNum(v);
+      case 'num2': return v.toFixed(2);
+      case 'signedPct': return fmtSignedPct(v);
+      case 'pp': return (v >= 0 ? '+' : '') + v.toFixed(1) + ' pp';
+      case 'x': return v.toFixed(2) + '\u00d7';
+      default: return fmtNum(v);
+    }
+  }
+
   // Percentile ranks (0–100) for a list of {sym, v} with non-null v,
   // higher v = higher percentile, ties share the average rank. A single
   // value scores 50 (no information). Linear: (avgRank)/(n-1)*100.
@@ -403,15 +452,20 @@ var LensLogic = (function () {
   // universe (watchlist 151, Nifty 500 500). Same inputs as compute();
   // symbols with no fundamentals or no market data are skipped (no
   // rank — the page renders them grey, never a made-up rank).
-  // Returns {sym: {rank, score, q, v, m}} — score is the combined
+  // Returns {sym: {rank, score, q, v, m, detail}} — score is the combined
   // 0–100, q/v/m the Quality/Value/Momentum sub-rank scores (null when
-  // a sub-rank has no available parameters for that stock). Rank 1..N
-  // by combined score desc; ties broken by Quality, then Value, then
-  // symbol (deterministic). Stocks with no sub-rank at all score null
-  // and rank last, by symbol.
+  // a sub-rank has no available parameters for that stock), and detail
+  // the per-parameter breakdown behind each sub-rank (v16, for the
+  // popup): {quality: [{key, label, v, disp, pct, na, lower}], ...} —
+  // pct is the direction-adjusted percentile (1dp) that feeds the
+  // sub-rank mean, null with a reason when the parameter is N/A.
+  // Rank 1..N by combined score desc; ties broken by Quality, then
+  // Value, then symbol (deterministic). Stocks with no sub-rank at all
+  // score null and rank last, by symbol.
   function computeRank(fundStocks, mdStocks, wp, secMap, symbols, pledging) {
     var wpStocks = (wp && wp.stocks) || {};
     var params = {};
+    var finMap = {}; // sym -> isFinancial (for the D/E N/A reason in the detail)
     var list = [];
     for (var i = 0; i < symbols.length; i++) {
       var sym = symbols[i];
@@ -422,6 +476,7 @@ var LensLogic = (function () {
       var w = wpStocks[sym] || null;
       var isFinancial = secMap && secMap[sym] === 'Financial Services';
       params[sym] = rankParams(f, m, w, isFinancial, pledging ? pledging[sym] : null);
+      finMap[sym] = isFinancial;
       list.push(sym);
     }
     var pct = {}; // sym -> {quality: {param: pct}, value: {...}, momentum: {...}}
@@ -451,7 +506,32 @@ var LensLogic = (function () {
       });
       var avail = Object.keys(sub).map(function (k) { return sub[k]; }).filter(function (x) { return x !== null; });
       var score = avail.length ? avail.reduce(function (a, b) { return a + b; }, 0) / avail.length : null;
-      return { sym: sym, score: score, q: sub.quality, v: sub.value, m: sub.momentum };
+      // Per-parameter breakdown (v16, for the popup): raw value + the
+      // direction-adjusted percentile that feeds the sub-rank mean, per
+      // sub-rank. N/A parameters carry pct: null and a reason — they are
+      // skipped in the mean, never scored zero.
+      var detail = {};
+      Object.keys(RANK_PARAMS).forEach(function (s) {
+        detail[s] = RANK_DETAIL_META[s].map(function (meta) {
+          var raw = params[sym][s][meta.key];
+          var p = pct[sym] && pct[sym][s] ? pct[sym][s][meta.key] : undefined;
+          var na = null;
+          if (raw === null || raw === undefined) {
+            na = (s === 'quality' && meta.key === 'de' && finMap[sym]) ? 'not applicable \u2014 financial' : 'no data';
+          }
+          var label = meta.label;
+          if (meta.period) {
+            var per = params[sym][s][meta.period];
+            if (per) label += ' ' + per;
+          }
+          return { key: meta.key, label: label,
+            v: (raw === null || raw === undefined) ? null : raw,
+            disp: fmtRankParam(meta.fmt, raw),
+            pct: (p === undefined) ? null : Math.round(p * 10) / 10,
+            na: na, lower: !!meta.lower };
+        });
+      });
+      return { sym: sym, score: score, q: sub.quality, v: sub.value, m: sub.momentum, detail: detail };
     });
     rows.sort(function (a, b) {
       if (a.score === null && b.score === null) return a.sym < b.sym ? -1 : 1;
@@ -467,6 +547,7 @@ var LensLogic = (function () {
         q: r.q === null ? null : Math.round(r.q * 10) / 10,
         v: r.v === null ? null : Math.round(r.v * 10) / 10,
         m: r.m === null ? null : Math.round(r.m * 10) / 10,
+        detail: r.detail,
       };
     });
     return out;
@@ -559,6 +640,7 @@ var LensLogic = (function () {
   }
 
   return { LENSES: LENSES, scoreStock: scoreStock, verdict: verdict, compute: compute, computeRank: computeRank,
+    RANK_DETAIL_META: RANK_DETAIL_META,
     ANALYST_COLORS: ANALYST_COLORS, ANALYST_KEYS: ANALYST_KEYS,
     analystCounts: analystCounts, analystN: analystN, analystUpside: analystUpside,
     analystScore: analystScore, analystView: analystView, analystTrend: analystTrend };
