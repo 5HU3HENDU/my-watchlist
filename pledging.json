@@ -1,21 +1,53 @@
 {
- "fetchedAtIST": "18 Nov, 04:40 pm",
+ "fetchedAtIST": "21 Nov, 10:22 am",
  "source": "stockssena",
  "stocks": {
-  "CPPLUS": {
-   "promoterPct": 71.8,
-   "pledgedPct": 0
-  },
-  "ANANDRATHI": {
-   "promoterPct": 40.95,
-   "pledgedPct": 13.97
-  },
-  "ATHERENERG": {
-   "promoterPct": 42.33,
-   "pledgedPct": 0
-  },
   "360ONE": {
    "promoterPct": 5.88,
+   "pledgedPct": 0
+  },
+  "AADHARHFC": {
+   "promoterPct": 64.51,
+   "pledgedPct": 0
+  },
+  "AARTIIND": {
+   "promoterPct": 41.82,
+   "pledgedPct": 3.57
+  },
+  "AAVAS": {
+   "promoterPct": 48.88,
+   "pledgedPct": 0
+  },
+  "ABB": {
+   "promoterPct": 75,
+   "pledgedPct": 0
+  },
+  "ABBOTINDIA": {
+   "promoterPct": 74.99,
+   "pledgedPct": null
+  },
+  "ABCAPITAL": {
+   "promoterPct": 68.82,
+   "pledgedPct": 0
+  },
+  "ABDL": {
+   "promoterPct": 78.95,
+   "pledgedPct": 0
+  },
+  "ABREL": {
+   "promoterPct": 50.21,
+   "pledgedPct": 0
+  },
+  "ABSLAMC": {
+   "promoterPct": 74.67,
+   "pledgedPct": 0
+  },
+  "ACC": {
+   "promoterPct": 56.69,
+   "pledgedPct": 0
+  },
+  "ACE": {
+   "promoterPct": 65.42,
    "pledgedPct": 0
   },
   "ACEVECTOR": {
@@ -26,24 +58,120 @@
    "promoterPct": 71.4,
    "pledgedPct": 0
   },
+  "ACUTAAS": {
+   "promoterPct": 32.66,
+   "pledgedPct": 0
+  },
+  "ADANIENSOL": {
+   "promoterPct": 73.39,
+   "pledgedPct": 0
+  },
+  "ADANIENT": {
+   "promoterPct": 71.97,
+   "pledgedPct": 0.79
+  },
+  "ADANIGREEN": {
+   "promoterPct": 62.43,
+   "pledgedPct": 0
+  },
+  "ADANIPORTS": {
+   "promoterPct": 66.03,
+   "pledgedPct": 0
+  },
+  "ADANIPOWER": {
+   "promoterPct": 74.96,
+   "pledgedPct": 1.81
+  },
+  "AEGISLOG": {
+   "promoterPct": 53.67,
+   "pledgedPct": 0
+  },
+  "AEGISVOPAK": {
+   "promoterPct": 86.93,
+   "pledgedPct": 0
+  },
   "AEQUS": {
    "promoterPct": 59.09,
    "pledgedPct": 25.36
+  },
+  "AETHER": {
+   "promoterPct": 74.92,
+   "pledgedPct": 0
+  },
+  "AFCONS": {
+   "promoterPct": 50.17,
+   "pledgedPct": 100
   },
   "AFFLE": {
    "promoterPct": 55.82,
    "pledgedPct": 0
   },
+  "AIAENG": {
+   "promoterPct": 58.5,
+   "pledgedPct": 0
+  },
+  "AIIL": {
+   "promoterPct": 68.81,
+   "pledgedPct": 0
+  },
+  "AJANTPHARM": {
+   "promoterPct": 63.47,
+   "pledgedPct": 22.53
+  },
   "ALGOQUANT": {
    "promoterPct": 73.68,
    "pledgedPct": 32.42
   },
-  "ARE&M": {
-   "promoterPct": 32.86,
+  "ALKEM": {
+   "promoterPct": 49.7,
+   "pledgedPct": 0
+  },
+  "AMBER": {
+   "promoterPct": 38.09,
+   "pledgedPct": 0
+  },
+  "AMBUJACEM": {
+   "promoterPct": 67.33,
+   "pledgedPct": 0
+  },
+  "ANANDRATHI": {
+   "promoterPct": 40.95,
+   "pledgedPct": 13.97
+  },
+  "ANANTRAJ": {
+   "promoterPct": 57.42,
    "pledgedPct": 0
   },
   "ANGELONE": {
    "promoterPct": 28.55,
+   "pledgedPct": 0
+  },
+  "ANTHEM": {
+   "promoterPct": 71.4,
+   "pledgedPct": 0
+  },
+  "ANURAS": {
+   "promoterPct": 59.07,
+   "pledgedPct": 32.85
+  },
+  "APARINDS": {
+   "promoterPct": 55.42,
+   "pledgedPct": 0
+  },
+  "APLAPOLLO": {
+   "promoterPct": 28.18,
+   "pledgedPct": 0
+  },
+  "APOLLOHOSP": {
+   "promoterPct": 28.02,
+   "pledgedPct": 2.91
+  },
+  "APOLLOTYRE": {
+   "promoterPct": 36.93,
+   "pledgedPct": 0.01
+  },
+  "APTUS": {
+   "promoterPct": 23.86,
    "pledgedPct": 0
   },
   "AQYLON": {
@@ -54,9 +182,49 @@
    "promoterPct": 77.45,
    "pledgedPct": 0
   },
-  "AIIL": {
-   "promoterPct": 68.81,
+  "ARE&M": {
+   "promoterPct": 32.86,
    "pledgedPct": 0
+  },
+  "ASAHIINDIA": {
+   "promoterPct": 51.57,
+   "pledgedPct": 3.36
+  },
+  "ASHOKLEY": {
+   "promoterPct": 51.51,
+   "pledgedPct": 40.1
+  },
+  "ASIANPAINT": {
+   "promoterPct": 52.65,
+   "pledgedPct": 10.37
+  },
+  "ASTERDM": {
+   "promoterPct": 53.79,
+   "pledgedPct": 66.99
+  },
+  "ASTRAL": {
+   "promoterPct": 54.22,
+   "pledgedPct": 0
+  },
+  "ATGL": {
+   "promoterPct": 74.8,
+   "pledgedPct": 0
+  },
+  "ATHERENERG": {
+   "promoterPct": 42.33,
+   "pledgedPct": 0
+  },
+  "ATUL": {
+   "promoterPct": 45.33,
+   "pledgedPct": 0.97
+  },
+  "AUBANK": {
+   "promoterPct": 22.67,
+   "pledgedPct": 0
+  },
+  "AUROPHARMA": {
+   "promoterPct": 51.88,
+   "pledgedPct": 13.75
   },
   "AVANCE": {
    "promoterPct": 0.68,
@@ -66,12 +234,84 @@
    "promoterPct": 36.85,
    "pledgedPct": 0
   },
-  "CCAVENUE": {
-   "promoterPct": 27.34,
+  "AVANTIFEED": {
+   "promoterPct": 43.23,
+   "pledgedPct": 0
+  },
+  "AWL": {
+   "promoterPct": 56.94,
+   "pledgedPct": 0
+  },
+  "AXISBANK": {
+   "promoterPct": 7.86,
+   "pledgedPct": 0
+  },
+  "AZAD": {
+   "promoterPct": 55.84,
+   "pledgedPct": 0
+  },
+  "BAGMANE": {
+   "promoterPct": null,
+   "pledgedPct": null
+  },
+  "BAJAJ-AUTO": {
+   "promoterPct": 55.95,
+   "pledgedPct": 0.01
+  },
+  "BAJAJFINSV": {
+   "promoterPct": 58.65,
+   "pledgedPct": 0
+  },
+  "BAJAJHFL": {
+   "promoterPct": 86.7,
    "pledgedPct": 0
   },
   "BAJAJHLDNG": {
    "promoterPct": 51.46,
+   "pledgedPct": 0
+  },
+  "BAJFINANCE": {
+   "promoterPct": 54.67,
+   "pledgedPct": 0
+  },
+  "BALKRISIND": {
+   "promoterPct": 58.29,
+   "pledgedPct": 0
+  },
+  "BALRAMCHIN": {
+   "promoterPct": 42.79,
+   "pledgedPct": 0
+  },
+  "BANDHANBNK": {
+   "promoterPct": 37,
+   "pledgedPct": 0
+  },
+  "BANKBARODA": {
+   "promoterPct": 63.97,
+   "pledgedPct": 0
+  },
+  "BANKINDIA": {
+   "promoterPct": 73.38,
+   "pledgedPct": 0
+  },
+  "BATAINDIA": {
+   "promoterPct": 50.16,
+   "pledgedPct": 0
+  },
+  "BBOX": {
+   "promoterPct": 69.95,
+   "pledgedPct": 0
+  },
+  "BCG": {
+   "promoterPct": 18.35,
+   "pledgedPct": 0.42
+  },
+  "BDL": {
+   "promoterPct": 74.93,
+   "pledgedPct": 0
+  },
+  "BEL": {
+   "promoterPct": 51.14,
    "pledgedPct": 0
   },
   "BELRISE": {
@@ -82,12 +322,16 @@
    "promoterPct": 54.03,
    "pledgedPct": 0
   },
-  "BDL": {
-   "promoterPct": 74.93,
+  "BERGEPAINT": {
+   "promoterPct": 74.99,
    "pledgedPct": 0
   },
-  "BEL": {
-   "promoterPct": 51.14,
+  "BHARATCOAL": {
+   "promoterPct": 90,
+   "pledgedPct": 0
+  },
+  "BHARATFORG": {
+   "promoterPct": 43.12,
    "pledgedPct": 0
   },
   "BHARTIARTL": {
@@ -98,17 +342,17 @@
    "promoterPct": 70,
    "pledgedPct": 0
   },
-  "GROWW": {
-   "promoterPct": 27.13,
-   "pledgedPct": 1.25
-  },
-  "BSOFT": {
-   "promoterPct": 40.37,
+  "BHEL": {
+   "promoterPct": 58.17,
    "pledgedPct": 0
   },
-  "BBOX": {
-   "promoterPct": 69.95,
+  "BIOCON": {
+   "promoterPct": 44.68,
    "pledgedPct": 0
+  },
+  "BIRET": {
+   "promoterPct": null,
+   "pledgedPct": null
   },
   "BLS": {
    "promoterPct": 70.41,
@@ -118,36 +362,208 @@
    "promoterPct": 31.36,
    "pledgedPct": null
   },
-  "BCG": {
-   "promoterPct": 18.35,
-   "pledgedPct": 0.42
+  "BLUESTARCO": {
+   "promoterPct": 36.5,
+   "pledgedPct": 0
+  },
+  "BOSCHLTD": {
+   "promoterPct": 70.54,
+   "pledgedPct": 0
+  },
+  "BPCL": {
+   "promoterPct": 52.98,
+   "pledgedPct": 0
+  },
+  "BRIGADE": {
+   "promoterPct": 41.09,
+   "pledgedPct": 0
+  },
+  "BRITANNIA": {
+   "promoterPct": 50.55,
+   "pledgedPct": 0
   },
   "BSE": {
    "promoterPct": 0,
    "pledgedPct": null
   },
-  "NSE": {
+  "BSOFT": {
+   "promoterPct": 40.37,
+   "pledgedPct": 0
+  },
+  "CAMS": {
    "promoterPct": 0,
    "pledgedPct": null
   },
+  "CANBK": {
+   "promoterPct": 62.93,
+   "pledgedPct": 0
+  },
+  "CANFINHOME": {
+   "promoterPct": 29.99,
+   "pledgedPct": 0
+  },
+  "CANHLIFE": {
+   "promoterPct": 62,
+   "pledgedPct": 0
+  },
+  "CAPLIPOINT": {
+   "promoterPct": 70.57,
+   "pledgedPct": 0
+  },
+  "CARBORUNIV": {
+   "promoterPct": 38.84,
+   "pledgedPct": 0
+  },
+  "CARTRADE": {
+   "promoterPct": 0,
+   "pledgedPct": null
+  },
+  "CASTROLIND": {
+   "promoterPct": 51,
+   "pledgedPct": 0
+  },
+  "CCAVENUE": {
+   "promoterPct": 27.34,
+   "pledgedPct": 0
+  },
+  "CCL": {
+   "promoterPct": 46.16,
+   "pledgedPct": 0
+  },
   "CDSL": {
    "promoterPct": 15,
+   "pledgedPct": 0
+  },
+  "CEATLTD": {
+   "promoterPct": 47.29,
+   "pledgedPct": 0
+  },
+  "CEMPRO": {
+   "promoterPct": 62.84,
+   "pledgedPct": 0
+  },
+  "CENTRALBK": {
+   "promoterPct": 81.19,
+   "pledgedPct": 0
+  },
+  "CESC": {
+   "promoterPct": 52.11,
+   "pledgedPct": 0
+  },
+  "CGCL": {
+   "promoterPct": 59.92,
+   "pledgedPct": 0
+  },
+  "CGPOWER": {
+   "promoterPct": 56.34,
+   "pledgedPct": 0
+  },
+  "CHAMBLFERT": {
+   "promoterPct": 61.72,
+   "pledgedPct": 23.07
+  },
+  "CHENNPETRO": {
+   "promoterPct": 67.29,
+   "pledgedPct": 0
+  },
+  "CHOICEIN": {
+   "promoterPct": 53.65,
+   "pledgedPct": 11.39
+  },
+  "CHOLAFIN": {
+   "promoterPct": 48.93,
+   "pledgedPct": 0
+  },
+  "CHOLAHLDNG": {
+   "promoterPct": 46.39,
+   "pledgedPct": 0.02
+  },
+  "CIEINDIA": {
+   "promoterPct": 65.7,
+   "pledgedPct": 0
+  },
+  "CIPLA": {
+   "promoterPct": 29.21,
+   "pledgedPct": 0
+  },
+  "CLEAN": {
+   "promoterPct": 51.29,
+   "pledgedPct": 0
+  },
+  "CLEANMAX": {
+   "promoterPct": 49.28,
+   "pledgedPct": 9.45
+  },
+  "CMPDI": {
+   "promoterPct": 85,
+   "pledgedPct": 0
+  },
+  "COALINDIA": {
+   "promoterPct": 61.13,
+   "pledgedPct": 0
+  },
+  "COCHINSHIP": {
+   "promoterPct": 63.33,
    "pledgedPct": 0
   },
   "COFORGE": {
    "promoterPct": 0,
    "pledgedPct": null
   },
+  "COHANCE": {
+   "promoterPct": 57.48,
+   "pledgedPct": 94.56
+  },
+  "COLPAL": {
+   "promoterPct": 51,
+   "pledgedPct": 0
+  },
   "COMFINTE": {
    "promoterPct": 56.13,
    "pledgedPct": null
   },
-  "CAMS": {
-   "promoterPct": 0,
-   "pledgedPct": null
+  "CONCOR": {
+   "promoterPct": 54.8,
+   "pledgedPct": 0
+  },
+  "CONCORDBIO": {
+   "promoterPct": 44.09,
+   "pledgedPct": 0
+  },
+  "CORDELIA": {
+   "promoterPct": 89.35,
+   "pledgedPct": 0
+  },
+  "COROMANDEL": {
+   "promoterPct": 56.34,
+   "pledgedPct": 0.01
+  },
+  "CPPLUS": {
+   "promoterPct": 71.8,
+   "pledgedPct": 0
+  },
+  "CRAFTSMAN": {
+   "promoterPct": 42.41,
+   "pledgedPct": 0
+  },
+  "CREDITACC": {
+   "promoterPct": 63.83,
+   "pledgedPct": 0
   },
   "CRISIL": {
    "promoterPct": 66.64,
+   "pledgedPct": 0
+  },
+  "CROMPTON": {
+   "promoterPct": 0,
+   "pledgedPct": null
+  },
+  "CUB": {
+   "promoterPct": 0,
+   "pledgedPct": null
+  },
+  "CUMMINSIND": {
+   "promoterPct": 51,
    "pledgedPct": 0
   },
   "CUPID": {
@@ -158,8 +574,24 @@
    "promoterPct": 24.76,
    "pledgedPct": 0
   },
+  "DABUR": {
+   "promoterPct": 66.25,
+   "pledgedPct": 0
+  },
+  "DALBHARAT": {
+   "promoterPct": 55.84,
+   "pledgedPct": 0
+  },
   "DATAPATTNS": {
    "promoterPct": 42.41,
+   "pledgedPct": 0
+  },
+  "DEEPAKFERT": {
+   "promoterPct": 45.63,
+   "pledgedPct": 3.86
+  },
+  "DEEPAKNTR": {
+   "promoterPct": 49.39,
    "pledgedPct": 0
   },
   "DELHIVERY": {
@@ -174,8 +606,28 @@
    "promoterPct": 61.36,
    "pledgedPct": 0
   },
+  "DIVISLAB": {
+   "promoterPct": 51.88,
+   "pledgedPct": 0
+  },
   "DIXON": {
    "promoterPct": 28.5,
+   "pledgedPct": 0
+  },
+  "DLF": {
+   "promoterPct": 74.08,
+   "pledgedPct": 0
+  },
+  "DMART": {
+   "promoterPct": 74.48,
+   "pledgedPct": 0
+  },
+  "DOMS": {
+   "promoterPct": 63.39,
+   "pledgedPct": 0
+  },
+  "DRREDDY": {
+   "promoterPct": 26.63,
    "pledgedPct": 0
   },
   "EASEMYTRIP": {
@@ -186,9 +638,61 @@
    "promoterPct": 54.52,
    "pledgedPct": 0
   },
+  "EICHERMOT": {
+   "promoterPct": 49.02,
+   "pledgedPct": 0
+  },
+  "EIDPARRY": {
+   "promoterPct": 41.28,
+   "pledgedPct": 0
+  },
+  "EIHOTEL": {
+   "promoterPct": 32.85,
+   "pledgedPct": 0
+  },
+  "ELECON": {
+   "promoterPct": 59.27,
+   "pledgedPct": 0
+  },
+  "ELGIEQUIP": {
+   "promoterPct": 31.19,
+   "pledgedPct": 0.88
+  },
+  "EMAMILTD": {
+   "promoterPct": 54.84,
+   "pledgedPct": 15.06
+  },
+  "EMBASSY": {
+   "promoterPct": null,
+   "pledgedPct": null
+  },
+  "EMCURE": {
+   "promoterPct": 77.82,
+   "pledgedPct": 0.04
+  },
+  "EMMVEE": {
+   "promoterPct": 80.03,
+   "pledgedPct": 0
+  },
   "EMPOWER": {
    "promoterPct": 15.02,
    "pledgedPct": null
+  },
+  "ENDURANCE": {
+   "promoterPct": 75,
+   "pledgedPct": 0
+  },
+  "ENGINERSIN": {
+   "promoterPct": 51.32,
+   "pledgedPct": 0
+  },
+  "ENRIN": {
+   "promoterPct": 75,
+   "pledgedPct": 0
+  },
+  "ESCORTS": {
+   "promoterPct": 68.04,
+   "pledgedPct": 0
   },
   "ESDS": {
    "promoterPct": 39.47,
@@ -198,52 +702,204 @@
    "promoterPct": 0,
    "pledgedPct": null
   },
+  "EXIDEIND": {
+   "promoterPct": 45.99,
+   "pledgedPct": 0
+  },
+  "FACT": {
+   "promoterPct": 90,
+   "pledgedPct": 0
+  },
   "FCSSOFT": {
    "promoterPct": 19.65,
    "pledgedPct": 0
   },
-  "FSL": {
-   "promoterPct": 53.66,
+  "FEDERALBNK": {
+   "promoterPct": 0,
+   "pledgedPct": null
+  },
+  "FINCABLES": {
+   "promoterPct": 35.86,
+   "pledgedPct": 0
+  },
+  "FIRSTCRY": {
+   "promoterPct": 0,
+   "pledgedPct": null
+  },
+  "FIVESTAR": {
+   "promoterPct": 18.61,
+   "pledgedPct": 0
+  },
+  "FLUOROCHEM": {
+   "promoterPct": 61.39,
+   "pledgedPct": 7.53
+  },
+  "FORCEMOT": {
+   "promoterPct": 61.63,
+   "pledgedPct": 0
+  },
+  "FORTIS": {
+   "promoterPct": 31.17,
    "pledgedPct": 0
   },
   "FRACTAL": {
    "promoterPct": 16.81,
    "pledgedPct": 3.42
   },
-  "GATECH": {
-   "promoterPct": 0.63,
+  "FSL": {
+   "promoterPct": 53.66,
+   "pledgedPct": 0
+  },
+  "GABRIEL": {
+   "promoterPct": 66.29,
+   "pledgedPct": 0
+  },
+  "GAIL": {
+   "promoterPct": 51.85,
    "pledgedPct": 0
   },
   "GAJA": {
    "promoterPct": 54.23,
    "pledgedPct": 0
   },
+  "GALLANTT": {
+   "promoterPct": 70.98,
+   "pledgedPct": 0
+  },
+  "GATECH": {
+   "promoterPct": 0.63,
+   "pledgedPct": 0
+  },
   "GENESYS": {
    "promoterPct": 32.73,
    "pledgedPct": 9.63
+  },
+  "GESHIP": {
+   "promoterPct": 30.91,
+   "pledgedPct": 0
+  },
+  "GICRE": {
+   "promoterPct": 77.4,
+   "pledgedPct": 0
+  },
+  "GILLETTE": {
+   "promoterPct": 75,
+   "pledgedPct": 0
+  },
+  "GLAND": {
+   "promoterPct": 45.75,
+   "pledgedPct": 0
+  },
+  "GLAXO": {
+   "promoterPct": 75,
+   "pledgedPct": 0
+  },
+  "GLENMARK": {
+   "promoterPct": 46.65,
+   "pledgedPct": 0
+  },
+  "GMDCLTD": {
+   "promoterPct": 74,
+   "pledgedPct": 0
   },
   "GMRAIRPORT": {
    "promoterPct": 67.48,
    "pledgedPct": 16.47
   },
+  "GODFRYPHLP": {
+   "promoterPct": 72.58,
+   "pledgedPct": 0.21
+  },
+  "GODREJCP": {
+   "promoterPct": 53.05,
+   "pledgedPct": 0
+  },
+  "GODREJIND": {
+   "promoterPct": 74.63,
+   "pledgedPct": 0
+  },
+  "GODREJPROP": {
+   "promoterPct": 51.66,
+   "pledgedPct": 0
+  },
+  "GPIL": {
+   "promoterPct": 63.17,
+   "pledgedPct": 0
+  },
+  "GRANULES": {
+   "promoterPct": 37.39,
+   "pledgedPct": 0
+  },
+  "GRAPHITE": {
+   "promoterPct": 65.34,
+   "pledgedPct": 0
+  },
+  "GRASIM": {
+   "promoterPct": 45.2,
+   "pledgedPct": 0
+  },
+  "GRAVITA": {
+   "promoterPct": 55.88,
+   "pledgedPct": 0
+  },
+  "GROWW": {
+   "promoterPct": 27.13,
+   "pledgedPct": 1.25
+  },
+  "GRSE": {
+   "promoterPct": 74.5,
+   "pledgedPct": 0
+  },
   "GTLINFRA": {
    "promoterPct": 3.28,
+   "pledgedPct": 0
+  },
+  "GVT&D": {
+   "promoterPct": 51,
+   "pledgedPct": 0
+  },
+  "HAL": {
+   "promoterPct": 71.64,
    "pledgedPct": 0
   },
   "HAPPSTMNDS": {
    "promoterPct": 44.21,
    "pledgedPct": 0
   },
+  "HAVELLS": {
+   "promoterPct": 59.35,
+   "pledgedPct": 0
+  },
+  "HBLENGINE": {
+   "promoterPct": 59.11,
+   "pledgedPct": 0
+  },
   "HCLTECH": {
    "promoterPct": 60.88,
+   "pledgedPct": 0
+  },
+  "HDBFS": {
+   "promoterPct": 74.08,
    "pledgedPct": 0
   },
   "HDFCAMC": {
    "promoterPct": 52.29,
    "pledgedPct": 0
   },
+  "HDFCBANK": {
+   "promoterPct": 0,
+   "pledgedPct": null
+  },
+  "HDFCLIFE": {
+   "promoterPct": 50.53,
+   "pledgedPct": 0
+  },
   "HEGAM": {
    "promoterPct": 60.72,
+   "pledgedPct": 0
+  },
+  "HEROMOTOCO": {
+   "promoterPct": 34.72,
    "pledgedPct": 0
   },
   "HEXT": {
@@ -254,12 +910,72 @@
    "promoterPct": 28.29,
    "pledgedPct": 2.08
   },
-  "HAL": {
-   "promoterPct": 71.64,
+  "HINDALCO": {
+   "promoterPct": 34.66,
+   "pledgedPct": 0
+  },
+  "HINDCOPPER": {
+   "promoterPct": 60.14,
+   "pledgedPct": 0
+  },
+  "HINDPETRO": {
+   "promoterPct": 54.9,
+   "pledgedPct": 0
+  },
+  "HINDUNILVR": {
+   "promoterPct": 61.9,
+   "pledgedPct": 0
+  },
+  "HINDZINC": {
+   "promoterPct": 60.71,
+   "pledgedPct": 4.12
+  },
+  "HOMEFIRST": {
+   "promoterPct": 6.97,
+   "pledgedPct": 0
+  },
+  "HONASA": {
+   "promoterPct": 35.47,
+   "pledgedPct": 4.15
+  },
+  "HONAUT": {
+   "promoterPct": 75,
+   "pledgedPct": 0
+  },
+  "HSCL": {
+   "promoterPct": 52.49,
+   "pledgedPct": 0
+  },
+  "HUDCO": {
+   "promoterPct": 75,
+   "pledgedPct": 0
+  },
+  "HYUNDAI": {
+   "promoterPct": 82.5,
    "pledgedPct": 0
   },
   "ICICIAMC": {
    "promoterPct": 85.6,
+   "pledgedPct": 0
+  },
+  "ICICIBANK": {
+   "promoterPct": 0,
+   "pledgedPct": null
+  },
+  "ICICIGI": {
+   "promoterPct": 51.28,
+   "pledgedPct": 0
+  },
+  "ICICIPRULI": {
+   "promoterPct": 74.7,
+   "pledgedPct": 0
+  },
+  "IDBI": {
+   "promoterPct": 94.71,
+   "pledgedPct": 0
+  },
+  "IDEA": {
+   "promoterPct": 25.64,
    "pledgedPct": 0
   },
   "IDFCFIRSTB": {
@@ -270,56 +986,228 @@
    "promoterPct": 0,
    "pledgedPct": null
   },
-  "IRCTC": {
-   "promoterPct": 62.4,
-   "pledgedPct": 0
-  },
-  "IRFC": {
-   "promoterPct": 82.9,
-   "pledgedPct": 0
-  },
-  "INDOTHAI": {
-   "promoterPct": 54.77,
-   "pledgedPct": 0
-  },
-  "INDUSTOWER": {
-   "promoterPct": 51.26,
-   "pledgedPct": 0
-  },
-  "NAUKRI": {
-   "promoterPct": 37.19,
-   "pledgedPct": 0
-  },
-  "INFY": {
-   "promoterPct": 13.9,
-   "pledgedPct": 0
-  },
-  "INTELLECT": {
-   "promoterPct": 29.56,
+  "IFCI": {
+   "promoterPct": 72.57,
    "pledgedPct": 0
   },
   "IGIL": {
    "promoterPct": 76.55,
    "pledgedPct": 0
   },
+  "IGL": {
+   "promoterPct": 45,
+   "pledgedPct": 0
+  },
+  "IIFL": {
+   "promoterPct": 24.76,
+   "pledgedPct": 0
+  },
   "IKS": {
    "promoterPct": 63.72,
+   "pledgedPct": 0
+  },
+  "INDHOTEL": {
+   "promoterPct": 38.12,
+   "pledgedPct": 0
+  },
+  "INDIACEM": {
+   "promoterPct": 75,
+   "pledgedPct": 0
+  },
+  "INDIAMART": {
+   "promoterPct": 49.07,
+   "pledgedPct": 0
+  },
+  "INDIANB": {
+   "promoterPct": 73.84,
+   "pledgedPct": 0
+  },
+  "INDIGO": {
+   "promoterPct": 41.57,
+   "pledgedPct": 0
+  },
+  "INDOTHAI": {
+   "promoterPct": 54.77,
+   "pledgedPct": 0
+  },
+  "INDUSINDBK": {
+   "promoterPct": 15.82,
+   "pledgedPct": 42.78
+  },
+  "INDUSTOWER": {
+   "promoterPct": 51.26,
+   "pledgedPct": 0
+  },
+  "INFY": {
+   "promoterPct": 13.9,
+   "pledgedPct": 0
+  },
+  "INOXINDIA": {
+   "promoterPct": 74.73,
+   "pledgedPct": 0
+  },
+  "INOXWIND": {
+   "promoterPct": 44.18,
+   "pledgedPct": 9.39
+  },
+  "INTELLECT": {
+   "promoterPct": 29.56,
+   "pledgedPct": 0
+  },
+  "IOB": {
+   "promoterPct": 92.44,
+   "pledgedPct": 0
+  },
+  "IOC": {
+   "promoterPct": 51.5,
+   "pledgedPct": 0
+  },
+  "IPCALAB": {
+   "promoterPct": 44.72,
+   "pledgedPct": 0
+  },
+  "IRB": {
+   "promoterPct": 31.18,
+   "pledgedPct": 0.03
+  },
+  "IRCON": {
+   "promoterPct": 65.17,
+   "pledgedPct": 0
+  },
+  "IRCTC": {
+   "promoterPct": 62.4,
+   "pledgedPct": 0
+  },
+  "IREDA": {
+   "promoterPct": 71.76,
+   "pledgedPct": 0
+  },
+  "IRFC": {
+   "promoterPct": 82.9,
+   "pledgedPct": 0
+  },
+  "ITC": {
+   "promoterPct": 0,
+   "pledgedPct": null
+  },
+  "ITCHOTELS": {
+   "promoterPct": 39.85,
    "pledgedPct": 0
   },
   "ITI": {
    "promoterPct": 90.02,
    "pledgedPct": 0
   },
+  "IXIGO": {
+   "promoterPct": 0,
+   "pledgedPct": null
+  },
+  "J&KBANK": {
+   "promoterPct": 59.4,
+   "pledgedPct": 0
+  },
+  "JAINREC": {
+   "promoterPct": 73.59,
+   "pledgedPct": 0
+  },
+  "JBCHEPHARM": {
+   "promoterPct": null,
+   "pledgedPct": null
+  },
+  "JBMA": {
+   "promoterPct": 67.53,
+   "pledgedPct": 0
+  },
+  "JINDALSAW": {
+   "promoterPct": 63.24,
+   "pledgedPct": 0
+  },
+  "JINDALSTEL": {
+   "promoterPct": 62.69,
+   "pledgedPct": 10.11
+  },
   "JIOFIN": {
    "promoterPct": 50.98,
+   "pledgedPct": 0
+  },
+  "JKCEMENT": {
+   "promoterPct": 45.66,
+   "pledgedPct": 0
+  },
+  "JKTYRE": {
+   "promoterPct": 51.72,
+   "pledgedPct": 0
+  },
+  "JMFINANCIL": {
+   "promoterPct": 57.95,
    "pledgedPct": 0
   },
   "JPL": {
    "promoterPct": 64.48,
    "pledgedPct": 0
   },
+  "JPPOWER": {
+   "promoterPct": 24,
+   "pledgedPct": 72.99
+  },
+  "JSL": {
+   "promoterPct": 62.55,
+   "pledgedPct": 0.51
+  },
+  "JSWCEMENT": {
+   "promoterPct": 72.02,
+   "pledgedPct": 0.08
+  },
+  "JSWENERGY": {
+   "promoterPct": 66.53,
+   "pledgedPct": 14.48
+  },
+  "JSWINFRA": {
+   "promoterPct": 73.93,
+   "pledgedPct": 0
+  },
+  "JSWSTEEL": {
+   "promoterPct": 44.3,
+   "pledgedPct": 12.25
+  },
+  "JUBLFOOD": {
+   "promoterPct": 40.27,
+   "pledgedPct": 1.35
+  },
+  "JUBLINGREA": {
+   "promoterPct": 45.22,
+   "pledgedPct": 9.3
+  },
+  "JWL": {
+   "promoterPct": 68.31,
+   "pledgedPct": 0
+  },
+  "JYOTICNC": {
+   "promoterPct": 62.55,
+   "pledgedPct": 12.35
+  },
+  "KAJARIACER": {
+   "promoterPct": 46.74,
+   "pledgedPct": 0
+  },
+  "KALYANKJIL": {
+   "promoterPct": 62.85,
+   "pledgedPct": 24.85
+  },
+  "KARURVYSYA": {
+   "promoterPct": 1.95,
+   "pledgedPct": 3.85
+  },
   "KAYNES": {
    "promoterPct": 53.31,
+   "pledgedPct": 0
+  },
+  "KEC": {
+   "promoterPct": 50.1,
+   "pledgedPct": 0
+  },
+  "KEI": {
+   "promoterPct": 35,
    "pledgedPct": 0
   },
   "KELLTONTEC": {
@@ -330,36 +1218,180 @@
    "promoterPct": 14.06,
    "pledgedPct": 0
   },
+  "KIMS": {
+   "promoterPct": 32.66,
+   "pledgedPct": 11.71
+  },
+  "KIRLOSBROS": {
+   "promoterPct": 65.95,
+   "pledgedPct": 0
+  },
+  "KIRLOSENG": {
+   "promoterPct": 41.03,
+   "pledgedPct": 0
+  },
+  "KISSHT": {
+   "promoterPct": 20.42,
+   "pledgedPct": 0
+  },
+  "KOTAKBANK": {
+   "promoterPct": 25.87,
+   "pledgedPct": 0
+  },
+  "KPIL": {
+   "promoterPct": 33.58,
+   "pledgedPct": 24.55
+  },
   "KPITTECH": {
    "promoterPct": 38.6,
    "pledgedPct": 0
   },
-  "LTTS": {
-   "promoterPct": 73.51,
+  "KPRMILL": {
+   "promoterPct": 67.52,
    "pledgedPct": 0
   },
-  "IXIGO": {
-   "promoterPct": 0,
-   "pledgedPct": null
+  "KSB": {
+   "promoterPct": 69.8,
+   "pledgedPct": 0
+  },
+  "LALPATHLAB": {
+   "promoterPct": 52.93,
+   "pledgedPct": 0
+  },
+  "LAURUSLABS": {
+   "promoterPct": 27.47,
+   "pledgedPct": 2.19
+  },
+  "LEMONTREE": {
+   "promoterPct": 22.32,
+   "pledgedPct": 0
   },
   "LENSKART": {
    "promoterPct": 17.52,
+   "pledgedPct": 0
+  },
+  "LGEINDIA": {
+   "promoterPct": 85,
+   "pledgedPct": 0
+  },
+  "LICHSGFIN": {
+   "promoterPct": 45.24,
+   "pledgedPct": 0
+  },
+  "LICI": {
+   "promoterPct": 90,
+   "pledgedPct": 0
+  },
+  "LINDEINDIA": {
+   "promoterPct": 75,
+   "pledgedPct": 0
+  },
+  "LLOYDSME": {
+   "promoterPct": 61.61,
+   "pledgedPct": 14.43
+  },
+  "LODHA": {
+   "promoterPct": 70.29,
+   "pledgedPct": 0
+  },
+  "LT": {
+   "promoterPct": 0,
+   "pledgedPct": null
+  },
+  "LTF": {
+   "promoterPct": 65.93,
+   "pledgedPct": 0
+  },
+  "LTFOODS": {
+   "promoterPct": 51.01,
    "pledgedPct": 0
   },
   "LTM": {
    "promoterPct": 69.01,
    "pledgedPct": 0
   },
+  "LTTS": {
+   "promoterPct": 73.51,
+   "pledgedPct": 0
+  },
+  "LUPIN": {
+   "promoterPct": 46.84,
+   "pledgedPct": 0
+  },
+  "M&M": {
+   "promoterPct": 18.39,
+   "pledgedPct": 0.02
+  },
+  "M&MFIN": {
+   "promoterPct": 52.48,
+   "pledgedPct": 0
+  },
+  "MAHABANK": {
+   "promoterPct": 73.6,
+   "pledgedPct": 0
+  },
+  "MANAPPURAM": {
+   "promoterPct": 41.66,
+   "pledgedPct": 0.44
+  },
+  "MANKIND": {
+   "promoterPct": 72.62,
+   "pledgedPct": 0
+  },
+  "MARICO": {
+   "promoterPct": 58.83,
+   "pledgedPct": 2.03
+  },
+  "MARUTI": {
+   "promoterPct": 58.72,
+   "pledgedPct": 0
+  },
+  "MAXHEALTH": {
+   "promoterPct": 23.71,
+   "pledgedPct": 0
+  },
+  "MAZDOCK": {
+   "promoterPct": 81.22,
+   "pledgedPct": 0
+  },
   "MCLOUD": {
    "promoterPct": 54.04,
    "pledgedPct": 59.01
+  },
+  "MCX": {
+   "promoterPct": 0,
+   "pledgedPct": null
+  },
+  "MEDANTA": {
+   "promoterPct": 33,
+   "pledgedPct": 0
   },
   "MEESHO": {
    "promoterPct": 16.34,
    "pledgedPct": 0
   },
+  "MFSL": {
+   "promoterPct": 1.25,
+   "pledgedPct": 43.71
+  },
+  "MGL": {
+   "promoterPct": 32.5,
+   "pledgedPct": 0
+  },
   "MILKYMIST": {
    "promoterPct": 79.51,
+   "pledgedPct": 0
+  },
+  "MINDACORP": {
+   "promoterPct": 64.84,
+   "pledgedPct": 0
+  },
+  "MMTC": {
+   "promoterPct": 89.93,
+   "pledgedPct": 0
+  },
+  "MOBIKWIK": {
+   "promoterPct": 25.21,
    "pledgedPct": 0
   },
   "MONEYVIEW": {
@@ -370,100 +1402,404 @@
    "promoterPct": 39.17,
    "pledgedPct": 0
   },
+  "MOTHERSON": {
+   "promoterPct": 48.6,
+   "pledgedPct": 2.34
+  },
+  "MOTILALOFS": {
+   "promoterPct": 66.71,
+   "pledgedPct": 0
+  },
   "MPHASIS": {
    "promoterPct": 30.53,
    "pledgedPct": 100
   },
-  "MCX": {
-   "promoterPct": 0,
-   "pledgedPct": null
+  "MRF": {
+   "promoterPct": 27.61,
+   "pledgedPct": 0.09
   },
-  "NAZARA": {
-   "promoterPct": 32,
-   "pledgedPct": 87.74
+  "MRPL": {
+   "promoterPct": 88.58,
+   "pledgedPct": 0
   },
-  "NETWEB": {
-   "promoterPct": 64.16,
+  "MSUMI": {
+   "promoterPct": 61.73,
+   "pledgedPct": 0
+  },
+  "MTARTECH": {
+   "promoterPct": 29.23,
+   "pledgedPct": 3.89
+  },
+  "MUTHOOTFIN": {
+   "promoterPct": 73.35,
    "pledgedPct": 0
   },
   "NAM-INDIA": {
    "promoterPct": 71.72,
    "pledgedPct": 0
   },
+  "NATCOPHARM": {
+   "promoterPct": 46.22,
+   "pledgedPct": 0.94
+  },
+  "NATIONALUM": {
+   "promoterPct": 51.28,
+   "pledgedPct": 0
+  },
+  "NAUKRI": {
+   "promoterPct": 37.19,
+   "pledgedPct": 0
+  },
+  "NAVA": {
+   "promoterPct": 50.03,
+   "pledgedPct": 0
+  },
+  "NAVINFLUOR": {
+   "promoterPct": 27.08,
+   "pledgedPct": 0
+  },
+  "NAZARA": {
+   "promoterPct": 32,
+   "pledgedPct": 87.74
+  },
+  "NBCC": {
+   "promoterPct": 61.75,
+   "pledgedPct": 0
+  },
+  "NCC": {
+   "promoterPct": 23.19,
+   "pledgedPct": 3.78
+  },
+  "NESTLEIND": {
+   "promoterPct": 62.76,
+   "pledgedPct": 0
+  },
+  "NETWEB": {
+   "promoterPct": 64.16,
+   "pledgedPct": 0
+  },
+  "NEULANDLAB": {
+   "promoterPct": 32.26,
+   "pledgedPct": 2.32
+  },
+  "NH": {
+   "promoterPct": 63.27,
+   "pledgedPct": 0
+  },
+  "NHPC": {
+   "promoterPct": 61.39,
+   "pledgedPct": 0
+  },
+  "NIACL": {
+   "promoterPct": 85.44,
+   "pledgedPct": 0
+  },
+  "NLCINDIA": {
+   "promoterPct": 69.47,
+   "pledgedPct": 0
+  },
+  "NMDC": {
+   "promoterPct": 60.79,
+   "pledgedPct": 0
+  },
+  "NSE": {
+   "promoterPct": 0,
+   "pledgedPct": null
+  },
+  "NSLNISP": {
+   "promoterPct": 60.79,
+   "pledgedPct": 0
+  },
+  "NTPC": {
+   "promoterPct": 51.1,
+   "pledgedPct": 0
+  },
+  "NTPCGREEN": {
+   "promoterPct": 89.01,
+   "pledgedPct": 0
+  },
   "NUVAMA": {
    "promoterPct": 53.4,
    "pledgedPct": 62.8
   },
-  "PAYTM": {
-   "promoterPct": 0,
-   "pledgedPct": null
-  },
-  "MOBIKWIK": {
-   "promoterPct": 25.21,
+  "NUVOCO": {
+   "promoterPct": 72.02,
    "pledgedPct": 0
   },
-  "KISSHT": {
-   "promoterPct": 20.42,
+  "NYKAA": {
+   "promoterPct": 52.07,
+   "pledgedPct": 0
+  },
+  "OBEROIRLTY": {
+   "promoterPct": 67.7,
+   "pledgedPct": 0
+  },
+  "OFSS": {
+   "promoterPct": 72.39,
+   "pledgedPct": 0
+  },
+  "OIL": {
+   "promoterPct": 56.66,
+   "pledgedPct": 0
+  },
+  "OLAELEC": {
+   "promoterPct": 32.49,
+   "pledgedPct": 12.31
+  },
+  "OLECTRA": {
+   "promoterPct": 50.02,
+   "pledgedPct": 0
+  },
+  "ONESOURCE": {
+   "promoterPct": 30.47,
+   "pledgedPct": 38.79
+  },
+  "ONGC": {
+   "promoterPct": 58.89,
    "pledgedPct": 0
   },
   "PACEDIGITK": {
    "promoterPct": 69.52,
    "pledgedPct": 0
   },
-  "POLICYBZR": {
+  "PAGEIND": {
+   "promoterPct": 42.89,
+   "pledgedPct": 0
+  },
+  "PARADEEP": {
+   "promoterPct": 57.85,
+   "pledgedPct": 10.34
+  },
+  "PATANJALI": {
+   "promoterPct": 68.25,
+   "pledgedPct": 0
+  },
+  "PAYTM": {
    "promoterPct": 0,
    "pledgedPct": null
   },
+  "PCBL": {
+   "promoterPct": 53.38,
+   "pledgedPct": 0
+  },
   "PERSISTENT": {
    "promoterPct": 28.82,
+   "pledgedPct": 0
+  },
+  "PETRONET": {
+   "promoterPct": 50,
+   "pledgedPct": 0
+  },
+  "PFC": {
+   "promoterPct": 55.99,
+   "pledgedPct": 0
+  },
+  "PFOCUS": {
+   "promoterPct": 60.55,
+   "pledgedPct": 0
+  },
+  "PGEL": {
+   "promoterPct": 43.2,
+   "pledgedPct": 0
+  },
+  "PHOENIXLTD": {
+   "promoterPct": 47.24,
+   "pledgedPct": 0
+  },
+  "PIDILITIND": {
+   "promoterPct": 69.18,
+   "pledgedPct": 0
+  },
+  "PIIND": {
+   "promoterPct": 46.09,
    "pledgedPct": 0
   },
   "PINELABS": {
    "promoterPct": 0,
    "pledgedPct": null
   },
+  "PIRAMALFIN": {
+   "promoterPct": 44.22,
+   "pledgedPct": 0
+  },
+  "PNB": {
+   "promoterPct": 70.08,
+   "pledgedPct": 0
+  },
+  "PNBHOUSING": {
+   "promoterPct": 28.01,
+   "pledgedPct": 0
+  },
+  "POLICYBZR": {
+   "promoterPct": 0,
+   "pledgedPct": null
+  },
+  "POLYCAB": {
+   "promoterPct": 61.44,
+   "pledgedPct": 0
+  },
+  "POLYMED": {
+   "promoterPct": 62.42,
+   "pledgedPct": 0
+  },
+  "POONAWALLA": {
+   "promoterPct": 59.01,
+   "pledgedPct": 0
+  },
+  "POWERGRID": {
+   "promoterPct": 51.34,
+   "pledgedPct": 0
+  },
+  "POWERINDIA": {
+   "promoterPct": 71.31,
+   "pledgedPct": 0
+  },
+  "PPLPHARMA": {
+   "promoterPct": 34.8,
+   "pledgedPct": 0
+  },
   "PREMIERENE": {
    "promoterPct": 58.49,
    "pledgedPct": 0
+  },
+  "PRESTIGE": {
+   "promoterPct": 60.94,
+   "pledgedPct": 0
+  },
+  "PRIVISCL": {
+   "promoterPct": 60.6,
+   "pledgedPct": 0
+  },
+  "PTCIL": {
+   "promoterPct": 56.46,
+   "pledgedPct": 0.07
   },
   "PVRINOX": {
    "promoterPct": 27.6,
    "pledgedPct": 11.1
   },
-  "RSYSTEMS": {
-   "promoterPct": 51.84,
+  "PWL": {
+   "promoterPct": 71.17,
    "pledgedPct": 0
   },
   "RADICO": {
    "promoterPct": 40.17,
    "pledgedPct": 0
   },
-  "RVNL": {
+  "RAILTEL": {
    "promoterPct": 72.84,
    "pledgedPct": 0
   },
-  "RAILTEL": {
-   "promoterPct": 72.84,
+  "RAINBOW": {
+   "promoterPct": 49.83,
+   "pledgedPct": 0
+  },
+  "RAMCOCEM": {
+   "promoterPct": 42.56,
+   "pledgedPct": 3.59
+  },
+  "RBLBANK": {
+   "promoterPct": 59.88,
+   "pledgedPct": 0
+  },
+  "RCOM": {
+   "promoterPct": 0.77,
+   "pledgedPct": 0
+  },
+  "RECLTD": {
+   "promoterPct": 52.63,
    "pledgedPct": 0
   },
   "REDINGTON": {
    "promoterPct": 0,
    "pledgedPct": null
   },
-  "RCOM": {
-   "promoterPct": 0.77,
+  "RELIANCE": {
+   "promoterPct": 50.44,
+   "pledgedPct": 0
+  },
+  "RHIM": {
+   "promoterPct": 56.07,
    "pledgedPct": 0
   },
   "RITES": {
    "promoterPct": 72.2,
    "pledgedPct": 0
   },
+  "RKFORGE": {
+   "promoterPct": 40.93,
+   "pledgedPct": 16.96
+  },
+  "RPOWER": {
+   "promoterPct": 24.98,
+   "pledgedPct": 0
+  },
+  "RRKABEL": {
+   "promoterPct": 59.32,
+   "pledgedPct": 0
+  },
+  "RSYSTEMS": {
+   "promoterPct": 51.84,
+   "pledgedPct": 0
+  },
+  "RUBICON": {
+   "promoterPct": 51.25,
+   "pledgedPct": 0
+  },
+  "RVNL": {
+   "promoterPct": 72.84,
+   "pledgedPct": 0
+  },
   "SAGILITY": {
    "promoterPct": 50.95,
    "pledgedPct": 0
   },
+  "SAIL": {
+   "promoterPct": 65,
+   "pledgedPct": 0
+  },
+  "SAILIFE": {
+   "promoterPct": 34.5,
+   "pledgedPct": 0
+  },
+  "SAMMAANCAP": {
+   "promoterPct": 33.32,
+   "pledgedPct": 0
+  },
+  "SANSERA": {
+   "promoterPct": 29.04,
+   "pledgedPct": 0
+  },
+  "SARDAEN": {
+   "promoterPct": 73.16,
+   "pledgedPct": 0
+  },
+  "SBICARD": {
+   "promoterPct": 68.86,
+   "pledgedPct": 0
+  },
   "SBIFUNDS": {
    "promoterPct": 88.19,
+   "pledgedPct": 0
+  },
+  "SBILIFE": {
+   "promoterPct": 55.31,
+   "pledgedPct": 0
+  },
+  "SBIN": {
+   "promoterPct": 55.45,
+   "pledgedPct": 0
+  },
+  "SCHAEFFLER": {
+   "promoterPct": 74.13,
+   "pledgedPct": 0
+  },
+  "SCHNEIDER": {
+   "promoterPct": 75,
+   "pledgedPct": 0
+  },
+  "SCI": {
+   "promoterPct": 63.75,
    "pledgedPct": 0
   },
   "SHADOWFAX": {
@@ -478,28 +1814,128 @@
    "promoterPct": 0,
    "pledgedPct": null
   },
+  "SHREECEM": {
+   "promoterPct": 62.55,
+   "pledgedPct": 0
+  },
+  "SHRIPISTON": {
+   "promoterPct": 41.55,
+   "pledgedPct": 0
+  },
+  "SHRIRAMFIN": {
+   "promoterPct": 20.3,
+   "pledgedPct": 0
+  },
+  "SHYAMMETL": {
+   "promoterPct": 74.59,
+   "pledgedPct": 0
+  },
+  "SIEMENS": {
+   "promoterPct": 75,
+   "pledgedPct": 0
+  },
+  "SIGNATURE": {
+   "promoterPct": 69.54,
+   "pledgedPct": 0
+  },
+  "SJVN": {
+   "promoterPct": 81.85,
+   "pledgedPct": 0
+  },
   "SKYWAYS": {
    "promoterPct": 56.82,
+   "pledgedPct": 0
+  },
+  "SOBHA": {
+   "promoterPct": 52.89,
+   "pledgedPct": 0
+  },
+  "SOLARINDS": {
+   "promoterPct": 73.15,
+   "pledgedPct": 2.95
+  },
+  "SONACOMS": {
+   "promoterPct": 27.91,
+   "pledgedPct": 0
+  },
+  "SRF": {
+   "promoterPct": 50.26,
+   "pledgedPct": 0
+  },
+  "STARHEALTH": {
+   "promoterPct": 58,
    "pledgedPct": 0
   },
   "STLNETWORK": {
    "promoterPct": 44.11,
    "pledgedPct": 0
   },
+  "STLTECH": {
+   "promoterPct": 42.28,
+   "pledgedPct": 0
+  },
   "SUBEXLTD": {
    "promoterPct": 0,
    "pledgedPct": null
+  },
+  "SUMICHEM": {
+   "promoterPct": 75,
+   "pledgedPct": 0
+  },
+  "SUNDARMFIN": {
+   "promoterPct": 37.19,
+   "pledgedPct": 0
+  },
+  "SUNPHARMA": {
+   "promoterPct": 52.68,
+   "pledgedPct": 0.01
+  },
+  "SUNTV": {
+   "promoterPct": 75,
+   "pledgedPct": 0
+  },
+  "SUPREMEIND": {
+   "promoterPct": 48.96,
+   "pledgedPct": 0
+  },
+  "SUZLON": {
+   "promoterPct": 11.7,
+   "pledgedPct": 0
+  },
+  "SWANCORP": {
+   "promoterPct": 53.96,
+   "pledgedPct": 40.73
   },
   "SWIGGY": {
    "promoterPct": 0,
    "pledgedPct": null
   },
+  "SYNGENE": {
+   "promoterPct": 52.59,
+   "pledgedPct": 0
+  },
+  "SYRMA": {
+   "promoterPct": 41.63,
+   "pledgedPct": 0
+  },
+  "TARIL": {
+   "promoterPct": 64.36,
+   "pledgedPct": 21.84
+  },
+  "TATACAP": {
+   "promoterPct": 85.41,
+   "pledgedPct": 0
+  },
+  "TATACHEM": {
+   "promoterPct": 37.98,
+   "pledgedPct": 0
+  },
   "TATACOMM": {
    "promoterPct": 58.85,
    "pledgedPct": 0
   },
-  "TCS": {
-   "promoterPct": 71.77,
+  "TATACONSUM": {
+   "promoterPct": 33.83,
    "pledgedPct": 0
   },
   "TATAELXSI": {
@@ -510,32 +1946,156 @@
    "promoterPct": 73.38,
    "pledgedPct": 0
   },
+  "TATAPOWER": {
+   "promoterPct": 46.86,
+   "pledgedPct": 0
+  },
+  "TATASTEEL": {
+   "promoterPct": 32.94,
+   "pledgedPct": 0
+  },
   "TATATECH": {
    "promoterPct": 55.17,
+   "pledgedPct": 0
+  },
+  "TBOTEK": {
+   "promoterPct": 44.41,
+   "pledgedPct": 0
+  },
+  "TCS": {
+   "promoterPct": 71.77,
+   "pledgedPct": 0
+  },
+  "TDPOWERSYS": {
+   "promoterPct": 26.51,
    "pledgedPct": 0
   },
   "TECHM": {
    "promoterPct": 34.96,
    "pledgedPct": 0
   },
+  "TECHNOE": {
+   "promoterPct": 56.92,
+   "pledgedPct": 0
+  },
+  "TEGA": {
+   "promoterPct": 67.08,
+   "pledgedPct": 0
+  },
   "TEJASNET": {
    "promoterPct": 53.28,
+   "pledgedPct": 0
+  },
+  "TENNIND": {
+   "promoterPct": 59.79,
+   "pledgedPct": 0
+  },
+  "TFCILTD": {
+   "promoterPct": 3.85,
+   "pledgedPct": 0
+  },
+  "THANGAMAYL": {
+   "promoterPct": 61.65,
+   "pledgedPct": 0
+  },
+  "THERMAX": {
+   "promoterPct": 61.98,
+   "pledgedPct": 0
+  },
+  "TIINDIA": {
+   "promoterPct": 44.1,
+   "pledgedPct": 0.01
+  },
+  "TIMKEN": {
+   "promoterPct": 51.05,
+   "pledgedPct": 0
+  },
+  "TITAGARH": {
+   "promoterPct": 40.46,
+   "pledgedPct": 0.06
+  },
+  "TITAN": {
+   "promoterPct": 52.9,
+   "pledgedPct": 0
+  },
+  "TMCV": {
+   "promoterPct": 42.51,
+   "pledgedPct": 0
+  },
+  "TMPV": {
+   "promoterPct": 42.5,
+   "pledgedPct": 0
+  },
+  "TONBO": {
+   "promoterPct": 14.56,
+   "pledgedPct": null
+  },
+  "TORNTPHARM": {
+   "promoterPct": 60.78,
+   "pledgedPct": 0
+  },
+  "TORNTPOWER": {
+   "promoterPct": 51.09,
+   "pledgedPct": 0
+  },
+  "TRENT": {
+   "promoterPct": 37.01,
+   "pledgedPct": 0
+  },
+  "TRIDENT": {
+   "promoterPct": 73.68,
+   "pledgedPct": 0
+  },
+  "TRITURBINE": {
+   "promoterPct": 55.84,
+   "pledgedPct": 0
+  },
+  "TTML": {
+   "promoterPct": 74.36,
    "pledgedPct": 0
   },
   "TURTLEMINT": {
    "promoterPct": 13.21,
    "pledgedPct": 0
   },
+  "TVSMOTOR": {
+   "promoterPct": 50.27,
+   "pledgedPct": 0
+  },
   "UBL": {
    "promoterPct": 70.83,
    "pledgedPct": 12.4
+  },
+  "UCOBANK": {
+   "promoterPct": 90.95,
+   "pledgedPct": 0
+  },
+  "ULTRACEMCO": {
+   "promoterPct": 58.48,
+   "pledgedPct": 0
+  },
+  "UNIONBANK": {
+   "promoterPct": 74.76,
+   "pledgedPct": 0
   },
   "UNITDSPR": {
    "promoterPct": 56.67,
    "pledgedPct": 1.18
   },
+  "UNOMINDA": {
+   "promoterPct": 68.36,
+   "pledgedPct": 0
+  },
+  "UPL": {
+   "promoterPct": 33.51,
+   "pledgedPct": 0
+  },
   "URBANCO": {
    "promoterPct": 19.02,
+   "pledgedPct": 0
+  },
+  "USHAMART": {
+   "promoterPct": 40.09,
    "pledgedPct": 0
   },
   "UTIAMC": {
@@ -546,25 +2106,77 @@
    "promoterPct": 40.04,
    "pledgedPct": 0
   },
+  "VAML": {
+   "promoterPct": 56.38,
+   "pledgedPct": 0
+  },
+  "VBL": {
+   "promoterPct": 59.43,
+   "pledgedPct": 0
+  },
+  "VEDL": {
+   "promoterPct": 54.72,
+   "pledgedPct": 0
+  },
+  "VEDPOWER": {
+   "promoterPct": 56.38,
+   "pledgedPct": 0
+  },
+  "VIJAYA": {
+   "promoterPct": 52.46,
+   "pledgedPct": 1.96
+  },
   "VIKRAMSOLR": {
    "promoterPct": 63.01,
    "pledgedPct": 9.24
   },
-  "IDEA": {
-   "promoterPct": 25.64,
+  "VISL": {
+   "promoterPct": 56.38,
+   "pledgedPct": 0
+  },
+  "VMM": {
+   "promoterPct": 40.02,
+   "pledgedPct": 0
+  },
+  "VOGL": {
+   "promoterPct": 56.38,
+   "pledgedPct": 0
+  },
+  "VOLTAS": {
+   "promoterPct": 30.3,
+   "pledgedPct": 0
+  },
+  "VTL": {
+   "promoterPct": 65.06,
    "pledgedPct": 0
   },
   "WAAREEENER": {
    "promoterPct": 64.12,
    "pledgedPct": 0
   },
-  "CORDELIA": {
-   "promoterPct": 89.35,
+  "WEBELSOLAR": {
+   "promoterPct": 29.72,
+   "pledgedPct": 15.64
+  },
+  "WELCORP": {
+   "promoterPct": 47.46,
+   "pledgedPct": 0
+  },
+  "WELSPUNLIV": {
+   "promoterPct": 63.77,
+   "pledgedPct": 0
+  },
+  "WHIRLPOOL": {
+   "promoterPct": 39.76,
    "pledgedPct": 0
   },
   "WIPRO": {
    "promoterPct": 72.58,
    "pledgedPct": 0
+  },
+  "WOCKPHARMA": {
+   "promoterPct": 49.32,
+   "pledgedPct": 9.97
   },
   "XTRANET": {
    "promoterPct": 62.62,
@@ -574,36 +2186,36 @@
    "promoterPct": 62.66,
    "pledgedPct": 0
   },
+  "YESBANK": {
+   "promoterPct": 0,
+   "pledgedPct": null
+  },
   "ZAGGLE": {
    "promoterPct": 44.3,
    "pledgedPct": 1.61
   },
-  "PFOCUS": {
-   "promoterPct": 60.55,
+  "ZEEL": {
+   "promoterPct": 3.99,
+   "pledgedPct": 5.38
+  },
+  "ZENSARTECH": {
+   "promoterPct": 48.98,
    "pledgedPct": 0
-  },
-  "STLTECH": {
-   "promoterPct": 42.28,
-   "pledgedPct": 0
-  },
-  "SYRMA": {
-   "promoterPct": 41.63,
-   "pledgedPct": 0
-  },
-  "TONBO": {
-   "promoterPct": 14.56,
-   "pledgedPct": null
-  },
-  "TFCILTD": {
-   "promoterPct": 3.85,
-   "pledgedPct": 0
-  },
-  "WEBELSOLAR": {
-   "promoterPct": 29.72,
-   "pledgedPct": 15.64
   },
   "ZENTEC": {
    "promoterPct": 48.51,
+   "pledgedPct": 0
+  },
+  "ZFCVINDIA": {
+   "promoterPct": 60,
+   "pledgedPct": 0
+  },
+  "ZYDUSLIFE": {
+   "promoterPct": 75.01,
+   "pledgedPct": 0
+  },
+  "ZYDUSWELL": {
+   "promoterPct": 69.64,
    "pledgedPct": 0
   }
  }

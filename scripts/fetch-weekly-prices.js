@@ -63,7 +63,11 @@ async function fetchChart(ysym, range) {
   }
   return null;
 }
-// Candles with close + volume, sorted by time, nulls dropped.
+// Candles with close + volume, sorted by time, nulls dropped — except the
+// session candle, which is kept even with a null close so the caller can
+// substitute the market-data.json close (Yahoo sometimes returns a null
+// close for the session candle; dropping it made the whole symbol read
+// as missing).
 function parseCandles(res) {
   const ts = res.timestamp || [];
   const quo = (res.indicators && res.indicators.quote && res.indicators.quote[0]) || {};
@@ -71,8 +75,9 @@ function parseCandles(res) {
   const vols = quo.volume || [];
   const out = [];
   for (let i = 0; i < ts.length; i++) {
-    if (closes[i] === null || closes[i] === undefined) continue;
-    out.push({ t: ts[i], c: closes[i], v: (vols[i] === null || vols[i] === undefined) ? null : vols[i] });
+    const nullClose = closes[i] === null || closes[i] === undefined;
+    if (nullClose && istDate(ts[i]) !== SESSION) continue;
+    out.push({ t: ts[i], c: nullClose ? null : closes[i], v: (vols[i] === null || vols[i] === undefined) ? null : vols[i] });
   }
   out.sort((a, b) => a.t - b.t);
   return out;
@@ -80,6 +85,7 @@ function parseCandles(res) {
 async function main() {
   const stocks = {};
   const missing = [];
+  const fallbackSyms = [];
   const CHUNK = 20;
   for (let i = 0; i < FETCH.length; i += CHUNK) {
     const chunk = FETCH.slice(i, i + CHUNK);
@@ -102,15 +108,27 @@ async function main() {
         if (istDate(candles[k].t) === SESSION) { si = k; break; }
       }
       if (si < 0) return { sym, ok: false, reason: 'no session candle' };
+      // Session-close fallback: Yahoo sometimes returns a null close for
+      // the session candle. Substitute the market-data.json close for the
+      // same session (md.stocks[sym].p) so the DMA still computes; volume
+      // stays null, so the Axelrod volume check falls back to the daily
+      // market-data ratio (m.v).
+      let sessionCloseFallback = false;
+      if (candles[si].c === null || candles[si].c === undefined) {
+        const fb = md.stocks[sym] && md.stocks[sym].p;
+        if (fb === null || fb === undefined) return { sym, ok: false, reason: 'no session close' };
+        candles[si].c = fb;
+        sessionCloseFallback = true;
+      }
       const closesToSession = candles.slice(0, si + 1).map(c => c.c);
       const dma200 = closesToSession.length >= 200
         ? closesToSession.slice(-200).reduce((a, b) => a + b, 0) / 200 : null;
-      const vol = candles[si].v;
+      const vol = sessionCloseFallback ? null : candles[si].v;
       const priorVols = candles.slice(Math.max(0, si - 15), si).map(c => c.v).filter(v => v !== null);
       const volAvg15 = priorVols.length >= 5
         ? priorVols.reduce((a, b) => a + b, 0) / priorVols.length : null;
       return {
-        sym, ok: true,
+        sym, ok: true, sessionCloseFallback,
         dma200: dma200 === null ? null : Math.round(dma200 * 100) / 100,
         vol: vol === null ? null : vol,
         volAvg15: volAvg15 === null ? null : Math.round(volAvg15),
@@ -120,6 +138,7 @@ async function main() {
     }));
     for (const r of results) {
       if (!r.ok) { missing.push(r.sym); continue; }
+      if (r.sessionCloseFallback) fallbackSyms.push(r.sym);
       stocks[r.sym] = { dma200: r.dma200, vol: r.vol, volAvg15: r.volAvg15, volN: r.volN, closes: r.closes };
     }
     await new Promise(res => setTimeout(res, 150));
@@ -134,7 +153,7 @@ async function main() {
     for (let k = candles.length - 1; k >= 0; k--) {
       if (istDate(candles[k].t) === SESSION) { si = k; break; }
     }
-    if (si >= 0) {
+    if (si >= 0 && candles[si].c !== null && candles[si].c !== undefined) {
       const to = candles[si].c;
       const from = candles[0].c; // first candle of the 3mo window (~3 months back)
       rupee = {
@@ -155,11 +174,13 @@ async function main() {
     rupee,
     stocks,
     missing,
+    sessionCloseFallback: fallbackSyms,
   };
   fs.writeFileSync(path.join(DIR, 'weekly-prices.json'), JSON.stringify(out, null, 1));
   const withDma = Object.values(stocks).filter(s => s.dma200 !== null).length;
   const withVol = Object.values(stocks).filter(s => s.vol !== null && s.volAvg15 !== null).length;
   console.log(`done: ${Object.keys(stocks).length}/${FETCH.length} fetched, ${missing.length} missing`);
+  if (fallbackSyms.length) console.log(`session-close fallback (market-data.json close, vol null): ${fallbackSyms.length} — ${fallbackSyms.join(',')}`);
   console.log(`200-DMA: ${withDma} | volume ratio: ${withVol}`);
   console.log('rupee:', JSON.stringify(rupee));
   if (missing.length) console.log('missing:', missing.join(','));
