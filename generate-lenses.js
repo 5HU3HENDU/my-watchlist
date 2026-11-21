@@ -4,10 +4,10 @@
 // per-lens check detail. Same controls per tab: Sector, A–Z, Lenses
 // sort pill, lens dot filter, settings. Default tab is My watchlist —
 // the page is still his watchlist page first.
-// DATA / LOGIC / VIEW (v12, 21 Nov 2026): the background jobs only update
+// DATA / LOGIC / VIEW (v13, 21 Nov 2026): the background jobs only update
 // DATA files (market-data.json, fundamentals-v2.json, weekly-prices.json,
-// pledging.json).
-// PWA (v12): the page is installable — manifest.json + sw.js + SVG icons
+// pledging.json, analysts.json).
+// PWA (v13): the page is installable — manifest.json + sw.js + SVG icons
 // (PIL-rendered PNG embedded as base64, since push-files can't push
 // binary). The worker is NETWORK-FIRST and only handles the lens page's
 // own URLs; Shiva's index.html and his numbered files pass through
@@ -72,7 +72,7 @@ const html = `<!DOCTYPE html>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Lenses">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v12 -->
+<!-- my-watchlist-lenses-v13 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -171,6 +171,7 @@ const html = `<!DOCTYPE html>
   <button class="sectgl hdr" id="azToggleHdr">A–Z</button>
   <button class="sectgl hdr" id="lensToggleHdr">Lenses</button>
   <button class="sectgl hdr" id="rankToggleHdr">Rank</button>
+  <button class="sectgl hdr" id="analystToggleHdr">Analysts View</button>
   <button class="gear" id="gearBtn" aria-label="Settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg><span class="fdot"></span></button>
 </header>
 <main><div id="grid"></div></main>
@@ -187,6 +188,7 @@ const html = `<!DOCTYPE html>
   <div class="srow"><span style="font-size:20px;font-weight:800" id="stPrice"></span> <span id="stChange" style="font-weight:700"></span></div>
   <div class="srow"><div class="dim" style="font-size:12px">Last 5 days</div><div id="stMoves" class="moves"></div></div>
   <div id="stLens"></div>
+  <div class="srow" id="stAnalysts"></div>
   <div class="srow" id="stRank"></div>
   <div class="srow" id="stIndices"></div>
   <div class="srow dim" style="font-size:12px">Data as of <span id="stAsof">\u2014</span></div>
@@ -196,7 +198,7 @@ const html = `<!DOCTYPE html>
   <div style="font-size:17px;font-weight:800" id="unName"></div>
   <div class="dim" style="margin-top:6px" id="unSub">Not listed yet \u2014 no market data</div>
 </div></div>
-<script src="scripts/lenses-logic.js"></script>
+<script src="scripts/lenses-logic.js?v=13"></script>
 <script>
 const N500_SYMS=${n500Json};
 const WL_SYMS=${wlJson};
@@ -223,6 +225,7 @@ let REAL=null, REAL_ASOF="", REAL_SESSION="", LAST_FALLBACK=0, LAST_COUNT=0;
 let LENS_WL=null, LENS_N500=null;
 let RANK_WL=null, RANK_N500=null;
 let FUND=null, FUND_ASOF="", WP=null, RUPEE=null, PLEDGE=null;
+let ANALYSTS=null, BROKER=null;
 let LENS_ASOF="", LENS_SESSION="";
 const ORDER=["Berkshire","Burry","Axelrod","Jhunjhunwala","Lynch","Marks","Druckenmiller"];
 const LENS_SHORT={Berkshire:"BUF",Burry:"BRY",Axelrod:"AXL",Jhunjhunwala:"RJ",Lynch:"LYN",Marks:"MRK",Druckenmiller:"DRU"};
@@ -234,6 +237,7 @@ let SECTOR_MODE=false;
 let AZ_MODE=false;
 let LENS_MODE=false;
 let RANK_MODE=false;
+let ANALYST_MODE=false;
 let TAB="wl"; // "wl" (default) or "n500"
 let FULL_ROWS=[]; // rows of the active tab, in default (return) order
 function fmtINR(n){return n.toLocaleString("en-IN",{minimumFractionDigits:2,maximumFractionDigits:2});}
@@ -261,6 +265,8 @@ function updateSettings(){
   // explanation while rank mode is on.
   document.getElementById("legendLine").innerHTML=RANK_MODE?
     "Rank mode \u2014 #N is the combined percentile rank (1 = best of the tab), 0\u2013100; Q/V/M are the Quality / Value / Momentum sub-ranks. Tiles sort by rank.":
+    ANALYST_MODE?
+    "Analysts View \u2014 five counts per stock (strong buy \u00b7 buy \u00b7 hold \u00b7 sell \u00b7 strong sell, each in its own colour, zeros shown); upside % is the average analyst target vs the current price. Grey upside = fewer than 3 analysts; \u201cNo analyst coverage\u201d = none.":
     "7 lens dots \u2014 Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks, Druckenmiller (<span style='color:#22c55e'>\u25cf</span> lens likes it, <span style='color:#ef4444'>\u25cf</span> lens avoids it, <span style='color:#6b7280'>\u25cf</span> neutral)";
   // Pledging: the Jhunjhunwala pledging check is live for My watchlist
   // (Stocks Sena, v10); Nifty 500 gets it after Saturday's refresh.
@@ -314,6 +320,35 @@ async function loadPledging(){
     if(j&&j.stocks){ PLEDGE=j.stocks; }
   }catch(e){}
 }
+async function loadAnalysts(){
+  // Yahoo analyst consensus (analysts.json, weekly Saturday fetch).
+  // Missing file -> ANALYSTS stays null and the Analysts View tiles
+  // show "No analyst coverage" rather than breaking the page.
+  try{
+    const ctrl=new AbortController();
+    const timer=setTimeout(function(){ctrl.abort();},8000);
+    const r=await fetch("analysts.json",{signal:ctrl.signal});
+    clearTimeout(timer);
+    if(!r.ok) return;
+    const j=await r.json();
+    if(j&&j.stocks){ ANALYSTS=j.stocks; }
+  }catch(e){}
+}
+async function loadBrokerCalls(){
+  // Per-firm broker calls (broker-calls.json) — optional. The file does
+  // not exist in v13: Moneycontrol has no reliable bulk fetch (no URL
+  // discovery for the union, search API Akamai-blocked), so the popup
+  // renders without the per-firm section until a source exists.
+  try{
+    const ctrl=new AbortController();
+    const timer=setTimeout(function(){ctrl.abort();},8000);
+    const r=await fetch("broker-calls.json",{signal:ctrl.signal});
+    clearTimeout(timer);
+    if(!r.ok) return;
+    const j=await r.json();
+    if(j&&j.stocks){ BROKER=j.stocks; }
+  }catch(e){}
+}
 function computeLenses(){
   // Browser-side scoring (rulebook v0.2, 7 lenses, BOTH tabs) from the
   // loaded data files. No pre-computed lens.json any more. If the logic
@@ -349,11 +384,41 @@ function realRow(sym){
   const dots=[]; for(let k=5;k>=1;k--){dots.push(dayUp(sym,k)?1:0);}
   return {pct:samplePct(sym), dots:lensDots(sym), real:false};
 }
+function countsHtml(counts){
+  // Five rating counts, each in its own colour, ALWAYS shown including
+  // 0 — never collapsed or hidden. Order: strong buy, buy, hold, sell,
+  // strong sell. Colours come from LensLogic.ANALYST_COLORS.
+  const cols=(typeof LensLogic!=="undefined"&&LensLogic.ANALYST_COLORS)||{strongBuy:"#15803d",buy:"#4ade80",hold:"#6b7280",sell:"#f87171",strongSell:"#b91c1c"};
+  const keys=["strongBuy","buy","hold","sell","strongSell"];
+  return keys.map(function(k){
+    return '<span style="color:'+cols[k]+';font-weight:700">'+counts[k]+'</span>';
+  }).join(" \u00b7 ");
+}
 function cellHtml(r){
   const pctTxt=(r.pct>=0?"+":"")+r.pct.toFixed(2)+"%";
   // Very small amber dot on Nifty 500 tiles for stocks that are also in
   // My watchlist (watchlist tab needs none — every tile there is one).
   const badge=(TAB==="n500"&&WL_SET.has(r.sym))?'<span class="wlbadge" title="In My watchlist"></span>':"";
+  // Analysts View: five analyst counts in their colours + weighted avg
+  // upside % instead of the 7 lens dots. No coverage -> the counts line
+  // reads "No analyst coverage"; fewer than 3 analysts -> grey "upside
+  // N/A" (counts still show — they are factual). The % weighted score
+  // is NOT on the tile; it lives in the popup detail only.
+  if(ANALYST_MODE){
+    const av=r.an;
+    let countsLine, upsideLine;
+    if(!av||!av.coverage){
+      countsLine='<span class="subrank" style="color:#9ca3af">No analyst coverage</span>';
+      upsideLine="";
+    } else {
+      countsLine='<span class="subrank">'+countsHtml(av.counts)+'</span>';
+      upsideLine=av.upside===null?
+        '<span class="subrank" style="color:#6b7280">upside N/A</span>':
+        '<span class="subrank">upside '+(av.upside>=0?"+":"")+av.upside.toFixed(1)+'%</span>';
+    }
+    return '<div class="cell" data-sym="'+r.sym+'" style="background:'+colorFor(r.pct)+'">'+badge+'<span class="sym">'+r.sym+
+      '</span><span class="ret">'+pctTxt+'</span>'+countsLine+upsideLine+'</div>';
+  }
   // Rank mode: rank number + combined score + Q/V/M sub-ranks instead
   // of the 7 lens dots. "–" where a sub-rank has no data for the stock.
   if(RANK_MODE){
@@ -378,9 +443,10 @@ function greyCellHtml(name,label,kind,sym){
   return '<div class="cell grey" '+attr+' data-name="'+esc(name)+'"><span class="uname">'+esc(name)+'</span><span class="ulabel">'+esc(label)+'</span></div>';
 }
 function render(){
-  // The dot filter does not apply in rank mode (there are no dots to
-  // filter on); the circles are dimmed and inert until lens mode returns.
-  document.getElementById("fcircles").classList.toggle("disabled",RANK_MODE);
+  // The dot filter does not apply in rank or Analysts mode (there are
+  // no dots to filter on); the circles are dimmed and inert until lens
+  // mode returns.
+  document.getElementById("fcircles").classList.toggle("disabled",RANK_MODE||ANALYST_MODE);
   const grid=document.getElementById("grid");
   grid.style.gridTemplateColumns="repeat(25,1fr)";
   let fallback=0;
@@ -395,7 +461,11 @@ function render(){
     r.dots.forEach(function(d){ if(d===1)g++; else if(d===0)rd++; });
     const rk=activeRank();
     const rec=rk?rk[sym]:null;
-    return {sym:sym,pct:r.pct,dots:r.dots,g:g,r:rd,rk:rec?rec.rank:null,score:rec?rec.score:null,q:rec?rec.q:null,v:rec?rec.v:null,m:rec?rec.m:null};
+    // Analysts View data for the tile: counts + upside, computed from
+    // analysts.json (Yahoo consensus). Missing file or no record ->
+    // no coverage (the tile says so, never a made-up number).
+    const av=(typeof LensLogic!=="undefined"&&LensLogic.analystView&&ANALYSTS)?LensLogic.analystView(ANALYSTS[sym]||null):null;
+    return {sym:sym,pct:r.pct,dots:r.dots,g:g,r:rd,rk:rec?rec.rank:null,score:rec?rec.score:null,q:rec?rec.q:null,v:rec?rec.v:null,m:rec?rec.m:null,an:av};
   }).sort(function(a,b){return b.pct-a.pct||(a.sym<b.sym?-1:1);});
   FULL_ROWS=full;
   // Lens sort: green count desc, then red count asc, then today's return desc.
@@ -403,9 +473,9 @@ function render(){
   // Rank sort: combined rank asc (#1 first); unranked (no data) last.
   const rankCmp=function(a,b){return (a.rk===null?1e9:a.rk)-(b.rk===null?1e9:b.rk)||(a.sym<b.sym?-1:1);};
   const disp=RANK_MODE?full.slice().sort(rankCmp):LENS_MODE?full.slice().sort(lensCmp):AZ_MODE?full.slice().sort(function(a,b){return a.sym<b.sym?-1:1;}):full;
-  // The dot filter does not apply in rank mode; the filter state is
-  // kept and applies again when lens mode returns.
-  const rows=RANK_MODE?disp:disp.filter(function(r){
+  // The dot filter does not apply in rank or Analysts mode; the filter
+  // state is kept and applies again when lens mode returns.
+  const rows=(RANK_MODE||ANALYST_MODE)?disp:disp.filter(function(r){
     return FILTER.every(function(f,i){
       if(f===0||i>=r.dots.length) return true;
       return f===1?r.dots[i]===1:r.dots[i]===0;
@@ -482,6 +552,7 @@ function openStock(sym){
   }).join(""):'<span class="dim">No recent moves</span>';
   // Lens breakdown.
   document.getElementById("stLens").innerHTML=lensHtml(sym);
+  document.getElementById("stAnalysts").innerHTML=analystHtml(sym);
   document.getElementById("stRank").textContent="Rank today: #"+(idx+1)+" of "+FULL_ROWS.length;
   const pills=SUB.filter(function(t){return t.list.indexOf(sym)>=0;}).map(function(t){return t.label;});
   if(WL_SYMS.indexOf(sym)>=0) pills.push("My watchlist");
@@ -534,6 +605,54 @@ function lensHtml(sym){
   h+='</div>';
   return h;
 }
+// Analysts section of the popup (v13): the full analyst breakdown —
+// the five counts in their colours, mean rating + Yahoo verdict key,
+// average target + upside %, target range, the 3-month trend, and the
+// % weighted score (popup only, never on the tile). Per-firm calls
+// render only when broker-calls.json exists (it does not in v13 —
+// Moneycontrol has no reliable bulk fetch: no URL discovery for the
+// union, search API Akamai-blocked).
+function analystHtml(sym){
+  // analystView needs analysts.json AND the v13 lenses-logic.js — if
+  // either is missing (e.g. a stale cached script), the section stays
+  // empty rather than breaking the popup.
+  if(!ANALYSTS||typeof LensLogic==="undefined"||!LensLogic.analystView) return "";
+  const rec=ANALYSTS[sym]||null;
+  if(!rec) return "<b>Analysts</b> — no analyst coverage.";
+  const av=LensLogic.analystView(rec);
+  if(!av.coverage) return "<b>Analysts</b> — no analyst coverage.";
+  const keyMap={strong_buy:"Strong buy",buy:"Buy",hold:"Hold",underperform:"Underperform",sell:"Sell",none:"—"};
+  const key=(rec.recommendationKey&&keyMap[rec.recommendationKey])||"—";
+  const mean=(rec.recommendationMean===null||rec.recommendationMean===undefined)?"—":rec.recommendationMean.toFixed(2);
+  const n=(rec.numberOfAnalystOpinions===null||rec.numberOfAnalystOpinions===undefined)?av.n:rec.numberOfAnalystOpinions;
+  let h='<div style="border-top:1px solid #374151;padding-top:10px;margin-top:10px"><div style="font-weight:800;margin-bottom:2px">Analysts <span class="dim" style="font-weight:400">— Yahoo consensus, '+n+' analysts</span></div>';
+  h+='<div>'+countsHtml(av.counts)+'</div>';
+  h+='<div>Mean rating '+mean+' ('+key+')';
+  if(av.score!==null) h+=' · score '+Math.round(av.score)+'% <span class="dim">(strong buy 4, buy 3, hold 2, sell 1, strong sell 0)</span>';
+  h+='</div>';
+  if(rec.targetMeanPrice!==null&&rec.targetMeanPrice!==undefined&&rec.currentPrice){
+    const up=LensLogic.analystUpside(rec);
+    h+='<div>Average target ₹'+fmtINR(rec.targetMeanPrice)+(up===null?"":" ("+(up>=0?"+":"")+up.toFixed(1)+"% upside)");
+    if(rec.targetLowPrice!==null&&rec.targetLowPrice!==undefined&&rec.targetHighPrice!==null&&rec.targetHighPrice!==undefined){
+      h+=' · range ₹'+fmtINR(rec.targetLowPrice)+'–₹'+fmtINR(rec.targetHighPrice);
+    }
+    h+='</div>';
+  }
+  const tr=LensLogic.analystTrend(rec);
+  if(tr.length){
+    h+='<div>3-month trend — buys: '+tr.map(function(t){return t.buys;}).join(" → ")+
+      ' · sells: '+tr.map(function(t){return t.sells;}).join(" → ")+
+      ' <span class="dim">('+tr.map(function(t){return t.period;}).join(", ")+', oldest first)</span></div>';
+  }
+  if(BROKER&&BROKER[sym]&&BROKER[sym].length){
+    h+='<div>Recent broker calls (last 3 months):</div>';
+    BROKER[sym].forEach(function(c){
+      h+='<div>• '+esc(c.firm)+' — '+esc(c.rating)+' ₹'+fmtINR(c.target)+' ('+esc(c.date)+')</div>';
+    });
+  }
+  h+='</div>';
+  return h;
+}
 function openUnlisted(name){
   document.getElementById("unName").textContent=name;
   document.getElementById("unSub").textContent="Not listed yet \u2014 no market data";
@@ -579,7 +698,7 @@ function buildFilterUI(){
     const lab=document.createElement("span"); lab.className="fclab"; lab.textContent=LENS_SHORT[lk];
     wrap.appendChild(b); wrap.appendChild(lab);
     b.onclick=function(){
-      if(RANK_MODE) return; // dot filter is inert while rank mode is on
+      if(RANK_MODE||ANALYST_MODE) return; // dot filter is inert while rank or Analysts mode is on
       FILTER[i]=FILTER[i]===0?1:FILTER[i]===1?-1:0;
       paintCircles(); render();
     };
@@ -618,15 +737,15 @@ document.getElementById("sectorToggleHdr").onclick=function(){
 };
 document.getElementById("azToggleHdr").onclick=function(){
   AZ_MODE=!AZ_MODE;
-  if(AZ_MODE){ LENS_MODE=false; RANK_MODE=false; document.getElementById("lensToggleHdr").classList.remove("on"); document.getElementById("rankToggleHdr").classList.remove("on"); }
+  if(AZ_MODE){ LENS_MODE=false; RANK_MODE=false; ANALYST_MODE=false; document.getElementById("lensToggleHdr").classList.remove("on"); document.getElementById("rankToggleHdr").classList.remove("on"); document.getElementById("analystToggleHdr").classList.remove("on"); }
   this.classList.toggle("on",AZ_MODE);
   render();
 };
-// Lenses, Rank and A–Z are mutually exclusive sorts; tapping one again
+// Lenses, Rank, Analysts View and A–Z are mutually exclusive sorts; tapping one again
 // returns to the default return sort. No flip to worst-first.
 document.getElementById("lensToggleHdr").onclick=function(){
   LENS_MODE=!LENS_MODE;
-  if(LENS_MODE){ AZ_MODE=false; RANK_MODE=false; document.getElementById("azToggleHdr").classList.remove("on"); document.getElementById("rankToggleHdr").classList.remove("on"); }
+  if(LENS_MODE){ AZ_MODE=false; RANK_MODE=false; ANALYST_MODE=false; document.getElementById("azToggleHdr").classList.remove("on"); document.getElementById("rankToggleHdr").classList.remove("on"); document.getElementById("analystToggleHdr").classList.remove("on"); }
   this.classList.toggle("on",LENS_MODE);
   render();
 };
@@ -634,8 +753,16 @@ document.getElementById("lensToggleHdr").onclick=function(){
 // instead of the 7 lens dots; the dot filter does not apply while on.
 document.getElementById("rankToggleHdr").onclick=function(){
   RANK_MODE=!RANK_MODE;
-  if(RANK_MODE){ LENS_MODE=false; AZ_MODE=false; document.getElementById("lensToggleHdr").classList.remove("on"); document.getElementById("azToggleHdr").classList.remove("on"); }
+  if(RANK_MODE){ LENS_MODE=false; AZ_MODE=false; ANALYST_MODE=false; document.getElementById("lensToggleHdr").classList.remove("on"); document.getElementById("azToggleHdr").classList.remove("on"); document.getElementById("analystToggleHdr").classList.remove("on"); }
   this.classList.toggle("on",RANK_MODE);
+  render();
+};
+// Analysts View mode shows the five analyst counts + weighted avg upside
+// % instead of the 7 lens dots; the dot filter does not apply while on.
+document.getElementById("analystToggleHdr").onclick=function(){
+  ANALYST_MODE=!ANALYST_MODE;
+  if(ANALYST_MODE){ LENS_MODE=false; AZ_MODE=false; RANK_MODE=false; document.getElementById("lensToggleHdr").classList.remove("on"); document.getElementById("azToggleHdr").classList.remove("on"); document.getElementById("rankToggleHdr").classList.remove("on"); }
+  this.classList.toggle("on",ANALYST_MODE);
   render();
 };
 // Tabs: Nifty 500 vs My watchlist (default). The lens dot filter resets
@@ -655,7 +782,7 @@ overlay.addEventListener("click",function(e){ if(e.target===overlay) closeAll();
 stockOverlay.addEventListener("click",function(e){ if(e.target===stockOverlay) closeAll(); });
 unlistedOverlay.addEventListener("click",function(e){ if(e.target===unlistedOverlay) closeAll(); });
 document.addEventListener("keydown",function(e){ if(e.key==="Escape"){ closeAll(); } });
-Promise.all([loadReal(),loadFundamentals(),loadWeeklyPrices(),loadPledging()]).then(function(){ computeLenses(); buildFilterUI(); render(); });
+Promise.all([loadReal(),loadFundamentals(),loadWeeklyPrices(),loadPledging(),loadAnalysts(),loadBrokerCalls()]).then(function(){ computeLenses(); buildFilterUI(); render(); });
 </script>
 <script>
 if ('serviceWorker' in navigator) {

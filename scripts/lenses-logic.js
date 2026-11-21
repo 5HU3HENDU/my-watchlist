@@ -472,6 +472,95 @@ var LensLogic = (function () {
     return out;
   }
 
-  return { LENSES: LENSES, scoreStock: scoreStock, verdict: verdict, compute: compute, computeRank: computeRank };
+  // Analysts View (v13): pure helpers over one analysts.json record
+  // (Yahoo recommendationTrend + financialData). Each rating has its
+  // own colour — strong buy dark green, buy light green, hold grey,
+  // sell light red, strong sell dark red. Hold stays grey so it never
+  // clashes with the amber watchlist-overlap dot on N500 tiles.
+  // Thin-coverage rule (Shiva): fewer than 3 analysts -> upside and
+  // score are N/A (grey); the counts still show — they are factual.
+  // Zero analysts -> no coverage at all ("No analyst coverage").
+  var ANALYST_COLORS = {
+    strongBuy: '#15803d', buy: '#4ade80', hold: '#6b7280',
+    sell: '#f87171', strongSell: '#b91c1c',
+  };
+  var ANALYST_KEYS = ['strongBuy', 'buy', 'hold', 'sell', 'strongSell'];
+  var ANALYST_WEIGHTS = { strongBuy: 4, buy: 3, hold: 2, sell: 1, strongSell: 0 };
+
+  // Counts from the CURRENT period (trend[0], period "0m"). Null when
+  // there is no trend row at all (no consensus). A missing count inside
+  // an existing row reads as 0 — Yahoo sends explicit 0s.
+  function analystCounts(rec) {
+    if (!rec || !Array.isArray(rec.trend) || !rec.trend.length) return null;
+    var t = rec.trend[0];
+    var out = {};
+    ANALYST_KEYS.forEach(function (k) {
+      var v = t[k];
+      out[k] = (v === null || v === undefined) ? 0 : v;
+    });
+    return out;
+  }
+  // Number of covering analysts: Yahoo's opinion count when present,
+  // else the sum of the current-period counts. Null when unknown.
+  function analystN(rec) {
+    if (!rec) return null;
+    if (rec.numberOfAnalystOpinions !== null && rec.numberOfAnalystOpinions !== undefined) return rec.numberOfAnalystOpinions;
+    var c = analystCounts(rec);
+    if (!c) return null;
+    return ANALYST_KEYS.reduce(function (a, k) { return a + c[k]; }, 0);
+  }
+  // Weighted average upside %: (average target / current price - 1) x
+  // 100, from the consensus response's own prices (same response, so
+  // tile and popup can never disagree). Null when either price is
+  // missing. Yahoo publishes only the MEAN target, so this is the
+  // equal-weighted mean across analysts — rating-weighted targets would
+  // need per-firm data, which Yahoo does not give.
+  function analystUpside(rec) {
+    if (!rec || rec.targetMeanPrice === null || rec.targetMeanPrice === undefined ||
+        rec.currentPrice === null || rec.currentPrice === undefined || rec.currentPrice === 0) return null;
+    return (rec.targetMeanPrice / rec.currentPrice - 1) * 100;
+  }
+  // % weighted score (popup only, never on the tile): strong buy 4,
+  // buy 3, hold 2, sell 1, strong sell 0; weighted sum / (4 x analysts)
+  // x 100. Null when there are no counts to weigh.
+  function analystScore(rec) {
+    var c = analystCounts(rec);
+    if (!c) return null;
+    var n = ANALYST_KEYS.reduce(function (a, k) { return a + c[k]; }, 0);
+    if (n === 0) return null;
+    var s = ANALYST_KEYS.reduce(function (a, k) { return a + ANALYST_WEIGHTS[k] * c[k]; }, 0);
+    return s / (4 * n) * 100;
+  }
+  // The tile's view of one record: coverage, analyst count, the five
+  // counts (always, zeros included), upside and score — the last two
+  // null under the thin-coverage rule (< 3 analysts).
+  function analystView(rec) {
+    var c = analystCounts(rec);
+    if (!c) return { coverage: false, n: 0, counts: null, upside: null, score: null };
+    var n = analystN(rec);
+    var thin = (n === null || n < 3);
+    return {
+      coverage: true,
+      n: n,
+      counts: c,
+      upside: thin ? null : analystUpside(rec),
+      score: thin ? null : analystScore(rec),
+    };
+  }
+  // 3-month trend for the popup: buys and sells per period, oldest
+  // first (trend is stored newest-first: 0m, -1m, -2m, -3m).
+  function analystTrend(rec) {
+    if (!rec || !Array.isArray(rec.trend)) return [];
+    return rec.trend.slice().reverse().map(function (t) {
+      var buys = ((t.strongBuy || 0) + (t.buy || 0));
+      var sells = ((t.sell || 0) + (t.strongSell || 0));
+      return { period: t.period, buys: buys, sells: sells };
+    });
+  }
+
+  return { LENSES: LENSES, scoreStock: scoreStock, verdict: verdict, compute: compute, computeRank: computeRank,
+    ANALYST_COLORS: ANALYST_COLORS, ANALYST_KEYS: ANALYST_KEYS,
+    analystCounts: analystCounts, analystN: analystN, analystUpside: analystUpside,
+    analystScore: analystScore, analystView: analystView, analystTrend: analystTrend };
 })();
 if (typeof module !== 'undefined' && module.exports) module.exports = LensLogic;
