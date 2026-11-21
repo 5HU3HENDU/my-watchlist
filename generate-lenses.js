@@ -13,6 +13,8 @@
 // own URLs; Shiva's index.html and his numbered files pass through
 // untouched and are never cached. Bump the sw.js cache name when the
 // page version bumps.
+// REDEPLOY 21 Nov 2026 ~13:35 IST: v12 re-pushed unchanged — the first
+// Pages deploy never went live (site still served v11 16 min after push).
 // The LOGIC lives in scripts/lenses-logic.js (rulebook v0.2, 7 lenses,
 // ported exactly from the old Node scorer) and runs in the browser at
 // load — the page computes every verdict from whatever data is there.
