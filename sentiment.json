@@ -1,0 +1,4992 @@
+{
+ "fetchedAtIST": "21 Nov, 11:48 pm",
+ "source": "yahoo",
+ "stocks": {
+  "360ONE": {
+   "surpriseAvg": -5.9075,
+   "surpriseN": 4,
+   "surpriseLast": -10.25,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "AADHARHFC": {
+   "surpriseAvg": 2.9166666666666665,
+   "surpriseN": 3,
+   "surpriseLast": 1.91,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "AARTIIND": {
+   "surpriseAvg": 37.27,
+   "surpriseN": 4,
+   "surpriseLast": 40.84,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "AAVAS": {
+   "surpriseAvg": -0.6225,
+   "surpriseN": 4,
+   "surpriseLast": -1.72,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -4.136546184738946
+  },
+  "ABB": {
+   "surpriseAvg": -8.75,
+   "surpriseN": 4,
+   "surpriseLast": 9.59,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": null
+  },
+  "ABBOTINDIA": {
+   "surpriseAvg": -0.8166666666666665,
+   "surpriseN": 3,
+   "surpriseLast": 0.56,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "ABCAPITAL": {
+   "surpriseAvg": -1.7000000000000002,
+   "surpriseN": 4,
+   "surpriseLast": -1.69,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 1.1811023622047168
+  },
+  "ABDL": {
+   "surpriseAvg": -9.236666666666665,
+   "surpriseN": 3,
+   "surpriseLast": 7.11,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ABREL": {
+   "surpriseAvg": 654.885,
+   "surpriseN": 4,
+   "surpriseLast": 3613.64,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "ABSLAMC": {
+   "surpriseAvg": 11.192499999999999,
+   "surpriseN": 4,
+   "surpriseLast": 1.33,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ACC": {
+   "surpriseAvg": 32.8025,
+   "surpriseN": 4,
+   "surpriseLast": 283.38,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -14.087947882736145
+  },
+  "ACE": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ACEVECTOR": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ACMESOLAR": {
+   "surpriseAvg": 24.2,
+   "surpriseN": 4,
+   "surpriseLast": 36.36,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ACUTAAS": {
+   "surpriseAvg": 24.965,
+   "surpriseN": 4,
+   "surpriseLast": 37.71,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ADANIENSOL": {
+   "surpriseAvg": 2.1700000000000017,
+   "surpriseN": 4,
+   "surpriseLast": 11.25,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ADANIENT": {
+   "surpriseAvg": -41.6075,
+   "surpriseN": 4,
+   "surpriseLast": -8.9,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 14.533132530120493
+  },
+  "ADANIGREEN": {
+   "surpriseAvg": -30.765,
+   "surpriseN": 4,
+   "surpriseLast": 9.07,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 83.33333333333334
+  },
+  "ADANIPORTS": {
+   "surpriseAvg": -1.655,
+   "surpriseN": 4,
+   "surpriseLast": -1.63,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -11.84615384615384
+  },
+  "ADANIPOWER": {
+   "surpriseAvg": 69.845,
+   "surpriseN": 4,
+   "surpriseLast": 109.94,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -25.83333333333333
+  },
+  "AEGISLOG": {
+   "surpriseAvg": 43.195,
+   "surpriseN": 4,
+   "surpriseLast": -44.21,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "AEGISVOPAK": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "AEQUS": {
+   "surpriseAvg": -45.45,
+   "surpriseN": 1,
+   "surpriseLast": -45.45,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "AETHER": {
+   "surpriseAvg": 12.1675,
+   "surpriseN": 4,
+   "surpriseLast": 2.89,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "AFCONS": {
+   "surpriseAvg": -70.4375,
+   "surpriseN": 4,
+   "surpriseLast": -43.15,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "AFFLE": {
+   "surpriseAvg": -0.7625,
+   "surpriseN": 4,
+   "surpriseLast": -3.2,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -1.2460747663551315
+  },
+  "AIAENG": {
+   "surpriseAvg": 6.595000000000001,
+   "surpriseN": 4,
+   "surpriseLast": -17.83,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 2.3460410557184668
+  },
+  "AIIL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "AJANTPHARM": {
+   "surpriseAvg": 12.872499999999999,
+   "surpriseN": 4,
+   "surpriseLast": 19,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "ALGOQUANT": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ALKEM": {
+   "surpriseAvg": -11.312500000000002,
+   "surpriseN": 4,
+   "surpriseLast": -3.32,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 0
+  },
+  "AMBER": {
+   "surpriseAvg": -51.815,
+   "surpriseN": 4,
+   "surpriseLast": -173.94,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -38.54755474452555
+  },
+  "AMBUJACEM": {
+   "surpriseAvg": 21.8725,
+   "surpriseN": 4,
+   "surpriseLast": -26.73,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 3.0456852791878086
+  },
+  "ANANDRATHI": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ANANTRAJ": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ANGELONE": {
+   "surpriseAvg": 7.2075000000000005,
+   "surpriseN": 4,
+   "surpriseLast": 8.18,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ANTHEM": {
+   "surpriseAvg": 4.183333333333333,
+   "surpriseN": 3,
+   "surpriseLast": 6.29,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ANURAS": {
+   "surpriseAvg": 28.35,
+   "surpriseN": 2,
+   "surpriseLast": 13.03,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "APARINDS": {
+   "surpriseAvg": 44.405,
+   "surpriseN": 4,
+   "surpriseLast": 54.62,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "APLAPOLLO": {
+   "surpriseAvg": 3.6849999999999996,
+   "surpriseN": 4,
+   "surpriseLast": 5.05,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 7.173592935449107
+  },
+  "APOLLOHOSP": {
+   "surpriseAvg": 5.782500000000001,
+   "surpriseN": 4,
+   "surpriseLast": -1.92,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -0.7135950031031141
+  },
+  "APOLLOTYRE": {
+   "surpriseAvg": 51.015,
+   "surpriseN": 4,
+   "surpriseLast": -11.28,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 0
+  },
+  "APTUS": {
+   "surpriseAvg": 1.2649999999999997,
+   "surpriseN": 4,
+   "surpriseLast": 0.56,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -2.8248587570621373
+  },
+  "AQYLON": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ARCIL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ARE&M": {
+   "surpriseAvg": -8.629999999999999,
+   "surpriseN": 4,
+   "surpriseLast": -13.09,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": null
+  },
+  "ASAHIINDIA": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ASHOKLEY": {
+   "surpriseAvg": -7.202500000000001,
+   "surpriseN": 4,
+   "surpriseLast": -1.87,
+   "revNet30": -2,
+   "revUp30": 0,
+   "revDown30": 2,
+   "estDrift30": null
+  },
+  "ASIANPAINT": {
+   "surpriseAvg": 5.5275,
+   "surpriseN": 4,
+   "surpriseLast": -8.31,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -1.4877933417180476
+  },
+  "ASTERDM": {
+   "surpriseAvg": -1.3750000000000004,
+   "surpriseN": 4,
+   "surpriseLast": 8.63,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ASTRAL": {
+   "surpriseAvg": -8.415000000000001,
+   "surpriseN": 4,
+   "surpriseLast": -22.73,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": -7.590303030303032
+  },
+  "ATGL": {
+   "surpriseAvg": -58.33,
+   "surpriseN": 1,
+   "surpriseLast": -58.33,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ATHERENERG": {
+   "surpriseAvg": 45.0375,
+   "surpriseN": 4,
+   "surpriseLast": 102.73,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ATUL": {
+   "surpriseAvg": 6.262499999999999,
+   "surpriseN": 4,
+   "surpriseLast": -35.14,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "AUBANK": {
+   "surpriseAvg": 2.2625,
+   "surpriseN": 4,
+   "surpriseLast": -3.69,
+   "revNet30": 2,
+   "revUp30": 2,
+   "revDown30": 0,
+   "estDrift30": 4.549549549549557
+  },
+  "AUROPHARMA": {
+   "surpriseAvg": 0.7949999999999999,
+   "surpriseN": 4,
+   "surpriseLast": 1.32,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 4.858343368665164
+  },
+  "AVANCE": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "AVANTEL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "AVANTIFEED": {
+   "surpriseAvg": 1.8800000000000001,
+   "surpriseN": 4,
+   "surpriseLast": -4.39,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -42.727272727272734
+  },
+  "AWL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "AXISBANK": {
+   "surpriseAvg": 2.5624999999999996,
+   "surpriseN": 4,
+   "surpriseLast": 0.16,
+   "revNet30": 0,
+   "revUp30": 1,
+   "revDown30": 1,
+   "estDrift30": 0.04379242391065474
+  },
+  "AZAD": {
+   "surpriseAvg": 2.415,
+   "surpriseN": 4,
+   "surpriseLast": -3.91,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -18.9522342064715
+  },
+  "BAGMANE": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "BAJAJ-AUTO": {
+   "surpriseAvg": 5.2125,
+   "surpriseN": 4,
+   "surpriseLast": 6.13,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 0.13980228428832572
+  },
+  "BAJAJFINSV": {
+   "surpriseAvg": 24.424999999999997,
+   "surpriseN": 4,
+   "surpriseLast": 0.88,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -3.333333333333341
+  },
+  "BAJAJHFL": {
+   "surpriseAvg": -43.1425,
+   "surpriseN": 4,
+   "surpriseLast": -56.67,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "BAJAJHLDNG": {
+   "surpriseAvg": -13.77,
+   "surpriseN": 1,
+   "surpriseLast": -13.77,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "BAJFINANCE": {
+   "surpriseAvg": -18.5425,
+   "surpriseN": 4,
+   "surpriseLast": -34.74,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -1.5653775322283605
+  },
+  "BALKRISIND": {
+   "surpriseAvg": -0.7075,
+   "surpriseN": 4,
+   "surpriseLast": -13.58,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "BALRAMCHIN": {
+   "surpriseAvg": -36.04,
+   "surpriseN": 3,
+   "surpriseLast": -45.12,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "BANDHANBNK": {
+   "surpriseAvg": 1.2699999999999987,
+   "surpriseN": 4,
+   "surpriseLast": 18.77,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": -3.1630170316301784
+  },
+  "BANKBARODA": {
+   "surpriseAvg": 43.0075,
+   "surpriseN": 4,
+   "surpriseLast": 41.12,
+   "revNet30": 2,
+   "revUp30": 2,
+   "revDown30": 0,
+   "estDrift30": -100
+  },
+  "BANKINDIA": {
+   "surpriseAvg": 56.94500000000001,
+   "surpriseN": 4,
+   "surpriseLast": 85.98,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -12.980769230769232
+  },
+  "BATAINDIA": {
+   "surpriseAvg": -18.0825,
+   "surpriseN": 4,
+   "surpriseLast": -25.79,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 13.799621928166342
+  },
+  "BBOX": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "BCG": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "BDL": {
+   "surpriseAvg": -33.04,
+   "surpriseN": 4,
+   "surpriseLast": -1.38,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -12.939698492462314
+  },
+  "BEL": {
+   "surpriseAvg": 2.0875,
+   "surpriseN": 4,
+   "surpriseLast": 10.18,
+   "revNet30": -2,
+   "revUp30": 0,
+   "revDown30": 2,
+   "estDrift30": 0.424964931082863
+  },
+  "BELRISE": {
+   "surpriseAvg": -1.085,
+   "surpriseN": 4,
+   "surpriseLast": 16.51,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "BEML": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "BERGEPAINT": {
+   "surpriseAvg": 3.2125,
+   "surpriseN": 4,
+   "surpriseLast": -12.81,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 0
+  },
+  "BHARATCOAL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "BHARATFORG": {
+   "surpriseAvg": -3.3325000000000005,
+   "surpriseN": 4,
+   "surpriseLast": -2.89,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -2.5016035920461874
+  },
+  "BHARTIARTL": {
+   "surpriseAvg": 6.17,
+   "surpriseN": 4,
+   "surpriseLast": -4.74,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -3.35735107750292
+  },
+  "BHARTIHEXA": {
+   "surpriseAvg": 3.84,
+   "surpriseN": 4,
+   "surpriseLast": 8.85,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "BHEL": {
+   "surpriseAvg": 21.104999999999997,
+   "surpriseN": 4,
+   "surpriseLast": 22.67,
+   "revNet30": 0,
+   "revUp30": 1,
+   "revDown30": 1,
+   "estDrift30": 16.11711229946524
+  },
+  "BIOCON": {
+   "surpriseAvg": 13.792499999999997,
+   "surpriseN": 4,
+   "surpriseLast": -72.06,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 4.8387096774193585
+  },
+  "BIRET": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "BLS": {
+   "surpriseAvg": 4.985,
+   "surpriseN": 2,
+   "surpriseLast": 2.22,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "BLUECLOUDS": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "BLUESTARCO": {
+   "surpriseAvg": 21.355,
+   "surpriseN": 4,
+   "surpriseLast": 68.69,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -17.303768115942038
+  },
+  "BOSCHLTD": {
+   "surpriseAvg": -11.81,
+   "surpriseN": 3,
+   "surpriseLast": -19.49,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 0
+  },
+  "BPCL": {
+   "surpriseAvg": 2.8750000000000004,
+   "surpriseN": 4,
+   "surpriseLast": -15.9,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": -1.988636363636359
+  },
+  "BRIGADE": {
+   "surpriseAvg": -15.2525,
+   "surpriseN": 4,
+   "surpriseLast": -2.79,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -1.2820512820512775
+  },
+  "BRITANNIA": {
+   "surpriseAvg": 3.125,
+   "surpriseN": 4,
+   "surpriseLast": 1.79,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 1.4202660213650402
+  },
+  "BSE": {
+   "surpriseAvg": 12.504999999999999,
+   "surpriseN": 4,
+   "surpriseLast": 33.61,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "BSOFT": {
+   "surpriseAvg": 14.01,
+   "surpriseN": 4,
+   "surpriseLast": 1.21,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -5.172413793103446
+  },
+  "CAMS": {
+   "surpriseAvg": -34.9775,
+   "surpriseN": 4,
+   "surpriseLast": 3.33,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CANBK": {
+   "surpriseAvg": 8.585,
+   "surpriseN": 4,
+   "surpriseLast": 23.11,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 15.469613259668497
+  },
+  "CANFINHOME": {
+   "surpriseAvg": 7.742499999999999,
+   "surpriseN": 4,
+   "surpriseLast": 1.68,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 1.025891548607723
+  },
+  "CANHLIFE": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CAPLIPOINT": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CARBORUNIV": {
+   "surpriseAvg": -12.649999999999997,
+   "surpriseN": 4,
+   "surpriseLast": -66.21,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -11.940298507462684
+  },
+  "CARTRADE": {
+   "surpriseAvg": -2.9025,
+   "surpriseN": 4,
+   "surpriseLast": -13.87,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -12.655276810283054
+  },
+  "CASTROLIND": {
+   "surpriseAvg": 0.28250000000000064,
+   "surpriseN": 4,
+   "surpriseLast": -35.66,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CCAVENUE": {
+   "surpriseAvg": 24.36,
+   "surpriseN": 4,
+   "surpriseLast": 2,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CCL": {
+   "surpriseAvg": 8.2825,
+   "surpriseN": 4,
+   "surpriseLast": -3.94,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 8.695652173913052
+  },
+  "CDSL": {
+   "surpriseAvg": -15.492500000000001,
+   "surpriseN": 4,
+   "surpriseLast": 12.43,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CEATLTD": {
+   "surpriseAvg": 1.3400000000000016,
+   "surpriseN": 4,
+   "surpriseLast": 45.6,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -26.066350710900483
+  },
+  "CEMPRO": {
+   "surpriseAvg": 7.117500000000001,
+   "surpriseN": 4,
+   "surpriseLast": -2.88,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 0
+  },
+  "CENTRALBK": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CESC": {
+   "surpriseAvg": -0.57,
+   "surpriseN": 4,
+   "surpriseLast": -3.03,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CGCL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CGPOWER": {
+   "surpriseAvg": 4.465,
+   "surpriseN": 4,
+   "surpriseLast": 11.31,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -8.984868239755516
+  },
+  "CHAMBLFERT": {
+   "surpriseAvg": -3.5000000000000004,
+   "surpriseN": 4,
+   "surpriseLast": 9.51,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CHENNPETRO": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CHOICEIN": {
+   "surpriseAvg": 3.663333333333334,
+   "surpriseN": 3,
+   "surpriseLast": -6.79,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CHOLAFIN": {
+   "surpriseAvg": 5.2299999999999995,
+   "surpriseN": 4,
+   "surpriseLast": 1.04,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 4.453870625662778
+  },
+  "CHOLAHLDNG": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "CIEINDIA": {
+   "surpriseAvg": -5.080000000000001,
+   "surpriseN": 3,
+   "surpriseLast": -5.44,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CIPLA": {
+   "surpriseAvg": -18.345000000000002,
+   "surpriseN": 4,
+   "surpriseLast": -8.28,
+   "revNet30": 0,
+   "revUp30": 1,
+   "revDown30": 1,
+   "estDrift30": 1.1716642754662856
+  },
+  "CLEAN": {
+   "surpriseAvg": 3.5900000000000003,
+   "surpriseN": 4,
+   "surpriseLast": -11.49,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CLEANMAX": {
+   "surpriseAvg": -0.5,
+   "surpriseN": 1,
+   "surpriseLast": -0.5,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CMPDI": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "COALINDIA": {
+   "surpriseAvg": 4.9350000000000005,
+   "surpriseN": 4,
+   "surpriseLast": -11.4,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 0
+  },
+  "COCHINSHIP": {
+   "surpriseAvg": -37.352500000000006,
+   "surpriseN": 4,
+   "surpriseLast": -72.93,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "COFORGE": {
+   "surpriseAvg": 10.4375,
+   "surpriseN": 4,
+   "surpriseLast": -6.44,
+   "revNet30": -2,
+   "revUp30": 1,
+   "revDown30": 3,
+   "estDrift30": -1.9061312756367739
+  },
+  "COHANCE": {
+   "surpriseAvg": 298.51,
+   "surpriseN": 3,
+   "surpriseLast": 1050,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -2.8846153846153872
+  },
+  "COLPAL": {
+   "surpriseAvg": -0.9724999999999997,
+   "surpriseN": 4,
+   "surpriseLast": -10.52,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 1.5267175572519165
+  },
+  "COMFINTE": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CONCOR": {
+   "surpriseAvg": -14.72,
+   "surpriseN": 4,
+   "surpriseLast": -2.46,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -100
+  },
+  "CONCORDBIO": {
+   "surpriseAvg": -5.7425,
+   "surpriseN": 4,
+   "surpriseLast": -5.45,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CORDELIA": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "COROMANDEL": {
+   "surpriseAvg": -13.27,
+   "surpriseN": 4,
+   "surpriseLast": 3.25,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CPPLUS": {
+   "surpriseAvg": 31.3925,
+   "surpriseN": 4,
+   "surpriseLast": 38.05,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 0
+  },
+  "CRAFTSMAN": {
+   "surpriseAvg": 21.845,
+   "surpriseN": 4,
+   "surpriseLast": 1.49,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -3.788860103626937
+  },
+  "CREDITACC": {
+   "surpriseAvg": 13.450000000000001,
+   "surpriseN": 4,
+   "surpriseLast": 10.75,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CRISIL": {
+   "surpriseAvg": 3.1300000000000003,
+   "surpriseN": 2,
+   "surpriseLast": 12.72,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CROMPTON": {
+   "surpriseAvg": 7.985,
+   "surpriseN": 4,
+   "surpriseLast": 2.78,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 3.8374717832957095
+  },
+  "CUB": {
+   "surpriseAvg": -2.5424999999999995,
+   "surpriseN": 4,
+   "surpriseLast": 7.44,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CUMMINSIND": {
+   "surpriseAvg": -4.9025,
+   "surpriseN": 4,
+   "surpriseLast": -13.14,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -10.508564614350252
+  },
+  "CUPID": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "CYIENT": {
+   "surpriseAvg": -22.544999999999998,
+   "surpriseN": 4,
+   "surpriseLast": -9.2,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 18.354582763337888
+  },
+  "DABUR": {
+   "surpriseAvg": 3.585,
+   "surpriseN": 4,
+   "surpriseLast": 0.71,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -5.590062111801246
+  },
+  "DALBHARAT": {
+   "surpriseAvg": -8.9575,
+   "surpriseN": 4,
+   "surpriseLast": -84.53,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -61.57059314954052
+  },
+  "DATAPATTNS": {
+   "surpriseAvg": 8.985,
+   "surpriseN": 4,
+   "surpriseLast": 0.51,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -61.25186289120714
+  },
+  "DEEPAKFERT": {
+   "surpriseAvg": 1.8566666666666667,
+   "surpriseN": 3,
+   "surpriseLast": 12.6,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "DEEPAKNTR": {
+   "surpriseAvg": 19.27,
+   "surpriseN": 4,
+   "surpriseLast": 20.8,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "DELHIVERY": {
+   "surpriseAvg": -1.320000000000002,
+   "surpriseN": 4,
+   "surpriseLast": -38.51,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -16.55239999999999
+  },
+  "DELTACORP": {
+   "surpriseAvg": -6802.9175000000005,
+   "surpriseN": 4,
+   "surpriseLast": -535.64,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "DEVYANI": {
+   "surpriseAvg": 47.575,
+   "surpriseN": 4,
+   "surpriseLast": 100,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -16.27581052041484
+  },
+  "DIVISLAB": {
+   "surpriseAvg": 20.259999999999998,
+   "surpriseN": 4,
+   "surpriseLast": 33.04,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 22.15335211267606
+  },
+  "DIXON": {
+   "surpriseAvg": 101.56,
+   "surpriseN": 4,
+   "surpriseLast": 47.89,
+   "revNet30": 0,
+   "revUp30": 1,
+   "revDown30": 1,
+   "estDrift30": -3.3309302325581345
+  },
+  "DLF": {
+   "surpriseAvg": 6.7775,
+   "surpriseN": 4,
+   "surpriseLast": 34.62,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -18.76208897485493
+  },
+  "DMART": {
+   "surpriseAvg": -3.1049999999999995,
+   "surpriseN": 4,
+   "surpriseLast": -10.07,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 3.5563711387539407
+  },
+  "DOMS": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "DRREDDY": {
+   "surpriseAvg": -14.247500000000002,
+   "surpriseN": 4,
+   "surpriseLast": 28.03,
+   "revNet30": -1,
+   "revUp30": 1,
+   "revDown30": 2,
+   "estDrift30": 4.776018734398376
+  },
+  "EASEMYTRIP": {
+   "surpriseAvg": -37.5,
+   "surpriseN": 1,
+   "surpriseLast": -37.5,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ECLERX": {
+   "surpriseAvg": -8.7775,
+   "surpriseN": 4,
+   "surpriseLast": -17.37,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 0
+  },
+  "EICHERMOT": {
+   "surpriseAvg": 2.1475,
+   "surpriseN": 4,
+   "surpriseLast": -3.64,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 3.6170657066476966
+  },
+  "EIDPARRY": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "EIHOTEL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ELECON": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ELGIEQUIP": {
+   "surpriseAvg": 9.985000000000001,
+   "surpriseN": 4,
+   "surpriseLast": 10.85,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 0
+  },
+  "EMAMILTD": {
+   "surpriseAvg": 1.6150000000000007,
+   "surpriseN": 4,
+   "surpriseLast": 7.33,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -16.666666666666668
+  },
+  "EMBASSY": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "EMCURE": {
+   "surpriseAvg": 17.85,
+   "surpriseN": 4,
+   "surpriseLast": 15.03,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "EMMVEE": {
+   "surpriseAvg": 11.316666666666665,
+   "surpriseN": 3,
+   "surpriseLast": -5.96,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "EMPOWER": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ENDURANCE": {
+   "surpriseAvg": 1.0025,
+   "surpriseN": 4,
+   "surpriseLast": -8.17,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -25.41373838131943
+  },
+  "ENGINERSIN": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ENRIN": {
+   "surpriseAvg": 19.4875,
+   "surpriseN": 4,
+   "surpriseLast": 19.67,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 7.746478873239447
+  },
+  "ESCORTS": {
+   "surpriseAvg": -0.5924999999999994,
+   "surpriseN": 4,
+   "surpriseLast": -21.79,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ESDS": {
+   "surpriseAvg": -7.67,
+   "surpriseN": 1,
+   "surpriseLast": -7.67,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ETERNAL": {
+   "surpriseAvg": -16.7975,
+   "surpriseN": 4,
+   "surpriseLast": -44.09,
+   "revNet30": -2,
+   "revUp30": 0,
+   "revDown30": 2,
+   "estDrift30": -26.748148148148154
+  },
+  "EXIDEIND": {
+   "surpriseAvg": 7.5775,
+   "surpriseN": 4,
+   "surpriseLast": 5.77,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 9.26470588235294
+  },
+  "FACT": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "FCSSOFT": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "FEDERALBNK": {
+   "surpriseAvg": 2.5524999999999998,
+   "surpriseN": 4,
+   "surpriseLast": 8.69,
+   "revNet30": 0,
+   "revUp30": 1,
+   "revDown30": 1,
+   "estDrift30": 3.314393939393936
+  },
+  "FINCABLES": {
+   "surpriseAvg": 20.7,
+   "surpriseN": 4,
+   "surpriseLast": 14.85,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 3.539823008849545
+  },
+  "FIRSTCRY": {
+   "surpriseAvg": 0.7375000000000043,
+   "surpriseN": 4,
+   "surpriseLast": 0,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "FIVESTAR": {
+   "surpriseAvg": -0.27749999999999986,
+   "surpriseN": 4,
+   "surpriseLast": 7.77,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "FLUOROCHEM": {
+   "surpriseAvg": -6.5275,
+   "surpriseN": 4,
+   "surpriseLast": -1.29,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "FORCEMOT": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "FORTIS": {
+   "surpriseAvg": -8.0075,
+   "surpriseN": 4,
+   "surpriseLast": -6.31,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -6.449893390191902
+  },
+  "FRACTAL": {
+   "surpriseAvg": 11.303333333333335,
+   "surpriseN": 3,
+   "surpriseLast": 9.6,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -8.679245283018867
+  },
+  "FSL": {
+   "surpriseAvg": -3.6500000000000004,
+   "surpriseN": 4,
+   "surpriseLast": -2.65,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "GABRIEL": {
+   "surpriseAvg": -0.793333333333333,
+   "surpriseN": 3,
+   "surpriseLast": -5.85,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -5.857740585774058
+  },
+  "GAIL": {
+   "surpriseAvg": 22.692500000000003,
+   "surpriseN": 4,
+   "surpriseLast": 46.24,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 29.611650485436886
+  },
+  "GAJA": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GALLANTT": {
+   "surpriseAvg": 212.87,
+   "surpriseN": 1,
+   "surpriseLast": 212.87,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GATECH": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GENESYS": {
+   "surpriseAvg": -27.552500000000002,
+   "surpriseN": 4,
+   "surpriseLast": -59.93,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GESHIP": {
+   "surpriseAvg": 13.68,
+   "surpriseN": 2,
+   "surpriseLast": 17.71,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GICRE": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GILLETTE": {
+   "surpriseAvg": -4.700000000000001,
+   "surpriseN": 2,
+   "surpriseLast": -36.59,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GLAND": {
+   "surpriseAvg": 17.48,
+   "surpriseN": 4,
+   "surpriseLast": 4.44,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 4.588652663331779
+  },
+  "GLAXO": {
+   "surpriseAvg": 10.45,
+   "surpriseN": 2,
+   "surpriseLast": 20.18,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GLENMARK": {
+   "surpriseAvg": 5.9025,
+   "surpriseN": 4,
+   "surpriseLast": 10.12,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GMDCLTD": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GMRAIRPORT": {
+   "surpriseAvg": 27.36,
+   "surpriseN": 3,
+   "surpriseLast": -76.67,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GODFRYPHLP": {
+   "surpriseAvg": 23.38,
+   "surpriseN": 1,
+   "surpriseLast": 23.38,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GODREJCP": {
+   "surpriseAvg": -2.2375,
+   "surpriseN": 4,
+   "surpriseLast": -3.78,
+   "revNet30": -2,
+   "revUp30": 0,
+   "revDown30": 2,
+   "estDrift30": -1.410788381742738
+  },
+  "GODREJIND": {
+   "surpriseAvg": -7.419999999999998,
+   "surpriseN": 2,
+   "surpriseLast": 47.56,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GODREJPROP": {
+   "surpriseAvg": -27.305,
+   "surpriseN": 4,
+   "surpriseLast": -66.32,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 0
+  },
+  "GPIL": {
+   "surpriseAvg": -2.99,
+   "surpriseN": 4,
+   "surpriseLast": -13,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GRANULES": {
+   "surpriseAvg": 1.0324999999999998,
+   "surpriseN": 4,
+   "surpriseLast": -14.27,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GRAPHITE": {
+   "surpriseAvg": 27.75,
+   "surpriseN": 4,
+   "surpriseLast": -5.87,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GRASIM": {
+   "surpriseAvg": 810.4625000000001,
+   "surpriseN": 4,
+   "surpriseLast": -3.45,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -5.3976531942633645
+  },
+  "GRAVITA": {
+   "surpriseAvg": 1.6624999999999999,
+   "surpriseN": 4,
+   "surpriseLast": 1.03,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GROWW": {
+   "surpriseAvg": 8.88,
+   "surpriseN": 3,
+   "surpriseLast": 15,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GRSE": {
+   "surpriseAvg": 35.1,
+   "surpriseN": 3,
+   "surpriseLast": -10.52,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "GTLINFRA": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "GVT&D": {
+   "surpriseAvg": 14.684999999999999,
+   "surpriseN": 4,
+   "surpriseLast": 14.04,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "HAL": {
+   "surpriseAvg": 9.185,
+   "surpriseN": 4,
+   "surpriseLast": 2.61,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -0.5477185966187924
+  },
+  "HAPPSTMNDS": {
+   "surpriseAvg": 1.72,
+   "surpriseN": 4,
+   "surpriseLast": 0.38,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "HAVELLS": {
+   "surpriseAvg": 3.0550000000000006,
+   "surpriseN": 4,
+   "surpriseLast": 2.18,
+   "revNet30": 0,
+   "revUp30": 1,
+   "revDown30": 1,
+   "estDrift30": 4.373610081541882
+  },
+  "HBLENGINE": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "HCLTECH": {
+   "surpriseAvg": 0.6425000000000001,
+   "surpriseN": 4,
+   "surpriseLast": 5.67,
+   "revNet30": 3,
+   "revUp30": 5,
+   "revDown30": 2,
+   "estDrift30": 0.4104232383581524
+  },
+  "HDBFS": {
+   "surpriseAvg": 0.3749999999999998,
+   "surpriseN": 4,
+   "surpriseLast": -5.19,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 2.4557956777996073
+  },
+  "HDFCAMC": {
+   "surpriseAvg": -35.325,
+   "surpriseN": 4,
+   "surpriseLast": -32.19,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -1.5070491006319822
+  },
+  "HDFCBANK": {
+   "surpriseAvg": 3.9475,
+   "surpriseN": 4,
+   "surpriseLast": 1.09,
+   "revNet30": 0,
+   "revUp30": 1,
+   "revDown30": 1,
+   "estDrift30": 0.7355787843592771
+  },
+  "HDFCLIFE": {
+   "surpriseAvg": -30.3,
+   "surpriseN": 4,
+   "surpriseLast": -23,
+   "revNet30": 0,
+   "revUp30": 1,
+   "revDown30": 1,
+   "estDrift30": -6.774193548387096
+  },
+  "HEGAM": {
+   "surpriseAvg": -109.05,
+   "surpriseN": 2,
+   "surpriseLast": -47.01,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "HEROMOTOCO": {
+   "surpriseAvg": 2.835,
+   "surpriseN": 4,
+   "surpriseLast": -4.39,
+   "revNet30": 0,
+   "revUp30": 1,
+   "revDown30": 1,
+   "estDrift30": -1.4130988670882205
+  },
+  "HEXT": {
+   "surpriseAvg": 5.285,
+   "surpriseN": 4,
+   "surpriseLast": 25.44,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": -11.194029850746269
+  },
+  "HFCL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "HINDALCO": {
+   "surpriseAvg": 19.224999999999998,
+   "surpriseN": 4,
+   "surpriseLast": 38.3,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 7.8764478764478865
+  },
+  "HINDCOPPER": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "HINDPETRO": {
+   "surpriseAvg": 247.8075,
+   "surpriseN": 4,
+   "surpriseLast": 1494.44,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -57.98245614035088
+  },
+  "HINDUNILVR": {
+   "surpriseAvg": -19.4675,
+   "surpriseN": 4,
+   "surpriseLast": -39.02,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": null
+  },
+  "HINDZINC": {
+   "surpriseAvg": 6.52,
+   "surpriseN": 3,
+   "surpriseLast": 7,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "HOMEFIRST": {
+   "surpriseAvg": 1.53,
+   "surpriseN": 4,
+   "surpriseLast": 0.21,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -0.12642225031605292
+  },
+  "HONASA": {
+   "surpriseAvg": 25.9975,
+   "surpriseN": 4,
+   "surpriseLast": 9.85,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "HONAUT": {
+   "surpriseAvg": -5.5475,
+   "surpriseN": 4,
+   "surpriseLast": -22.68,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "HSCL": {
+   "surpriseAvg": -3.15,
+   "surpriseN": 4,
+   "surpriseLast": -11.54,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "HUDCO": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "HYUNDAI": {
+   "surpriseAvg": -2.8425000000000002,
+   "surpriseN": 4,
+   "surpriseLast": -3.16,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -11.831818181818187
+  },
+  "ICICIAMC": {
+   "surpriseAvg": -0.0300000000000001,
+   "surpriseN": 3,
+   "surpriseLast": -2.68,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 0.38004750593823416
+  },
+  "ICICIBANK": {
+   "surpriseAvg": 2.6025,
+   "surpriseN": 4,
+   "surpriseLast": 4.61,
+   "revNet30": 2,
+   "revUp30": 2,
+   "revDown30": 0,
+   "estDrift30": 9.491525423728815
+  },
+  "ICICIGI": {
+   "surpriseAvg": -8.807500000000001,
+   "surpriseN": 4,
+   "surpriseLast": 23.12,
+   "revNet30": -2,
+   "revUp30": 0,
+   "revDown30": 2,
+   "estDrift30": -1.3451327433628284
+  },
+  "ICICIPRULI": {
+   "surpriseAvg": 13.674999999999999,
+   "surpriseN": 4,
+   "surpriseLast": -10.21,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 21.478205486020165
+  },
+  "IDBI": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "IDEA": {
+   "surpriseAvg": 2.8024999999999998,
+   "surpriseN": 4,
+   "surpriseLast": -0.33,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -17.309532924961704
+  },
+  "IDFCFIRSTB": {
+   "surpriseAvg": 9.482499999999998,
+   "surpriseN": 4,
+   "surpriseLast": 6.67,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 4.0000000000000036
+  },
+  "IEX": {
+   "surpriseAvg": 4.2250000000000005,
+   "surpriseN": 4,
+   "surpriseLast": 4,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "IFCI": {
+   "surpriseAvg": -18.786666666666665,
+   "surpriseN": 3,
+   "surpriseLast": -28.71,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "IGIL": {
+   "surpriseAvg": 14.976666666666667,
+   "surpriseN": 3,
+   "surpriseLast": 17.35,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 0
+  },
+  "IGL": {
+   "surpriseAvg": -42.07,
+   "surpriseN": 4,
+   "surpriseLast": -92.53,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -48.52459016393442
+  },
+  "IIFL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "IKS": {
+   "surpriseAvg": 1.5175,
+   "surpriseN": 4,
+   "surpriseLast": -3.64,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "INDHOTEL": {
+   "surpriseAvg": 13.5725,
+   "surpriseN": 4,
+   "surpriseLast": -0.73,
+   "revNet30": -2,
+   "revUp30": 0,
+   "revDown30": 2,
+   "estDrift30": -1.120137103684663
+  },
+  "INDIACEM": {
+   "surpriseAvg": 106.8875,
+   "surpriseN": 4,
+   "surpriseLast": -10.71,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "INDIAMART": {
+   "surpriseAvg": -3.147500000000001,
+   "surpriseN": 4,
+   "surpriseLast": -31.36,
+   "revNet30": -2,
+   "revUp30": 0,
+   "revDown30": 2,
+   "estDrift30": 14.319809069212411
+  },
+  "INDIANB": {
+   "surpriseAvg": 0.36,
+   "surpriseN": 4,
+   "surpriseLast": -0.39,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "INDIGO": {
+   "surpriseAvg": -87.605,
+   "surpriseN": 4,
+   "surpriseLast": -23.06,
+   "revNet30": 0,
+   "revUp30": 1,
+   "revDown30": 1,
+   "estDrift30": 11.791730474732011
+  },
+  "INDOTHAI": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "INDUSINDBK": {
+   "surpriseAvg": 27.72,
+   "surpriseN": 4,
+   "surpriseLast": 32.6,
+   "revNet30": 2,
+   "revUp30": 2,
+   "revDown30": 0,
+   "estDrift30": 6.498054474708178
+  },
+  "INDUSTOWER": {
+   "surpriseAvg": -0.8950000000000001,
+   "surpriseN": 4,
+   "surpriseLast": -2.72,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -1.4676148691658424
+  },
+  "INFY": {
+   "surpriseAvg": 4.085,
+   "surpriseN": 4,
+   "surpriseLast": -1.45,
+   "revNet30": -4,
+   "revUp30": 1,
+   "revDown30": 5,
+   "estDrift30": -3.6802628699792694
+  },
+  "INOXINDIA": {
+   "surpriseAvg": -3.4100000000000006,
+   "surpriseN": 2,
+   "surpriseLast": -11.88,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "INOXWIND": {
+   "surpriseAvg": -37.18666666666667,
+   "surpriseN": 3,
+   "surpriseLast": -31.48,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "INTELLECT": {
+   "surpriseAvg": -12.985,
+   "surpriseN": 4,
+   "surpriseLast": -6.75,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "IOB": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "IOC": {
+   "surpriseAvg": 95.81,
+   "surpriseN": 4,
+   "surpriseLast": 250.67,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": null
+  },
+  "IPCALAB": {
+   "surpriseAvg": 14.012500000000001,
+   "surpriseN": 4,
+   "surpriseLast": -5.62,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "IRB": {
+   "surpriseAvg": 23.3825,
+   "surpriseN": 4,
+   "surpriseLast": 10,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "IRCON": {
+   "surpriseAvg": -22.9,
+   "surpriseN": 2,
+   "surpriseLast": -2.86,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "IRCTC": {
+   "surpriseAvg": 1.4974999999999998,
+   "surpriseN": 4,
+   "surpriseLast": 5.2,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "IREDA": {
+   "surpriseAvg": -13.68,
+   "surpriseN": 4,
+   "surpriseLast": 3.16,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "IRFC": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ITC": {
+   "surpriseAvg": 5.1475,
+   "surpriseN": 4,
+   "surpriseLast": 1.02,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": null
+  },
+  "ITCHOTELS": {
+   "surpriseAvg": -2.7799999999999994,
+   "surpriseN": 4,
+   "surpriseLast": 6.96,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 13.461538461538458
+  },
+  "ITI": {
+   "surpriseAvg": -79.58,
+   "surpriseN": 1,
+   "surpriseLast": -79.58,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "IXIGO": {
+   "surpriseAvg": 13.455,
+   "surpriseN": 4,
+   "surpriseLast": 1.33,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "J&KBANK": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "JAINREC": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "JBCHEPHARM": {
+   "surpriseAvg": -3.7075,
+   "surpriseN": 4,
+   "surpriseLast": -9.58,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "JBMA": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "JINDALSAW": {
+   "surpriseAvg": -51.035,
+   "surpriseN": 2,
+   "surpriseLast": -45.67,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "JINDALSTEL": {
+   "surpriseAvg": -3.794999999999999,
+   "surpriseN": 4,
+   "surpriseLast": -26.91,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -36.47825839499147
+  },
+  "JIOFIN": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "JKCEMENT": {
+   "surpriseAvg": -5.52,
+   "surpriseN": 4,
+   "surpriseLast": 2.03,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -8.70646766169154
+  },
+  "JKTYRE": {
+   "surpriseAvg": -42.324999999999996,
+   "surpriseN": 2,
+   "surpriseLast": -72.3,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "JMFINANCIL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "JPL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "JPPOWER": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "JSL": {
+   "surpriseAvg": 1.4275000000000002,
+   "surpriseN": 4,
+   "surpriseLast": -2.19,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -16.152019002375305
+  },
+  "JSWCEMENT": {
+   "surpriseAvg": 36.62,
+   "surpriseN": 4,
+   "surpriseLast": -32.5,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 21.428571428571434
+  },
+  "JSWENERGY": {
+   "surpriseAvg": 87.07499999999999,
+   "surpriseN": 4,
+   "surpriseLast": 32.15,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 124.17582417582416
+  },
+  "JSWINFRA": {
+   "surpriseAvg": -3.7674999999999996,
+   "surpriseN": 4,
+   "surpriseLast": -20.59,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "JSWSTEEL": {
+   "surpriseAvg": 43.4825,
+   "surpriseN": 4,
+   "surpriseLast": 43.11,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": -3.1945531914893666
+  },
+  "JUBLFOOD": {
+   "surpriseAvg": 24.1725,
+   "surpriseN": 4,
+   "surpriseLast": 12,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 4.1666666666666705
+  },
+  "JUBLINGREA": {
+   "surpriseAvg": 2.4275,
+   "surpriseN": 4,
+   "surpriseLast": 5.37,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "JWL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "JYOTICNC": {
+   "surpriseAvg": -19.3275,
+   "surpriseN": 4,
+   "surpriseLast": -16.05,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "KAJARIACER": {
+   "surpriseAvg": 5.4425,
+   "surpriseN": 4,
+   "surpriseLast": 11.61,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 5.131047619047618
+  },
+  "KALYANKJIL": {
+   "surpriseAvg": 3.4749999999999996,
+   "surpriseN": 4,
+   "surpriseLast": 0.45,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -10.495496059835379
+  },
+  "KARURVYSYA": {
+   "surpriseAvg": 12.629999999999999,
+   "surpriseN": 4,
+   "surpriseLast": 3.69,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "KAYNES": {
+   "surpriseAvg": -34.6725,
+   "surpriseN": 4,
+   "surpriseLast": -39.28,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 13.103448275862059
+  },
+  "KEC": {
+   "surpriseAvg": -35.7975,
+   "surpriseN": 4,
+   "surpriseLast": -75.02,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -3.8461538461538445
+  },
+  "KEI": {
+   "surpriseAvg": 5.154999999999999,
+   "surpriseN": 4,
+   "surpriseLast": -3.74,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 1.9245842371655868
+  },
+  "KELLTONTEC": {
+   "surpriseAvg": -7.375,
+   "surpriseN": 2,
+   "surpriseLast": -5.74,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "KFINTECH": {
+   "surpriseAvg": 3.945,
+   "surpriseN": 4,
+   "surpriseLast": 1.4,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "KIMS": {
+   "surpriseAvg": -13.552499999999998,
+   "surpriseN": 4,
+   "surpriseLast": -0.58,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -16.751269035533
+  },
+  "KIRLOSBROS": {
+   "surpriseAvg": 6.79,
+   "surpriseN": 1,
+   "surpriseLast": 6.79,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "KIRLOSENG": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "KISSHT": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "KOTAKBANK": {
+   "surpriseAvg": -3.644999999999999,
+   "surpriseN": 4,
+   "surpriseLast": 3.42,
+   "revNet30": 0,
+   "revUp30": 1,
+   "revDown30": 1,
+   "estDrift30": 10.194174757281552
+  },
+  "KPIL": {
+   "surpriseAvg": 15.475000000000001,
+   "surpriseN": 4,
+   "surpriseLast": -10.16,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "KPITTECH": {
+   "surpriseAvg": -15.427499999999998,
+   "surpriseN": 4,
+   "surpriseLast": -14.08,
+   "revNet30": -1,
+   "revUp30": 1,
+   "revDown30": 2,
+   "estDrift30": -0.6608695652173957
+  },
+  "KPRMILL": {
+   "surpriseAvg": 3.135,
+   "surpriseN": 4,
+   "surpriseLast": 29.36,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "KSB": {
+   "surpriseAvg": -10.157500000000002,
+   "surpriseN": 4,
+   "surpriseLast": -5.95,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "LALPATHLAB": {
+   "surpriseAvg": 3.2325000000000004,
+   "surpriseN": 4,
+   "surpriseLast": 8.55,
+   "revNet30": 3,
+   "revUp30": 3,
+   "revDown30": 0,
+   "estDrift30": 4.578077349996206
+  },
+  "LAURUSLABS": {
+   "surpriseAvg": 20.585,
+   "surpriseN": 4,
+   "surpriseLast": 13.69,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 20.477815699658688
+  },
+  "LEMONTREE": {
+   "surpriseAvg": -5.347500000000001,
+   "surpriseN": 4,
+   "surpriseLast": -23.26,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "LENSKART": {
+   "surpriseAvg": 33.775000000000006,
+   "surpriseN": 4,
+   "surpriseLast": 7.72,
+   "revNet30": 3,
+   "revUp30": 3,
+   "revDown30": 0,
+   "estDrift30": 17.584258082248265
+  },
+  "LGEINDIA": {
+   "surpriseAvg": -15.257500000000002,
+   "surpriseN": 4,
+   "surpriseLast": -1.11,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -0.6510638297872285
+  },
+  "LICHSGFIN": {
+   "surpriseAvg": 3.2925,
+   "surpriseN": 4,
+   "surpriseLast": 8.25,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 8.630136986301373
+  },
+  "LICI": {
+   "surpriseAvg": 34.3025,
+   "surpriseN": 4,
+   "surpriseLast": 0,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -3.427419354838708
+  },
+  "LINDEINDIA": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "LLOYDSME": {
+   "surpriseAvg": 0.6974999999999998,
+   "surpriseN": 4,
+   "surpriseLast": -30.9,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "LODHA": {
+   "surpriseAvg": -6.98,
+   "surpriseN": 4,
+   "surpriseLast": -23.33,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 3.064351378958128
+  },
+  "LT": {
+   "surpriseAvg": 8.2025,
+   "surpriseN": 4,
+   "surpriseLast": 15.48,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "LTF": {
+   "surpriseAvg": 1.63,
+   "surpriseN": 4,
+   "surpriseLast": 4.58,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 12.011173184357533
+  },
+  "LTFOODS": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "LTM": {
+   "surpriseAvg": -2.0949999999999998,
+   "surpriseN": 4,
+   "surpriseLast": -6.15,
+   "revNet30": -1,
+   "revUp30": 2,
+   "revDown30": 3,
+   "estDrift30": -0.27200636738582357
+  },
+  "LTTS": {
+   "surpriseAvg": 0.36,
+   "surpriseN": 4,
+   "surpriseLast": 2.34,
+   "revNet30": 3,
+   "revUp30": 3,
+   "revDown30": 0,
+   "estDrift30": 7.6046339762472455
+  },
+  "LUPIN": {
+   "surpriseAvg": 12.5175,
+   "surpriseN": 4,
+   "surpriseLast": 2.45,
+   "revNet30": -2,
+   "revUp30": 0,
+   "revDown30": 2,
+   "estDrift30": 5.811975799420978
+  },
+  "M&M": {
+   "surpriseAvg": 5.085,
+   "surpriseN": 4,
+   "surpriseLast": 10.38,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 3.1413612565444975
+  },
+  "M&MFIN": {
+   "surpriseAvg": 2.7424999999999997,
+   "surpriseN": 4,
+   "surpriseLast": 2.09,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 1.3452914798206257
+  },
+  "MAHABANK": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "MANAPPURAM": {
+   "surpriseAvg": -3.6350000000000007,
+   "surpriseN": 4,
+   "surpriseLast": -2.95,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": -4.319371727748692
+  },
+  "MANKIND": {
+   "surpriseAvg": 14.565000000000001,
+   "surpriseN": 4,
+   "surpriseLast": 16.48,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 1.2903225806451568
+  },
+  "MARICO": {
+   "surpriseAvg": 3.415,
+   "surpriseN": 4,
+   "surpriseLast": 2.18,
+   "revNet30": 1,
+   "revUp30": 2,
+   "revDown30": 1,
+   "estDrift30": 0.8360031802934745
+  },
+  "MARUTI": {
+   "surpriseAvg": -13.5175,
+   "surpriseN": 4,
+   "surpriseLast": -21.72,
+   "revNet30": -2,
+   "revUp30": 0,
+   "revDown30": 2,
+   "estDrift30": -21.07870232788509
+  },
+  "MAXHEALTH": {
+   "surpriseAvg": -11.490000000000002,
+   "surpriseN": 4,
+   "surpriseLast": -1.7,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 12.302205882352935
+  },
+  "MAZDOCK": {
+   "surpriseAvg": -8.8575,
+   "surpriseN": 4,
+   "surpriseLast": -38.96,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "MCLOUD": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "MCX": {
+   "surpriseAvg": -7.6325,
+   "surpriseN": 4,
+   "surpriseLast": -4.65,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "MEDANTA": {
+   "surpriseAvg": 9.594999999999999,
+   "surpriseN": 4,
+   "surpriseLast": 18.88,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "MEESHO": {
+   "surpriseAvg": -53.195,
+   "surpriseN": 4,
+   "surpriseLast": -24.44,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 0
+  },
+  "MFSL": {
+   "surpriseAvg": 77616.99,
+   "surpriseN": 3,
+   "surpriseLast": 232900,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "MGL": {
+   "surpriseAvg": -2.1650000000000005,
+   "surpriseN": 4,
+   "surpriseLast": -14.78,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -6.32841328413284
+  },
+  "MILKYMIST": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "MINDACORP": {
+   "surpriseAvg": 38.54,
+   "surpriseN": 1,
+   "surpriseLast": 38.54,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "MMTC": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "MOBIKWIK": {
+   "surpriseAvg": -9.453333333333333,
+   "surpriseN": 3,
+   "surpriseLast": -31.82,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "MONEYVIEW": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "MOSCHIP": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "MOTHERSON": {
+   "surpriseAvg": 1.2849999999999995,
+   "surpriseN": 4,
+   "surpriseLast": -4.03,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 18.631178707224343
+  },
+  "MOTILALOFS": {
+   "surpriseAvg": 83.55,
+   "surpriseN": 1,
+   "surpriseLast": 83.55,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "MPHASIS": {
+   "surpriseAvg": -4.16,
+   "surpriseN": 4,
+   "surpriseLast": 4.49,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -1.821700969948492
+  },
+  "MRF": {
+   "surpriseAvg": 3.5049999999999994,
+   "surpriseN": 4,
+   "surpriseLast": -12.83,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 5.5050718512257
+  },
+  "MRPL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "MSUMI": {
+   "surpriseAvg": -19.4925,
+   "surpriseN": 4,
+   "surpriseLast": 1.49,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 0
+  },
+  "MTARTECH": {
+   "surpriseAvg": 12.889999999999999,
+   "surpriseN": 3,
+   "surpriseLast": 7.76,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "MUTHOOTFIN": {
+   "surpriseAvg": 5.2575,
+   "surpriseN": 4,
+   "surpriseLast": 0,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 1.5336948102246462
+  },
+  "NAM-INDIA": {
+   "surpriseAvg": 6.419999999999999,
+   "surpriseN": 4,
+   "surpriseLast": -2.41,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "NATCOPHARM": {
+   "surpriseAvg": 36.8725,
+   "surpriseN": 4,
+   "surpriseLast": 11.98,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "NATIONALUM": {
+   "surpriseAvg": -3.2525000000000004,
+   "surpriseN": 4,
+   "surpriseLast": -23.64,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "NAUKRI": {
+   "surpriseAvg": 5.0875,
+   "surpriseN": 4,
+   "surpriseLast": 7.74,
+   "revNet30": 2,
+   "revUp30": 2,
+   "revDown30": 0,
+   "estDrift30": 1.4377790831899036
+  },
+  "NAVA": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "NAVINFLUOR": {
+   "surpriseAvg": 19.427500000000002,
+   "surpriseN": 4,
+   "surpriseLast": 11.51,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "NAZARA": {
+   "surpriseAvg": -232.38,
+   "surpriseN": 3,
+   "surpriseLast": 0,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "NBCC": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "NCC": {
+   "surpriseAvg": 20.323333333333334,
+   "surpriseN": 3,
+   "surpriseLast": 62.5,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "NESTLEIND": {
+   "surpriseAvg": 15.725,
+   "surpriseN": 4,
+   "surpriseLast": 1.6,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": -9.090909090909099
+  },
+  "NETWEB": {
+   "surpriseAvg": 43.745000000000005,
+   "surpriseN": 4,
+   "surpriseLast": 75.02,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -6.842105263157898
+  },
+  "NEULANDLAB": {
+   "surpriseAvg": 22.216666666666665,
+   "surpriseN": 3,
+   "surpriseLast": 18.91,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -10.651629072681711
+  },
+  "NH": {
+   "surpriseAvg": -12.870000000000001,
+   "surpriseN": 4,
+   "surpriseLast": 9.78,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 0
+  },
+  "NHPC": {
+   "surpriseAvg": 51.325,
+   "surpriseN": 4,
+   "surpriseLast": 46.67,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "NIACL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "NLCINDIA": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "NMDC": {
+   "surpriseAvg": -25.71,
+   "surpriseN": 4,
+   "surpriseLast": -52.08,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 6.548170964886077
+  },
+  "NSE": {
+   "surpriseAvg": 6.22,
+   "surpriseN": 1,
+   "surpriseLast": 6.22,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "NSLNISP": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "NTPC": {
+   "surpriseAvg": 27.03,
+   "surpriseN": 4,
+   "surpriseLast": 33.52,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -4.1666666666666705
+  },
+  "NTPCGREEN": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "NUVAMA": {
+   "surpriseAvg": 0.6479999999999999,
+   "surpriseN": 5,
+   "surpriseLast": 2.77,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "NUVOCO": {
+   "surpriseAvg": -7.065,
+   "surpriseN": 4,
+   "surpriseLast": -17.73,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 23.33333333333334
+  },
+  "NYKAA": {
+   "surpriseAvg": 6.52,
+   "surpriseN": 4,
+   "surpriseLast": 0.88,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": -2.739130434782597
+  },
+  "OBEROIRLTY": {
+   "surpriseAvg": -9.632499999999999,
+   "surpriseN": 4,
+   "surpriseLast": -2.65,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 14.232033818694228
+  },
+  "OFSS": {
+   "surpriseAvg": 10.1175,
+   "surpriseN": 4,
+   "surpriseLast": -0.47,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "OIL": {
+   "surpriseAvg": 27.36,
+   "surpriseN": 4,
+   "surpriseLast": -14.83,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 0
+  },
+  "OLAELEC": {
+   "surpriseAvg": 0.6674999999999995,
+   "surpriseN": 4,
+   "surpriseLast": 6.02,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": -5.797101449275368
+  },
+  "OLECTRA": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ONESOURCE": {
+   "surpriseAvg": -166.47333333333333,
+   "surpriseN": 3,
+   "surpriseLast": 9.87,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ONGC": {
+   "surpriseAvg": 3.5324999999999998,
+   "surpriseN": 4,
+   "surpriseLast": 5.64,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -2.913631633714874
+  },
+  "PACEDIGITK": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "PAGEIND": {
+   "surpriseAvg": -0.825,
+   "surpriseN": 4,
+   "surpriseLast": -3.3,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 0
+  },
+  "PARADEEP": {
+   "surpriseAvg": -48.21,
+   "surpriseN": 1,
+   "surpriseLast": -48.21,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "PATANJALI": {
+   "surpriseAvg": 66.91666666666667,
+   "surpriseN": 3,
+   "surpriseLast": 60.83,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "PAYTM": {
+   "surpriseAvg": -2.8225,
+   "surpriseN": 4,
+   "surpriseLast": -11.75,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -0.5301017746885571
+  },
+  "PCBL": {
+   "surpriseAvg": -8.547500000000003,
+   "surpriseN": 4,
+   "surpriseLast": -37.33,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 0
+  },
+  "PERSISTENT": {
+   "surpriseAvg": -9.6075,
+   "surpriseN": 4,
+   "surpriseLast": -36.5,
+   "revNet30": 1,
+   "revUp30": 2,
+   "revDown30": 1,
+   "estDrift30": -4.854491928283591
+  },
+  "PETRONET": {
+   "surpriseAvg": 15.8775,
+   "surpriseN": 4,
+   "surpriseLast": 5.64,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 0
+  },
+  "PFC": {
+   "surpriseAvg": 11.58,
+   "surpriseN": 4,
+   "surpriseLast": 3.99,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -9.654178674351597
+  },
+  "PFOCUS": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "PGEL": {
+   "surpriseAvg": 241.6175,
+   "surpriseN": 4,
+   "surpriseLast": 1040,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 16.129032258064516
+  },
+  "PHOENIXLTD": {
+   "surpriseAvg": -0.5100000000000007,
+   "surpriseN": 4,
+   "surpriseLast": 10.98,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -7.407407407407414
+  },
+  "PIDILITIND": {
+   "surpriseAvg": 4.2325,
+   "surpriseN": 4,
+   "surpriseLast": -4.8,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -0.13778209232167743
+  },
+  "PIIND": {
+   "surpriseAvg": -24.0475,
+   "surpriseN": 4,
+   "surpriseLast": -54.65,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "PINELABS": {
+   "surpriseAvg": 152.6275,
+   "surpriseN": 4,
+   "surpriseLast": 596.2,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 3.114395293267197
+  },
+  "PIRAMALFIN": {
+   "surpriseAvg": -3.29,
+   "surpriseN": 2,
+   "surpriseLast": -5.72,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "PNB": {
+   "surpriseAvg": 22.985,
+   "surpriseN": 4,
+   "surpriseLast": 34.56,
+   "revNet30": 3,
+   "revUp30": 3,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "PNBHOUSING": {
+   "surpriseAvg": 4.7075,
+   "surpriseN": 4,
+   "surpriseLast": 6.33,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -4.805996472663139
+  },
+  "POLICYBZR": {
+   "surpriseAvg": 8.2175,
+   "surpriseN": 4,
+   "surpriseLast": -6.03,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "POLYCAB": {
+   "surpriseAvg": 8.65,
+   "surpriseN": 4,
+   "surpriseLast": 21.54,
+   "revNet30": 0,
+   "revUp30": 1,
+   "revDown30": 1,
+   "estDrift30": -2.1437078205637263
+  },
+  "POLYMED": {
+   "surpriseAvg": -4.8774999999999995,
+   "surpriseN": 4,
+   "surpriseLast": -0.79,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 6.956521739130441
+  },
+  "POONAWALLA": {
+   "surpriseAvg": 26.80333333333333,
+   "surpriseN": 3,
+   "surpriseLast": 7.27,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "POWERGRID": {
+   "surpriseAvg": 12.245,
+   "surpriseN": 4,
+   "surpriseLast": -2.21,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "POWERINDIA": {
+   "surpriseAvg": 9.0025,
+   "surpriseN": 4,
+   "surpriseLast": -8.5,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 14.02439024390244
+  },
+  "PPLPHARMA": {
+   "surpriseAvg": -162.46999999999997,
+   "surpriseN": 4,
+   "surpriseLast": 110.57,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -61.904761904761905
+  },
+  "PREMIERENE": {
+   "surpriseAvg": 8.9425,
+   "surpriseN": 4,
+   "surpriseLast": -7.47,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "PRESTIGE": {
+   "surpriseAvg": 230.3025,
+   "surpriseN": 4,
+   "surpriseLast": -35,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -5.092186128182616
+  },
+  "PRIVISCL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "PTCIL": {
+   "surpriseAvg": -15.6525,
+   "surpriseN": 4,
+   "surpriseLast": -0.09,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": -11.405133633236312
+  },
+  "PVRINOX": {
+   "surpriseAvg": 33.650000000000006,
+   "surpriseN": 4,
+   "surpriseLast": 19.64,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "PWL": {
+   "surpriseAvg": -37.955,
+   "surpriseN": 4,
+   "surpriseLast": -5.39,
+   "revNet30": 0,
+   "revUp30": 1,
+   "revDown30": 1,
+   "estDrift30": -6.040268456375844
+  },
+  "RADICO": {
+   "surpriseAvg": 9.677500000000002,
+   "surpriseN": 4,
+   "surpriseLast": 5.7,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 2.5157232704402537
+  },
+  "RAILTEL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "RAINBOW": {
+   "surpriseAvg": 5.1775,
+   "surpriseN": 4,
+   "surpriseLast": -6.18,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "RAMCOCEM": {
+   "surpriseAvg": -28.192499999999995,
+   "surpriseN": 4,
+   "surpriseLast": 41.93,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -51.61290322580645
+  },
+  "RBLBANK": {
+   "surpriseAvg": 4.925,
+   "surpriseN": 4,
+   "surpriseLast": 30.66,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -4.207920792079206
+  },
+  "RCOM": {
+   "surpriseAvg": -49.326666666666675,
+   "surpriseN": 3,
+   "surpriseLast": -48.2,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "RECLTD": {
+   "surpriseAvg": -5.3675,
+   "surpriseN": 4,
+   "surpriseLast": -11.54,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -9.053778080326753
+  },
+  "REDINGTON": {
+   "surpriseAvg": 8.3275,
+   "surpriseN": 4,
+   "surpriseLast": 17.16,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "RELIANCE": {
+   "surpriseAvg": -3.3725000000000005,
+   "surpriseN": 4,
+   "surpriseLast": 9.09,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 11.949685534591195
+  },
+  "RHIM": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "RITES": {
+   "surpriseAvg": 15.13,
+   "surpriseN": 3,
+   "surpriseLast": 23.48,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "RKFORGE": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "RPOWER": {
+   "surpriseAvg": -505.3925,
+   "surpriseN": 4,
+   "surpriseLast": -1979.1,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "RRKABEL": {
+   "surpriseAvg": 17.7525,
+   "surpriseN": 4,
+   "surpriseLast": 7.29,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "RSYSTEMS": {
+   "surpriseAvg": 8.042499999999999,
+   "surpriseN": 4,
+   "surpriseLast": 6.44,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 2.0408163265306047
+  },
+  "RUBICON": {
+   "surpriseAvg": 15.712499999999999,
+   "surpriseN": 4,
+   "surpriseLast": 6.08,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 0
+  },
+  "RVNL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SAGILITY": {
+   "surpriseAvg": -3.783333333333333,
+   "surpriseN": 3,
+   "surpriseLast": 0.23,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 12.85714285714287
+  },
+  "SAIL": {
+   "surpriseAvg": -1.4100000000000001,
+   "surpriseN": 4,
+   "surpriseLast": -13.29,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 0
+  },
+  "SAILIFE": {
+   "surpriseAvg": 7.1000000000000005,
+   "surpriseN": 4,
+   "surpriseLast": 11.71,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SAMMAANCAP": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SANSERA": {
+   "surpriseAvg": 10.9675,
+   "surpriseN": 4,
+   "surpriseLast": -0.63,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -2.19224283305228
+  },
+  "SARDAEN": {
+   "surpriseAvg": -38.35,
+   "surpriseN": 1,
+   "surpriseLast": -38.35,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SBICARD": {
+   "surpriseAvg": 2.3600000000000003,
+   "surpriseN": 4,
+   "surpriseLast": 19.18,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -3.6211699164345377
+  },
+  "SBIFUNDS": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SBILIFE": {
+   "surpriseAvg": -18.5,
+   "surpriseN": 4,
+   "surpriseLast": -24.78,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 20.374787748449158
+  },
+  "SBIN": {
+   "surpriseAvg": 19.5125,
+   "surpriseN": 4,
+   "surpriseLast": 37.97,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 5.957446808510643
+  },
+  "SCHAEFFLER": {
+   "surpriseAvg": 1.0899999999999999,
+   "surpriseN": 4,
+   "surpriseLast": 1.06,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "SCHNEIDER": {
+   "surpriseAvg": -48.8675,
+   "surpriseN": 4,
+   "surpriseLast": -44.97,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -30.879447852760727
+  },
+  "SCI": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SHADOWFAX": {
+   "surpriseAvg": 15.329999999999998,
+   "surpriseN": 3,
+   "surpriseLast": -0.22,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 15.328467153284667
+  },
+  "SHAREINDIA": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SHIPROCKET": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SHREECEM": {
+   "surpriseAvg": -12.267499999999998,
+   "surpriseN": 4,
+   "surpriseLast": -14.2,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": null
+  },
+  "SHRIPISTON": {
+   "surpriseAvg": -6.52,
+   "surpriseN": 1,
+   "surpriseLast": -6.52,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SHRIRAMFIN": {
+   "surpriseAvg": 3.5175,
+   "surpriseN": 4,
+   "surpriseLast": 3.81,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 2.8552887735236827
+  },
+  "SHYAMMETL": {
+   "surpriseAvg": -4.2700000000000005,
+   "surpriseN": 4,
+   "surpriseLast": 28.7,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 12.596633778293679
+  },
+  "SIEMENS": {
+   "surpriseAvg": -9.442499999999999,
+   "surpriseN": 4,
+   "surpriseLast": 18.2,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -100
+  },
+  "SIGNATURE": {
+   "surpriseAvg": -45.815,
+   "surpriseN": 4,
+   "surpriseLast": 58.67,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SJVN": {
+   "surpriseAvg": 39.949999999999996,
+   "surpriseN": 3,
+   "surpriseLast": -15.15,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SKYWAYS": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SOBHA": {
+   "surpriseAvg": -48.707499999999996,
+   "surpriseN": 4,
+   "surpriseLast": -49.51,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SOLARINDS": {
+   "surpriseAvg": 14.379999999999999,
+   "surpriseN": 4,
+   "surpriseLast": 22.05,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": -2.7453506158924377
+  },
+  "SONACOMS": {
+   "surpriseAvg": 3.93,
+   "surpriseN": 4,
+   "surpriseLast": 10.31,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": -2.79012658227849
+  },
+  "SRF": {
+   "surpriseAvg": 15.610000000000001,
+   "surpriseN": 4,
+   "surpriseLast": -12.4,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 0
+  },
+  "STARHEALTH": {
+   "surpriseAvg": 23.252499999999998,
+   "surpriseN": 4,
+   "surpriseLast": -9.75,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 7.8059071729957825
+  },
+  "STLNETWORK": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "STLTECH": {
+   "surpriseAvg": 99.15,
+   "surpriseN": 1,
+   "surpriseLast": 99.15,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SUBEXLTD": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SUMICHEM": {
+   "surpriseAvg": 19.653333333333336,
+   "surpriseN": 3,
+   "surpriseLast": 69.54,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SUNDARMFIN": {
+   "surpriseAvg": 1.9325,
+   "surpriseN": 4,
+   "surpriseLast": 3.04,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SUNPHARMA": {
+   "surpriseAvg": 1.6100000000000003,
+   "surpriseN": 4,
+   "surpriseLast": -12.64,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 3.7437005039596802
+  },
+  "SUNTV": {
+   "surpriseAvg": -1.4225000000000012,
+   "surpriseN": 4,
+   "surpriseLast": 6.32,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SUPREMEIND": {
+   "surpriseAvg": 3.6975,
+   "surpriseN": 4,
+   "surpriseLast": 1.59,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 5.820105820105828
+  },
+  "SUZLON": {
+   "surpriseAvg": 0.6475,
+   "surpriseN": 4,
+   "surpriseLast": -29.27,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SWANCORP": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "SWIGGY": {
+   "surpriseAvg": -6.8725000000000005,
+   "surpriseN": 4,
+   "surpriseLast": -10.33,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -16.13119892533304
+  },
+  "SYNGENE": {
+   "surpriseAvg": -23.5325,
+   "surpriseN": 4,
+   "surpriseLast": -27.75,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -25.34562211981566
+  },
+  "SYRMA": {
+   "surpriseAvg": 25.265,
+   "surpriseN": 4,
+   "surpriseLast": 13.29,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TARIL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TATACAP": {
+   "surpriseAvg": -2.7733333333333334,
+   "surpriseN": 3,
+   "surpriseLast": -2.25,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TATACHEM": {
+   "surpriseAvg": -374.48,
+   "surpriseN": 4,
+   "surpriseLast": -659.14,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -91.61771037181997
+  },
+  "TATACOMM": {
+   "surpriseAvg": -1.2849999999999993,
+   "surpriseN": 4,
+   "surpriseLast": 13.95,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TATACONSUM": {
+   "surpriseAvg": 0.19249999999999998,
+   "surpriseN": 4,
+   "surpriseLast": 1.47,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": -2.217741935483877
+  },
+  "TATAELXSI": {
+   "surpriseAvg": 3.0324999999999998,
+   "surpriseN": 4,
+   "surpriseLast": -2.47,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 3.19595214508493
+  },
+  "TATAINVEST": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TATAPOWER": {
+   "surpriseAvg": -4.898000000000001,
+   "surpriseN": 5,
+   "surpriseLast": 8.24,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "TATASTEEL": {
+   "surpriseAvg": -15.415,
+   "surpriseN": 4,
+   "surpriseLast": -20.69,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -8.235215053763444
+  },
+  "TATATECH": {
+   "surpriseAvg": -21.67,
+   "surpriseN": 4,
+   "surpriseLast": -13.32,
+   "revNet30": 0,
+   "revUp30": 1,
+   "revDown30": 1,
+   "estDrift30": -5.363984674329489
+  },
+  "TBOTEK": {
+   "surpriseAvg": -12.7225,
+   "surpriseN": 4,
+   "surpriseLast": -15.64,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 10.389610389610388
+  },
+  "TCS": {
+   "surpriseAvg": 0.9825,
+   "surpriseN": 4,
+   "surpriseLast": 0.79,
+   "revNet30": -2,
+   "revUp30": 2,
+   "revDown30": 4,
+   "estDrift30": -0.7947884085589506
+  },
+  "TDPOWERSYS": {
+   "surpriseAvg": -8.833333333333334,
+   "surpriseN": 3,
+   "surpriseLast": -34,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TECHM": {
+   "surpriseAvg": -5.9775,
+   "surpriseN": 4,
+   "surpriseLast": -4.04,
+   "revNet30": 1,
+   "revUp30": 3,
+   "revDown30": 2,
+   "estDrift30": 1.449930038103812
+  },
+  "TECHNOE": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TEGA": {
+   "surpriseAvg": -301.23,
+   "surpriseN": 1,
+   "surpriseLast": -301.23,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TEJASNET": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TENNIND": {
+   "surpriseAvg": -23.63,
+   "surpriseN": 3,
+   "surpriseLast": 2.14,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TFCILTD": {
+   "surpriseAvg": 17.71,
+   "surpriseN": 1,
+   "surpriseLast": 17.71,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "THANGAMAYL": {
+   "surpriseAvg": 10.274999999999999,
+   "surpriseN": 4,
+   "surpriseLast": -27.81,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -9.579439252336435
+  },
+  "THERMAX": {
+   "surpriseAvg": -3.1374999999999993,
+   "surpriseN": 4,
+   "surpriseLast": -33.55,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": 0
+  },
+  "TIINDIA": {
+   "surpriseAvg": -3.2074999999999996,
+   "surpriseN": 4,
+   "surpriseLast": -9.25,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TIMKEN": {
+   "surpriseAvg": -5.435,
+   "surpriseN": 4,
+   "surpriseLast": 1.85,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TITAGARH": {
+   "surpriseAvg": -30.38,
+   "surpriseN": 1,
+   "surpriseLast": -30.38,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TITAN": {
+   "surpriseAvg": 24.32,
+   "surpriseN": 4,
+   "surpriseLast": 60.04,
+   "revNet30": 2,
+   "revUp30": 2,
+   "revDown30": 0,
+   "estDrift30": 0.05536933109501275
+  },
+  "TMCV": {
+   "surpriseAvg": 8.987499999999999,
+   "surpriseN": 4,
+   "surpriseLast": -15.13,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 4.04081511338928
+  },
+  "TMPV": {
+   "surpriseAvg": -41.9675,
+   "surpriseN": 4,
+   "surpriseLast": -84.89,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -35.25398028809705
+  },
+  "TONBO": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TORNTPHARM": {
+   "surpriseAvg": -7.1125,
+   "surpriseN": 4,
+   "surpriseLast": -12.09,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -6.88159789256742
+  },
+  "TORNTPOWER": {
+   "surpriseAvg": -1.9500000000000004,
+   "surpriseN": 3,
+   "surpriseLast": -2.16,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "TRENT": {
+   "surpriseAvg": 6.7875,
+   "surpriseN": 4,
+   "surpriseLast": -5.54,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": -5.136186770428017
+  },
+  "TRIDENT": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TRITURBINE": {
+   "surpriseAvg": -13.104999999999999,
+   "surpriseN": 4,
+   "surpriseLast": -32.8,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 4.1666666666666705
+  },
+  "TTML": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TURTLEMINT": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "TVSMOTOR": {
+   "surpriseAvg": 4.8775,
+   "surpriseN": 4,
+   "surpriseLast": 6.69,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "UBL": {
+   "surpriseAvg": 67.85499999999999,
+   "surpriseN": 4,
+   "surpriseLast": 97.69,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 65.21739130434783
+  },
+  "UCOBANK": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ULTRACEMCO": {
+   "surpriseAvg": 6.12,
+   "surpriseN": 4,
+   "surpriseLast": -7.55,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": -14.410603496897911
+  },
+  "UNIONBANK": {
+   "surpriseAvg": 26.0425,
+   "surpriseN": 4,
+   "surpriseLast": 21.53,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "UNITDSPR": {
+   "surpriseAvg": 27.067500000000003,
+   "surpriseN": 4,
+   "surpriseLast": -3.57,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "UNOMINDA": {
+   "surpriseAvg": 4.9125,
+   "surpriseN": 4,
+   "surpriseLast": 13.04,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 4.836193447737903
+  },
+  "UPL": {
+   "surpriseAvg": 43.6575,
+   "surpriseN": 4,
+   "surpriseLast": 5.86,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "URBANCO": {
+   "surpriseAvg": -29.552500000000002,
+   "surpriseN": 4,
+   "surpriseLast": -56.75,
+   "revNet30": -2,
+   "revUp30": 0,
+   "revDown30": 2,
+   "estDrift30": -63.20474777448071
+  },
+  "USHAMART": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "UTIAMC": {
+   "surpriseAvg": -23.209999999999994,
+   "surpriseN": 4,
+   "surpriseLast": -30,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "VAKRANGEE": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "VAML": {
+   "surpriseAvg": -7.525,
+   "surpriseN": 2,
+   "surpriseLast": -7.29,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "VBL": {
+   "surpriseAvg": 2.356666666666667,
+   "surpriseN": 3,
+   "surpriseLast": 3.52,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -18.735224586288414
+  },
+  "VEDL": {
+   "surpriseAvg": 31.14,
+   "surpriseN": 4,
+   "surpriseLast": 97.87,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "VEDPOWER": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "VIJAYA": {
+   "surpriseAvg": 10.067499999999999,
+   "surpriseN": 4,
+   "surpriseLast": 10.19,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "VIKRAMSOLR": {
+   "surpriseAvg": -40.995,
+   "surpriseN": 4,
+   "surpriseLast": -64.44,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -54.05405405405405
+  },
+  "VISL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "VMM": {
+   "surpriseAvg": -4.545,
+   "surpriseN": 4,
+   "surpriseLast": -14.47,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -3.703703703703707
+  },
+  "VOGL": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "VOLTAS": {
+   "surpriseAvg": -21.095,
+   "surpriseN": 4,
+   "surpriseLast": -21.98,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -10.266516870905013
+  },
+  "VTL": {
+   "surpriseAvg": -7.6066666666666665,
+   "surpriseN": 3,
+   "surpriseLast": 7.76,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "WAAREEENER": {
+   "surpriseAvg": -10.5,
+   "surpriseN": 4,
+   "surpriseLast": -17.76,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "WEBELSOLAR": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "WELCORP": {
+   "surpriseAvg": 59.453333333333326,
+   "surpriseN": 3,
+   "surpriseLast": -3.13,
+   "revNet30": 1,
+   "revUp30": 1,
+   "revDown30": 0,
+   "estDrift30": 15.42553191489361
+  },
+  "WELSPUNLIV": {
+   "surpriseAvg": 162.25750000000002,
+   "surpriseN": 4,
+   "surpriseLast": 9.41,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -5.000000000000004
+  },
+  "WHIRLPOOL": {
+   "surpriseAvg": -19.66,
+   "surpriseN": 5,
+   "surpriseLast": -20.8,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "WIPRO": {
+   "surpriseAvg": -1.505,
+   "surpriseN": 4,
+   "surpriseLast": -1.48,
+   "revNet30": 1,
+   "revUp30": 2,
+   "revDown30": 1,
+   "estDrift30": 1.722059163814841
+  },
+  "WOCKPHARMA": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "XTRANET": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "YATRA": {
+   "surpriseAvg": -74.2375,
+   "surpriseN": 4,
+   "surpriseLast": -105.56,
+   "revNet30": -1,
+   "revUp30": 0,
+   "revDown30": 1,
+   "estDrift30": -92.3076923076923
+  },
+  "YESBANK": {
+   "surpriseAvg": 18.215,
+   "surpriseN": 4,
+   "surpriseLast": 8.51,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": -5.405405405405411
+  },
+  "ZAGGLE": {
+   "surpriseAvg": -14.066666666666665,
+   "surpriseN": 3,
+   "surpriseLast": -43.48,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ZEEL": {
+   "surpriseAvg": -68.64750000000001,
+   "surpriseN": 4,
+   "surpriseLast": -32.86,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ZENSARTECH": {
+   "surpriseAvg": 8.1225,
+   "surpriseN": 4,
+   "surpriseLast": 1.97,
+   "revNet30": 0,
+   "revUp30": 1,
+   "revDown30": 1,
+   "estDrift30": 2.2177007186690623
+  },
+  "ZENTEC": {
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ZFCVINDIA": {
+   "surpriseAvg": 4.504999999999999,
+   "surpriseN": 4,
+   "surpriseLast": 15.85,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
+  },
+  "ZYDUSLIFE": {
+   "surpriseAvg": 15.5475,
+   "surpriseN": 4,
+   "surpriseLast": 5.69,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": null
+  },
+  "ZYDUSWELL": {
+   "surpriseAvg": -123.95,
+   "surpriseN": 4,
+   "surpriseLast": -40,
+   "revNet30": 0,
+   "revUp30": 0,
+   "revDown30": 0,
+   "estDrift30": 9.09090909090908
+  }
+ }
+}

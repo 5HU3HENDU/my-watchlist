@@ -300,7 +300,7 @@ var LensLogic = (function () {
   // 3y price CAGR is scored higher-better as momentum even though
   // Burry's lens reads a negative 3y CAGR as cheap — value captures
   // cheapness separately via P/E, P/B, PEG and 52w distance.
-  function rankParams(f, m, w, isFinancial, pl, del) {
+  function rankParams(f, m, w, isFinancial, pl, del, sent, an) {
     var price = (m && m.p !== undefined) ? m.p : f.price;
     var peDaily = (f.pe !== null && f.pe !== undefined && f.price !== null && f.price !== undefined && f.price !== 0 && price !== null && price !== undefined && price !== 0)
       ? price * f.pe / f.price : null;
@@ -332,6 +332,25 @@ var LensLogic = (function () {
     // range: a value outside 0–100 is bad data, not a rank signal.
     var delivery = (del && del.deliveryPct !== null && del.deliveryPct !== undefined && del.deliveryPct >= 0 && del.deliveryPct <= 100)
       ? del.deliveryPct : null;
+    // Sentiment (v20): what the crowd expects and where the money is
+    // going. surprise = mean earnings surprisePct over the last 4
+    // quarters (Yahoo earningsChart, computed in the fetcher — Yahoo
+    // sends surprisePct as a string and omits it sometimes); revisions
+    // = net analyst estimate revisions, 30 days only (up − down;
+    // downLast90days is empty on every sample, so the 90d window is
+    // unusable); consensus = the weighted % score from analysts.json
+    // (SB 4, B 3, H 2, S 1, SS 0), thin coverage (< 3 analysts) is
+    // N/A; deals = 3-month NET bulk/block buy value in ₹cr (Stocks
+    // Sena, same page as pledging) — paired transfers net to ~0, which
+    // is a real 0, while NO deals in 3M is N/A (never 0). Extra display
+    // fields (surpriseN, estDrift30, consensusN, dealsHas3m) ride
+    // along for the popup detail rows; they are NOT scored params.
+    var surprise = (sent && sent.surpriseN > 0 && sent.surpriseAvg !== null && sent.surpriseAvg !== undefined) ? sent.surpriseAvg : null;
+    var revisions = (sent && sent.revNet30 !== null && sent.revNet30 !== undefined) ? sent.revNet30 : null;
+    var consensusN = analystN(an);
+    var consensus = (consensusN !== null && consensusN >= 3) ? analystScore(an) : null;
+    var dealsHas3m = !!(pl && pl.dealsHas3m);
+    var deals = (dealsHas3m && pl.dealsNet3m !== null && pl.dealsNet3m !== undefined) ? pl.dealsNet3m : null;
     return {
       quality: {
         roce: (f.roce !== null && f.roce !== undefined) ? f.roce : null,
@@ -353,6 +372,19 @@ var LensLogic = (function () {
         cagr3: (f.priceCagr3 !== null && f.priceCagr3 !== undefined) ? f.priceCagr3 : null,
         fiiChg: fiiChg,
         delivery: delivery,
+      },
+      sentiment: {
+        surprise: surprise,
+        surpriseN: (sent && sent.surpriseN) || 0,
+        revisions: revisions,
+        revUp30: (sent && sent.revUp30 !== null && sent.revUp30 !== undefined) ? sent.revUp30 : null,
+        revDown30: (sent && sent.revDown30 !== null && sent.revDown30 !== undefined) ? sent.revDown30 : null,
+        estDrift30: (sent && sent.estDrift30 !== null && sent.estDrift30 !== undefined) ? sent.estDrift30 : null,
+        consensus: consensus,
+        consensusN: consensusN,
+        deals: deals,
+        dealsHas3m: dealsHas3m,
+        dealsN3m: (pl && pl.dealsN3m) || 0,
       },
     };
   }
@@ -385,6 +417,17 @@ var LensLogic = (function () {
       { key: 'cagr3', lower: false },
       { key: 'fiiChg', lower: false },
       { key: 'delivery', lower: false },
+    ],
+    // Sentiment (v20): what the crowd expects and where the money is
+    // going. All four higher-better. A sub-rank with no available
+    // params is null (the combined score is the mean of the available
+    // sub-ranks, so a stock with no Sentiment data still ranks on
+    // Q/V/M alone).
+    sentiment: [
+      { key: 'surprise', lower: false },
+      { key: 'revisions', lower: false },
+      { key: 'consensus', lower: false },
+      { key: 'deals', lower: false },
     ],
   };
 
@@ -421,8 +464,23 @@ var LensLogic = (function () {
       { key: 'fiiChg', label: 'FII holding change', fmt: 'pp' },
       { key: 'delivery', label: 'Delivery %', fmt: 'pct' },
     ],
+    // Sentiment detail (v20): the raw values are the scored numbers
+    // (surprise avg %, net revisions, consensus %, deals net ₹cr); the
+    // display strings carry the context (quarters counted, 30d window,
+    // estimate drift, 3M window) from the extra fields in the params
+    // record — see fmtRankParam's 'surp' / 'rev' / 'scorePct' /
+    // 'dealsCr' formats, which take the whole sub-rank record as ctx.
+    sentiment: [
+      { key: 'surprise', label: 'Earnings surprise', fmt: 'surp' },
+      { key: 'revisions', label: 'Estimate revisions', fmt: 'rev' },
+      { key: 'consensus', label: 'Analyst consensus score', fmt: 'scorePct' },
+      { key: 'deals', label: 'Bulk/block net buy', fmt: 'dealsCr' },
+    ],
   };
-  function fmtRankParam(fmt, v) {
+  // Sentiment display formats (v20): fmtRankParam takes the whole
+  // sub-rank params record as ctx so the display can show the context
+  // behind the scored number (quarters, drift, deal count).
+  function fmtRankParam(fmt, v, ctx) {
     if (v === null || v === undefined) return null;
     switch (fmt) {
       case 'pct': return fmtPct(v);
@@ -432,6 +490,11 @@ var LensLogic = (function () {
       case 'signedPct': return fmtSignedPct(v);
       case 'pp': return (v >= 0 ? '+' : '') + v.toFixed(1) + ' pp';
       case 'x': return v.toFixed(2) + '\u00d7';
+      case 'surp': return fmtSignedPct(v) + ' avg (' + ((ctx && ctx.surpriseN) || 0) + ' qtrs)';
+      case 'rev': return (v >= 0 ? '+' : '') + v + ' net (30d)' +
+        ((ctx && ctx.estDrift30 !== null && ctx.estDrift30 !== undefined) ? ' \u00b7 est ' + (ctx.estDrift30 >= 0 ? '+' : '') + ctx.estDrift30.toFixed(1) + '%' : '');
+      case 'scorePct': return v.toFixed(0) + '%';
+      case 'dealsCr': return (v >= 0 ? '\u20B9+' : '\u20B9\u2212') + Math.abs(v).toFixed(1) + 'cr net (3M)';
       default: return fmtNum(v);
     }
   }
@@ -463,17 +526,22 @@ var LensLogic = (function () {
   // delivery (v18) is the optional delivery.json map
   // {SYM:{deliveryPct}} — null when the file failed to load, in which
   // case every stock scores Momentum out of the other 5 params.
-  // Returns {sym: {rank, score, q, v, m, detail}} — score is the combined
-  // 0–100, q/v/m the Quality/Value/Momentum sub-rank scores (null when
+  // sentiment (v20) is the optional sentiment.json map
+  // {SYM:{surpriseAvg, surpriseN, revNet30, ...}} and analysts (v20)
+  // the analysts.json map — both null when their files failed to load,
+  // in which case every stock scores Sentiment out of nothing (the
+  // sub-rank is null and the combined score is the mean of Q/V/M).
+  // Returns {sym: {rank, score, q, v, m, s, detail}} — score is the combined
+  // 0–100, q/v/m/s the Quality/Value/Momentum/Sentiment sub-rank scores (null when
   // a sub-rank has no available parameters for that stock), and detail
   // the per-parameter breakdown behind each sub-rank (v16, for the
   // popup): {quality: [{key, label, v, disp, pct, na, lower}], ...} —
   // pct is the direction-adjusted percentile (1dp) that feeds the
   // sub-rank mean, null with a reason when the parameter is N/A.
   // Rank 1..N by combined score desc; ties broken by Quality, then
-  // Value, then symbol (deterministic). Stocks with no sub-rank at all
+  // Value, then Sentiment, then symbol (deterministic). Stocks with no sub-rank at all
   // score null and rank last, by symbol.
-  function computeRank(fundStocks, mdStocks, wp, secMap, symbols, pledging, delivery) {
+  function computeRank(fundStocks, mdStocks, wp, secMap, symbols, pledging, delivery, sentiment, analysts) {
     var wpStocks = (wp && wp.stocks) || {};
     var params = {};
     var finMap = {}; // sym -> isFinancial (for the D/E N/A reason in the detail)
@@ -486,7 +554,8 @@ var LensLogic = (function () {
       if (!m) continue;
       var w = wpStocks[sym] || null;
       var isFinancial = secMap && secMap[sym] === 'Financial Services';
-      params[sym] = rankParams(f, m, w, isFinancial, pledging ? pledging[sym] : null, delivery ? delivery[sym] : null);
+      params[sym] = rankParams(f, m, w, isFinancial, pledging ? pledging[sym] : null, delivery ? delivery[sym] : null,
+        sentiment ? sentiment[sym] : null, analysts ? analysts[sym] : null);
       finMap[sym] = isFinancial;
       list.push(sym);
     }
@@ -528,7 +597,15 @@ var LensLogic = (function () {
           var p = pct[sym] && pct[sym][s] ? pct[sym][s][meta.key] : undefined;
           var na = null;
           if (raw === null || raw === undefined) {
-            na = (s === 'quality' && meta.key === 'de' && finMap[sym]) ? 'not applicable \u2014 financial' : 'no data';
+            if (s === 'quality' && meta.key === 'de' && finMap[sym]) na = 'not applicable \u2014 financial';
+            else if (s === 'sentiment') {
+              var sctx = params[sym][s];
+              if (meta.key === 'surprise') na = 'no estimates';
+              else if (meta.key === 'revisions') na = 'no revision data';
+              else if (meta.key === 'consensus') na = (sctx.consensusN === 0 || sctx.consensusN === null) ? 'no analyst coverage' : 'fewer than 3 analysts';
+              else if (meta.key === 'deals') na = sctx.dealsHas3m ? 'no data' : 'no deals in 3M';
+              else na = 'no data';
+            } else na = 'no data';
           }
           var label = meta.label;
           if (meta.period) {
@@ -537,18 +614,18 @@ var LensLogic = (function () {
           }
           return { key: meta.key, label: label,
             v: (raw === null || raw === undefined) ? null : raw,
-            disp: fmtRankParam(meta.fmt, raw),
+            disp: fmtRankParam(meta.fmt, raw, params[sym][s]),
             pct: (p === undefined) ? null : Math.round(p * 10) / 10,
             na: na, lower: !!meta.lower };
         });
       });
-      return { sym: sym, score: score, q: sub.quality, v: sub.value, m: sub.momentum, detail: detail };
+      return { sym: sym, score: score, q: sub.quality, v: sub.value, m: sub.momentum, s: sub.sentiment, detail: detail };
     });
     rows.sort(function (a, b) {
       if (a.score === null && b.score === null) return a.sym < b.sym ? -1 : 1;
       if (a.score === null) return 1;
       if (b.score === null) return -1;
-      return b.score - a.score || (b.q || 0) - (a.q || 0) || (b.v || 0) - (a.v || 0) || (a.sym < b.sym ? -1 : 1);
+      return b.score - a.score || (b.q || 0) - (a.q || 0) || (b.v || 0) - (a.v || 0) || (b.s || 0) - (a.s || 0) || (a.sym < b.sym ? -1 : 1);
     });
     var out = {};
     rows.forEach(function (r, idx) {
@@ -558,6 +635,7 @@ var LensLogic = (function () {
         q: r.q === null ? null : Math.round(r.q * 10) / 10,
         v: r.v === null ? null : Math.round(r.v * 10) / 10,
         m: r.m === null ? null : Math.round(r.m * 10) / 10,
+        s: r.s === null ? null : Math.round(r.s * 10) / 10,
         detail: r.detail,
       };
     });

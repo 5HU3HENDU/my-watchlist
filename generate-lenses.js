@@ -72,7 +72,7 @@ const html = `<!DOCTYPE html>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Lenses">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v19 -->
+<!-- my-watchlist-lenses-v20 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -94,15 +94,21 @@ const html = `<!DOCTYPE html>
   .dot{width:5px;height:5px;width:max(5px,3cqw);height:max(5px,3cqw);border-radius:50%}
   .dot.up{background:#22c55e}.dot.dn{background:#ef4444}.dot.flat{background:#4b5563}
   .rankline{font-size:11px;font-size:13cqw;font-weight:800;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:nowrap}
-  /* Rank sub-ranks (v15): same flex-cell treatment as the Analysts counts
-     (v14). The old single string "Q 76 · V 43 · M 88" at 11cqw was ~163px
-     in a 131px tile and only survived via .cell overflow:hidden, clipping
-     inside the tile. Now three equal-width cells, no separators, pure
-     9cqw (NO px floor — a 9px floor breaks the worst case "Q 100" at
-     360px viewports). Each cell is 1/3 of the tile's inner width, so
-     even three three-digit values fit by construction. */
-  .subrank{display:flex;width:100%;min-width:0;color:#d1d5db;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:9cqw;line-height:1.25}
+  /* Rank sub-ranks (v15, four cells since v20): same flex-cell
+     treatment as the Analysts counts (v14). The old single string
+     "Q 76 · V 43 · M 88" at 11cqw was ~163px in a 131px tile and only
+     survived via .cell overflow:hidden, clipping inside the tile. Four
+     cells at 360px are 14.8px each — "Q 100" (5 chars) at 9cqw is
+     18.0px and does NOT fit, and even 7cqw (15.1px) fails. So the
+     cells drop the space ("Q100", 4 chars) at 8cqw (12.1px at 360px,
+     measured in measure-sentiment-v20.py) — the popup still shows the
+     full "Quality — 61.9", so nothing is lost. */
+  .subrank{display:flex;width:100%;min-width:0;color:#d1d5db;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:8cqw;line-height:1.25}
   .subrank>span{flex:1 1 0;min-width:0;text-align:center}
+  /* Macro header (v20): the market weather — India VIX, USD/INR, India
+     10y yield — as one small dim line under the header. Hidden when
+     macro.json fails to load; never a made-up number. */
+  #macroLine{display:none;padding:3px 12px;font-size:11px;color:#9ca3af;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;border-bottom:1px solid #1f2937;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   /* Analysts View tile lines (v14): the counts row is five EQUAL flex
      cells (no "·" separators — the colours already distinguish the
      ratings), so it always fits the tile even with five two-digit
@@ -207,6 +213,7 @@ const html = `<!DOCTYPE html>
   <button class="sectgl hdr" id="analystToggleHdr">Analysts View</button>
   <button class="gear" id="gearBtn" aria-label="Settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg><span class="fdot"></span></button>
 </header>
+<div id="macroLine"></div>
 <main><div id="grid"></div></main>
 <div id="overlay"><button class="pclose" id="closeSettings" aria-label="Close">✕</button><div id="panel">
   <div class="prow"><span id="orderLine">Top-left = <b>biggest gainer</b> \u00b7 Bottom-right = <b>biggest loser</b></span><br><span id="legendLine"></span></div>
@@ -233,7 +240,7 @@ const html = `<!DOCTYPE html>
   <div style="font-size:17px;font-weight:800" id="unName"></div>
   <div class="dim" style="margin-top:6px" id="unSub">Not listed yet \u2014 no market data</div>
 </div></div>
-<script src="scripts/lenses-logic.js?v=19"></script>
+<script src="scripts/lenses-logic.js?v=20"></script>
 <script>
 const N500_SYMS=${n500Json};
 const WL_SYMS=${wlJson};
@@ -260,7 +267,7 @@ let REAL=null, REAL_ASOF="", REAL_SESSION="", LAST_FALLBACK=0, LAST_COUNT=0;
 let LENS_WL=null, LENS_N500=null;
 let RANK_WL=null, RANK_N500=null;
 let FUND=null, FUND_ASOF="", WP=null, RUPEE=null, PLEDGE=null;
-let ANALYSTS=null, BROKER=null, DELIVERY=null;
+let ANALYSTS=null, BROKER=null, DELIVERY=null, SENTIMENT=null, MACRO=null;
 let LENS_ASOF="", LENS_SESSION="";
 const ORDER=["Berkshire","Burry","Axelrod","Jhunjhunwala","Lynch","Marks","Druckenmiller"];
 const LENS_SHORT={Berkshire:"BUF",Burry:"BRY",Axelrod:"AXL",Jhunjhunwala:"RJ",Lynch:"LYN",Marks:"MRK",Druckenmiller:"DRU"};
@@ -300,7 +307,7 @@ function updateSettings(){
   // Q/V/M sub-ranks, five analyst counts, upside %. The legend describes
   // the tile once; the active sort is named in the order line below.
   document.getElementById("legendLine").innerHTML=
-    "Every tile shows the 7 lens dots (<span style='color:#22c55e'>\u25cf</span> lens likes it, <span style='color:#ef4444'>\u25cf</span> lens avoids it, <span style='color:#6b7280'>\u25cf</span> neutral — Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks, Druckenmiller), rank # + combined score, Q/V/M sub-ranks, the five analyst counts (strong buy \u00b7 buy \u00b7 hold \u00b7 sell \u00b7 strong sell, each in its own colour, zeros shown) and upside % (average analyst target vs current price; grey upside = fewer than 3 analysts; \u201cNo analyst coverage\u201d = none).";
+    "Every tile shows the 7 lens dots (<span style='color:#22c55e'>\u25cf</span> lens likes it, <span style='color:#ef4444'>\u25cf</span> lens avoids it, <span style='color:#6b7280'>\u25cf</span> neutral — Buffett, Burry, Axelrod, Jhunjhunwala, Lynch, Marks, Druckenmiller), rank # + combined score, Q/V/M/S sub-ranks, the five analyst counts (strong buy \u00b7 buy \u00b7 hold \u00b7 sell \u00b7 strong sell, each in its own colour, zeros shown) and upside % (average analyst target vs current price; grey upside = fewer than 3 analysts; \u201cNo analyst coverage\u201d = none).";
   // Pledging: the Jhunjhunwala pledging check is live for both tabs
   // (Stocks Sena; watchlist since v10, Nifty 500 since v17).
   document.getElementById("pledgeLine").textContent="Jhunjhunwala lens: promoter pledging is live for My watchlist and Nifty 500 (Stocks Sena).";
@@ -396,6 +403,51 @@ async function loadDelivery(){
     if(j&&j.stocks){ DELIVERY=j.stocks; }
   }catch(e){}
 }
+async function loadSentiment(){
+  // Earnings surprise + estimate revisions (sentiment.json, weekly
+  // Saturday fetch from Yahoo — same quoteSummary call as analysts).
+  // Missing file -> SENTIMENT stays null and every stock scores
+  // Sentiment out of nothing (the sub-rank is null; combined is the
+  // mean of Q/V/M) rather than breaking the page.
+  try{
+    const ctrl=new AbortController();
+    const timer=setTimeout(function(){ctrl.abort();},8000);
+    const r=await fetch("sentiment.json",{signal:ctrl.signal});
+    clearTimeout(timer);
+    if(!r.ok) return;
+    const j=await r.json();
+    if(j&&j.stocks){ SENTIMENT=j.stocks; }
+  }catch(e){}
+}
+async function loadMacro(){
+  // Macro header (macro.json, daily 16:45 fetch): India VIX, USD/INR,
+  // India 10y yield. Missing file -> MACRO stays null and the header
+  // line stays hidden — never a made-up number.
+  try{
+    const ctrl=new AbortController();
+    const timer=setTimeout(function(){ctrl.abort();},8000);
+    const r=await fetch("macro.json",{signal:ctrl.signal});
+    clearTimeout(timer);
+    if(!r.ok) return;
+    const j=await r.json();
+    if(j&&(j.vix!==undefined||j.usdinr!==undefined||j.yield10y!==undefined)){ MACRO=j; updateMacroLine(); }
+  }catch(e){}
+}
+function updateMacroLine(){
+  // The market weather, as one small line under the header. Only the
+  // values that exist are shown; a missing value is dropped, never
+  // guessed. Nothing at all -> the line stays hidden.
+  const el=document.getElementById("macroLine");
+  if(!el) return;
+  if(!MACRO){ el.style.display="none"; return; }
+  const parts=[];
+  if(MACRO.vix!==null&&MACRO.vix!==undefined) parts.push("VIX "+Number(MACRO.vix).toFixed(1));
+  if(MACRO.usdinr!==null&&MACRO.usdinr!==undefined) parts.push("\u20B9/$ "+Number(MACRO.usdinr).toFixed(2));
+  if(MACRO.yield10y!==null&&MACRO.yield10y!==undefined) parts.push("10y "+Number(MACRO.yield10y).toFixed(2)+"%" + (MACRO.yieldDate ? " (" + MACRO.yieldDate + ")" : ""));
+  if(!parts.length){ el.style.display="none"; return; }
+  el.textContent="Market: "+parts.join(" \u00b7 ");
+  el.style.display="block";
+}
 function computeLenses(){
   // Browser-side scoring (rulebook v0.2, 7 lenses, BOTH tabs) from the
   // loaded data files. No pre-computed lens.json any more. If the logic
@@ -409,10 +461,13 @@ function computeLenses(){
   LENS_ASOF=FUND_ASOF;
   LENS_SESSION=REAL_SESSION;
   // Combined rank (v12): same data files, same pledging rule as the
-  // lenses — PLEDGE on both tabs since v17.
+  // lenses — PLEDGE on both tabs since v17. Sentiment (v20) is the 4th
+  // sub-rank: surprise + revisions from sentiment.json, consensus score
+  // from analysts.json, bulk/block net from pledging.json — all passed
+  // in here, so the rank is computed from whatever data loaded.
   if(typeof LensLogic.computeRank==="function"){
-    RANK_WL=LensLogic.computeRank(FUND,REAL,WP,SECTORS,WL_SYMS,PLEDGE,DELIVERY);
-    RANK_N500=LensLogic.computeRank(FUND,REAL,WP,SECTORS,N500_SYMS,PLEDGE,DELIVERY);
+    RANK_WL=LensLogic.computeRank(FUND,REAL,WP,SECTORS,WL_SYMS,PLEDGE,DELIVERY,SENTIMENT,ANALYSTS);
+    RANK_N500=LensLogic.computeRank(FUND,REAL,WP,SECTORS,N500_SYMS,PLEDGE,DELIVERY,SENTIMENT,ANALYSTS);
   } else { RANK_WL=null; RANK_N500=null; }
 }
 function lensDots(sym){
@@ -459,12 +514,15 @@ function cellHtml(r){
   // a stock has no rank (no market data to rank on).
   const rkTxt=r.rk===null?"—":"#"+r.rk;
   const scTxt=r.score===null?"—":r.score.toFixed(0);
-  // Sub-ranks (v15): three equal-width flex cells (.subrank), label +
-  // value together per cell, no "·" separators.
+  // Sub-ranks (v15, four cells since v20): equal-width flex cells
+  // (.subrank), label + value together per cell, no "·" separators
+  // and no space ("Q62" — "Q 62" at 9cqw overflows a 4-cell row at
+  // 360px; measured in measure-sentiment-v20.py).
   const sub='<span class="subrank">'+
-    '<span>Q '+(r.q===null?"–":r.q.toFixed(0))+'</span>'+
-    '<span>V '+(r.v===null?"–":r.v.toFixed(0))+'</span>'+
-    '<span>M '+(r.m===null?"–":r.m.toFixed(0))+'</span></span>';
+    '<span>Q'+(r.q===null?"–":r.q.toFixed(0))+'</span>'+
+    '<span>V'+(r.v===null?"–":r.v.toFixed(0))+'</span>'+
+    '<span>M'+(r.m===null?"–":r.m.toFixed(0))+'</span>'+
+    '<span>S'+(r.s===null?"–":r.s.toFixed(0))+'</span></span>';
   // Analyst rows (as Analysts View showed them): five counts in their
   // colours + weighted avg upside %. No coverage -> the counts line
   // reads "No analyst coverage"; fewer than 3 analysts -> grey "upside
@@ -518,7 +576,7 @@ function render(){
     // analysts.json (Yahoo consensus). Missing file or no record ->
     // no coverage (the tile says so, never a made-up number).
     const av=(typeof LensLogic!=="undefined"&&LensLogic.analystView&&ANALYSTS)?LensLogic.analystView(ANALYSTS[sym]||null):null;
-    return {sym:sym,pct:r.pct,dots:r.dots,g:g,r:rd,rk:rec?rec.rank:null,score:rec?rec.score:null,q:rec?rec.q:null,v:rec?rec.v:null,m:rec?rec.m:null,an:av};
+    return {sym:sym,pct:r.pct,dots:r.dots,g:g,r:rd,rk:rec?rec.rank:null,score:rec?rec.score:null,q:rec?rec.q:null,v:rec?rec.v:null,m:rec?rec.m:null,s:rec?rec.s:null,an:av};
   }).sort(function(a,b){return b.pct-a.pct||(a.sym<b.sym?-1:1);});
   FULL_ROWS=full;
   // Lens sort: green count desc, then red count asc, then today's return desc.
@@ -678,7 +736,7 @@ function lensHtml(sym){
   return h;
 }
 // Rank section of the popup (v16): the combined percentile rank, the
-// three sub-rank scores, and the per-parameter breakdown — which
+// four sub-rank scores, and the per-parameter breakdown — which
 // parameters feed each sub-rank, their values, and the percentile each
 // one scores. Shown for EVERY stock in EVERY mode (Shiva: the popup
 // must be consistent irrespective of the filter/button clicked). Since
@@ -696,7 +754,7 @@ function rankHtml(sym){
     return '<div style="border-top:1px solid #374151;padding-top:10px;margin-top:10px"><div style="font-weight:800;margin-bottom:2px">Rank</div><div class="dim">Not ranked — no market data for this stock, so there is no combined rank.</div></div>';
   }
   const N=FULL_ROWS.length;
-  const subs=[["Quality","quality",rec.q],["Value","value",rec.v],["Momentum","momentum",rec.m]];
+  const subs=[["Quality","quality",rec.q],["Value","value",rec.v],["Momentum","momentum",rec.m],["Sentiment","sentiment",rec.s]];
   const avail=subs.filter(function(s){return s[2]!==null;});
   let h='<div style="border-top:1px solid #374151;padding-top:10px;margin-top:10px"><div style="font-weight:800;margin-bottom:2px">Rank — #'+rec.rank+' of '+N+' <span class="dim" style="font-weight:400">· combined '+(rec.score===null?"—":rec.score.toFixed(1))+'</span></div>';
   h+='<div class="dim" style="font-size:12px;margin-bottom:4px">Combined = mean of the available sub-ranks: '+avail.map(function(s){return s[0]+' '+(s[2]===null?"—":s[2].toFixed(1));}).join(', ')+'. Each parameter is ranked 0–100 against every stock in this tab (100 = best); a sub-rank is the mean of its available parameters. N/A parameters are skipped, never scored zero.</div>';
@@ -928,7 +986,7 @@ overlay.addEventListener("click",function(e){ if(e.target===overlay) closeAll();
 stockOverlay.addEventListener("click",function(e){ if(e.target===stockOverlay) closeAll(); });
 unlistedOverlay.addEventListener("click",function(e){ if(e.target===unlistedOverlay) closeAll(); });
 document.addEventListener("keydown",function(e){ if(e.key==="Escape"){ closeAll(); } });
-Promise.all([loadReal(),loadFundamentals(),loadWeeklyPrices(),loadPledging(),loadAnalysts(),loadBrokerCalls(),loadDelivery()]).then(function(){ computeLenses(); buildFilterUI(); render(); });
+Promise.all([loadReal(),loadFundamentals(),loadWeeklyPrices(),loadPledging(),loadAnalysts(),loadBrokerCalls(),loadDelivery(),loadSentiment(),loadMacro()]).then(function(){ computeLenses(); buildFilterUI(); render(); });
 </script>
 <script>
 if ('serviceWorker' in navigator) {

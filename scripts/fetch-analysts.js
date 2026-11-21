@@ -1,7 +1,11 @@
 // Fetch Yahoo analyst consensus for the Analysts View (v13) —
 // recommendationTrend (buy/hold/sell counts per period) + financialData
 // (mean rating, verdict key, average target) per symbol, via the
-// quoteSummary API.
+// quoteSummary API. Since v20 the SAME call also fetches the
+// `earnings` + `earningsTrend` modules — earnings surprise (actual vs
+// estimate per quarter) and estimate revisions (up/down counts, 30d)
+// for the Sentiment sub-rank — and writes them to sentiment.json
+// alongside analysts.json. Same request, same run, ~zero marginal cost.
 // THIS API NEEDS A CRUMB (verified 21 Nov 2026): GET https://fc.yahoo.com
 // with a browser UA to set cookies, then GET
 // https://query2.finance.yahoo.com/v1/test/getcrumb with the same cookies
@@ -37,6 +41,7 @@ function resolve(p, def) {
 const STOCKS_FILE = resolve(sfIdx >= 0 ? args0[sfIdx + 1] : null, 'union-stocks.json');
 const OUT = resolve(outIdx >= 0 ? args0[outIdx + 1] : null, 'analysts.json');
 const PARTIAL = resolve(partIdx >= 0 ? args0[partIdx + 1] : null, 'analysts.partial.json');
+const OUT_SENT = resolve(null, 'sentiment.json');
 const LIMIT = limIdx >= 0 ? parseInt(args0[limIdx + 1], 10) : null;
 const TEST = args0.includes('--test');
 const DELAY_MS = 700;
@@ -118,6 +123,61 @@ function hasAny(rec) {
     (rec.trend && rec.trend.length > 0);
 }
 
+// Parse the Sentiment inputs (v20) out of the same quoteSummary result:
+// earnings surprise + estimate revisions. Yahoo does NOT return a
+// surprisePct field (verified live 21 Nov 2026 — the field is absent),
+// so surprisePct is computed here as (actual - estimate) / |estimate|
+// x 100 per quarter; the samples match the source-check values exactly
+// (TCS +1.1/-0.5/+2.5/+0.8%, TATATECH -66.45% in 4Q2025). A quarter
+// with a missing actual/estimate or a zero estimate is skipped, never
+// invented. Revisions use the 30-DAY window only — downLast90days is
+// an empty object {} on every sample, so the 90d window is unusable.
+function parseSentiment(result) {
+  var out = {
+    surpriseAvg: null, surpriseN: 0, surpriseLast: null,
+    revNet30: null, revUp30: null, revDown30: null, estDrift30: null,
+  };
+  if (!result) return out;
+  var quarterly = (result.earnings && result.earnings.earningsChart && result.earnings.earningsChart.quarterly) || [];
+  var surprises = [];
+  quarterly.forEach(function (q) {
+    var actual = raw(q.actual), est = raw(q.estimate);
+    var sp = null;
+    if (q.surprisePct !== null && q.surprisePct !== undefined) {
+      // Yahoo sends surprisePct as a STRING ("1.1"), not an object —
+      // raw() returns the string, so parseFloat it (Number.isFinite
+      // does not coerce strings, so a bare isFinite check would drop
+      // every value — verified live 21 Nov 2026).
+      var spRaw = raw(q.surprisePct);
+      var spNum = (typeof spRaw === 'number') ? spRaw : parseFloat(spRaw);
+      if (Number.isFinite(spNum)) sp = spNum;
+    }
+    if (sp === null && actual !== null && est !== null && est !== 0) sp = (actual - est) / Math.abs(est) * 100;
+    if (sp !== null && Number.isFinite(sp)) surprises.push(sp);
+  });
+  if (surprises.length) {
+    out.surpriseN = surprises.length;
+    out.surpriseAvg = surprises.reduce(function (a, b) { return a + b; }, 0) / surprises.length;
+    out.surpriseLast = surprises[surprises.length - 1];
+  }
+  var trend = (result.earningsTrend && result.earningsTrend.trend && result.earningsTrend.trend[0]) || null;
+  if (trend) {
+    var rev = trend.epsRevisions || {};
+    var up = raw(rev.upLast30days), down = raw(rev.downLast30days);
+    if (up !== null) out.revUp30 = up;
+    if (down !== null) out.revDown30 = down;
+    if (up !== null && down !== null) out.revNet30 = up - down;
+    var et = trend.epsTrend || {};
+    var cur = raw(et.current), ago30 = raw(et['30daysAgo']);
+    if (cur !== null && ago30 !== null && ago30 !== 0) out.estDrift30 = (cur - ago30) / Math.abs(ago30) * 100;
+  }
+  return out;
+}
+
+function hasSentiment(s) {
+  return s && (s.surpriseN > 0 || s.revNet30 !== null);
+}
+
 async function fetchOne(yahooSym) {
   var lastErr = null;
   for (var attempt = 0; attempt < 3; attempt++) {
@@ -126,7 +186,7 @@ async function fetchOne(yahooSym) {
       const ctrl = new AbortController();
       const timer = setTimeout(function () { ctrl.abort(); }, 20000);
       const url = 'https://query2.finance.yahoo.com/v10/finance/quoteSummary/' +
-        encodeURIComponent(yahooSym) + '?modules=recommendationTrend,financialData&crumb=' + encodeURIComponent(CRUMB);
+        encodeURIComponent(yahooSym) + '?modules=recommendationTrend,financialData,earnings,earningsTrend&crumb=' + encodeURIComponent(CRUMB);
       const res = await fetch(url, {
         signal: ctrl.signal,
         headers: { 'User-Agent': UA, 'Cookie': cookieHeader, 'Accept': 'application/json' },
@@ -151,13 +211,13 @@ async function fetchOne(yahooSym) {
         continue;
       }
       var result = (qs && qs.result && qs.result[0]) || null;
-      return { rec: parseConsensus(result), error: null };
+      return { rec: parseConsensus(result), sent: parseSentiment(result), error: null };
     } catch (e) {
       lastErr = String((e && e.name) || e);
       await sleep(1000);
     }
   }
-  return { rec: parseConsensus(null), error: lastErr };
+  return { rec: parseConsensus(null), sent: parseSentiment(null), error: lastErr };
 }
 
 async function main() {
@@ -165,27 +225,39 @@ async function main() {
   var todo = all.map(function (s) { return { sym: s.sym, exch: s.exch || 'NS' }; });
   if (TEST) todo = todo.slice(0, 5);
   else if (LIMIT) todo = todo.slice(0, LIMIT);
-  // Resume from partial checkpoint.
+  // Resume from partial checkpoint. Partial entries are {a: consensus
+  // rec, s: sentiment rec} since v20; a pre-v20 partial holds the bare
+  // consensus rec — treat that as {a: rec, s: null} (sentiment refetched).
   var done = {};
-  try { done = JSON.parse(fs.readFileSync(PARTIAL, 'utf8')).stocks || {}; } catch (e) {}
-  var remaining = todo.filter(function (s) { return !(s.sym in done); });
+  try {
+    var rawDone = JSON.parse(fs.readFileSync(PARTIAL, 'utf8')).stocks || {};
+    Object.keys(rawDone).forEach(function (k) {
+      var e = rawDone[k];
+      done[k] = (e && (e.a || e.s)) ? e : { a: e, s: null };
+    });
+  } catch (e) {}
+  var remaining = todo.filter(function (s) { return !(s.sym in done) || !done[s.sym].s; });
   console.log('analysts: ' + todo.length + ' symbols, ' + Object.keys(done).length + ' already fetched, ' + remaining.length + ' to fetch');
   for (var i = 0; i < remaining.length; i++) {
     var sym = remaining[i].sym;
     var yahooSym = sym + '.' + (remaining[i].exch === 'BO' ? 'BO' : 'NS');
     var r = await fetchOne(yahooSym);
-    done[sym] = r.rec;
+    done[sym] = { a: r.rec, s: r.sent };
     if (r.error) console.log('  ' + sym + ': MISSING (' + r.error + ')');
     else if (!hasAny(r.rec)) console.log('  ' + sym + ': no consensus');
     fs.writeFileSync(PARTIAL, JSON.stringify({ updated: istNow(), stocks: done }, null, 1));
     await sleep(DELAY_MS);
   }
   var out = { fetchedAtIST: istNow(), source: 'yahoo', stocks: {} };
+  var outSent = { fetchedAtIST: istNow(), source: 'yahoo', stocks: {} };
   for (var j = 0; j < todo.length; j++) {
     var s2 = todo[j].sym;
-    out.stocks[s2] = done[s2] || parseConsensus(null);
+    var e2 = done[s2] || { a: parseConsensus(null), s: parseSentiment(null) };
+    out.stocks[s2] = e2.a || parseConsensus(null);
+    outSent.stocks[s2] = e2.s || parseSentiment(null);
   }
   fs.writeFileSync(OUT, JSON.stringify(out, null, 1));
+  fs.writeFileSync(OUT_SENT, JSON.stringify(outSent, null, 1));
   try { fs.unlinkSync(PARTIAL); } catch (e) {}
   var withConsensus = todo.filter(function (s) { return hasAny(out.stocks[s.sym]); });
   var with3plus = todo.filter(function (s) {
@@ -193,8 +265,11 @@ async function main() {
     return n !== null && n !== undefined && n >= 3;
   });
   var none = todo.filter(function (s) { return !hasAny(out.stocks[s.sym]); });
+  var withSurprise = todo.filter(function (s) { return outSent.stocks[s.sym].surpriseN > 0; });
+  var withRevisions = todo.filter(function (s) { return outSent.stocks[s.sym].revNet30 !== null; });
   console.log('analysts: ' + withConsensus.length + '/' + todo.length + ' with consensus, ' + with3plus.length + ' with >=3 analysts, ' + none.length + ' with none');
-  console.log('wrote ' + OUT);
+  console.log('sentiment: ' + withSurprise.length + '/' + todo.length + ' with earnings surprise, ' + withRevisions.length + ' with estimate revisions');
+  console.log('wrote ' + OUT + ' and ' + OUT_SENT);
 }
 
 main().catch(function (e) { console.error(e); process.exit(1); });

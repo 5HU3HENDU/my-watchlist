@@ -1,2222 +1,3884 @@
 {
- "fetchedAtIST": "21 Nov, 10:22 am",
+ "fetchedAtIST": "22 Nov, 12:40 am",
  "source": "stockssena",
  "stocks": {
   "360ONE": {
    "promoterPct": 5.88,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AADHARHFC": {
    "promoterPct": 64.51,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AARTIIND": {
    "promoterPct": 41.82,
-   "pledgedPct": 3.57
+   "pledgedPct": 3.57,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AAVAS": {
    "promoterPct": 48.88,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ABB": {
    "promoterPct": 75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ABBOTINDIA": {
    "promoterPct": 74.99,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ABCAPITAL": {
    "promoterPct": 68.82,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "ABDL": {
    "promoterPct": 78.95,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ABREL": {
    "promoterPct": 50.21,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ABSLAMC": {
    "promoterPct": 74.67,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ACC": {
    "promoterPct": 56.69,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ACE": {
    "promoterPct": 65.42,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ACEVECTOR": {
    "promoterPct": 49.96,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -30.18,
+   "dealsN3m": 29,
+   "dealsHas3m": true
   },
   "ACMESOLAR": {
    "promoterPct": 71.4,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ACUTAAS": {
    "promoterPct": 32.66,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ADANIENSOL": {
    "promoterPct": 73.39,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "ADANIENT": {
    "promoterPct": 71.97,
-   "pledgedPct": 0.79
+   "pledgedPct": 0.79,
+   "dealsNet3m": 0.01,
+   "dealsN3m": 3,
+   "dealsHas3m": true
   },
   "ADANIGREEN": {
    "promoterPct": 62.43,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ADANIPORTS": {
    "promoterPct": 66.03,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ADANIPOWER": {
    "promoterPct": 74.96,
-   "pledgedPct": 1.81
+   "pledgedPct": 1.81,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AEGISLOG": {
    "promoterPct": 53.67,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AEGISVOPAK": {
    "promoterPct": 86.93,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AEQUS": {
    "promoterPct": 59.09,
-   "pledgedPct": 25.36
+   "pledgedPct": 25.36,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AETHER": {
    "promoterPct": 74.92,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AFCONS": {
    "promoterPct": 50.17,
-   "pledgedPct": 100
+   "pledgedPct": 100,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AFFLE": {
    "promoterPct": 55.82,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AIAENG": {
    "promoterPct": 58.5,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AIIL": {
    "promoterPct": 68.81,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AJANTPHARM": {
    "promoterPct": 63.47,
-   "pledgedPct": 22.53
+   "pledgedPct": 22.53,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ALGOQUANT": {
    "promoterPct": 73.68,
-   "pledgedPct": 32.42
+   "pledgedPct": 32.42,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ALKEM": {
    "promoterPct": 49.7,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -0.01,
+   "dealsN3m": 5,
+   "dealsHas3m": true
   },
   "AMBER": {
    "promoterPct": 38.09,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -2.51,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "AMBUJACEM": {
    "promoterPct": 67.33,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ANANDRATHI": {
    "promoterPct": 40.95,
-   "pledgedPct": 13.97
+   "pledgedPct": 13.97,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ANANTRAJ": {
    "promoterPct": 57.42,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ANGELONE": {
    "promoterPct": 28.55,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -3.15,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "ANTHEM": {
    "promoterPct": 71.4,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ANURAS": {
    "promoterPct": 59.07,
-   "pledgedPct": 32.85
+   "pledgedPct": 32.85,
+   "dealsNet3m": -70.17,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "APARINDS": {
    "promoterPct": 55.42,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "APLAPOLLO": {
    "promoterPct": 28.18,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "APOLLOHOSP": {
    "promoterPct": 28.02,
-   "pledgedPct": 2.91
+   "pledgedPct": 2.91,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "APOLLOTYRE": {
    "promoterPct": 36.93,
-   "pledgedPct": 0.01
+   "pledgedPct": 0.01,
+   "dealsNet3m": 0,
+   "dealsN3m": 4,
+   "dealsHas3m": true
   },
   "APTUS": {
    "promoterPct": 23.86,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AQYLON": {
    "promoterPct": 37.25,
-   "pledgedPct": 95.89
+   "pledgedPct": 95.89,
+   "dealsNet3m": -10.51,
+   "dealsN3m": 19,
+   "dealsHas3m": true
   },
   "ARCIL": {
    "promoterPct": 77.45,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 37.72,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "ARE&M": {
    "promoterPct": 32.86,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ASAHIINDIA": {
    "promoterPct": 51.57,
-   "pledgedPct": 3.36
+   "pledgedPct": 3.36,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ASHOKLEY": {
    "promoterPct": 51.51,
-   "pledgedPct": 40.1
+   "pledgedPct": 40.1,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ASIANPAINT": {
    "promoterPct": 52.65,
-   "pledgedPct": 10.37
+   "pledgedPct": 10.37,
+   "dealsNet3m": 0,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "ASTERDM": {
    "promoterPct": 53.79,
-   "pledgedPct": 66.99
+   "pledgedPct": 66.99,
+   "dealsNet3m": 0,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "ASTRAL": {
    "promoterPct": 54.22,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 774.56,
+   "dealsN3m": 3,
+   "dealsHas3m": true
   },
   "ATGL": {
    "promoterPct": 74.8,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ATHERENERG": {
    "promoterPct": 42.33,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 445.31,
+   "dealsN3m": 3,
+   "dealsHas3m": true
   },
   "ATUL": {
    "promoterPct": 45.33,
-   "pledgedPct": 0.97
+   "pledgedPct": 0.97,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AUBANK": {
    "promoterPct": 22.67,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AUROPHARMA": {
    "promoterPct": 51.88,
-   "pledgedPct": 13.75
+   "pledgedPct": 13.75,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AVANCE": {
    "promoterPct": 0.68,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AVANTEL": {
    "promoterPct": 36.85,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AVANTIFEED": {
    "promoterPct": 43.23,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0.5,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "AWL": {
    "promoterPct": 56.94,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AXISBANK": {
    "promoterPct": 7.86,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "AZAD": {
    "promoterPct": 55.84,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -425.06,
+   "dealsN3m": 7,
+   "dealsHas3m": true
   },
   "BAGMANE": {
    "promoterPct": null,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BAJAJ-AUTO": {
    "promoterPct": 55.95,
-   "pledgedPct": 0.01
+   "pledgedPct": 0.01,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BAJAJFINSV": {
    "promoterPct": 58.65,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BAJAJHFL": {
    "promoterPct": 86.7,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BAJAJHLDNG": {
    "promoterPct": 51.46,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BAJFINANCE": {
    "promoterPct": 54.67,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BALKRISIND": {
    "promoterPct": 58.29,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 232.69,
+   "dealsN3m": 1,
+   "dealsHas3m": true
   },
   "BALRAMCHIN": {
    "promoterPct": 42.79,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 8.82,
+   "dealsN3m": 8,
+   "dealsHas3m": true
   },
   "BANDHANBNK": {
    "promoterPct": 37,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BANKBARODA": {
    "promoterPct": 63.97,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BANKINDIA": {
    "promoterPct": 73.38,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BATAINDIA": {
    "promoterPct": 50.16,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BBOX": {
    "promoterPct": 69.95,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BCG": {
    "promoterPct": 18.35,
-   "pledgedPct": 0.42
+   "pledgedPct": 0.42,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BDL": {
    "promoterPct": 74.93,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BEL": {
    "promoterPct": 51.14,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BELRISE": {
    "promoterPct": 61.15,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BEML": {
    "promoterPct": 54.03,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BERGEPAINT": {
    "promoterPct": 74.99,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BHARATCOAL": {
    "promoterPct": 90,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BHARATFORG": {
    "promoterPct": 43.12,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BHARTIARTL": {
    "promoterPct": 50.07,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BHARTIHEXA": {
    "promoterPct": 70,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BHEL": {
    "promoterPct": 58.17,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BIOCON": {
    "promoterPct": 44.68,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BIRET": {
    "promoterPct": null,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BLS": {
    "promoterPct": 70.41,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BLUECLOUDS": {
    "promoterPct": 31.36,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BLUESTARCO": {
    "promoterPct": 36.5,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BOSCHLTD": {
    "promoterPct": 70.54,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BPCL": {
    "promoterPct": 52.98,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BRIGADE": {
    "promoterPct": 41.09,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BRITANNIA": {
    "promoterPct": 50.55,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "BSE": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": -508.84,
+   "dealsN3m": 4,
+   "dealsHas3m": true
   },
   "BSOFT": {
    "promoterPct": 40.37,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 53.08,
+   "dealsN3m": 7,
+   "dealsHas3m": true
   },
   "CAMS": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CANBK": {
    "promoterPct": 62.93,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CANFINHOME": {
    "promoterPct": 29.99,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CANHLIFE": {
    "promoterPct": 62,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CAPLIPOINT": {
    "promoterPct": 70.57,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CARBORUNIV": {
    "promoterPct": 38.84,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CARTRADE": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": -19.9,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "CASTROLIND": {
    "promoterPct": 51,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CCAVENUE": {
    "promoterPct": 27.34,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CCL": {
    "promoterPct": 46.16,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CDSL": {
    "promoterPct": 15,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CEATLTD": {
    "promoterPct": 47.29,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CEMPRO": {
    "promoterPct": 62.84,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CENTRALBK": {
    "promoterPct": 81.19,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CESC": {
    "promoterPct": 52.11,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CGCL": {
    "promoterPct": 59.92,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CGPOWER": {
    "promoterPct": 56.34,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CHAMBLFERT": {
    "promoterPct": 61.72,
-   "pledgedPct": 23.07
+   "pledgedPct": 23.07,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CHENNPETRO": {
    "promoterPct": 67.29,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CHOICEIN": {
    "promoterPct": 53.65,
-   "pledgedPct": 11.39
+   "pledgedPct": 11.39,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CHOLAFIN": {
    "promoterPct": 48.93,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CHOLAHLDNG": {
    "promoterPct": 46.39,
-   "pledgedPct": 0.02
+   "pledgedPct": 0.02,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CIEINDIA": {
    "promoterPct": 65.7,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CIPLA": {
    "promoterPct": 29.21,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CLEAN": {
    "promoterPct": 51.29,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CLEANMAX": {
    "promoterPct": 49.28,
-   "pledgedPct": 9.45
+   "pledgedPct": 9.45,
+   "dealsNet3m": -758.06,
+   "dealsN3m": 10,
+   "dealsHas3m": true
   },
   "CMPDI": {
    "promoterPct": 85,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "COALINDIA": {
    "promoterPct": 61.13,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "COCHINSHIP": {
    "promoterPct": 63.33,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "COFORGE": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "COHANCE": {
    "promoterPct": 57.48,
-   "pledgedPct": 94.56
+   "pledgedPct": 94.56,
+   "dealsNet3m": 0,
+   "dealsN3m": 4,
+   "dealsHas3m": true
   },
   "COLPAL": {
    "promoterPct": 51,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "COMFINTE": {
    "promoterPct": 56.13,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": 3.78,
+   "dealsN3m": 14,
+   "dealsHas3m": true
   },
   "CONCOR": {
    "promoterPct": 54.8,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CONCORDBIO": {
    "promoterPct": 44.09,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CORDELIA": {
    "promoterPct": 89.35,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "COROMANDEL": {
    "promoterPct": 56.34,
-   "pledgedPct": 0.01
+   "pledgedPct": 0.01,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CPPLUS": {
    "promoterPct": 71.8,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0,
+   "dealsN3m": 3,
+   "dealsHas3m": true
   },
   "CRAFTSMAN": {
    "promoterPct": 42.41,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "CREDITACC": {
    "promoterPct": 63.83,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CRISIL": {
    "promoterPct": 66.64,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CROMPTON": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CUB": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CUMMINSIND": {
    "promoterPct": 51,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CUPID": {
    "promoterPct": 47.69,
-   "pledgedPct": 7.64
+   "pledgedPct": 7.64,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "CYIENT": {
    "promoterPct": 24.76,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 5.91,
+   "dealsN3m": 8,
+   "dealsHas3m": true
   },
   "DABUR": {
    "promoterPct": 66.25,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "DALBHARAT": {
    "promoterPct": 55.84,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0,
+   "dealsN3m": 3,
+   "dealsHas3m": true
   },
   "DATAPATTNS": {
    "promoterPct": 42.41,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -1.25,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "DEEPAKFERT": {
    "promoterPct": 45.63,
-   "pledgedPct": 3.86
+   "pledgedPct": 3.86,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "DEEPAKNTR": {
    "promoterPct": 49.39,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "DELHIVERY": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "DELTACORP": {
    "promoterPct": 34.47,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -1,
+   "dealsN3m": 46,
+   "dealsHas3m": true
   },
   "DEVYANI": {
    "promoterPct": 61.36,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "DIVISLAB": {
    "promoterPct": 51.88,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "DIXON": {
    "promoterPct": 28.5,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "DLF": {
    "promoterPct": 74.08,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "DMART": {
    "promoterPct": 74.48,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "DOMS": {
    "promoterPct": 63.39,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "DRREDDY": {
    "promoterPct": 26.63,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "EASEMYTRIP": {
    "promoterPct": 43.56,
-   "pledgedPct": 25.85
+   "pledgedPct": 25.85,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ECLERX": {
    "promoterPct": 54.52,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "EICHERMOT": {
    "promoterPct": 49.02,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "EIDPARRY": {
    "promoterPct": 41.28,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "EIHOTEL": {
    "promoterPct": 32.85,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ELECON": {
    "promoterPct": 59.27,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -0.05,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "ELGIEQUIP": {
    "promoterPct": 31.19,
-   "pledgedPct": 0.88
+   "pledgedPct": 0.88,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "EMAMILTD": {
    "promoterPct": 54.84,
-   "pledgedPct": 15.06
+   "pledgedPct": 15.06,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "EMBASSY": {
    "promoterPct": null,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "EMCURE": {
    "promoterPct": 77.82,
-   "pledgedPct": 0.04
+   "pledgedPct": 0.04,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "EMMVEE": {
    "promoterPct": 80.03,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "EMPOWER": {
    "promoterPct": 15.02,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": 5.07,
+   "dealsN3m": 27,
+   "dealsHas3m": true
   },
   "ENDURANCE": {
    "promoterPct": 75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ENGINERSIN": {
    "promoterPct": 51.32,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -0.06,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "ENRIN": {
    "promoterPct": 75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ESCORTS": {
    "promoterPct": 68.04,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ESDS": {
    "promoterPct": 39.47,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 17.96,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "ETERNAL": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": -3262.41,
+   "dealsN3m": 6,
+   "dealsHas3m": true
   },
   "EXIDEIND": {
    "promoterPct": 45.99,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "FACT": {
    "promoterPct": 90,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "FCSSOFT": {
    "promoterPct": 19.65,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "FEDERALBNK": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "FINCABLES": {
    "promoterPct": 35.86,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "FIRSTCRY": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": -84.26,
+   "dealsN3m": 10,
+   "dealsHas3m": true
   },
   "FIVESTAR": {
    "promoterPct": 18.61,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "FLUOROCHEM": {
    "promoterPct": 61.39,
-   "pledgedPct": 7.53
+   "pledgedPct": 7.53,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "FORCEMOT": {
    "promoterPct": 61.63,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "FORTIS": {
    "promoterPct": 31.17,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "FRACTAL": {
    "promoterPct": 16.81,
-   "pledgedPct": 3.42
+   "pledgedPct": 3.42,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "FSL": {
    "promoterPct": 53.66,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GABRIEL": {
    "promoterPct": 66.29,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GAIL": {
    "promoterPct": 51.85,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GAJA": {
    "promoterPct": 54.23,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 147.1,
+   "dealsN3m": 25,
+   "dealsHas3m": true
   },
   "GALLANTT": {
    "promoterPct": 70.98,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -0.06,
+   "dealsN3m": 13,
+   "dealsHas3m": true
   },
   "GATECH": {
    "promoterPct": 0.63,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -47.42,
+   "dealsN3m": 27,
+   "dealsHas3m": true
   },
   "GENESYS": {
    "promoterPct": 32.73,
-   "pledgedPct": 9.63
+   "pledgedPct": 9.63,
+   "dealsNet3m": 2.73,
+   "dealsN3m": 36,
+   "dealsHas3m": true
   },
   "GESHIP": {
    "promoterPct": 30.91,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GICRE": {
    "promoterPct": 77.4,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GILLETTE": {
    "promoterPct": 75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GLAND": {
    "promoterPct": 45.75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "GLAXO": {
    "promoterPct": 75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GLENMARK": {
    "promoterPct": 46.65,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GMDCLTD": {
    "promoterPct": 74,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GMRAIRPORT": {
    "promoterPct": 67.48,
-   "pledgedPct": 16.47
+   "pledgedPct": 16.47,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GODFRYPHLP": {
    "promoterPct": 72.58,
-   "pledgedPct": 0.21
+   "pledgedPct": 0.21,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GODREJCP": {
    "promoterPct": 53.05,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GODREJIND": {
    "promoterPct": 74.63,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GODREJPROP": {
    "promoterPct": 51.66,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GPIL": {
    "promoterPct": 63.17,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GRANULES": {
    "promoterPct": 37.39,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -324.51,
+   "dealsN3m": 26,
+   "dealsHas3m": true
   },
   "GRAPHITE": {
    "promoterPct": 65.34,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 10.55,
+   "dealsN3m": 8,
+   "dealsHas3m": true
   },
   "GRASIM": {
    "promoterPct": 45.2,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GRAVITA": {
    "promoterPct": 55.88,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GROWW": {
    "promoterPct": 27.13,
-   "pledgedPct": 1.25
+   "pledgedPct": 1.25,
+   "dealsNet3m": -4505.73,
+   "dealsN3m": 41,
+   "dealsHas3m": true
   },
   "GRSE": {
    "promoterPct": 74.5,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GTLINFRA": {
    "promoterPct": 3.28,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "GVT&D": {
    "promoterPct": 51,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HAL": {
    "promoterPct": 71.64,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HAPPSTMNDS": {
    "promoterPct": 44.21,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0.42,
+   "dealsN3m": 6,
+   "dealsHas3m": true
   },
   "HAVELLS": {
    "promoterPct": 59.35,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HBLENGINE": {
    "promoterPct": 59.11,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HCLTECH": {
    "promoterPct": 60.88,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HDBFS": {
    "promoterPct": 74.08,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HDFCAMC": {
    "promoterPct": 52.29,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HDFCBANK": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HDFCLIFE": {
    "promoterPct": 50.53,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HEGAM": {
    "promoterPct": 60.72,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 26.44,
+   "dealsN3m": 1,
+   "dealsHas3m": true
   },
   "HEROMOTOCO": {
    "promoterPct": 34.72,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HEXT": {
    "promoterPct": 74.3,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HFCL": {
    "promoterPct": 28.29,
-   "pledgedPct": 2.08
+   "pledgedPct": 2.08,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HINDALCO": {
    "promoterPct": 34.66,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HINDCOPPER": {
    "promoterPct": 60.14,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HINDPETRO": {
    "promoterPct": 54.9,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HINDUNILVR": {
    "promoterPct": 61.9,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HINDZINC": {
    "promoterPct": 60.71,
-   "pledgedPct": 4.12
+   "pledgedPct": 4.12,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HOMEFIRST": {
    "promoterPct": 6.97,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HONASA": {
    "promoterPct": 35.47,
-   "pledgedPct": 4.15
+   "pledgedPct": 4.15,
+   "dealsNet3m": -366.83,
+   "dealsN3m": 4,
+   "dealsHas3m": true
   },
   "HONAUT": {
    "promoterPct": 75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HSCL": {
    "promoterPct": 52.49,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HUDCO": {
    "promoterPct": 75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "HYUNDAI": {
    "promoterPct": 82.5,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ICICIAMC": {
    "promoterPct": 85.6,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ICICIBANK": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": 0,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "ICICIGI": {
    "promoterPct": 51.28,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ICICIPRULI": {
    "promoterPct": 74.7,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IDBI": {
    "promoterPct": 94.71,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IDEA": {
    "promoterPct": 25.64,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IDFCFIRSTB": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IEX": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IFCI": {
    "promoterPct": 72.57,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 77.65,
+   "dealsN3m": 18,
+   "dealsHas3m": true
   },
   "IGIL": {
    "promoterPct": 76.55,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IGL": {
    "promoterPct": 45,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IIFL": {
    "promoterPct": 24.76,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IKS": {
    "promoterPct": 63.72,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "INDHOTEL": {
    "promoterPct": 38.12,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "INDIACEM": {
    "promoterPct": 75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 1.29,
+   "dealsN3m": 6,
+   "dealsHas3m": true
   },
   "INDIAMART": {
    "promoterPct": 49.07,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "INDIANB": {
    "promoterPct": 73.84,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "INDIGO": {
    "promoterPct": 41.57,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "INDOTHAI": {
    "promoterPct": 54.77,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 14.82,
+   "dealsN3m": 44,
+   "dealsHas3m": true
   },
   "INDUSINDBK": {
    "promoterPct": 15.82,
-   "pledgedPct": 42.78
+   "pledgedPct": 42.78,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "INDUSTOWER": {
    "promoterPct": 51.26,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "INFY": {
    "promoterPct": 13.9,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "INOXINDIA": {
    "promoterPct": 74.73,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "INOXWIND": {
    "promoterPct": 44.18,
-   "pledgedPct": 9.39
+   "pledgedPct": 9.39,
+   "dealsNet3m": -0.16,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "INTELLECT": {
    "promoterPct": 29.56,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IOB": {
    "promoterPct": 92.44,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IOC": {
    "promoterPct": 51.5,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IPCALAB": {
    "promoterPct": 44.72,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IRB": {
    "promoterPct": 31.18,
-   "pledgedPct": 0.03
+   "pledgedPct": 0.03,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IRCON": {
    "promoterPct": 65.17,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IRCTC": {
    "promoterPct": 62.4,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IREDA": {
    "promoterPct": 71.76,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IRFC": {
    "promoterPct": 82.9,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ITC": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ITCHOTELS": {
    "promoterPct": 39.85,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ITI": {
    "promoterPct": 90.02,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "IXIGO": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": 0.28,
+   "dealsN3m": 10,
+   "dealsHas3m": true
   },
   "J&KBANK": {
    "promoterPct": 59.4,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JAINREC": {
    "promoterPct": 73.59,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JBCHEPHARM": {
    "promoterPct": null,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JBMA": {
    "promoterPct": 67.53,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JINDALSAW": {
    "promoterPct": 63.24,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JINDALSTEL": {
    "promoterPct": 62.69,
-   "pledgedPct": 10.11
+   "pledgedPct": 10.11,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JIOFIN": {
    "promoterPct": 50.98,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JKCEMENT": {
    "promoterPct": 45.66,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JKTYRE": {
    "promoterPct": 51.72,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JMFINANCIL": {
    "promoterPct": 57.95,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JPL": {
    "promoterPct": 64.48,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JPPOWER": {
    "promoterPct": 24,
-   "pledgedPct": 72.99
+   "pledgedPct": 72.99,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JSL": {
    "promoterPct": 62.55,
-   "pledgedPct": 0.51
+   "pledgedPct": 0.51,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JSWCEMENT": {
    "promoterPct": 72.02,
-   "pledgedPct": 0.08
+   "pledgedPct": 0.08,
+   "dealsNet3m": -85.53,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "JSWENERGY": {
    "promoterPct": 66.53,
-   "pledgedPct": 14.48
+   "pledgedPct": 14.48,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JSWINFRA": {
    "promoterPct": 73.93,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JSWSTEEL": {
    "promoterPct": 44.3,
-   "pledgedPct": 12.25
+   "pledgedPct": 12.25,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JUBLFOOD": {
    "promoterPct": 40.27,
-   "pledgedPct": 1.35
+   "pledgedPct": 1.35,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JUBLINGREA": {
    "promoterPct": 45.22,
-   "pledgedPct": 9.3
+   "pledgedPct": 9.3,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JWL": {
    "promoterPct": 68.31,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "JYOTICNC": {
    "promoterPct": 62.55,
-   "pledgedPct": 12.35
+   "pledgedPct": 12.35,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "KAJARIACER": {
    "promoterPct": 46.74,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -89.25,
+   "dealsN3m": 4,
+   "dealsHas3m": true
   },
   "KALYANKJIL": {
    "promoterPct": 62.85,
-   "pledgedPct": 24.85
+   "pledgedPct": 24.85,
+   "dealsNet3m": 0.97,
+   "dealsN3m": 4,
+   "dealsHas3m": true
   },
   "KARURVYSYA": {
    "promoterPct": 1.95,
-   "pledgedPct": 3.85
+   "pledgedPct": 3.85,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "KAYNES": {
    "promoterPct": 53.31,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 4.8,
+   "dealsN3m": 10,
+   "dealsHas3m": true
   },
   "KEC": {
    "promoterPct": 50.1,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "KEI": {
    "promoterPct": 35,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "KELLTONTEC": {
    "promoterPct": 36.46,
-   "pledgedPct": 4.31
+   "pledgedPct": 4.31,
+   "dealsNet3m": -0.02,
+   "dealsN3m": 4,
+   "dealsHas3m": true
   },
   "KFINTECH": {
    "promoterPct": 14.06,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "KIMS": {
    "promoterPct": 32.66,
-   "pledgedPct": 11.71
+   "pledgedPct": 11.71,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "KIRLOSBROS": {
    "promoterPct": 65.95,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "KIRLOSENG": {
    "promoterPct": 41.03,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "KISSHT": {
    "promoterPct": 20.42,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "KOTAKBANK": {
    "promoterPct": 25.87,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "KPIL": {
    "promoterPct": 33.58,
-   "pledgedPct": 24.55
+   "pledgedPct": 24.55,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "KPITTECH": {
    "promoterPct": 38.6,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "KPRMILL": {
    "promoterPct": 67.52,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "KSB": {
    "promoterPct": 69.8,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "LALPATHLAB": {
    "promoterPct": 52.93,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "LAURUSLABS": {
    "promoterPct": 27.47,
-   "pledgedPct": 2.19
+   "pledgedPct": 2.19,
+   "dealsNet3m": -2715.28,
+   "dealsN3m": 5,
+   "dealsHas3m": true
   },
   "LEMONTREE": {
    "promoterPct": 22.32,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "LENSKART": {
    "promoterPct": 17.52,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -3210.81,
+   "dealsN3m": 41,
+   "dealsHas3m": true
   },
   "LGEINDIA": {
    "promoterPct": 85,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "LICHSGFIN": {
    "promoterPct": 45.24,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "LICI": {
    "promoterPct": 90,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "LINDEINDIA": {
    "promoterPct": 75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "LLOYDSME": {
    "promoterPct": 61.61,
-   "pledgedPct": 14.43
+   "pledgedPct": 14.43,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "LODHA": {
    "promoterPct": 70.29,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "LT": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "LTF": {
    "promoterPct": 65.93,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "LTFOODS": {
    "promoterPct": 51.01,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -0.06,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "LTM": {
    "promoterPct": 69.01,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "LTTS": {
    "promoterPct": 73.51,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "LUPIN": {
    "promoterPct": 46.84,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "M&M": {
    "promoterPct": 18.39,
-   "pledgedPct": 0.02
+   "pledgedPct": 0.02,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "M&MFIN": {
    "promoterPct": 52.48,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MAHABANK": {
    "promoterPct": 73.6,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MANAPPURAM": {
    "promoterPct": 41.66,
-   "pledgedPct": 0.44
+   "pledgedPct": 0.44,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MANKIND": {
    "promoterPct": 72.62,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MARICO": {
    "promoterPct": 58.83,
-   "pledgedPct": 2.03
+   "pledgedPct": 2.03,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MARUTI": {
    "promoterPct": 58.72,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MAXHEALTH": {
    "promoterPct": 23.71,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MAZDOCK": {
    "promoterPct": 81.22,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MCLOUD": {
    "promoterPct": 54.04,
-   "pledgedPct": 59.01
+   "pledgedPct": 59.01,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MCX": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MEDANTA": {
    "promoterPct": 33,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MEESHO": {
    "promoterPct": 16.34,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0.01,
+   "dealsN3m": 91,
+   "dealsHas3m": true
   },
   "MFSL": {
    "promoterPct": 1.25,
-   "pledgedPct": 43.71
+   "pledgedPct": 43.71,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MGL": {
    "promoterPct": 32.5,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MILKYMIST": {
    "promoterPct": 79.51,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -0.1,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "MINDACORP": {
    "promoterPct": 64.84,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MMTC": {
    "promoterPct": 89.93,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MOBIKWIK": {
    "promoterPct": 25.21,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 94,
+   "dealsN3m": 139,
+   "dealsHas3m": true
   },
   "MONEYVIEW": {
    "promoterPct": 19.31,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -24.69,
+   "dealsN3m": 62,
+   "dealsHas3m": true
   },
   "MOSCHIP": {
    "promoterPct": 39.17,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MOTHERSON": {
    "promoterPct": 48.6,
-   "pledgedPct": 2.34
+   "pledgedPct": 2.34,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MOTILALOFS": {
    "promoterPct": 66.71,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MPHASIS": {
    "promoterPct": 30.53,
-   "pledgedPct": 100
+   "pledgedPct": 100,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MRF": {
    "promoterPct": 27.61,
-   "pledgedPct": 0.09
+   "pledgedPct": 0.09,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MRPL": {
    "promoterPct": 88.58,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MSUMI": {
    "promoterPct": 61.73,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MTARTECH": {
    "promoterPct": 29.23,
-   "pledgedPct": 3.89
+   "pledgedPct": 3.89,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MUTHOOTFIN": {
    "promoterPct": 73.35,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NAM-INDIA": {
    "promoterPct": 71.72,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NATCOPHARM": {
    "promoterPct": 46.22,
-   "pledgedPct": 0.94
+   "pledgedPct": 0.94,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NATIONALUM": {
    "promoterPct": 51.28,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NAUKRI": {
    "promoterPct": 37.19,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NAVA": {
    "promoterPct": 50.03,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NAVINFLUOR": {
    "promoterPct": 27.08,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NAZARA": {
    "promoterPct": 32,
-   "pledgedPct": 87.74
+   "pledgedPct": 87.74,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NBCC": {
    "promoterPct": 61.75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NCC": {
    "promoterPct": 23.19,
-   "pledgedPct": 3.78
+   "pledgedPct": 3.78,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NESTLEIND": {
    "promoterPct": 62.76,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NETWEB": {
    "promoterPct": 64.16,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NEULANDLAB": {
    "promoterPct": 32.26,
-   "pledgedPct": 2.32
+   "pledgedPct": 2.32,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NH": {
    "promoterPct": 63.27,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NHPC": {
    "promoterPct": 61.39,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NIACL": {
    "promoterPct": 85.44,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NLCINDIA": {
    "promoterPct": 69.47,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NMDC": {
    "promoterPct": 60.79,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NSE": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NSLNISP": {
    "promoterPct": 60.79,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NTPC": {
    "promoterPct": 51.1,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NTPCGREEN": {
    "promoterPct": 89.01,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NUVAMA": {
    "promoterPct": 53.4,
-   "pledgedPct": 62.8
+   "pledgedPct": 62.8,
+   "dealsNet3m": 0,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "NUVOCO": {
    "promoterPct": 72.02,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "NYKAA": {
    "promoterPct": 52.07,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "OBEROIRLTY": {
    "promoterPct": 67.7,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "OFSS": {
    "promoterPct": 72.39,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "OIL": {
    "promoterPct": 56.66,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "OLAELEC": {
    "promoterPct": 32.49,
-   "pledgedPct": 12.31
+   "pledgedPct": 12.31,
+   "dealsNet3m": -1.55,
+   "dealsN3m": 8,
+   "dealsHas3m": true
   },
   "OLECTRA": {
    "promoterPct": 50.02,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ONESOURCE": {
    "promoterPct": 30.47,
-   "pledgedPct": 38.79
+   "pledgedPct": 38.79,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ONGC": {
    "promoterPct": 58.89,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PACEDIGITK": {
    "promoterPct": 69.52,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -0.03,
+   "dealsN3m": 4,
+   "dealsHas3m": true
   },
   "PAGEIND": {
    "promoterPct": 42.89,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PARADEEP": {
    "promoterPct": 57.85,
-   "pledgedPct": 10.34
+   "pledgedPct": 10.34,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PATANJALI": {
    "promoterPct": 68.25,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PAYTM": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PCBL": {
    "promoterPct": 53.38,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PERSISTENT": {
    "promoterPct": 28.82,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PETRONET": {
    "promoterPct": 50,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PFC": {
    "promoterPct": 55.99,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PFOCUS": {
    "promoterPct": 60.55,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PGEL": {
    "promoterPct": 43.2,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0.36,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "PHOENIXLTD": {
    "promoterPct": 47.24,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PIDILITIND": {
    "promoterPct": 69.18,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PIIND": {
    "promoterPct": 46.09,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -1.27,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "PINELABS": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": 316.07,
+   "dealsN3m": 24,
+   "dealsHas3m": true
   },
   "PIRAMALFIN": {
    "promoterPct": 44.22,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PNB": {
    "promoterPct": 70.08,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PNBHOUSING": {
    "promoterPct": 28.01,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "POLICYBZR": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": 18.85,
+   "dealsN3m": 4,
+   "dealsHas3m": true
   },
   "POLYCAB": {
    "promoterPct": 61.44,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "POLYMED": {
    "promoterPct": 62.42,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "POONAWALLA": {
    "promoterPct": 59.01,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "POWERGRID": {
    "promoterPct": 51.34,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "POWERINDIA": {
    "promoterPct": 71.31,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PPLPHARMA": {
    "promoterPct": 34.8,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PREMIERENE": {
    "promoterPct": 58.49,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PRESTIGE": {
    "promoterPct": 60.94,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PRIVISCL": {
    "promoterPct": 60.6,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PTCIL": {
    "promoterPct": 56.46,
-   "pledgedPct": 0.07
+   "pledgedPct": 0.07,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PVRINOX": {
    "promoterPct": 27.6,
-   "pledgedPct": 11.1
+   "pledgedPct": 11.1,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "PWL": {
    "promoterPct": 71.17,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0,
+   "dealsN3m": 17,
+   "dealsHas3m": true
   },
   "RADICO": {
    "promoterPct": 40.17,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "RAILTEL": {
    "promoterPct": 72.84,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "RAINBOW": {
    "promoterPct": 49.83,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "RAMCOCEM": {
    "promoterPct": 42.56,
-   "pledgedPct": 3.59
+   "pledgedPct": 3.59,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "RBLBANK": {
    "promoterPct": 59.88,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "RCOM": {
    "promoterPct": 0.77,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "RECLTD": {
    "promoterPct": 52.63,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "REDINGTON": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "RELIANCE": {
    "promoterPct": 50.44,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "RHIM": {
    "promoterPct": 56.07,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0,
+   "dealsN3m": 5,
+   "dealsHas3m": true
   },
   "RITES": {
    "promoterPct": 72.2,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "RKFORGE": {
    "promoterPct": 40.93,
-   "pledgedPct": 16.96
+   "pledgedPct": 16.96,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "RPOWER": {
    "promoterPct": 24.98,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "RRKABEL": {
    "promoterPct": 59.32,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "RSYSTEMS": {
    "promoterPct": 51.84,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 20.57,
+   "dealsN3m": 66,
+   "dealsHas3m": true
   },
   "RUBICON": {
    "promoterPct": 51.25,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "RVNL": {
    "promoterPct": 72.84,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SAGILITY": {
    "promoterPct": 50.95,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -1355.24,
+   "dealsN3m": 7,
+   "dealsHas3m": true
   },
   "SAIL": {
    "promoterPct": 65,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SAILIFE": {
    "promoterPct": 34.5,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SAMMAANCAP": {
    "promoterPct": 33.32,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SANSERA": {
    "promoterPct": 29.04,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SARDAEN": {
    "promoterPct": 73.16,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SBICARD": {
    "promoterPct": 68.86,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -32.65,
+   "dealsN3m": 3,
+   "dealsHas3m": true
   },
   "SBIFUNDS": {
-   "promoterPct": 88.19,
-   "pledgedPct": 0
+   "promoterPct": 88.21,
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SBILIFE": {
    "promoterPct": 55.31,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "SBIN": {
    "promoterPct": 55.45,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SCHAEFFLER": {
    "promoterPct": 74.13,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SCHNEIDER": {
    "promoterPct": 75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SCI": {
    "promoterPct": 63.75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SHADOWFAX": {
    "promoterPct": 16.46,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -114.8,
+   "dealsN3m": 1,
+   "dealsHas3m": true
   },
   "SHAREINDIA": {
    "promoterPct": 47.76,
-   "pledgedPct": 40.28
+   "pledgedPct": 40.28,
+   "dealsNet3m": 10.08,
+   "dealsN3m": 28,
+   "dealsHas3m": true
   },
   "SHIPROCKET": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": -0.07,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "SHREECEM": {
    "promoterPct": 62.55,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SHRIPISTON": {
    "promoterPct": 41.55,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "SHRIRAMFIN": {
    "promoterPct": 20.3,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SHYAMMETL": {
    "promoterPct": 74.59,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SIEMENS": {
    "promoterPct": 75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SIGNATURE": {
    "promoterPct": 69.54,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SJVN": {
    "promoterPct": 81.85,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SKYWAYS": {
    "promoterPct": 56.82,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 44.21,
+   "dealsN3m": 79,
+   "dealsHas3m": true
   },
   "SOBHA": {
    "promoterPct": 52.89,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SOLARINDS": {
    "promoterPct": 73.15,
-   "pledgedPct": 2.95
+   "pledgedPct": 2.95,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SONACOMS": {
    "promoterPct": 27.91,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SRF": {
    "promoterPct": 50.26,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "STARHEALTH": {
    "promoterPct": 58,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0.01,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "STLNETWORK": {
    "promoterPct": 44.11,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -52.39,
+   "dealsN3m": 16,
+   "dealsHas3m": true
   },
   "STLTECH": {
    "promoterPct": 42.28,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "SUBEXLTD": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": -2.11,
+   "dealsN3m": 8,
+   "dealsHas3m": true
   },
   "SUMICHEM": {
    "promoterPct": 75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SUNDARMFIN": {
    "promoterPct": 37.19,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SUNPHARMA": {
    "promoterPct": 52.68,
-   "pledgedPct": 0.01
+   "pledgedPct": 0.01,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SUNTV": {
    "promoterPct": 75,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SUPREMEIND": {
    "promoterPct": 48.96,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SUZLON": {
    "promoterPct": 11.7,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SWANCORP": {
    "promoterPct": 53.96,
-   "pledgedPct": 40.73
+   "pledgedPct": 40.73,
+   "dealsNet3m": 0.02,
+   "dealsN3m": 6,
+   "dealsHas3m": true
   },
   "SWIGGY": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": 1037.41,
+   "dealsN3m": 11,
+   "dealsHas3m": true
   },
   "SYNGENE": {
    "promoterPct": 52.59,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "SYRMA": {
    "promoterPct": 41.63,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TARIL": {
    "promoterPct": 64.36,
-   "pledgedPct": 21.84
+   "pledgedPct": 21.84,
+   "dealsNet3m": 26.93,
+   "dealsN3m": 18,
+   "dealsHas3m": true
   },
   "TATACAP": {
    "promoterPct": 85.41,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TATACHEM": {
    "promoterPct": 37.98,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TATACOMM": {
    "promoterPct": 58.85,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TATACONSUM": {
    "promoterPct": 33.83,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TATAELXSI": {
    "promoterPct": 43.89,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -0.42,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "TATAINVEST": {
    "promoterPct": 73.38,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TATAPOWER": {
    "promoterPct": 46.86,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TATASTEEL": {
    "promoterPct": 32.94,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TATATECH": {
    "promoterPct": 55.17,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TBOTEK": {
    "promoterPct": 44.41,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TCS": {
    "promoterPct": 71.77,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TDPOWERSYS": {
    "promoterPct": 26.51,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -10.7,
+   "dealsN3m": 6,
+   "dealsHas3m": true
   },
   "TECHM": {
    "promoterPct": 34.96,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TECHNOE": {
    "promoterPct": 56.92,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TEGA": {
    "promoterPct": 67.08,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TEJASNET": {
    "promoterPct": 53.28,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 34.55,
+   "dealsN3m": 22,
+   "dealsHas3m": true
   },
   "TENNIND": {
    "promoterPct": 59.79,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TFCILTD": {
    "promoterPct": 3.85,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -65.53,
+   "dealsN3m": 7,
+   "dealsHas3m": true
   },
   "THANGAMAYL": {
    "promoterPct": 61.65,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "THERMAX": {
    "promoterPct": 61.98,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TIINDIA": {
    "promoterPct": 44.1,
-   "pledgedPct": 0.01
+   "pledgedPct": 0.01,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TIMKEN": {
    "promoterPct": 51.05,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TITAGARH": {
    "promoterPct": 40.46,
-   "pledgedPct": 0.06
+   "pledgedPct": 0.06,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TITAN": {
    "promoterPct": 52.9,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TMCV": {
    "promoterPct": 42.51,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0,
+   "dealsN3m": 4,
+   "dealsHas3m": true
   },
   "TMPV": {
    "promoterPct": 42.5,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TONBO": {
    "promoterPct": 14.56,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": 3.27,
+   "dealsN3m": 52,
+   "dealsHas3m": true
   },
   "TORNTPHARM": {
    "promoterPct": 60.78,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TORNTPOWER": {
    "promoterPct": 51.09,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TRENT": {
    "promoterPct": 37.01,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TRIDENT": {
    "promoterPct": 73.68,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TRITURBINE": {
    "promoterPct": 55.84,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TTML": {
    "promoterPct": 74.36,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -0.03,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "TURTLEMINT": {
    "promoterPct": 13.21,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "TVSMOTOR": {
    "promoterPct": 50.27,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "UBL": {
    "promoterPct": 70.83,
-   "pledgedPct": 12.4
+   "pledgedPct": 12.4,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "UCOBANK": {
    "promoterPct": 90.95,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ULTRACEMCO": {
    "promoterPct": 58.48,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "UNIONBANK": {
    "promoterPct": 74.76,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "UNITDSPR": {
    "promoterPct": 56.67,
-   "pledgedPct": 1.18
+   "pledgedPct": 1.18,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "UNOMINDA": {
    "promoterPct": 68.36,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "UPL": {
    "promoterPct": 33.51,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "URBANCO": {
    "promoterPct": 19.02,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "USHAMART": {
    "promoterPct": 40.09,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "UTIAMC": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "VAKRANGEE": {
    "promoterPct": 40.04,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "VAML": {
    "promoterPct": 56.38,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "VBL": {
    "promoterPct": 59.43,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "VEDL": {
    "promoterPct": 54.72,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "VEDPOWER": {
    "promoterPct": 56.38,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "VIJAYA": {
    "promoterPct": 52.46,
-   "pledgedPct": 1.96
+   "pledgedPct": 1.96,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "VIKRAMSOLR": {
    "promoterPct": 63.01,
-   "pledgedPct": 9.24
+   "pledgedPct": 9.24,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "VISL": {
    "promoterPct": 56.38,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "VMM": {
    "promoterPct": 40.02,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "VOGL": {
    "promoterPct": 56.38,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "VOLTAS": {
    "promoterPct": 30.3,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "VTL": {
    "promoterPct": 65.06,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -0.11,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "WAAREEENER": {
    "promoterPct": 64.12,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "WEBELSOLAR": {
    "promoterPct": 29.72,
-   "pledgedPct": 15.64
+   "pledgedPct": 15.64,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "WELCORP": {
    "promoterPct": 47.46,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 0,
+   "dealsN3m": 21,
+   "dealsHas3m": true
   },
   "WELSPUNLIV": {
    "promoterPct": 63.77,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 279.11,
+   "dealsN3m": 4,
+   "dealsHas3m": true
   },
   "WHIRLPOOL": {
    "promoterPct": 39.76,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 5.11,
+   "dealsN3m": 10,
+   "dealsHas3m": true
   },
   "WIPRO": {
    "promoterPct": 72.58,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "WOCKPHARMA": {
    "promoterPct": 49.32,
-   "pledgedPct": 9.97
+   "pledgedPct": 9.97,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "XTRANET": {
    "promoterPct": 62.62,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 7.94,
+   "dealsN3m": 45,
+   "dealsHas3m": true
   },
   "YATRA": {
    "promoterPct": 62.66,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": -6.99,
+   "dealsN3m": 47,
+   "dealsHas3m": true
   },
   "YESBANK": {
    "promoterPct": 0,
-   "pledgedPct": null
+   "pledgedPct": null,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ZAGGLE": {
    "promoterPct": 44.3,
-   "pledgedPct": 1.61
+   "pledgedPct": 1.61,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ZEEL": {
    "promoterPct": 3.99,
-   "pledgedPct": 5.38
+   "pledgedPct": 5.38,
+   "dealsNet3m": 18.53,
+   "dealsN3m": 8,
+   "dealsHas3m": true
   },
   "ZENSARTECH": {
    "promoterPct": 48.98,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": 2.09,
+   "dealsN3m": 10,
+   "dealsHas3m": true
   },
   "ZENTEC": {
    "promoterPct": 48.51,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ZFCVINDIA": {
    "promoterPct": 60,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ZYDUSLIFE": {
    "promoterPct": 75.01,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "ZYDUSWELL": {
    "promoterPct": 69.64,
-   "pledgedPct": 0
+   "pledgedPct": 0,
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   }
  }
 }
