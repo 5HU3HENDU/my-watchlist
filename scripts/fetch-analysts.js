@@ -153,7 +153,14 @@ function parseSentiment(result) {
       if (Number.isFinite(spNum)) sp = spNum;
     }
     if (sp === null && actual !== null && est !== null && est !== 0) sp = (actual - est) / Math.abs(est) * 100;
-    if (sp !== null && Number.isFinite(sp)) surprises.push(sp);
+    // v21: cap each quarter's surprise at ±100% before averaging — a
+    // near-zero estimate blows (actual − estimate) / |estimate| into
+    // the thousands of percent (MFSL had one quarter at +232,900%,
+    // DELTACORP averaged −6,803%). The cap is per quarter, so a
+    // genuinely huge beat still reads as a large positive, just not a
+    // nonsense one. The browser logic also caps the stored average as
+    // a stopgap until this fetcher regenerates sentiment.json.
+    if (sp !== null && Number.isFinite(sp)) surprises.push(Math.max(-100, Math.min(100, sp)));
   });
   if (surprises.length) {
     out.surpriseN = surprises.length;

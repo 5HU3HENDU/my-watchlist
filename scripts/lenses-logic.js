@@ -332,22 +332,36 @@ var LensLogic = (function () {
     // range: a value outside 0–100 is bad data, not a rank signal.
     var delivery = (del && del.deliveryPct !== null && del.deliveryPct !== undefined && del.deliveryPct >= 0 && del.deliveryPct <= 100)
       ? del.deliveryPct : null;
-    // Sentiment (v20): what the crowd expects and where the money is
-    // going. surprise = mean earnings surprisePct over the last 4
-    // quarters (Yahoo earningsChart, computed in the fetcher — Yahoo
-    // sends surprisePct as a string and omits it sometimes); revisions
-    // = net analyst estimate revisions, 30 days only (up − down;
-    // downLast90days is empty on every sample, so the 90d window is
-    // unusable); consensus = the weighted % score from analysts.json
-    // (SB 4, B 3, H 2, S 1, SS 0), thin coverage (< 3 analysts) is
-    // N/A; deals = 3-month NET bulk/block buy value in ₹cr (Stocks
-    // Sena, same page as pledging) — paired transfers net to ~0, which
-    // is a real 0, while NO deals in 3M is N/A (never 0). Extra display
-    // fields (surpriseN, estDrift30, consensusN, dealsHas3m) ride
-    // along for the popup detail rows; they are NOT scored params.
-    var surprise = (sent && sent.surpriseN > 0 && sent.surpriseAvg !== null && sent.surpriseAvg !== undefined) ? sent.surpriseAvg : null;
+    // Sentiment (v20, revisions reworked v21): what the crowd expects
+    // and where the money is going. surprise = mean earnings
+    // surprisePct over the last 4 quarters (Yahoo earningsChart,
+    // computed in the fetcher — Yahoo sends surprisePct as a string
+    // and omits it sometimes), CAPPED at ±100% per quarter in the
+    // fetcher (v21: a near-zero estimate used to blow the average to
+    // thousands of percent — DELTACORP −6,803%, MFSL +77,617%); the
+    // stored average is also capped here, so the live page is fixed
+    // before Saturday's refresh regenerates sentiment.json with the
+    // per-quarter cap. revisions (v21) = net analyst estimate
+    // revisions, 30 days only (up − down; downLast90days is empty on
+    // every sample, so the 90d window is unusable), scored TWO ways
+    // and averaged: (A) net as a SHARE of covering analysts — a raw
+    // −2 means nothing without knowing whether 3 or 40 analysts
+    // cover the stock; (B) estimate drift 30d — how far the average
+    // estimate itself moved. The mean keeps revisions one param out
+    // of four in Sentiment. consensus = the weighted % score from
+    // analysts.json (SB 4, B 3, H 2, S 1, SS 0), thin coverage
+    // (< 3 analysts) is N/A; deals = 3-month NET bulk/block buy
+    // value in ₹cr (Stocks Sena, same page as pledging) — paired
+    // transfers net to ~0, which is a real 0, while NO deals in 3M
+    // is N/A (never 0). Extra display fields (surpriseN, revShare,
+    // estDrift30, consensusN, dealsHas3m) ride along for the popup
+    // detail rows; revShare and estDrift30 are scored (inside the
+    // revisions percentile), the rest are NOT scored params.
+    var surpriseRaw = (sent && sent.surpriseN > 0 && sent.surpriseAvg !== null && sent.surpriseAvg !== undefined) ? sent.surpriseAvg : null;
+    var surprise = (surpriseRaw === null) ? null : Math.max(-100, Math.min(100, surpriseRaw));
     var revisions = (sent && sent.revNet30 !== null && sent.revNet30 !== undefined) ? sent.revNet30 : null;
     var consensusN = analystN(an);
+    var revShare = (revisions !== null && consensusN !== null && consensusN > 0) ? revisions / consensusN : null;
     var consensus = (consensusN !== null && consensusN >= 3) ? analystScore(an) : null;
     var dealsHas3m = !!(pl && pl.dealsHas3m);
     var deals = (dealsHas3m && pl.dealsNet3m !== null && pl.dealsNet3m !== undefined) ? pl.dealsNet3m : null;
@@ -377,6 +391,7 @@ var LensLogic = (function () {
         surprise: surprise,
         surpriseN: (sent && sent.surpriseN) || 0,
         revisions: revisions,
+        revShare: revShare,
         revUp30: (sent && sent.revUp30 !== null && sent.revUp30 !== undefined) ? sent.revUp30 : null,
         revDown30: (sent && sent.revDown30 !== null && sent.revDown30 !== undefined) ? sent.revDown30 : null,
         estDrift30: (sent && sent.estDrift30 !== null && sent.estDrift30 !== undefined) ? sent.estDrift30 : null,
@@ -418,11 +433,14 @@ var LensLogic = (function () {
       { key: 'fiiChg', lower: false },
       { key: 'delivery', lower: false },
     ],
-    // Sentiment (v20): what the crowd expects and where the money is
-    // going. All four higher-better. A sub-rank with no available
-    // params is null (the combined score is the mean of the available
-    // sub-ranks, so a stock with no Sentiment data still ranks on
-    // Q/V/M alone).
+    // Sentiment (v20, revisions v21): what the crowd expects and where
+    // the money is going. All four higher-better. A sub-rank with no
+    // available params is null (the combined score is the mean of the
+    // available sub-ranks, so a stock with no Sentiment data still
+    // ranks on Q/V/M alone). 'revisions' is scored as the mean of two
+    // percentiles — net share of covering analysts (A) and estimate
+    // drift 30d (B) — computed in computeRank, not by the generic
+    // loop below; the slot still counts as ONE param out of four.
     sentiment: [
       { key: 'surprise', lower: false },
       { key: 'revisions', lower: false },
@@ -481,7 +499,13 @@ var LensLogic = (function () {
   // sub-rank params record as ctx so the display can show the context
   // behind the scored number (quarters, drift, deal count).
   function fmtRankParam(fmt, v, ctx) {
-    if (v === null || v === undefined) return null;
+    if (v === null || v === undefined) {
+      // v21: a drift-only stock (no revision counts) still scores
+      // revisions on drift alone — show the drift instead of blank.
+      if (fmt === 'rev' && ctx && ctx.estDrift30 !== null && ctx.estDrift30 !== undefined)
+        return 'est ' + (ctx.estDrift30 >= 0 ? '+' : '') + ctx.estDrift30.toFixed(1) + '% (30d)';
+      return null;
+    }
     switch (fmt) {
       case 'pct': return fmtPct(v);
       case 'pct2': return fmtPct(v, 2);
@@ -492,6 +516,7 @@ var LensLogic = (function () {
       case 'x': return v.toFixed(2) + '\u00d7';
       case 'surp': return fmtSignedPct(v) + ' avg (' + ((ctx && ctx.surpriseN) || 0) + ' qtrs)';
       case 'rev': return (v >= 0 ? '+' : '') + v + ' net (30d)' +
+        ((ctx && ctx.revShare !== null && ctx.revShare !== undefined && ctx.consensusN) ? ' \u00b7 ' + (ctx.revShare >= 0 ? '+' : '') + (ctx.revShare * 100).toFixed(1) + '% of ' + ctx.consensusN + ' analysts' : '') +
         ((ctx && ctx.estDrift30 !== null && ctx.estDrift30 !== undefined) ? ' \u00b7 est ' + (ctx.estDrift30 >= 0 ? '+' : '') + ctx.estDrift30.toFixed(1) + '%' : '');
       case 'scorePct': return v.toFixed(0) + '%';
       case 'dealsCr': return (v >= 0 ? '\u20B9+' : '\u20B9\u2212') + Math.abs(v).toFixed(1) + 'cr net (3M)';
@@ -560,8 +585,28 @@ var LensLogic = (function () {
       list.push(sym);
     }
     var pct = {}; // sym -> {quality: {param: pct}, value: {...}, momentum: {...}}
+    // v21: the 'revisions' percentile is the mean of two percentile
+    // maps — net revisions as a share of covering analysts (revShare)
+    // and estimate drift 30d (estDrift30). A stock scores on whichever
+    // of the two it has; both when it has both. The generic loop below
+    // skips 'revisions' and this value is written into the same slot,
+    // so the popup detail and the sub-rank mean see one revisions
+    // percentile, exactly as before.
+    var revShareMap = percentileMap(list.map(function (sym) { return { sym: sym, v: params[sym].sentiment.revShare }; }).filter(function (e) { return e.v !== null && e.v !== undefined; }));
+    var driftMap = percentileMap(list.map(function (sym) { return { sym: sym, v: params[sym].sentiment.estDrift30 }; }).filter(function (e) { return e.v !== null && e.v !== undefined; }));
+    list.forEach(function (sym) {
+      var parts = [];
+      if (revShareMap[sym] !== undefined) parts.push(revShareMap[sym]);
+      if (driftMap[sym] !== undefined) parts.push(driftMap[sym]);
+      if (!parts.length) return;
+      var p = parts.reduce(function (a, b) { return a + b; }, 0) / parts.length;
+      if (!pct[sym]) pct[sym] = {};
+      if (!pct[sym].sentiment) pct[sym].sentiment = {};
+      pct[sym].sentiment.revisions = p;
+    });
     Object.keys(RANK_PARAMS).forEach(function (sub) {
       RANK_PARAMS[sub].forEach(function (spec) {
+        if (sub === 'sentiment' && spec.key === 'revisions') return; // v21: handled above
         var entries = [];
         list.forEach(function (sym) {
           var v = params[sym][sub][spec.key];
@@ -601,7 +646,7 @@ var LensLogic = (function () {
             else if (s === 'sentiment') {
               var sctx = params[sym][s];
               if (meta.key === 'surprise') na = 'no estimates';
-              else if (meta.key === 'revisions') na = 'no revision data';
+              else if (meta.key === 'revisions') na = (p === undefined) ? 'no revision data' : null; // v21: scores on share and/or drift, either suffices
               else if (meta.key === 'consensus') na = (sctx.consensusN === 0 || sctx.consensusN === null) ? 'no analyst coverage' : 'fewer than 3 analysts';
               else if (meta.key === 'deals') na = sctx.dealsHas3m ? 'no data' : 'no deals in 3M';
               else na = 'no data';

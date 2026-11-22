@@ -72,7 +72,7 @@ const html = `<!DOCTYPE html>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Lenses">
 <title>Investor lenses — Nifty 500 &amp; My watchlist</title>
-<!-- my-watchlist-lenses-v20 -->
+<!-- my-watchlist-lenses-v21 -->
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -240,7 +240,7 @@ const html = `<!DOCTYPE html>
   <div style="font-size:17px;font-weight:800" id="unName"></div>
   <div class="dim" style="margin-top:6px" id="unSub">Not listed yet \u2014 no market data</div>
 </div></div>
-<script src="scripts/lenses-logic.js?v=20"></script>
+<script src="scripts/lenses-logic.js?v=21"></script>
 <script>
 const N500_SYMS=${n500Json};
 const WL_SYMS=${wlJson};
