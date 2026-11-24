@@ -38,9 +38,8 @@ Counts: see the summary at the bottom. Categories can be empty if nothing in thi
 ### 2. Small finance banks (1)
 - AU Small Finance Bank Ltd. (AUBANK)
 
-### 3. NBFCs, excluding housing finance companies (28)
+### 3. NBFCs, excluding housing finance companies (27)
 - Aditya Birla Capital Ltd. (ABCAPITAL) - diversified: lending NBFC plus AMC and insurance; lending is the main arm
-- Asset Reconstruction Company (India) Limited (ARCIL) - asset reconstruction company (stressed-asset buyer), nearest fit
 - Bajaj Finance Ltd. (BAJFINANCE)
 - Capri Global Capital Ltd. (CGCL)
 - Cholamandalam Investment and Finance Company Ltd. (CHOLAFIN)
@@ -79,28 +78,26 @@ Counts: see the summary at the bottom. Categories can be empty if nothing in thi
 - PNB Housing Finance Ltd. (PNBHOUSING)
 
 ### 5. Fintechs that also do lending (2)
-- OnEMI Technology Solutions Limited (KISSHT) - lends from own NBFC balance sheet and also distributes loans for other lenders
-- Moneyview Limited (MONEYVIEW) - lends from own NBFC balance sheet and also distributes loans for other lenders
+- OnEMI Technology Solutions Limited (KISSHT) - OnEMI, brand Kissht: lends through its own NBFC subsidiary (Si Creva Capital) on-book, plus off-book loans with first-loss guarantee
+- Moneyview Limited (MONEYVIEW) - lends from own NBFC subsidiary (Whizdm Finance) and also arranges loans for 22 lenders
 
 ## FINTECH & CAPITAL MARKETS
 
-### 6. Fintechs that don't do lending (8)
-- AvenuesAI Limited (CCAVENUE) - payments/fintech; any lending is distribution or adjacent, not the main business
-- One Mobikwik Systems Limited (MOBIKWIK) - payments/fintech; any lending is distribution or adjacent, not the main business
-- One 97 Communications Ltd. (PAYTM) - payments/fintech; any lending is distribution or adjacent, not the main business
-- Pine Labs Ltd. (PINELABS) - payments/fintech; any lending is distribution or adjacent, not the main business
-- PB Fintech Ltd. (POLICYBZR) - online insurance and loan marketplace (distribution, not an insurer or lender); could be #16
+### 6. Fintechs that don't do lending (7)
+- AvenuesAI Limited (CCAVENUE) - payments-led; lending is distribution through partner lenders or an adjacency, not own balance sheet
+- One Mobikwik Systems Limited (MOBIKWIK) - payments-led; lending is distribution through partner lenders or an adjacency, not own balance sheet
+- One 97 Communications Ltd. (PAYTM) - payments-led; lending is distribution through partner lenders or an adjacency, not own balance sheet
+- Pine Labs Ltd. (PINELABS) - payments-led; lending is distribution through partner lenders or an adjacency, not own balance sheet
+- PB Fintech Ltd. (POLICYBZR) - Policybazaar (insurance distribution, ~57% of revenue) plus Paisabazaar loan marketplace; distribution only, no own lending; could be #16
 - Turtlemint Fintech Solutions Limited (TURTLEMINT) - insurance distribution platform (not an insurer)
-- Vakrangee Limited (VAKRANGEE) - kiosk, white-label ATM and financial-inclusion network; weak fit
-- Zaggle Prepaid Ocean Services Limited (ZAGGLE) - payments/fintech; any lending is distribution or adjacent, not the main business
+- Zaggle Prepaid Ocean Services Limited (ZAGGLE) - payments-led; lending is distribution through partner lenders or an adjacency, not own balance sheet
 
-### 7. Stockbrokers, exchanges and market infrastructure (15)
+### 7. Stockbrokers, exchanges and market infrastructure (14)
 - Angel One Ltd. (ANGELONE)
 - BSE Ltd. (BSE)
 - Computer Age Management Services Ltd. (CAMS) - mutual-fund registrar and transfer agent
 - Central Depository Services (India) Ltd. (CDSL)
 - Choice International Ltd. (CHOICEIN) - broking plus advisory and distribution
-- CRISIL Ltd. (CRISIL) - ratings, research and analytics; nearest fit
 - Billionbrains Garage Ventures Ltd. (GROWW)
 - Indian Energy Exchange Ltd. (IEX) - power/electricity exchange
 - Indo Thai Securities Limited (INDOTHAI)
@@ -153,7 +150,7 @@ Counts: see the summary at the bottom. Categories can be empty if nothing in thi
 - Blue Cloud Softech Solutions Limited (BLUECLOUDS) - software products
 - Intellect Design Arena Ltd. (INTELLECT) - software products
 - Oracle Financial Services Software Ltd. (OFSS) - software products
-- Subex Limited (SUBEXLTD) - software products
+- Subex Limited (SUBEXLTD) - telecom fraud/analytics software (AI-first); not cybersecurity
 
 ### 11. Cybersecurity service or product providers (0)
 - None in this list
@@ -201,16 +198,13 @@ Counts: see the summary at the bottom. Categories can be empty if nothing in thi
 
 ## TELECOM
 
-### 17. Telecom operators (10)
+### 17. Telecom operators (7)
 - Bharti Airtel Ltd. (BHARTIARTL)
 - Bharti Hexacom Ltd. (BHARTIHEXA)
-- GTL Infrastructure Limited (GTLINFRA) - tower company (passive telecom infrastructure); neither operator nor equipment, nearest fit
 - Vodafone Idea Ltd. (IDEA)
-- Indus Towers Ltd. (INDUSTOWER) - tower company (passive telecom infrastructure); neither operator nor equipment, nearest fit
 - Jio Platforms Limited (JPL) - Jio Platforms: Jio telecom plus digital services
-- Railtel Corporation Of India Ltd. (RAILTEL) - PSU telecom/ICT network and data-centre services
 - Reliance Communications Limited (RCOM)
-- Tata Communications Ltd. (TATACOMM) - enterprise connectivity, data and network services
+- Tata Communications Ltd. (TATACOMM) - licensed carrier: voice and data/network services are its main segments
 - Tata Teleservices (Maharashtra) Ltd. (TTML)
 
 ### 18. Telecom equipment providers (5)
@@ -261,6 +255,17 @@ These stay out of the 19 groups so nothing is forced into 'Other tech stocks'.
 - Bajaj Holdings & Investment Ltd. (BAJAJHLDNG) - investment holding company
 - Cholamandalam Financial Holdings Ltd. (CHOLAHLDNG) - holding company of Cholamandalam group stakes
 - Tata Investment Corporation Ltd. (TATAINVEST) - investment company
+
+### Unresolved: finance/tech-adjacent with no clean fit (6)
+
+Not forced into a category. Each says the nearest candidate; the user can decide.
+
+- Asset Reconstruction Company (India) Limited (ARCIL) - asset reconstruction company (buys stressed loans); a separate RBI-regulated class, not a lender or NBFC lender. Candidate: #3
+- CRISIL Ltd. (CRISIL) - credit ratings, research and analytics (S&P Global subsidiary). Candidate: #7
+- GTL Infrastructure Limited (GTLINFRA) - telecom tower company (passive infrastructure); not an operator, not equipment. Candidate: #17 or #18, user decision
+- Indus Towers Ltd. (INDUSTOWER) - telecom tower company (passive infrastructure leased to operators); not an operator, not equipment. Candidate: #17 or #18, user decision
+- Railtel Corporation Of India Ltd. (RAILTEL) - PSU with telecom (NLD, ISP) and ICT/projects segments; mixed. Candidate: #17
+- Vakrangee Limited (VAKRANGEE) - rural kiosk, white-label ATM and financial-inclusion network; mixed services. Candidate: #6
 
 ### Finance/tech-adjacent or unclear, outside the 19 (24)
 - Adani Enterprises Ltd. (ADANIENT) - conglomerate (includes data centres, airports)
@@ -342,9 +347,49 @@ Grouped by the sector tag already in my-watchlist (a lead, not a verified classi
 
 ## Summary
 
-- In the 19 categories: 178
+- In the 19 categories: 172
 - Insurance (excluded): 10
 - Holding companies: 5
+- Unresolved (no clean fit): 6
 - Finance/tech-adjacent or unclear: 24
 - Other sectors: 337
 - Total: 554
+
+## Evidence for the hard cases
+
+| Stock | What the source shows | Source |
+|---|---|---|
+| Universe | 554 rows; no Quick Heal, Equitas SFB, Ujjivan SFB or Utkarsh SFB in it (they exist only in the wider 759-stock directory) | https://raw.githubusercontent.com/5HU3HENDU/intraday/main/instinct/stocks.md |
+| Small finance banks (#2) | only AU Small Finance Bank is in the universe; it is listed in the source file as 'AU Small Finance Bank Ltd.' | https://raw.githubusercontent.com/5HU3HENDU/intraday/main/instinct/stocks.md |
+| Cybersecurity (#11) | no company in the 554 whose description or filings show a cybersecurity product or service business; Subex is telecom fraud analytics (kept in #10) | https://www.subex.com/products/fraud-management/ |
+| Bandhan Bank (#1) | universal bank since Aug 2015 | https://www.bandhan.bank.in/Our-Story |
+| Sammaan Capital (#3) | surrendered its HFC licence, realigning as a retail mortgage NBFC | https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/SammaanCapitalLimited_May%2030_%202025_RR_370387.html |
+| Piramal Finance (#3) | merged with Piramal Enterprises, holds NBFC licence | https://www.piramalfinance.com/content/dam/piramalfinance/pdf/stakeholder/announcements/2025/april/pfl-se-intimation-pfl-nbfc-license-signed.pdf |
+| HUDCO (#3) | registered NBFC-IFC; about 65% of AUM urban infrastructure, 35% housing | https://www.careratings.com/upload/CompanyFiles/PR/202601120146_Housing_and_Urban_Development_Corporation_Limited.pdf |
+| Jio Financial (#3) | core investment company; Jio Credit lending is the largest arm | https://nsearchives.nseindia.com/corporate/JIOFINANCIAL_26082026181926_JFSL_.pdf |
+| Moneyview (#5) | own-balance-sheet lending via Whizdm Finance plus loans arranged for other lenders | https://www.capitalmarket.com/pub/nim/nimshow.asp?code=78774 |
+| OnEMI / Kissht (#5) | lends through own NBFC subsidiary Si Creva Capital | https://nsearchives.nseindia.com/annual_reports/AR_30780_KISSHT_2025_2026_A_17870357_28082026160121.pdf |
+| Paytm (#6) | does not lend from its own balance sheet; loan distribution with partner lenders | https://paytm.com/document/ir/agm/fy/-23/23rd_AGM_Transcript_12_Sep_2023.pdf |
+| MobiKwik (#6) | payments-led; lending 25-30% of revenue, distributed with partners | https://www.business-standard.com/companies/news/mobikwik-aims-to-double-lending-revenue-share-to-50-says-ceo-bipin-singh-126110201273_1.html |
+| AvenuesAI / CCAvenue (#6) | payments franchise; lending is an adjacency inside the payment business | https://avenuesai.com/wp-content/uploads/2026/09/1.-Annual-report-FY-2026.pdf |
+| Pine Labs (#6) | payments infrastructure and issuing/acquiring platforms | https://images.moneycontrol.com/static-mcnews/2026/09/20260921063750_Pine-Labs-2109026-moti.pdf |
+| Policybazaar (#6) | insurance distribution and loan marketplace | https://www.pbfintech.in/ |
+| Groww (#7) | broker; fees and commissions about 81% of revenue | https://cityfort.in/stocks/groww |
+| Fractal (#12) | pure-play data, analytics and AI company | https://fractal.ai/docs/Investor-Relations/Offer-Documents/Price-Band-Advertisement.pdf |
+| Netweb (#13) | HPC, AI systems and data-centre server maker | https://www.netwebindia.com/about.php |
+| ESDS (#13) | data centre/cloud provider moving to AI infrastructure | https://www.esds.co.in/about-us |
+| Aqylon Nexus (#13) | AI data centres, semiconductors and AI services; very small revenue | https://aqylonnexuslimited.com/company/about |
+| LTM (#9) | LTIMindtree renamed LTM | https://www.ltm.com/annual-report-2026/ltm-limited-iar-2025-26-boards-report.pdf |
+| Tata Communications (#17) | licensed carrier; voice and data services | https://www.tatacommunications.com/hubfs/Quarterly%20report/statutory-financials-q2-fy2027.pdf |
+| Indus Towers (unresolved) | passive telecom infrastructure | https://www.industowers.com/investor/company-profile/ |
+| GTL Infra (unresolved) | shared passive telecom infrastructure | https://www.gtlinfra.com/about-us/ |
+| RailTel (unresolved) | telecom and projects segments | https://www.icra.in/Rating/GetRationalReportFilePdf?id=140966 |
+| Vakrangee (unresolved) | kiosk and ATM network | https://nsearchives.nseindia.in/annual_reports/AR_30878_VAKRANGEE_2025_2026_A_11890070_31082026160712.pdf |
+| CRISIL (unresolved) | ratings, research, analytics | https://www.crisil.com/crisil-microsite/business-segment.html |
+| ARCIL (unresolved) | asset reconstruction company | https://www.arcil.co.in/sites/default/files/reports/ARCIL_Q1FY27_Press_Release_7th%20Oct%202026.pdf |
+| Pace Digitek (#18) | telecom power systems, towers, optical fibre rollout | https://nsearchives.nseindia.com/corporate/PACE_26052026012246_Press_Release_Q4_Sd.pdf |
+| Shiprocket (#16) | e-commerce enablement platform | https://www.shiprocket.in/investor-relations/ |
+| Algoquant (outside) | own-account algorithmic trading | https://www.stockscans.in/company/BSE:ALGOQUANT/business-overview |
+| Gaja (#8) | alternative asset manager | https://gajacapital.com/ |
+| Aditya Infotech / CP PLUS (#15) | surveillance products brand and maker | https://www.adityagroup.com/our-brands |
+| Amber (outside) | room-AC and consumer durables lead segment | https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/AmberEnterprisesIndiaLimited_November%2020_%202025_RR_383123.html |
