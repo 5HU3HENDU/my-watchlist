@@ -1,0 +1,86 @@
+{
+  "generated_at_ist": "2026-11-24 09:41 IST",
+  "universe": "151 watchlist stocks, 6 months daily bars (Yahoo chart API)",
+  "stocks_with_data": 151,
+  "total_stock_days": 17576,
+  "events_tested": 15160,
+  "base_rates": {
+    "n": 15160,
+    "green_pct": 45.1,
+    "held_pct": 42.2,
+    "avg_ret_from_open_pct": -0.12,
+    "median_ret_from_open_pct": -0.29,
+    "avg_day_ret_pct": -0.0
+  },
+  "buckets": {
+    "gap>=+2% & vol>=1.5x (the proposed rule)": {
+      "n": 124,
+      "green_pct": 71.8,
+      "held_pct": 38.7,
+      "avg_ret_from_open_pct": -0.72,
+      "median_ret_from_open_pct": -0.68,
+      "avg_day_ret_pct": 3.12
+    },
+    "gap>=+2% & vol<1.5x": {
+      "n": 387,
+      "green_pct": 71.8,
+      "held_pct": 29.2,
+      "avg_ret_from_open_pct": -0.96,
+      "median_ret_from_open_pct": -1.11,
+      "avg_day_ret_pct": 2.38
+    },
+    "gap>=+2% (all)": {
+      "n": 511,
+      "green_pct": 71.8,
+      "held_pct": 31.5,
+      "avg_ret_from_open_pct": -0.9,
+      "median_ret_from_open_pct": -1.03,
+      "avg_day_ret_pct": 2.56
+    },
+    "gap +1% to +2%": {
+      "n": 1241,
+      "green_pct": 62.0,
+      "held_pct": 40.0,
+      "avg_ret_from_open_pct": -0.24,
+      "median_ret_from_open_pct": -0.52,
+      "avg_day_ret_pct": 1.11
+    },
+    "gap -1% to +1% (no real gap, control)": {
+      "n": 12371,
+      "green_pct": 44.3,
+      "held_pct": 42.4,
+      "avg_ret_from_open_pct": -0.12,
+      "median_ret_from_open_pct": -0.3,
+      "avg_day_ret_pct": -0.04
+    },
+    "gap -2% to -1%": {
+      "n": 622,
+      "green_pct": 25.1,
+      "held_pct": 48.7,
+      "avg_ret_from_open_pct": 0.14,
+      "median_ret_from_open_pct": 0.0,
+      "avg_day_ret_pct": -1.22
+    },
+    "gap<=-2% (all)": {
+      "n": 415,
+      "green_pct": 16.6,
+      "held_pct": 43.6,
+      "avg_ret_from_open_pct": 0.69,
+      "median_ret_from_open_pct": 0.0,
+      "avg_day_ret_pct": -3.5
+    },
+    "gap<=-2% & vol>=1.5x": {
+      "n": 92,
+      "green_pct": 20.7,
+      "held_pct": 46.7,
+      "avg_ret_from_open_pct": 0.38,
+      "median_ret_from_open_pct": 0.0,
+      "avg_day_ret_pct": -3.23
+    }
+  },
+  "notes": [
+    "gap% = (open - prevClose)/prevClose; volRatio = yesterday volume / 15-day avg volume before yesterday.",
+    "Only information known at the 9:08 open is used; today's partial bar excluded.",
+    "green = close above prev close; held = close above open."
+  ]
+}
