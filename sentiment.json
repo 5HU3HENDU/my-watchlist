@@ -1,5 +1,5 @@
 {
- "fetchedAtIST": "21 Nov, 11:48 pm",
+ "fetchedAtIST": "28 Nov, 09:53 am",
  "source": "yahoo",
  "stocks": {
   "360ONE": {
@@ -75,9 +75,9 @@
    "estDrift30": null
   },
   "ABREL": {
-   "surpriseAvg": 654.885,
+   "surpriseAvg": 35.45,
    "surpriseN": 4,
-   "surpriseLast": 3613.64,
+   "surpriseLast": 100,
    "revNet30": 0,
    "revUp30": 0,
    "revDown30": 0,
@@ -93,9 +93,9 @@
    "estDrift30": null
   },
   "ACC": {
-   "surpriseAvg": 32.8025,
+   "surpriseAvg": -13.042499999999997,
    "surpriseN": 4,
-   "surpriseLast": 283.38,
+   "surpriseLast": 100,
    "revNet30": -1,
    "revUp30": 0,
    "revDown30": 1,
@@ -147,7 +147,7 @@
    "estDrift30": null
   },
   "ADANIENT": {
-   "surpriseAvg": -41.6075,
+   "surpriseAvg": -37.8275,
    "surpriseN": 4,
    "surpriseLast": -8.9,
    "revNet30": 1,
@@ -156,7 +156,7 @@
    "estDrift30": 14.533132530120493
   },
   "ADANIGREEN": {
-   "surpriseAvg": -30.765,
+   "surpriseAvg": -29.362499999999997,
    "surpriseN": 4,
    "surpriseLast": 9.07,
    "revNet30": 0,
@@ -174,16 +174,16 @@
    "estDrift30": -11.84615384615384
   },
   "ADANIPOWER": {
-   "surpriseAvg": 69.845,
+   "surpriseAvg": 59.9025,
    "surpriseN": 4,
-   "surpriseLast": 109.94,
+   "surpriseLast": 100,
    "revNet30": -1,
    "revUp30": 0,
    "revDown30": 1,
    "estDrift30": -25.83333333333333
   },
   "AEGISLOG": {
-   "surpriseAvg": 43.195,
+   "surpriseAvg": 31.015,
    "surpriseN": 4,
    "surpriseLast": -44.21,
    "revNet30": null,
@@ -219,7 +219,7 @@
    "estDrift30": null
   },
   "AFCONS": {
-   "surpriseAvg": -70.4375,
+   "surpriseAvg": -51.002500000000005,
    "surpriseN": 4,
    "surpriseLast": -43.15,
    "revNet30": null,
@@ -276,22 +276,22 @@
    "surpriseAvg": -11.312500000000002,
    "surpriseN": 4,
    "surpriseLast": -3.32,
-   "revNet30": 0,
-   "revUp30": 0,
-   "revDown30": 0,
-   "estDrift30": 0
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
   },
   "AMBER": {
-   "surpriseAvg": -51.815,
+   "surpriseAvg": -33.33,
    "surpriseN": 4,
-   "surpriseLast": -173.94,
+   "surpriseLast": -100,
    "revNet30": -1,
    "revUp30": 0,
    "revDown30": 1,
    "estDrift30": -38.54755474452555
   },
   "AMBUJACEM": {
-   "surpriseAvg": 21.8725,
+   "surpriseAvg": 2.679999999999999,
    "surpriseN": 4,
    "surpriseLast": -26.73,
    "revNet30": 1,
@@ -372,7 +372,7 @@
    "estDrift30": -0.7135950031031141
   },
   "APOLLOTYRE": {
-   "surpriseAvg": 51.015,
+   "surpriseAvg": 34.050000000000004,
    "surpriseN": 4,
    "surpriseLast": -11.28,
    "revNet30": -1,
@@ -414,7 +414,7 @@
    "revNet30": -1,
    "revUp30": 0,
    "revDown30": 1,
-   "estDrift30": null
+   "estDrift30": -2.4409448818897537
   },
   "ASAHIINDIA": {
    "surpriseAvg": null,
@@ -471,9 +471,9 @@
    "estDrift30": null
   },
   "ATHERENERG": {
-   "surpriseAvg": 45.0375,
+   "surpriseAvg": 44.355000000000004,
    "surpriseN": 4,
-   "surpriseLast": 102.73,
+   "surpriseLast": 100,
    "revNet30": null,
    "revUp30": null,
    "revDown30": null,
@@ -777,7 +777,7 @@
    "estDrift30": 16.11711229946524
   },
   "BIOCON": {
-   "surpriseAvg": 13.792499999999997,
+   "surpriseAvg": 7.762499999999999,
    "surpriseN": 4,
    "surpriseLast": -72.06,
    "revNet30": 1,
@@ -1146,9 +1146,9 @@
    "estDrift30": -1.9061312756367739
   },
   "COHANCE": {
-   "surpriseAvg": 298.51,
+   "surpriseAvg": -18.156666666666666,
    "surpriseN": 3,
-   "surpriseLast": 1050,
+   "surpriseLast": 100,
    "revNet30": -1,
    "revUp30": 0,
    "revDown30": 1,
@@ -1344,16 +1344,16 @@
    "estDrift30": -16.55239999999999
   },
   "DELTACORP": {
-   "surpriseAvg": -6802.9175000000005,
+   "surpriseAvg": -65.22,
    "surpriseN": 4,
-   "surpriseLast": -535.64,
+   "surpriseLast": -100,
    "revNet30": null,
    "revUp30": null,
    "revDown30": null,
    "estDrift30": null
   },
   "DEVYANI": {
-   "surpriseAvg": 47.575,
+   "surpriseAvg": 37.575,
    "surpriseN": 4,
    "surpriseLast": 100,
    "revNet30": 0,
@@ -1371,7 +1371,7 @@
    "estDrift30": 22.15335211267606
   },
   "DIXON": {
-   "surpriseAvg": 101.56,
+   "surpriseAvg": 74.0775,
    "surpriseN": 4,
    "surpriseLast": 47.89,
    "revNet30": 0,
@@ -1542,13 +1542,13 @@
    "estDrift30": null
   },
   "ENRIN": {
-   "surpriseAvg": 19.4875,
+   "surpriseAvg": 19.485,
    "surpriseN": 4,
-   "surpriseLast": 19.67,
-   "revNet30": 0,
-   "revUp30": 0,
-   "revDown30": 0,
-   "estDrift30": 7.746478873239447
+   "surpriseLast": 19.8,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
   },
   "ESCORTS": {
    "surpriseAvg": -0.5924999999999994,
@@ -1623,7 +1623,7 @@
    "estDrift30": 3.539823008849545
   },
   "FIRSTCRY": {
-   "surpriseAvg": 0.7375000000000043,
+   "surpriseAvg": 11.217500000000001,
    "surpriseN": 4,
    "surpriseLast": 0,
    "revNet30": 0,
@@ -1695,7 +1695,7 @@
    "estDrift30": -5.857740585774058
   },
   "GAIL": {
-   "surpriseAvg": 22.692500000000003,
+   "surpriseAvg": 21.520000000000003,
    "surpriseN": 4,
    "surpriseLast": 46.24,
    "revNet30": 1,
@@ -1713,9 +1713,9 @@
    "estDrift30": null
   },
   "GALLANTT": {
-   "surpriseAvg": 212.87,
+   "surpriseAvg": 100,
    "surpriseN": 1,
-   "surpriseLast": 212.87,
+   "surpriseLast": 100,
    "revNet30": null,
    "revUp30": null,
    "revDown30": null,
@@ -1803,7 +1803,7 @@
    "estDrift30": null
   },
   "GMRAIRPORT": {
-   "surpriseAvg": 27.36,
+   "surpriseAvg": 15.726666666666665,
    "surpriseN": 3,
    "surpriseLast": -76.67,
    "revNet30": null,
@@ -1866,7 +1866,7 @@
    "estDrift30": null
   },
   "GRAPHITE": {
-   "surpriseAvg": 27.75,
+   "surpriseAvg": -1.2200000000000013,
    "surpriseN": 4,
    "surpriseLast": -5.87,
    "revNet30": null,
@@ -1875,7 +1875,7 @@
    "estDrift30": null
   },
   "GRASIM": {
-   "surpriseAvg": 810.4625000000001,
+   "surpriseAvg": 16.842499999999998,
    "surpriseN": 4,
    "surpriseLast": -3.45,
    "revNet30": 0,
@@ -1902,7 +1902,7 @@
    "estDrift30": null
   },
   "GRSE": {
-   "surpriseAvg": 35.1,
+   "surpriseAvg": 31.74,
    "surpriseN": 3,
    "surpriseLast": -10.52,
    "revNet30": 0,
@@ -2010,7 +2010,7 @@
    "estDrift30": -6.774193548387096
   },
   "HEGAM": {
-   "surpriseAvg": -109.05,
+   "surpriseAvg": -73.505,
    "surpriseN": 2,
    "surpriseLast": -47.01,
    "revNet30": null,
@@ -2064,13 +2064,13 @@
    "estDrift30": null
   },
   "HINDPETRO": {
-   "surpriseAvg": 247.8075,
+   "surpriseAvg": 14.4525,
    "surpriseN": 4,
-   "surpriseLast": 1494.44,
+   "surpriseLast": 100,
    "revNet30": -1,
    "revUp30": 0,
    "revDown30": 1,
-   "estDrift30": -57.98245614035088
+   "estDrift30": -38.47141939627489
   },
   "HINDUNILVR": {
    "surpriseAvg": -19.4675,
@@ -2160,7 +2160,7 @@
    "revNet30": 2,
    "revUp30": 2,
    "revDown30": 0,
-   "estDrift30": 9.491525423728815
+   "estDrift30": 0
   },
   "ICICIGI": {
    "surpriseAvg": -8.807500000000001,
@@ -2271,7 +2271,7 @@
    "estDrift30": -1.120137103684663
   },
   "INDIACEM": {
-   "surpriseAvg": 106.8875,
+   "surpriseAvg": 45.515,
    "surpriseN": 4,
    "surpriseLast": -10.71,
    "revNet30": null,
@@ -2298,7 +2298,7 @@
    "estDrift30": null
   },
   "INDIGO": {
-   "surpriseAvg": -87.605,
+   "surpriseAvg": -53.025,
    "surpriseN": 4,
    "surpriseLast": -23.06,
    "revNet30": 0,
@@ -2364,9 +2364,9 @@
    "surpriseAvg": -12.985,
    "surpriseN": 4,
    "surpriseLast": -6.75,
-   "revNet30": 0,
-   "revUp30": 0,
-   "revDown30": 0,
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
    "estDrift30": null
   },
   "IOB": {
@@ -2379,9 +2379,9 @@
    "estDrift30": null
   },
   "IOC": {
-   "surpriseAvg": 95.81,
+   "surpriseAvg": 58.1425,
    "surpriseN": 4,
-   "surpriseLast": 250.67,
+   "surpriseLast": 100,
    "revNet30": -1,
    "revUp30": 0,
    "revDown30": 1,
@@ -2529,7 +2529,7 @@
    "revNet30": 0,
    "revUp30": 0,
    "revDown30": 0,
-   "estDrift30": -36.47825839499147
+   "estDrift30": -2.742282823966731
   },
   "JIOFIN": {
    "surpriseAvg": null,
@@ -2595,7 +2595,7 @@
    "estDrift30": -16.152019002375305
   },
   "JSWCEMENT": {
-   "surpriseAvg": 36.62,
+   "surpriseAvg": 33.1025,
    "surpriseN": 4,
    "surpriseLast": -32.5,
    "revNet30": 0,
@@ -2604,7 +2604,7 @@
    "estDrift30": 21.428571428571434
   },
   "JSWENERGY": {
-   "surpriseAvg": 87.07499999999999,
+   "surpriseAvg": 63.845,
    "surpriseN": 4,
    "surpriseLast": 32.15,
    "revNet30": 0,
@@ -2628,7 +2628,7 @@
    "revNet30": 1,
    "revUp30": 1,
    "revDown30": 0,
-   "estDrift30": -3.1945531914893666
+   "estDrift30": 21.954382978723398
   },
   "JUBLFOOD": {
    "surpriseAvg": 24.1725,
@@ -2781,7 +2781,7 @@
    "revNet30": 0,
    "revUp30": 1,
    "revDown30": 1,
-   "estDrift30": 10.194174757281552
+   "estDrift30": -1.5418502202643234
   },
   "KPIL": {
    "surpriseAvg": 15.475000000000001,
@@ -3072,7 +3072,7 @@
    "estDrift30": null
   },
   "MEESHO": {
-   "surpriseAvg": -53.195,
+   "surpriseAvg": -17.9725,
    "surpriseN": 4,
    "surpriseLast": -24.44,
    "revNet30": 0,
@@ -3081,9 +3081,9 @@
    "estDrift30": 0
   },
   "MFSL": {
-   "surpriseAvg": 77616.99,
+   "surpriseAvg": 16.99,
    "surpriseN": 3,
-   "surpriseLast": 232900,
+   "surpriseLast": 100,
    "revNet30": 0,
    "revUp30": 0,
    "revDown30": 0,
@@ -3279,7 +3279,7 @@
    "estDrift30": null
   },
   "NAZARA": {
-   "surpriseAvg": -232.38,
+   "surpriseAvg": -52.379999999999995,
    "surpriseN": 3,
    "surpriseLast": 0,
    "revNet30": 0,
@@ -3336,13 +3336,13 @@
    "surpriseAvg": -12.870000000000001,
    "surpriseN": 4,
    "surpriseLast": 9.78,
-   "revNet30": 0,
-   "revUp30": 0,
-   "revDown30": 0,
-   "estDrift30": 0
+   "revNet30": null,
+   "revUp30": null,
+   "revDown30": null,
+   "estDrift30": null
   },
   "NHPC": {
-   "surpriseAvg": 51.325,
+   "surpriseAvg": 23.6475,
    "surpriseN": 4,
    "surpriseLast": 46.67,
    "revNet30": null,
@@ -3447,7 +3447,7 @@
    "revNet30": 1,
    "revUp30": 1,
    "revDown30": 0,
-   "estDrift30": 14.232033818694228
+   "estDrift30": -4.851973684210525
   },
   "OFSS": {
    "surpriseAvg": 10.1175,
@@ -3459,7 +3459,7 @@
    "estDrift30": null
   },
   "OIL": {
-   "surpriseAvg": 27.36,
+   "surpriseAvg": 24.965,
    "surpriseN": 4,
    "surpriseLast": -14.83,
    "revNet30": -1,
@@ -3486,7 +3486,7 @@
    "estDrift30": null
   },
   "ONESOURCE": {
-   "surpriseAvg": -166.47333333333333,
+   "surpriseAvg": -47.306666666666665,
    "surpriseN": 3,
    "surpriseLast": 9.87,
    "revNet30": null,
@@ -3531,7 +3531,7 @@
    "estDrift30": null
   },
   "PATANJALI": {
-   "surpriseAvg": 66.91666666666667,
+   "surpriseAvg": 65.06,
    "surpriseN": 3,
    "surpriseLast": 60.83,
    "revNet30": null,
@@ -3549,7 +3549,7 @@
    "estDrift30": -0.5301017746885571
   },
   "PCBL": {
-   "surpriseAvg": -8.547500000000003,
+   "surpriseAvg": -16.4875,
    "surpriseN": 4,
    "surpriseLast": -37.33,
    "revNet30": 0,
@@ -3594,9 +3594,9 @@
    "estDrift30": null
   },
   "PGEL": {
-   "surpriseAvg": 241.6175,
+   "surpriseAvg": 6.6175,
    "surpriseN": 4,
-   "surpriseLast": 1040,
+   "surpriseLast": 100,
    "revNet30": 0,
    "revUp30": 0,
    "revDown30": 0,
@@ -3630,9 +3630,9 @@
    "estDrift30": null
   },
   "PINELABS": {
-   "surpriseAvg": 152.6275,
+   "surpriseAvg": 28.5775,
    "surpriseN": 4,
-   "surpriseLast": 596.2,
+   "surpriseLast": 100,
    "revNet30": 0,
    "revUp30": 0,
    "revDown30": 0,
@@ -3720,9 +3720,9 @@
    "estDrift30": 14.02439024390244
   },
   "PPLPHARMA": {
-   "surpriseAvg": -162.46999999999997,
+   "surpriseAvg": 24.5875,
    "surpriseN": 4,
-   "surpriseLast": 110.57,
+   "surpriseLast": 100,
    "revNet30": -1,
    "revUp30": 0,
    "revDown30": 1,
@@ -3738,7 +3738,7 @@
    "estDrift30": null
   },
   "PRESTIGE": {
-   "surpriseAvg": 230.3025,
+   "surpriseAvg": 25.302500000000002,
    "surpriseN": 4,
    "surpriseLast": -35,
    "revNet30": -1,
@@ -3774,7 +3774,7 @@
    "estDrift30": null
   },
   "PWL": {
-   "surpriseAvg": -37.955,
+   "surpriseAvg": -22.63,
    "surpriseN": 4,
    "surpriseLast": -5.39,
    "revNet30": 0,
@@ -3891,9 +3891,9 @@
    "estDrift30": null
   },
   "RPOWER": {
-   "surpriseAvg": -505.3925,
-   "surpriseN": 4,
-   "surpriseLast": -1979.1,
+   "surpriseAvg": null,
+   "surpriseN": 0,
+   "surpriseLast": null,
    "revNet30": null,
    "revUp30": null,
    "revDown30": null,
@@ -3951,7 +3951,7 @@
    "revNet30": 0,
    "revUp30": 0,
    "revDown30": 0,
-   "estDrift30": 0
+   "estDrift30": null
   },
   "SAILIFE": {
    "surpriseAvg": 7.1000000000000005,
@@ -4125,7 +4125,7 @@
    "estDrift30": -100
   },
   "SIGNATURE": {
-   "surpriseAvg": -45.815,
+   "surpriseAvg": -29.05,
    "surpriseN": 4,
    "surpriseLast": 58.67,
    "revNet30": null,
@@ -4134,7 +4134,7 @@
    "estDrift30": null
   },
   "SJVN": {
-   "surpriseAvg": 39.949999999999996,
+   "surpriseAvg": 11.616666666666667,
    "surpriseN": 3,
    "surpriseLast": -15.15,
    "revNet30": null,
@@ -4296,7 +4296,7 @@
    "estDrift30": -16.13119892533304
   },
   "SYNGENE": {
-   "surpriseAvg": -23.5325,
+   "surpriseAvg": -22.395000000000003,
    "surpriseN": 4,
    "surpriseLast": -27.75,
    "revNet30": -1,
@@ -4332,9 +4332,9 @@
    "estDrift30": null
   },
   "TATACHEM": {
-   "surpriseAvg": -374.48,
+   "surpriseAvg": -89.5825,
    "surpriseN": 4,
-   "surpriseLast": -659.14,
+   "surpriseLast": -100,
    "revNet30": -1,
    "revUp30": 0,
    "revDown30": 1,
@@ -4392,7 +4392,7 @@
    "revNet30": -1,
    "revUp30": 0,
    "revDown30": 1,
-   "estDrift30": -8.235215053763444
+   "estDrift30": 5.645161290322579
   },
   "TATATECH": {
    "surpriseAvg": -21.67,
@@ -4449,9 +4449,9 @@
    "estDrift30": null
   },
   "TEGA": {
-   "surpriseAvg": -301.23,
+   "surpriseAvg": -100,
    "surpriseN": 1,
-   "surpriseLast": -301.23,
+   "surpriseLast": -100,
    "revNet30": null,
    "revUp30": null,
    "revDown30": null,
@@ -4692,7 +4692,7 @@
    "estDrift30": 4.836193447737903
   },
   "UPL": {
-   "surpriseAvg": 43.6575,
+   "surpriseAvg": 14.8125,
    "surpriseN": 4,
    "surpriseLast": 5.86,
    "revNet30": 0,
@@ -4701,7 +4701,7 @@
    "estDrift30": null
   },
   "URBANCO": {
-   "surpriseAvg": -29.552500000000002,
+   "surpriseAvg": -28.415000000000003,
    "surpriseN": 4,
    "surpriseLast": -56.75,
    "revNet30": -2,
@@ -4719,7 +4719,7 @@
    "estDrift30": null
   },
   "UTIAMC": {
-   "surpriseAvg": -23.209999999999994,
+   "surpriseAvg": -3.987499999999999,
    "surpriseN": 4,
    "surpriseLast": -30,
    "revNet30": null,
@@ -4854,7 +4854,7 @@
    "estDrift30": null
   },
   "WELCORP": {
-   "surpriseAvg": 59.453333333333326,
+   "surpriseAvg": 29.646666666666665,
    "surpriseN": 3,
    "surpriseLast": -3.13,
    "revNet30": 1,
@@ -4863,7 +4863,7 @@
    "estDrift30": 15.42553191489361
   },
   "WELSPUNLIV": {
-   "surpriseAvg": 162.25750000000002,
+   "surpriseAvg": 51.519999999999996,
    "surpriseN": 4,
    "surpriseLast": 9.41,
    "revNet30": 0,
@@ -4908,9 +4908,9 @@
    "estDrift30": null
   },
   "YATRA": {
-   "surpriseAvg": -74.2375,
+   "surpriseAvg": -72.8475,
    "surpriseN": 4,
-   "surpriseLast": -105.56,
+   "surpriseLast": -100,
    "revNet30": -1,
    "revUp30": 0,
    "revDown30": 1,
@@ -4935,7 +4935,7 @@
    "estDrift30": null
   },
   "ZEEL": {
-   "surpriseAvg": -68.64750000000001,
+   "surpriseAvg": -50.120000000000005,
    "surpriseN": 4,
    "surpriseLast": -32.86,
    "revNet30": null,
@@ -4980,7 +4980,7 @@
    "estDrift30": null
   },
   "ZYDUSWELL": {
-   "surpriseAvg": -123.95,
+   "surpriseAvg": -36.0325,
    "surpriseN": 4,
    "surpriseLast": -40,
    "revNet30": 0,

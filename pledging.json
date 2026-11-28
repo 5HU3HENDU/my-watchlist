@@ -1,5 +1,5 @@
 {
- "fetchedAtIST": "22 Nov, 12:40 am",
+ "fetchedAtIST": "28 Nov, 09:44 am",
  "source": "stockssena",
  "stocks": {
   "360ONE": {
@@ -215,8 +215,8 @@
   "ALKEM": {
    "promoterPct": 49.7,
    "pledgedPct": 0,
-   "dealsNet3m": -0.01,
-   "dealsN3m": 5,
+   "dealsNet3m": -0.02,
+   "dealsN3m": 10,
    "dealsHas3m": true
   },
   "AMBER": {
@@ -278,9 +278,9 @@
   "APLAPOLLO": {
    "promoterPct": 28.18,
    "pledgedPct": 0,
-   "dealsNet3m": null,
-   "dealsN3m": 0,
-   "dealsHas3m": false
+   "dealsNet3m": -437.07,
+   "dealsN3m": 5,
+   "dealsHas3m": true
   },
   "APOLLOHOSP": {
    "promoterPct": 28.02,
@@ -292,9 +292,9 @@
   "APOLLOTYRE": {
    "promoterPct": 36.93,
    "pledgedPct": 0.01,
-   "dealsNet3m": 0,
-   "dealsN3m": 4,
-   "dealsHas3m": true
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "APTUS": {
    "promoterPct": 23.86,
@@ -306,8 +306,8 @@
   "AQYLON": {
    "promoterPct": 37.25,
    "pledgedPct": 95.89,
-   "dealsNet3m": -10.51,
-   "dealsN3m": 19,
+   "dealsNet3m": -5.98,
+   "dealsN3m": 18,
    "dealsHas3m": true
   },
   "ARCIL": {
@@ -370,7 +370,7 @@
    "promoterPct": 42.33,
    "pledgedPct": 0,
    "dealsNet3m": 445.31,
-   "dealsN3m": 3,
+   "dealsN3m": 1,
    "dealsHas3m": true
   },
   "ATUL": {
@@ -719,9 +719,9 @@
   "CARBORUNIV": {
    "promoterPct": 38.84,
    "pledgedPct": 0,
-   "dealsNet3m": null,
-   "dealsN3m": 0,
-   "dealsHas3m": false
+   "dealsNet3m": 53.71,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "CARTRADE": {
    "promoterPct": 0,
@@ -999,8 +999,8 @@
   "CYIENT": {
    "promoterPct": 24.76,
    "pledgedPct": 0,
-   "dealsNet3m": 5.91,
-   "dealsN3m": 8,
+   "dealsNet3m": 4.98,
+   "dealsN3m": 6,
    "dealsHas3m": true
   },
   "DABUR": {
@@ -1258,9 +1258,9 @@
   "FINCABLES": {
    "promoterPct": 35.86,
    "pledgedPct": 0,
-   "dealsNet3m": null,
-   "dealsN3m": 0,
-   "dealsHas3m": false
+   "dealsNet3m": 0,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "FIRSTCRY": {
    "promoterPct": 0,
@@ -1328,8 +1328,8 @@
   "GAJA": {
    "promoterPct": 54.23,
    "pledgedPct": 0,
-   "dealsNet3m": 147.1,
-   "dealsN3m": 25,
+   "dealsNet3m": -0.01,
+   "dealsN3m": 2,
    "dealsHas3m": true
   },
   "GALLANTT": {
@@ -1342,15 +1342,15 @@
   "GATECH": {
    "promoterPct": 0.63,
    "pledgedPct": 0,
-   "dealsNet3m": -47.42,
-   "dealsN3m": 27,
+   "dealsNet3m": -12.68,
+   "dealsN3m": 10,
    "dealsHas3m": true
   },
   "GENESYS": {
    "promoterPct": 32.73,
    "pledgedPct": 9.63,
-   "dealsNet3m": 2.73,
-   "dealsN3m": 36,
+   "dealsNet3m": -1.43,
+   "dealsN3m": 10,
    "dealsHas3m": true
   },
   "GESHIP": {
@@ -1475,8 +1475,8 @@
   "GROWW": {
    "promoterPct": 27.13,
    "pledgedPct": 1.25,
-   "dealsNet3m": -4505.73,
-   "dealsN3m": 41,
+   "dealsNet3m": -2288.45,
+   "dealsN3m": 39,
    "dealsHas3m": true
   },
   "GRSE": {
@@ -1510,8 +1510,8 @@
   "HAPPSTMNDS": {
    "promoterPct": 44.21,
    "pledgedPct": 0,
-   "dealsNet3m": 0.42,
-   "dealsN3m": 6,
+   "dealsNet3m": -35.26,
+   "dealsN3m": 5,
    "dealsHas3m": true
   },
   "HAVELLS": {
@@ -1734,9 +1734,9 @@
   "IGIL": {
    "promoterPct": 76.55,
    "pledgedPct": 0,
-   "dealsNet3m": null,
-   "dealsN3m": 0,
-   "dealsHas3m": false
+   "dealsNet3m": 0,
+   "dealsN3m": 9,
+   "dealsHas3m": true
   },
   "IGL": {
    "promoterPct": 45,
@@ -1748,9 +1748,9 @@
   "IIFL": {
    "promoterPct": 24.76,
    "pledgedPct": 0,
-   "dealsNet3m": null,
-   "dealsN3m": 0,
-   "dealsHas3m": false
+   "dealsNet3m": -77.83,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "IKS": {
    "promoterPct": 63.72,
@@ -1797,8 +1797,8 @@
   "INDOTHAI": {
    "promoterPct": 54.77,
    "pledgedPct": 0,
-   "dealsNet3m": 14.82,
-   "dealsN3m": 44,
+   "dealsNet3m": -11.69,
+   "dealsN3m": 28,
    "dealsHas3m": true
   },
   "INDUSINDBK": {
@@ -2063,9 +2063,9 @@
   "JWL": {
    "promoterPct": 68.31,
    "pledgedPct": 0,
-   "dealsNet3m": null,
-   "dealsN3m": 0,
-   "dealsHas3m": false
+   "dealsNet3m": 0.53,
+   "dealsN3m": 14,
+   "dealsHas3m": true
   },
   "JYOTICNC": {
    "promoterPct": 62.55,
@@ -2119,9 +2119,9 @@
   "KELLTONTEC": {
    "promoterPct": 36.46,
    "pledgedPct": 4.31,
-   "dealsNet3m": -0.02,
-   "dealsN3m": 4,
-   "dealsHas3m": true
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "KFINTECH": {
    "promoterPct": 14.06,
@@ -2217,16 +2217,16 @@
   "LENSKART": {
    "promoterPct": 17.52,
    "pledgedPct": 0,
-   "dealsNet3m": -3210.81,
-   "dealsN3m": 41,
+   "dealsNet3m": -3210.8,
+   "dealsN3m": 13,
    "dealsHas3m": true
   },
   "LGEINDIA": {
    "promoterPct": 85,
    "pledgedPct": 0,
-   "dealsNet3m": null,
-   "dealsN3m": 0,
-   "dealsHas3m": false
+   "dealsNet3m": -2396.45,
+   "dealsN3m": 1,
+   "dealsHas3m": true
   },
   "LICHSGFIN": {
    "promoterPct": 45.24,
@@ -2280,9 +2280,9 @@
   "LTFOODS": {
    "promoterPct": 51.01,
    "pledgedPct": 0,
-   "dealsNet3m": -0.06,
-   "dealsN3m": 2,
-   "dealsHas3m": true
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "LTM": {
    "promoterPct": 69.01,
@@ -2371,9 +2371,9 @@
   "MCLOUD": {
    "promoterPct": 54.04,
    "pledgedPct": 59.01,
-   "dealsNet3m": null,
-   "dealsN3m": 0,
-   "dealsHas3m": false
+   "dealsNet3m": 0.01,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "MCX": {
    "promoterPct": 0,
@@ -2385,15 +2385,15 @@
   "MEDANTA": {
    "promoterPct": 33,
    "pledgedPct": 0,
-   "dealsNet3m": null,
-   "dealsN3m": 0,
-   "dealsHas3m": false
+   "dealsNet3m": 0,
+   "dealsN3m": 12,
+   "dealsHas3m": true
   },
   "MEESHO": {
    "promoterPct": 16.34,
    "pledgedPct": 0,
-   "dealsNet3m": 0.01,
-   "dealsN3m": 91,
+   "dealsNet3m": 0.04,
+   "dealsN3m": 66,
    "dealsHas3m": true
   },
   "MFSL": {
@@ -2413,9 +2413,9 @@
   "MILKYMIST": {
    "promoterPct": 79.51,
    "pledgedPct": 0,
-   "dealsNet3m": -0.1,
-   "dealsN3m": 2,
-   "dealsHas3m": true
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "MINDACORP": {
    "promoterPct": 64.84,
@@ -2938,9 +2938,9 @@
   "PWL": {
    "promoterPct": 71.17,
    "pledgedPct": 0,
-   "dealsNet3m": 0,
-   "dealsN3m": 17,
-   "dealsHas3m": true
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "RADICO": {
    "promoterPct": 40.17,
@@ -3050,9 +3050,9 @@
   "RUBICON": {
    "promoterPct": 51.25,
    "pledgedPct": 0,
-   "dealsNet3m": 0,
-   "dealsN3m": 2,
-   "dealsHas3m": true
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "RVNL": {
    "promoterPct": 72.84,
@@ -3134,9 +3134,9 @@
   "SCHAEFFLER": {
    "promoterPct": 74.13,
    "pledgedPct": 0,
-   "dealsNet3m": null,
-   "dealsN3m": 0,
-   "dealsHas3m": false
+   "dealsNet3m": -0.03,
+   "dealsN3m": 51,
+   "dealsHas3m": true
   },
   "SCHNEIDER": {
    "promoterPct": 75,
@@ -3470,8 +3470,8 @@
   "TEJASNET": {
    "promoterPct": 53.28,
    "pledgedPct": 0,
-   "dealsNet3m": 34.55,
-   "dealsN3m": 22,
+   "dealsNet3m": 28.57,
+   "dealsN3m": 10,
    "dealsHas3m": true
   },
   "TENNIND": {
@@ -3657,7 +3657,7 @@
    "dealsHas3m": false
   },
   "URBANCO": {
-   "promoterPct": 19.02,
+   "promoterPct": 17.23,
    "pledgedPct": 0,
    "dealsNet3m": null,
    "dealsN3m": 0,
@@ -3722,9 +3722,9 @@
   "VIKRAMSOLR": {
    "promoterPct": 63.01,
    "pledgedPct": 9.24,
-   "dealsNet3m": null,
-   "dealsN3m": 0,
-   "dealsHas3m": false
+   "dealsNet3m": -27.66,
+   "dealsN3m": 2,
+   "dealsHas3m": true
   },
   "VISL": {
    "promoterPct": 56.38,
@@ -3778,9 +3778,9 @@
   "WELCORP": {
    "promoterPct": 47.46,
    "pledgedPct": 0,
-   "dealsNet3m": 0,
-   "dealsN3m": 21,
-   "dealsHas3m": true
+   "dealsNet3m": null,
+   "dealsN3m": 0,
+   "dealsHas3m": false
   },
   "WELSPUNLIV": {
    "promoterPct": 63.77,
@@ -3813,8 +3813,8 @@
   "XTRANET": {
    "promoterPct": 62.62,
    "pledgedPct": 0,
-   "dealsNet3m": 7.94,
-   "dealsN3m": 45,
+   "dealsNet3m": 6.43,
+   "dealsN3m": 40,
    "dealsHas3m": true
   },
   "YATRA": {

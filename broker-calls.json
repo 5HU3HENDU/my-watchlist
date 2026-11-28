@@ -1,5 +1,5 @@
 {
- "fetchedAtIST": "21 Nov, 07:18 pm",
+ "fetchedAtIST": "28 Nov, 10:16 am",
  "source": "moneycontrol",
  "stocks": {
   "360ONE": [
@@ -50,12 +50,6 @@
     "rating": "BUY",
     "target": 8200,
     "date": "14 Nov 2026"
-   },
-   {
-    "firm": "Geojit Financial Services",
-    "rating": "REDUCE",
-    "target": 6694,
-    "date": "25 Aug 2026"
    }
   ],
   "ABBOTINDIA": [],
@@ -67,12 +61,6 @@
     "rating": "BUY",
     "target": 1345,
     "date": "2 Nov 2026"
-   },
-   {
-    "firm": "Emkay Global Financial",
-    "rating": "BUY",
-    "target": 1750,
-    "date": "24 Aug 2026"
    }
   ],
   "ABSLAMC": [
@@ -208,7 +196,14 @@
     "date": "16 Oct 2026"
    }
   ],
-  "ANTHEM": [],
+  "ANTHEM": [
+   {
+    "firm": "Prabhudas Lilladher",
+    "rating": "BUY",
+    "target": 1050,
+    "date": "23 Nov 2026"
+   }
+  ],
   "ANURAS": [],
   "APARINDS": [
    {
@@ -218,7 +213,14 @@
     "date": "30 Oct 2026"
    }
   ],
-  "APLAPOLLO": [],
+  "APLAPOLLO": [
+   {
+    "firm": "Motilal Oswal",
+    "rating": "BUY",
+    "target": 2220,
+    "date": "24 Nov 2026"
+   }
+  ],
   "APOLLOHOSP": [
    {
     "firm": "ICICI Securities",
@@ -508,6 +510,12 @@
   "BOSCHLTD": [],
   "BPCL": [],
   "BRIGADE": [
+   {
+    "firm": "Prabhudas Lilladher",
+    "rating": "BUY",
+    "target": 700,
+    "date": "20 Nov 2026"
+   },
    {
     "firm": "Prabhudas Lilladher",
     "rating": "BUY",
@@ -805,12 +813,6 @@
     "rating": "BUY",
     "target": 294,
     "date": "16 Oct 2026"
-   },
-   {
-    "firm": "Prabhudas Lilladher",
-    "rating": "BUY",
-    "target": 330,
-    "date": "21 Aug 2026"
    }
   ],
   "CUB": [
@@ -872,12 +874,6 @@
     "rating": "HOLD",
     "target": 1040,
     "date": "29 Aug 2026"
-   },
-   {
-    "firm": "Emkay Global Financial",
-    "rating": "REDUCE",
-    "target": 900,
-    "date": "26 Aug 2026"
    }
   ],
   "DABUR": [
@@ -1112,14 +1108,7 @@
     "date": "16 Oct 2026"
    }
   ],
-  "FINCABLES": [
-   {
-    "firm": "Geojit Financial Services",
-    "rating": "ACCUMULATE",
-    "target": 1494,
-    "date": "21 Aug 2026"
-   }
-  ],
+  "FINCABLES": [],
   "FIRSTCRY": [],
   "FIVESTAR": [
    {
@@ -1281,12 +1270,6 @@
     "rating": "BUY",
     "target": 120,
     "date": "29 Oct 2026"
-   },
-   {
-    "firm": "ICICI Securities",
-    "rating": "HOLD",
-    "target": 99,
-    "date": "27 Aug 2026"
    }
   ],
   "GODFRYPHLP": [],
@@ -1446,12 +1429,6 @@
     "rating": "NEUTRAL",
     "target": 760,
     "date": "28 Aug 2026"
-   },
-   {
-    "firm": "ICICI Securities",
-    "rating": "BUY",
-    "target": 900,
-    "date": "26 Aug 2026"
    }
   ],
   "HDFCAMC": [
@@ -1589,18 +1566,6 @@
     "rating": "HOLD",
     "target": 550,
     "date": "30 Oct 2026"
-   },
-   {
-    "firm": "ICICI Securities",
-    "rating": "HOLD",
-    "target": 580,
-    "date": "23 Aug 2026"
-   },
-   {
-    "firm": "Motilal Oswal",
-    "rating": "BUY",
-    "target": 720,
-    "date": "23 Aug 2026"
    }
   ],
   "HFCL": [],
@@ -1673,12 +1638,6 @@
     "rating": "BUY",
     "target": 2300,
     "date": "29 Oct 2026"
-   },
-   {
-    "firm": "Emkay Global Financial",
-    "rating": "BUY",
-    "target": 2600,
-    "date": "26 Aug 2026"
    }
   ],
   "ICICIAMC": [
@@ -1840,12 +1799,6 @@
     "rating": "BUY",
     "target": 870,
     "date": "21 Oct 2026"
-   },
-   {
-    "firm": "ICICI Securities",
-    "rating": "BUY",
-    "target": 925,
-    "date": "27 Aug 2026"
    }
   ],
   "INDIACEM": [],
@@ -2151,12 +2104,6 @@
     "rating": "BUY",
     "target": 800,
     "date": "11 Nov 2026"
-   },
-   {
-    "firm": "ICICI Securities",
-    "rating": "BUY",
-    "target": 680,
-    "date": "23 Aug 2026"
    }
   ],
   "KARURVYSYA": [
@@ -2279,12 +2226,6 @@
     "rating": "BUY",
     "target": 800,
     "date": "9 Sep 2026"
-   },
-   {
-    "firm": "ICICI Securities",
-    "rating": "BUY",
-    "target": 750,
-    "date": "21 Aug 2026"
    }
   ],
   "LGEINDIA": [
@@ -2506,12 +2447,6 @@
     "rating": "BUY",
     "target": 1710,
     "date": "11 Nov 2026"
-   },
-   {
-    "firm": "Prabhudas Lilladher",
-    "rating": "BUY",
-    "target": 1750,
-    "date": "25 Aug 2026"
    }
   ],
   "MEESHO": [],
@@ -2963,6 +2898,12 @@
   ],
   "PIRAMALFIN": [
    {
+    "firm": "Motilal Oswal",
+    "rating": "BUY",
+    "target": 2470,
+    "date": "21 Nov 2026"
+   },
+   {
     "firm": "ICICI Securities",
     "rating": "BUY",
     "target": 2800,
@@ -3019,12 +2960,6 @@
     "rating": "BUY",
     "target": 321,
     "date": "3 Nov 2026"
-   },
-   {
-    "firm": "Geojit Financial Services",
-    "rating": "BUY",
-    "target": 303,
-    "date": "25 Aug 2026"
    }
   ],
   "POWERINDIA": [
@@ -3115,12 +3050,6 @@
     "rating": "NEUTRAL",
     "target": 850,
     "date": "5 Nov 2026"
-   },
-   {
-    "firm": "ICICI Securities",
-    "rating": "HOLD",
-    "target": 942,
-    "date": "25 Aug 2026"
    }
   ],
   "RBLBANK": [],
@@ -3150,12 +3079,6 @@
     "rating": "BUY",
     "target": 2960,
     "date": "22 Oct 2026"
-   },
-   {
-    "firm": "Motilal Oswal",
-    "rating": "BUY",
-    "target": 3400,
-    "date": "26 Aug 2026"
    }
   ],
   "RSYSTEMS": [],
@@ -3295,7 +3218,20 @@
    }
   ],
   "SHYAMMETL": [],
-  "SIEMENS": [],
+  "SIEMENS": [
+   {
+    "firm": "PL Capital",
+    "rating": "ACCUMULATE",
+    "target": 3821,
+    "date": "26 Nov 2026"
+   },
+   {
+    "firm": "Emkay recommended",
+    "rating": "IS BULLISH ON SIEMENS HAS RECOMMENDED BUY",
+    "target": 4300,
+    "date": "25 Nov 2026"
+   }
+  ],
   "SIGNATURE": [],
   "SJVN": [],
   "SKYWAYS": [],
@@ -3444,12 +3380,6 @@
     "rating": "BUY",
     "target": 1230,
     "date": "6 Oct 2026"
-   },
-   {
-    "firm": "Motilal Oswal",
-    "rating": "BUY",
-    "target": 1500,
-    "date": "21 Aug 2026"
    }
   ],
   "TATAELXSI": [],
@@ -3481,6 +3411,18 @@
    }
   ],
   "TATASTEEL": [
+   {
+    "firm": "Motilal Oswal",
+    "rating": "BUY",
+    "target": 190,
+    "date": "24 Nov 2026"
+   },
+   {
+    "firm": "Emkay",
+    "rating": "BUY",
+    "target": 210,
+    "date": "23 Nov 2026"
+   },
    {
     "firm": "ICICI Securities",
     "rating": "BUY",
@@ -3708,12 +3650,6 @@
     "rating": "NEUTRAL",
     "target": 165,
     "date": "16 Oct 2026"
-   },
-   {
-    "firm": "Emkay Global Financial",
-    "rating": "BUY",
-    "target": 190,
-    "date": "23 Aug 2026"
    }
   ],
   "USHAMART": [],
@@ -3737,12 +3673,6 @@
     "rating": "BUY",
     "target": 480,
     "date": "28 Oct 2026"
-   },
-   {
-    "firm": "Motilal Oswal",
-    "rating": "BUY",
-    "target": 540,
-    "date": "25 Aug 2026"
    }
   ],
   "VBL": [],
@@ -3836,6 +3766,12 @@
   "WEBELSOLAR": [],
   "WELCORP": [],
   "WELSPUNLIV": [
+   {
+    "firm": "Motilal Oswal",
+    "rating": "BUY",
+    "target": 320,
+    "date": "23 Nov 2026"
+   },
    {
     "firm": "Motilal Oswal",
     "rating": "BUY",

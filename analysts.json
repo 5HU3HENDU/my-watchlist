@@ -1,14 +1,14 @@
 {
- "fetchedAtIST": "21 Nov, 11:48 pm",
+ "fetchedAtIST": "28 Nov, 09:53 am",
  "source": "yahoo",
  "stocks": {
   "360ONE": {
-   "currentPrice": 1208.1,
+   "currentPrice": 1230,
    "targetMeanPrice": 1316,
    "targetHighPrice": 1425,
    "targetLowPrice": 1200,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.1,
+   "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 10,
    "trend": [
     {
@@ -21,8 +21,8 @@
     },
     {
      "period": "-1m",
-     "strongBuy": 2,
-     "buy": 8,
+     "strongBuy": 1,
+     "buy": 9,
      "hold": 0,
      "sell": 0,
      "strongSell": 0
@@ -34,12 +34,20 @@
      "hold": 0,
      "sell": 0,
      "strongSell": 0
+    },
+    {
+     "period": "-3m",
+     "strongBuy": 2,
+     "buy": 8,
+     "hold": 0,
+     "sell": 0,
+     "strongSell": 0
     }
    ]
   },
   "AADHARHFC": {
-   "currentPrice": 416.7,
-   "targetMeanPrice": 591.0714,
+   "currentPrice": 422.65,
+   "targetMeanPrice": 587.5,
    "targetHighPrice": 650,
    "targetLowPrice": 520,
    "recommendationMean": 1.07143,
@@ -73,12 +81,12 @@
    ]
   },
   "AARTIIND": {
-   "currentPrice": 450,
+   "currentPrice": 438.15,
    "targetMeanPrice": 537.36,
    "targetHighPrice": 690,
    "targetLowPrice": 470,
-   "recommendationMean": 1.72,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 25,
    "trend": [
     {
@@ -116,7 +124,7 @@
    ]
   },
   "AAVAS": {
-   "currentPrice": 1110,
+   "currentPrice": 1116.2,
    "targetMeanPrice": 1568.7142,
    "targetHighPrice": 2456,
    "targetLowPrice": 1166,
@@ -151,8 +159,8 @@
    ]
   },
   "ABB": {
-   "currentPrice": 6934.5,
-   "targetMeanPrice": 7302.3335,
+   "currentPrice": 7060,
+   "targetMeanPrice": 7281.593,
    "targetHighPrice": 9900,
    "targetLowPrice": 5400,
    "recommendationMean": 3.03704,
@@ -194,8 +202,8 @@
    ]
   },
   "ABBOTINDIA": {
-   "currentPrice": 26490,
-   "targetMeanPrice": 31907.555,
+   "currentPrice": 27145,
+   "targetMeanPrice": 31974.223,
    "targetHighPrice": 38100,
    "targetLowPrice": 24851,
    "recommendationMean": null,
@@ -237,7 +245,7 @@
    ]
   },
   "ABCAPITAL": {
-   "currentPrice": 423,
+   "currentPrice": 410.3,
    "targetMeanPrice": 463.14285,
    "targetHighPrice": 506,
    "targetLowPrice": 421,
@@ -280,7 +288,7 @@
    ]
   },
   "ABDL": {
-   "currentPrice": 792.5,
+   "currentPrice": 838,
    "targetMeanPrice": 808.8333,
    "targetHighPrice": 900,
    "targetLowPrice": 685,
@@ -323,12 +331,12 @@
    ]
   },
   "ABREL": {
-   "currentPrice": 1216,
-   "targetMeanPrice": 1692.5385,
+   "currentPrice": 1271.7,
+   "targetMeanPrice": 1678.6923,
    "targetHighPrice": 2150,
    "targetLowPrice": 1345,
-   "recommendationMean": 1.07692,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 13,
    "trend": [
     {
@@ -358,7 +366,7 @@
    ]
   },
   "ABSLAMC": {
-   "currentPrice": 938,
+   "currentPrice": 982.7,
    "targetMeanPrice": 1102.5333,
    "targetHighPrice": 1230,
    "targetLowPrice": 908,
@@ -385,7 +393,7 @@
    ]
   },
   "ACC": {
-   "currentPrice": 1282,
+   "currentPrice": 1250.6,
    "targetMeanPrice": 1364.4166,
    "targetHighPrice": 2198,
    "targetLowPrice": 1000,
@@ -428,7 +436,7 @@
    ]
   },
   "ACE": {
-   "currentPrice": 1171,
+   "currentPrice": 1325.7,
    "targetMeanPrice": 1515,
    "targetHighPrice": 1515,
    "targetLowPrice": 1515,
@@ -455,7 +463,7 @@
    ]
   },
   "ACEVECTOR": {
-   "currentPrice": 19.2,
+   "currentPrice": 18.81,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -465,12 +473,12 @@
    "trend": []
   },
   "ACMESOLAR": {
-   "currentPrice": 406,
+   "currentPrice": 426.35,
    "targetMeanPrice": 482.2857,
    "targetHighPrice": 560,
    "targetLowPrice": 445,
-   "recommendationMean": 1.57143,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 14,
    "trend": [
     {
@@ -508,7 +516,7 @@
    ]
   },
   "ACUTAAS": {
-   "currentPrice": 3826,
+   "currentPrice": 4075,
    "targetMeanPrice": 3744.111,
    "targetHighPrice": 4851,
    "targetLowPrice": 1783,
@@ -551,7 +559,7 @@
    ]
   },
   "ADANIENSOL": {
-   "currentPrice": 1491.8,
+   "currentPrice": 1337,
    "targetMeanPrice": 1660.5555,
    "targetHighPrice": 1980,
    "targetLowPrice": 1450,
@@ -586,7 +594,7 @@
    ]
   },
   "ADANIENT": {
-   "currentPrice": 2709,
+   "currentPrice": 2640.4,
    "targetMeanPrice": 3429,
    "targetHighPrice": 3830,
    "targetLowPrice": 3254,
@@ -621,7 +629,7 @@
    ]
   },
   "ADANIGREEN": {
-   "currentPrice": 1435,
+   "currentPrice": 1327.6,
    "targetMeanPrice": 1521,
    "targetHighPrice": 1800,
    "targetLowPrice": 980,
@@ -664,18 +672,18 @@
    ]
   },
   "ADANIPORTS": {
-   "currentPrice": 1917,
-   "targetMeanPrice": 2146.739,
-   "targetHighPrice": 2305,
+   "currentPrice": 1880,
+   "targetMeanPrice": 2157.2917,
+   "targetHighPrice": 2400,
    "targetLowPrice": 1973,
-   "recommendationMean": 1.13043,
+   "recommendationMean": 1.125,
    "recommendationKey": "strong_buy",
-   "numberOfAnalystOpinions": 23,
+   "numberOfAnalystOpinions": 24,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 3,
-     "buy": 20,
+     "buy": 21,
      "hold": 0,
      "sell": 0,
      "strongSell": 0
@@ -707,7 +715,7 @@
    ]
   },
   "ADANIPOWER": {
-   "currentPrice": 211.95,
+   "currentPrice": 205.25,
    "targetMeanPrice": 241.72726,
    "targetHighPrice": 272,
    "targetLowPrice": 210,
@@ -750,7 +758,7 @@
    ]
   },
   "AEGISLOG": {
-   "currentPrice": 1180.1,
+   "currentPrice": 1297.9,
    "targetMeanPrice": 1394.8,
    "targetHighPrice": 1620,
    "targetLowPrice": 910,
@@ -785,12 +793,12 @@
    ]
   },
   "AEGISVOPAK": {
-   "currentPrice": 291.1,
+   "currentPrice": 284.47,
    "targetMeanPrice": 324,
    "targetHighPrice": 380,
    "targetLowPrice": 265,
-   "recommendationMean": 1.5,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 4,
    "trend": [
     {
@@ -820,7 +828,7 @@
    ]
   },
   "AEQUS": {
-   "currentPrice": 224.34,
+   "currentPrice": 222.65,
    "targetMeanPrice": 290.2,
    "targetHighPrice": 444,
    "targetLowPrice": 235,
@@ -847,7 +855,7 @@
    ]
   },
   "AETHER": {
-   "currentPrice": 1620.3,
+   "currentPrice": 1761.4,
    "targetMeanPrice": 1609.5714,
    "targetHighPrice": 1980,
    "targetLowPrice": 1120,
@@ -890,12 +898,12 @@
    ]
   },
   "AFCONS": {
-   "currentPrice": 220,
+   "currentPrice": 218.56,
    "targetMeanPrice": 274.6,
    "targetHighPrice": 361,
    "targetLowPrice": 175,
-   "recommendationMean": 2.4,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 10,
    "trend": [
     {
@@ -933,7 +941,7 @@
    ]
   },
   "AFFLE": {
-   "currentPrice": 1600,
+   "currentPrice": 1644.2,
    "targetMeanPrice": 1973.5,
    "targetHighPrice": 2165,
    "targetLowPrice": 1790,
@@ -976,17 +984,17 @@
    ]
   },
   "AIAENG": {
-   "currentPrice": 3430,
+   "currentPrice": 3386.5,
    "targetMeanPrice": 4271.3076,
    "targetHighPrice": 6000,
    "targetLowPrice": 3567,
-   "recommendationMean": 1.84615,
+   "recommendationMean": 1.83333,
    "recommendationKey": "buy",
    "numberOfAnalystOpinions": 13,
    "trend": [
     {
      "period": "0m",
-     "strongBuy": 2,
+     "strongBuy": 1,
      "buy": 7,
      "hold": 3,
      "sell": 0,
@@ -1019,7 +1027,7 @@
    ]
   },
   "AIIL": {
-   "currentPrice": 553,
+   "currentPrice": 552.8,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -1029,7 +1037,7 @@
    "trend": []
   },
   "AJANTPHARM": {
-   "currentPrice": 3317.9,
+   "currentPrice": 3360.6,
    "targetMeanPrice": 3865.7693,
    "targetHighPrice": 4330,
    "targetLowPrice": 3109,
@@ -1064,7 +1072,7 @@
    ]
   },
   "ALGOQUANT": {
-   "currentPrice": 83.99,
+   "currentPrice": 78.86,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -1074,7 +1082,7 @@
    "trend": []
   },
   "ALKEM": {
-   "currentPrice": 5185,
+   "currentPrice": 5130,
    "targetMeanPrice": 5982.6,
    "targetHighPrice": 6800,
    "targetLowPrice": 4589,
@@ -1109,7 +1117,7 @@
    ]
   },
   "AMBER": {
-   "currentPrice": 6740.5,
+   "currentPrice": 6769,
    "targetMeanPrice": 7944.7915,
    "targetHighPrice": 10659,
    "targetLowPrice": 6322,
@@ -1152,7 +1160,7 @@
    ]
   },
   "AMBUJACEM": {
-   "currentPrice": 400,
+   "currentPrice": 385.3,
    "targetMeanPrice": 442.6842,
    "targetHighPrice": 588,
    "targetLowPrice": 345,
@@ -1195,7 +1203,7 @@
    ]
   },
   "ANANDRATHI": {
-   "currentPrice": 2375.8,
+   "currentPrice": 2412.2,
    "targetMeanPrice": 1580,
    "targetHighPrice": 1630,
    "targetLowPrice": 1530,
@@ -1214,7 +1222,7 @@
    ]
   },
   "ANANTRAJ": {
-   "currentPrice": 450.65,
+   "currentPrice": 447.25,
    "targetMeanPrice": 665,
    "targetHighPrice": 680,
    "targetLowPrice": 650,
@@ -1257,7 +1265,7 @@
    ]
   },
   "ANGELONE": {
-   "currentPrice": 348.3,
+   "currentPrice": 376,
    "targetMeanPrice": 358.5,
    "targetHighPrice": 390,
    "targetLowPrice": 285,
@@ -1300,7 +1308,7 @@
    ]
   },
   "ANTHEM": {
-   "currentPrice": 949,
+   "currentPrice": 984.15,
    "targetMeanPrice": 1015.125,
    "targetHighPrice": 1068,
    "targetLowPrice": 900,
@@ -1335,7 +1343,7 @@
    ]
   },
   "ANURAS": {
-   "currentPrice": 1330,
+   "currentPrice": 1322.5,
    "targetMeanPrice": 1263.3334,
    "targetHighPrice": 1700,
    "targetLowPrice": 1020,
@@ -1378,7 +1386,7 @@
    ]
   },
   "APARINDS": {
-   "currentPrice": 14320,
+   "currentPrice": 14160,
    "targetMeanPrice": 17425.125,
    "targetHighPrice": 19000,
    "targetLowPrice": 15330,
@@ -1405,16 +1413,24 @@
    ]
   },
   "APLAPOLLO": {
-   "currentPrice": 2121.6,
-   "targetMeanPrice": 2381.4211,
+   "currentPrice": 1509.5,
+   "targetMeanPrice": 2025.3158,
    "targetHighPrice": 2810,
-   "targetLowPrice": 1605,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "targetLowPrice": 1200,
+   "recommendationMean": 2.45,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 19,
    "trend": [
     {
      "period": "0m",
+     "strongBuy": 4,
+     "buy": 9,
+     "hold": 1,
+     "sell": 5,
+     "strongSell": 1
+    },
+    {
+     "period": "-1m",
      "strongBuy": 5,
      "buy": 13,
      "hold": 1,
@@ -1422,7 +1438,7 @@
      "strongSell": 0
     },
     {
-     "period": "-1m",
+     "period": "-2m",
      "strongBuy": 4,
      "buy": 14,
      "hold": 0,
@@ -1430,7 +1446,7 @@
      "strongSell": 0
     },
     {
-     "period": "-2m",
+     "period": "-3m",
      "strongBuy": 4,
      "buy": 15,
      "hold": 0,
@@ -1440,8 +1456,8 @@
    ]
   },
   "APOLLOHOSP": {
-   "currentPrice": 9200,
-   "targetMeanPrice": 9970.6,
+   "currentPrice": 9128,
+   "targetMeanPrice": 9994.833,
    "targetHighPrice": 10770,
    "targetLowPrice": 7570,
    "recommendationMean": 1.33333,
@@ -1483,8 +1499,8 @@
    ]
   },
   "APOLLOTYRE": {
-   "currentPrice": 415,
-   "targetMeanPrice": 499,
+   "currentPrice": 426.05,
+   "targetMeanPrice": 499.4,
    "targetHighPrice": 576,
    "targetLowPrice": 366,
    "recommendationMean": 1.72,
@@ -1526,7 +1542,7 @@
    ]
   },
   "APTUS": {
-   "currentPrice": 195,
+   "currentPrice": 187.78,
    "targetMeanPrice": 295.8889,
    "targetHighPrice": 458,
    "targetLowPrice": 215,
@@ -1569,7 +1585,7 @@
    ]
   },
   "AQYLON": {
-   "currentPrice": 11.2,
+   "currentPrice": 10.81,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -1579,7 +1595,7 @@
    "trend": []
   },
   "ARCIL": {
-   "currentPrice": 124.2,
+   "currentPrice": 121.7,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -1589,7 +1605,7 @@
    "trend": []
   },
   "ARE&M": {
-   "currentPrice": 743.75,
+   "currentPrice": 728.8,
    "targetMeanPrice": 882.0769,
    "targetHighPrice": 1190,
    "targetLowPrice": 617,
@@ -1624,7 +1640,7 @@
    ]
   },
   "ASAHIINDIA": {
-   "currentPrice": 1163.45,
+   "currentPrice": 1158.2,
    "targetMeanPrice": 1733.5,
    "targetHighPrice": 2067,
    "targetLowPrice": 1400,
@@ -1651,8 +1667,8 @@
    ]
   },
   "ASHOKLEY": {
-   "currentPrice": 163.35,
-   "targetMeanPrice": 183.79411,
+   "currentPrice": 151.42,
+   "targetMeanPrice": 183.35294,
    "targetHighPrice": 230,
    "targetLowPrice": 150,
    "recommendationMean": 2.19444,
@@ -1694,8 +1710,8 @@
    ]
   },
   "ASIANPAINT": {
-   "currentPrice": 2608.3,
-   "targetMeanPrice": 2757.5881,
+   "currentPrice": 2532.6,
+   "targetMeanPrice": 2764.9412,
    "targetHighPrice": 3300,
    "targetLowPrice": 1925,
    "recommendationMean": 2.17647,
@@ -1737,7 +1753,7 @@
    ]
   },
   "ASTERDM": {
-   "currentPrice": 777.5,
+   "currentPrice": 756.85,
    "targetMeanPrice": 862.9167,
    "targetHighPrice": 1070,
    "targetLowPrice": 750,
@@ -1780,8 +1796,8 @@
    ]
   },
   "ASTRAL": {
-   "currentPrice": 1252.6,
-   "targetMeanPrice": 1650.3928,
+   "currentPrice": 1262.5,
+   "targetMeanPrice": 1643.9642,
    "targetHighPrice": 1944,
    "targetLowPrice": 1290,
    "recommendationMean": 1.64286,
@@ -1823,7 +1839,7 @@
    ]
   },
   "ATGL": {
-   "currentPrice": 563.1,
+   "currentPrice": 547.9,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -1833,7 +1849,7 @@
    "trend": []
   },
   "ATHERENERG": {
-   "currentPrice": 1935.4,
+   "currentPrice": 1888.4,
    "targetMeanPrice": 1797.2307,
    "targetHighPrice": 2250,
    "targetLowPrice": 1010,
@@ -1876,7 +1892,7 @@
    ]
   },
   "ATUL": {
-   "currentPrice": 5035.5,
+   "currentPrice": 5160,
    "targetMeanPrice": 7286.1665,
    "targetHighPrice": 8500,
    "targetLowPrice": 5190,
@@ -1903,12 +1919,12 @@
    ]
   },
   "AUBANK": {
-   "currentPrice": 984.9,
+   "currentPrice": 984.85,
    "targetMeanPrice": 1090.9656,
    "targetHighPrice": 1275,
    "targetLowPrice": 770,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 2.21429,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 29,
    "trend": [
     {
@@ -1946,8 +1962,8 @@
    ]
   },
   "AUROPHARMA": {
-   "currentPrice": 1799,
-   "targetMeanPrice": 1888.5925,
+   "currentPrice": 1791.8,
+   "targetMeanPrice": 1891.5555,
    "targetHighPrice": 2195,
    "targetLowPrice": 1270,
    "recommendationMean": 2.03704,
@@ -1989,7 +2005,7 @@
    ]
   },
   "AVANCE": {
-   "currentPrice": 0.68,
+   "currentPrice": 0.66,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -1999,7 +2015,7 @@
    "trend": []
   },
   "AVANTEL": {
-   "currentPrice": 155.15,
+   "currentPrice": 152.54,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -2009,7 +2025,7 @@
    "trend": []
   },
   "AVANTIFEED": {
-   "currentPrice": 716,
+   "currentPrice": 710.8,
    "targetMeanPrice": 809.5,
    "targetHighPrice": 950,
    "targetLowPrice": 669,
@@ -2036,7 +2052,7 @@
    ]
   },
   "AWL": {
-   "currentPrice": 171.99,
+   "currentPrice": 169.27,
    "targetMeanPrice": 255.66667,
    "targetHighPrice": 295,
    "targetLowPrice": 165,
@@ -2079,18 +2095,18 @@
    ]
   },
   "AXISBANK": {
-   "currentPrice": 1446,
-   "targetMeanPrice": 1584.4147,
+   "currentPrice": 1380.1,
+   "targetMeanPrice": 1586.5,
    "targetHighPrice": 1870,
    "targetLowPrice": 1450,
-   "recommendationMean": 1.21951,
+   "recommendationMean": 1.225,
    "recommendationKey": "strong_buy",
-   "numberOfAnalystOpinions": 41,
+   "numberOfAnalystOpinions": 40,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 7,
-     "buy": 33,
+     "buy": 32,
      "hold": 1,
      "sell": 0,
      "strongSell": 0
@@ -2122,12 +2138,12 @@
    ]
   },
   "AZAD": {
-   "currentPrice": 2339,
+   "currentPrice": 2405.6,
    "targetMeanPrice": 2679.2856,
    "targetHighPrice": 3125,
    "targetLowPrice": 2050,
-   "recommendationMean": 1.28571,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 7,
    "trend": [
     {
@@ -2175,8 +2191,8 @@
    "trend": []
   },
   "BAJAJ-AUTO": {
-   "currentPrice": 10765,
-   "targetMeanPrice": 12037.904,
+   "currentPrice": 10485,
+   "targetMeanPrice": 12051.833,
    "targetHighPrice": 14300,
    "targetLowPrice": 9259,
    "recommendationMean": 1.90476,
@@ -2218,8 +2234,8 @@
    ]
   },
   "BAJAJFINSV": {
-   "currentPrice": 1892,
-   "targetMeanPrice": 2218.6924,
+   "currentPrice": 1849,
+   "targetMeanPrice": 2202.5386,
    "targetHighPrice": 2610,
    "targetLowPrice": 1690,
    "recommendationMean": null,
@@ -2261,7 +2277,7 @@
    ]
   },
   "BAJAJHFL": {
-   "currentPrice": 81.94,
+   "currentPrice": 80.05,
    "targetMeanPrice": 92.23529,
    "targetHighPrice": 125,
    "targetLowPrice": 76,
@@ -2304,7 +2320,7 @@
    ]
   },
   "BAJAJHLDNG": {
-   "currentPrice": 11659,
+   "currentPrice": 11703,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -2314,13 +2330,13 @@
    "trend": []
   },
   "BAJFINANCE": {
-   "currentPrice": 1122,
-   "targetMeanPrice": 1168.4286,
+   "currentPrice": 1080,
+   "targetMeanPrice": 1169.5588,
    "targetHighPrice": 1350,
    "targetLowPrice": 840,
    "recommendationMean": 1.68571,
    "recommendationKey": "buy",
-   "numberOfAnalystOpinions": 35,
+   "numberOfAnalystOpinions": 34,
    "trend": [
     {
      "period": "0m",
@@ -2357,7 +2373,7 @@
    ]
   },
   "BALKRISIND": {
-   "currentPrice": 2360,
+   "currentPrice": 2360.5,
    "targetMeanPrice": 2452.158,
    "targetHighPrice": 2950,
    "targetLowPrice": 1981,
@@ -2400,7 +2416,7 @@
    ]
   },
   "BALRAMCHIN": {
-   "currentPrice": 619,
+   "currentPrice": 675.45,
    "targetMeanPrice": 843,
    "targetHighPrice": 900,
    "targetLowPrice": 806,
@@ -2443,8 +2459,8 @@
    ]
   },
   "BANDHANBNK": {
-   "currentPrice": 175.07,
-   "targetMeanPrice": 186.58333,
+   "currentPrice": 166.66,
+   "targetMeanPrice": 186.79167,
    "targetHighPrice": 235,
    "targetLowPrice": 150,
    "recommendationMean": null,
@@ -2486,12 +2502,12 @@
    ]
   },
   "BANKBARODA": {
-   "currentPrice": 287,
-   "targetMeanPrice": 289.70587,
+   "currentPrice": 274.9,
+   "targetMeanPrice": 291.02942,
    "targetHighPrice": 344,
    "targetLowPrice": 225,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.85294,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 34,
    "trend": [
     {
@@ -2529,7 +2545,7 @@
    ]
   },
   "BANKINDIA": {
-   "currentPrice": 164.7,
+   "currentPrice": 162.5,
    "targetMeanPrice": 151,
    "targetHighPrice": 170,
    "targetLowPrice": 119,
@@ -2564,12 +2580,12 @@
    ]
   },
   "BATAINDIA": {
-   "currentPrice": 635,
+   "currentPrice": 624.35,
    "targetMeanPrice": 658.3571,
    "targetHighPrice": 852,
    "targetLowPrice": 550,
-   "recommendationMean": 3.35714,
-   "recommendationKey": "hold",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 14,
    "trend": [
     {
@@ -2607,7 +2623,7 @@
    ]
   },
   "BBOX": {
-   "currentPrice": 898,
+   "currentPrice": 860.7,
    "targetMeanPrice": 1080.5,
    "targetHighPrice": 1201,
    "targetLowPrice": 960,
@@ -2642,7 +2658,7 @@
    ]
   },
   "BCG": {
-   "currentPrice": 8.84,
+   "currentPrice": 8.51,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -2652,18 +2668,18 @@
    "trend": []
   },
   "BDL": {
-   "currentPrice": 1034.5,
-   "targetMeanPrice": 1247.5883,
+   "currentPrice": 1077.5,
+   "targetMeanPrice": 1239.8235,
    "targetHighPrice": 1600,
    "targetLowPrice": 1050,
-   "recommendationMean": 2.52941,
-   "recommendationKey": "hold",
+   "recommendationMean": 2.47059,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 17,
    "trend": [
     {
      "period": "0m",
-     "strongBuy": 3,
-     "buy": 5,
+     "strongBuy": 2,
+     "buy": 6,
      "hold": 6,
      "sell": 2,
      "strongSell": 1
@@ -2695,12 +2711,12 @@
    ]
   },
   "BEL": {
-   "currentPrice": 402,
+   "currentPrice": 411.45,
    "targetMeanPrice": 496.78125,
    "targetHighPrice": 550,
    "targetLowPrice": 347,
-   "recommendationMean": 1.28125,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 32,
    "trend": [
     {
@@ -2738,7 +2754,7 @@
    ]
   },
   "BELRISE": {
-   "currentPrice": 236.67,
+   "currentPrice": 241.04,
    "targetMeanPrice": 268.66666,
    "targetHighPrice": 294,
    "targetLowPrice": 245,
@@ -2773,12 +2789,12 @@
    ]
   },
   "BEML": {
-   "currentPrice": 2051,
+   "currentPrice": 2346.1,
    "targetMeanPrice": 2376.4,
    "targetHighPrice": 2765,
    "targetLowPrice": 1960,
-   "recommendationMean": 1.2,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 5,
    "trend": [
     {
@@ -2816,7 +2832,7 @@
    ]
   },
   "BERGEPAINT": {
-   "currentPrice": 464.9,
+   "currentPrice": 466.85,
    "targetMeanPrice": 552.6818,
    "targetHighPrice": 655,
    "targetLowPrice": 440,
@@ -2859,7 +2875,7 @@
    ]
   },
   "BHARATCOAL": {
-   "currentPrice": 30.5,
+   "currentPrice": 31.12,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -2869,7 +2885,7 @@
    "trend": []
   },
   "BHARATFORG": {
-   "currentPrice": 1750,
+   "currentPrice": 1771,
    "targetMeanPrice": 1892.75,
    "targetHighPrice": 2469,
    "targetLowPrice": 1200,
@@ -2904,8 +2920,8 @@
    ]
   },
   "BHARTIARTL": {
-   "currentPrice": 2161.7,
-   "targetMeanPrice": 2369.147,
+   "currentPrice": 2067.9,
+   "targetMeanPrice": 2372.0881,
    "targetHighPrice": 2765,
    "targetLowPrice": 1785,
    "recommendationMean": 1.44118,
@@ -2947,12 +2963,12 @@
    ]
   },
   "BHARTIHEXA": {
-   "currentPrice": 1626.1,
+   "currentPrice": 1555.2,
    "targetMeanPrice": 1894,
    "targetHighPrice": 2220,
    "targetLowPrice": 1450,
-   "recommendationMean": 1.93333,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 15,
    "trend": [
     {
@@ -2990,12 +3006,12 @@
    ]
   },
   "BHEL": {
-   "currentPrice": 433.65,
+   "currentPrice": 421.95,
    "targetMeanPrice": 436.78946,
    "targetHighPrice": 633,
    "targetLowPrice": 140,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 2.68421,
+   "recommendationKey": "hold",
    "numberOfAnalystOpinions": 19,
    "trend": [
     {
@@ -3033,7 +3049,7 @@
    ]
   },
   "BIOCON": {
-   "currentPrice": 364.4,
+   "currentPrice": 362,
    "targetMeanPrice": 411.8421,
    "targetHighPrice": 490,
    "targetLowPrice": 326,
@@ -3086,7 +3102,7 @@
    "trend": []
   },
   "BLS": {
-   "currentPrice": 223.4,
+   "currentPrice": 216.85,
    "targetMeanPrice": 330,
    "targetHighPrice": 330,
    "targetLowPrice": 330,
@@ -3105,7 +3121,7 @@
    ]
   },
   "BLUECLOUDS": {
-   "currentPrice": 15.74,
+   "currentPrice": 15.69,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -3115,7 +3131,7 @@
    "trend": []
   },
   "BLUESTARCO": {
-   "currentPrice": 1791,
+   "currentPrice": 1735,
    "targetMeanPrice": 1721.8077,
    "targetHighPrice": 2000,
    "targetLowPrice": 1139,
@@ -3158,12 +3174,12 @@
    ]
   },
   "BOSCHLTD": {
-   "currentPrice": 49360,
+   "currentPrice": 49170,
    "targetMeanPrice": 53133.6,
    "targetHighPrice": 62500,
    "targetLowPrice": 46250,
-   "recommendationMean": 1.4,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 5,
    "trend": [
     {
@@ -3201,12 +3217,12 @@
    ]
   },
   "BPCL": {
-   "currentPrice": 314.1,
+   "currentPrice": 308.55,
    "targetMeanPrice": 334.09677,
    "targetHighPrice": 457,
    "targetLowPrice": 249,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 2.48387,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 31,
    "trend": [
     {
@@ -3244,8 +3260,8 @@
    ]
   },
   "BRIGADE": {
-   "currentPrice": 578.7,
-   "targetMeanPrice": 782.9286,
+   "currentPrice": 617.85,
+   "targetMeanPrice": 779.3571,
    "targetHighPrice": 940,
    "targetLowPrice": 500,
    "recommendationMean": 1.21429,
@@ -3287,7 +3303,7 @@
    ]
   },
   "BRITANNIA": {
-   "currentPrice": 4900,
+   "currentPrice": 5065,
    "targetMeanPrice": 5701.9697,
    "targetHighPrice": 6891,
    "targetLowPrice": 4900,
@@ -3330,18 +3346,18 @@
    ]
   },
   "BSE": {
-   "currentPrice": 3781,
-   "targetMeanPrice": 3946.8,
+   "currentPrice": 3945,
+   "targetMeanPrice": 3986,
    "targetHighPrice": 4606,
    "targetLowPrice": 3000,
-   "recommendationMean": 2.1,
+   "recommendationMean": 2,
    "recommendationKey": "buy",
-   "numberOfAnalystOpinions": 20,
+   "numberOfAnalystOpinions": 21,
    "trend": [
     {
      "period": "0m",
-     "strongBuy": 7,
-     "buy": 8,
+     "strongBuy": 6,
+     "buy": 10,
      "hold": 2,
      "sell": 2,
      "strongSell": 1
@@ -3373,7 +3389,7 @@
    ]
   },
   "BSOFT": {
-   "currentPrice": 303.7,
+   "currentPrice": 299.15,
    "targetMeanPrice": 352.42856,
    "targetHighPrice": 420,
    "targetLowPrice": 255,
@@ -3416,7 +3432,7 @@
    ]
   },
   "CAMS": {
-   "currentPrice": 724.65,
+   "currentPrice": 740,
    "targetMeanPrice": 877.7895,
    "targetHighPrice": 1013,
    "targetLowPrice": 730,
@@ -3451,7 +3467,7 @@
    ]
   },
   "CANBK": {
-   "currentPrice": 138.92,
+   "currentPrice": 131.11,
    "targetMeanPrice": 149.5238,
    "targetHighPrice": 175,
    "targetLowPrice": 109,
@@ -3486,7 +3502,7 @@
    ]
   },
   "CANFINHOME": {
-   "currentPrice": 772.95,
+   "currentPrice": 795.3,
    "targetMeanPrice": 988.73334,
    "targetHighPrice": 1160,
    "targetLowPrice": 795,
@@ -3529,12 +3545,12 @@
    ]
   },
   "CANHLIFE": {
-   "currentPrice": 128.34,
+   "currentPrice": 128.39,
    "targetMeanPrice": 186.375,
    "targetHighPrice": 235,
    "targetLowPrice": 145,
-   "recommendationMean": 1,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 8,
    "trend": [
     {
@@ -3556,19 +3572,19 @@
    ]
   },
   "CAPLIPOINT": {
-   "currentPrice": 2025,
-   "targetMeanPrice": 2770,
-   "targetHighPrice": 2850,
-   "targetLowPrice": 2690,
-   "recommendationMean": 1,
-   "recommendationKey": "strong_buy",
+   "currentPrice": 2062.7,
+   "targetMeanPrice": 2472.5,
+   "targetHighPrice": 2690,
+   "targetLowPrice": 2255,
+   "recommendationMean": 2,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 2,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 0,
-     "buy": 2,
-     "hold": 0,
+     "buy": 1,
+     "hold": 1,
      "sell": 0,
      "strongSell": 0
     },
@@ -3591,18 +3607,18 @@
    ]
   },
   "CARBORUNIV": {
-   "currentPrice": 994,
-   "targetMeanPrice": 1062.6666,
-   "targetHighPrice": 1178,
+   "currentPrice": 1001.2,
+   "targetMeanPrice": 1085.8572,
+   "targetHighPrice": 1225,
    "targetLowPrice": 974,
-   "recommendationMean": 3.83333,
-   "recommendationKey": "underperform",
-   "numberOfAnalystOpinions": 6,
+   "recommendationMean": 3.42857,
+   "recommendationKey": "hold",
+   "numberOfAnalystOpinions": 7,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 1,
-     "buy": 0,
+     "buy": 1,
      "hold": 1,
      "sell": 2,
      "strongSell": 2
@@ -3626,7 +3642,7 @@
    ]
   },
   "CARTRADE": {
-   "currentPrice": 2653.9,
+   "currentPrice": 2583.5,
    "targetMeanPrice": 3092.3,
    "targetHighPrice": 3800,
    "targetLowPrice": 2250,
@@ -3661,7 +3677,7 @@
    ]
   },
   "CASTROLIND": {
-   "currentPrice": 190.25,
+   "currentPrice": 189.65,
    "targetMeanPrice": 212.2,
    "targetHighPrice": 220,
    "targetLowPrice": 205,
@@ -3696,12 +3712,12 @@
    ]
   },
   "CCAVENUE": {
-   "currentPrice": 114.43,
+   "currentPrice": 119.09,
    "targetMeanPrice": 170,
    "targetHighPrice": 170,
    "targetLowPrice": 170,
-   "recommendationMean": 1,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 1,
    "trend": [
     {
@@ -3731,7 +3747,7 @@
    ]
   },
   "CCL": {
-   "currentPrice": 948.55,
+   "currentPrice": 922,
    "targetMeanPrice": 1295.8182,
    "targetHighPrice": 1511,
    "targetLowPrice": 1060,
@@ -3766,8 +3782,8 @@
    ]
   },
   "CDSL": {
-   "currentPrice": 1430,
-   "targetMeanPrice": 1362.4667,
+   "currentPrice": 1453,
+   "targetMeanPrice": 1362.6,
    "targetHighPrice": 1570,
    "targetLowPrice": 1140,
    "recommendationMean": null,
@@ -3809,7 +3825,7 @@
    ]
   },
   "CEATLTD": {
-   "currentPrice": 3528,
+   "currentPrice": 3552.2,
    "targetMeanPrice": 3887.5,
    "targetHighPrice": 4500,
    "targetLowPrice": 3130,
@@ -3836,7 +3852,7 @@
    ]
   },
   "CEMPRO": {
-   "currentPrice": 1417.6,
+   "currentPrice": 1405.6,
    "targetMeanPrice": 1542.8,
    "targetHighPrice": 1700,
    "targetLowPrice": 1459,
@@ -3879,7 +3895,7 @@
    ]
   },
   "CENTRALBK": {
-   "currentPrice": 34.25,
+   "currentPrice": 32.99,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -3889,12 +3905,12 @@
    "trend": []
   },
   "CESC": {
-   "currentPrice": 127.7,
+   "currentPrice": 127.39,
    "targetMeanPrice": 189.41667,
    "targetHighPrice": 224,
    "targetLowPrice": 145,
-   "recommendationMean": 1.25,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 12,
    "trend": [
     {
@@ -3932,8 +3948,8 @@
    ]
   },
   "CGCL": {
-   "currentPrice": 233.5,
-   "targetMeanPrice": 264.16666,
+   "currentPrice": 227.59,
+   "targetMeanPrice": 267.5,
    "targetHighPrice": 320,
    "targetLowPrice": 240,
    "recommendationMean": null,
@@ -3975,7 +3991,7 @@
    ]
   },
   "CGPOWER": {
-   "currentPrice": 792,
+   "currentPrice": 793,
    "targetMeanPrice": 965.3,
    "targetHighPrice": 1140,
    "targetLowPrice": 720,
@@ -4018,12 +4034,12 @@
    ]
   },
   "CHAMBLFERT": {
-   "currentPrice": 371.35,
+   "currentPrice": 374.25,
    "targetMeanPrice": 474.33334,
    "targetHighPrice": 510,
    "targetLowPrice": 435,
-   "recommendationMean": 1.66667,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 3,
    "trend": [
     {
@@ -4053,7 +4069,7 @@
    ]
   },
   "CHENNPETRO": {
-   "currentPrice": 1420,
+   "currentPrice": 1352.5,
    "targetMeanPrice": 1885,
    "targetHighPrice": 1885,
    "targetLowPrice": 1885,
@@ -4072,7 +4088,7 @@
    ]
   },
   "CHOICEIN": {
-   "currentPrice": 726,
+   "currentPrice": 770.45,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -4082,7 +4098,7 @@
    "trend": []
   },
   "CHOLAFIN": {
-   "currentPrice": 1874.6,
+   "currentPrice": 1802,
    "targetMeanPrice": 1937.5625,
    "targetHighPrice": 2150,
    "targetLowPrice": 1645,
@@ -4125,12 +4141,12 @@
    ]
   },
   "CHOLAHLDNG": {
-   "currentPrice": 1399,
+   "currentPrice": 1368.5,
    "targetMeanPrice": 2051.6667,
    "targetHighPrice": 2345,
    "targetLowPrice": 1810,
-   "recommendationMean": 1,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 3,
    "trend": [
     {
@@ -4160,7 +4176,7 @@
    ]
   },
   "CIEINDIA": {
-   "currentPrice": 367.2,
+   "currentPrice": 373.25,
    "targetMeanPrice": 465,
    "targetHighPrice": 515,
    "targetLowPrice": 385,
@@ -4179,8 +4195,8 @@
    ]
   },
   "CIPLA": {
-   "currentPrice": 1415,
-   "targetMeanPrice": 1507.3055,
+   "currentPrice": 1439.9,
+   "targetMeanPrice": 1504.5278,
    "targetHighPrice": 1800,
    "targetLowPrice": 1214,
    "recommendationMean": 2.08333,
@@ -4222,12 +4238,12 @@
    ]
   },
   "CLEAN": {
-   "currentPrice": 688.35,
+   "currentPrice": 685.15,
    "targetMeanPrice": 913.8571,
    "targetHighPrice": 1150,
    "targetLowPrice": 750,
-   "recommendationMean": 1.64286,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 14,
    "trend": [
     {
@@ -4257,7 +4273,7 @@
    ]
   },
   "CLEANMAX": {
-   "currentPrice": 1223.8,
+   "currentPrice": 1251.4,
    "targetMeanPrice": 1604.5,
    "targetHighPrice": 1750,
    "targetLowPrice": 1478,
@@ -4300,7 +4316,7 @@
    ]
   },
   "CMPDI": {
-   "currentPrice": 180,
+   "currentPrice": 183.84,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -4310,18 +4326,18 @@
    "trend": []
   },
   "COALINDIA": {
-   "currentPrice": 390,
-   "targetMeanPrice": 459.0435,
+   "currentPrice": 388.85,
+   "targetMeanPrice": 457.63635,
    "targetHighPrice": 550,
    "targetLowPrice": 360,
-   "recommendationMean": 2.04167,
+   "recommendationMean": 2.08696,
    "recommendationKey": "buy",
-   "numberOfAnalystOpinions": 23,
+   "numberOfAnalystOpinions": 22,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 8,
-     "buy": 9,
+     "buy": 8,
      "hold": 5,
      "sell": 1,
      "strongSell": 1
@@ -4353,18 +4369,18 @@
    ]
   },
   "COCHINSHIP": {
-   "currentPrice": 1125,
-   "targetMeanPrice": 1388,
+   "currentPrice": 1126,
+   "targetMeanPrice": 1400.4,
    "targetHighPrice": 1780,
    "targetLowPrice": 800,
-   "recommendationMean": 2.5,
+   "recommendationMean": 2.2,
    "recommendationKey": "buy",
-   "numberOfAnalystOpinions": 4,
+   "numberOfAnalystOpinions": 5,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 0,
-     "buy": 2,
+     "buy": 3,
      "hold": 1,
      "sell": 1,
      "strongSell": 0
@@ -4396,18 +4412,18 @@
    ]
   },
   "COFORGE": {
-   "currentPrice": 2086.7,
-   "targetMeanPrice": 2176.3428,
-   "targetHighPrice": 2700,
+   "currentPrice": 2071,
+   "targetMeanPrice": 2195.0557,
+   "targetHighPrice": 2750,
    "targetLowPrice": 1267,
-   "recommendationMean": 1.65714,
+   "recommendationMean": 1.63889,
    "recommendationKey": "buy",
-   "numberOfAnalystOpinions": 35,
+   "numberOfAnalystOpinions": 36,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 6,
-     "buy": 24,
+     "buy": 25,
      "hold": 1,
      "sell": 3,
      "strongSell": 1
@@ -4439,7 +4455,7 @@
    ]
   },
   "COHANCE": {
-   "currentPrice": 462.5,
+   "currentPrice": 497.55,
    "targetMeanPrice": 510.5,
    "targetHighPrice": 1150,
    "targetLowPrice": 280,
@@ -4474,8 +4490,8 @@
    ]
   },
   "COLPAL": {
-   "currentPrice": 1760,
-   "targetMeanPrice": 1877.2693,
+   "currentPrice": 1770,
+   "targetMeanPrice": 1886.8846,
    "targetHighPrice": 2285,
    "targetLowPrice": 1575,
    "recommendationMean": 3,
@@ -4517,7 +4533,7 @@
    ]
   },
   "COMFINTE": {
-   "currentPrice": 5.75,
+   "currentPrice": 5.57,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -4527,7 +4543,7 @@
    "trend": []
   },
   "CONCOR": {
-   "currentPrice": 438.35,
+   "currentPrice": 420.7,
    "targetMeanPrice": 520.6429,
    "targetHighPrice": 640,
    "targetLowPrice": 416,
@@ -4570,7 +4586,7 @@
    ]
   },
   "CONCORDBIO": {
-   "currentPrice": 548.5,
+   "currentPrice": 549.4,
    "targetMeanPrice": 760.5,
    "targetHighPrice": 850,
    "targetLowPrice": 680,
@@ -4597,7 +4613,7 @@
    ]
   },
   "CORDELIA": {
-   "currentPrice": 85.88,
+   "currentPrice": 82.31,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -4607,13 +4623,13 @@
    "trend": []
   },
   "COROMANDEL": {
-   "currentPrice": 1996,
-   "targetMeanPrice": 2325.889,
+   "currentPrice": 1959.8,
+   "targetMeanPrice": 2328.7,
    "targetHighPrice": 2788,
    "targetLowPrice": 2100,
    "recommendationMean": 1.44444,
    "recommendationKey": "strong_buy",
-   "numberOfAnalystOpinions": 9,
+   "numberOfAnalystOpinions": 10,
    "trend": [
     {
      "period": "0m",
@@ -4642,7 +4658,7 @@
    ]
   },
   "CPPLUS": {
-   "currentPrice": 4051.7,
+   "currentPrice": 4307.2,
    "targetMeanPrice": 4412.1665,
    "targetHighPrice": 5200,
    "targetLowPrice": 3100,
@@ -4677,7 +4693,7 @@
    ]
   },
   "CRAFTSMAN": {
-   "currentPrice": 11730,
+   "currentPrice": 12005,
    "targetMeanPrice": 12007.777,
    "targetHighPrice": 13000,
    "targetLowPrice": 11000,
@@ -4704,7 +4720,7 @@
    ]
   },
   "CREDITACC": {
-   "currentPrice": 983,
+   "currentPrice": 999,
    "targetMeanPrice": 1578,
    "targetHighPrice": 1910,
    "targetLowPrice": 1200,
@@ -4739,7 +4755,7 @@
    ]
   },
   "CRISIL": {
-   "currentPrice": 4089,
+   "currentPrice": 3925.8,
    "targetMeanPrice": 5150,
    "targetHighPrice": 5200,
    "targetLowPrice": 5100,
@@ -4774,7 +4790,7 @@
    ]
   },
   "CROMPTON": {
-   "currentPrice": 223.4,
+   "currentPrice": 211,
    "targetMeanPrice": 318.75,
    "targetHighPrice": 400,
    "targetLowPrice": 246,
@@ -4809,27 +4825,27 @@
    ]
   },
   "CUB": {
-   "currentPrice": 248.8,
-   "targetMeanPrice": 261.56522,
+   "currentPrice": 233.1,
+   "targetMeanPrice": 263.30435,
    "targetHighPrice": 300,
    "targetLowPrice": 190,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.56522,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 23,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 1,
-     "buy": 17,
-     "hold": 2,
+     "buy": 18,
+     "hold": 1,
      "sell": 1,
      "strongSell": 2
     },
     {
      "period": "-1m",
      "strongBuy": 1,
-     "buy": 17,
-     "hold": 2,
+     "buy": 18,
+     "hold": 1,
      "sell": 1,
      "strongSell": 2
     },
@@ -4852,7 +4868,7 @@
    ]
   },
   "CUMMINSIND": {
-   "currentPrice": 4100,
+   "currentPrice": 4205.5,
    "targetMeanPrice": 5065.727,
    "targetHighPrice": 6160,
    "targetLowPrice": 3320,
@@ -4895,7 +4911,7 @@
    ]
   },
   "CUPID": {
-   "currentPrice": 365.5,
+   "currentPrice": 389.5,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -4905,19 +4921,19 @@
    "trend": []
   },
   "CYIENT": {
-   "currentPrice": 1151.9,
-   "targetMeanPrice": 1220.5714,
-   "targetHighPrice": 1435,
+   "currentPrice": 1156.9,
+   "targetMeanPrice": 1240.0952,
+   "targetHighPrice": 1530,
    "targetLowPrice": 982,
-   "recommendationMean": 2.28571,
+   "recommendationMean": 2.19048,
    "recommendationKey": "buy",
    "numberOfAnalystOpinions": 21,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 8,
-     "buy": 6,
-     "hold": 4,
+     "buy": 7,
+     "hold": 3,
      "sell": 2,
      "strongSell": 1
     },
@@ -4948,7 +4964,7 @@
    ]
   },
   "DABUR": {
-   "currentPrice": 393.1,
+   "currentPrice": 412.75,
    "targetMeanPrice": 466.8611,
    "targetHighPrice": 600,
    "targetLowPrice": 380,
@@ -4991,9 +5007,9 @@
    ]
   },
   "DALBHARAT": {
-   "currentPrice": 1579.8,
-   "targetMeanPrice": 1930.8823,
-   "targetHighPrice": 2300,
+   "currentPrice": 1487.1,
+   "targetMeanPrice": 1912.9412,
+   "targetHighPrice": 2265,
    "targetLowPrice": 1620,
    "recommendationMean": 1.94118,
    "recommendationKey": "buy",
@@ -5034,12 +5050,12 @@
    ]
   },
   "DATAPATTNS": {
-   "currentPrice": 4215,
+   "currentPrice": 4336.9,
    "targetMeanPrice": 4666.0835,
    "targetHighPrice": 5545,
    "targetLowPrice": 3910,
-   "recommendationMean": 2.08333,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 12,
    "trend": [
     {
@@ -5077,7 +5093,7 @@
    ]
   },
   "DEEPAKFERT": {
-   "currentPrice": 1429.4,
+   "currentPrice": 1446.9,
    "targetMeanPrice": 1862,
    "targetHighPrice": 2000,
    "targetLowPrice": 1785,
@@ -5112,7 +5128,7 @@
    ]
   },
   "DEEPAKNTR": {
-   "currentPrice": 1535,
+   "currentPrice": 1539,
    "targetMeanPrice": 1818.2222,
    "targetHighPrice": 2300,
    "targetLowPrice": 1300,
@@ -5147,7 +5163,7 @@
    ]
   },
   "DELHIVERY": {
-   "currentPrice": 458.9,
+   "currentPrice": 458.6,
    "targetMeanPrice": 528.15,
    "targetHighPrice": 600,
    "targetLowPrice": 450,
@@ -5190,7 +5206,7 @@
    ]
   },
   "DELTACORP": {
-   "currentPrice": 76.28,
+   "currentPrice": 71.34,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -5200,7 +5216,7 @@
    "trend": []
   },
   "DEVYANI": {
-   "currentPrice": 121.55,
+   "currentPrice": 125.93,
    "targetMeanPrice": 150.95651,
    "targetHighPrice": 190,
    "targetLowPrice": 116,
@@ -5243,7 +5259,7 @@
    ]
   },
   "DIVISLAB": {
-   "currentPrice": 11180.5,
+   "currentPrice": 11560,
    "targetMeanPrice": 11163.393,
    "targetHighPrice": 15500,
    "targetLowPrice": 7305,
@@ -5286,7 +5302,7 @@
    ]
   },
   "DIXON": {
-   "currentPrice": 13120,
+   "currentPrice": 13138,
    "targetMeanPrice": 14213.148,
    "targetHighPrice": 18000,
    "targetLowPrice": 9082,
@@ -5329,7 +5345,7 @@
    ]
   },
   "DLF": {
-   "currentPrice": 785,
+   "currentPrice": 805.45,
    "targetMeanPrice": 819.4783,
    "targetHighPrice": 1000,
    "targetLowPrice": 676,
@@ -5372,7 +5388,7 @@
    ]
   },
   "DMART": {
-   "currentPrice": 3490,
+   "currentPrice": 3541.3,
    "targetMeanPrice": 3881.879,
    "targetHighPrice": 5723,
    "targetLowPrice": 2800,
@@ -5415,7 +5431,7 @@
    ]
   },
   "DOMS": {
-   "currentPrice": 2150,
+   "currentPrice": 2282.9,
    "targetMeanPrice": 2488.5386,
    "targetHighPrice": 2831,
    "targetLowPrice": 2059,
@@ -5458,8 +5474,8 @@
    ]
   },
   "DRREDDY": {
-   "currentPrice": 1390.2,
-   "targetMeanPrice": 1364.4054,
+   "currentPrice": 1381.7,
+   "targetMeanPrice": 1366.5676,
    "targetHighPrice": 1730,
    "targetLowPrice": 1039,
    "recommendationMean": 2.32432,
@@ -5501,7 +5517,7 @@
    ]
   },
   "EASEMYTRIP": {
-   "currentPrice": 6.13,
+   "currentPrice": 6.03,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -5511,12 +5527,12 @@
    "trend": []
   },
   "ECLERX": {
-   "currentPrice": 1447.5,
+   "currentPrice": 1548.3,
    "targetMeanPrice": 1813.4546,
    "targetHighPrice": 2250,
    "targetLowPrice": 1450,
-   "recommendationMean": 2.63636,
-   "recommendationKey": "hold",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 11,
    "trend": [
     {
@@ -5554,8 +5570,8 @@
    ]
   },
   "EICHERMOT": {
-   "currentPrice": 8113,
-   "targetMeanPrice": 8523.1,
+   "currentPrice": 8003.5,
+   "targetMeanPrice": 8530.625,
    "targetHighPrice": 9500,
    "targetLowPrice": 7100,
    "recommendationMean": 1.875,
@@ -5597,7 +5613,7 @@
    ]
   },
   "EIDPARRY": {
-   "currentPrice": 643,
+   "currentPrice": 666.9,
    "targetMeanPrice": 1006,
    "targetHighPrice": 1006,
    "targetLowPrice": 1006,
@@ -5632,10 +5648,10 @@
    ]
   },
   "EIHOTEL": {
-   "currentPrice": 332.25,
-   "targetMeanPrice": 373,
+   "currentPrice": 337.75,
+   "targetMeanPrice": 380.5,
    "targetHighPrice": 396,
-   "targetLowPrice": 350,
+   "targetLowPrice": 365,
    "recommendationMean": 1,
    "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 2,
@@ -5643,7 +5659,7 @@
     {
      "period": "0m",
      "strongBuy": 0,
-     "buy": 2,
+     "buy": 1,
      "hold": 0,
      "sell": 0,
      "strongSell": 0
@@ -5675,7 +5691,7 @@
    ]
   },
   "ELECON": {
-   "currentPrice": 455.5,
+   "currentPrice": 440.95,
    "targetMeanPrice": 600,
    "targetHighPrice": 600,
    "targetLowPrice": 600,
@@ -5702,9 +5718,9 @@
    ]
   },
   "ELGIEQUIP": {
-   "currentPrice": 555.25,
-   "targetMeanPrice": 704.6,
-   "targetHighPrice": 740,
+   "currentPrice": 558.4,
+   "targetMeanPrice": 691.6,
+   "targetHighPrice": 736,
    "targetLowPrice": 663,
    "recommendationMean": 1,
    "recommendationKey": "strong_buy",
@@ -5737,7 +5753,7 @@
    ]
   },
   "EMAMILTD": {
-   "currentPrice": 422.15,
+   "currentPrice": 414.35,
    "targetMeanPrice": 504.0909,
    "targetHighPrice": 625,
    "targetLowPrice": 404,
@@ -5790,8 +5806,8 @@
    "trend": []
   },
   "EMCURE": {
-   "currentPrice": 2339,
-   "targetMeanPrice": 2422.5,
+   "currentPrice": 2308.6,
+   "targetMeanPrice": 2454.375,
    "targetHighPrice": 2751,
    "targetLowPrice": 2150,
    "recommendationMean": null,
@@ -5833,7 +5849,7 @@
    ]
   },
   "EMMVEE": {
-   "currentPrice": 258.5,
+   "currentPrice": 268.5,
    "targetMeanPrice": 371,
    "targetHighPrice": 430,
    "targetLowPrice": 285,
@@ -5876,7 +5892,7 @@
    ]
   },
   "EMPOWER": {
-   "currentPrice": 0.96,
+   "currentPrice": 1,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -5886,8 +5902,8 @@
    "trend": []
   },
   "ENDURANCE": {
-   "currentPrice": 2570,
-   "targetMeanPrice": 3063.6667,
+   "currentPrice": 2587.4,
+   "targetMeanPrice": 3067.5334,
    "targetHighPrice": 3550,
    "targetLowPrice": 2650,
    "recommendationMean": 1.6,
@@ -5904,7 +5920,7 @@
     },
     {
      "period": "-1m",
-     "strongBuy": 3,
+     "strongBuy": 4,
      "buy": 7,
      "hold": 2,
      "sell": 0,
@@ -5912,7 +5928,7 @@
     },
     {
      "period": "-2m",
-     "strongBuy": 3,
+     "strongBuy": 4,
      "buy": 8,
      "hold": 2,
      "sell": 0,
@@ -5920,8 +5936,8 @@
     },
     {
      "period": "-3m",
-     "strongBuy": 3,
-     "buy": 9,
+     "strongBuy": 4,
+     "buy": 8,
      "hold": 2,
      "sell": 0,
      "strongSell": 2
@@ -5929,8 +5945,8 @@
    ]
   },
   "ENGINERSIN": {
-   "currentPrice": 296.9,
-   "targetMeanPrice": 327.83334,
+   "currentPrice": 300.75,
+   "targetMeanPrice": 336.16666,
    "targetHighPrice": 388,
    "targetLowPrice": 290,
    "recommendationMean": null,
@@ -5972,9 +5988,9 @@
    ]
   },
   "ENRIN": {
-   "currentPrice": 2944,
-   "targetMeanPrice": 3824.2666,
-   "targetHighPrice": 4800,
+   "currentPrice": 3102,
+   "targetMeanPrice": 3790.9333,
+   "targetHighPrice": 4400,
    "targetLowPrice": 3077,
    "recommendationMean": 1.86667,
    "recommendationKey": "buy",
@@ -6015,12 +6031,12 @@
    ]
   },
   "ESCORTS": {
-   "currentPrice": 2475.4,
+   "currentPrice": 2576.3,
    "targetMeanPrice": 2766.2104,
    "targetHighPrice": 3541,
    "targetLowPrice": 2100,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 2.75,
+   "recommendationKey": "hold",
    "numberOfAnalystOpinions": 19,
    "trend": [
     {
@@ -6058,7 +6074,7 @@
    ]
   },
   "ESDS": {
-   "currentPrice": 1130,
+   "currentPrice": 1152.1,
    "targetMeanPrice": 1550,
    "targetHighPrice": 1550,
    "targetLowPrice": 1550,
@@ -6093,8 +6109,8 @@
    ]
   },
   "ETERNAL": {
-   "currentPrice": 364,
-   "targetMeanPrice": 385.21875,
+   "currentPrice": 363,
+   "targetMeanPrice": 385.6875,
    "targetHighPrice": 513,
    "targetLowPrice": 220,
    "recommendationMean": 1.53125,
@@ -6136,7 +6152,7 @@
    ]
   },
   "EXIDEIND": {
-   "currentPrice": 409,
+   "currentPrice": 399.1,
    "targetMeanPrice": 441.6875,
    "targetHighPrice": 560,
    "targetLowPrice": 335,
@@ -6179,7 +6195,7 @@
    ]
   },
   "FACT": {
-   "currentPrice": 755.8,
+   "currentPrice": 788.5,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -6189,7 +6205,7 @@
    "trend": []
   },
   "FCSSOFT": {
-   "currentPrice": 1.4,
+   "currentPrice": 1.41,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -6199,8 +6215,8 @@
    "trend": []
   },
   "FEDERALBNK": {
-   "currentPrice": 373.5,
-   "targetMeanPrice": 369.91177,
+   "currentPrice": 360,
+   "targetMeanPrice": 370.35294,
    "targetHighPrice": 430,
    "targetLowPrice": 310,
    "recommendationMean": 2.05882,
@@ -6242,7 +6258,7 @@
    ]
   },
   "FINCABLES": {
-   "currentPrice": 1200.3,
+   "currentPrice": 1183.5,
    "targetMeanPrice": 1544.8,
    "targetHighPrice": 1640,
    "targetLowPrice": 1465,
@@ -6285,7 +6301,7 @@
    ]
   },
   "FIRSTCRY": {
-   "currentPrice": 169.4,
+   "currentPrice": 160.17,
    "targetMeanPrice": 222.66667,
    "targetHighPrice": 266,
    "targetLowPrice": 165,
@@ -6320,7 +6336,7 @@
    ]
   },
   "FIVESTAR": {
-   "currentPrice": 432.8,
+   "currentPrice": 400.85,
    "targetMeanPrice": 647.7,
    "targetHighPrice": 747,
    "targetLowPrice": 570,
@@ -6347,12 +6363,12 @@
    ]
   },
   "FLUOROCHEM": {
-   "currentPrice": 4930,
+   "currentPrice": 4824.5,
    "targetMeanPrice": 4860.353,
    "targetHighPrice": 6094,
    "targetLowPrice": 3000,
-   "recommendationMean": 1.94118,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 17,
    "trend": [
     {
@@ -6382,7 +6398,7 @@
    ]
   },
   "FORCEMOT": {
-   "currentPrice": 20285,
+   "currentPrice": 20179,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -6392,7 +6408,7 @@
    "trend": []
   },
   "FORTIS": {
-   "currentPrice": 825,
+   "currentPrice": 832,
    "targetMeanPrice": 1013.95,
    "targetHighPrice": 1180,
    "targetLowPrice": 810,
@@ -6435,12 +6451,12 @@
    ]
   },
   "FRACTAL": {
-   "currentPrice": 818.9,
+   "currentPrice": 809.35,
    "targetMeanPrice": 986.1111,
    "targetHighPrice": 1280,
    "targetLowPrice": 705,
-   "recommendationMean": 2,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 9,
    "trend": [
     {
@@ -6478,7 +6494,7 @@
    ]
   },
   "FSL": {
-   "currentPrice": 278.4,
+   "currentPrice": 284.4,
    "targetMeanPrice": 339.0625,
    "targetHighPrice": 384,
    "targetLowPrice": 250,
@@ -6513,7 +6529,7 @@
    ]
   },
   "GABRIEL": {
-   "currentPrice": 1562,
+   "currentPrice": 1546.8,
    "targetMeanPrice": 1679.5,
    "targetHighPrice": 1830,
    "targetLowPrice": 1500,
@@ -6548,7 +6564,7 @@
    ]
   },
   "GAIL": {
-   "currentPrice": 191.44,
+   "currentPrice": 185,
    "targetMeanPrice": 201.06667,
    "targetHighPrice": 225,
    "targetLowPrice": 162,
@@ -6591,7 +6607,7 @@
    ]
   },
   "GAJA": {
-   "currentPrice": 125.55,
+   "currentPrice": 130.97,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -6601,7 +6617,7 @@
    "trend": []
   },
   "GALLANTT": {
-   "currentPrice": 538.2,
+   "currentPrice": 539.6,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -6611,7 +6627,7 @@
    "trend": []
   },
   "GATECH": {
-   "currentPrice": 0.52,
+   "currentPrice": 0.51,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -6621,7 +6637,7 @@
    "trend": []
   },
   "GENESYS": {
-   "currentPrice": 173.3,
+   "currentPrice": 162.82,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -6631,12 +6647,12 @@
    "trend": []
   },
   "GESHIP": {
-   "currentPrice": 1531,
+   "currentPrice": 1550.6,
    "targetMeanPrice": 2003.3334,
    "targetHighPrice": 2063,
    "targetLowPrice": 1952,
-   "recommendationMean": 1.33333,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 3,
    "trend": [
     {
@@ -6674,12 +6690,12 @@
    ]
   },
   "GICRE": {
-   "currentPrice": 332,
+   "currentPrice": 335.5,
    "targetMeanPrice": 445.5,
    "targetHighPrice": 520,
    "targetLowPrice": 288,
-   "recommendationMean": 2.16667,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 6,
    "trend": [
     {
@@ -6717,7 +6733,7 @@
    ]
   },
   "GILLETTE": {
-   "currentPrice": 7093.5,
+   "currentPrice": 7243,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -6727,12 +6743,12 @@
    "trend": []
   },
   "GLAND": {
-   "currentPrice": 3330,
+   "currentPrice": 3362,
    "targetMeanPrice": 3271.0715,
    "targetHighPrice": 3920,
    "targetLowPrice": 2180,
-   "recommendationMean": 2.28571,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 14,
    "trend": [
     {
@@ -6770,7 +6786,7 @@
    ]
   },
   "GLAXO": {
-   "currentPrice": 2740,
+   "currentPrice": 2770.4,
    "targetMeanPrice": 3146.6,
    "targetHighPrice": 3500,
    "targetLowPrice": 2760,
@@ -6813,7 +6829,7 @@
    ]
   },
   "GLENMARK": {
-   "currentPrice": 2648,
+   "currentPrice": 2834.9,
    "targetMeanPrice": 2703.0908,
    "targetHighPrice": 3069,
    "targetLowPrice": 2100,
@@ -6856,7 +6872,7 @@
    ]
   },
   "GMDCLTD": {
-   "currentPrice": 456.2,
+   "currentPrice": 466,
    "targetMeanPrice": 267,
    "targetHighPrice": 267,
    "targetLowPrice": 267,
@@ -6883,7 +6899,7 @@
    ]
   },
   "GMRAIRPORT": {
-   "currentPrice": 105,
+   "currentPrice": 99.26,
    "targetMeanPrice": 115.375,
    "targetHighPrice": 125,
    "targetLowPrice": 91,
@@ -6926,7 +6942,7 @@
    ]
   },
   "GODFRYPHLP": {
-   "currentPrice": 1785,
+   "currentPrice": 1797,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -6936,8 +6952,8 @@
    "trend": []
   },
   "GODREJCP": {
-   "currentPrice": 919.5,
-   "targetMeanPrice": 1052.9706,
+   "currentPrice": 918.9,
+   "targetMeanPrice": 1055.1765,
    "targetHighPrice": 1400,
    "targetLowPrice": 747,
    "recommendationMean": 1.58824,
@@ -6979,7 +6995,7 @@
    ]
   },
   "GODREJIND": {
-   "currentPrice": 1090.95,
+   "currentPrice": 1047.8,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -6989,7 +7005,7 @@
    "trend": []
   },
   "GODREJPROP": {
-   "currentPrice": 1930.2,
+   "currentPrice": 1943,
    "targetMeanPrice": 2207.8635,
    "targetHighPrice": 3000,
    "targetLowPrice": 1325,
@@ -7024,7 +7040,7 @@
    ]
   },
   "GPIL": {
-   "currentPrice": 225.65,
+   "currentPrice": 211.14,
    "targetMeanPrice": 290,
    "targetHighPrice": 290,
    "targetLowPrice": 290,
@@ -7043,18 +7059,18 @@
    ]
   },
   "GRANULES": {
-   "currentPrice": 816.5,
-   "targetMeanPrice": 903.25,
-   "targetHighPrice": 1045,
+   "currentPrice": 825.55,
+   "targetMeanPrice": 911.7778,
+   "targetHighPrice": 1050,
    "targetLowPrice": 588,
-   "recommendationMean": null,
-   "recommendationKey": "none",
-   "numberOfAnalystOpinions": 8,
+   "recommendationMean": 1.44444,
+   "recommendationKey": "strong_buy",
+   "numberOfAnalystOpinions": 9,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 4,
-     "buy": 4,
+     "buy": 5,
      "hold": 0,
      "sell": 0,
      "strongSell": 0
@@ -7070,12 +7086,12 @@
    ]
   },
   "GRAPHITE": {
-   "currentPrice": 765,
-   "targetMeanPrice": 948,
+   "currentPrice": 792,
+   "targetMeanPrice": 958,
    "targetHighPrice": 1050,
-   "targetLowPrice": 845,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "targetLowPrice": 885,
+   "recommendationMean": 1,
+   "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 4,
    "trend": [
     {
@@ -7113,7 +7129,7 @@
    ]
   },
   "GRASIM": {
-   "currentPrice": 3103.7,
+   "currentPrice": 3124.2,
    "targetMeanPrice": 3732.2,
    "targetHighPrice": 4000,
    "targetLowPrice": 3500,
@@ -7156,12 +7172,12 @@
    ]
   },
   "GRAVITA": {
-   "currentPrice": 1484.9,
+   "currentPrice": 1469.6,
    "targetMeanPrice": 1919.7,
    "targetHighPrice": 2332,
    "targetLowPrice": 1530,
-   "recommendationMean": 1.2,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 10,
    "trend": [
     {
@@ -7183,7 +7199,7 @@
    ]
   },
   "GROWW": {
-   "currentPrice": 224.66,
+   "currentPrice": 222.41,
    "targetMeanPrice": 234.16667,
    "targetHighPrice": 260,
    "targetLowPrice": 190,
@@ -7226,19 +7242,19 @@
    ]
   },
   "GRSE": {
-   "currentPrice": 2063,
-   "targetMeanPrice": 2873.625,
+   "currentPrice": 2144,
+   "targetMeanPrice": 2736.75,
    "targetHighPrice": 3500,
    "targetLowPrice": 1735,
-   "recommendationMean": 2,
+   "recommendationMean": 1.75,
    "recommendationKey": "buy",
    "numberOfAnalystOpinions": 8,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 0,
-     "buy": 5,
-     "hold": 2,
+     "buy": 6,
+     "hold": 1,
      "sell": 1,
      "strongSell": 0
     },
@@ -7271,12 +7287,12 @@
    "trend": []
   },
   "GVT&D": {
-   "currentPrice": 4235,
-   "targetMeanPrice": 5407.278,
+   "currentPrice": 4263,
+   "targetMeanPrice": 5407.0557,
    "targetHighPrice": 6587,
    "targetLowPrice": 4390,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.44444,
+   "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 18,
    "trend": [
     {
@@ -7314,7 +7330,7 @@
    ]
   },
   "HAL": {
-   "currentPrice": 4809,
+   "currentPrice": 5074,
    "targetMeanPrice": 5656.2964,
    "targetHighPrice": 6800,
    "targetLowPrice": 3650,
@@ -7357,7 +7373,7 @@
    ]
   },
   "HAPPSTMNDS": {
-   "currentPrice": 296.15,
+   "currentPrice": 290.5,
    "targetMeanPrice": 411,
    "targetHighPrice": 535,
    "targetLowPrice": 345,
@@ -7400,18 +7416,18 @@
    ]
   },
   "HAVELLS": {
-   "currentPrice": 1211,
-   "targetMeanPrice": 1289.5428,
+   "currentPrice": 1142.4,
+   "targetMeanPrice": 1283.6765,
    "targetHighPrice": 1600,
    "targetLowPrice": 950,
-   "recommendationMean": 1.85714,
+   "recommendationMean": 1.88235,
    "recommendationKey": "buy",
-   "numberOfAnalystOpinions": 35,
+   "numberOfAnalystOpinions": 34,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 9,
-     "buy": 17,
+     "buy": 16,
      "hold": 6,
      "sell": 0,
      "strongSell": 3
@@ -7443,7 +7459,7 @@
    ]
   },
   "HBLENGINE": {
-   "currentPrice": 760,
+   "currentPrice": 757.95,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -7453,18 +7469,18 @@
    "trend": []
   },
   "HCLTECH": {
-   "currentPrice": 1344.4,
-   "targetMeanPrice": 1277.641,
-   "targetHighPrice": 1530,
+   "currentPrice": 1424.1,
+   "targetMeanPrice": 1295.575,
+   "targetHighPrice": 1650,
    "targetLowPrice": 1070,
-   "recommendationMean": 2.79487,
+   "recommendationMean": 2.75,
    "recommendationKey": "hold",
-   "numberOfAnalystOpinions": 39,
+   "numberOfAnalystOpinions": 40,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 8,
-     "buy": 6,
+     "buy": 7,
      "hold": 16,
      "sell": 3,
      "strongSell": 6
@@ -7496,7 +7512,7 @@
    ]
   },
   "HDBFS": {
-   "currentPrice": 564.8,
+   "currentPrice": 550.5,
    "targetMeanPrice": 728.5,
    "targetHighPrice": 900,
    "targetLowPrice": 610,
@@ -7539,7 +7555,7 @@
    ]
   },
   "HDFCAMC": {
-   "currentPrice": 2697,
+   "currentPrice": 2706,
    "targetMeanPrice": 2975.0386,
    "targetHighPrice": 3400,
    "targetLowPrice": 2530,
@@ -7582,8 +7598,8 @@
    ]
   },
   "HDFCBANK": {
-   "currentPrice": 846,
-   "targetMeanPrice": 961.95,
+   "currentPrice": 857.25,
+   "targetMeanPrice": 963.95,
    "targetHighPrice": 1270,
    "targetLowPrice": 830,
    "recommendationMean": 1.225,
@@ -7625,12 +7641,12 @@
    ]
   },
   "HDFCLIFE": {
-   "currentPrice": 588.65,
+   "currentPrice": 588.45,
    "targetMeanPrice": 719.2727,
    "targetHighPrice": 910,
    "targetLowPrice": 610,
-   "recommendationMean": 1.24242,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 33,
    "trend": [
     {
@@ -7668,9 +7684,9 @@
    ]
   },
   "HEGAM": {
-   "currentPrice": 258.5,
-   "targetMeanPrice": 710,
-   "targetHighPrice": 750,
+   "currentPrice": 285.79,
+   "targetMeanPrice": 718.3333,
+   "targetHighPrice": 775,
    "targetLowPrice": 630,
    "recommendationMean": 1,
    "recommendationKey": "strong_buy",
@@ -7695,8 +7711,8 @@
    ]
   },
   "HEROMOTOCO": {
-   "currentPrice": 5536,
-   "targetMeanPrice": 6094.1055,
+   "currentPrice": 5701,
+   "targetMeanPrice": 6097.921,
    "targetHighPrice": 7554,
    "targetLowPrice": 4350,
    "recommendationMean": null,
@@ -7738,8 +7754,8 @@
    ]
   },
   "HEXT": {
-   "currentPrice": 483,
-   "targetMeanPrice": 547.5,
+   "currentPrice": 498.9,
+   "targetMeanPrice": 550.55554,
    "targetHighPrice": 630,
    "targetLowPrice": 470,
    "recommendationMean": 2.83333,
@@ -7781,7 +7797,7 @@
    ]
   },
   "HFCL": {
-   "currentPrice": 188.1,
+   "currentPrice": 172.48,
    "targetMeanPrice": 280,
    "targetHighPrice": 410,
    "targetLowPrice": 150,
@@ -7800,7 +7816,7 @@
    ]
   },
   "HINDALCO": {
-   "currentPrice": 929.5,
+   "currentPrice": 923,
    "targetMeanPrice": 1117.2333,
    "targetHighPrice": 1350,
    "targetLowPrice": 780,
@@ -7843,7 +7859,7 @@
    ]
   },
   "HINDCOPPER": {
-   "currentPrice": 418.8,
+   "currentPrice": 418.5,
    "targetMeanPrice": 495,
    "targetHighPrice": 625,
    "targetLowPrice": 365,
@@ -7878,12 +7894,12 @@
    ]
   },
   "HINDPETRO": {
-   "currentPrice": 396.35,
+   "currentPrice": 386,
    "targetMeanPrice": 383.9355,
    "targetHighPrice": 590,
    "targetLowPrice": 290,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 2.90323,
+   "recommendationKey": "hold",
    "numberOfAnalystOpinions": 31,
    "trend": [
     {
@@ -7921,19 +7937,19 @@
    ]
   },
   "HINDUNILVR": {
-   "currentPrice": 2052.5,
-   "targetMeanPrice": 2242.1052,
+   "currentPrice": 2117.2,
+   "targetMeanPrice": 2256.9473,
    "targetHighPrice": 2750,
    "targetLowPrice": 1800,
-   "recommendationMean": 1.82051,
+   "recommendationMean": 1.76923,
    "recommendationKey": "buy",
    "numberOfAnalystOpinions": 38,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 8,
-     "buy": 20,
-     "hold": 9,
+     "buy": 21,
+     "hold": 8,
      "sell": 0,
      "strongSell": 2
     },
@@ -7964,7 +7980,7 @@
    ]
   },
   "HINDZINC": {
-   "currentPrice": 521.6,
+   "currentPrice": 545,
    "targetMeanPrice": 638.7143,
    "targetHighPrice": 770,
    "targetLowPrice": 445,
@@ -8007,12 +8023,12 @@
    ]
   },
   "HOMEFIRST": {
-   "currentPrice": 1052,
+   "currentPrice": 999.1,
    "targetMeanPrice": 1383.3478,
    "targetHighPrice": 1674,
    "targetLowPrice": 1002,
-   "recommendationMean": 1.26087,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 23,
    "trend": [
     {
@@ -8050,12 +8066,12 @@
    ]
   },
   "HONASA": {
-   "currentPrice": 524.55,
+   "currentPrice": 512.55,
    "targetMeanPrice": 582.5625,
    "targetHighPrice": 750,
    "targetLowPrice": 390,
-   "recommendationMean": 1.6875,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 16,
    "trend": [
     {
@@ -8093,7 +8109,7 @@
    ]
   },
   "HONAUT": {
-   "currentPrice": 30350,
+   "currentPrice": 29175,
    "targetMeanPrice": 39235,
    "targetHighPrice": 48740,
    "targetLowPrice": 30000,
@@ -8120,7 +8136,7 @@
    ]
   },
   "HSCL": {
-   "currentPrice": 559,
+   "currentPrice": 549.25,
    "targetMeanPrice": 750,
    "targetHighPrice": 780,
    "targetLowPrice": 720,
@@ -8147,7 +8163,7 @@
    ]
   },
   "HUDCO": {
-   "currentPrice": 162.05,
+   "currentPrice": 155.64,
    "targetMeanPrice": 214,
    "targetHighPrice": 214,
    "targetLowPrice": 214,
@@ -8166,8 +8182,8 @@
    ]
   },
   "HYUNDAI": {
-   "currentPrice": 2215,
-   "targetMeanPrice": 2281.276,
+   "currentPrice": 2006,
+   "targetMeanPrice": 2293.3447,
    "targetHighPrice": 2595,
    "targetLowPrice": 1630,
    "recommendationMean": 1.55172,
@@ -8209,12 +8225,12 @@
    ]
   },
   "ICICIAMC": {
-   "currentPrice": 2953,
+   "currentPrice": 2975,
    "targetMeanPrice": 3553.5264,
    "targetHighPrice": 3900,
    "targetLowPrice": 3172,
-   "recommendationMean": 1.68421,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 19,
    "trend": [
     {
@@ -8252,10 +8268,10 @@
    ]
   },
   "ICICIBANK": {
-   "currentPrice": 1640,
-   "targetMeanPrice": 1771.6586,
-   "targetHighPrice": 2070,
-   "targetLowPrice": 1645,
+   "currentPrice": 1593.4,
+   "targetMeanPrice": 1785.439,
+   "targetHighPrice": 2100,
+   "targetLowPrice": 1650,
    "recommendationMean": 1.12195,
    "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 41,
@@ -8295,7 +8311,7 @@
    ]
   },
   "ICICIGI": {
-   "currentPrice": 1736,
+   "currentPrice": 1738.5,
    "targetMeanPrice": 1902.0834,
    "targetHighPrice": 2175,
    "targetLowPrice": 1400,
@@ -8381,7 +8397,7 @@
    ]
   },
   "IDBI": {
-   "currentPrice": 79.96,
+   "currentPrice": 77.34,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -8391,7 +8407,7 @@
    "trend": []
   },
   "IDEA": {
-   "currentPrice": 12.15,
+   "currentPrice": 11.55,
    "targetMeanPrice": 11.95909,
    "targetHighPrice": 18.7,
    "targetLowPrice": 5.5,
@@ -8434,16 +8450,24 @@
    ]
   },
   "IDFCFIRSTB": {
-   "currentPrice": 87.26,
-   "targetMeanPrice": 90.09091,
+   "currentPrice": 86.8,
+   "targetMeanPrice": 90.90476,
    "targetHighPrice": 105,
-   "targetLowPrice": 62,
-   "recommendationMean": null,
-   "recommendationKey": "none",
-   "numberOfAnalystOpinions": 22,
+   "targetLowPrice": 76,
+   "recommendationMean": 1.72727,
+   "recommendationKey": "buy",
+   "numberOfAnalystOpinions": 21,
    "trend": [
     {
      "period": "0m",
+     "strongBuy": 6,
+     "buy": 11,
+     "hold": 5,
+     "sell": 0,
+     "strongSell": 0
+    },
+    {
+     "period": "-1m",
      "strongBuy": 6,
      "buy": 11,
      "hold": 5,
@@ -8451,7 +8475,7 @@
      "strongSell": 0
     },
     {
-     "period": "-1m",
+     "period": "-2m",
      "strongBuy": 7,
      "buy": 9,
      "hold": 6,
@@ -8459,7 +8483,7 @@
      "strongSell": 0
     },
     {
-     "period": "-2m",
+     "period": "-3m",
      "strongBuy": 7,
      "buy": 7,
      "hold": 7,
@@ -8469,7 +8493,7 @@
    ]
   },
   "IEX": {
-   "currentPrice": 113.15,
+   "currentPrice": 110.9,
    "targetMeanPrice": 130.25,
    "targetHighPrice": 285,
    "targetLowPrice": 90,
@@ -8512,7 +8536,7 @@
    ]
   },
   "IFCI": {
-   "currentPrice": 59.7,
+   "currentPrice": 58.52,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -8522,7 +8546,7 @@
    "trend": []
   },
   "IGIL": {
-   "currentPrice": 421.5,
+   "currentPrice": 429.65,
    "targetMeanPrice": 514.5,
    "targetHighPrice": 574,
    "targetLowPrice": 410,
@@ -8557,7 +8581,7 @@
    ]
   },
   "IGL": {
-   "currentPrice": 154.81,
+   "currentPrice": 146.8,
    "targetMeanPrice": 168.24138,
    "targetHighPrice": 226,
    "targetLowPrice": 102,
@@ -8600,12 +8624,12 @@
    ]
   },
   "IIFL": {
-   "currentPrice": 614,
+   "currentPrice": 598.5,
    "targetMeanPrice": 790,
    "targetHighPrice": 880,
    "targetLowPrice": 650,
-   "recommendationMean": 1.5,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 6,
    "trend": [
     {
@@ -8643,7 +8667,7 @@
    ]
   },
   "IKS": {
-   "currentPrice": 1639.7,
+   "currentPrice": 1586.7,
    "targetMeanPrice": 1934.3,
    "targetHighPrice": 2200,
    "targetLowPrice": 1650,
@@ -8686,7 +8710,7 @@
    ]
   },
   "INDHOTEL": {
-   "currentPrice": 912,
+   "currentPrice": 884.8,
    "targetMeanPrice": 885.7586,
    "targetHighPrice": 1100,
    "targetLowPrice": 746,
@@ -8729,7 +8753,7 @@
    ]
   },
   "INDIACEM": {
-   "currentPrice": 328,
+   "currentPrice": 312.85,
    "targetMeanPrice": 347.5,
    "targetHighPrice": 470,
    "targetLowPrice": 250,
@@ -8748,7 +8772,7 @@
    ]
   },
   "INDIAMART": {
-   "currentPrice": 1539,
+   "currentPrice": 1540.7,
    "targetMeanPrice": 1939,
    "targetHighPrice": 2637,
    "targetLowPrice": 1500,
@@ -8767,7 +8791,7 @@
    ]
   },
   "INDIANB": {
-   "currentPrice": 950,
+   "currentPrice": 929.85,
    "targetMeanPrice": 1010.75,
    "targetHighPrice": 1100,
    "targetLowPrice": 910,
@@ -8794,9 +8818,9 @@
    ]
   },
   "INDIGO": {
-   "currentPrice": 5587.6,
-   "targetMeanPrice": 5572.92,
-   "targetHighPrice": 6490,
+   "currentPrice": 5659.6,
+   "targetMeanPrice": 5662.92,
+   "targetHighPrice": 6600,
    "targetLowPrice": 4050,
    "recommendationMean": 1.56,
    "recommendationKey": "buy",
@@ -8837,7 +8861,7 @@
    ]
   },
   "INDOTHAI": {
-   "currentPrice": 29,
+   "currentPrice": 26.94,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -8847,19 +8871,19 @@
    "trend": []
   },
   "INDUSINDBK": {
-   "currentPrice": 1003,
-   "targetMeanPrice": 964.0541,
+   "currentPrice": 958.4,
+   "targetMeanPrice": 966.8333,
    "targetHighPrice": 1200,
    "targetLowPrice": 760,
-   "recommendationMean": null,
-   "recommendationKey": "none",
-   "numberOfAnalystOpinions": 37,
+   "recommendationMean": 2.69444,
+   "recommendationKey": "hold",
+   "numberOfAnalystOpinions": 36,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 2,
      "buy": 11,
-     "hold": 14,
+     "hold": 13,
      "sell": 3,
      "strongSell": 7
     },
@@ -8890,7 +8914,7 @@
    ]
   },
   "INDUSTOWER": {
-   "currentPrice": 387,
+   "currentPrice": 377.65,
    "targetMeanPrice": 431.41666,
    "targetHighPrice": 565,
    "targetLowPrice": 325,
@@ -8933,21 +8957,21 @@
    ]
   },
   "INFY": {
-   "currentPrice": 1098,
-   "targetMeanPrice": 1202.7142,
+   "currentPrice": 1151.3,
+   "targetMeanPrice": 1193.0238,
    "targetHighPrice": 1627,
-   "targetLowPrice": 990,
-   "recommendationMean": 2.35714,
+   "targetLowPrice": 950,
+   "recommendationMean": 2.42857,
    "recommendationKey": "buy",
    "numberOfAnalystOpinions": 42,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 10,
-     "buy": 11,
+     "buy": 10,
      "hold": 17,
      "sell": 1,
-     "strongSell": 3
+     "strongSell": 4
     },
     {
      "period": "-1m",
@@ -8976,7 +9000,7 @@
    ]
   },
   "INOXINDIA": {
-   "currentPrice": 2102.5,
+   "currentPrice": 2139.3,
    "targetMeanPrice": 2270,
    "targetHighPrice": 2500,
    "targetLowPrice": 2065,
@@ -9011,7 +9035,7 @@
    ]
   },
   "INOXWIND": {
-   "currentPrice": 55.46,
+   "currentPrice": 53.35,
    "targetMeanPrice": 100.16667,
    "targetHighPrice": 138,
    "targetLowPrice": 72,
@@ -9046,12 +9070,12 @@
    ]
   },
   "INTELLECT": {
-   "currentPrice": 547,
+   "currentPrice": 583.9,
    "targetMeanPrice": 734.25,
    "targetHighPrice": 860,
    "targetLowPrice": 667,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1,
+   "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 4,
    "trend": [
     {
@@ -9081,7 +9105,7 @@
    ]
   },
   "IOB": {
-   "currentPrice": 32.07,
+   "currentPrice": 30.79,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -9091,7 +9115,7 @@
    "trend": []
   },
   "IOC": {
-   "currentPrice": 150.5,
+   "currentPrice": 144.21,
    "targetMeanPrice": 157.41936,
    "targetHighPrice": 217,
    "targetLowPrice": 105,
@@ -9134,7 +9158,7 @@
    ]
   },
   "IPCALAB": {
-   "currentPrice": 1839,
+   "currentPrice": 1782.9,
    "targetMeanPrice": 2098.111,
    "targetHighPrice": 2267,
    "targetLowPrice": 1731,
@@ -9169,7 +9193,7 @@
    ]
   },
   "IRB": {
-   "currentPrice": 18,
+   "currentPrice": 17.3,
    "targetMeanPrice": 25.9,
    "targetHighPrice": 34.5,
    "targetLowPrice": 20,
@@ -9204,12 +9228,12 @@
    ]
   },
   "IRCON": {
-   "currentPrice": 108.95,
+   "currentPrice": 110.73,
    "targetMeanPrice": 114,
    "targetHighPrice": 114,
    "targetLowPrice": 114,
-   "recommendationMean": 3,
-   "recommendationKey": "hold",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 1,
    "trend": [
     {
@@ -9239,7 +9263,7 @@
    ]
   },
   "IRCTC": {
-   "currentPrice": 448.8,
+   "currentPrice": 458.65,
    "targetMeanPrice": 653,
    "targetHighPrice": 850,
    "targetLowPrice": 490,
@@ -9282,7 +9306,7 @@
    ]
   },
   "IREDA": {
-   "currentPrice": 131.7,
+   "currentPrice": 125.59,
    "targetMeanPrice": 135,
    "targetHighPrice": 150,
    "targetLowPrice": 120,
@@ -9309,7 +9333,7 @@
    ]
   },
   "IRFC": {
-   "currentPrice": 83.74,
+   "currentPrice": 82.25,
    "targetMeanPrice": 60,
    "targetHighPrice": 60,
    "targetLowPrice": 60,
@@ -9328,8 +9352,8 @@
    ]
   },
   "ITC": {
-   "currentPrice": 299.1,
-   "targetMeanPrice": 318.24243,
+   "currentPrice": 304.7,
+   "targetMeanPrice": 319.9091,
    "targetHighPrice": 440,
    "targetLowPrice": 280,
    "recommendationMean": 1.97059,
@@ -9371,7 +9395,7 @@
    ]
   },
   "ITCHOTELS": {
-   "currentPrice": 184.3,
+   "currentPrice": 184.66,
    "targetMeanPrice": 217.33333,
    "targetHighPrice": 250,
    "targetLowPrice": 201,
@@ -9414,7 +9438,7 @@
    ]
   },
   "ITI": {
-   "currentPrice": 246.5,
+   "currentPrice": 256.92,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -9424,7 +9448,7 @@
    "trend": []
   },
   "IXIGO": {
-   "currentPrice": 170.42,
+   "currentPrice": 169.83,
    "targetMeanPrice": 185.4,
    "targetHighPrice": 205,
    "targetLowPrice": 155,
@@ -9459,7 +9483,7 @@
    ]
   },
   "J&KBANK": {
-   "currentPrice": 150,
+   "currentPrice": 166.39,
    "targetMeanPrice": 220,
    "targetHighPrice": 220,
    "targetLowPrice": 220,
@@ -9478,7 +9502,7 @@
    ]
   },
   "JAINREC": {
-   "currentPrice": 287,
+   "currentPrice": 280.45,
    "targetMeanPrice": 364.5,
    "targetHighPrice": 390,
    "targetLowPrice": 328,
@@ -9531,7 +9555,7 @@
    "trend": []
   },
   "JBMA": {
-   "currentPrice": 485.2,
+   "currentPrice": 472.3,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -9541,7 +9565,7 @@
    "trend": []
   },
   "JINDALSAW": {
-   "currentPrice": 246.27,
+   "currentPrice": 239,
    "targetMeanPrice": 405,
    "targetHighPrice": 448,
    "targetLowPrice": 362,
@@ -9576,8 +9600,8 @@
    ]
   },
   "JINDALSTEL": {
-   "currentPrice": 1131.9,
-   "targetMeanPrice": 1206.4839,
+   "currentPrice": 1138.7,
+   "targetMeanPrice": 1205.1936,
    "targetHighPrice": 1400,
    "targetLowPrice": 620,
    "recommendationMean": 1.87097,
@@ -9611,7 +9635,7 @@
    ]
   },
   "JIOFIN": {
-   "currentPrice": 224.97,
+   "currentPrice": 222.6,
    "targetMeanPrice": 286.5,
    "targetHighPrice": 300,
    "targetLowPrice": 273,
@@ -9638,7 +9662,7 @@
    ]
   },
   "JKCEMENT": {
-   "currentPrice": 5417.6,
+   "currentPrice": 5470.3,
    "targetMeanPrice": 5942.25,
    "targetHighPrice": 7400,
    "targetLowPrice": 4250,
@@ -9681,7 +9705,7 @@
    ]
   },
   "JKTYRE": {
-   "currentPrice": 369.9,
+   "currentPrice": 365.3,
    "targetMeanPrice": 423.2,
    "targetHighPrice": 510,
    "targetLowPrice": 330,
@@ -9716,7 +9740,7 @@
    ]
   },
   "JMFINANCIL": {
-   "currentPrice": 110.99,
+   "currentPrice": 112.93,
    "targetMeanPrice": 160,
    "targetHighPrice": 160,
    "targetLowPrice": 160,
@@ -9743,7 +9767,7 @@
    ]
   },
   "JPL": {
-   "currentPrice": 1388,
+   "currentPrice": 1371.4,
    "targetMeanPrice": 1430,
    "targetHighPrice": 1515,
    "targetLowPrice": 1340,
@@ -9770,7 +9794,7 @@
    ]
   },
   "JPPOWER": {
-   "currentPrice": 13.41,
+   "currentPrice": 13.14,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -9780,7 +9804,7 @@
    "trend": []
   },
   "JSL": {
-   "currentPrice": 735.65,
+   "currentPrice": 719,
    "targetMeanPrice": 858,
    "targetHighPrice": 1000,
    "targetLowPrice": 789,
@@ -9815,17 +9839,17 @@
    ]
   },
   "JSWCEMENT": {
-   "currentPrice": 126.2,
-   "targetMeanPrice": 144.11765,
+   "currentPrice": 123.9,
+   "targetMeanPrice": 143.88889,
    "targetHighPrice": 180,
    "targetLowPrice": 127,
-   "recommendationMean": 1.23529,
+   "recommendationMean": 1.27778,
    "recommendationKey": "strong_buy",
-   "numberOfAnalystOpinions": 17,
+   "numberOfAnalystOpinions": 18,
    "trend": [
     {
      "period": "0m",
-     "strongBuy": 1,
+     "strongBuy": 2,
      "buy": 15,
      "hold": 0,
      "sell": 0,
@@ -9858,7 +9882,7 @@
    ]
   },
   "JSWENERGY": {
-   "currentPrice": 513.4,
+   "currentPrice": 485,
    "targetMeanPrice": 603.3182,
    "targetHighPrice": 720,
    "targetLowPrice": 510,
@@ -9901,8 +9925,8 @@
    ]
   },
   "JSWINFRA": {
-   "currentPrice": 339.9,
-   "targetMeanPrice": 372.11765,
+   "currentPrice": 355.5,
+   "targetMeanPrice": 373.88235,
    "targetHighPrice": 430,
    "targetLowPrice": 280,
    "recommendationMean": 1.82353,
@@ -9936,8 +9960,8 @@
    ]
   },
   "JSWSTEEL": {
-   "currentPrice": 1337,
-   "targetMeanPrice": 1400.1143,
+   "currentPrice": 1321.2,
+   "targetMeanPrice": 1399.9714,
    "targetHighPrice": 1650,
    "targetLowPrice": 1135,
    "recommendationMean": 2.02857,
@@ -9979,8 +10003,8 @@
    ]
   },
   "JUBLFOOD": {
-   "currentPrice": 424.7,
-   "targetMeanPrice": 545.2759,
+   "currentPrice": 422.8,
+   "targetMeanPrice": 544.4138,
    "targetHighPrice": 680,
    "targetLowPrice": 430,
    "recommendationMean": 1.93103,
@@ -10022,7 +10046,7 @@
    ]
   },
   "JUBLINGREA": {
-   "currentPrice": 569.3,
+   "currentPrice": 566.65,
    "targetMeanPrice": 905,
    "targetHighPrice": 1200,
    "targetLowPrice": 649,
@@ -10049,7 +10073,7 @@
    ]
   },
   "JWL": {
-   "currentPrice": 191.37,
+   "currentPrice": 224.84,
    "targetMeanPrice": 245.25,
    "targetHighPrice": 303,
    "targetLowPrice": 185,
@@ -10084,7 +10108,7 @@
    ]
   },
   "JYOTICNC": {
-   "currentPrice": 1050,
+   "currentPrice": 1058.65,
    "targetMeanPrice": 1130.25,
    "targetHighPrice": 1275,
    "targetLowPrice": 840,
@@ -10119,7 +10143,7 @@
    ]
   },
   "KAJARIACER": {
-   "currentPrice": 1197.9,
+   "currentPrice": 1205.3,
    "targetMeanPrice": 1412.8077,
    "targetHighPrice": 1700,
    "targetLowPrice": 1040,
@@ -10162,7 +10186,7 @@
    ]
   },
   "KALYANKJIL": {
-   "currentPrice": 638.7,
+   "currentPrice": 659.5,
    "targetMeanPrice": 827.7,
    "targetHighPrice": 950,
    "targetLowPrice": 765,
@@ -10205,12 +10229,12 @@
    ]
   },
   "KARURVYSYA": {
-   "currentPrice": 377,
-   "targetMeanPrice": 393.90475,
+   "currentPrice": 371.1,
+   "targetMeanPrice": 395.33334,
    "targetHighPrice": 450,
    "targetLowPrice": 300,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.47619,
+   "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 21,
    "trend": [
     {
@@ -10240,19 +10264,19 @@
    ]
   },
   "KAYNES": {
-   "currentPrice": 2910,
-   "targetMeanPrice": 3225.2727,
-   "targetHighPrice": 4094,
+   "currentPrice": 2725,
+   "targetMeanPrice": 3160.5715,
+   "targetHighPrice": 4015,
    "targetLowPrice": 2380,
-   "recommendationMean": 3.18182,
+   "recommendationMean": 3.19048,
    "recommendationKey": "hold",
-   "numberOfAnalystOpinions": 22,
+   "numberOfAnalystOpinions": 21,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 1,
      "buy": 3,
-     "hold": 8,
+     "hold": 7,
      "sell": 1,
      "strongSell": 9
     },
@@ -10283,20 +10307,20 @@
    ]
   },
   "KEC": {
-   "currentPrice": 299.9,
-   "targetMeanPrice": 432,
+   "currentPrice": 292.45,
+   "targetMeanPrice": 410.875,
    "targetHighPrice": 610,
-   "targetLowPrice": 308,
-   "recommendationMean": 1.83333,
+   "targetLowPrice": 260,
+   "recommendationMean": 2,
    "recommendationKey": "buy",
    "numberOfAnalystOpinions": 24,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 2,
-     "buy": 16,
+     "buy": 15,
      "hold": 2,
-     "sell": 2,
+     "sell": 3,
      "strongSell": 2
     },
     {
@@ -10318,12 +10342,12 @@
    ]
   },
   "KEI": {
-   "currentPrice": 3828.1,
-   "targetMeanPrice": 5097.609,
+   "currentPrice": 3753.9,
+   "targetMeanPrice": 5084.5654,
    "targetHighPrice": 6600,
-   "targetLowPrice": 4000,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "targetLowPrice": 3700,
+   "recommendationMean": 1.68182,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 23,
    "trend": [
     {
@@ -10361,7 +10385,7 @@
    ]
   },
   "KELLTONTEC": {
-   "currentPrice": 11.6,
+   "currentPrice": 11.25,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -10371,7 +10395,7 @@
    "trend": []
   },
   "KFINTECH": {
-   "currentPrice": 934.9,
+   "currentPrice": 989,
    "targetMeanPrice": 1090.8823,
    "targetHighPrice": 1250,
    "targetLowPrice": 897,
@@ -10381,16 +10405,16 @@
    "trend": [
     {
      "period": "0m",
-     "strongBuy": 4,
-     "buy": 11,
+     "strongBuy": 3,
+     "buy": 12,
      "hold": 2,
      "sell": 0,
      "strongSell": 0
     },
     {
      "period": "-1m",
-     "strongBuy": 3,
-     "buy": 11,
+     "strongBuy": 2,
+     "buy": 12,
      "hold": 3,
      "sell": 0,
      "strongSell": 0
@@ -10406,8 +10430,8 @@
    ]
   },
   "KIMS": {
-   "currentPrice": 792,
-   "targetMeanPrice": 851.5,
+   "currentPrice": 785.5,
+   "targetMeanPrice": 851.1875,
    "targetHighPrice": 1000,
    "targetLowPrice": 720,
    "recommendationMean": 1.4375,
@@ -10449,7 +10473,7 @@
    ]
   },
   "KIRLOSBROS": {
-   "currentPrice": 1619.9,
+   "currentPrice": 1560.9,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -10468,12 +10492,12 @@
    ]
   },
   "KIRLOSENG": {
-   "currentPrice": 1710,
+   "currentPrice": 1771.1,
    "targetMeanPrice": 2297.8572,
    "targetHighPrice": 2600,
    "targetLowPrice": 1970,
-   "recommendationMean": 1.28571,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 7,
    "trend": [
     {
@@ -10503,7 +10527,7 @@
    ]
   },
   "KISSHT": {
-   "currentPrice": 338.7,
+   "currentPrice": 333.05,
    "targetMeanPrice": 445,
    "targetHighPrice": 500,
    "targetLowPrice": 385,
@@ -10538,10 +10562,10 @@
    ]
   },
   "KOTAKBANK": {
-   "currentPrice": 515.8,
-   "targetMeanPrice": 497.1579,
-   "targetHighPrice": 565,
-   "targetLowPrice": 390,
+   "currentPrice": 500,
+   "targetMeanPrice": 502.6842,
+   "targetHighPrice": 600,
+   "targetLowPrice": 410,
    "recommendationMean": 1.51351,
    "recommendationKey": "buy",
    "numberOfAnalystOpinions": 38,
@@ -10581,8 +10605,8 @@
    ]
   },
   "KPIL": {
-   "currentPrice": 1320.1,
-   "targetMeanPrice": 1712.05,
+   "currentPrice": 1324.3,
+   "targetMeanPrice": 1707.65,
    "targetHighPrice": 1952,
    "targetLowPrice": 1512,
    "recommendationMean": 1.10526,
@@ -10624,8 +10648,8 @@
    ]
   },
   "KPITTECH": {
-   "currentPrice": 519,
-   "targetMeanPrice": 605.6191,
+   "currentPrice": 520,
+   "targetMeanPrice": 607.2857,
    "targetHighPrice": 846,
    "targetLowPrice": 470,
    "recommendationMean": 2.57895,
@@ -10667,12 +10691,12 @@
    ]
   },
   "KPRMILL": {
-   "currentPrice": 1191,
+   "currentPrice": 1217.3,
    "targetMeanPrice": 1276.8462,
    "targetHighPrice": 1400,
    "targetLowPrice": 1021,
-   "recommendationMean": 1.61538,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 13,
    "trend": [
     {
@@ -10710,19 +10734,19 @@
    ]
   },
   "KSB": {
-   "currentPrice": 661.95,
-   "targetMeanPrice": 824.5,
+   "currentPrice": 642.75,
+   "targetMeanPrice": 793,
    "targetHighPrice": 904,
-   "targetLowPrice": 745,
-   "recommendationMean": 2.5,
-   "recommendationKey": "buy",
-   "numberOfAnalystOpinions": 2,
+   "targetLowPrice": 730,
+   "recommendationMean": 2.66667,
+   "recommendationKey": "hold",
+   "numberOfAnalystOpinions": 3,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 0,
      "buy": 1,
-     "hold": 0,
+     "hold": 1,
      "sell": 0,
      "strongSell": 1
     },
@@ -10745,7 +10769,7 @@
    ]
   },
   "LALPATHLAB": {
-   "currentPrice": 1989,
+   "currentPrice": 1983.3,
    "targetMeanPrice": 2213.2307,
    "targetHighPrice": 2675,
    "targetLowPrice": 1180,
@@ -10788,12 +10812,12 @@
    ]
   },
   "LAURUSLABS": {
-   "currentPrice": 2294.6,
-   "targetMeanPrice": 2156.2856,
+   "currentPrice": 2504.4,
+   "targetMeanPrice": 2203.4285,
    "targetHighPrice": 2830,
    "targetLowPrice": 900,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 2.53333,
+   "recommendationKey": "hold",
    "numberOfAnalystOpinions": 14,
    "trend": [
     {
@@ -10823,7 +10847,7 @@
    ]
   },
   "LEMONTREE": {
-   "currentPrice": 127.9,
+   "currentPrice": 123.56,
    "targetMeanPrice": 154.68182,
    "targetHighPrice": 191,
    "targetLowPrice": 127,
@@ -10866,7 +10890,7 @@
    ]
   },
   "LENSKART": {
-   "currentPrice": 739,
+   "currentPrice": 718.35,
    "targetMeanPrice": 769.72,
    "targetHighPrice": 900,
    "targetLowPrice": 503,
@@ -10909,7 +10933,7 @@
    ]
   },
   "LGEINDIA": {
-   "currentPrice": 1731.5,
+   "currentPrice": 1770.9,
    "targetMeanPrice": 1955.3226,
    "targetHighPrice": 2140,
    "targetLowPrice": 1530,
@@ -10952,7 +10976,7 @@
    ]
   },
   "LICHSGFIN": {
-   "currentPrice": 614.9,
+   "currentPrice": 594.65,
    "targetMeanPrice": 599.44,
    "targetHighPrice": 760,
    "targetLowPrice": 415,
@@ -10995,7 +11019,7 @@
    ]
   },
   "LICI": {
-   "currentPrice": 410.7,
+   "currentPrice": 405.4,
    "targetMeanPrice": 521.3913,
    "targetHighPrice": 690,
    "targetLowPrice": 388,
@@ -11038,7 +11062,7 @@
    ]
   },
   "LINDEINDIA": {
-   "currentPrice": 6565,
+   "currentPrice": 6983,
    "targetMeanPrice": 6257.5,
    "targetHighPrice": 6260,
    "targetLowPrice": 6255,
@@ -11065,12 +11089,12 @@
    ]
   },
   "LLOYDSME": {
-   "currentPrice": 1729,
+   "currentPrice": 1556.8,
    "targetMeanPrice": 2141.1428,
    "targetHighPrice": 2390,
    "targetLowPrice": 1880,
-   "recommendationMean": 1.71429,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 7,
    "trend": [
     {
@@ -11100,12 +11124,12 @@
    ]
   },
   "LODHA": {
-   "currentPrice": 1218.7,
+   "currentPrice": 1251.8,
    "targetMeanPrice": 1376.6316,
    "targetHighPrice": 1615,
    "targetLowPrice": 1000,
-   "recommendationMean": 1.36842,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 19,
    "trend": [
     {
@@ -11143,8 +11167,8 @@
    ]
   },
   "LT": {
-   "currentPrice": 4209.1,
-   "targetMeanPrice": 4512.107,
+   "currentPrice": 4108.5,
+   "targetMeanPrice": 4501.75,
    "targetHighPrice": 5185,
    "targetLowPrice": 3450,
    "recommendationMean": 1.51724,
@@ -11186,16 +11210,24 @@
    ]
   },
   "LTF": {
-   "currentPrice": 272.1,
-   "targetMeanPrice": 319.85715,
-   "targetHighPrice": 375,
+   "currentPrice": 276.4,
+   "targetMeanPrice": 316.6842,
+   "targetHighPrice": 370,
    "targetLowPrice": 195,
-   "recommendationMean": null,
-   "recommendationKey": "none",
-   "numberOfAnalystOpinions": 21,
+   "recommendationMean": 1.75,
+   "recommendationKey": "buy",
+   "numberOfAnalystOpinions": 19,
    "trend": [
     {
      "period": "0m",
+     "strongBuy": 6,
+     "buy": 11,
+     "hold": 1,
+     "sell": 1,
+     "strongSell": 1
+    },
+    {
+     "period": "-1m",
      "strongBuy": 6,
      "buy": 11,
      "hold": 2,
@@ -11203,7 +11235,7 @@
      "strongSell": 1
     },
     {
-     "period": "-1m",
+     "period": "-2m",
      "strongBuy": 5,
      "buy": 11,
      "hold": 2,
@@ -11211,7 +11243,7 @@
      "strongSell": 1
     },
     {
-     "period": "-2m",
+     "period": "-3m",
      "strongBuy": 5,
      "buy": 10,
      "hold": 3,
@@ -11221,7 +11253,7 @@
    ]
   },
   "LTFOODS": {
-   "currentPrice": 433.8,
+   "currentPrice": 421.15,
    "targetMeanPrice": 500,
    "targetHighPrice": 500,
    "targetLowPrice": 500,
@@ -11248,8 +11280,8 @@
    ]
   },
   "LTM": {
-   "currentPrice": 4166.4,
-   "targetMeanPrice": 4513.3945,
+   "currentPrice": 4320,
+   "targetMeanPrice": 4531.1577,
    "targetHighPrice": 6108,
    "targetLowPrice": 3480,
    "recommendationMean": 2.55263,
@@ -11291,8 +11323,8 @@
    ]
   },
   "LTTS": {
-   "currentPrice": 4070,
-   "targetMeanPrice": 3828.5806,
+   "currentPrice": 4227.2,
+   "targetMeanPrice": 3858.0967,
    "targetHighPrice": 5136,
    "targetLowPrice": 2950,
    "recommendationMean": 2.58065,
@@ -11334,7 +11366,7 @@
    ]
   },
   "LUPIN": {
-   "currentPrice": 2014,
+   "currentPrice": 2016,
    "targetMeanPrice": 2290.6667,
    "targetHighPrice": 3081,
    "targetLowPrice": 1750,
@@ -11377,7 +11409,7 @@
    ]
   },
   "M&M": {
-   "currentPrice": 3545,
+   "currentPrice": 3450,
    "targetMeanPrice": 3998.4167,
    "targetHighPrice": 4650,
    "targetLowPrice": 3224,
@@ -11420,13 +11452,13 @@
    ]
   },
   "M&MFIN": {
-   "currentPrice": 288.15,
-   "targetMeanPrice": 363.25,
+   "currentPrice": 283.8,
+   "targetMeanPrice": 362.3143,
    "targetHighPrice": 425,
    "targetLowPrice": 283,
    "recommendationMean": null,
    "recommendationKey": "none",
-   "numberOfAnalystOpinions": 36,
+   "numberOfAnalystOpinions": 35,
    "trend": [
     {
      "period": "0m",
@@ -11455,7 +11487,7 @@
    ]
   },
   "MAHABANK": {
-   "currentPrice": 99.45,
+   "currentPrice": 95.73,
    "targetMeanPrice": 103.25,
    "targetHighPrice": 118,
    "targetLowPrice": 95,
@@ -11490,8 +11522,8 @@
    ]
   },
   "MANAPPURAM": {
-   "currentPrice": 280.5,
-   "targetMeanPrice": 361.73334,
+   "currentPrice": 278.4,
+   "targetMeanPrice": 359.06668,
    "targetHighPrice": 435,
    "targetLowPrice": 274,
    "recommendationMean": 2.26667,
@@ -11533,12 +11565,12 @@
    ]
   },
   "MANKIND": {
-   "currentPrice": 2665,
+   "currentPrice": 2689.4,
    "targetMeanPrice": 2703.2632,
    "targetHighPrice": 3280,
    "targetLowPrice": 2057,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 2.22222,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 19,
    "trend": [
     {
@@ -11555,10 +11587,18 @@
      "buy": 6,
      "hold": 3,
      "sell": 1,
-     "strongSell": 3
+     "strongSell": 2
     },
     {
      "period": "-2m",
+     "strongBuy": 6,
+     "buy": 6,
+     "hold": 3,
+     "sell": 1,
+     "strongSell": 3
+    },
+    {
+     "period": "-3m",
      "strongBuy": 7,
      "buy": 5,
      "hold": 3,
@@ -11568,9 +11608,9 @@
    ]
   },
   "MARICO": {
-   "currentPrice": 917,
-   "targetMeanPrice": 965.1842,
-   "targetHighPrice": 1080,
+   "currentPrice": 922.3,
+   "targetMeanPrice": 968.4737,
+   "targetHighPrice": 1100,
    "targetLowPrice": 737,
    "recommendationMean": 1.38462,
    "recommendationKey": "strong_buy",
@@ -11611,18 +11651,18 @@
    ]
   },
   "MARUTI": {
-   "currentPrice": 14011,
-   "targetMeanPrice": 14495.025,
+   "currentPrice": 13765,
+   "targetMeanPrice": 14494.368,
    "targetHighPrice": 17518,
    "targetLowPrice": 11600,
-   "recommendationMean": 1.45,
+   "recommendationMean": 1.47368,
    "recommendationKey": "strong_buy",
-   "numberOfAnalystOpinions": 40,
+   "numberOfAnalystOpinions": 38,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 7,
-     "buy": 28,
+     "buy": 26,
      "hold": 4,
      "sell": 0,
      "strongSell": 1
@@ -11654,7 +11694,7 @@
    ]
   },
   "MAXHEALTH": {
-   "currentPrice": 1081,
+   "currentPrice": 1071.3,
    "targetMeanPrice": 1125.4445,
    "targetHighPrice": 1450,
    "targetLowPrice": 925,
@@ -11697,7 +11737,7 @@
    ]
   },
   "MAZDOCK": {
-   "currentPrice": 1841.5,
+   "currentPrice": 1890,
    "targetMeanPrice": 2160.4285,
    "targetHighPrice": 2950,
    "targetLowPrice": 1490,
@@ -11732,7 +11772,7 @@
    ]
   },
   "MCLOUD": {
-   "currentPrice": 23.11,
+   "currentPrice": 22.77,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -11742,19 +11782,19 @@
    "trend": []
   },
   "MCX": {
-   "currentPrice": 3535,
-   "targetMeanPrice": 3805.625,
+   "currentPrice": 3900,
+   "targetMeanPrice": 3863.75,
    "targetHighPrice": 4500,
-   "targetLowPrice": 2970,
-   "recommendationMean": 1.5625,
-   "recommendationKey": "buy",
+   "targetLowPrice": 3400,
+   "recommendationMean": 1.4375,
+   "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 16,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 5,
-     "buy": 9,
-     "hold": 2,
+     "buy": 10,
+     "hold": 1,
      "sell": 0,
      "strongSell": 0
     },
@@ -11785,7 +11825,7 @@
    ]
   },
   "MEDANTA": {
-   "currentPrice": 1483,
+   "currentPrice": 1473.7,
    "targetMeanPrice": 1665.1052,
    "targetHighPrice": 1830,
    "targetLowPrice": 1510,
@@ -11828,7 +11868,7 @@
    ]
   },
   "MEESHO": {
-   "currentPrice": 260.39,
+   "currentPrice": 258.44,
    "targetMeanPrice": 228.22221,
    "targetHighPrice": 285,
    "targetLowPrice": 125,
@@ -11871,12 +11911,12 @@
    ]
   },
   "MFSL": {
-   "currentPrice": 1435.1,
+   "currentPrice": 1425,
    "targetMeanPrice": 1835.4,
    "targetHighPrice": 2150,
    "targetLowPrice": 1520,
-   "recommendationMean": 1.2,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 25,
    "trend": [
     {
@@ -11914,7 +11954,7 @@
    ]
   },
   "MGL": {
-   "currentPrice": 1112.5,
+   "currentPrice": 1077.3,
    "targetMeanPrice": 1259.7333,
    "targetHighPrice": 1665,
    "targetLowPrice": 950,
@@ -11957,17 +11997,17 @@
    ]
   },
   "MILKYMIST": {
-   "currentPrice": 324.45,
+   "currentPrice": 359.75,
    "targetMeanPrice": 355,
    "targetHighPrice": 360,
    "targetLowPrice": 350,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.33333,
+   "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 2,
    "trend": [
     {
      "period": "0m",
-     "strongBuy": 0,
+     "strongBuy": 1,
      "buy": 2,
      "hold": 0,
      "sell": 0,
@@ -12000,7 +12040,7 @@
    ]
   },
   "MINDACORP": {
-   "currentPrice": 752.1,
+   "currentPrice": 711.55,
    "targetMeanPrice": 813.4,
    "targetHighPrice": 900,
    "targetLowPrice": 675,
@@ -12019,7 +12059,7 @@
     {
      "period": "-1m",
      "strongBuy": 2,
-     "buy": 6,
+     "buy": 7,
      "hold": 0,
      "sell": 0,
      "strongSell": 0
@@ -12027,7 +12067,7 @@
     {
      "period": "-2m",
      "strongBuy": 2,
-     "buy": 6,
+     "buy": 7,
      "hold": 0,
      "sell": 0,
      "strongSell": 0
@@ -12035,7 +12075,7 @@
    ]
   },
   "MMTC": {
-   "currentPrice": 51.3,
+   "currentPrice": 50.98,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -12045,7 +12085,7 @@
    "trend": []
   },
   "MOBIKWIK": {
-   "currentPrice": 210.55,
+   "currentPrice": 210.38,
    "targetMeanPrice": 400,
    "targetHighPrice": 400,
    "targetLowPrice": 400,
@@ -12080,12 +12120,12 @@
    ]
   },
   "MONEYVIEW": {
-   "currentPrice": 56.6,
+   "currentPrice": 53.91,
    "targetMeanPrice": 65,
    "targetHighPrice": 65,
    "targetLowPrice": 65,
-   "recommendationMean": 3,
-   "recommendationKey": "hold",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 1,
    "trend": [
     {
@@ -12099,7 +12139,7 @@
    ]
   },
   "MOSCHIP": {
-   "currentPrice": 161.4,
+   "currentPrice": 160.16,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -12109,7 +12149,7 @@
    "trend": []
   },
   "MOTHERSON": {
-   "currentPrice": 166.53,
+   "currentPrice": 161.5,
    "targetMeanPrice": 184.95454,
    "targetHighPrice": 217,
    "targetLowPrice": 140,
@@ -12152,7 +12192,7 @@
    ]
   },
   "MOTILALOFS": {
-   "currentPrice": 1205.65,
+   "currentPrice": 1222.15,
    "targetMeanPrice": 1197.2,
    "targetHighPrice": 1326,
    "targetLowPrice": 1100,
@@ -12163,7 +12203,7 @@
     {
      "period": "0m",
      "strongBuy": 0,
-     "buy": 4,
+     "buy": 5,
      "hold": 0,
      "sell": 0,
      "strongSell": 0
@@ -12179,8 +12219,8 @@
    ]
   },
   "MPHASIS": {
-   "currentPrice": 2420,
-   "targetMeanPrice": 2771.6667,
+   "currentPrice": 2441.2,
+   "targetMeanPrice": 2777.2222,
    "targetHighPrice": 3200,
    "targetLowPrice": 1770,
    "recommendationMean": 1.83333,
@@ -12222,12 +12262,12 @@
    ]
   },
   "MRF": {
-   "currentPrice": 130550,
+   "currentPrice": 128000,
    "targetMeanPrice": 137978.7,
    "targetHighPrice": 165238,
    "targetLowPrice": 105400,
-   "recommendationMean": 3,
-   "recommendationKey": "hold",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 10,
    "trend": [
     {
@@ -12257,7 +12297,7 @@
    ]
   },
   "MRPL": {
-   "currentPrice": 176,
+   "currentPrice": 165.65,
    "targetMeanPrice": 197.5,
    "targetHighPrice": 215,
    "targetLowPrice": 180,
@@ -12284,7 +12324,7 @@
    ]
   },
   "MSUMI": {
-   "currentPrice": 42.55,
+   "currentPrice": 41.99,
    "targetMeanPrice": 48.57143,
    "targetHighPrice": 60,
    "targetLowPrice": 38,
@@ -12319,7 +12359,7 @@
    ]
   },
   "MTARTECH": {
-   "currentPrice": 5606,
+   "currentPrice": 5800.5,
    "targetMeanPrice": 9110.6,
    "targetHighPrice": 10240,
    "targetLowPrice": 8000,
@@ -12362,7 +12402,7 @@
    ]
   },
   "MUTHOOTFIN": {
-   "currentPrice": 2550.5,
+   "currentPrice": 2609.5,
    "targetMeanPrice": 2994.9092,
    "targetHighPrice": 4500,
    "targetLowPrice": 2140,
@@ -12405,12 +12445,12 @@
    ]
   },
   "NAM-INDIA": {
-   "currentPrice": 1050,
+   "currentPrice": 1047,
    "targetMeanPrice": 1188.9166,
    "targetHighPrice": 1320,
    "targetLowPrice": 1040,
-   "recommendationMean": 1.75,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 24,
    "trend": [
     {
@@ -12448,18 +12488,18 @@
    ]
   },
   "NATCOPHARM": {
-   "currentPrice": 815,
-   "targetMeanPrice": 1002.1111,
+   "currentPrice": 799.75,
+   "targetMeanPrice": 1001.9,
    "targetHighPrice": 1240,
    "targetLowPrice": 712,
-   "recommendationMean": 2.36364,
+   "recommendationMean": 2.25,
    "recommendationKey": "buy",
-   "numberOfAnalystOpinions": 9,
+   "numberOfAnalystOpinions": 10,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 3,
-     "buy": 4,
+     "buy": 5,
      "hold": 2,
      "sell": 2,
      "strongSell": 0
@@ -12483,12 +12523,12 @@
    ]
   },
   "NATIONALUM": {
-   "currentPrice": 303.2,
+   "currentPrice": 304.55,
    "targetMeanPrice": 388.2857,
    "targetHighPrice": 465,
    "targetLowPrice": 315,
-   "recommendationMean": 1.85714,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 14,
    "trend": [
     {
@@ -12526,7 +12566,7 @@
    ]
   },
   "NAUKRI": {
-   "currentPrice": 1177.7,
+   "currentPrice": 1203.8,
    "targetMeanPrice": 1462.5,
    "targetHighPrice": 1684,
    "targetLowPrice": 1166,
@@ -12569,7 +12609,7 @@
    ]
   },
   "NAVA": {
-   "currentPrice": 555.9,
+   "currentPrice": 538.6,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -12579,12 +12619,12 @@
    "trend": []
   },
   "NAVINFLUOR": {
-   "currentPrice": 10077,
+   "currentPrice": 10456.5,
    "targetMeanPrice": 8957.655,
    "targetHighPrice": 11100,
    "targetLowPrice": 4700,
-   "recommendationMean": 2.03571,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 29,
    "trend": [
     {
@@ -12622,7 +12662,7 @@
    ]
   },
   "NAZARA": {
-   "currentPrice": 413.7,
+   "currentPrice": 377.1,
    "targetMeanPrice": 414.1111,
    "targetHighPrice": 720,
    "targetLowPrice": 300,
@@ -12649,7 +12689,7 @@
    ]
   },
   "NBCC": {
-   "currentPrice": 79.6,
+   "currentPrice": 75.51,
    "targetMeanPrice": 133,
    "targetHighPrice": 133,
    "targetLowPrice": 133,
@@ -12684,12 +12724,12 @@
    ]
   },
   "NCC": {
-   "currentPrice": 131.85,
+   "currentPrice": 130,
    "targetMeanPrice": 173.7,
    "targetHighPrice": 216,
    "targetLowPrice": 137,
-   "recommendationMean": 1.5,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 10,
    "trend": [
     {
@@ -12727,7 +12767,7 @@
    ]
   },
   "NESTLEIND": {
-   "currentPrice": 1325,
+   "currentPrice": 1317,
    "targetMeanPrice": 1504.5883,
    "targetHighPrice": 1755,
    "targetLowPrice": 1300,
@@ -12770,7 +12810,7 @@
    ]
   },
   "NETWEB": {
-   "currentPrice": 4080,
+   "currentPrice": 4131.6,
    "targetMeanPrice": 5582,
    "targetHighPrice": 5990,
    "targetLowPrice": 5250,
@@ -12805,7 +12845,7 @@
    ]
   },
   "NEULANDLAB": {
-   "currentPrice": 20500,
+   "currentPrice": 21435,
    "targetMeanPrice": 24675,
    "targetHighPrice": 27225,
    "targetLowPrice": 22900,
@@ -12840,19 +12880,19 @@
    ]
   },
   "NH": {
-   "currentPrice": 1945,
-   "targetMeanPrice": 2265.5833,
+   "currentPrice": 1962.2,
+   "targetMeanPrice": 2310.1667,
    "targetHighPrice": 2559,
-   "targetLowPrice": 1865,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "targetLowPrice": 2025,
+   "recommendationMean": 1.16667,
+   "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 12,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 2,
-     "buy": 9,
-     "hold": 1,
+     "buy": 10,
+     "hold": 0,
      "sell": 0,
      "strongSell": 0
     },
@@ -12883,7 +12923,7 @@
    ]
   },
   "NHPC": {
-   "currentPrice": 76.61,
+   "currentPrice": 75.65,
    "targetMeanPrice": 86.42857,
    "targetHighPrice": 117,
    "targetLowPrice": 72,
@@ -12926,7 +12966,7 @@
    ]
   },
   "NIACL": {
-   "currentPrice": 151.95,
+   "currentPrice": 148.94,
    "targetMeanPrice": 166,
    "targetHighPrice": 180,
    "targetLowPrice": 143,
@@ -12939,7 +12979,7 @@
      "strongBuy": 1,
      "buy": 0,
      "hold": 1,
-     "sell": 1,
+     "sell": 0,
      "strongSell": 0
     },
     {
@@ -12953,12 +12993,12 @@
    ]
   },
   "NLCINDIA": {
-   "currentPrice": 233.23,
+   "currentPrice": 236.51,
    "targetMeanPrice": 350,
    "targetHighPrice": 350,
    "targetLowPrice": 350,
-   "recommendationMean": 1,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 1,
    "trend": [
     {
@@ -12988,7 +13028,7 @@
    ]
   },
   "NMDC": {
-   "currentPrice": 68.9,
+   "currentPrice": 67.96,
    "targetMeanPrice": 84.47826,
    "targetHighPrice": 110,
    "targetLowPrice": 64,
@@ -13031,19 +13071,19 @@
    ]
   },
   "NSE": {
-   "currentPrice": 2220.3,
-   "targetMeanPrice": 2170.4614,
-   "targetHighPrice": 2381,
+   "currentPrice": 2347,
+   "targetMeanPrice": 2231,
+   "targetHighPrice": 2650,
    "targetLowPrice": 1950,
-   "recommendationMean": 1.23077,
+   "recommendationMean": 1.3125,
    "recommendationKey": "strong_buy",
-   "numberOfAnalystOpinions": 13,
+   "numberOfAnalystOpinions": 16,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 3,
-     "buy": 10,
-     "hold": 0,
+     "buy": 12,
+     "hold": 1,
      "sell": 0,
      "strongSell": 0
     },
@@ -13066,7 +13106,7 @@
    ]
   },
   "NSLNISP": {
-   "currentPrice": 38.85,
+   "currentPrice": 38.49,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -13076,8 +13116,8 @@
    "trend": []
   },
   "NTPC": {
-   "currentPrice": 321.5,
-   "targetMeanPrice": 418.5357,
+   "currentPrice": 319.75,
+   "targetMeanPrice": 418,
    "targetHighPrice": 485,
    "targetLowPrice": 355,
    "recommendationMean": 1.28571,
@@ -13119,12 +13159,12 @@
    ]
   },
   "NTPCGREEN": {
-   "currentPrice": 83.18,
+   "currentPrice": 82.23,
    "targetMeanPrice": 100.375,
    "targetHighPrice": 115,
    "targetLowPrice": 85,
-   "recommendationMean": 2.25,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 8,
    "trend": [
     {
@@ -13162,12 +13202,12 @@
    ]
   },
   "NUVAMA": {
-   "currentPrice": 1824.8,
+   "currentPrice": 1835,
    "targetMeanPrice": 2068.3333,
    "targetHighPrice": 2250,
    "targetLowPrice": 1800,
-   "recommendationMean": 1.66667,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 9,
    "trend": [
     {
@@ -13197,7 +13237,7 @@
    ]
   },
   "NUVOCO": {
-   "currentPrice": 355,
+   "currentPrice": 359.8,
    "targetMeanPrice": 440.3158,
    "targetHighPrice": 560,
    "targetLowPrice": 348,
@@ -13232,12 +13272,12 @@
    ]
   },
   "NYKAA": {
-   "currentPrice": 364,
+   "currentPrice": 350.65,
    "targetMeanPrice": 361.07693,
    "targetHighPrice": 431,
    "targetLowPrice": 220,
-   "recommendationMean": 2.5,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 26,
    "trend": [
     {
@@ -13275,12 +13315,12 @@
    ]
   },
   "OBEROIRLTY": {
-   "currentPrice": 1843,
+   "currentPrice": 1889.2,
    "targetMeanPrice": 2063.1538,
    "targetHighPrice": 2490,
    "targetLowPrice": 1240,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.73077,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 26,
    "trend": [
     {
@@ -13294,13 +13334,21 @@
     {
      "period": "-1m",
      "strongBuy": 4,
+     "buy": 15,
+     "hold": 6,
+     "sell": 0,
+     "strongSell": 1
+    },
+    {
+     "period": "-2m",
+     "strongBuy": 4,
      "buy": 14,
      "hold": 6,
      "sell": 0,
      "strongSell": 2
     },
     {
-     "period": "-2m",
+     "period": "-3m",
      "strongBuy": 4,
      "buy": 14,
      "hold": 7,
@@ -13310,7 +13358,7 @@
    ]
   },
   "OFSS": {
-   "currentPrice": 9766,
+   "currentPrice": 9250,
    "targetMeanPrice": 13055,
    "targetHighPrice": 14360,
    "targetLowPrice": 11750,
@@ -13329,7 +13377,7 @@
    ]
   },
   "OIL": {
-   "currentPrice": 432,
+   "currentPrice": 433.45,
    "targetMeanPrice": 528.6191,
    "targetHighPrice": 604,
    "targetLowPrice": 360,
@@ -13372,12 +13420,12 @@
    ]
   },
   "OLAELEC": {
-   "currentPrice": 32.6,
+   "currentPrice": 32.04,
    "targetMeanPrice": 26.69594,
    "targetHighPrice": 35,
    "targetLowPrice": 18,
-   "recommendationMean": 4.625,
-   "recommendationKey": "sell",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 8,
    "trend": [
     {
@@ -13415,7 +13463,7 @@
    ]
   },
   "OLECTRA": {
-   "currentPrice": 996.6,
+   "currentPrice": 1019.6,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -13425,7 +13473,7 @@
    "trend": []
   },
   "ONESOURCE": {
-   "currentPrice": 1610,
+   "currentPrice": 1538,
    "targetMeanPrice": 2078.25,
    "targetHighPrice": 2400,
    "targetLowPrice": 1761,
@@ -13452,7 +13500,7 @@
    ]
   },
   "ONGC": {
-   "currentPrice": 223.46,
+   "currentPrice": 224.31,
    "targetMeanPrice": 287.06897,
    "targetHighPrice": 405,
    "targetLowPrice": 210,
@@ -13495,7 +13543,7 @@
    ]
   },
   "PACEDIGITK": {
-   "currentPrice": 166,
+   "currentPrice": 168.22,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -13505,7 +13553,7 @@
    "trend": []
   },
   "PAGEIND": {
-   "currentPrice": 31020,
+   "currentPrice": 30870,
    "targetMeanPrice": 36785.883,
    "targetHighPrice": 44951,
    "targetLowPrice": 30000,
@@ -13548,7 +13596,7 @@
    ]
   },
   "PARADEEP": {
-   "currentPrice": 142.29,
+   "currentPrice": 141.5,
    "targetMeanPrice": 153.25,
    "targetHighPrice": 170,
    "targetLowPrice": 135,
@@ -13591,7 +13639,7 @@
    ]
   },
   "PATANJALI": {
-   "currentPrice": 404.2,
+   "currentPrice": 400.35,
    "targetMeanPrice": 503.25,
    "targetHighPrice": 550,
    "targetLowPrice": 450,
@@ -13634,7 +13682,7 @@
    ]
   },
   "PAYTM": {
-   "currentPrice": 1740,
+   "currentPrice": 1741.9,
    "targetMeanPrice": 1987.8182,
    "targetHighPrice": 2300,
    "targetLowPrice": 1302,
@@ -13677,12 +13725,12 @@
    ]
   },
   "PCBL": {
-   "currentPrice": 270.9,
+   "currentPrice": 262.5,
    "targetMeanPrice": 347.81818,
    "targetHighPrice": 480,
    "targetLowPrice": 246,
-   "recommendationMean": 2.54545,
-   "recommendationKey": "hold",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 11,
    "trend": [
     {
@@ -13712,18 +13760,18 @@
    ]
   },
   "PERSISTENT": {
-   "currentPrice": 6124,
-   "targetMeanPrice": 5776.2,
-   "targetHighPrice": 6772,
+   "currentPrice": 6320,
+   "targetMeanPrice": 5837.972,
+   "targetHighPrice": 7000,
    "targetLowPrice": 3718,
-   "recommendationMean": 2.6,
+   "recommendationMean": 2.55556,
    "recommendationKey": "hold",
-   "numberOfAnalystOpinions": 35,
+   "numberOfAnalystOpinions": 36,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 10,
-     "buy": 9,
+     "buy": 10,
      "hold": 8,
      "sell": 6,
      "strongSell": 2
@@ -13755,12 +13803,12 @@
    ]
   },
   "PETRONET": {
-   "currentPrice": 329.15,
+   "currentPrice": 322.35,
    "targetMeanPrice": 329.4516,
    "targetHighPrice": 421,
    "targetLowPrice": 265,
-   "recommendationMean": 2.29032,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 31,
    "trend": [
     {
@@ -13798,12 +13846,12 @@
    ]
   },
   "PFC": {
-   "currentPrice": 332.9,
-   "targetMeanPrice": 443.2143,
+   "currentPrice": 327.8,
+   "targetMeanPrice": 434.64285,
    "targetHighPrice": 520,
    "targetLowPrice": 380,
-   "recommendationMean": 1.35714,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 14,
    "trend": [
     {
@@ -13841,7 +13889,7 @@
    ]
   },
   "PFOCUS": {
-   "currentPrice": 253.6,
+   "currentPrice": 237.65,
    "targetMeanPrice": 375,
    "targetHighPrice": 375,
    "targetLowPrice": 375,
@@ -13860,7 +13908,7 @@
    ]
   },
   "PGEL": {
-   "currentPrice": 588.7,
+   "currentPrice": 571,
    "targetMeanPrice": 682.8889,
    "targetHighPrice": 770,
    "targetLowPrice": 559,
@@ -13903,8 +13951,8 @@
    ]
   },
   "PHOENIXLTD": {
-   "currentPrice": 2285.3,
-   "targetMeanPrice": 2165.5217,
+   "currentPrice": 2229.7,
+   "targetMeanPrice": 2173.7827,
    "targetHighPrice": 2600,
    "targetLowPrice": 1720,
    "recommendationMean": 1.69565,
@@ -13946,7 +13994,7 @@
    ]
   },
   "PIDILITIND": {
-   "currentPrice": 1620,
+   "currentPrice": 1594.8,
    "targetMeanPrice": 1659.3182,
    "targetHighPrice": 2035,
    "targetLowPrice": 1300,
@@ -13989,7 +14037,7 @@
    ]
   },
   "PIIND": {
-   "currentPrice": 1597.4,
+   "currentPrice": 1606,
    "targetMeanPrice": 2214.64,
    "targetHighPrice": 5300,
    "targetLowPrice": 1450,
@@ -14032,12 +14080,12 @@
    ]
   },
   "PINELABS": {
-   "currentPrice": 160.1,
+   "currentPrice": 164.06,
    "targetMeanPrice": 220.45454,
    "targetHighPrice": 250,
    "targetLowPrice": 190,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.27273,
+   "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 11,
    "trend": [
     {
@@ -14075,12 +14123,12 @@
    ]
   },
   "PIRAMALFIN": {
-   "currentPrice": 2015.5,
+   "currentPrice": 1937.6,
    "targetMeanPrice": 2315.5,
    "targetHighPrice": 2800,
    "targetLowPrice": 1200,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.7,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 10,
    "trend": [
     {
@@ -14094,8 +14142,8 @@
     {
      "period": "-1m",
      "strongBuy": 3,
-     "buy": 4,
-     "hold": 3,
+     "buy": 5,
+     "hold": 2,
      "sell": 0,
      "strongSell": 0
     },
@@ -14106,13 +14154,21 @@
      "hold": 3,
      "sell": 0,
      "strongSell": 0
+    },
+    {
+     "period": "-3m",
+     "strongBuy": 3,
+     "buy": 4,
+     "hold": 3,
+     "sell": 0,
+     "strongSell": 0
     }
    ]
   },
   "PNB": {
-   "currentPrice": 155.33,
-   "targetMeanPrice": 131.05556,
-   "targetHighPrice": 160,
+   "currentPrice": 146.5,
+   "targetMeanPrice": 132.83333,
+   "targetHighPrice": 172,
    "targetLowPrice": 96,
    "recommendationMean": 2.27778,
    "recommendationKey": "buy",
@@ -14153,12 +14209,12 @@
    ]
   },
   "PNBHOUSING": {
-   "currentPrice": 1191.3,
+   "currentPrice": 1162,
    "targetMeanPrice": 1331.5385,
    "targetHighPrice": 1515,
    "targetLowPrice": 960,
-   "recommendationMean": 1.38462,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 13,
    "trend": [
     {
@@ -14196,12 +14252,12 @@
    ]
   },
   "POLICYBZR": {
-   "currentPrice": 1022.8,
+   "currentPrice": 1186.5,
    "targetMeanPrice": 1454.2174,
    "targetHighPrice": 2275,
    "targetLowPrice": 1050,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 2.04348,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 23,
    "trend": [
     {
@@ -14239,10 +14295,10 @@
    ]
   },
   "POLYCAB": {
-   "currentPrice": 7570,
-   "targetMeanPrice": 9924.3,
+   "currentPrice": 7429,
+   "targetMeanPrice": 9843.134,
    "targetHighPrice": 11600,
-   "targetLowPrice": 8500,
+   "targetLowPrice": 7700,
    "recommendationMean": 1.53333,
    "recommendationKey": "buy",
    "numberOfAnalystOpinions": 30,
@@ -14282,12 +14338,12 @@
    ]
   },
   "POLYMED": {
-   "currentPrice": 1631.6,
+   "currentPrice": 1618.8,
    "targetMeanPrice": 1903.3334,
    "targetHighPrice": 2240,
    "targetLowPrice": 1528,
-   "recommendationMean": 2.16667,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 6,
    "trend": [
     {
@@ -14317,8 +14373,8 @@
    ]
   },
   "POONAWALLA": {
-   "currentPrice": 519,
-   "targetMeanPrice": 537.8889,
+   "currentPrice": 494.9,
+   "targetMeanPrice": 541.2222,
    "targetHighPrice": 663,
    "targetLowPrice": 395,
    "recommendationMean": 1.88889,
@@ -14360,7 +14416,7 @@
    ]
   },
   "POWERGRID": {
-   "currentPrice": 269,
+   "currentPrice": 268.2,
    "targetMeanPrice": 311.24,
    "targetHighPrice": 400,
    "targetLowPrice": 260,
@@ -14403,7 +14459,7 @@
    ]
   },
   "POWERINDIA": {
-   "currentPrice": 30150,
+   "currentPrice": 31120,
    "targetMeanPrice": 36801.57,
    "targetHighPrice": 49936,
    "targetLowPrice": 30100,
@@ -14446,10 +14502,10 @@
    ]
   },
   "PPLPHARMA": {
-   "currentPrice": 238.63,
-   "targetMeanPrice": 262.9091,
+   "currentPrice": 231,
+   "targetMeanPrice": 267.45456,
    "targetHighPrice": 300,
-   "targetLowPrice": 220,
+   "targetLowPrice": 245,
    "recommendationMean": null,
    "recommendationKey": "none",
    "numberOfAnalystOpinions": 11,
@@ -14473,12 +14529,12 @@
    ]
   },
   "PREMIERENE": {
-   "currentPrice": 834.5,
+   "currentPrice": 811.5,
    "targetMeanPrice": 1050.8823,
    "targetHighPrice": 1335,
    "targetLowPrice": 814,
-   "recommendationMean": 2.11765,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 17,
    "trend": [
     {
@@ -14516,7 +14572,7 @@
    ]
   },
   "PRESTIGE": {
-   "currentPrice": 1680,
+   "currentPrice": 1796.7,
    "targetMeanPrice": 1944.3,
    "targetHighPrice": 2380,
    "targetLowPrice": 1440,
@@ -14559,9 +14615,9 @@
    ]
   },
   "PRIVISCL": {
-   "currentPrice": 3560,
-   "targetMeanPrice": 4213.6665,
-   "targetHighPrice": 4490,
+   "currentPrice": 3666,
+   "targetMeanPrice": 4157,
+   "targetHighPrice": 4320,
    "targetLowPrice": 4000,
    "recommendationMean": null,
    "recommendationKey": "none",
@@ -14594,7 +14650,7 @@
    ]
   },
   "PTCIL": {
-   "currentPrice": 24135,
+   "currentPrice": 25460,
    "targetMeanPrice": 26690,
    "targetHighPrice": 29000,
    "targetLowPrice": 24415,
@@ -14629,8 +14685,8 @@
    ]
   },
   "PVRINOX": {
-   "currentPrice": 1640.3,
-   "targetMeanPrice": 1696.6666,
+   "currentPrice": 1679.1,
+   "targetMeanPrice": 1718.3889,
    "targetHighPrice": 2135,
    "targetLowPrice": 1189,
    "recommendationMean": 1.33333,
@@ -14664,8 +14720,8 @@
    ]
   },
   "PWL": {
-   "currentPrice": 136.11,
-   "targetMeanPrice": 147.3,
+   "currentPrice": 131.43,
+   "targetMeanPrice": 147.7,
    "targetHighPrice": 200,
    "targetLowPrice": 110,
    "recommendationMean": 2.1,
@@ -14707,8 +14763,8 @@
    ]
   },
   "RADICO": {
-   "currentPrice": 4665,
-   "targetMeanPrice": 4963.2,
+   "currentPrice": 4646.6,
+   "targetMeanPrice": 4978.2,
    "targetHighPrice": 5700,
    "targetLowPrice": 4127,
    "recommendationMean": 1.35,
@@ -14750,7 +14806,7 @@
    ]
   },
   "RAILTEL": {
-   "currentPrice": 248,
+   "currentPrice": 246.74,
    "targetMeanPrice": 223,
    "targetHighPrice": 240,
    "targetLowPrice": 206,
@@ -14785,8 +14841,8 @@
    ]
   },
   "RAINBOW": {
-   "currentPrice": 1258,
-   "targetMeanPrice": 1649,
+   "currentPrice": 1272.8,
+   "targetMeanPrice": 1631.8572,
    "targetHighPrice": 1900,
    "targetLowPrice": 1450,
    "recommendationMean": 1.21429,
@@ -14828,7 +14884,7 @@
    ]
   },
   "RAMCOCEM": {
-   "currentPrice": 833.3,
+   "currentPrice": 824.9,
    "targetMeanPrice": 932.64514,
    "targetHighPrice": 1150,
    "targetLowPrice": 697,
@@ -14871,13 +14927,13 @@
    ]
   },
   "RBLBANK": {
-   "currentPrice": 398.3,
-   "targetMeanPrice": 416.25,
+   "currentPrice": 390,
+   "targetMeanPrice": 417.10526,
    "targetHighPrice": 505,
    "targetLowPrice": 300,
-   "recommendationMean": null,
-   "recommendationKey": "none",
-   "numberOfAnalystOpinions": 20,
+   "recommendationMean": 2.68421,
+   "recommendationKey": "hold",
+   "numberOfAnalystOpinions": 19,
    "trend": [
     {
      "period": "0m",
@@ -14885,7 +14941,7 @@
      "buy": 7,
      "hold": 3,
      "sell": 3,
-     "strongSell": 5
+     "strongSell": 4
     },
     {
      "period": "-1m",
@@ -14914,7 +14970,7 @@
    ]
   },
   "RCOM": {
-   "currentPrice": 0.8,
+   "currentPrice": 0.78,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -14924,12 +14980,12 @@
    "trend": []
   },
   "RECLTD": {
-   "currentPrice": 298.1,
+   "currentPrice": 295.05,
    "targetMeanPrice": 387.76923,
    "targetHighPrice": 500,
    "targetLowPrice": 295,
-   "recommendationMean": 1.61538,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 13,
    "trend": [
     {
@@ -14967,7 +15023,7 @@
    ]
   },
   "REDINGTON": {
-   "currentPrice": 332,
+   "currentPrice": 335.25,
    "targetMeanPrice": 473.14285,
    "targetHighPrice": 520,
    "targetLowPrice": 420,
@@ -15010,19 +15066,19 @@
    ]
   },
   "RELIANCE": {
-   "currentPrice": 1377.5,
+   "currentPrice": 1382.6,
    "targetMeanPrice": 1610,
    "targetHighPrice": 1890,
    "targetLowPrice": 1280,
-   "recommendationMean": 1.24,
+   "recommendationMean": 1.32,
    "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 25,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 6,
-     "buy": 19,
-     "hold": 0,
+     "buy": 18,
+     "hold": 1,
      "sell": 0,
      "strongSell": 0
     },
@@ -15053,7 +15109,7 @@
    ]
   },
   "RHIM": {
-   "currentPrice": 349,
+   "currentPrice": 344.85,
    "targetMeanPrice": 484.33334,
    "targetHighPrice": 524,
    "targetLowPrice": 441,
@@ -15096,12 +15152,12 @@
    ]
   },
   "RITES": {
-   "currentPrice": 187.06,
+   "currentPrice": 188.35,
    "targetMeanPrice": 259.5,
    "targetHighPrice": 265,
    "targetLowPrice": 254,
-   "recommendationMean": 1.33333,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 2,
    "trend": [
     {
@@ -15131,7 +15187,7 @@
    ]
   },
   "RKFORGE": {
-   "currentPrice": 741.15,
+   "currentPrice": 781.25,
    "targetMeanPrice": 697,
    "targetHighPrice": 872,
    "targetLowPrice": 550,
@@ -15166,7 +15222,7 @@
    ]
   },
   "RPOWER": {
-   "currentPrice": 17.65,
+   "currentPrice": 17.11,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -15176,11 +15232,11 @@
    "trend": []
   },
   "RRKABEL": {
-   "currentPrice": 1806,
-   "targetMeanPrice": 2761.2666,
+   "currentPrice": 1827.4,
+   "targetMeanPrice": 2754.6,
    "targetHighPrice": 3400,
-   "targetLowPrice": 2000,
-   "recommendationMean": 1.66667,
+   "targetLowPrice": 1900,
+   "recommendationMean": 1.6,
    "recommendationKey": "buy",
    "numberOfAnalystOpinions": 15,
    "trend": [
@@ -15189,8 +15245,8 @@
      "strongBuy": 3,
      "buy": 10,
      "hold": 0,
-     "sell": 1,
-     "strongSell": 1
+     "sell": 0,
+     "strongSell": 2
     },
     {
      "period": "-1m",
@@ -15219,7 +15275,7 @@
    ]
   },
   "RSYSTEMS": {
-   "currentPrice": 240.25,
+   "currentPrice": 239.3,
    "targetMeanPrice": 361,
    "targetHighPrice": 420,
    "targetLowPrice": 300,
@@ -15254,7 +15310,7 @@
    ]
   },
   "RUBICON": {
-   "currentPrice": 1724.9,
+   "currentPrice": 1869.3,
    "targetMeanPrice": 2065,
    "targetHighPrice": 2090,
    "targetLowPrice": 2040,
@@ -15289,7 +15345,7 @@
    ]
   },
   "RVNL": {
-   "currentPrice": 191,
+   "currentPrice": 190.7,
    "targetMeanPrice": 153,
    "targetHighPrice": 153,
    "targetLowPrice": 153,
@@ -15324,7 +15380,7 @@
    ]
   },
   "SAGILITY": {
-   "currentPrice": 45.25,
+   "currentPrice": 46.61,
    "targetMeanPrice": 58.75,
    "targetHighPrice": 65,
    "targetLowPrice": 55,
@@ -15359,8 +15415,8 @@
    ]
   },
   "SAIL": {
-   "currentPrice": 164.11,
-   "targetMeanPrice": 184.67857,
+   "currentPrice": 163.95,
+   "targetMeanPrice": 183.9643,
    "targetHighPrice": 240,
    "targetLowPrice": 135,
    "recommendationMean": 2.75,
@@ -15402,12 +15458,12 @@
    ]
   },
   "SAILIFE": {
-   "currentPrice": 1800.1,
+   "currentPrice": 1806.1,
    "targetMeanPrice": 1943.2858,
    "targetHighPrice": 2186,
    "targetLowPrice": 1620,
-   "recommendationMean": 1.5,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 7,
    "trend": [
     {
@@ -15437,7 +15493,7 @@
    ]
   },
   "SAMMAANCAP": {
-   "currentPrice": 124.9,
+   "currentPrice": 122.07,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -15447,12 +15503,12 @@
    "trend": []
   },
   "SANSERA": {
-   "currentPrice": 4800,
+   "currentPrice": 4742.2,
    "targetMeanPrice": 4311.077,
    "targetHighPrice": 5350,
    "targetLowPrice": 2500,
-   "recommendationMean": 2.15385,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 13,
    "trend": [
     {
@@ -15490,7 +15546,7 @@
    ]
   },
   "SARDAEN": {
-   "currentPrice": 467.7,
+   "currentPrice": 469.85,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -15500,13 +15556,13 @@
    "trend": []
   },
   "SBICARD": {
-   "currentPrice": 579.25,
-   "targetMeanPrice": 656.5833,
+   "currentPrice": 565.8,
+   "targetMeanPrice": 647.3043,
    "targetHighPrice": 900,
    "targetLowPrice": 430,
    "recommendationMean": null,
    "recommendationKey": "none",
-   "numberOfAnalystOpinions": 24,
+   "numberOfAnalystOpinions": 23,
    "trend": [
     {
      "period": "0m",
@@ -15543,7 +15599,7 @@
    ]
   },
   "SBIFUNDS": {
-   "currentPrice": 533.6,
+   "currentPrice": 525.15,
    "targetMeanPrice": 618.5,
    "targetHighPrice": 675,
    "targetLowPrice": 520,
@@ -15578,27 +15634,27 @@
    ]
   },
   "SBILIFE": {
-   "currentPrice": 1826.5,
-   "targetMeanPrice": 2246.0278,
+   "currentPrice": 1856,
+   "targetMeanPrice": 2247,
    "targetHighPrice": 2900,
    "targetLowPrice": 1050,
-   "recommendationMean": 1.2,
+   "recommendationMean": 1.14706,
    "recommendationKey": "strong_buy",
-   "numberOfAnalystOpinions": 36,
+   "numberOfAnalystOpinions": 35,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 5,
      "buy": 29,
-     "hold": 1,
+     "hold": 0,
      "sell": 0,
      "strongSell": 0
     },
     {
      "period": "-1m",
      "strongBuy": 5,
-     "buy": 29,
-     "hold": 1,
+     "buy": 30,
+     "hold": 0,
      "sell": 0,
      "strongSell": 0
     },
@@ -15621,8 +15677,8 @@
    ]
   },
   "SBIN": {
-   "currentPrice": 1165.1,
-   "targetMeanPrice": 1233.0513,
+   "currentPrice": 1123.9,
+   "targetMeanPrice": 1232.0256,
    "targetHighPrice": 1350,
    "targetLowPrice": 1030,
    "recommendationMean": 1.45,
@@ -15664,7 +15720,7 @@
    ]
   },
   "SCHAEFFLER": {
-   "currentPrice": 3599,
+   "currentPrice": 3658.9,
    "targetMeanPrice": 4611.125,
    "targetHighPrice": 4989,
    "targetLowPrice": 3800,
@@ -15699,12 +15755,12 @@
    ]
   },
   "SCHNEIDER": {
-   "currentPrice": 1039.3,
+   "currentPrice": 1032,
    "targetMeanPrice": 1348.3334,
    "targetHighPrice": 1475,
    "targetLowPrice": 1250,
-   "recommendationMean": 1,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 3,
    "trend": [
     {
@@ -15734,7 +15790,7 @@
    ]
   },
   "SCI": {
-   "currentPrice": 256.1,
+   "currentPrice": 254.87,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -15744,7 +15800,7 @@
    "trend": []
   },
   "SHADOWFAX": {
-   "currentPrice": 305,
+   "currentPrice": 312.95,
    "targetMeanPrice": 343.66666,
    "targetHighPrice": 360,
    "targetLowPrice": 330,
@@ -15787,7 +15843,7 @@
    ]
   },
   "SHAREINDIA": {
-   "currentPrice": 178.22,
+   "currentPrice": 173.92,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -15797,7 +15853,7 @@
    "trend": []
   },
   "SHIPROCKET": {
-   "currentPrice": 109.8,
+   "currentPrice": 109.67,
    "targetMeanPrice": 147.33333,
    "targetHighPrice": 160,
    "targetLowPrice": 137,
@@ -15832,7 +15888,7 @@
    ]
   },
   "SHREECEM": {
-   "currentPrice": 25475,
+   "currentPrice": 25160,
    "targetMeanPrice": 26635.838,
    "targetHighPrice": 31450,
    "targetLowPrice": 19600,
@@ -15875,7 +15931,7 @@
    ]
   },
   "SHRIPISTON": {
-   "currentPrice": 4220.3,
+   "currentPrice": 4064.1,
    "targetMeanPrice": 5425,
    "targetHighPrice": 6150,
    "targetLowPrice": 4700,
@@ -15910,7 +15966,7 @@
    ]
   },
   "SHRIRAMFIN": {
-   "currentPrice": 972,
+   "currentPrice": 923.5,
    "targetMeanPrice": 1127.1177,
    "targetHighPrice": 1325,
    "targetLowPrice": 950,
@@ -15953,7 +16009,7 @@
    ]
   },
   "SHYAMMETL": {
-   "currentPrice": 1316.3,
+   "currentPrice": 1305.4,
    "targetMeanPrice": 1304.8889,
    "targetHighPrice": 1550,
    "targetLowPrice": 1120,
@@ -15980,19 +16036,19 @@
    ]
   },
   "SIEMENS": {
-   "currentPrice": 3582.6,
-   "targetMeanPrice": 3941.7307,
-   "targetHighPrice": 4850,
-   "targetLowPrice": 3000,
-   "recommendationMean": 2.69231,
-   "recommendationKey": "hold",
+   "currentPrice": 3595,
+   "targetMeanPrice": 3911.577,
+   "targetHighPrice": 5000,
+   "targetLowPrice": 3165,
+   "recommendationMean": 2.42308,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 26,
    "trend": [
     {
      "period": "0m",
-     "strongBuy": 5,
-     "buy": 5,
-     "hold": 11,
+     "strongBuy": 4,
+     "buy": 9,
+     "hold": 8,
      "sell": 2,
      "strongSell": 3
     },
@@ -16023,7 +16079,7 @@
    ]
   },
   "SIGNATURE": {
-   "currentPrice": 863.55,
+   "currentPrice": 846.25,
    "targetMeanPrice": 1006,
    "targetHighPrice": 1246,
    "targetLowPrice": 900,
@@ -16066,7 +16122,7 @@
    ]
   },
   "SJVN": {
-   "currentPrice": 55.69,
+   "currentPrice": 55.05,
    "targetMeanPrice": 65,
    "targetHighPrice": 72,
    "targetLowPrice": 58,
@@ -16101,7 +16157,7 @@
    ]
   },
   "SKYWAYS": {
-   "currentPrice": 117,
+   "currentPrice": 115.58,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -16111,12 +16167,12 @@
    "trend": []
   },
   "SOBHA": {
-   "currentPrice": 1258.4,
+   "currentPrice": 1286.3,
    "targetMeanPrice": 1726.1111,
    "targetHighPrice": 1930,
    "targetLowPrice": 1350,
-   "recommendationMean": 1.27778,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 18,
    "trend": [
     {
@@ -16154,12 +16210,12 @@
    ]
   },
   "SOLARINDS": {
-   "currentPrice": 18710,
+   "currentPrice": 19450,
    "targetMeanPrice": 22775.188,
    "targetHighPrice": 28200,
    "targetLowPrice": 12300,
-   "recommendationMean": 1.5625,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 16,
    "trend": [
     {
@@ -16197,7 +16253,7 @@
    ]
   },
   "SONACOMS": {
-   "currentPrice": 892.5,
+   "currentPrice": 879,
    "targetMeanPrice": 848.3333,
    "targetHighPrice": 971,
    "targetLowPrice": 600,
@@ -16224,7 +16280,7 @@
    ]
   },
   "SRF": {
-   "currentPrice": 2514.8,
+   "currentPrice": 2559.5,
    "targetMeanPrice": 2770.2068,
    "targetHighPrice": 3300,
    "targetLowPrice": 2210,
@@ -16259,12 +16315,12 @@
    ]
   },
   "STARHEALTH": {
-   "currentPrice": 556,
+   "currentPrice": 570.45,
    "targetMeanPrice": 630.5909,
    "targetHighPrice": 760,
    "targetLowPrice": 440,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.57143,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 22,
    "trend": [
     {
@@ -16302,7 +16358,7 @@
    ]
   },
   "STLNETWORK": {
-   "currentPrice": 40.98,
+   "currentPrice": 42.62,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -16312,7 +16368,7 @@
    "trend": []
   },
   "STLTECH": {
-   "currentPrice": 621.85,
+   "currentPrice": 618.8,
    "targetMeanPrice": 1473.3334,
    "targetHighPrice": 1610,
    "targetLowPrice": 1350,
@@ -16347,7 +16403,7 @@
    ]
   },
   "SUBEXLTD": {
-   "currentPrice": 17.37,
+   "currentPrice": 19.15,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -16357,12 +16413,12 @@
    "trend": []
   },
   "SUMICHEM": {
-   "currentPrice": 341,
+   "currentPrice": 331.75,
    "targetMeanPrice": 494.25,
    "targetHighPrice": 625,
    "targetLowPrice": 398,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.44444,
+   "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 8,
    "trend": [
     {
@@ -16372,16 +16428,24 @@
      "hold": 1,
      "sell": 0,
      "strongSell": 0
+    },
+    {
+     "period": "-1m",
+     "strongBuy": 2,
+     "buy": 6,
+     "hold": 1,
+     "sell": 0,
+     "strongSell": 0
     }
    ]
   },
   "SUNDARMFIN": {
-   "currentPrice": 4311,
+   "currentPrice": 4173.4,
    "targetMeanPrice": 4828.1113,
    "targetHighPrice": 5880,
    "targetLowPrice": 4300,
-   "recommendationMean": 2.22222,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 9,
    "trend": [
     {
@@ -16411,12 +16475,12 @@
    ]
   },
   "SUNPHARMA": {
-   "currentPrice": 1884.9,
-   "targetMeanPrice": 2111.9395,
+   "currentPrice": 1899.9,
+   "targetMeanPrice": 2108.606,
    "targetHighPrice": 2320,
    "targetLowPrice": 1770,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.73529,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 33,
    "trend": [
     {
@@ -16454,7 +16518,7 @@
    ]
   },
   "SUNTV": {
-   "currentPrice": 685,
+   "currentPrice": 640.75,
    "targetMeanPrice": 677.5455,
    "targetHighPrice": 790,
    "targetLowPrice": 590,
@@ -16497,7 +16561,7 @@
    ]
   },
   "SUPREMEIND": {
-   "currentPrice": 3206,
+   "currentPrice": 3200,
    "targetMeanPrice": 3898.2415,
    "targetHighPrice": 4421,
    "targetLowPrice": 3000,
@@ -16540,12 +16604,12 @@
    ]
   },
   "SUZLON": {
-   "currentPrice": 36.96,
+   "currentPrice": 36.38,
    "targetMeanPrice": 54.58333,
    "targetHighPrice": 68,
    "targetLowPrice": 40,
-   "recommendationMean": 1.41667,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 12,
    "trend": [
     {
@@ -16583,7 +16647,7 @@
    ]
   },
   "SWANCORP": {
-   "currentPrice": 232,
+   "currentPrice": 227.66,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -16593,7 +16657,7 @@
    "trend": []
   },
   "SWIGGY": {
-   "currentPrice": 178.2,
+   "currentPrice": 180,
    "targetMeanPrice": 302.66666,
    "targetHighPrice": 435,
    "targetLowPrice": 200,
@@ -16636,7 +16700,7 @@
    ]
   },
   "SYNGENE": {
-   "currentPrice": 453,
+   "currentPrice": 447.85,
    "targetMeanPrice": 510,
    "targetHighPrice": 735,
    "targetLowPrice": 400,
@@ -16671,11 +16735,11 @@
    ]
   },
   "SYRMA": {
-   "currentPrice": 1515.6,
+   "currentPrice": 1502,
    "targetMeanPrice": 1789.6,
    "targetHighPrice": 2156,
    "targetLowPrice": 1300,
-   "recommendationMean": 1.6,
+   "recommendationMean": 1.56,
    "recommendationKey": "buy",
    "numberOfAnalystOpinions": 25,
    "trend": [
@@ -16683,9 +16747,9 @@
      "period": "0m",
      "strongBuy": 3,
      "buy": 17,
-     "hold": 3,
+     "hold": 4,
      "sell": 0,
-     "strongSell": 2
+     "strongSell": 1
     },
     {
      "period": "-1m",
@@ -16714,7 +16778,7 @@
    ]
   },
   "TARIL": {
-   "currentPrice": 296.55,
+   "currentPrice": 291.5,
    "targetMeanPrice": 345,
    "targetHighPrice": 449,
    "targetLowPrice": 291,
@@ -16733,16 +16797,24 @@
    ]
   },
   "TATACAP": {
-   "currentPrice": 347,
-   "targetMeanPrice": 400.2143,
+   "currentPrice": 340.1,
+   "targetMeanPrice": 398.86667,
    "targetHighPrice": 463,
    "targetLowPrice": 340,
-   "recommendationMean": null,
-   "recommendationKey": "none",
-   "numberOfAnalystOpinions": 14,
+   "recommendationMean": 1.53333,
+   "recommendationKey": "buy",
+   "numberOfAnalystOpinions": 15,
    "trend": [
     {
      "period": "0m",
+     "strongBuy": 4,
+     "buy": 9,
+     "hold": 2,
+     "sell": 0,
+     "strongSell": 0
+    },
+    {
+     "period": "-1m",
      "strongBuy": 4,
      "buy": 9,
      "hold": 1,
@@ -16750,7 +16822,7 @@
      "strongSell": 0
     },
     {
-     "period": "-1m",
+     "period": "-2m",
      "strongBuy": 5,
      "buy": 7,
      "hold": 2,
@@ -16758,7 +16830,7 @@
      "strongSell": 0
     },
     {
-     "period": "-2m",
+     "period": "-3m",
      "strongBuy": 5,
      "buy": 6,
      "hold": 2,
@@ -16768,12 +16840,12 @@
    ]
   },
   "TATACHEM": {
-   "currentPrice": 638.5,
+   "currentPrice": 662.05,
    "targetMeanPrice": 671.55554,
    "targetHighPrice": 880,
    "targetLowPrice": 529,
-   "recommendationMean": 3.22222,
-   "recommendationKey": "hold",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 9,
    "trend": [
     {
@@ -16803,12 +16875,12 @@
    ]
   },
   "TATACOMM": {
-   "currentPrice": 1746,
+   "currentPrice": 1707.3,
    "targetMeanPrice": 2129,
    "targetHighPrice": 2600,
    "targetLowPrice": 1850,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.72727,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 11,
    "trend": [
     {
@@ -16821,8 +16893,8 @@
     },
     {
      "period": "-1m",
-     "strongBuy": 2,
-     "buy": 6,
+     "strongBuy": 1,
+     "buy": 7,
      "hold": 2,
      "sell": 0,
      "strongSell": 1
@@ -16834,12 +16906,20 @@
      "hold": 2,
      "sell": 0,
      "strongSell": 1
+    },
+    {
+     "period": "-3m",
+     "strongBuy": 2,
+     "buy": 6,
+     "hold": 2,
+     "sell": 0,
+     "strongSell": 1
     }
    ]
   },
   "TATACONSUM": {
-   "currentPrice": 1155.9,
-   "targetMeanPrice": 1223.8148,
+   "currentPrice": 1155,
+   "targetMeanPrice": 1228.6296,
    "targetHighPrice": 1450,
    "targetLowPrice": 1050,
    "recommendationMean": 1.34615,
@@ -16881,7 +16961,7 @@
    ]
   },
   "TATAELXSI": {
-   "currentPrice": 3850,
+   "currentPrice": 3877.3,
    "targetMeanPrice": 3564.9333,
    "targetHighPrice": 4950,
    "targetLowPrice": 2840,
@@ -16924,7 +17004,7 @@
    ]
   },
   "TATAINVEST": {
-   "currentPrice": 583.4,
+   "currentPrice": 579.75,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -16934,8 +17014,8 @@
    "trend": []
   },
   "TATAPOWER": {
-   "currentPrice": 339.7,
-   "targetMeanPrice": 405.22726,
+   "currentPrice": 320.05,
+   "targetMeanPrice": 402.31818,
    "targetHighPrice": 525,
    "targetLowPrice": 305,
    "recommendationMean": 2.26087,
@@ -16977,19 +17057,19 @@
    ]
   },
   "TATASTEEL": {
-   "currentPrice": 178,
-   "targetMeanPrice": 217.05714,
-   "targetHighPrice": 260,
-   "targetLowPrice": 170,
-   "recommendationMean": 2.14286,
+   "currentPrice": 163.94,
+   "targetMeanPrice": 207.02856,
+   "targetHighPrice": 255,
+   "targetLowPrice": 155,
+   "recommendationMean": 2.17143,
    "recommendationKey": "buy",
    "numberOfAnalystOpinions": 35,
    "trend": [
     {
      "period": "0m",
-     "strongBuy": 5,
-     "buy": 17,
-     "hold": 7,
+     "strongBuy": 4,
+     "buy": 16,
+     "hold": 9,
      "sell": 3,
      "strongSell": 3
     },
@@ -17020,18 +17100,18 @@
    ]
   },
   "TATATECH": {
-   "currentPrice": 728.5,
+   "currentPrice": 705.2,
    "targetMeanPrice": 757.7857,
    "targetHighPrice": 1340,
    "targetLowPrice": 535,
-   "recommendationMean": 3.38462,
+   "recommendationMean": 3.21429,
    "recommendationKey": "hold",
    "numberOfAnalystOpinions": 14,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 2,
-     "buy": 2,
+     "buy": 3,
      "hold": 2,
      "sell": 4,
      "strongSell": 3
@@ -17063,7 +17143,7 @@
    ]
   },
   "TBOTEK": {
-   "currentPrice": 1551,
+   "currentPrice": 1475.8,
    "targetMeanPrice": 1958,
    "targetHighPrice": 2200,
    "targetLowPrice": 1765,
@@ -17106,19 +17186,19 @@
    ]
   },
   "TCS": {
-   "currentPrice": 2376.2,
-   "targetMeanPrice": 2395.25,
+   "currentPrice": 2572.5,
+   "targetMeanPrice": 2408.805,
    "targetHighPrice": 3266,
    "targetLowPrice": 1920,
-   "recommendationMean": 2.25,
+   "recommendationMean": 2.26829,
    "recommendationKey": "buy",
-   "numberOfAnalystOpinions": 40,
+   "numberOfAnalystOpinions": 41,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 11,
      "buy": 13,
-     "hold": 12,
+     "hold": 13,
      "sell": 3,
      "strongSell": 1
     },
@@ -17149,7 +17229,7 @@
    ]
   },
   "TDPOWERSYS": {
-   "currentPrice": 619.75,
+   "currentPrice": 617.65,
    "targetMeanPrice": 859.5,
    "targetHighPrice": 940,
    "targetLowPrice": 779,
@@ -17184,19 +17264,19 @@
    ]
   },
   "TECHM": {
-   "currentPrice": 1746.2,
-   "targetMeanPrice": 1759.4615,
-   "targetHighPrice": 2000,
+   "currentPrice": 1813.9,
+   "targetMeanPrice": 1776.6666,
+   "targetHighPrice": 2250,
    "targetLowPrice": 1220,
-   "recommendationMean": 2.02564,
+   "recommendationMean": 2.07692,
    "recommendationKey": "buy",
    "numberOfAnalystOpinions": 39,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 7,
-     "buy": 19,
-     "hold": 9,
+     "buy": 18,
+     "hold": 10,
      "sell": 3,
      "strongSell": 1
     },
@@ -17227,7 +17307,7 @@
    ]
   },
   "TECHNOE": {
-   "currentPrice": 922,
+   "currentPrice": 894.6,
    "targetMeanPrice": 1432,
    "targetHighPrice": 1700,
    "targetLowPrice": 1280,
@@ -17254,12 +17334,12 @@
    ]
   },
   "TEGA": {
-   "currentPrice": 1578.7,
+   "currentPrice": 1510,
    "targetMeanPrice": 1825.5,
    "targetHighPrice": 1880,
    "targetLowPrice": 1765,
-   "recommendationMean": 2.75,
-   "recommendationKey": "hold",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 4,
    "trend": [
     {
@@ -17289,7 +17369,7 @@
    ]
   },
   "TEJASNET": {
-   "currentPrice": 399.5,
+   "currentPrice": 402.5,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -17299,12 +17379,12 @@
    "trend": []
   },
   "TENNIND": {
-   "currentPrice": 452.1,
+   "currentPrice": 449.7,
    "targetMeanPrice": 612.8571,
    "targetHighPrice": 680,
    "targetLowPrice": 490,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.57143,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 7,
    "trend": [
     {
@@ -17342,7 +17422,7 @@
    ]
   },
   "TFCILTD": {
-   "currentPrice": 171.95,
+   "currentPrice": 173.97,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -17352,7 +17432,7 @@
    "trend": []
   },
   "THANGAMAYL": {
-   "currentPrice": 3800,
+   "currentPrice": 3945.3,
    "targetMeanPrice": 6337.6665,
    "targetHighPrice": 6856,
    "targetLowPrice": 5697,
@@ -17387,19 +17467,19 @@
    ]
   },
   "THERMAX": {
-   "currentPrice": 2715.9,
-   "targetMeanPrice": 3656.95,
-   "targetHighPrice": 5140,
+   "currentPrice": 2722.3,
+   "targetMeanPrice": 3547.95,
+   "targetHighPrice": 4965,
    "targetLowPrice": 2650,
-   "recommendationMean": 2.15,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 20,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 3,
-     "buy": 8,
-     "hold": 7,
+     "buy": 7,
+     "hold": 8,
      "sell": 0,
      "strongSell": 2
     },
@@ -17430,12 +17510,12 @@
    ]
   },
   "TIINDIA": {
-   "currentPrice": 2228.3,
+   "currentPrice": 2243.2,
    "targetMeanPrice": 2921.8333,
    "targetHighPrice": 3300,
    "targetLowPrice": 2575,
-   "recommendationMean": 1.5,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 6,
    "trend": [
     {
@@ -17465,9 +17545,9 @@
    ]
   },
   "TIMKEN": {
-   "currentPrice": 3105,
-   "targetMeanPrice": 3845,
-   "targetHighPrice": 4560,
+   "currentPrice": 3084.5,
+   "targetMeanPrice": 3721.25,
+   "targetHighPrice": 4207,
    "targetLowPrice": 3400,
    "recommendationMean": null,
    "recommendationKey": "none",
@@ -17500,7 +17580,7 @@
    ]
   },
   "TITAGARH": {
-   "currentPrice": 727.7,
+   "currentPrice": 751.35,
    "targetMeanPrice": 995.44446,
    "targetHighPrice": 1050,
    "targetLowPrice": 914,
@@ -17543,8 +17623,8 @@
    ]
   },
   "TITAN": {
-   "currentPrice": 4620,
-   "targetMeanPrice": 5517.971,
+   "currentPrice": 4675.3,
+   "targetMeanPrice": 5517.1143,
    "targetHighPrice": 6150,
    "targetLowPrice": 4700,
    "recommendationMean": 1.71429,
@@ -17586,7 +17666,7 @@
    ]
   },
   "TMCV": {
-   "currentPrice": 455.2,
+   "currentPrice": 424.95,
    "targetMeanPrice": 509.7143,
    "targetHighPrice": 645,
    "targetLowPrice": 416,
@@ -17621,17 +17701,17 @@
    ]
   },
   "TMPV": {
-   "currentPrice": 266.35,
+   "currentPrice": 258,
    "targetMeanPrice": 310.96,
    "targetHighPrice": 403,
    "targetLowPrice": 235,
-   "recommendationMean": 2.88,
+   "recommendationMean": 2.84615,
    "recommendationKey": "hold",
    "numberOfAnalystOpinions": 25,
    "trend": [
     {
      "period": "0m",
-     "strongBuy": 4,
+     "strongBuy": 5,
      "buy": 6,
      "hold": 7,
      "sell": 5,
@@ -17664,7 +17744,7 @@
    ]
   },
   "TONBO": {
-   "currentPrice": 1459,
+   "currentPrice": 1353.8,
    "targetMeanPrice": 1015,
    "targetHighPrice": 1015,
    "targetLowPrice": 1015,
@@ -17683,12 +17763,12 @@
    ]
   },
   "TORNTPHARM": {
-   "currentPrice": 4689.5,
+   "currentPrice": 5034,
    "targetMeanPrice": 5472.7856,
    "targetHighPrice": 6478,
    "targetLowPrice": 4545,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.64286,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 28,
    "trend": [
     {
@@ -17702,13 +17782,21 @@
     {
      "period": "-1m",
      "strongBuy": 7,
+     "buy": 16,
+     "hold": 4,
+     "sell": 0,
+     "strongSell": 1
+    },
+    {
+     "period": "-2m",
+     "strongBuy": 7,
      "buy": 15,
      "hold": 5,
      "sell": 0,
      "strongSell": 1
     },
     {
-     "period": "-2m",
+     "period": "-3m",
      "strongBuy": 7,
      "buy": 16,
      "hold": 5,
@@ -17718,12 +17806,12 @@
    ]
   },
   "TORNTPOWER": {
-   "currentPrice": 1223,
+   "currentPrice": 1152.2,
    "targetMeanPrice": 1453.4166,
    "targetHighPrice": 1638,
    "targetLowPrice": 1273,
-   "recommendationMean": 1.91667,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 12,
    "trend": [
     {
@@ -17761,7 +17849,7 @@
    ]
   },
   "TRENT": {
-   "currentPrice": 3256.1,
+   "currentPrice": 3273,
    "targetMeanPrice": 3414.0493,
    "targetHighPrice": 4374,
    "targetLowPrice": 2815,
@@ -17804,12 +17892,12 @@
    ]
   },
   "TRIDENT": {
-   "currentPrice": 23.4,
+   "currentPrice": 23.68,
    "targetMeanPrice": 27.5,
    "targetHighPrice": 31,
    "targetLowPrice": 24,
-   "recommendationMean": 2,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 2,
    "trend": [
     {
@@ -17839,7 +17927,7 @@
    ]
   },
   "TRITURBINE": {
-   "currentPrice": 466.05,
+   "currentPrice": 455.2,
    "targetMeanPrice": 633.3333,
    "targetHighPrice": 760,
    "targetLowPrice": 510,
@@ -17882,7 +17970,7 @@
    ]
   },
   "TTML": {
-   "currentPrice": 35.98,
+   "currentPrice": 33.81,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -17892,12 +17980,12 @@
    "trend": []
   },
   "TURTLEMINT": {
-   "currentPrice": 64.87,
+   "currentPrice": 67.76,
    "targetMeanPrice": 97.5,
    "targetHighPrice": 120,
    "targetLowPrice": 75,
-   "recommendationMean": 1,
-   "recommendationKey": "strong_buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 2,
    "trend": [
     {
@@ -17935,8 +18023,8 @@
    ]
   },
   "TVSMOTOR": {
-   "currentPrice": 4590,
-   "targetMeanPrice": 4662.775,
+   "currentPrice": 4526.5,
+   "targetMeanPrice": 4647.525,
    "targetHighPrice": 5630,
    "targetLowPrice": 2470,
    "recommendationMean": 1.9,
@@ -17954,7 +18042,7 @@
     {
      "period": "-1m",
      "strongBuy": 11,
-     "buy": 19,
+     "buy": 20,
      "hold": 4,
      "sell": 2,
      "strongSell": 3
@@ -17962,7 +18050,7 @@
     {
      "period": "-2m",
      "strongBuy": 11,
-     "buy": 16,
+     "buy": 17,
      "hold": 4,
      "sell": 3,
      "strongSell": 3
@@ -17970,7 +18058,7 @@
     {
      "period": "-3m",
      "strongBuy": 11,
-     "buy": 16,
+     "buy": 17,
      "hold": 4,
      "sell": 3,
      "strongSell": 3
@@ -17978,7 +18066,7 @@
    ]
   },
   "UBL": {
-   "currentPrice": 1241.6,
+   "currentPrice": 1275.6,
    "targetMeanPrice": 1388.1578,
    "targetHighPrice": 1750,
    "targetLowPrice": 1120,
@@ -18013,7 +18101,7 @@
    ]
   },
   "UCOBANK": {
-   "currentPrice": 25.42,
+   "currentPrice": 24.26,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -18023,18 +18111,18 @@
    "trend": []
   },
   "ULTRACEMCO": {
-   "currentPrice": 12939,
-   "targetMeanPrice": 13649.243,
+   "currentPrice": 12578,
+   "targetMeanPrice": 13644.277,
    "targetHighPrice": 15330,
    "targetLowPrice": 8900,
-   "recommendationMean": 1.45946,
+   "recommendationMean": 1.47222,
    "recommendationKey": "strong_buy",
-   "numberOfAnalystOpinions": 37,
+   "numberOfAnalystOpinions": 36,
    "trend": [
     {
      "period": "0m",
      "strongBuy": 5,
-     "buy": 28,
+     "buy": 27,
      "hold": 2,
      "sell": 2,
      "strongSell": 0
@@ -18066,12 +18154,12 @@
    ]
   },
   "UNIONBANK": {
-   "currentPrice": 218.85,
-   "targetMeanPrice": 205.94118,
-   "targetHighPrice": 235,
+   "currentPrice": 211.1,
+   "targetMeanPrice": 207.70589,
+   "targetHighPrice": 260,
    "targetLowPrice": 175,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 2.05882,
+   "recommendationKey": "buy",
    "numberOfAnalystOpinions": 17,
    "trend": [
     {
@@ -18097,12 +18185,20 @@
      "hold": 3,
      "sell": 0,
      "strongSell": 3
+    },
+    {
+     "period": "-3m",
+     "strongBuy": 3,
+     "buy": 8,
+     "hold": 3,
+     "sell": 0,
+     "strongSell": 3
     }
    ]
   },
   "UNITDSPR": {
-   "currentPrice": 1466.4,
-   "targetMeanPrice": 1559.36,
+   "currentPrice": 1476.2,
+   "targetMeanPrice": 1568.36,
    "targetHighPrice": 1958,
    "targetLowPrice": 1260,
    "recommendationMean": 1.52,
@@ -18144,8 +18240,8 @@
    ]
   },
   "UNOMINDA": {
-   "currentPrice": 1380,
-   "targetMeanPrice": 1420.8948,
+   "currentPrice": 1354,
+   "targetMeanPrice": 1426.1578,
    "targetHighPrice": 1700,
    "targetLowPrice": 1100,
    "recommendationMean": 2.10526,
@@ -18163,7 +18259,7 @@
     {
      "period": "-1m",
      "strongBuy": 4,
-     "buy": 9,
+     "buy": 10,
      "hold": 2,
      "sell": 2,
      "strongSell": 1
@@ -18171,7 +18267,7 @@
     {
      "period": "-2m",
      "strongBuy": 4,
-     "buy": 8,
+     "buy": 9,
      "hold": 3,
      "sell": 2,
      "strongSell": 1
@@ -18187,7 +18283,7 @@
    ]
   },
   "UPL": {
-   "currentPrice": 571.95,
+   "currentPrice": 564.4,
    "targetMeanPrice": 654.35297,
    "targetHighPrice": 780,
    "targetLowPrice": 550,
@@ -18230,7 +18326,7 @@
    ]
   },
   "URBANCO": {
-   "currentPrice": 169.1,
+   "currentPrice": 174.92,
    "targetMeanPrice": 157.88889,
    "targetHighPrice": 200,
    "targetLowPrice": 96,
@@ -18257,7 +18353,7 @@
    ]
   },
   "USHAMART": {
-   "currentPrice": 461.95,
+   "currentPrice": 464.7,
    "targetMeanPrice": 615.4,
    "targetHighPrice": 650,
    "targetLowPrice": 596,
@@ -18292,10 +18388,10 @@
    ]
   },
   "UTIAMC": {
-   "currentPrice": 835.6,
-   "targetMeanPrice": 998.2353,
+   "currentPrice": 856.55,
+   "targetMeanPrice": 980.2353,
    "targetHighPrice": 1190,
-   "targetLowPrice": 840,
+   "targetLowPrice": 817,
    "recommendationMean": null,
    "recommendationKey": "none",
    "numberOfAnalystOpinions": 17,
@@ -18303,16 +18399,16 @@
     {
      "period": "0m",
      "strongBuy": 3,
-     "buy": 8,
-     "hold": 5,
+     "buy": 7,
+     "hold": 6,
      "sell": 0,
      "strongSell": 1
     },
     {
      "period": "-1m",
      "strongBuy": 3,
-     "buy": 8,
-     "hold": 5,
+     "buy": 7,
+     "hold": 6,
      "sell": 0,
      "strongSell": 1
     },
@@ -18327,7 +18423,7 @@
    ]
   },
   "VAKRANGEE": {
-   "currentPrice": 5.32,
+   "currentPrice": 5.2,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -18337,7 +18433,7 @@
    "trend": []
   },
   "VAML": {
-   "currentPrice": 367.35,
+   "currentPrice": 370.25,
    "targetMeanPrice": 496.2143,
    "targetHighPrice": 550,
    "targetLowPrice": 365,
@@ -18372,8 +18468,8 @@
    ]
   },
   "VBL": {
-   "currentPrice": 427.5,
-   "targetMeanPrice": 517.5904,
+   "currentPrice": 424.9,
+   "targetMeanPrice": 518.55334,
    "targetHighPrice": 657,
    "targetLowPrice": 400,
    "recommendationMean": 1.25926,
@@ -18415,7 +18511,7 @@
    ]
   },
   "VEDL": {
-   "currentPrice": 238.04,
+   "currentPrice": 245.31,
    "targetMeanPrice": 302.22223,
    "targetHighPrice": 350,
    "targetLowPrice": 210,
@@ -18458,7 +18554,7 @@
    ]
   },
   "VEDPOWER": {
-   "currentPrice": 34.72,
+   "currentPrice": 34.05,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -18468,7 +18564,7 @@
    "trend": []
   },
   "VIJAYA": {
-   "currentPrice": 1556.3,
+   "currentPrice": 1552.5,
    "targetMeanPrice": 1624.1,
    "targetHighPrice": 1855,
    "targetLowPrice": 1445,
@@ -18511,7 +18607,7 @@
    ]
   },
   "VIKRAMSOLR": {
-   "currentPrice": 136.29,
+   "currentPrice": 138.75,
    "targetMeanPrice": 162,
    "targetHighPrice": 225,
    "targetLowPrice": 129,
@@ -18546,7 +18642,7 @@
    ]
   },
   "VISL": {
-   "currentPrice": 23.9,
+   "currentPrice": 24.29,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -18556,12 +18652,12 @@
    "trend": []
   },
   "VMM": {
-   "currentPrice": 91.98,
-   "targetMeanPrice": 132.22221,
+   "currentPrice": 96.15,
+   "targetMeanPrice": 133.88889,
    "targetHighPrice": 170,
    "targetLowPrice": 100,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.26316,
+   "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 18,
    "trend": [
     {
@@ -18599,7 +18695,7 @@
    ]
   },
   "VOGL": {
-   "currentPrice": 29.23,
+   "currentPrice": 29.43,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -18609,7 +18705,7 @@
    "trend": []
   },
   "VOLTAS": {
-   "currentPrice": 1235,
+   "currentPrice": 1186.8,
    "targetMeanPrice": 1247.1765,
    "targetHighPrice": 1520,
    "targetLowPrice": 1000,
@@ -18652,12 +18748,12 @@
    ]
   },
   "VTL": {
-   "currentPrice": 528,
+   "currentPrice": 526.9,
    "targetMeanPrice": 585.3333,
    "targetHighPrice": 682,
    "targetLowPrice": 436,
-   "recommendationMean": 3.16667,
-   "recommendationKey": "hold",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 6,
    "trend": [
     {
@@ -18695,12 +18791,12 @@
    ]
   },
   "WAAREEENER": {
-   "currentPrice": 2461,
+   "currentPrice": 2377,
    "targetMeanPrice": 3040.7856,
    "targetHighPrice": 4375,
    "targetLowPrice": 2000,
-   "recommendationMean": 2.14286,
-   "recommendationKey": "buy",
+   "recommendationMean": null,
+   "recommendationKey": "none",
    "numberOfAnalystOpinions": 14,
    "trend": [
     {
@@ -18738,7 +18834,7 @@
    ]
   },
   "WEBELSOLAR": {
-   "currentPrice": 64.09,
+   "currentPrice": 62.62,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -18748,12 +18844,12 @@
    "trend": []
   },
   "WELCORP": {
-   "currentPrice": 2190.1,
+   "currentPrice": 2301.9,
    "targetMeanPrice": 3101.125,
    "targetHighPrice": 3670,
    "targetLowPrice": 2713,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1,
+   "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 8,
    "trend": [
     {
@@ -18791,12 +18887,12 @@
    ]
   },
   "WELSPUNLIV": {
-   "currentPrice": 263.8,
-   "targetMeanPrice": 250.4,
-   "targetHighPrice": 275,
+   "currentPrice": 285.52,
+   "targetMeanPrice": 278.4,
+   "targetHighPrice": 320,
    "targetLowPrice": 214,
-   "recommendationMean": null,
-   "recommendationKey": "none",
+   "recommendationMean": 1.36364,
+   "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 10,
    "trend": [
     {
@@ -18834,7 +18930,7 @@
    ]
   },
   "WHIRLPOOL": {
-   "currentPrice": 818.8,
+   "currentPrice": 789.55,
    "targetMeanPrice": 951.5455,
    "targetHighPrice": 1203,
    "targetLowPrice": 710,
@@ -18877,11 +18973,11 @@
    ]
   },
   "WIPRO": {
-   "currentPrice": 185.7,
+   "currentPrice": 192.1,
    "targetMeanPrice": 174.34212,
    "targetHighPrice": 215,
    "targetLowPrice": 137,
-   "recommendationMean": 3.39474,
+   "recommendationMean": 3.41026,
    "recommendationKey": "hold",
    "numberOfAnalystOpinions": 38,
    "trend": [
@@ -18891,7 +18987,7 @@
      "buy": 3,
      "hold": 12,
      "sell": 6,
-     "strongSell": 13
+     "strongSell": 14
     },
     {
      "period": "-1m",
@@ -18920,7 +19016,7 @@
    ]
   },
   "WOCKPHARMA": {
-   "currentPrice": 2174.6,
+   "currentPrice": 2244.4,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -18930,7 +19026,7 @@
    "trend": []
   },
   "XTRANET": {
-   "currentPrice": 260.1,
+   "currentPrice": 257.85,
    "targetMeanPrice": null,
    "targetHighPrice": null,
    "targetLowPrice": null,
@@ -18940,7 +19036,7 @@
    "trend": []
   },
   "YATRA": {
-   "currentPrice": 89.38,
+   "currentPrice": 87.87,
    "targetMeanPrice": 135.6,
    "targetHighPrice": 180,
    "targetLowPrice": 88,
@@ -18983,7 +19079,7 @@
    ]
   },
   "YESBANK": {
-   "currentPrice": 17.91,
+   "currentPrice": 17.8,
    "targetMeanPrice": 17.39231,
    "targetHighPrice": 23,
    "targetLowPrice": 13.1,
@@ -19018,7 +19114,7 @@
    ]
   },
   "ZAGGLE": {
-   "currentPrice": 153.11,
+   "currentPrice": 162.37,
    "targetMeanPrice": 365,
    "targetHighPrice": 380,
    "targetLowPrice": 350,
@@ -19037,7 +19133,7 @@
    ]
   },
   "ZEEL": {
-   "currentPrice": 71.25,
+   "currentPrice": 67.08,
    "targetMeanPrice": 81.81818,
    "targetHighPrice": 110,
    "targetLowPrice": 65,
@@ -19080,7 +19176,7 @@
    ]
   },
   "ZENSARTECH": {
-   "currentPrice": 529,
+   "currentPrice": 537.8,
    "targetMeanPrice": 600.5,
    "targetHighPrice": 714,
    "targetLowPrice": 444,
@@ -19123,7 +19219,7 @@
    ]
   },
   "ZENTEC": {
-   "currentPrice": 1685.2,
+   "currentPrice": 1793.2,
    "targetMeanPrice": 1967.1666,
    "targetHighPrice": 2170,
    "targetLowPrice": 1700,
@@ -19150,18 +19246,18 @@
    ]
   },
   "ZFCVINDIA": {
-   "currentPrice": 2200.3,
-   "targetMeanPrice": 2790,
+   "currentPrice": 2187.1,
+   "targetMeanPrice": 2666.25,
    "targetHighPrice": 3060,
-   "targetLowPrice": 2600,
-   "recommendationMean": 1,
+   "targetLowPrice": 2285,
+   "recommendationMean": 1.25,
    "recommendationKey": "strong_buy",
    "numberOfAnalystOpinions": 4,
    "trend": [
     {
      "period": "0m",
-     "strongBuy": 0,
-     "buy": 4,
+     "strongBuy": 1,
+     "buy": 3,
      "hold": 0,
      "sell": 0,
      "strongSell": 0
@@ -19177,7 +19273,7 @@
    ]
   },
   "ZYDUSLIFE": {
-   "currentPrice": 1200,
+   "currentPrice": 1156.9,
    "targetMeanPrice": 1238.4648,
    "targetHighPrice": 1457.48,
    "targetLowPrice": 800,
@@ -19220,7 +19316,7 @@
    ]
   },
   "ZYDUSWELL": {
-   "currentPrice": 446.1,
+   "currentPrice": 450.45,
    "targetMeanPrice": 582.625,
    "targetHighPrice": 610,
    "targetLowPrice": 535,
